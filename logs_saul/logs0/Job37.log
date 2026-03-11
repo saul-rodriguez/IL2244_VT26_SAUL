@@ -1,0 +1,1288 @@
+\# Program start time:     UTC 2026.03.11 06:06:55.536
+\# Local time: UTC (UTC+00:00) 2026.03.11 06:06:55.536
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 09/03/2024 19:11 (sjfhw316) $
+\o Hierarchy:		/opt/tools/cadence/installs/IC618/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.36  (64-bit addresses)
+\# Command line:	/opt/tools/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso664299 -mpshost edatools -davinciService DaVinciService_664299_1773206601 -log /home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job37.log -licenseLockFileName /home/saul/projects/IL2244_VT26_SAUL/.tmp_saul/.edatools_664299 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 37
+\# Host name (type):	edatools (x86_64)
+\# Operating system:	Linux 6.17.0-14-generic #14~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Jan 15 15:52:10 UTC 2
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:4400 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12011000)
+\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	      1,552 MB
+\# Available memory:	     55,177 MB
+\# System memory:	     72,238 MB
+\# Maximum memory size:	     70,806 MB
+\# Max mem available:	     55,296 MB
+\# Initial memory used:	        119 MB
+\#        process size:	      1,676 MB
+\# Thread usage limits (effective/default):	maxthreads 4294967295/4294967295 maxload 16.00/16.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		saul
+\o Working Directory:	edatools:/home/saul/projects/IL2244_VT26_SAUL
+\# Process Id:		702722
+\o 
+\o COPYRIGHT (C) 1992-2024  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2024  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading socket.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\o Loading adexlDM.cxt 
+\o Loading cpf.cxt 
+\o Loading cli.cxt 
+\o Loading lp.cxt 
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso664299, host=edatools). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
+\o INFO (ELI-00304) The registration of the child 702722 within 90 seconds is being processed...
+\o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
+\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\# [06:06:55.445362] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se:29000@lic06.ug.kth.se
+\o ......................................................................................
+\o            ams AG HIT-Kit v.ams_4.10
+\o ......................................................................................
+\o COPYRIGHT (c) 2012 Full Service Foundry @ ams AG.  ALL RIGHTS RESERVED
+\o This HIT-Kit and attached documentation are confidential information and may 
+\o only be used as authorized by the HIT-Kit license agreement.
+\o ......................................................................................
+\# Current Window: window(2)
+\o Loading simulator default settings.
+\o //
+\o //  Calibre Skill Interface * (v2024.4_12.9) *
+\o //
+\o //                         Copyright Siemens 1996-2020     
+\o //                             All Rights Reserved.
+\o //         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+\o //            WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+\o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+\o //
+\o //
+\# Memory report: using         278 MB, process size 1,969 MB at UTC 2026.03.11 06:06:57.961
+\o Loading simulator default settings.
+\o *Info*    Client has finished starting ... 
+\o 
+\o Loading vdsil.cxt 
+\p hitkit: ams_4.10  Tech: c35b4c3  User: saul 
+\w *WARNING* could not load font "-*-courier-medium-r-*-*-12-*", using font "fixed"
+\# Loading perfDiag...
+\# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 702722' to open it when Virtuoso freezes.
+\# (PerfDiag): Use backtrace from GLIBC.
+\w *WARNING* _perfPstackCheck: Cannot find pstack/gstack. Please setup PATH environment variable to pstack/gstack executable.
+\o Loading vqp.cxt 
+\o Loading hdlPkg.cxt 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o Loading simui.cxt 
+\o 	Library      = ECG_IA
+\o 	Cell         = ecg_ia_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = MC_ECG_IA:ecg_ia_tb:1:1_state_MonteCarlo.9
+\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia_tb/adexl/results/data/MonteCarlo.9.rdb
+\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/MonteCarlo.9/1/MC
+\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
+\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o Loading viva.cxt 
+\o Loading spectrei.cxt 
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o Loading monte.cxt 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (14 41) on testbench [ MC ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var FC = "2k"
+\o Setting var VCM_AC = "1"
+\o Setting var VCM_DC = "1.6"
+\o Setting var VDD = "3.3"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "0"
+\o Setting var VIN_FREQ = "0"
+\o Setting var temperature = "27"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/MonteCarlo.9/41/MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/MonteCarlo.9/41/MC/groupRunDataDir
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (14 41)
+\o 
+\o generate netlist...
+\o Loading hnlInit.cxt 
+\o Loading seCore.cxt 
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\# [06:06:59.448457] Periodic Lic check successful
+\# [06:06:59.448458] Feature usage summary:
+\o Begin Incremental Netlisting Mar 11 06:06:59 2026
+\o End netlisting Mar 11 06:06:59 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ MC ] for Point ID (14 41).
+\o 
+\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/MonteCarlo.9/41/MC/groupRunDataDir/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 11 06:06:59 2026
+\o End netlisting Mar 11 06:06:59 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o Loading paraplot.cxt 
+\# Memory report: using         444 MB, process size 2,254 MB at UTC 2026.03.11 06:07:00.730
+\e *Error* Not a valid waveform.
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)' returned 'nil' for point:'41' test:'MC'
+\o 	Expression:'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 41) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* Not a valid waveform.
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)' returned 'nil' for point:'42' test:'MC'
+\o 	Expression:'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 42) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* Not a valid waveform.
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)' returned 'nil' for point:'43' test:'MC'
+\o 	Expression:'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 43) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* Not a valid waveform.
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)' returned 'nil' for point:'44' test:'MC'
+\o 	Expression:'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 44) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* Not a valid waveform.
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)' returned 'nil' for point:'45' test:'MC'
+\o 	Expression:'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 45) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* Not a valid waveform.
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)' returned 'nil' for point:'46' test:'MC'
+\o 	Expression:'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 46) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* Not a valid waveform.
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)' returned 'nil' for point:'47' test:'MC'
+\o 	Expression:'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 47) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* Not a valid waveform.
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)' returned 'nil' for point:'48' test:'MC'
+\o 	Expression:'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 48) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* Not a valid waveform.
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)' returned 'nil' for point:'49' test:'MC'
+\o 	Expression:'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 49) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* Not a valid waveform.
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)' returned 'nil' for point:'50' test:'MC'
+\o 	Expression:'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 50) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* Not a valid waveform.
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)' returned 'nil' for point:'51' test:'MC'
+\o 	Expression:'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 51) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* Not a valid waveform.
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)' returned 'nil' for point:'52' test:'MC'
+\o 	Expression:'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 52) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* Not a valid waveform.
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)' returned 'nil' for point:'53' test:'MC'
+\o 	Expression:'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 53) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* Not a valid waveform.
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)' returned 'nil' for point:'54' test:'MC'
+\o 	Expression:'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 54) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Available memory:         53,501 MB at UTC 2026.03.11 06:07:05.065
+\# Memory report: Maximum memory size now 53,978 MB at UTC 2026.03.11 06:07:05.065
+\# Thread usage report: 22 active threads, active load 1.40 at UTC 2026.03.11 06:07:05.065
+\e *Error* Not a valid waveform.
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)' returned 'nil' for point:'55' test:'MC'
+\o 	Expression:'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 55) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* Not a valid waveform.
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)' returned 'nil' for point:'56' test:'MC'
+\o 	Expression:'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 56) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* Not a valid waveform.
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)' returned 'nil' for point:'57' test:'MC'
+\o 	Expression:'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 57) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* Not a valid waveform.
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)' returned 'nil' for point:'58' test:'MC'
+\o 	Expression:'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 58) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* Not a valid waveform.
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)' returned 'nil' for point:'59' test:'MC'
+\o 	Expression:'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 59) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* Not a valid waveform.
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)' returned 'nil' for point:'60' test:'MC'
+\o 	Expression:'histogram2D(value(mag(VF("/VOUT")) 50) 10 "standard" "both" t)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (14 60) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Monte Carlo Simulation completed successfully...
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = ECG_IA
+\o 	Cell         = ecg_ia_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = MC_ECG_IA:ecg_ia_tb:1:1_state_MonteCarlo.10
+\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia_tb/adexl/results/data/MonteCarlo.10.rdb
+\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/MonteCarlo.10/1/MC
+\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
+\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (15 41) on testbench [ MC ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var FC = "2k"
+\o Setting var VCM_AC = "1"
+\o Setting var VCM_DC = "1.6"
+\o Setting var VDD = "3.3"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "0"
+\o Setting var VIN_FREQ = "0"
+\o Setting var temperature = "27"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/MonteCarlo.10/41/MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/MonteCarlo.10/41/MC/groupRunDataDir
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (15 41)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 11 06:07:55 2026
+\o End netlisting Mar 11 06:07:55 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ MC ] for Point ID (15 41).
+\o 
+\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/MonteCarlo.10/41/MC/groupRunDataDir/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 11 06:07:55 2026
+\o End netlisting Mar 11 06:07:55 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\e *Error* ("eval" 0 t nil ("*Error* eval: not a function" mag(VF("/VOUT"))))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output '(mag(VF("/VOUT")))' failed for point:'41' test:'MC'
+\o 	Expression:'(mag(VF("/VOUT")))'
+\o 	because of the following error(s)
+\o 	*Error* eval: not a function.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 41) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("eval" 0 t nil ("*Error* eval: not a function" mag(VF("/VOUT"))))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output '(mag(VF("/VOUT")))' failed for point:'42' test:'MC'
+\o 	Expression:'(mag(VF("/VOUT")))'
+\o 	because of the following error(s)
+\o 	*Error* eval: not a function.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 42) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("eval" 0 t nil ("*Error* eval: not a function" mag(VF("/VOUT"))))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output '(mag(VF("/VOUT")))' failed for point:'43' test:'MC'
+\o 	Expression:'(mag(VF("/VOUT")))'
+\o 	because of the following error(s)
+\o 	*Error* eval: not a function.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 43) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("eval" 0 t nil ("*Error* eval: not a function" mag(VF("/VOUT"))))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output '(mag(VF("/VOUT")))' failed for point:'44' test:'MC'
+\o 	Expression:'(mag(VF("/VOUT")))'
+\o 	because of the following error(s)
+\o 	*Error* eval: not a function.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 44) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("eval" 0 t nil ("*Error* eval: not a function" mag(VF("/VOUT"))))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output '(mag(VF("/VOUT")))' failed for point:'45' test:'MC'
+\o 	Expression:'(mag(VF("/VOUT")))'
+\o 	because of the following error(s)
+\o 	*Error* eval: not a function.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 45) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("eval" 0 t nil ("*Error* eval: not a function" mag(VF("/VOUT"))))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output '(mag(VF("/VOUT")))' failed for point:'46' test:'MC'
+\o 	Expression:'(mag(VF("/VOUT")))'
+\o 	because of the following error(s)
+\o 	*Error* eval: not a function.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 46) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("eval" 0 t nil ("*Error* eval: not a function" mag(VF("/VOUT"))))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output '(mag(VF("/VOUT")))' failed for point:'47' test:'MC'
+\o 	Expression:'(mag(VF("/VOUT")))'
+\o 	because of the following error(s)
+\o 	*Error* eval: not a function.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 47) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("eval" 0 t nil ("*Error* eval: not a function" mag(VF("/VOUT"))))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output '(mag(VF("/VOUT")))' failed for point:'48' test:'MC'
+\o 	Expression:'(mag(VF("/VOUT")))'
+\o 	because of the following error(s)
+\o 	*Error* eval: not a function.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 48) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("eval" 0 t nil ("*Error* eval: not a function" mag(VF("/VOUT"))))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output '(mag(VF("/VOUT")))' failed for point:'49' test:'MC'
+\o 	Expression:'(mag(VF("/VOUT")))'
+\o 	because of the following error(s)
+\o 	*Error* eval: not a function.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 49) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("eval" 0 t nil ("*Error* eval: not a function" mag(VF("/VOUT"))))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output '(mag(VF("/VOUT")))' failed for point:'50' test:'MC'
+\o 	Expression:'(mag(VF("/VOUT")))'
+\o 	because of the following error(s)
+\o 	*Error* eval: not a function.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 50) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("eval" 0 t nil ("*Error* eval: not a function" mag(VF("/VOUT"))))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output '(mag(VF("/VOUT")))' failed for point:'51' test:'MC'
+\o 	Expression:'(mag(VF("/VOUT")))'
+\o 	because of the following error(s)
+\o 	*Error* eval: not a function.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 51) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("eval" 0 t nil ("*Error* eval: not a function" mag(VF("/VOUT"))))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output '(mag(VF("/VOUT")))' failed for point:'52' test:'MC'
+\o 	Expression:'(mag(VF("/VOUT")))'
+\o 	because of the following error(s)
+\o 	*Error* eval: not a function.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 52) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("eval" 0 t nil ("*Error* eval: not a function" mag(VF("/VOUT"))))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output '(mag(VF("/VOUT")))' failed for point:'53' test:'MC'
+\o 	Expression:'(mag(VF("/VOUT")))'
+\o 	because of the following error(s)
+\o 	*Error* eval: not a function.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 53) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("eval" 0 t nil ("*Error* eval: not a function" mag(VF("/VOUT"))))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output '(mag(VF("/VOUT")))' failed for point:'54' test:'MC'
+\o 	Expression:'(mag(VF("/VOUT")))'
+\o 	because of the following error(s)
+\o 	*Error* eval: not a function.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 54) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("eval" 0 t nil ("*Error* eval: not a function" mag(VF("/VOUT"))))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output '(mag(VF("/VOUT")))' failed for point:'55' test:'MC'
+\o 	Expression:'(mag(VF("/VOUT")))'
+\o 	because of the following error(s)
+\o 	*Error* eval: not a function.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 55) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("eval" 0 t nil ("*Error* eval: not a function" mag(VF("/VOUT"))))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output '(mag(VF("/VOUT")))' failed for point:'56' test:'MC'
+\o 	Expression:'(mag(VF("/VOUT")))'
+\o 	because of the following error(s)
+\o 	*Error* eval: not a function.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 56) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("eval" 0 t nil ("*Error* eval: not a function" mag(VF("/VOUT"))))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output '(mag(VF("/VOUT")))' failed for point:'57' test:'MC'
+\o 	Expression:'(mag(VF("/VOUT")))'
+\o 	because of the following error(s)
+\o 	*Error* eval: not a function.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 57) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("eval" 0 t nil ("*Error* eval: not a function" mag(VF("/VOUT"))))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output '(mag(VF("/VOUT")))' failed for point:'58' test:'MC'
+\o 	Expression:'(mag(VF("/VOUT")))'
+\o 	because of the following error(s)
+\o 	*Error* eval: not a function.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 58) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* ("eval" 0 t nil ("*Error* eval: not a function" mag(VF("/VOUT"))))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output '(mag(VF("/VOUT")))' failed for point:'59' test:'MC'
+\o 	Expression:'(mag(VF("/VOUT")))'
+\o 	because of the following error(s)
+\o 	*Error* eval: not a function.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 59) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\e *Error* ("eval" 0 t nil ("*Error* eval: not a function" mag(VF("/VOUT"))))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output '(mag(VF("/VOUT")))' failed for point:'60' test:'MC'
+\o 	Expression:'(mag(VF("/VOUT")))'
+\o 	because of the following error(s)
+\o 	*Error* eval: not a function.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (15 60) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Monte Carlo Simulation completed successfully...
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = ECG_IA
+\o 	Cell         = ecg_ia_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = MC_ECG_IA:ecg_ia_tb:1:1_state_MonteCarlo.11
+\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia_tb/adexl/results/data/MonteCarlo.11.rdb
+\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/MonteCarlo.11/1/MC
+\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
+\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (16 1) on testbench [ MC ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var FC = "2k"
+\o Setting var VCM_AC = "1"
+\o Setting var VCM_DC = "1.6"
+\o Setting var VDD = "3.3"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "0"
+\o Setting var VIN_FREQ = "0"
+\o Setting var temperature = "27"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/MonteCarlo.11/1/MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/MonteCarlo.11/1/MC/groupRunDataDir
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (16 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 11 06:09:39 2026
+\o End netlisting Mar 11 06:09:39 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ MC ] for Point ID (16 1).
+\o 
+\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/MonteCarlo.11/1/MC/groupRunDataDir/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 11 06:09:39 2026
+\o End netlisting Mar 11 06:09:39 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 1) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 2) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 3) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 4) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 5) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 6) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 7) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: using         547 MB, process size 2,357 MB at UTC 2026.03.11 06:09:43.112
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 8) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 9) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 10) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 11) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 12) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 13) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 14) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 15) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 16) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 17) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 18) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 19) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (16 20) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Monte Carlo Simulation completed successfully...
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
