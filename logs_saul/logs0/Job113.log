@@ -11,9 +11,9 @@
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = ECG_IA:ecg_vga_tb:1_none_Interactive.12
-	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.12.rdb
-	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.12/1/ECG_IA:ecg_vga_tb:1
+	State Name   = ECG_IA:ecg_vga_tb:1_none_Interactive.73
+	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.73.rdb
+	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.73/1/ECG_IA:ecg_vga_tb:1
 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl
@@ -28,49 +28,52 @@
 
 
 
-*Info*    Run start for Point ID (12 1) on testbench [
+*Info*    Run start for Point ID (55 1) on testbench [
           ECG_IA:ecg_vga_tb:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
+Setting var S0 = "0"
+Setting var S1 = "0"
+Setting var S2 = "0"
 Setting var VDD = "3.3"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.12/1/ECG_IA:ecg_vga_tb:1/netlist
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.73/1/ECG_IA:ecg_vga_tb:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.12/1/ECG_IA:ecg_vga_tb:1
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.73/1/ECG_IA:ecg_vga_tb:1
 
 
-*Info*    Creating Netlist for Point ID (12 1)
+*Info*    Creating Netlist for Point ID (55 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Mar 11 14:26:21 2026
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.93/1/ECG_IA:ecg_ia_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
+Begin Incremental Netlisting Mar 13 10:02:06 2026
+WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.18/1/ECG_IA:ecg_vga_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
 Ensure that you have the write permission for the mentioned file.
 
-End netlisting Mar 11 14:26:21 2026
+End netlisting Mar 13 10:02:06 2026
 
 Netlisting Statistics:
-	Number of components:   17
+	Number of components:   38
 
-	Elapsed time:          1.0s (17.00/s)
+	Elapsed time:          0.0s
 Errors: 0	Warnings: 0
       ...successful.
 compose simulator input file...
       ...successful.
 
 *Info*    Running simulation on testbench [ ECG_IA:ecg_vga_tb:1 ] for
-          Point ID (12 1).
+          Point ID (55 1).
 
-Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.12/1/ECG_IA:ecg_vga_tb:1/psf.
+Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.73/1/ECG_IA:ecg_vga_tb:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -88,7 +91,7 @@ reading simulation data...
 *Info*    Client has finished evaluating ... 
 
 
-*Info*    Run complete for Point ID (12 1) on testbench [
+*Info*    Run complete for Point ID (55 1) on testbench [
           ECG_IA:ecg_vga_tb:1 ].
 
 

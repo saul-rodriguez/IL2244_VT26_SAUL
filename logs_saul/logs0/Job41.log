@@ -7,16 +7,16 @@
 *Info*    Configuring the session ...
 
 	Library      = ECG_IA
-	Cell         = ecg_ia_tb
+	Cell         = ecg_vga_tb
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = ECG_IA:ecg_ia_tb:1_none_Interactive.100
-	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.100.rdb
-	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.100/1/ECG_IA:ecg_ia_tb:1
-	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data
+	State Name   = ECG_IA:ecg_vga_tb:1_none_Interactive.37
+	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.37.rdb
+	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.37/1/ECG_IA:ecg_vga_tb:1
+	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
-	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia_tb/adexl
+	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl
 	File Encoding = 0
 
 
@@ -29,29 +29,22 @@
 
 
 *Info*    Run start for Point ID (19 1) on testbench [
-          ECG_IA:ecg_ia_tb:1 ].
+          ECG_IA:ecg_vga_tb:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var FC = "2K"
-Setting var VCM_AC = "1"
-Setting var VCM_DC = "1.6"
 Setting var VDD = "3.3"
-Setting var VIN_AC = "1"
-Setting var VIN_AMP = "10m"
-Setting var VIN_DC = "0"
-Setting var VIN_FREQ = "50"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.100/1/ECG_IA:ecg_ia_tb:1/netlist
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.37/1/ECG_IA:ecg_vga_tb:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.100/1/ECG_IA:ecg_ia_tb:1
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.37/1/ECG_IA:ecg_vga_tb:1
 
 
 *Info*    Creating Netlist for Point ID (19 1)
@@ -59,66 +52,49 @@ Setting temp(T) = 27
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Mar 11 06:21:38 2026
-ERROR (OSSHNL-109): The cellview 'ECG_IA/ecg_ia6/schematic' has been modified since the last extraction. Validate
-that the schematic is correct and run Check and Save to correct this error.
+Begin Incremental Netlisting Mar 12 10:27:58 2026
+WARNING (OSSHNL-160): The primitive, 'analogLib/res/spectre', was not used in the last netlisting session in this
+current run directory. Therefore, re-netlisting all cell views where this
+primitive is instantiated.
 
-End netlisting Mar 11 06:21:38 2026
-ERROR (OSSHNL-514): Netlist generation failed because of the errors reported above. The netlist might not have been generated at all, or the generated netlist could be corrupt. Fix the reported errors and regenerate the netlist.
-      ...unsuccessful.
+WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.18/1/ECG_IA:ecg_vga_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
+Ensure that you have the write permission for the mentioned file.
 
-*Error*   Error ID  = 5012
-*Error*   Error Msg = Failed to create netlist.
+End netlisting Mar 12 10:27:58 2026
 
+Netlisting Statistics:
+	Number of components:   31
 
+	Elapsed time:          0.0s
+Errors: 0	Warnings: 0
+      ...successful.
+compose simulator input file...
+      ...successful.
 
+*Info*    Running simulation on testbench [ ECG_IA:ecg_vga_tb:1 ] for
+          Point ID (19 1).
 
-
-
-
-
-
-*Info*    Run start for Point ID (19 1) on testbench [
-          ECG_IA:ecg_ia_tb:1 ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting var FC = "2K"
-Setting var VCM_AC = "1"
-Setting var VCM_DC = "1.6"
-Setting var VDD = "3.3"
-Setting var VIN_AC = "1"
-Setting var VIN_AMP = "10m"
-Setting var VIN_DC = "0"
-Setting var VIN_FREQ = "50"
-Setting var temperature = "27"
-Setting temp(T) = 27
-
-*Info*    Netlist Directory =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.100/1/ECG_IA:ecg_ia_tb:1/netlist
-
-
-*Info*    Data Directory    =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.100/1/ECG_IA:ecg_ia_tb:1
+Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.37/1/ECG_IA:ecg_vga_tb:1/psf.
+compose simulator input file...
+      ...successful.
+start simulator if needed...
+      ...successful.
+simulate...
+To view the simulator output, right-click on the test name, result 
+name, or any value in the "Results" tab of the Outputs section and 
+choose "Output Log" menu option.
+WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+       and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+       There will be no performance impact on data visualization due to this change.
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+      ...successful.
+*Info*    Client has finished evaluating ... 
 
 
-*Info*    Creating Netlist for Point ID (19 1)
+*Info*    Run complete for Point ID (19 1) on testbench [
+          ECG_IA:ecg_vga_tb:1 ].
 
-generate netlist...
-function ansCdlCompPrim redefined
-function ansCdlCompPrim redefined
-Begin Incremental Netlisting Mar 11 06:21:38 2026
-ERROR (OSSHNL-109): The cellview 'ECG_IA/ecg_ia6/schematic' has been modified since the last extraction. Validate
-that the schematic is correct and run Check and Save to correct this error.
-
-End netlisting Mar 11 06:21:38 2026
-ERROR (OSSHNL-514): Netlist generation failed because of the errors reported above. The netlist might not have been generated at all, or the generated netlist could be corrupt. Fix the reported errors and regenerate the netlist.
-      ...unsuccessful.
-
-*Error*   Error ID  = 5012
-*Error*   Error Msg = Failed to create netlist.
 
 
 

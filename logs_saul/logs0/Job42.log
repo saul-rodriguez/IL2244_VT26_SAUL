@@ -7,16 +7,16 @@
 *Info*    Configuring the session ...
 
 	Library      = ECG_IA
-	Cell         = ecg_ia_tb
+	Cell         = ecg_tb
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = ECG_IA:ecg_ia_tb:1_none_Interactive.101
-	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.101.rdb
-	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.101/1/ECG_IA:ecg_ia_tb:1
-	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data
+	State Name   = Noise_ECG_IA:ecg_ia_tb:1:1_state_Interactive.179
+	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_tb/adexl/results/data/Interactive.179.rdb
+	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data/Interactive.179/1/Noise
+	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
-	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia_tb/adexl
+	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_tb/adexl
 	File Encoding = 0
 
 
@@ -28,97 +28,86 @@
 
 
 
-*Info*    Run start for Point ID (20 1) on testbench [
-          ECG_IA:ecg_ia_tb:1 ].
+*Info*    Run start for Point ID (12 1) on testbench [ Noise ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var FC = "2K"
+Setting var FC = "2k"
+Setting var S0 = "3.3"
+Setting var S1 = "3.3"
+Setting var S2 = "3.3"
+Setting var T0 = "0"
+Setting var T1 = "0"
+Setting var T2 = "0"
 Setting var VCM_AC = "1"
 Setting var VCM_DC = "1.6"
 Setting var VDD = "3.3"
 Setting var VIN_AC = "1"
-Setting var VIN_AMP = "10m"
+Setting var VIN_AMP = "0"
 Setting var VIN_DC = "0"
-Setting var VIN_FREQ = "50"
+Setting var VIN_FREQ = "0"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.101/1/ECG_IA:ecg_ia_tb:1/netlist
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data/Interactive.179/1/Noise/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.101/1/ECG_IA:ecg_ia_tb:1
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data/Interactive.179/1/Noise
 
 
-*Info*    Creating Netlist for Point ID (20 1)
+*Info*    Creating Netlist for Point ID (12 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Mar 11 06:22:07 2026
-ERROR (OSSHNL-109): The cellview 'ECG_IA/ecg_ia6/schematic' has been modified since the last extraction. Validate
-that the schematic is correct and run Check and Save to correct this error.
+Begin Incremental Netlisting Mar 14 20:04:52 2026
+End netlisting Mar 14 20:04:52 2026
 
-End netlisting Mar 11 06:22:07 2026
-ERROR (OSSHNL-514): Netlist generation failed because of the errors reported above. The netlist might not have been generated at all, or the generated netlist could be corrupt. Fix the reported errors and regenerate the netlist.
-      ...unsuccessful.
+	The netlist is up to date.
+	Time taken to compare the design with netlist:   0.0s
+      ...successful.
+compose simulator input file...
+      ...successful.
 
-*Error*   Error ID  = 5012
-*Error*   Error Msg = Failed to create netlist.
+*Info*    Running simulation on testbench [ Noise ] for Point ID (12
+          1).
 
+Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data/Interactive.179/1/Noise/psf.
+compose simulator input file...
+      ...successful.
+start simulator if needed...
+      ...successful.
+simulate...
+To view the simulator output, right-click on the test name, result 
+name, or any value in the "Results" tab of the Outputs section and 
+choose "Output Log" menu option.
+WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+       and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+       There will be no performance impact on data visualization due to this change.
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+      ...successful.
+*Info*    Client has finished evaluating ... 
 
+WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data/Interactive.179/1/Noise. Use results() for a list of available results.
+WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data/Interactive.179/1/Noise. Use results() for a list of available results.
+ERROR (ADEXL-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'1' test:'Noise'
+	Expression:'db(getData("/V2" ?result "xf"))'.
+Ensure that the definition of output is correct.
 
-
-
-
-
-
-
-*Info*    Run start for Point ID (20 1) on testbench [
-          ECG_IA:ecg_ia_tb:1 ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting var FC = "2K"
-Setting var VCM_AC = "1"
-Setting var VCM_DC = "1.6"
-Setting var VDD = "3.3"
-Setting var VIN_AC = "1"
-Setting var VIN_AMP = "10m"
-Setting var VIN_DC = "0"
-Setting var VIN_FREQ = "50"
-Setting var temperature = "27"
-Setting temp(T) = 27
-
-*Info*    Netlist Directory =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.101/1/ECG_IA:ecg_ia_tb:1/netlist
-
-
-*Info*    Data Directory    =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.101/1/ECG_IA:ecg_ia_tb:1
+WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data/Interactive.179/1/Noise. Use results() for a list of available results.
+WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data/Interactive.179/1/Noise. Use results() for a list of available results.
+ERROR (ADEXL-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'1' test:'Noise'
+	Expression:'db(getData("/V7" ?result "xf"))'.
+Ensure that the definition of output is correct.
 
 
-*Info*    Creating Netlist for Point ID (20 1)
+*Info*    Run complete for Point ID (12 1) on testbench [ Noise ].
 
-generate netlist...
-function ansCdlCompPrim redefined
-function ansCdlCompPrim redefined
-Begin Incremental Netlisting Mar 11 06:22:07 2026
-ERROR (OSSHNL-109): The cellview 'ECG_IA/ecg_ia6/schematic' has been modified since the last extraction. Validate
-that the schematic is correct and run Check and Save to correct this error.
-
-End netlisting Mar 11 06:22:07 2026
-ERROR (OSSHNL-514): Netlist generation failed because of the errors reported above. The netlist might not have been generated at all, or the generated netlist could be corrupt. Fix the reported errors and regenerate the netlist.
-      ...unsuccessful.
-
-*Error*   Error ID  = 5012
-*Error*   Error Msg = Failed to create netlist.
 
 
 

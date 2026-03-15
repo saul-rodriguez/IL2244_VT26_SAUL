@@ -7,16 +7,16 @@
 *Info*    Configuring the session ...
 
 	Library      = ECG_IA
-	Cell         = ecg_ia3
+	Cell         = ecg_tb
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = ECG_IA:ecg_ia1:1_none_Interactive.64
-	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia3/adexl/results/data/Interactive.64.rdb
-	Results Dir  = /home/saul/projects/AMS_35_V4_MINIMAL/Sim/ECG_IA/ecg_ia3/adexl/results/data/Interactive.64/1/ECG_IA:ecg_ia1:1
-	Results Loc  = /home/saul/projects/AMS_35_V4_MINIMAL/Sim/ECG_IA/ecg_ia3/adexl/results/data
-	Project Dir  = /home/saul/projects/AMS_35_V4_MINIMAL/Sim
-	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia3/adexl
+	State Name   = ECG_IA:ecg_ia_tb:1_none_Interactive.128
+	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_tb/adexl/results/data/Interactive.128.rdb
+	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data/Interactive.128/1/ECG_IA:ecg_ia_tb:1
+	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data
+	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
+	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_tb/adexl
 	File Encoding = 0
 
 
@@ -28,49 +28,59 @@
 
 
 
-*Info*    Run start for Point ID (10 1) on testbench [
-          ECG_IA:ecg_ia1:1 ].
+*Info*    Run start for Point ID (6 1) on testbench [
+          ECG_IA:ecg_ia_tb:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var VCM_AC = "0"
+Setting var FC = "2K"
+Setting var S0 = "1"
+Setting var S1 = "1"
+Setting var S2 = "0"
+Setting var T0 = "0"
+Setting var T1 = "0"
+Setting var T2 = "0"
+Setting var VCM_AC = "1"
 Setting var VCM_DC = "1.6"
+Setting var VDD = "3.3"
 Setting var VIN_AC = "1"
-Setting var VIN_DC = "0"
+Setting var VIN_AMP = "10m"
+Setting var VIN_DC = "10m"
+Setting var VIN_FREQ = "50"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/AMS_35_V4_MINIMAL/Sim/ECG_IA/ecg_ia3/adexl/results/data/Interactive.64/1/ECG_IA:ecg_ia1:1/netlist
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data/Interactive.128/1/ECG_IA:ecg_ia_tb:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/AMS_35_V4_MINIMAL/Sim/ECG_IA/ecg_ia3/adexl/results/data/Interactive.64/1/ECG_IA:ecg_ia1:1
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data/Interactive.128/1/ECG_IA:ecg_ia_tb:1
 
 
-*Info*    Creating Netlist for Point ID (10 1)
+*Info*    Creating Netlist for Point ID (6 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Mar  8 21:08:02 2026
-End netlisting Mar  8 21:08:02 2026
+Begin Incremental Netlisting Mar 13 12:11:13 2026
+WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.18/1/ECG_IA:ecg_vga_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
+Ensure that you have the write permission for the mentioned file.
 
-Netlisting Statistics:
-	Number of components:   38
+End netlisting Mar 13 12:11:13 2026
 
-	Elapsed time:          0.0s
-Errors: 0	Warnings: 0
+	The netlist is up to date.
+	Time taken to compare the design with netlist:   0.0s
       ...successful.
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ ECG_IA:ecg_ia1:1 ] for
-          Point ID (10 1).
+*Info*    Running simulation on testbench [ ECG_IA:ecg_ia_tb:1 ] for
+          Point ID (6 1).
 
-Delete psf data in /home/saul/projects/AMS_35_V4_MINIMAL/Sim/ECG_IA/ecg_ia3/adexl/results/data/Interactive.64/1/ECG_IA:ecg_ia1:1/psf.
+Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data/Interactive.128/1/ECG_IA:ecg_ia_tb:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -87,9 +97,25 @@ reading simulation data...
       ...successful.
 *Info*    Client has finished evaluating ... 
 
+ERROR (ADEXL-2709): Evaluation of output 'v /net2; pss mag(V)' returned 'nil' for point:'1' test:'ECG_IA:ecg_ia_tb:1'
+	Expression:'vh('pss "/net2")'.
+Ensure that the definition of output is correct.
 
-*Info*    Run complete for Point ID (10 1) on testbench [
-          ECG_IA:ecg_ia1:1 ].
+ERROR (ADEXL-2709): Evaluation of output 'v /VOUT; pss mag(V)' returned 'nil' for point:'1' test:'ECG_IA:ecg_ia_tb:1'
+	Expression:'vh('pss "/VOUT")'.
+Ensure that the definition of output is correct.
+
+WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data/Interactive.128/1/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data/Interactive.128/1/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+ERROR (ADEXL-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'1' test:'ECG_IA:ecg_ia_tb:1'
+	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
+	because of the following error(s)
+	*Error* expt: can't handle (nil**2).
+Ensure that the definition of output is correct.
+
+
+*Info*    Run complete for Point ID (6 1) on testbench [
+          ECG_IA:ecg_ia_tb:1 ].
 
 
 

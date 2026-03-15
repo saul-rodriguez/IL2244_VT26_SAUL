@@ -11,11 +11,11 @@
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = Noise_ECG_IA:ecg_ia_tb:1:1_state_Interactive.47
-	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.47.rdb
-	Results Dir  = /home/saul/projects/AMS_35_V4_MINIMAL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.47/1/Noise
-	Results Loc  = /home/saul/projects/AMS_35_V4_MINIMAL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data
-	Project Dir  = /home/saul/projects/AMS_35_V4_MINIMAL/Sim
+	State Name   = Noise_ECG_IA:ecg_ia_tb:1:1_state_Interactive.125
+	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.125.rdb
+	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.125/1/Noise
+	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data
+	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia_tb/adexl
 	File Encoding = 0
 
@@ -28,7 +28,7 @@
 
 
 
-*Info*    Run start for Point ID (54 1) on testbench [ Noise ].
+*Info*    Run start for Point ID (1 1) on testbench [ Noise ].
 
 Resetting statistical vars
 
@@ -46,34 +46,37 @@ Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/AMS_35_V4_MINIMAL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.47/1/Noise/netlist
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.125/1/Noise/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/AMS_35_V4_MINIMAL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.47/1/Noise
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.125/1/Noise
 
 
-*Info*    Creating Netlist for Point ID (54 1)
+*Info*    Creating Netlist for Point ID (1 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Mar  9 13:05:09 2026
-End netlisting Mar  9 13:05:09 2026
+Begin Incremental Netlisting Mar 13 20:49:46 2026
+WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.18/1/ECG_IA:ecg_vga_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
+Ensure that you have the write permission for the mentioned file.
+
+End netlisting Mar 13 20:49:46 2026
 
 Netlisting Statistics:
-	Number of components:   10
+	Number of components:   70
 
-	Elapsed time:          1.0s (10.00/s)
+	Elapsed time:          0.0s
 Errors: 0	Warnings: 0
       ...successful.
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ Noise ] for Point ID (54
+*Info*    Running simulation on testbench [ Noise ] for Point ID (1
           1).
 
-Delete psf data in /home/saul/projects/AMS_35_V4_MINIMAL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.47/1/Noise/psf.
+Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.125/1/Noise/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -90,20 +93,26 @@ reading simulation data...
       ...successful.
 *Info*    Client has finished evaluating ... 
 
-WARNING (OCN-6038): Results xf are not available for /home/saul/projects/AMS_35_V4_MINIMAL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.47/1/Noise. Use results() for a list of available results.
-WARNING (OCN-6038): Results xf are not available for /home/saul/projects/AMS_35_V4_MINIMAL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.47/1/Noise. Use results() for a list of available results.
+ERROR (ADEXL-2708): Evaluation of output 'transient_noise' failed for point:'1' test:'Noise'
+	Expression:'rms((VT("/VOUT") - average(VT("/VOUT"))))'
+	because of the following error(s)
+	*Error* difference: can't handle (nil - nil).
+Ensure that the definition of output is correct.
+
+WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.125/1/Noise/psf. Use results() for a list of available results.
+WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.125/1/Noise/psf. Use results() for a list of available results.
 ERROR (ADEXL-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'1' test:'Noise'
 	Expression:'db(getData("/V2" ?result "xf"))'.
 Ensure that the definition of output is correct.
 
-WARNING (OCN-6038): Results xf are not available for /home/saul/projects/AMS_35_V4_MINIMAL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.47/1/Noise. Use results() for a list of available results.
-WARNING (OCN-6038): Results xf are not available for /home/saul/projects/AMS_35_V4_MINIMAL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.47/1/Noise. Use results() for a list of available results.
+WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.125/1/Noise/psf. Use results() for a list of available results.
+WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_ia_tb/adexl/results/data/Interactive.125/1/Noise/psf. Use results() for a list of available results.
 ERROR (ADEXL-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'1' test:'Noise'
 	Expression:'db(getData("/V7" ?result "xf"))'.
 Ensure that the definition of output is correct.
 
 
-*Info*    Run complete for Point ID (54 1) on testbench [ Noise ].
+*Info*    Run complete for Point ID (1 1) on testbench [ Noise ].
 
 
 
