@@ -100,8 +100,62 @@
 					</model>
 				</models>
 			</corner>
-			<corner enabled="1">CMOS_CAP_VDD
+			<corner enabled="0">CMOS_CAP_VDD
 				<vars>
+					<var>VDD
+						<value>2.97 3.63</value>
+					</var>
+				</vars>
+				<models>
+					<model enabled="1">processOption.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
+						<modelsection></modelsection>
+					</model>
+					<model enabled="1">cmos53.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
+						<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+					</model>
+					<model enabled="1">res.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
+						<modelsection>"restm"</modelsection>
+					</model>
+					<model enabled="1">cap.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
+						<modelsection>"capwp" "capws"</modelsection>
+					</model>
+					<model enabled="1">bip.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
+						<modelsection>"biptm"</modelsection>
+					</model>
+					<model enabled="1">ind.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
+						<modelsection>"indtm"</modelsection>
+					</model>
+					<model enabled="1">esddiode.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
+						<modelsection>"esddiodetm"</modelsection>
+					</model>
+				</models>
+			</corner>
+			<corner enabled="1">CMOS_CAP_VDD_TEMP
+				<vars>
+					<var>temperature
+						<value>-40 85</value>
+					</var>
 					<var>VDD
 						<value>2.97 3.63</value>
 					</var>
@@ -202,7 +256,120 @@
 					<output>/VOUT
 						<evalType>point</evalType>
 					</output>
+					<output>/VOUT2
+						<evalType>point</evalType>
+					</output>
+					<output>Total noise
+						<evalType>point</evalType>
+					</output>
 				</outputs>
+			</test>
+			<test enabled="1">Linearity
+				<tool>ADE</tool>
+				<outputs>
+					<output>/VOUT
+						<evalType>point</evalType>
+					</output>
+					<output>/VOUT2
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+				<tooloptions>
+					<option>cell
+						<value>ecg_vga_tb</value>
+					</option>
+					<option>lib
+						<value>ECG_IA</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>state
+						<value>Linearity_active</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</tooloptions>
+				<prerunscript>0</prerunscript>
+				<origoptions>
+					<option>cell
+						<value>ecg_vga_tb</value>
+					</option>
+					<option>lib
+						<value>ECG_IA</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>state
+						<value>ECG_IA:ecg_vga_tb:1:1_state</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+			</test>
+			<test enabled="1">MC
+				<tool>ADE</tool>
+				<outputs>
+					<output>/VOUT
+						<evalType>point</evalType>
+					</output>
+					<output>/VOUT2
+						<evalType>point</evalType>
+					</output>
+					<output>Total Noise
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+				<tooloptions>
+					<option>cell
+						<value>ecg_vga_tb</value>
+					</option>
+					<option>lib
+						<value>ECG_IA</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>state
+						<value>MC_active</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</tooloptions>
+				<prerunscript>0</prerunscript>
+				<origoptions>
+					<option>cell
+						<value>ecg_vga_tb</value>
+					</option>
+					<option>lib
+						<value>ECG_IA</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>state
+						<value>ECG_IA:ecg_vga_tb:1:1_state</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
 			</test>
 		</tests>
 		<vars>
@@ -210,43 +377,63 @@
 				<value>3.3</value>
 				<dependentTests>
 					<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+					<dependentTest enabled="1">Linearity</dependentTest>
+					<dependentTest enabled="1">MC</dependentTest>
 				</dependentTests>
 			</var>
-			<var>S0
+			<var enabled="1">S0
 				<value>3.3</value>
 				<dependentTests>
 					<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+					<dependentTest enabled="0">Linearity</dependentTest>
+					<dependentTest enabled="1">MC</dependentTest>
 				</dependentTests>
 			</var>
-			<var>S1
+			<var enabled="1">S1
 				<value>3.3</value>
 				<dependentTests>
 					<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+					<dependentTest enabled="0">Linearity</dependentTest>
+					<dependentTest enabled="1">MC</dependentTest>
 				</dependentTests>
 			</var>
-			<var>S2
+			<var enabled="1">S2
 				<value>3.3</value>
 				<dependentTests>
 					<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+					<dependentTest enabled="0">Linearity</dependentTest>
+					<dependentTest enabled="1">MC</dependentTest>
 				</dependentTests>
 			</var>
-			<var>VIN_STEP
+			<var enabled="0">VIN_STEP
 				<value>0</value>
 				<dependentTests>
 					<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+					<dependentTest enabled="1">Linearity</dependentTest>
+					<dependentTest enabled="1">MC</dependentTest>
 				</dependentTests>
 			</var>
-			<var>VIN_AMP
+			<var enabled="0">VIN_AMP
 				<value>80m</value>
 				<dependentTests>
-					<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+					<dependentTest enabled="0" omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+					<dependentTest enabled="1">Linearity</dependentTest>
+					<dependentTest enabled="0">MC</dependentTest>
+				</dependentTests>
+			</var>
+			<var enabled="1">VIN_FREQ
+				<value>1k</value>
+				<dependentTests>
+					<dependentTest enabled="1" omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+					<dependentTest enabled="0">Linearity</dependentTest>
+					<dependentTest enabled="1">MC</dependentTest>
 				</dependentTests>
 			</var>
 		</vars>
 		<overwritehistoryname>Interactive.0</overwritehistoryname>
 		<plottingoptions>
 			<plottingoption>plottingmode
-				<value>Append</value>
+				<value>New Win</value>
 			</plottingoption>
 			<plottingoption>plottype
 				<value>None</value>
@@ -272,9 +459,62 @@
 		</plottingoptions>
 		<jobpolicyname>ADE XL Default</jobpolicyname>
 		<allcornersenabled>0</allcornersenabled>
+		<disabledtests>
+			<test>Linearity</test>
+			<test>MC</test>
+		</disabledtests>
+		<runoptions>
+			<mode>Monte Carlo Sampling
+				<runoption>mcmethod
+					<value>all</value>
+				</runoption>
+				<runoption>mcnumpoints
+					<value>50</value>
+				</runoption>
+				<runoption>mcnumbins
+					<value></value>
+				</runoption>
+				<runoption>mcStopEarly
+					<value>0</value>
+				</runoption>
+				<runoption>mcStopMethod
+					<value>Significance Test</value>
+				</runoption>
+				<runoption>samplingmode
+					<value>lds</value>
+				</runoption>
+				<runoption>saveprocess
+					<value>0</value>
+				</runoption>
+				<runoption>savemismatch
+					<value>0</value>
+				</runoption>
+				<runoption>parasiticanalysis
+					<value>0</value>
+				</runoption>
+				<runoption>mcreferencepoint
+					<value>0</value>
+				</runoption>
+				<runoption>donominal
+					<value>1</value>
+				</runoption>
+				<runoption>saveallplots
+					<value>1</value>
+				</runoption>
+				<runoption>montecarloseed
+					<value></value>
+				</runoption>
+				<runoption>mcstartingrunnumber
+					<value></value>
+				</runoption>
+				<runoption>dumpParamMode
+					<value>no</value>
+				</runoption>
+			</mode>
+		</runoptions>
 	</active>
 	<history>History
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.88
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.181
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -456,7 +696,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>ECG_IA:ecg_vga_tb:1_none_Interactive.88</value>
+								<value>ECG_IA:ecg_vga_tb:1_none_Interactive.181</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -477,262 +717,21 @@
 							<output>/VOUT
 								<evalType>point</evalType>
 							</output>
+							<output>/VOUT2
+								<evalType>point</evalType>
+							</output>
 						</outputs>
 					</test>
-				</tests>
-				<vars>
-					<var>VDD
-						<value>3.3</value>
-						<dependentTests>
-							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>S0
-						<value>3.3</value>
-						<dependentTests>
-							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>S1
-						<value>3.3</value>
-						<dependentTests>
-							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>S2
-						<value>3.3</value>
-						<dependentTests>
-							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_STEP
-						<value>10m</value>
-						<dependentTests>
-							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AMP
-						<value>0</value>
-						<dependentTests>
-							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottingmode
-						<value>Append</value>
-					</plottingoption>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>useMaestroPlottingTemplate
-						<value>yes</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>distributedplot_enabled
-						<value>no</value>
-					</plottingoption>
-				</plottingoptions>
-				<jobpolicyname>ADE XL Default</jobpolicyname>
-				<allcornersenabled>0</allcornersenabled>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Mar 13 16:22:00 2026</timestamp>
-			<uuid>{499413b9-9b56-436f-a33c-2dc58a6df613}</uuid>
-			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.88.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.88.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/edatools_saul_162200238</localpsfdir>
-			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.88</psfdir>
-			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.88</simdir>
-			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.88.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.88.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.89
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-					<corner enabled="0">CMOS
-						<models>
-							<model enabled="1">processOption.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
-								<modelsection></modelsection>
-							</model>
-							<model enabled="1">cmos53.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
-								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
-							</model>
-							<model enabled="1">res.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
-								<modelsection>"restm"</modelsection>
-							</model>
-							<model enabled="1">cap.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
-								<modelsection>"captm"</modelsection>
-							</model>
-							<model enabled="1">bip.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
-								<modelsection>"biptm"</modelsection>
-							</model>
-							<model enabled="1">ind.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
-								<modelsection>"indtm"</modelsection>
-							</model>
-							<model enabled="1">esddiode.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
-								<modelsection>"esddiodetm"</modelsection>
-							</model>
-						</models>
-					</corner>
-					<corner enabled="0">CMOS_VDD
-						<vars>
-							<var>VDD
-								<value>2.97 3.63</value>
-							</var>
-						</vars>
-						<models>
-							<model enabled="1">processOption.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
-								<modelsection></modelsection>
-							</model>
-							<model enabled="1">cmos53.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
-								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
-							</model>
-							<model enabled="1">res.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
-								<modelsection>"restm"</modelsection>
-							</model>
-							<model enabled="1">cap.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
-								<modelsection>"captm"</modelsection>
-							</model>
-							<model enabled="1">bip.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
-								<modelsection>"biptm"</modelsection>
-							</model>
-							<model enabled="1">ind.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
-								<modelsection>"indtm"</modelsection>
-							</model>
-							<model enabled="1">esddiode.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
-								<modelsection>"esddiodetm"</modelsection>
-							</model>
-						</models>
-					</corner>
-					<corner enabled="1">CMOS_CAP_VDD
-						<vars>
-							<var>VDD
-								<value>2.97 3.63</value>
-							</var>
-						</vars>
-						<models>
-							<model enabled="1">processOption.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
-								<modelsection></modelsection>
-							</model>
-							<model enabled="1">cmos53.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
-								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
-							</model>
-							<model enabled="1">res.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
-								<modelsection>"restm"</modelsection>
-							</model>
-							<model enabled="1">cap.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
-								<modelsection>"capwp" "capws"</modelsection>
-							</model>
-							<model enabled="1">bip.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
-								<modelsection>"biptm"</modelsection>
-							</model>
-							<model enabled="1">ind.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
-								<modelsection>"indtm"</modelsection>
-							</model>
-							<model enabled="1">esddiode.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
-								<modelsection>"esddiodetm"</modelsection>
-							</model>
-						</models>
-					</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">ECG_IA:ecg_vga_tb:1
+					<test enabled="1">Linearity
 						<tool>ADE</tool>
+						<outputs>
+							<output>/VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>/VOUT2
+								<evalType>point</evalType>
+							</output>
+						</outputs>
 						<tooloptions>
 							<option>cell
 								<value>ecg_vga_tb</value>
@@ -740,19 +739,20 @@
 							<option>lib
 								<value>ECG_IA</value>
 							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
 							<option>sim
 								<value>spectre</value>
+							</option>
+							<option>state
+								<value>Linearity_ECG_IA:ecg_vga_tb:1:1_state_Interactive.181</value>
 							</option>
 							<option>view
 								<value>schematic</value>
 							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>ECG_IA:ecg_vga_tb:1_none_Interactive.89</value>
-							</option>
 						</tooloptions>
+						<prerunscript>0</prerunscript>
 						<origoptions>
 							<option>cell
 								<value>ecg_vga_tb</value>
@@ -760,312 +760,19 @@
 							<option>lib
 								<value>ECG_IA</value>
 							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>/VOUT
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-				</tests>
-				<vars>
-					<var>VDD
-						<value>3.3</value>
-						<dependentTests>
-							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>S0
-						<value>3.3</value>
-						<dependentTests>
-							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>S1
-						<value>3.3</value>
-						<dependentTests>
-							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>S2
-						<value>3.3</value>
-						<dependentTests>
-							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_STEP
-						<value>0</value>
-						<dependentTests>
-							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AMP
-						<value>100m</value>
-						<dependentTests>
-							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottingmode
-						<value>Append</value>
-					</plottingoption>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>useMaestroPlottingTemplate
-						<value>yes</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>distributedplot_enabled
-						<value>no</value>
-					</plottingoption>
-				</plottingoptions>
-				<jobpolicyname>ADE XL Default</jobpolicyname>
-				<allcornersenabled>0</allcornersenabled>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Mar 13 16:26:51 2026</timestamp>
-			<uuid>{e8f39e6e-d5dd-4c3c-aac9-3903503ddaca}</uuid>
-			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.89.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.89.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/edatools_saul_162651263</localpsfdir>
-			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.89</psfdir>
-			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.89</simdir>
-			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.89.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.89.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.90
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-					<corner enabled="0">CMOS
-						<models>
-							<model enabled="1">processOption.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
-								<modelsection></modelsection>
-							</model>
-							<model enabled="1">cmos53.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
-								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
-							</model>
-							<model enabled="1">res.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
-								<modelsection>"restm"</modelsection>
-							</model>
-							<model enabled="1">cap.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
-								<modelsection>"captm"</modelsection>
-							</model>
-							<model enabled="1">bip.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
-								<modelsection>"biptm"</modelsection>
-							</model>
-							<model enabled="1">ind.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
-								<modelsection>"indtm"</modelsection>
-							</model>
-							<model enabled="1">esddiode.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
-								<modelsection>"esddiodetm"</modelsection>
-							</model>
-						</models>
-					</corner>
-					<corner enabled="0">CMOS_VDD
-						<vars>
-							<var>VDD
-								<value>2.97 3.63</value>
-							</var>
-						</vars>
-						<models>
-							<model enabled="1">processOption.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
-								<modelsection></modelsection>
-							</model>
-							<model enabled="1">cmos53.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
-								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
-							</model>
-							<model enabled="1">res.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
-								<modelsection>"restm"</modelsection>
-							</model>
-							<model enabled="1">cap.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
-								<modelsection>"captm"</modelsection>
-							</model>
-							<model enabled="1">bip.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
-								<modelsection>"biptm"</modelsection>
-							</model>
-							<model enabled="1">ind.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
-								<modelsection>"indtm"</modelsection>
-							</model>
-							<model enabled="1">esddiode.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
-								<modelsection>"esddiodetm"</modelsection>
-							</model>
-						</models>
-					</corner>
-					<corner enabled="1">CMOS_CAP_VDD
-						<vars>
-							<var>VDD
-								<value>2.97 3.63</value>
-							</var>
-						</vars>
-						<models>
-							<model enabled="1">processOption.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
-								<modelsection></modelsection>
-							</model>
-							<model enabled="1">cmos53.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
-								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
-							</model>
-							<model enabled="1">res.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
-								<modelsection>"restm"</modelsection>
-							</model>
-							<model enabled="1">cap.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
-								<modelsection>"capwp" "capws"</modelsection>
-							</model>
-							<model enabled="1">bip.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
-								<modelsection>"biptm"</modelsection>
-							</model>
-							<model enabled="1">ind.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
-								<modelsection>"indtm"</modelsection>
-							</model>
-							<model enabled="1">esddiode.scs
-								<modeltest>All</modeltest>
-								<modelblock>Global</modelblock>
-								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
-								<modelsection>"esddiodetm"</modelsection>
-							</model>
-						</models>
-					</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">ECG_IA:ecg_vga_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>ecg_vga_tb</value>
-							</option>
-							<option>lib
-								<value>ECG_IA</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
 							<option>path
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
-							<option>state
-								<value>ECG_IA:ecg_vga_tb:1_none_Interactive.90</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>ecg_vga_tb</value>
-							</option>
-							<option>lib
-								<value>ECG_IA</value>
-							</option>
 							<option>sim
 								<value>spectre</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_vga_tb:1:1_state</value>
 							</option>
 							<option>view
 								<value>schematic</value>
 							</option>
 						</origoptions>
-						<outputs>
-							<output>/VOUT
-								<evalType>point</evalType>
-							</output>
-						</outputs>
 					</test>
 				</tests>
 				<vars>
@@ -1073,36 +780,49 @@
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
 						</dependentTests>
 					</var>
-					<var>S0
+					<var enabled="1">S0
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
 						</dependentTests>
 					</var>
-					<var>S1
+					<var enabled="1">S1
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
 						</dependentTests>
 					</var>
-					<var>S2
+					<var enabled="1">S2
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VIN_STEP
+					<var enabled="0">VIN_STEP
 						<value>0</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VIN_AMP
+					<var enabled="0">VIN_AMP
 						<value>80m</value>
 						<dependentTests>
-							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0" omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">VIN_FREQ
+						<value>1k</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -1135,28 +855,31 @@
 				</plottingoptions>
 				<jobpolicyname>ADE XL Default</jobpolicyname>
 				<allcornersenabled>0</allcornersenabled>
+				<disabledtests>
+					<test>Linearity</test>
+				</disabledtests>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Mar 13 16:27:07 2026</timestamp>
-			<uuid>{8a746eb3-b0de-4e32-838d-ff5f23413697}</uuid>
-			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.90.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.90.rdb</simresults>
+			<timestamp>Mar 17 06:30:19 2026</timestamp>
+			<uuid>{60da9197-d05e-4d04-ae07-a344fa9e09af}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.181.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.181.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/edatools_saul_162707853</localpsfdir>
-			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.90</psfdir>
-			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.90</simdir>
+			<localpsfdir>/tmp/edatools_saul_063019590</localpsfdir>
+			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.181</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.181</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.90.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.90.log</runlogfile>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.181.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.181.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.91
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.182
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -1338,7 +1061,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>ECG_IA:ecg_vga_tb:1_none_Interactive.91</value>
+								<value>ECG_IA:ecg_vga_tb:1_none_Interactive.182</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -1359,7 +1082,62 @@
 							<output>/VOUT
 								<evalType>point</evalType>
 							</output>
+							<output>/VOUT2
+								<evalType>point</evalType>
+							</output>
 						</outputs>
+					</test>
+					<test enabled="1">Linearity
+						<tool>ADE</tool>
+						<outputs>
+							<output>/VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>/VOUT2
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>Linearity_ECG_IA:ecg_vga_tb:1:1_state_Interactive.182</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_vga_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
 					</test>
 				</tests>
 				<vars>
@@ -1367,36 +1145,49 @@
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
 						</dependentTests>
 					</var>
-					<var>S0
+					<var enabled="1">S0
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
 						</dependentTests>
 					</var>
-					<var>S1
+					<var enabled="1">S1
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
 						</dependentTests>
 					</var>
-					<var>S2
+					<var enabled="1">S2
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VIN_STEP
+					<var enabled="0">VIN_STEP
 						<value>0</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VIN_AMP
+					<var enabled="0">VIN_AMP
 						<value>80m</value>
 						<dependentTests>
-							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0" omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">VIN_FREQ
+						<value>1k</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -1429,28 +1220,31 @@
 				</plottingoptions>
 				<jobpolicyname>ADE XL Default</jobpolicyname>
 				<allcornersenabled>0</allcornersenabled>
+				<disabledtests>
+					<test>Linearity</test>
+				</disabledtests>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Mar 13 16:29:07 2026</timestamp>
-			<uuid>{743f7711-a581-445c-94f2-ea5999c84abe}</uuid>
-			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.91.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.91.rdb</simresults>
+			<timestamp>Mar 17 08:33:51 2026</timestamp>
+			<uuid>{615079dc-4c40-41ac-9961-974c657433a5}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.182.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.182.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/edatools_saul_162907623</localpsfdir>
-			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.91</psfdir>
-			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.91</simdir>
+			<localpsfdir>/tmp/edatools_saul_083351297</localpsfdir>
+			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.182</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.182</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.91.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.91.log</runlogfile>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.182.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.182.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.92
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.183
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -1602,6 +1396,60 @@
 							</model>
 						</models>
 					</corner>
+					<corner enabled="1">CMOS_CAP_VDD_TEMP
+						<vars>
+							<var>temperature
+								<value>-40 85</value>
+							</var>
+							<var>VDD
+								<value>2.97 3.63</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
+								<modelsection>"capwp" "capws"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
 				</corners>
 				<extensions>
 					<extension>Parasitics
@@ -1632,7 +1480,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>ECG_IA:ecg_vga_tb:1_none_Interactive.92</value>
+								<value>ECG_IA:ecg_vga_tb:1_none_Interactive.183</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -1653,7 +1501,62 @@
 							<output>/VOUT
 								<evalType>point</evalType>
 							</output>
+							<output>/VOUT2
+								<evalType>point</evalType>
+							</output>
 						</outputs>
+					</test>
+					<test enabled="1">Linearity
+						<tool>ADE</tool>
+						<outputs>
+							<output>/VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>/VOUT2
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>Linearity_ECG_IA:ecg_vga_tb:1:1_state_Interactive.183</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_vga_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
 					</test>
 				</tests>
 				<vars>
@@ -1661,36 +1564,49 @@
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
 						</dependentTests>
 					</var>
-					<var>S0
+					<var enabled="1">S0
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
 						</dependentTests>
 					</var>
-					<var>S1
+					<var enabled="1">S1
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
 						</dependentTests>
 					</var>
-					<var>S2
+					<var enabled="1">S2
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VIN_STEP
+					<var enabled="0">VIN_STEP
 						<value>0</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VIN_AMP
+					<var enabled="0">VIN_AMP
 						<value>80m</value>
 						<dependentTests>
-							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0" omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">VIN_FREQ
+						<value>1k</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -1723,28 +1639,31 @@
 				</plottingoptions>
 				<jobpolicyname>ADE XL Default</jobpolicyname>
 				<allcornersenabled>0</allcornersenabled>
+				<disabledtests>
+					<test>Linearity</test>
+				</disabledtests>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Mar 13 16:33:28 2026</timestamp>
-			<uuid>{e31c3a1b-1bfe-4282-89d7-4b14a81b2753}</uuid>
-			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.92.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.92.rdb</simresults>
+			<timestamp>Mar 17 08:34:49 2026</timestamp>
+			<uuid>{afbabdda-5814-41a1-86f4-58937b73e668}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.183.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.183.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/edatools_saul_163328188</localpsfdir>
-			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.92</psfdir>
-			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.92</simdir>
+			<localpsfdir>/tmp/edatools_saul_083449684</localpsfdir>
+			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.183</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.183</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.92.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.92.log</runlogfile>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.183.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.183.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.93
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.184
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -1845,8 +1764,62 @@
 							</model>
 						</models>
 					</corner>
-					<corner enabled="1">CMOS_CAP_VDD
+					<corner enabled="0">CMOS_CAP_VDD
 						<vars>
+							<var>VDD
+								<value>2.97 3.63</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
+								<modelsection>"capwp" "capws"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">CMOS_CAP_VDD_TEMP
+						<vars>
+							<var>temperature
+								<value>-40 85</value>
+							</var>
 							<var>VDD
 								<value>2.97 3.63</value>
 							</var>
@@ -1926,7 +1899,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>ECG_IA:ecg_vga_tb:1_none_Interactive.93</value>
+								<value>ECG_IA:ecg_vga_tb:1_none_Interactive.184</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -1947,7 +1920,62 @@
 							<output>/VOUT
 								<evalType>point</evalType>
 							</output>
+							<output>/VOUT2
+								<evalType>point</evalType>
+							</output>
 						</outputs>
+					</test>
+					<test enabled="1">Linearity
+						<tool>ADE</tool>
+						<outputs>
+							<output>/VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>/VOUT2
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>Linearity_ECG_IA:ecg_vga_tb:1:1_state_Interactive.184</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_vga_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
 					</test>
 				</tests>
 				<vars>
@@ -1955,36 +1983,49 @@
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
 						</dependentTests>
 					</var>
-					<var>S0
+					<var enabled="1">S0
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
 						</dependentTests>
 					</var>
-					<var>S1
+					<var enabled="1">S1
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
 						</dependentTests>
 					</var>
-					<var>S2
+					<var enabled="1">S2
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VIN_STEP
+					<var enabled="0">VIN_STEP
 						<value>0</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VIN_AMP
+					<var enabled="0">VIN_AMP
 						<value>80m</value>
 						<dependentTests>
-							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0" omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">VIN_FREQ
+						<value>1k</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -2016,29 +2057,32 @@
 					</plottingoption>
 				</plottingoptions>
 				<jobpolicyname>ADE XL Default</jobpolicyname>
-				<allcornersenabled>0</allcornersenabled>
+				<allcornersenabled>1</allcornersenabled>
+				<disabledtests>
+					<test>Linearity</test>
+				</disabledtests>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Mar 13 16:35:57 2026</timestamp>
-			<uuid>{d0d2965c-f86e-4208-95ab-52afcc89621a}</uuid>
-			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.93.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.93.rdb</simresults>
+			<timestamp>Mar 17 08:35:00 2026</timestamp>
+			<uuid>{f25afd39-f120-460f-b3cf-af6120bafc7d}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.184.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.184.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/edatools_saul_163557396</localpsfdir>
-			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.93</psfdir>
-			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.93</simdir>
+			<localpsfdir>/tmp/edatools_saul_083500718</localpsfdir>
+			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.184</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.184</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.93.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.93.log</runlogfile>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.184.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.184.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.94
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">MonteCarlo.0
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -2139,8 +2183,62 @@
 							</model>
 						</models>
 					</corner>
-					<corner enabled="1">CMOS_CAP_VDD
+					<corner enabled="0">CMOS_CAP_VDD
 						<vars>
+							<var>VDD
+								<value>2.97 3.63</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
+								<modelsection>"capwp" "capws"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">CMOS_CAP_VDD_TEMP
+						<vars>
+							<var>temperature
+								<value>-40 85</value>
+							</var>
 							<var>VDD
 								<value>2.97 3.63</value>
 							</var>
@@ -2198,7 +2296,7 @@
 						<icontype></icontype>
 					</extension>
 				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<currentmode>Monte Carlo Sampling</currentmode>
 				<overwritehistory>0</overwritehistory>
 				<tests>
 					<test enabled="1">ECG_IA:ecg_vga_tb:1
@@ -2220,7 +2318,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>ECG_IA:ecg_vga_tb:1_none_Interactive.94</value>
+								<value>ECG_IA:ecg_vga_tb:1_none_MonteCarlo.0</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -2241,7 +2339,114 @@
 							<output>/VOUT
 								<evalType>point</evalType>
 							</output>
+							<output>/VOUT2
+								<evalType>point</evalType>
+							</output>
 						</outputs>
+					</test>
+					<test enabled="1">Linearity
+						<tool>ADE</tool>
+						<outputs>
+							<output>/VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>/VOUT2
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>Linearity_ECG_IA:ecg_vga_tb:1:1_state_MonteCarlo.0</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_vga_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">MC
+						<tool>ADE</tool>
+						<outputs>
+							<output>/VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>/VOUT2
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>MC_ECG_IA:ecg_vga_tb:1:1_state_MonteCarlo.0</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_vga_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
 					</test>
 				</tests>
 				<vars>
@@ -2249,36 +2454,56 @@
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
 						</dependentTests>
 					</var>
-					<var>S0
+					<var enabled="1">S0
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
 						</dependentTests>
 					</var>
-					<var>S1
+					<var enabled="1">S1
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
 						</dependentTests>
 					</var>
-					<var>S2
+					<var enabled="1">S2
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VIN_STEP
+					<var enabled="0">VIN_STEP
 						<value>0</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VIN_AMP
+					<var enabled="0">VIN_AMP
 						<value>80m</value>
 						<dependentTests>
-							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0" omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
+							<dependentTest enabled="0">MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">VIN_FREQ
+						<value>1k</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -2311,28 +2536,81 @@
 				</plottingoptions>
 				<jobpolicyname>ADE XL Default</jobpolicyname>
 				<allcornersenabled>0</allcornersenabled>
+				<disabledtests>
+					<test>Linearity</test>
+					<test>ECG_IA:ecg_vga_tb:1</test>
+				</disabledtests>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>50</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcStopMethod
+							<value>Significance Test</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>lds</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>0</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>0</value>
+						</runoption>
+						<runoption>parasiticanalysis
+							<value>0</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>1</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dumpParamMode
+							<value>no</value>
+						</runoption>
+					</mode>
+				</runoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Mar 13 16:37:20 2026</timestamp>
-			<uuid>{e2bd0e88-d3e5-463b-a45e-eaef9ff3326c}</uuid>
-			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.94.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.94.rdb</simresults>
+			<timestamp>Mar 17 08:41:40 2026</timestamp>
+			<uuid>{90f864ed-4d50-428d-99a4-23852c51c093}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/MonteCarlo.0.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/MonteCarlo.0.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/edatools_saul_163720252</localpsfdir>
-			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.94</psfdir>
-			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.94</simdir>
+			<localpsfdir>/tmp/edatools_saul_084140744</localpsfdir>
+			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/MonteCarlo.0</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_vga_tb/adexl/results/data/MonteCarlo.0</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.94.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.94.log</runlogfile>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/MonteCarlo.0.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/MonteCarlo.0.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.95
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">MonteCarlo.1
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -2433,8 +2711,62 @@
 							</model>
 						</models>
 					</corner>
-					<corner enabled="1">CMOS_CAP_VDD
+					<corner enabled="0">CMOS_CAP_VDD
 						<vars>
+							<var>VDD
+								<value>2.97 3.63</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
+								<modelsection>"capwp" "capws"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">CMOS_CAP_VDD_TEMP
+						<vars>
+							<var>temperature
+								<value>-40 85</value>
+							</var>
 							<var>VDD
 								<value>2.97 3.63</value>
 							</var>
@@ -2492,7 +2824,7 @@
 						<icontype></icontype>
 					</extension>
 				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<currentmode>Monte Carlo Sampling</currentmode>
 				<overwritehistory>0</overwritehistory>
 				<tests>
 					<test enabled="1">ECG_IA:ecg_vga_tb:1
@@ -2514,7 +2846,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>ECG_IA:ecg_vga_tb:1_none_Interactive.95</value>
+								<value>ECG_IA:ecg_vga_tb:1_none_MonteCarlo.1</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -2535,7 +2867,114 @@
 							<output>/VOUT
 								<evalType>point</evalType>
 							</output>
+							<output>/VOUT2
+								<evalType>point</evalType>
+							</output>
 						</outputs>
+					</test>
+					<test enabled="1">Linearity
+						<tool>ADE</tool>
+						<outputs>
+							<output>/VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>/VOUT2
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>Linearity_ECG_IA:ecg_vga_tb:1:1_state_MonteCarlo.1</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_vga_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">MC
+						<tool>ADE</tool>
+						<outputs>
+							<output>/VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>/VOUT2
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>MC_ECG_IA:ecg_vga_tb:1:1_state_MonteCarlo.1</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_vga_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
 					</test>
 				</tests>
 				<vars>
@@ -2543,36 +2982,56 @@
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
 						</dependentTests>
 					</var>
-					<var>S0
+					<var enabled="1">S0
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
 						</dependentTests>
 					</var>
-					<var>S1
+					<var enabled="1">S1
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
 						</dependentTests>
 					</var>
-					<var>S2
+					<var enabled="1">S2
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VIN_STEP
+					<var enabled="0">VIN_STEP
 						<value>0</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VIN_AMP
+					<var enabled="0">VIN_AMP
 						<value>80m</value>
 						<dependentTests>
-							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0" omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
+							<dependentTest enabled="0">MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">VIN_FREQ
+						<value>1k</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -2605,28 +3064,81 @@
 				</plottingoptions>
 				<jobpolicyname>ADE XL Default</jobpolicyname>
 				<allcornersenabled>0</allcornersenabled>
+				<disabledtests>
+					<test>Linearity</test>
+					<test>ECG_IA:ecg_vga_tb:1</test>
+				</disabledtests>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>50</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcStopMethod
+							<value>Significance Test</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>lds</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>0</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>0</value>
+						</runoption>
+						<runoption>parasiticanalysis
+							<value>0</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>1</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dumpParamMode
+							<value>no</value>
+						</runoption>
+					</mode>
+				</runoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Mar 13 16:38:37 2026</timestamp>
-			<uuid>{d508965e-2391-4394-9acc-e7a07375cce1}</uuid>
-			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.95.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.95.rdb</simresults>
+			<timestamp>Mar 17 08:43:20 2026</timestamp>
+			<uuid>{e2b23348-7711-4f5c-a58a-061d5931e3e5}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/MonteCarlo.1.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/MonteCarlo.1.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/edatools_saul_163837597</localpsfdir>
-			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.95</psfdir>
-			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.95</simdir>
+			<localpsfdir>/tmp/edatools_saul_084320429</localpsfdir>
+			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/MonteCarlo.1</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_vga_tb/adexl/results/data/MonteCarlo.1</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.95.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.95.log</runlogfile>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/MonteCarlo.1.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/MonteCarlo.1.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.96
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.185
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -2727,8 +3239,62 @@
 							</model>
 						</models>
 					</corner>
-					<corner enabled="1">CMOS_CAP_VDD
+					<corner enabled="0">CMOS_CAP_VDD
 						<vars>
+							<var>VDD
+								<value>2.97 3.63</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
+								<modelsection>"capwp" "capws"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">CMOS_CAP_VDD_TEMP
+						<vars>
+							<var>temperature
+								<value>-40 85</value>
+							</var>
 							<var>VDD
 								<value>2.97 3.63</value>
 							</var>
@@ -2808,7 +3374,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>ECG_IA:ecg_vga_tb:1_none_Interactive.96</value>
+								<value>ECG_IA:ecg_vga_tb:1_none_Interactive.185</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -2829,7 +3395,114 @@
 							<output>/VOUT
 								<evalType>point</evalType>
 							</output>
+							<output>/VOUT2
+								<evalType>point</evalType>
+							</output>
 						</outputs>
+					</test>
+					<test enabled="1">Linearity
+						<tool>ADE</tool>
+						<outputs>
+							<output>/VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>/VOUT2
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>Linearity_ECG_IA:ecg_vga_tb:1:1_state_Interactive.185</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_vga_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">MC
+						<tool>ADE</tool>
+						<outputs>
+							<output>/VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>/VOUT2
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>MC_ECG_IA:ecg_vga_tb:1:1_state_Interactive.185</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_vga_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
 					</test>
 				</tests>
 				<vars>
@@ -2837,43 +3510,63 @@
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
 						</dependentTests>
 					</var>
-					<var>S0
+					<var enabled="1">S0
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
 						</dependentTests>
 					</var>
-					<var>S1
+					<var enabled="1">S1
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
 						</dependentTests>
 					</var>
-					<var>S2
+					<var enabled="1">S2
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VIN_STEP
+					<var enabled="0">VIN_STEP
 						<value>0</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VIN_AMP
+					<var enabled="0">VIN_AMP
 						<value>80m</value>
 						<dependentTests>
-							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0" omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
+							<dependentTest enabled="0">MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">VIN_FREQ
+						<value>1k</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
 				<overwritehistoryname>Interactive.0</overwritehistoryname>
 				<plottingoptions>
 					<plottingoption>plottingmode
-						<value>Append</value>
+						<value>New Win</value>
 					</plottingoption>
 					<plottingoption>plottype
 						<value>None</value>
@@ -2899,28 +3592,81 @@
 				</plottingoptions>
 				<jobpolicyname>ADE XL Default</jobpolicyname>
 				<allcornersenabled>0</allcornersenabled>
+				<disabledtests>
+					<test>Linearity</test>
+					<test>ECG_IA:ecg_vga_tb:1</test>
+				</disabledtests>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>50</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcStopMethod
+							<value>Significance Test</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>lds</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>0</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>0</value>
+						</runoption>
+						<runoption>parasiticanalysis
+							<value>0</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>1</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dumpParamMode
+							<value>no</value>
+						</runoption>
+					</mode>
+				</runoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Mar 13 16:44:04 2026</timestamp>
-			<uuid>{1592a80b-6be5-4c52-a4ec-2a7831dd20d4}</uuid>
-			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.96.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.96.rdb</simresults>
+			<timestamp>Mar 17 08:49:24 2026</timestamp>
+			<uuid>{26b51049-a062-45f3-bbe8-dfbe21e7dd22}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.185.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.185.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/edatools_saul_164404193</localpsfdir>
-			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.96</psfdir>
-			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.96</simdir>
+			<localpsfdir>/tmp/edatools_saul_084924640</localpsfdir>
+			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.185</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.185</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.96.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.96.log</runlogfile>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.185.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.185.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.97
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.186
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -3021,8 +3767,62 @@
 							</model>
 						</models>
 					</corner>
-					<corner enabled="1">CMOS_CAP_VDD
+					<corner enabled="0">CMOS_CAP_VDD
 						<vars>
+							<var>VDD
+								<value>2.97 3.63</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
+								<modelsection>"capwp" "capws"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">CMOS_CAP_VDD_TEMP
+						<vars>
+							<var>temperature
+								<value>-40 85</value>
+							</var>
 							<var>VDD
 								<value>2.97 3.63</value>
 							</var>
@@ -3102,7 +3902,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>ECG_IA:ecg_vga_tb:1_none_Interactive.97</value>
+								<value>ECG_IA:ecg_vga_tb:1_none_Interactive.186</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -3123,7 +3923,120 @@
 							<output>/VOUT
 								<evalType>point</evalType>
 							</output>
+							<output>/VOUT2
+								<evalType>point</evalType>
+							</output>
+							<output>Total noise
+								<evalType>point</evalType>
+							</output>
 						</outputs>
+					</test>
+					<test enabled="1">Linearity
+						<tool>ADE</tool>
+						<outputs>
+							<output>/VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>/VOUT2
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>Linearity_ECG_IA:ecg_vga_tb:1:1_state_Interactive.186</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_vga_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">MC
+						<tool>ADE</tool>
+						<outputs>
+							<output>/VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>/VOUT2
+								<evalType>point</evalType>
+							</output>
+							<output>Total Noise
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>MC_ECG_IA:ecg_vga_tb:1:1_state_Interactive.186</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_vga_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
 					</test>
 				</tests>
 				<vars>
@@ -3131,43 +4044,63 @@
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
 						</dependentTests>
 					</var>
-					<var>S0
+					<var enabled="1">S0
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
 						</dependentTests>
 					</var>
-					<var>S1
+					<var enabled="1">S1
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
 						</dependentTests>
 					</var>
-					<var>S2
+					<var enabled="1">S2
 						<value>3.3</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VIN_STEP
+					<var enabled="0">VIN_STEP
 						<value>0</value>
 						<dependentTests>
 							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VIN_AMP
+					<var enabled="0">VIN_AMP
 						<value>80m</value>
 						<dependentTests>
-							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0" omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
+							<dependentTest enabled="0">MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">VIN_FREQ
+						<value>1k</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
 				<overwritehistoryname>Interactive.0</overwritehistoryname>
 				<plottingoptions>
 					<plottingoption>plottingmode
-						<value>Append</value>
+						<value>New Win</value>
 					</plottingoption>
 					<plottingoption>plottype
 						<value>None</value>
@@ -3193,24 +4126,1145 @@
 				</plottingoptions>
 				<jobpolicyname>ADE XL Default</jobpolicyname>
 				<allcornersenabled>0</allcornersenabled>
+				<disabledtests>
+					<test>Linearity</test>
+					<test>ECG_IA:ecg_vga_tb:1</test>
+				</disabledtests>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>50</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcStopMethod
+							<value>Significance Test</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>lds</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>0</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>0</value>
+						</runoption>
+						<runoption>parasiticanalysis
+							<value>0</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>1</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dumpParamMode
+							<value>no</value>
+						</runoption>
+					</mode>
+				</runoptions>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Mar 13 16:45:21 2026</timestamp>
-			<uuid>{3dd5e61f-372b-4e50-87a4-7b71a55e3678}</uuid>
-			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.97.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.97.rdb</simresults>
+			<timestamp>Mar 17 08:55:40 2026</timestamp>
+			<uuid>{13964a45-594c-4b3f-96c6-71b3e0ffa8ac}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.186.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.186.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/edatools_saul_164521302</localpsfdir>
-			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.97</psfdir>
-			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.97</simdir>
+			<localpsfdir>/tmp/edatools_saul_085540813</localpsfdir>
+			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.186</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.186</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.97.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.97.log</runlogfile>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.186.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.186.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">MonteCarlo.2
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">CMOS
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
+								<modelsection>"captm"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">CMOS_VDD
+						<vars>
+							<var>VDD
+								<value>2.97 3.63</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
+								<modelsection>"captm"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">CMOS_CAP_VDD
+						<vars>
+							<var>VDD
+								<value>2.97 3.63</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
+								<modelsection>"capwp" "capws"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">CMOS_CAP_VDD_TEMP
+						<vars>
+							<var>temperature
+								<value>-40 85</value>
+							</var>
+							<var>VDD
+								<value>2.97 3.63</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
+								<modelsection>"capwp" "capws"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Monte Carlo Sampling</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">ECG_IA:ecg_vga_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_vga_tb:1_none_MonteCarlo.2</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>/VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>/VOUT2
+								<evalType>point</evalType>
+							</output>
+							<output>Total noise
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test enabled="1">Linearity
+						<tool>ADE</tool>
+						<outputs>
+							<output>/VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>/VOUT2
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>Linearity_ECG_IA:ecg_vga_tb:1:1_state_MonteCarlo.2</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_vga_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">MC
+						<tool>ADE</tool>
+						<outputs>
+							<output>/VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>/VOUT2
+								<evalType>point</evalType>
+							</output>
+							<output>Total Noise
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>MC_ECG_IA:ecg_vga_tb:1:1_state_MonteCarlo.2</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_vga_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>VDD
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">S0
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">S1
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">S2
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VIN_STEP
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VIN_AMP
+						<value>80m</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
+							<dependentTest enabled="0">MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">VIN_FREQ
+						<value>1k</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>New Win</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<allcornersenabled>0</allcornersenabled>
+				<disabledtests>
+					<test>Linearity</test>
+					<test>ECG_IA:ecg_vga_tb:1</test>
+				</disabledtests>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>50</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcStopMethod
+							<value>Significance Test</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>lds</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>0</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>0</value>
+						</runoption>
+						<runoption>parasiticanalysis
+							<value>0</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>1</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dumpParamMode
+							<value>no</value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mar 17 08:55:53 2026</timestamp>
+			<uuid>{a0c21574-b043-4a16-b060-cd1dda96ce51}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/MonteCarlo.2.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/MonteCarlo.2.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/edatools_saul_085553667</localpsfdir>
+			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/MonteCarlo.2</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_vga_tb/adexl/results/data/MonteCarlo.2</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/MonteCarlo.2.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/MonteCarlo.2.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.187
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">CMOS
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
+								<modelsection>"captm"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">CMOS_VDD
+						<vars>
+							<var>VDD
+								<value>2.97 3.63</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
+								<modelsection>"captm"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">CMOS_CAP_VDD
+						<vars>
+							<var>VDD
+								<value>2.97 3.63</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
+								<modelsection>"capwp" "capws"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">CMOS_CAP_VDD_TEMP
+						<vars>
+							<var>temperature
+								<value>-40 85</value>
+							</var>
+							<var>VDD
+								<value>2.97 3.63</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
+								<modelsection>"capwp" "capws"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">ECG_IA:ecg_vga_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_vga_tb:1_none_Interactive.187</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>/VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>/VOUT2
+								<evalType>point</evalType>
+							</output>
+							<output>Total noise
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test enabled="1">Linearity
+						<tool>ADE</tool>
+						<outputs>
+							<output>/VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>/VOUT2
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>Linearity_ECG_IA:ecg_vga_tb:1:1_state_Interactive.187</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_vga_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">MC
+						<tool>ADE</tool>
+						<outputs>
+							<output>/VOUT
+								<evalType>point</evalType>
+							</output>
+							<output>/VOUT2
+								<evalType>point</evalType>
+							</output>
+							<output>Total Noise
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>MC_ECG_IA:ecg_vga_tb:1:1_state_Interactive.187</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>ecg_vga_tb</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_vga_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>VDD
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">S0
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">S1
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">S2
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VIN_STEP
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VIN_AMP
+						<value>80m</value>
+						<dependentTests>
+							<dependentTest enabled="0" omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="1">Linearity</dependentTest>
+							<dependentTest enabled="0">MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="1">VIN_FREQ
+						<value>1k</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_vga_tb:1</dependentTest>
+							<dependentTest enabled="0">Linearity</dependentTest>
+							<dependentTest enabled="1">MC</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>New Win</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<allcornersenabled>0</allcornersenabled>
+				<disabledtests>
+					<test>Linearity</test>
+					<test>MC</test>
+				</disabledtests>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>50</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcStopMethod
+							<value>Significance Test</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>lds</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>0</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>0</value>
+						</runoption>
+						<runoption>parasiticanalysis
+							<value>0</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>1</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dumpParamMode
+							<value>no</value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mar 19 13:41:35 2026</timestamp>
+			<uuid>{25ea5c9a-ff38-4c52-a1db-98127e8ac921}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.187.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.187.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/edatools_saul_134135805</localpsfdir>
+			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.187</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.187</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.187.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.187.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>

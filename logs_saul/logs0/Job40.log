@@ -7,16 +7,16 @@
 *Info*    Configuring the session ...
 
 	Library      = ECG_IA
-	Cell         = ecg_tb
+	Cell         = ecg_vga_tb
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = Noise_ECG_IA:ecg_ia_tb:1:1_state_Interactive.178
-	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_tb/adexl/results/data/Interactive.178.rdb
-	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data/Interactive.178/1/Noise
-	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data
+	State Name   = Linearity_ECG_IA:ecg_vga_tb:1:1_state_Interactive.169
+	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.169.rdb
+	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.169/1/Linearity
+	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
-	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_tb/adexl
+	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl
 	File Encoding = 0
 
 
@@ -28,44 +28,40 @@
 
 
 
-*Info*    Run start for Point ID (11 1) on testbench [ Noise ].
+*Info*    Run start for Point ID (19 1) on testbench [ Linearity ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var FC = "2k"
 Setting var S0 = "3.3"
 Setting var S1 = "3.3"
 Setting var S2 = "3.3"
-Setting var T0 = "0"
-Setting var T1 = "0"
-Setting var T2 = "0"
-Setting var VCM_AC = "1"
-Setting var VCM_DC = "1.6"
 Setting var VDD = "3.3"
-Setting var VIN_AC = "1"
-Setting var VIN_AMP = "0"
-Setting var VIN_DC = "0"
-Setting var VIN_FREQ = "0"
+Setting var VIN_AMP = "80m"
+Setting var VIN_FREQ = "50"
+Setting var VIN_STEP = "0"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data/Interactive.178/1/Noise/netlist
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.169/1/Linearity/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data/Interactive.178/1/Noise
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.169/1/Linearity
 
 
-*Info*    Creating Netlist for Point ID (11 1)
+*Info*    Creating Netlist for Point ID (19 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Mar 14 20:00:52 2026
-End netlisting Mar 14 20:00:52 2026
+Begin Incremental Netlisting Mar 17 06:10:24 2026
+WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.150/1/ECG_IA:ecg_vga_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
+Ensure that you have the write permission for the mentioned file.
+
+End netlisting Mar 17 06:10:24 2026
 
 	The netlist is up to date.
 	Time taken to compare the design with netlist:   0.0s
@@ -73,10 +69,10 @@ End netlisting Mar 14 20:00:52 2026
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ Noise ] for Point ID (11
-          1).
+*Info*    Running simulation on testbench [ Linearity ] for Point ID
+          (19 1).
 
-Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data/Interactive.178/1/Noise/psf.
+Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.169/1/Linearity/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -93,20 +89,8 @@ reading simulation data...
       ...successful.
 *Info*    Client has finished evaluating ... 
 
-WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data/Interactive.178/1/Noise. Use results() for a list of available results.
-WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data/Interactive.178/1/Noise. Use results() for a list of available results.
-ERROR (ADEXL-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'1' test:'Noise'
-	Expression:'db(getData("/V2" ?result "xf"))'.
-Ensure that the definition of output is correct.
 
-WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data/Interactive.178/1/Noise. Use results() for a list of available results.
-WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data/Interactive.178/1/Noise. Use results() for a list of available results.
-ERROR (ADEXL-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'1' test:'Noise'
-	Expression:'db(getData("/V7" ?result "xf"))'.
-Ensure that the definition of output is correct.
-
-
-*Info*    Run complete for Point ID (11 1) on testbench [ Noise ].
+*Info*    Run complete for Point ID (19 1) on testbench [ Linearity ].
 
 
 

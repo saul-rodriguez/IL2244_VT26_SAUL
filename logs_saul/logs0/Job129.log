@@ -1,14 +1,14 @@
-\# Program start time:     UTC 2026.03.13 10:37:20.089
-\# Local time: UTC (UTC+00:00) 2026.03.13 10:37:20.089
+\# Program start time:     UTC 2026.03.17 08:55:55.754
+\# Local time: UTC (UTC+00:00) 2026.03.17 08:55:55.754
 \o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 09/03/2024 19:11 (sjfhw316) $
 \o Hierarchy:		/opt/tools/cadence/installs/IC618/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.8-64b.500.36  (64-bit addresses)
-\# Command line:	/opt/tools/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso767640 -mpshost edatools -davinciService DaVinciService_767640_1773306145 -log /home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job129.log -licenseLockFileName /home/saul/projects/IL2244_VT26_SAUL/.tmp_saul/.edatools_767640 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 129
+\# Command line:	/opt/tools/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso510 -mpshost edatools -davinciService DaVinciService_510_1773724982 -log /home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job129.log -licenseLockFileName /home/saul/projects/IL2244_VT26_SAUL/.tmp_saul/.edatools_510 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 129
 \# Host name (type):	edatools (x86_64)
-\# Operating system:	Linux 6.17.0-14-generic #14~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Jan 15 15:52:10 UTC 2
+\# Operating system:	Linux 6.17.0-19-generic #19~24.04.2-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar  6 23:08:46 UTC 2
 \# Linux /etc/issue:	\S
 \# Linux /etc/issue:	Kernel \r on an \m
-\# X display name (WxH):	:3773 (1024x868)
+\# X display name (WxH):	:8343 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
 \# X server:			The X.Org Foundation
 \# Depth of Visual (Root):	24 (24)
@@ -18,11 +18,11 @@
 \# 			current id 0x0, current max 0x1ffffa (2097146)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	      1,598 MB
-\# Available memory:	     54,699 MB
+\# Initial sbrk value:	      1,227 MB
+\# Available memory:	     61,402 MB
 \# System memory:	     72,238 MB
-\# Maximum memory size:	     70,760 MB
-\# Max mem available:	     54,818 MB
+\# Maximum memory size:	     71,130 MB
+\# Max mem available:	     61,522 MB
 \# Initial memory used:	        119 MB
 \#        process size:	      1,676 MB
 \# Thread usage limits (effective/default):	maxthreads 4294967295/4294967295 maxload 16.00/16.00
@@ -30,7 +30,7 @@
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	edatools:/home/saul/projects/IL2244_VT26_SAUL
-\# Process Id:		827545
+\# Process Id:		96087
 \o 
 \o COPYRIGHT (C) 1992-2024  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           (C) 1992-2024  UNIX SYSTEMS Laboratories INC.,
@@ -66,7 +66,6 @@
 \o Loading caa.cxt 
 \o Loading amps.cxt 
 \o Loading adexlCore.cxt 
-\# Memory report: using         230 MB, process size 1,873 MB at UTC 2026.03.13 10:37:21.139
 \o Loading adexl.cxt 
 \o *Info*    Exporting services from client ... 
 \o 
@@ -74,12 +73,12 @@
 \o Loading cpf.cxt 
 \o Loading cli.cxt 
 \o Loading lp.cxt 
-\o INFO (ELI-00302) Connecting to parent process (session=virtuoso767640, host=edatools). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso510, host=edatools). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
 \o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
-\o INFO (ELI-00304) The registration of the child 827545 within 90 seconds is being processed...
+\o INFO (ELI-00304) The registration of the child 96087 within 90 seconds is being processed...
 \o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
 \o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
-\# [10:37:20.445290] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se:29000@lic06.ug.kth.se
+\# [08:55:55.445410] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se:29000@lic06.ug.kth.se
 \o ......................................................................................
 \o            ams AG HIT-Kit v.ams_4.10
 \o ......................................................................................
@@ -99,6 +98,7 @@
 \o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
 \o //
 \o //
+\# Memory report: using         278 MB, process size 1,969 MB at UTC 2026.03.17 08:55:57.649
 \o Loading simulator default settings.
 \o *Info*    Client has finished starting ... 
 \o 
@@ -107,7 +107,7 @@
 \w *WARNING* could not load font "-*-courier-medium-r-*-*-12-*", using font "fixed"
 \# Loading perfDiag...
 \# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
-\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 827545' to open it when Virtuoso freezes.
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 96087' to open it when Virtuoso freezes.
 \# (PerfDiag): Use backtrace from GLIBC.
 \w *WARNING* _perfPstackCheck: Cannot find pstack/gstack. Please setup PATH environment variable to pstack/gstack executable.
 \o Loading vqp.cxt 
@@ -122,9 +122,9 @@
 \o 	View         = schematic
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = ECG_IA:ecg_vga_tb:1_none_Interactive.79
-\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.79.rdb
-\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.79/1/ECG_IA:ecg_vga_tb:1
+\o 	State Name   = MC_ECG_IA:ecg_vga_tb:1:1_state_MonteCarlo.2
+\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/MonteCarlo.2.rdb
+\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/MonteCarlo.2/1/MC
 \o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data
 \o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
 \o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl
@@ -135,13 +135,13 @@
 \o Loading spectrei.cxt 
 \o Loading devCheck.cxt 
 \o Loading relXpert.cxt 
-\# Memory report: using         375 MB, process size 2,071 MB at UTC 2026.03.13 10:37:25.426
 \o Loading hspiceD.cxt 
 \o Loading spectreinl.cxt 
 \o Loading msgHandler.cxt 
 \o Loading UltraSim.cxt 
 \o Loading AMSOSS.cxt 
 \o Loading AMS.cxt 
+\# Memory report: using         386 MB, process size 2,082 MB at UTC 2026.03.17 08:55:59.016
 \o 
 \o *Info*    The auto suspension is disabled.
 \o 
@@ -151,8 +151,7 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (61 1) on testbench [
-\o           ECG_IA:ecg_vga_tb:1 ].
+\o *Info*    Run start for Point ID (7 19) on testbench [ MC ].
 \o 
 \o Resetting statistical vars
 \o 
@@ -162,28 +161,31 @@
 \o Setting var S1 = "3.3"
 \o Setting var S2 = "3.3"
 \o Setting var VDD = "3.3"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_FREQ = "1k"
+\o Setting var VIN_STEP = "10m"
 \o Setting var temperature = "27"
 \o Setting temp(T) = 27
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.79/1/ECG_IA:ecg_vga_tb:1/netlist
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/MonteCarlo.2/19/MC/groupRunDataDir/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.79/1/ECG_IA:ecg_vga_tb:1
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/MonteCarlo.2/19/MC/groupRunDataDir
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (61 1)
+\o *Info*    Creating Netlist for Point ID (7 19)
 \o 
 \o generate netlist...
 \o Loading hnlInit.cxt 
 \o Loading seCore.cxt 
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\# [10:37:25.287731] Periodic Lic check successful
-\# [10:37:25.287736] Feature usage summary:
-\o Begin Incremental Netlisting Mar 13 10:37:25 2026
-\o End netlisting Mar 13 10:37:25 2026
+\# [08:55:59.160873] Periodic Lic check successful
+\# [08:55:59.160873] Feature usage summary:
+\o Begin Incremental Netlisting Mar 17 08:55:59 2026
+\o End netlisting Mar 17 08:55:59 2026
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -191,10 +193,20 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ ECG_IA:ecg_vga_tb:1 ] for
-\o           Point ID (61 1).
+\o *Info*    Running simulation on testbench [ MC ] for Point ID (7 19).
 \o 
-\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.79/1/ECG_IA:ecg_vga_tb:1/psf.
+\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/MonteCarlo.2/19/MC/groupRunDataDir/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 17 08:55:59 2026
+\o End netlisting Mar 17 08:55:59 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -207,380 +219,95 @@
 \o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
 \o        There will be no performance impact on data visualization due to this change.
 \o Loading paraplot.cxt 
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (61 1) on testbench [
-\o           ECG_IA:ecg_vga_tb:1 ].
+\o *Info*    Run complete for Point ID (7 19) on testbench [ MC ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (61 10) on testbench [
-\o           ECG_IA:ecg_vga_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD = "2.97"
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.79/10/ECG_IA:ecg_vga_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.79/10/ECG_IA:ecg_vga_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (61 10)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 13 10:37:27 2026
-\o End netlisting Mar 13 10:37:27 2026
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ ECG_IA:ecg_vga_tb:1 ] for
-\o           Point ID (61 10).
-\o 
-\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.79/10/ECG_IA:ecg_vga_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
-\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
-\o        There will be no performance impact on data visualization due to this change.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (61 10) on testbench [
-\o           ECG_IA:ecg_vga_tb:1 ].
+\o *Info*    Run complete for Point ID (7 20) on testbench [ MC ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (61 15) on testbench [
-\o           ECG_IA:ecg_vga_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD = "3.63"
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.79/15/ECG_IA:ecg_vga_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.79/15/ECG_IA:ecg_vga_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (61 15)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 13 10:37:29 2026
-\o End netlisting Mar 13 10:37:29 2026
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ ECG_IA:ecg_vga_tb:1 ] for
-\o           Point ID (61 15).
-\o 
-\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.79/15/ECG_IA:ecg_vga_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
-\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
-\o        There will be no performance impact on data visualization due to this change.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\# Available memory:         52,419 MB at UTC 2026.03.13 10:37:30.034
-\# Memory report: Maximum memory size now 52,875 MB at UTC 2026.03.13 10:37:30.034
-\# Thread usage report: 22 active threads, active load 1.40 at UTC 2026.03.13 10:37:30.034
-\o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (61 15) on testbench [
-\o           ECG_IA:ecg_vga_tb:1 ].
+\o *Info*    Run complete for Point ID (7 21) on testbench [ MC ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 22) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 23) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Available memory:         59,250 MB at UTC 2026.03.17 08:56:05.217
+\# Memory report: Maximum memory size now 59,724 MB at UTC 2026.03.17 08:56:05.217
+\# Thread usage report: 22 active threads, active load 1.40 at UTC 2026.03.17 08:56:05.217
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 24) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 25) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 26) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\# Memory report: using         488 MB, process size 2,298 MB at UTC 2026.03.17 08:56:09.091
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (7 27) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Monte Carlo Simulation completed successfully...
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = ECG_IA
-\o 	Cell         = ecg_vga_tb
-\o 	View         = schematic
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = ECG_IA:ecg_vga_tb:1_none_Interactive.80
-\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.80.rdb
-\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.80/1/ECG_IA:ecg_vga_tb:1
-\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
-\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl
-\o 	File Encoding = 0
-\o 
-\o 
-\o 
-\o *Info*    The auto suspension is disabled.
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (62 1) on testbench [
-\o           ECG_IA:ecg_vga_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var S0 = "3.3"
-\o Setting var S1 = "3.3"
-\o Setting var S2 = "3.3"
-\o Setting var VDD = "3.3"
-\o Setting var temperature = "27"
-\o Setting temp(T) = 27
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.80/1/ECG_IA:ecg_vga_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.80/1/ECG_IA:ecg_vga_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (62 1)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 13 10:40:34 2026
-\o Loading json.cxt 
-\o End netlisting Mar 13 10:40:34 2026
-\o 
-\o Netlisting Statistics:
-\o 	Number of components:   38
-\o 
-\o 	Elapsed time:          0.0s
-\o Errors: 0	Warnings: 0
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ ECG_IA:ecg_vga_tb:1 ] for
-\o           Point ID (62 1).
-\o 
-\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.80/1/ECG_IA:ecg_vga_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
-\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
-\o        There will be no performance impact on data visualization due to this change.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (62 1) on testbench [
-\o           ECG_IA:ecg_vga_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (62 12) on testbench [
-\o           ECG_IA:ecg_vga_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD = "2.97"
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.80/12/ECG_IA:ecg_vga_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.80/12/ECG_IA:ecg_vga_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (62 12)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 13 10:40:36 2026
-\o End netlisting Mar 13 10:40:36 2026
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ ECG_IA:ecg_vga_tb:1 ] for
-\o           Point ID (62 12).
-\o 
-\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.80/12/ECG_IA:ecg_vga_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
-\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
-\o        There will be no performance impact on data visualization due to this change.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (62 12) on testbench [
-\o           ECG_IA:ecg_vga_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (62 17) on testbench [
-\o           ECG_IA:ecg_vga_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD = "3.63"
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.80/17/ECG_IA:ecg_vga_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.80/17/ECG_IA:ecg_vga_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (62 17)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 13 10:40:38 2026
-\o End netlisting Mar 13 10:40:38 2026
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ ECG_IA:ecg_vga_tb:1 ] for
-\o           Point ID (62 17).
-\o 
-\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.80/17/ECG_IA:ecg_vga_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
-\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
-\o        There will be no performance impact on data visualization due to this change.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (62 17) on testbench [
-\o           ECG_IA:ecg_vga_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o Job 129 timed out after no activity in 300 seconds.
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o *Info*    Received signal SIGTERM.
-\o 
-\o 

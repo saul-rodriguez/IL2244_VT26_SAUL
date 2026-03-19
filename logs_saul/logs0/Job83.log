@@ -7,16 +7,16 @@
 *Info*    Configuring the session ...
 
 	Library      = ECG_IA
-	Cell         = ecg_vga_tb
+	Cell         = ecg_tb
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = ECG_IA:ecg_vga_tb:1_none_Interactive.58
-	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.58.rdb
-	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.58/1/ECG_IA:ecg_vga_tb:1
-	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data
+	State Name   = VIN_none_Interactive.187
+	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_tb/adexl/results/data/Interactive.187.rdb
+	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data/Interactive.187/1/VIN
+	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
-	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl
+	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_tb/adexl
 	File Encoding = 0
 
 
@@ -28,38 +28,56 @@
 
 
 
-*Info*    Run start for Point ID (40 1) on testbench [
-          ECG_IA:ecg_vga_tb:1 ].
+*Info*    Run start for Point ID (10 1) on testbench [ VIN ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
+Setting var FC = "2K"
+Setting var S0 = "3.3"
+Setting var S1 = "3.3"
+Setting var S2 = "3.3"
+Setting var T0 = "0"
+Setting var T1 = "0"
+Setting var T2 = "0"
+Setting var VCM_AC = "1"
+Setting var VCM_DC = "1.6"
 Setting var VDD = "3.3"
+Setting var VDD_STEP = "0"
+Setting var VIN_AC = "1"
+Setting var VIN_AMP = "1m"
+Setting var VIN_DC = "0"
+Setting var VIN_FREQ = "50"
+Setting var VIN_STEP = "0"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.58/1/ECG_IA:ecg_vga_tb:1/netlist
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data/Interactive.187/1/VIN/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.58/1/ECG_IA:ecg_vga_tb:1
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data/Interactive.187/1/VIN
 
 
-*Info*    Creating Netlist for Point ID (40 1)
+*Info*    Creating Netlist for Point ID (10 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Mar 12 10:46:13 2026
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.18/1/ECG_IA:ecg_vga_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
+Initializing the control file using cp:
+    cp /opt/tools/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data/Interactive.187/1/VIN/netlist/control
+Copying Spectre source file 'spectre.inp'
+Copying Spectre command file 'spectre.sim'
+Begin Incremental Netlisting Mar 17 08:00:05 2026
+WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.150/1/ECG_IA:ecg_vga_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
 Ensure that you have the write permission for the mentioned file.
 
-End netlisting Mar 12 10:46:13 2026
+End netlisting Mar 17 08:00:05 2026
 
 Netlisting Statistics:
-	Number of components:   33
+	Number of components:  130
 
 	Elapsed time:          0.0s
 Errors: 0	Warnings: 0
@@ -67,10 +85,9 @@ Errors: 0	Warnings: 0
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ ECG_IA:ecg_vga_tb:1 ] for
-          Point ID (40 1).
+*Info*    Running simulation on testbench [ VIN ] for Point ID (10 1).
 
-Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.58/1/ECG_IA:ecg_vga_tb:1/psf.
+Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_tb/adexl/results/data/Interactive.187/1/VIN/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -82,18 +99,9 @@ choose "Output Log" menu option.
 WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
        There will be no performance impact on data visualization due to this change.
-INFO (ADE-3071): Simulation completed successfully.
-reading simulation data...
-      ...successful.
-*Info*    Client has finished evaluating ... 
-
-
-*Info*    Run complete for Point ID (40 1) on testbench [
-          ECG_IA:ecg_vga_tb:1 ].
-
-
-
-
+*Info*    Current simulation for points ((10 1)).
+*Info*    (ADE-3072): Simulation stopped because you selected the
+          'Stop Simulation' command in ADE.
 
 Simulation design variables differ from those on the cellView,
 they have been saved in the file "/tmp/saved-design-variables".
