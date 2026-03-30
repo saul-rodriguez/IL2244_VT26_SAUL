@@ -4,7 +4,7 @@ analysis(ac fields dec) "30"
 analysis(ac fields designVar) ""
 analysis(ac fields dev) ""
 analysis(ac fields deviceParam) ""
-analysis(ac fields enable) (t)
+analysis(ac fields enable) (nil)
 analysis(ac fields fim_out) ""
 analysis(ac fields flin_out) ""
 analysis(ac fields freq) ""
@@ -62,7 +62,7 @@ analysis(dc fields dec) ""
 analysis(dc fields designVar) ""
 analysis(dc fields dev) ""
 analysis(dc fields deviceParam) ""
-analysis(dc fields enable) (t)
+analysis(dc fields enable) (nil)
 analysis(dc fields hysteresis) nil
 analysis(dc fields incrType) "Automatic"
 analysis(dc fields lin) ""
@@ -201,14 +201,14 @@ analysis(pss fields enable) (t)
 analysis(pss fields engine) "Shooting"
 analysis(pss fields errpreset) "conservative"
 analysis(pss fields flexbalance) ""
-analysis(pss fields freqName) ""
+analysis(pss fields freqName) "VIN_FREQ"
 analysis(pss fields freqPeriod) "Beat Frequency"
-analysis(pss fields freqVal) ""
+analysis(pss fields freqVal) "50"
 analysis(pss fields freqVar) "no"
 analysis(pss fields freqVar2) "no"
 analysis(pss fields freqVar3) "no"
 analysis(pss fields fund) "50"
-analysis(pss fields fundListBox) (nil choices ("2           VIN_FREQ   50        Large         V3" "1           1/(1/FC-0) 2K        Large         V0") value nil)
+analysis(pss fields fundListBox) (nil choices ("4           VIN_FREQ   50        Large         V8" "2           VIN_FREQ   50        Large           " "3           VIN_FREQ   50        Large         V7" "1           1/(1/FC-0) 4K        Large         V0") value ("4           VIN_FREQ   50        Large         V8"))
 analysis(pss fields harmCoeffs) nil
 analysis(pss fields harmListMem) nil
 analysis(pss fields harmonics) "Number of harmonics"
@@ -296,7 +296,7 @@ analysis(pss fields sigpartB) nil
 analysis(pss fields span) ""
 analysis(pss fields span2) ""
 analysis(pss fields span3) ""
-analysis(pss fields srcId) ""
+analysis(pss fields srcId) "V8"
 analysis(pss fields start) ""
 analysis(pss fields start2) ""
 analysis(pss fields start3) ""
@@ -424,7 +424,7 @@ analysis(xf fields dec) "30"
 analysis(xf fields designVar) ""
 analysis(xf fields dev) ""
 analysis(xf fields deviceParam) ""
-analysis(xf fields enable) (t)
+analysis(xf fields enable) (nil)
 analysis(xf fields freq) ""
 analysis(xf fields incrType) "Logarithmic"
 analysis(xf fields lin) ""

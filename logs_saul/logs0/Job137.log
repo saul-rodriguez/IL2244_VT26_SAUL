@@ -1,14 +1,14 @@
-\# Program start time:     UTC 2026.03.18 13:39:35.246
-\# Local time: UTC (UTC+00:00) 2026.03.18 13:39:35.246
+\# Program start time:     UTC 2026.03.30 04:37:53.646
+\# Local time: UTC (UTC+00:00) 2026.03.30 04:37:53.646
 \o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 09/03/2024 19:11 (sjfhw316) $
 \o Hierarchy:		/opt/tools/cadence/installs/IC618/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.8-64b.500.36  (64-bit addresses)
-\# Command line:	/opt/tools/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso156634 -mpshost edatools -davinciService DaVinciService_156634_1773824177 -log /home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job137.log -licenseLockFileName /home/saul/projects/IL2244_VT26_SAUL/.tmp_saul/.edatools_156634 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 137
+\# Command line:	/opt/tools/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso682996 -mpshost edatools -davinciService DaVinciService_682996_1774598955 -log /home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job137.log -licenseLockFileName /home/saul/projects/IL2244_VT26_SAUL/.tmp_saul/.edatools_682996 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 137
 \# Host name (type):	edatools (x86_64)
 \# Operating system:	Linux 6.17.0-19-generic #19~24.04.2-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar  6 23:08:46 UTC 2
 \# Linux /etc/issue:	\S
 \# Linux /etc/issue:	Kernel \r on an \m
-\# X display name (WxH):	:895 (1024x868)
+\# X display name (WxH):	:2381 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
 \# X server:			The X.Org Foundation
 \# Depth of Visual (Root):	24 (24)
@@ -18,11 +18,11 @@
 \# 			current id 0x0, current max 0x1ffffa (2097146)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	      1,369 MB
-\# Available memory:	     60,115 MB
+\# Initial sbrk value:	      1,602 MB
+\# Available memory:	     53,769 MB
 \# System memory:	     72,238 MB
-\# Maximum memory size:	     70,988 MB
-\# Max mem available:	     60,234 MB
+\# Maximum memory size:	     70,755 MB
+\# Max mem available:	     53,889 MB
 \# Initial memory used:	        119 MB
 \#        process size:	      1,676 MB
 \# Thread usage limits (effective/default):	maxthreads 4294967295/4294967295 maxload 16.00/16.00
@@ -30,7 +30,7 @@
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	edatools:/home/saul/projects/IL2244_VT26_SAUL
-\# Process Id:		270464
+\# Process Id:		852251
 \o 
 \o COPYRIGHT (C) 1992-2024  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           (C) 1992-2024  UNIX SYSTEMS Laboratories INC.,
@@ -66,7 +66,6 @@
 \o Loading caa.cxt 
 \o Loading amps.cxt 
 \o Loading adexlCore.cxt 
-\# Memory report: using         230 MB, process size 1,910 MB at UTC 2026.03.18 13:39:36.111
 \o Loading adexl.cxt 
 \o *Info*    Exporting services from client ... 
 \o 
@@ -74,12 +73,12 @@
 \o Loading cpf.cxt 
 \o Loading cli.cxt 
 \o Loading lp.cxt 
-\o INFO (ELI-00302) Connecting to parent process (session=virtuoso156634, host=edatools). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso682996, host=edatools). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
 \o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
-\o INFO (ELI-00304) The registration of the child 270464 within 90 seconds is being processed...
+\o INFO (ELI-00304) The registration of the child 852251 within 90 seconds is being processed...
 \o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
 \o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
-\# [13:39:35.445378] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se:29000@lic06.ug.kth.se
+\# [04:37:53.445362] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se:29000@lic06.ug.kth.se
 \o ......................................................................................
 \o            ams AG HIT-Kit v.ams_4.10
 \o ......................................................................................
@@ -99,6 +98,7 @@
 \o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
 \o //
 \o //
+\# Memory report: using         280 MB, process size 1,972 MB at UTC 2026.03.30 04:37:55.491
 \o Loading simulator default settings.
 \o *Info*    Client has finished starting ... 
 \o 
@@ -107,7 +107,7 @@
 \w *WARNING* could not load font "-*-courier-medium-r-*-*-12-*", using font "fixed"
 \# Loading perfDiag...
 \# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
-\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 270464' to open it when Virtuoso freezes.
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 852251' to open it when Virtuoso freezes.
 \# (PerfDiag): Use backtrace from GLIBC.
 \w *WARNING* _perfPstackCheck: Cannot find pstack/gstack. Please setup PATH environment variable to pstack/gstack executable.
 \o Loading vqp.cxt 
@@ -122,9 +122,9 @@
 \o 	View         = schematic
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = ECG_IA:ecg_ia_tb:1_none_Interactive.292
-\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_ia_tb/adexl/results/data/Interactive.292.rdb
-\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/1/ECG_IA:ecg_ia_tb:1
+\o 	State Name   = ECG_IA:ecg_ia_tb:1_none_Interactive.342
+\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_ia_tb/adexl/results/data/Interactive.342.rdb
+\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/1/ECG_IA:ecg_ia_tb:1
 \o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data
 \o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
 \o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_ia_tb/adexl
@@ -140,8 +140,8 @@
 \o Loading msgHandler.cxt 
 \o Loading UltraSim.cxt 
 \o Loading AMSOSS.cxt 
-\# Memory report: using         380 MB, process size 2,076 MB at UTC 2026.03.18 13:39:39.108
 \o Loading AMS.cxt 
+\# Memory report: using         384 MB, process size 2,080 MB at UTC 2026.03.30 04:37:57.092
 \o 
 \o *Info*    The auto suspension is disabled.
 \o 
@@ -151,55 +151,67 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (64 3) on testbench [
+\o *Info*    Run start for Point ID (2 2) on testbench [
 \o           ECG_IA:ecg_ia_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var FC = "2K"
+\o Setting var FC = "4k"
 \o Setting var VCM_AC = "1"
 \o Setting var VCM_AMP = "0"
 \o Setting var VCM_DC = "1.6"
 \o Setting var VDD = "2.97"
+\o Setting var VDD_PERIOD = "0"
+\o Setting var VDD_PULSE = "0"
+\o Setting var VDD_RS = "1n"
 \o Setting var VIN_AC = "1"
 \o Setting var VIN_AMP = "1m"
 \o Setting var VIN_DC = "0"
 \o Setting var VIN_FREQ = "50"
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/3/ECG_IA:ecg_ia_tb:1/netlist
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/2/ECG_IA:ecg_ia_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/3/ECG_IA:ecg_ia_tb:1
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/2/ECG_IA:ecg_ia_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (64 3)
+\o *Info*    Creating Netlist for Point ID (2 2)
 \o 
 \o generate netlist...
 \o Loading hnlInit.cxt 
 \o Loading seCore.cxt 
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\# [13:39:39.344018] Periodic Lic check successful
-\# [13:39:39.344019] Feature usage summary:
-\o Begin Incremental Netlisting Mar 18 13:39:39 2026
-\o End netlisting Mar 18 13:39:39 2026
+\# [04:37:57.170969] Periodic Lic check successful
+\# [04:37:57.170970] Feature usage summary:
+\o Begin Incremental Netlisting Mar 30 04:37:57 2026
+\o WARNING (OSSHNL-226): There are more design variables used in the current netlisting session as
+\o compared to the last session in the current run directory. The netlist(s)
+\o generated in the last netlisting session cannot be reused for incremental
+\o netlisting. Therefore re-netlisting the design.
 \o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
+\o Loading json.cxt 
+\o End netlisting Mar 30 04:37:57 2026
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:  112
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
 \o *Info*    Running simulation on testbench [ ECG_IA:ecg_ia_tb:1 ] for
-\o           Point ID (64 3).
+\o           Point ID (2 2).
 \o 
-\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/3/ECG_IA:ecg_ia_tb:1/psf.
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/2/ECG_IA:ecg_ia_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -212,1231 +224,16 @@
 \o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
 \o        There will be no performance impact on data visualization due to this change.
 \o Loading paraplot.cxt 
-\# Available memory:         57,980 MB at UTC 2026.03.18 13:39:45.339
-\# Memory report: Maximum memory size now 58,425 MB at UTC 2026.03.18 13:39:45.339
-\# Thread usage report: 22 active threads, active load 1.40 at UTC 2026.03.18 13:39:45.339
+\# Available memory:         50,790 MB at UTC 2026.03.30 04:38:03.553
+\# Memory report: Maximum memory size now 51,236 MB at UTC 2026.03.30 04:38:03.553
+\# Thread usage report: 22 active threads, active load 1.40 at UTC 2026.03.30 04:38:03.553
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/3/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/3/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'3' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/3/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/3/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'3' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/3/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/3/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'3' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (64 3) on testbench [
-\o           ECG_IA:ecg_ia_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (64 9) on testbench [
-\o           ECG_IA:ecg_ia_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD = "3.63"
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/9/ECG_IA:ecg_ia_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/9/ECG_IA:ecg_ia_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (64 9)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 18 13:39:45 2026
-\o End netlisting Mar 18 13:39:45 2026
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ ECG_IA:ecg_ia_tb:1 ] for
-\o           Point ID (64 9).
-\o 
-\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/9/ECG_IA:ecg_ia_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
-\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
-\o        There will be no performance impact on data visualization due to this change.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/9/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/9/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'9' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/9/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/9/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'9' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/9/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/9/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'9' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (64 9) on testbench [
-\o           ECG_IA:ecg_ia_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (64 17) on testbench [
-\o           ECG_IA:ecg_ia_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/17/ECG_IA:ecg_ia_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/17/ECG_IA:ecg_ia_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (64 17)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 18 13:39:53 2026
-\o End netlisting Mar 18 13:39:53 2026
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ ECG_IA:ecg_ia_tb:1 ] for
-\o           Point ID (64 17).
-\o 
-\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/17/ECG_IA:ecg_ia_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
-\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
-\o        There will be no performance impact on data visualization due to this change.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/17/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/17/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'17' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/17/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/17/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'17' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/17/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.292/17/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'17' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (64 17) on testbench [
-\o           ECG_IA:ecg_ia_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = FECG
-\o 	Cell         = fecg_ia_tb
-\o 	View         = schematic
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = ECG_IA:ecg_ia_tb:1_none_Interactive.293
-\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_ia_tb/adexl/results/data/Interactive.293.rdb
-\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/1/ECG_IA:ecg_ia_tb:1
-\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
-\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_ia_tb/adexl
-\o 	File Encoding = 0
-\o 
-\o 
-\o 
-\o *Info*    The auto suspension is disabled.
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (65 1) on testbench [
-\o           ECG_IA:ecg_ia_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var FC = "2K"
-\o Setting var VCM_AC = "1"
-\o Setting var VCM_AMP = "0"
-\o Setting var VCM_DC = "1.6"
-\o Setting var VDD = "3.3"
-\o Setting var VIN_AC = "1"
-\o Setting var VIN_AMP = "1m"
-\o Setting var VIN_DC = "0"
-\o Setting var VIN_FREQ = "50"
-\o Setting var temperature = "27"
-\o Setting temp(T) = 27
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/1/ECG_IA:ecg_ia_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/1/ECG_IA:ecg_ia_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (65 1)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 18 13:42:29 2026
-\o Loading json.cxt 
-\o End netlisting Mar 18 13:42:29 2026
-\o 
-\o Netlisting Statistics:
-\o 	Number of components:   40
-\o 
-\o 	Elapsed time:          0.0s
-\o Errors: 0	Warnings: 0
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ ECG_IA:ecg_ia_tb:1 ] for
-\o           Point ID (65 1).
-\o 
-\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/1/ECG_IA:ecg_ia_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
-\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
-\o        There will be no performance impact on data visualization due to this change.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/1/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/1/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'1' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/1/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/1/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'1' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/1/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/1/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'1' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (65 1) on testbench [
-\o           ECG_IA:ecg_ia_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (65 7) on testbench [
-\o           ECG_IA:ecg_ia_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD = "2.97"
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/7/ECG_IA:ecg_ia_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/7/ECG_IA:ecg_ia_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (65 7)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 18 13:42:36 2026
-\o End netlisting Mar 18 13:42:36 2026
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ ECG_IA:ecg_ia_tb:1 ] for
-\o           Point ID (65 7).
-\o 
-\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/7/ECG_IA:ecg_ia_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
-\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
-\o        There will be no performance impact on data visualization due to this change.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/7/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/7/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'7' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/7/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/7/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'7' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/7/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/7/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'7' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (65 7) on testbench [
-\o           ECG_IA:ecg_ia_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (65 11) on testbench [
-\o           ECG_IA:ecg_ia_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/11/ECG_IA:ecg_ia_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/11/ECG_IA:ecg_ia_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (65 11)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 18 13:42:42 2026
-\o End netlisting Mar 18 13:42:42 2026
-\o 
-\o Netlisting Statistics:
-\o 	Number of components:   40
-\o 
-\o 	Elapsed time:          0.0s
-\o Errors: 0	Warnings: 0
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ ECG_IA:ecg_ia_tb:1 ] for
-\o           Point ID (65 11).
-\o 
-\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/11/ECG_IA:ecg_ia_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
-\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
-\o        There will be no performance impact on data visualization due to this change.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/11/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/11/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'11' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/11/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/11/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'11' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/11/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/11/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'11' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (65 11) on testbench [
-\o           ECG_IA:ecg_ia_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (65 17) on testbench [
-\o           ECG_IA:ecg_ia_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD = "3.63"
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/17/ECG_IA:ecg_ia_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/17/ECG_IA:ecg_ia_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (65 17)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 18 13:42:52 2026
-\o End netlisting Mar 18 13:42:52 2026
-\o 
-\o Netlisting Statistics:
-\o 	Number of components:   40
-\o 
-\o 	Elapsed time:          0.0s
-\o Errors: 0	Warnings: 0
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ ECG_IA:ecg_ia_tb:1 ] for
-\o           Point ID (65 17).
-\o 
-\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/17/ECG_IA:ecg_ia_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
-\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
-\o        There will be no performance impact on data visualization due to this change.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/17/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/17/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'17' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/17/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/17/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'17' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/17/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.293/17/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'17' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (65 17) on testbench [
-\o           ECG_IA:ecg_ia_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = FECG
-\o 	Cell         = fecg_ia_tb
-\o 	View         = schematic
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = ECG_IA:ecg_ia_tb:1_none_Interactive.295
-\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_ia_tb/adexl/results/data/Interactive.295.rdb
-\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/1/ECG_IA:ecg_ia_tb:1
-\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
-\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_ia_tb/adexl
-\o 	File Encoding = 0
-\o 
-\o 
-\o 
-\o *Info*    The auto suspension is disabled.
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (67 5) on testbench [
-\o           ECG_IA:ecg_ia_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var FC = "2K"
-\o Setting var VCM_AC = "1"
-\o Setting var VCM_AMP = "0"
-\o Setting var VCM_DC = "1.6"
-\o Setting var VDD = "3.63"
-\o Setting var VIN_AC = "1"
-\o Setting var VIN_AMP = "1m"
-\o Setting var VIN_DC = "0"
-\o Setting var VIN_FREQ = "50"
-\o Setting var temperature = "85"
-\o Setting temp(T) = 85
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/5/ECG_IA:ecg_ia_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/5/ECG_IA:ecg_ia_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (67 5)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 18 13:46:16 2026
-\o End netlisting Mar 18 13:46:16 2026
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ ECG_IA:ecg_ia_tb:1 ] for
-\o           Point ID (67 5).
-\o 
-\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/5/ECG_IA:ecg_ia_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
-\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
-\o        There will be no performance impact on data visualization due to this change.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Fundamental_dB' returned 'nil' for point:'5' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'harmonic(db(vh('pss "/VOUT")) 1)'.
-\o Ensure that the definition of output is correct.
-\o 
-\o ERROR (ADE-2709): Evaluation of output 'v /net2; pss mag(V)' returned 'nil' for point:'5' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'vh('pss "/net2")'.
-\o Ensure that the definition of output is correct.
-\o 
-\o ERROR (ADE-2709): Evaluation of output 'v /VOUT; pss mag(V)' returned 'nil' for point:'5' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'vh('pss "/VOUT")'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/5/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/5/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'5' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'harmionic_1_dB' returned 'nil' for point:'5' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'harmonic(db(vh('pss "/VOUT")) 2)'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'v /VOUT; pss dB20(V)' returned 'nil' for point:'5' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'db(vh('pss "/VOUT"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/5/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/5/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'5' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* mag: can't handle mag(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Fundamental_V' returned 'nil' for point:'5' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'harmonic(mag(vh('pss "/VOUT")) 1)'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'd2' failed for point:'5' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'(harmonic(db(vh('pss "/VOUT")) 1) - harmonic(db(vh('pss "/VOUT")) 2))'
-\o 	because of the following error(s)
-\o 	*Error* difference: can't handle (nil - nil).
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/5/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/5/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'5' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (67 5) on testbench [
-\o           ECG_IA:ecg_ia_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (67 8) on testbench [
-\o           ECG_IA:ecg_ia_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var temperature = "-40"
-\o Setting temp(T) = -40
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/8/ECG_IA:ecg_ia_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/8/ECG_IA:ecg_ia_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (67 8)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 18 13:46:18 2026
-\o End netlisting Mar 18 13:46:18 2026
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ ECG_IA:ecg_ia_tb:1 ] for
-\o           Point ID (67 8).
-\o 
-\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/8/ECG_IA:ecg_ia_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
-\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
-\o        There will be no performance impact on data visualization due to this change.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\# Memory report: using         483 MB, process size 2,293 MB at UTC 2026.03.18 13:46:19.306
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Fundamental_dB' returned 'nil' for point:'8' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'harmonic(db(vh('pss "/VOUT")) 1)'.
-\o Ensure that the definition of output is correct.
-\o 
-\o ERROR (ADE-2709): Evaluation of output 'v /net2; pss mag(V)' returned 'nil' for point:'8' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'vh('pss "/net2")'.
-\o Ensure that the definition of output is correct.
-\o 
-\o ERROR (ADE-2709): Evaluation of output 'v /VOUT; pss mag(V)' returned 'nil' for point:'8' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'vh('pss "/VOUT")'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/8/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/8/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'8' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'harmionic_1_dB' returned 'nil' for point:'8' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'harmonic(db(vh('pss "/VOUT")) 2)'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'v /VOUT; pss dB20(V)' returned 'nil' for point:'8' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'db(vh('pss "/VOUT"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/8/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/8/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'8' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* mag: can't handle mag(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Fundamental_V' returned 'nil' for point:'8' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'harmonic(mag(vh('pss "/VOUT")) 1)'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'd2' failed for point:'8' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'(harmonic(db(vh('pss "/VOUT")) 1) - harmonic(db(vh('pss "/VOUT")) 2))'
-\o 	because of the following error(s)
-\o 	*Error* difference: can't handle (nil - nil).
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/8/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/8/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'8' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (67 8) on testbench [
-\o           ECG_IA:ecg_ia_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (67 14) on testbench [
-\o           ECG_IA:ecg_ia_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD = "2.97"
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/14/ECG_IA:ecg_ia_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/14/ECG_IA:ecg_ia_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (67 14)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 18 13:46:19 2026
-\o End netlisting Mar 18 13:46:19 2026
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ ECG_IA:ecg_ia_tb:1 ] for
-\o           Point ID (67 14).
-\o 
-\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/14/ECG_IA:ecg_ia_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
-\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
-\o        There will be no performance impact on data visualization due to this change.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Fundamental_dB' returned 'nil' for point:'14' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'harmonic(db(vh('pss "/VOUT")) 1)'.
-\o Ensure that the definition of output is correct.
-\o 
-\o ERROR (ADE-2709): Evaluation of output 'v /net2; pss mag(V)' returned 'nil' for point:'14' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'vh('pss "/net2")'.
-\o Ensure that the definition of output is correct.
-\o 
-\o ERROR (ADE-2709): Evaluation of output 'v /VOUT; pss mag(V)' returned 'nil' for point:'14' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'vh('pss "/VOUT")'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/14/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/14/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'14' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'harmionic_1_dB' returned 'nil' for point:'14' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'harmonic(db(vh('pss "/VOUT")) 2)'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'v /VOUT; pss dB20(V)' returned 'nil' for point:'14' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'db(vh('pss "/VOUT"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/14/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/14/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'14' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* mag: can't handle mag(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Fundamental_V' returned 'nil' for point:'14' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'harmonic(mag(vh('pss "/VOUT")) 1)'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'd2' failed for point:'14' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'(harmonic(db(vh('pss "/VOUT")) 1) - harmonic(db(vh('pss "/VOUT")) 2))'
-\o 	because of the following error(s)
-\o 	*Error* difference: can't handle (nil - nil).
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/14/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.295/14/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'14' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (67 14) on testbench [
-\o           ECG_IA:ecg_ia_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = FECG
-\o 	Cell         = fecg_ia_tb
-\o 	View         = schematic
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = ECG_IA:ecg_ia_tb:1_none_Interactive.296
-\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_ia_tb/adexl/results/data/Interactive.296.rdb
-\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/1/ECG_IA:ecg_ia_tb:1
-\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
-\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_ia_tb/adexl
-\o 	File Encoding = 0
-\o 
-\o 
-\o 
-\o *Info*    The auto suspension is disabled.
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (68 2) on testbench [
-\o           ECG_IA:ecg_ia_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var FC = "2K"
-\o Setting var VCM_AC = "1"
-\o Setting var VCM_AMP = "0"
-\o Setting var VCM_DC = "1.6"
-\o Setting var VDD = "2.97"
-\o Setting var VIN_AC = "1"
-\o Setting var VIN_AMP = "1m"
-\o Setting var VIN_DC = "0"
-\o Setting var VIN_FREQ = "50"
-\o Setting var temperature = "-40"
-\o Setting temp(T) = -40
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/2/ECG_IA:ecg_ia_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/2/ECG_IA:ecg_ia_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (68 2)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 18 13:50:37 2026
-\o End netlisting Mar 18 13:50:37 2026
-\o 
-\o Netlisting Statistics:
-\o 	Number of components:   40
-\o 
-\o 	Elapsed time:          0.0s
-\o Errors: 0	Warnings: 0
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ ECG_IA:ecg_ia_tb:1 ] for
-\o           Point ID (68 2).
-\o 
-\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/2/ECG_IA:ecg_ia_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
-\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
-\o        There will be no performance impact on data visualization due to this change.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Fundamental_dB' returned 'nil' for point:'2' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'harmonic(db(vh('pss "/VOUT")) 1)'.
-\o Ensure that the definition of output is correct.
-\o 
-\o ERROR (ADE-2709): Evaluation of output 'v /net2; pss mag(V)' returned 'nil' for point:'2' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'vh('pss "/net2")'.
-\o Ensure that the definition of output is correct.
-\o 
-\o ERROR (ADE-2709): Evaluation of output 'v /VOUT; pss mag(V)' returned 'nil' for point:'2' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'vh('pss "/VOUT")'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/2/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/2/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/2/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/2/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
 \e *Error* 
 \e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
 \e 
@@ -1444,22 +241,8 @@
 \o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
 \o Ensure that the definition of output is correct.
 \o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'harmionic_1_dB' returned 'nil' for point:'2' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'harmonic(db(vh('pss "/VOUT")) 2)'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'v /VOUT; pss dB20(V)' returned 'nil' for point:'2' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'db(vh('pss "/VOUT"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/2/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/2/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/2/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/2/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
 \e *Error* 
 \e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
 \e 
@@ -1467,30 +250,8 @@
 \o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
 \o Ensure that the definition of output is correct.
 \o 
-\e *Error* mag: can't handle mag(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Fundamental_V' returned 'nil' for point:'2' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'harmonic(mag(vh('pss "/VOUT")) 1)'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'd2' failed for point:'2' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'(harmonic(db(vh('pss "/VOUT")) 1) - harmonic(db(vh('pss "/VOUT")) 2))'
-\o 	because of the following error(s)
-\o 	*Error* difference: can't handle (nil - nil).
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/2/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/2/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/2/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/2/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
 \e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
 \e 
 \e 
@@ -1501,7 +262,7 @@
 \o Ensure that the definition of output is correct.
 \o 
 \o 
-\o *Info*    Run complete for Point ID (68 2) on testbench [
+\o *Info*    Run complete for Point ID (2 2) on testbench [
 \o           ECG_IA:ecg_ia_tb:1 ].
 \o 
 \o 
@@ -1513,366 +274,42 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (68 8) on testbench [
-\o           ECG_IA:ecg_ia_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var VDD = "3.63"
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/8/ECG_IA:ecg_ia_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/8/ECG_IA:ecg_ia_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (68 8)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 18 13:50:39 2026
-\o End netlisting Mar 18 13:50:39 2026
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ ECG_IA:ecg_ia_tb:1 ] for
-\o           Point ID (68 8).
-\o 
-\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/8/ECG_IA:ecg_ia_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
-\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
-\o        There will be no performance impact on data visualization due to this change.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Fundamental_dB' returned 'nil' for point:'8' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'harmonic(db(vh('pss "/VOUT")) 1)'.
-\o Ensure that the definition of output is correct.
-\o 
-\o ERROR (ADE-2709): Evaluation of output 'v /net2; pss mag(V)' returned 'nil' for point:'8' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'vh('pss "/net2")'.
-\o Ensure that the definition of output is correct.
-\o 
-\o ERROR (ADE-2709): Evaluation of output 'v /VOUT; pss mag(V)' returned 'nil' for point:'8' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'vh('pss "/VOUT")'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/8/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/8/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'8' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'harmionic_1_dB' returned 'nil' for point:'8' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'harmonic(db(vh('pss "/VOUT")) 2)'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'v /VOUT; pss dB20(V)' returned 'nil' for point:'8' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'db(vh('pss "/VOUT"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/8/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/8/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'8' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* mag: can't handle mag(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Fundamental_V' returned 'nil' for point:'8' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'harmonic(mag(vh('pss "/VOUT")) 1)'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'd2' failed for point:'8' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'(harmonic(db(vh('pss "/VOUT")) 1) - harmonic(db(vh('pss "/VOUT")) 2))'
-\o 	because of the following error(s)
-\o 	*Error* difference: can't handle (nil - nil).
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/8/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/8/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'8' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (68 8) on testbench [
-\o           ECG_IA:ecg_ia_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (68 14) on testbench [
+\o *Info*    Run start for Point ID (2 7) on testbench [
 \o           ECG_IA:ecg_ia_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var VDD = "2.97"
-\o 
-\o *Info*    Netlist Directory =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/14/ECG_IA:ecg_ia_tb:1/netlist
-\o 
-\o 
-\o *Info*    Data Directory    =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/14/ECG_IA:ecg_ia_tb:1
-\o 
-\o 
-\o *Info*    Creating Netlist for Point ID (68 14)
-\o 
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 18 13:50:40 2026
-\o End netlisting Mar 18 13:50:40 2026
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
-\o compose simulator input file...
-\o       ...successful.
-\o 
-\o *Info*    Running simulation on testbench [ ECG_IA:ecg_ia_tb:1 ] for
-\o           Point ID (68 14).
-\o 
-\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/14/ECG_IA:ecg_ia_tb:1/psf.
-\o compose simulator input file...
-\o       ...successful.
-\o start simulator if needed...
-\o       ...successful.
-\o simulate...
-\o To view the simulator output, right-click on the test name, result 
-\o name, or any value in the "Results" tab of the Outputs section and 
-\o choose "Output Log" menu option.
-\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
-\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
-\o        There will be no performance impact on data visualization due to this change.
-\o INFO (ADE-3071): Simulation completed successfully.
-\o reading simulation data...
-\o       ...successful.
-\o *Info*    Client has finished evaluating ... 
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Fundamental_dB' returned 'nil' for point:'14' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'harmonic(db(vh('pss "/VOUT")) 1)'.
-\o Ensure that the definition of output is correct.
-\o 
-\o ERROR (ADE-2709): Evaluation of output 'v /net2; pss mag(V)' returned 'nil' for point:'14' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'vh('pss "/net2")'.
-\o Ensure that the definition of output is correct.
-\o 
-\o ERROR (ADE-2709): Evaluation of output 'v /VOUT; pss mag(V)' returned 'nil' for point:'14' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'vh('pss "/VOUT")'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/14/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/14/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'14' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'harmionic_1_dB' returned 'nil' for point:'14' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'harmonic(db(vh('pss "/VOUT")) 2)'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'v /VOUT; pss dB20(V)' returned 'nil' for point:'14' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'db(vh('pss "/VOUT"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/14/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/14/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'14' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* mag: can't handle mag(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Fundamental_V' returned 'nil' for point:'14' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'harmonic(mag(vh('pss "/VOUT")) 1)'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'd2' failed for point:'14' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'(harmonic(db(vh('pss "/VOUT")) 1) - harmonic(db(vh('pss "/VOUT")) 2))'
-\o 	because of the following error(s)
-\o 	*Error* difference: can't handle (nil - nil).
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/14/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.296/14/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'14' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o 
-\o *Info*    Run complete for Point ID (68 14) on testbench [
-\o           ECG_IA:ecg_ia_tb:1 ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o Simulation design variables differ from those on the cellView,
-\o they have been saved in the file "/tmp/saved-design-variables".
-\o To save future changes, copy variables to cellView before exiting.
-\o 
-\o 
-\o *Info*    Configuring the session ...
-\o 
-\o 	Library      = FECG
-\o 	Cell         = fecg_ia_tb
-\o 	View         = schematic
-\o 	Simulator    = spectre
-\o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = ECG_IA:ecg_ia_tb:1_none_Interactive.297
-\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_ia_tb/adexl/results/data/Interactive.297.rdb
-\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/1/ECG_IA:ecg_ia_tb:1
-\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data
-\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
-\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_ia_tb/adexl
-\o 	File Encoding = 0
-\o 
-\o 
-\o 
-\o *Info*    The auto suspension is disabled.
-\o 
-\o 
-\o 
-\o 
-\o 
-\o 
-\o *Info*    Run start for Point ID (69 5) on testbench [
-\o           ECG_IA:ecg_ia_tb:1 ].
-\o 
-\o Resetting statistical vars
-\o 
-\o *Info*    Setting parameter values ...
-\o 
-\o Setting var FC = "2K"
-\o Setting var VCM_AC = "1"
-\o Setting var VCM_AMP = "0"
-\o Setting var VCM_DC = "1.6"
-\o Setting var VDD = "3.63"
-\o Setting var VIN_AC = "1"
-\o Setting var VIN_AMP = "1m"
-\o Setting var VIN_DC = "0"
-\o Setting var VIN_FREQ = "50"
 \o Setting var temperature = "85"
 \o Setting temp(T) = 85
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/5/ECG_IA:ecg_ia_tb:1/netlist
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/7/ECG_IA:ecg_ia_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/5/ECG_IA:ecg_ia_tb:1
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/7/ECG_IA:ecg_ia_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (69 5)
+\o *Info*    Creating Netlist for Point ID (2 7)
 \o 
 \o generate netlist...
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 18 13:52:46 2026
-\o End netlisting Mar 18 13:52:46 2026
+\o Begin Incremental Netlisting Mar 30 04:38:18 2026
+\o End netlisting Mar 30 04:38:19 2026
 \o 
-\o Netlisting Statistics:
-\o 	Number of components:   40
-\o 
-\o 	Elapsed time:          0.0s
-\o Errors: 0	Warnings: 0
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
 \o       ...successful.
 \o compose simulator input file...
 \o       ...successful.
 \o 
 \o *Info*    Running simulation on testbench [ ECG_IA:ecg_ia_tb:1 ] for
-\o           Point ID (69 5).
+\o           Point ID (2 7).
 \o 
-\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/5/ECG_IA:ecg_ia_tb:1/psf.
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/7/ECG_IA:ecg_ia_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -1889,88 +326,37 @@
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Fundamental_dB' returned 'nil' for point:'5' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'harmonic(db(vh('pss "/VOUT")) 1)'.
-\o Ensure that the definition of output is correct.
-\o 
-\o ERROR (ADE-2709): Evaluation of output 'v /net2; pss mag(V)' returned 'nil' for point:'5' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'vh('pss "/net2")'.
-\o Ensure that the definition of output is correct.
-\o 
-\o ERROR (ADE-2709): Evaluation of output 'v /VOUT; pss mag(V)' returned 'nil' for point:'5' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'vh('pss "/VOUT")'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/5/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/5/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/7/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/7/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
 \e *Error* 
 \e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
 \e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'5' test:'ECG_IA:ecg_ia_tb:1'
+\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'7' test:'ECG_IA:ecg_ia_tb:1'
 \o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
 \o Ensure that the definition of output is correct.
 \o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'harmionic_1_dB' returned 'nil' for point:'5' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'harmonic(db(vh('pss "/VOUT")) 2)'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'v /VOUT; pss dB20(V)' returned 'nil' for point:'5' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'db(vh('pss "/VOUT"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/5/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/5/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/7/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/7/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
 \e *Error* 
 \e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
 \e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'5' test:'ECG_IA:ecg_ia_tb:1'
+\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'7' test:'ECG_IA:ecg_ia_tb:1'
 \o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
 \o Ensure that the definition of output is correct.
 \o 
-\e *Error* mag: can't handle mag(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Fundamental_V' returned 'nil' for point:'5' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'harmonic(mag(vh('pss "/VOUT")) 1)'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'd2' failed for point:'5' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'(harmonic(db(vh('pss "/VOUT")) 1) - harmonic(db(vh('pss "/VOUT")) 2))'
-\o 	because of the following error(s)
-\o 	*Error* difference: can't handle (nil - nil).
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/5/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/5/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/7/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/7/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
 \e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
 \e 
 \e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'5' test:'ECG_IA:ecg_ia_tb:1'
+\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'7' test:'ECG_IA:ecg_ia_tb:1'
 \o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
 \o 	because of the following error(s)
 \o 	*Error* expt: can't handle (nil**2).
 \o Ensure that the definition of output is correct.
 \o 
 \o 
-\o *Info*    Run complete for Point ID (69 5) on testbench [
+\o *Info*    Run complete for Point ID (2 7) on testbench [
 \o           ECG_IA:ecg_ia_tb:1 ].
 \o 
 \o 
@@ -1982,7 +368,100 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (69 8) on testbench [
+\o *Info*    Run start for Point ID (2 13) on testbench [
+\o           ECG_IA:ecg_ia_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/13/ECG_IA:ecg_ia_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/13/ECG_IA:ecg_ia_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 13)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 30 04:38:41 2026
+\o End netlisting Mar 30 04:38:41 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ ECG_IA:ecg_ia_tb:1 ] for
+\o           Point ID (2 13).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/13/ECG_IA:ecg_ia_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/13/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/13/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'13' test:'ECG_IA:ecg_ia_tb:1'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/13/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/13/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'13' test:'ECG_IA:ecg_ia_tb:1'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/13/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/13/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'13' test:'ECG_IA:ecg_ia_tb:1'
+\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
+\o 	because of the following error(s)
+\o 	*Error* expt: can't handle (nil**2).
+\o Ensure that the definition of output is correct.
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 13) on testbench [
+\o           ECG_IA:ecg_ia_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 20) on testbench [
 \o           ECG_IA:ecg_ia_tb:1 ].
 \o 
 \o Resetting statistical vars
@@ -1993,20 +472,20 @@
 \o Setting temp(T) = -40
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/8/ECG_IA:ecg_ia_tb:1/netlist
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/20/ECG_IA:ecg_ia_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/8/ECG_IA:ecg_ia_tb:1
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/20/ECG_IA:ecg_ia_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (69 8)
+\o *Info*    Creating Netlist for Point ID (2 20)
 \o 
 \o generate netlist...
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 18 13:52:47 2026
-\o End netlisting Mar 18 13:52:47 2026
+\o Begin Incremental Netlisting Mar 30 04:39:04 2026
+\o End netlisting Mar 30 04:39:04 2026
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -2015,9 +494,9 @@
 \o       ...successful.
 \o 
 \o *Info*    Running simulation on testbench [ ECG_IA:ecg_ia_tb:1 ] for
-\o           Point ID (69 8).
+\o           Point ID (2 20).
 \o 
-\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/8/ECG_IA:ecg_ia_tb:1/psf.
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/20/ECG_IA:ecg_ia_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -2034,88 +513,37 @@
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Fundamental_dB' returned 'nil' for point:'8' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'harmonic(db(vh('pss "/VOUT")) 1)'.
-\o Ensure that the definition of output is correct.
-\o 
-\o ERROR (ADE-2709): Evaluation of output 'v /net2; pss mag(V)' returned 'nil' for point:'8' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'vh('pss "/net2")'.
-\o Ensure that the definition of output is correct.
-\o 
-\o ERROR (ADE-2709): Evaluation of output 'v /VOUT; pss mag(V)' returned 'nil' for point:'8' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'vh('pss "/VOUT")'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/8/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/8/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/20/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/20/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
 \e *Error* 
 \e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
 \e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'8' test:'ECG_IA:ecg_ia_tb:1'
+\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'20' test:'ECG_IA:ecg_ia_tb:1'
 \o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
 \o Ensure that the definition of output is correct.
 \o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'harmionic_1_dB' returned 'nil' for point:'8' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'harmonic(db(vh('pss "/VOUT")) 2)'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'v /VOUT; pss dB20(V)' returned 'nil' for point:'8' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'db(vh('pss "/VOUT"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/8/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/8/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/20/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/20/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
 \e *Error* 
 \e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
 \e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'8' test:'ECG_IA:ecg_ia_tb:1'
+\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'20' test:'ECG_IA:ecg_ia_tb:1'
 \o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
 \o Ensure that the definition of output is correct.
 \o 
-\e *Error* mag: can't handle mag(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Fundamental_V' returned 'nil' for point:'8' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'harmonic(mag(vh('pss "/VOUT")) 1)'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'd2' failed for point:'8' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'(harmonic(db(vh('pss "/VOUT")) 1) - harmonic(db(vh('pss "/VOUT")) 2))'
-\o 	because of the following error(s)
-\o 	*Error* difference: can't handle (nil - nil).
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/8/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/8/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/20/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/20/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
 \e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
 \e 
 \e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'8' test:'ECG_IA:ecg_ia_tb:1'
+\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'20' test:'ECG_IA:ecg_ia_tb:1'
 \o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
 \o 	because of the following error(s)
 \o 	*Error* expt: can't handle (nil**2).
 \o Ensure that the definition of output is correct.
 \o 
 \o 
-\o *Info*    Run complete for Point ID (69 8) on testbench [
+\o *Info*    Run complete for Point ID (2 20) on testbench [
 \o           ECG_IA:ecg_ia_tb:1 ].
 \o 
 \o 
@@ -2127,7 +555,7 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (69 14) on testbench [
+\o *Info*    Run start for Point ID (2 27) on testbench [
 \o           ECG_IA:ecg_ia_tb:1 ].
 \o 
 \o Resetting statistical vars
@@ -2135,22 +563,24 @@
 \o *Info*    Setting parameter values ...
 \o 
 \o Setting var VDD = "2.97"
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/14/ECG_IA:ecg_ia_tb:1/netlist
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/27/ECG_IA:ecg_ia_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/14/ECG_IA:ecg_ia_tb:1
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/27/ECG_IA:ecg_ia_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (69 14)
+\o *Info*    Creating Netlist for Point ID (2 27)
 \o 
 \o generate netlist...
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 18 13:52:49 2026
-\o End netlisting Mar 18 13:52:49 2026
+\o Begin Incremental Netlisting Mar 30 04:39:28 2026
+\o End netlisting Mar 30 04:39:28 2026
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -2159,9 +589,9 @@
 \o       ...successful.
 \o 
 \o *Info*    Running simulation on testbench [ ECG_IA:ecg_ia_tb:1 ] for
-\o           Point ID (69 14).
+\o           Point ID (2 27).
 \o 
-\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/14/ECG_IA:ecg_ia_tb:1/psf.
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/27/ECG_IA:ecg_ia_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -2178,99 +608,142 @@
 \o       ...successful.
 \o *Info*    Client has finished evaluating ... 
 \o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Fundamental_dB' returned 'nil' for point:'14' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'harmonic(db(vh('pss "/VOUT")) 1)'.
-\o Ensure that the definition of output is correct.
-\o 
-\o ERROR (ADE-2709): Evaluation of output 'v /net2; pss mag(V)' returned 'nil' for point:'14' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'vh('pss "/net2")'.
-\o Ensure that the definition of output is correct.
-\o 
-\o ERROR (ADE-2709): Evaluation of output 'v /VOUT; pss mag(V)' returned 'nil' for point:'14' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'vh('pss "/VOUT")'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/14/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/14/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/27/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/27/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
 \e *Error* 
 \e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
 \e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'14' test:'ECG_IA:ecg_ia_tb:1'
+\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'27' test:'ECG_IA:ecg_ia_tb:1'
 \o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
 \o Ensure that the definition of output is correct.
 \o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'harmionic_1_dB' returned 'nil' for point:'14' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'harmonic(db(vh('pss "/VOUT")) 2)'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'v /VOUT; pss dB20(V)' returned 'nil' for point:'14' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'db(vh('pss "/VOUT"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/14/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/14/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/27/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/27/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
 \e *Error* 
 \e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
 \e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'14' test:'ECG_IA:ecg_ia_tb:1'
+\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'27' test:'ECG_IA:ecg_ia_tb:1'
 \o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
 \o Ensure that the definition of output is correct.
 \o 
-\e *Error* mag: can't handle mag(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Fundamental_V' returned 'nil' for point:'14' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'harmonic(mag(vh('pss "/VOUT")) 1)'.
-\o Ensure that the definition of output is correct.
-\o 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'd2' failed for point:'14' test:'ECG_IA:ecg_ia_tb:1'
-\o 	Expression:'(harmonic(db(vh('pss "/VOUT")) 1) - harmonic(db(vh('pss "/VOUT")) 2))'
-\o 	because of the following error(s)
-\o 	*Error* difference: can't handle (nil - nil).
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/14/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.297/14/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/27/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/27/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
 \e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
 \e 
 \e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'14' test:'ECG_IA:ecg_ia_tb:1'
+\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'27' test:'ECG_IA:ecg_ia_tb:1'
 \o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
 \o 	because of the following error(s)
 \o 	*Error* expt: can't handle (nil**2).
 \o Ensure that the definition of output is correct.
 \o 
 \o 
-\o *Info*    Run complete for Point ID (69 14) on testbench [
+\o *Info*    Run complete for Point ID (2 27) on testbench [
 \o           ECG_IA:ecg_ia_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 33) on testbench [
+\o           ECG_IA:ecg_ia_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/33/ECG_IA:ecg_ia_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/33/ECG_IA:ecg_ia_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 33)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 30 04:39:50 2026
+\o End netlisting Mar 30 04:39:50 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ ECG_IA:ecg_ia_tb:1 ] for
+\o           Point ID (2 33).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/33/ECG_IA:ecg_ia_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/33/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/33/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'33' test:'ECG_IA:ecg_ia_tb:1'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/33/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/33/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'33' test:'ECG_IA:ecg_ia_tb:1'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/33/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.342/33/ECG_IA:ecg_ia_tb:1. Use results() for a list of available results.
+\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'33' test:'ECG_IA:ecg_ia_tb:1'
+\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
+\o 	because of the following error(s)
+\o 	*Error* expt: can't handle (nil**2).
+\o Ensure that the definition of output is correct.
+\o 
+\# Memory report: Maximum memory size now 52,282 MB at UTC 2026.03.30 04:40:12.119
+\o 
+\o *Info*    Run complete for Point ID (2 33) on testbench [
+\o           ECG_IA:ecg_ia_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Job 137 timed out after no activity in 300 seconds.
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
-\# Lic Summary:
-\# [13:57:56.045145] Cdslmd servers:3000@lic08.ug.kth.se:29000@lic06.ug.kth.se
-\# [13:57:56.045171] Feature usage summary:
-\# Memory report: on exit            497 MB, process size 2,305 MB at UTC 2026.03.18 13:57:56.569
-\# Memory report: peak usage         497 MB, process size 2,307 MB
+\o 
+\o *Info*    Received signal SIGTERM.
+\o 
+\o 

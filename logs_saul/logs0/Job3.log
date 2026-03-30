@@ -1,14 +1,14 @@
-\# Program start time:     UTC 2026.03.19 05:52:02.982
-\# Local time: UTC (UTC+00:00) 2026.03.19 05:52:02.982
+\# Program start time:     UTC 2026.03.27 08:10:13.947
+\# Local time: UTC (UTC+00:00) 2026.03.27 08:10:13.947
 \o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 09/03/2024 19:11 (sjfhw316) $
 \o Hierarchy:		/opt/tools/cadence/installs/IC618/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.8-64b.500.36  (64-bit addresses)
-\# Command line:	/opt/tools/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso327048 -mpshost edatools -davinciService DaVinciService_327048_1773899286 -log /home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job3.log -licenseLockFileName /home/saul/projects/IL2244_VT26_SAUL/.tmp_saul/.edatools_327048 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 3
+\# Command line:	/opt/tools/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso682996 -mpshost edatools -davinciService DaVinciService_682996_1774598955 -log /home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job3.log -licenseLockFileName /home/saul/projects/IL2244_VT26_SAUL/.tmp_saul/.edatools_682996 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 3
 \# Host name (type):	edatools (x86_64)
 \# Operating system:	Linux 6.17.0-19-generic #19~24.04.2-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar  6 23:08:46 UTC 2
 \# Linux /etc/issue:	\S
 \# Linux /etc/issue:	Kernel \r on an \m
-\# X display name (WxH):	:8558 (1024x868)
+\# X display name (WxH):	:4737 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
 \# X server:			The X.Org Foundation
 \# Depth of Visual (Root):	24 (24)
@@ -18,11 +18,11 @@
 \# 			current id 0x0, current max 0x1ffffa (2097146)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	        715 MB
-\# Available memory:	     59,787 MB
+\# Initial sbrk value:	        921 MB
+\# Available memory:	     56,089 MB
 \# System memory:	     72,238 MB
-\# Maximum memory size:	     71,642 MB
-\# Max mem available:	     59,907 MB
+\# Maximum memory size:	     71,437 MB
+\# Max mem available:	     56,208 MB
 \# Initial memory used:	        119 MB
 \#        process size:	      1,676 MB
 \# Thread usage limits (effective/default):	maxthreads 4294967295/4294967295 maxload 16.00/16.00
@@ -30,7 +30,7 @@
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	edatools:/home/saul/projects/IL2244_VT26_SAUL
-\# Process Id:		329264
+\# Process Id:		685333
 \o 
 \o COPYRIGHT (C) 1992-2024  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           (C) 1992-2024  UNIX SYSTEMS Laboratories INC.,
@@ -73,12 +73,12 @@
 \o Loading cpf.cxt 
 \o Loading cli.cxt 
 \o Loading lp.cxt 
-\o INFO (ELI-00302) Connecting to parent process (session=virtuoso327048, host=edatools). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso682996, host=edatools). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
 \o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
-\o INFO (ELI-00304) The registration of the child 329264 within 90 seconds is being processed...
+\o INFO (ELI-00304) The registration of the child 685333 within 90 seconds is being processed...
 \o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
-\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 1 seconds.
-\# [05:52:03.445306] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se:29000@lic06.ug.kth.se
+\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\# [08:10:13.445290] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se:29000@lic06.ug.kth.se
 \o ......................................................................................
 \o            ams AG HIT-Kit v.ams_4.10
 \o ......................................................................................
@@ -86,6 +86,7 @@
 \o This HIT-Kit and attached documentation are confidential information and may 
 \o only be used as authorized by the HIT-Kit license agreement.
 \o ......................................................................................
+\# Memory report: using         273 MB, process size 1,960 MB at UTC 2026.03.27 08:10:15.078
 \# Current Window: window(2)
 \o Loading simulator default settings.
 \o //
@@ -98,7 +99,6 @@
 \o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
 \o //
 \o //
-\# Memory report: using         280 MB, process size 1,972 MB at UTC 2026.03.19 05:52:05.176
 \o Loading simulator default settings.
 \o *Info*    Client has finished starting ... 
 \o 
@@ -107,15 +107,1094 @@
 \w *WARNING* could not load font "-*-courier-medium-r-*-*-12-*", using font "fixed"
 \# Loading perfDiag...
 \# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
-\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 329264' to open it when Virtuoso freezes.
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 685333' to open it when Virtuoso freezes.
 \# (PerfDiag): Use backtrace from GLIBC.
 \w *WARNING* _perfPstackCheck: Cannot find pstack/gstack. Please setup PATH environment variable to pstack/gstack executable.
-\# Available memory:         59,572 MB at UTC 2026.03.19 05:52:13.553
-\# Memory report: Maximum memory size now 59,874 MB at UTC 2026.03.19 05:52:13.553
-\# Thread usage report: 22 active threads, active load 1.40 at UTC 2026.03.19 05:52:13.553
-\o Job 3 timed out after no activity in 300 seconds.
+\o Loading vqp.cxt 
+\o Loading hdlPkg.cxt 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
 \o Loading simui.cxt 
+\o 	Library      = FECG
+\o 	Cell         = fecg_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = MC_VIN:1_state_MonteCarlo.7
+\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl/results/data/MonteCarlo.7.rdb
+\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/1/MC
+\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
+\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl
+\o 	File Encoding = 0
 \o 
-\o *Info*    Received signal SIGTERM.
+\o 
+\o Loading viva.cxt 
+\o Loading spectrei.cxt 
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\# Memory report: using         375 MB, process size 2,071 MB at UTC 2026.03.27 08:10:17.140
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o Loading monte.cxt 
 \o 
 \o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 35) on testbench [ MC ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var FC = "4k"
+\o Setting var S0 = "3.3"
+\o Setting var S1 = "3.3"
+\o Setting var S2 = "0"
+\o Setting var T0 = "0"
+\o Setting var T1 = "0"
+\o Setting var T2 = "0"
+\o Setting var VCM_AC = "1"
+\o Setting var VCM_DC = "1.6"
+\o Setting var VDD = "3.3"
+\o Setting var VDD_STEP = "0"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_AMP = "0.5m"
+\o Setting var VIN_DC = "0"
+\o Setting var VIN_FREQ = "50"
+\o Setting var VIN_STEP = "0"
+\o Setting var temperature = "27"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 35)
+\o 
+\o generate netlist...
+\o Loading hnlInit.cxt 
+\o Loading seCore.cxt 
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\# [08:10:17.435272] Periodic Lic check successful
+\# [08:10:17.435273] Feature usage summary:
+\o Begin Incremental Netlisting Mar 27 08:10:17 2026
+\o End netlisting Mar 27 08:10:17 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ MC ] for Point ID (2 35).
+\o 
+\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 27 08:10:17 2026
+\o End netlisting Mar 27 08:10:17 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o Loading paraplot.cxt 
+\# Available memory:         53,206 MB at UTC 2026.03.27 08:10:24.554
+\# Memory report: Maximum memory size now 53,647 MB at UTC 2026.03.27 08:10:24.554
+\# Thread usage report: 22 active threads, active load 1.40 at UTC 2026.03.27 08:10:24.554
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/035/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/035/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'35' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/035/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/035/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'35' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/035/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/035/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'35' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/035/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/035/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'35' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/035/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/035/. Use results() for a list of available results.
+\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'35' test:'MC'
+\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
+\o 	because of the following error(s)
+\o 	*Error* expt: can't handle (nil**2).
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 35) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 52,539 MB at UTC 2026.03.27 08:10:54.554
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/036/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/036/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'36' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/036/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/036/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'36' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/036/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/036/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'36' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/036/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/036/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'36' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/036/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/036/. Use results() for a list of available results.
+\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'36' test:'MC'
+\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
+\o 	because of the following error(s)
+\o 	*Error* expt: can't handle (nil**2).
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 36) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/037/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/037/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'37' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/037/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/037/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'37' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/037/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/037/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'37' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/037/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/037/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'37' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/037/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/037/. Use results() for a list of available results.
+\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'37' test:'MC'
+\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
+\o 	because of the following error(s)
+\o 	*Error* expt: can't handle (nil**2).
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 37) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/038/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/038/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'38' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/038/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/038/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'38' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/038/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/038/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'38' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/038/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/038/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'38' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/038/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/038/. Use results() for a list of available results.
+\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'38' test:'MC'
+\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
+\o 	because of the following error(s)
+\o 	*Error* expt: can't handle (nil**2).
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 38) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/039/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/039/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'39' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/039/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/039/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'39' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/039/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/039/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'39' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/039/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/039/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'39' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/039/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/039/. Use results() for a list of available results.
+\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'39' test:'MC'
+\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
+\o 	because of the following error(s)
+\o 	*Error* expt: can't handle (nil**2).
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 39) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/040/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/040/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'40' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/040/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/040/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'40' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/040/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/040/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'40' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/040/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/040/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'40' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/040/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/040/. Use results() for a list of available results.
+\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'40' test:'MC'
+\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
+\o 	because of the following error(s)
+\o 	*Error* expt: can't handle (nil**2).
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 40) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/041/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/041/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'41' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/041/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/041/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'41' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/041/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/041/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'41' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/041/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/041/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'41' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/041/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/041/. Use results() for a list of available results.
+\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'41' test:'MC'
+\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
+\o 	because of the following error(s)
+\o 	*Error* expt: can't handle (nil**2).
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 41) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: using         476 MB, process size 2,286 MB at UTC 2026.03.27 08:13:55.554
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/042/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/042/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'42' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/042/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/042/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'42' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/042/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/042/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'42' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/042/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/042/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'42' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/042/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/042/. Use results() for a list of available results.
+\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'42' test:'MC'
+\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
+\o 	because of the following error(s)
+\o 	*Error* expt: can't handle (nil**2).
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 42) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/043/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/043/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'43' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/043/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/043/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'43' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/043/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/043/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'43' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/043/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/043/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'43' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/043/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/043/. Use results() for a list of available results.
+\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'43' test:'MC'
+\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
+\o 	because of the following error(s)
+\o 	*Error* expt: can't handle (nil**2).
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 43) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/044/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/044/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'44' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/044/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/044/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'44' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/044/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/044/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'44' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/044/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/044/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'44' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/044/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/044/. Use results() for a list of available results.
+\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'44' test:'MC'
+\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
+\o 	because of the following error(s)
+\o 	*Error* expt: can't handle (nil**2).
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 44) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/045/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/045/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'45' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/045/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/045/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'45' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/045/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/045/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'45' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/045/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/045/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'45' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/045/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/045/. Use results() for a list of available results.
+\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'45' test:'MC'
+\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
+\o 	because of the following error(s)
+\o 	*Error* expt: can't handle (nil**2).
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 45) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/046/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/046/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'46' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/046/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/046/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'46' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/046/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/046/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'46' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/046/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/046/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'46' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/046/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/046/. Use results() for a list of available results.
+\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'46' test:'MC'
+\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
+\o 	because of the following error(s)
+\o 	*Error* expt: can't handle (nil**2).
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 46) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/047/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/047/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'47' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/047/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/047/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'47' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/047/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/047/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'47' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/047/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/047/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'47' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/047/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/047/. Use results() for a list of available results.
+\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'47' test:'MC'
+\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
+\o 	because of the following error(s)
+\o 	*Error* expt: can't handle (nil**2).
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 47) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/048/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/048/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'48' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/048/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/048/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'48' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/048/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/048/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'48' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/048/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/048/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'48' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/048/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/048/. Use results() for a list of available results.
+\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'48' test:'MC'
+\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
+\o 	because of the following error(s)
+\o 	*Error* expt: can't handle (nil**2).
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 48) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/049/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/049/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'49' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/049/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/049/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'49' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/049/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/049/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'49' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/049/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/049/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'49' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/049/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/049/. Use results() for a list of available results.
+\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'49' test:'MC'
+\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
+\o 	because of the following error(s)
+\o 	*Error* expt: can't handle (nil**2).
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 49) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/050/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/050/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'50' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/050/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/050/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'50' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/050/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/050/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'50' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/050/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/050/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'50' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/050/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/050/. Use results() for a list of available results.
+\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'50' test:'MC'
+\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
+\o 	because of the following error(s)
+\o 	*Error* expt: can't handle (nil**2).
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 50) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/051/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/051/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'51' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/051/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/051/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'51' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/051/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/051/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'51' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/051/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/051/. Use results() for a list of available results.
+\e *Error* 
+\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'51' test:'MC'
+\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/051/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/35/MC/groupRunDataDir/psf/mc1_separate/051/. Use results() for a list of available results.
+\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'51' test:'MC'
+\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
+\o 	because of the following error(s)
+\o 	*Error* expt: can't handle (nil**2).
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 51) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Monte Carlo Simulation completed successfully...
+\# Memory report: Maximum memory size now 53,584 MB at UTC 2026.03.27 08:19:13.554
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\# Lic Summary:
+\# [08:24:23.051427] Cdslmd servers:3000@lic08.ug.kth.se:29000@lic06.ug.kth.se
+\# [08:24:23.051450] Feature usage summary:
+\# Memory report: on exit            505 MB, process size 2,313 MB at UTC 2026.03.27 08:24:23.576
+\# Memory report: peak usage         505 MB, process size 2,315 MB

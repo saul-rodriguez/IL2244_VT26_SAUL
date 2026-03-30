@@ -1,114 +1,2155 @@
-*Info*    Exporting services from client ... 
-
-*Info*    Client has finished starting ... 
-
-
-
-*Info*    Configuring the session ...
-
-	Library      = FECG
-	Cell         = fecg_ia_tb
-	View         = schematic
-	Simulator    = spectre
-	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = Noise_ECG_IA:ecg_ia_tb:1:1_state_Interactive.308
-	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_ia_tb/adexl/results/data/Interactive.308.rdb
-	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.308/1/Noise
-	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data
-	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
-	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_ia_tb/adexl
-	File Encoding = 0
-
-
-
-*Info*    The auto suspension is disabled.
-
-
-
-
-
-
-*Info*    Run start for Point ID (3 1) on testbench [ Noise ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting var FC = "2k"
-Setting var VCM_AC = "1"
-Setting var VCM_AMP = "0"
-Setting var VCM_DC = "1.6"
-Setting var VDD = "3.3"
-Setting var VDD_STEP = "0"
-Setting var VIN_AC = "1"
-Setting var VIN_AMP = "0"
-Setting var VIN_DC = "0"
-Setting var VIN_FREQ = "0"
-Setting var VIN_STEP = "0"
-Setting var temperature = "27"
-Setting temp(T) = 27
-
-*Info*    Netlist Directory =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.308/1/Noise/netlist
-
-
-*Info*    Data Directory    =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.308/1/Noise
-
-
-*Info*    Creating Netlist for Point ID (3 1)
-
-generate netlist...
-function ansCdlCompPrim redefined
-function ansCdlCompPrim redefined
-Begin Incremental Netlisting Mar 19 06:04:17 2026
-End netlisting Mar 19 06:04:17 2026
-
-	The netlist is up to date.
-	Time taken to compare the design with netlist:   0.0s
-      ...successful.
-compose simulator input file...
-      ...successful.
-
-*Info*    Running simulation on testbench [ Noise ] for Point ID (3
-          1).
-
-Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.308/1/Noise/psf.
-compose simulator input file...
-      ...successful.
-start simulator if needed...
-      ...successful.
-simulate...
-To view the simulator output, right-click on the test name, result 
-name, or any value in the "Results" tab of the Outputs section and 
-choose "Output Log" menu option.
-WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
-       and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
-       There will be no performance impact on data visualization due to this change.
-INFO (ADE-3071): Simulation completed successfully.
-reading simulation data...
-      ...successful.
-*Info*    Client has finished evaluating ... 
-
-WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.308/1/Noise. Use results() for a list of available results.
-WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.308/1/Noise. Use results() for a list of available results.
-ERROR (ADEXL-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'1' test:'Noise'
-	Expression:'db(getData("/V2" ?result "xf"))'.
-Ensure that the definition of output is correct.
-
-WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.308/1/Noise. Use results() for a list of available results.
-WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.308/1/Noise. Use results() for a list of available results.
-ERROR (ADEXL-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'1' test:'Noise'
-	Expression:'db(getData("/V7" ?result "xf"))'.
-Ensure that the definition of output is correct.
-
-
-*Info*    Run complete for Point ID (3 1) on testbench [ Noise ].
-
-
-
-
-
-Simulation design variables differ from those on the cellView,
-they have been saved in the file "/tmp/saved-design-variables".
-To save future changes, copy variables to cellView before exiting.
+\# Program start time:     UTC 2026.03.27 08:31:07.958
+\# Local time: UTC (UTC+00:00) 2026.03.27 08:31:07.958
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 09/03/2024 19:11 (sjfhw316) $
+\o Hierarchy:		/opt/tools/cadence/installs/IC618/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.36  (64-bit addresses)
+\# Command line:	/opt/tools/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso682996 -mpshost edatools -davinciService DaVinciService_682996_1774598955 -log /home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job10.log -licenseLockFileName /home/saul/projects/IL2244_VT26_SAUL/.tmp_saul/.edatools_682996 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 10
+\# Host name (type):	edatools (x86_64)
+\# Operating system:	Linux 6.17.0-19-generic #19~24.04.2-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar  6 23:08:46 UTC 2
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:7490 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12011000)
+\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	      1,357 MB
+\# Available memory:	     54,560 MB
+\# System memory:	     72,238 MB
+\# Maximum memory size:	     71,000 MB
+\# Max mem available:	     54,679 MB
+\# Initial memory used:	        119 MB
+\#        process size:	      1,676 MB
+\# Thread usage limits (effective/default):	maxthreads 4294967295/4294967295 maxload 16.00/16.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		saul
+\o Working Directory:	edatools:/home/saul/projects/IL2244_VT26_SAUL
+\# Process Id:		695434
+\o 
+\o COPYRIGHT (C) 1992-2024  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2024  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\o Loading adexlDM.cxt 
+\o Loading cpf.cxt 
+\o Loading cli.cxt 
+\o Loading lp.cxt 
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso682996, host=edatools). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
+\o INFO (ELI-00304) The registration of the child 695434 within 90 seconds is being processed...
+\o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
+\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\# [08:31:07.445338] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se:29000@lic06.ug.kth.se
+\# Memory report: using         269 MB, process size 1,956 MB at UTC 2026.03.27 08:31:09.075
+\o ......................................................................................
+\o            ams AG HIT-Kit v.ams_4.10
+\o ......................................................................................
+\o COPYRIGHT (c) 2012 Full Service Foundry @ ams AG.  ALL RIGHTS RESERVED
+\o This HIT-Kit and attached documentation are confidential information and may 
+\o only be used as authorized by the HIT-Kit license agreement.
+\o ......................................................................................
+\# Current Window: window(2)
+\o Loading simulator default settings.
+\o //
+\o //  Calibre Skill Interface * (v2024.4_12.9) *
+\o //
+\o //                         Copyright Siemens 1996-2020     
+\o //                             All Rights Reserved.
+\o //         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+\o //            WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+\o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+\o //
+\o //
+\o Loading simulator default settings.
+\o *Info*    Client has finished starting ... 
+\o 
+\o Loading vdsil.cxt 
+\p hitkit: ams_4.10  Tech: c35b4c3  User: saul 
+\w *WARNING* could not load font "-*-courier-medium-r-*-*-12-*", using font "fixed"
+\# Loading perfDiag...
+\# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 695434' to open it when Virtuoso freezes.
+\# (PerfDiag): Use backtrace from GLIBC.
+\w *WARNING* _perfPstackCheck: Cannot find pstack/gstack. Please setup PATH environment variable to pstack/gstack executable.
+\o Loading vqp.cxt 
+\o Loading hdlPkg.cxt 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o Loading simui.cxt 
+\o 	Library      = FECG
+\o 	Cell         = fecg_ia_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = MC_ECG_IA:ecg_ia_tb:1:1_state_MonteCarlo.6
+\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6.rdb
+\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/10/MC
+\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
+\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_ia_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o Loading viva.cxt 
+\o Loading spectrei.cxt 
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\# Memory report: using         375 MB, process size 2,071 MB at UTC 2026.03.27 08:31:11.213
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o Loading monte.cxt 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (0 28) on testbench [ MC ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var FC = "4k"
+\o Setting var VCM_AC = "1"
+\o Setting var VCM_AMP = "0"
+\o Setting var VCM_DC = "1.6"
+\o Setting var VDD = "3.3"
+\o Setting var VDD_STEP = "0"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_AMP = "1m"
+\o Setting var VIN_DC = "0"
+\o Setting var VIN_FREQ = "50"
+\o Setting var VIN_STEP = "0"
+\o Setting var temperature = "27"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (0 28)
+\o 
+\o generate netlist...
+\o Loading hnlInit.cxt 
+\o Loading seCore.cxt 
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\# [08:31:11.494824] Periodic Lic check successful
+\# [08:31:11.494825] Feature usage summary:
+\o Begin Incremental Netlisting Mar 27 08:31:11 2026
+\o End netlisting Mar 27 08:31:11 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ MC ] for Point ID (0 28).
+\o 
+\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 27 08:31:11 2026
+\o End netlisting Mar 27 08:31:11 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o Loading paraplot.cxt 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'VOUT1' returned 'nil' for point:'28' test:'MC'
+\o 	Expression:'db(vh('pss "/VOUT1"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'v /VOUT1; pss (V)' returned 'nil' for point:'28' test:'MC'
+\o 	Expression:'vtime('pss "/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'VOUT_pss' returned 'nil' for point:'28' test:'MC'
+\o 	Expression:'vtime('pss "/VOUT")'.
+\o Ensure that the definition of output is correct.
+\o 
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Fundamental_VOUT1_mag' returned 'nil' for point:'28' test:'MC'
+\o 	Expression:'harmonic(mag(vh('pss "/VOUT")) 1)'.
+\o Ensure that the definition of output is correct.
+\o 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Fundamental_VOUT1_dB' returned 'nil' for point:'28' test:'MC'
+\o 	Expression:'harmonic(db(vh('pss "/VOUT")) 1)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/028/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/028/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'28' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/028/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/028/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'28' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'd2_dB' failed for point:'28' test:'MC'
+\o 	Expression:'(harmonic(db(vh('pss "/VOUT1")) 1) - harmonic(db(vh('pss "/VOUT1")) 2))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/028//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/028//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'28' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 28) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'VOUT1' returned 'nil' for point:'29' test:'MC'
+\o 	Expression:'db(vh('pss "/VOUT1"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'v /VOUT1; pss (V)' returned 'nil' for point:'29' test:'MC'
+\o 	Expression:'vtime('pss "/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'VOUT_pss' returned 'nil' for point:'29' test:'MC'
+\o 	Expression:'vtime('pss "/VOUT")'.
+\o Ensure that the definition of output is correct.
+\o 
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Fundamental_VOUT1_mag' returned 'nil' for point:'29' test:'MC'
+\o 	Expression:'harmonic(mag(vh('pss "/VOUT")) 1)'.
+\o Ensure that the definition of output is correct.
+\o 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Fundamental_VOUT1_dB' returned 'nil' for point:'29' test:'MC'
+\o 	Expression:'harmonic(db(vh('pss "/VOUT")) 1)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/029/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/029/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'29' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/029/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/029/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'29' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'd2_dB' failed for point:'29' test:'MC'
+\o 	Expression:'(harmonic(db(vh('pss "/VOUT1")) 1) - harmonic(db(vh('pss "/VOUT1")) 2))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/029//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/029//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'29' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 29) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'VOUT1' returned 'nil' for point:'30' test:'MC'
+\o 	Expression:'db(vh('pss "/VOUT1"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'v /VOUT1; pss (V)' returned 'nil' for point:'30' test:'MC'
+\o 	Expression:'vtime('pss "/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'VOUT_pss' returned 'nil' for point:'30' test:'MC'
+\o 	Expression:'vtime('pss "/VOUT")'.
+\o Ensure that the definition of output is correct.
+\o 
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Fundamental_VOUT1_mag' returned 'nil' for point:'30' test:'MC'
+\o 	Expression:'harmonic(mag(vh('pss "/VOUT")) 1)'.
+\o Ensure that the definition of output is correct.
+\o 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Fundamental_VOUT1_dB' returned 'nil' for point:'30' test:'MC'
+\o 	Expression:'harmonic(db(vh('pss "/VOUT")) 1)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/030/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/030/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'30' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/030/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/030/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'30' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'd2_dB' failed for point:'30' test:'MC'
+\o 	Expression:'(harmonic(db(vh('pss "/VOUT1")) 1) - harmonic(db(vh('pss "/VOUT1")) 2))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/030//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/030//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'30' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 30) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'VOUT1' returned 'nil' for point:'31' test:'MC'
+\o 	Expression:'db(vh('pss "/VOUT1"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'v /VOUT1; pss (V)' returned 'nil' for point:'31' test:'MC'
+\o 	Expression:'vtime('pss "/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'VOUT_pss' returned 'nil' for point:'31' test:'MC'
+\o 	Expression:'vtime('pss "/VOUT")'.
+\o Ensure that the definition of output is correct.
+\o 
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Fundamental_VOUT1_mag' returned 'nil' for point:'31' test:'MC'
+\o 	Expression:'harmonic(mag(vh('pss "/VOUT")) 1)'.
+\o Ensure that the definition of output is correct.
+\o 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Fundamental_VOUT1_dB' returned 'nil' for point:'31' test:'MC'
+\o 	Expression:'harmonic(db(vh('pss "/VOUT")) 1)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/031/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/031/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'31' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/031/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/031/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'31' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'd2_dB' failed for point:'31' test:'MC'
+\o 	Expression:'(harmonic(db(vh('pss "/VOUT1")) 1) - harmonic(db(vh('pss "/VOUT1")) 2))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/031//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/031//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'31' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 31) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'VOUT1' returned 'nil' for point:'32' test:'MC'
+\o 	Expression:'db(vh('pss "/VOUT1"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'v /VOUT1; pss (V)' returned 'nil' for point:'32' test:'MC'
+\o 	Expression:'vtime('pss "/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'VOUT_pss' returned 'nil' for point:'32' test:'MC'
+\o 	Expression:'vtime('pss "/VOUT")'.
+\o Ensure that the definition of output is correct.
+\o 
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Fundamental_VOUT1_mag' returned 'nil' for point:'32' test:'MC'
+\o 	Expression:'harmonic(mag(vh('pss "/VOUT")) 1)'.
+\o Ensure that the definition of output is correct.
+\o 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Fundamental_VOUT1_dB' returned 'nil' for point:'32' test:'MC'
+\o 	Expression:'harmonic(db(vh('pss "/VOUT")) 1)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/032/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/032/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'32' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/032/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/032/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'32' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'd2_dB' failed for point:'32' test:'MC'
+\o 	Expression:'(harmonic(db(vh('pss "/VOUT1")) 1) - harmonic(db(vh('pss "/VOUT1")) 2))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/032//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/032//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'32' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 32) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'VOUT1' returned 'nil' for point:'33' test:'MC'
+\o 	Expression:'db(vh('pss "/VOUT1"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'v /VOUT1; pss (V)' returned 'nil' for point:'33' test:'MC'
+\o 	Expression:'vtime('pss "/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'VOUT_pss' returned 'nil' for point:'33' test:'MC'
+\o 	Expression:'vtime('pss "/VOUT")'.
+\o Ensure that the definition of output is correct.
+\o 
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Fundamental_VOUT1_mag' returned 'nil' for point:'33' test:'MC'
+\o 	Expression:'harmonic(mag(vh('pss "/VOUT")) 1)'.
+\o Ensure that the definition of output is correct.
+\o 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Fundamental_VOUT1_dB' returned 'nil' for point:'33' test:'MC'
+\o 	Expression:'harmonic(db(vh('pss "/VOUT")) 1)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/033/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/033/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'33' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/033/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/033/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'33' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'd2_dB' failed for point:'33' test:'MC'
+\o 	Expression:'(harmonic(db(vh('pss "/VOUT1")) 1) - harmonic(db(vh('pss "/VOUT1")) 2))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/033//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/033//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'33' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 33) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'VOUT1' returned 'nil' for point:'34' test:'MC'
+\o 	Expression:'db(vh('pss "/VOUT1"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'v /VOUT1; pss (V)' returned 'nil' for point:'34' test:'MC'
+\o 	Expression:'vtime('pss "/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'VOUT_pss' returned 'nil' for point:'34' test:'MC'
+\o 	Expression:'vtime('pss "/VOUT")'.
+\o Ensure that the definition of output is correct.
+\o 
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Fundamental_VOUT1_mag' returned 'nil' for point:'34' test:'MC'
+\o 	Expression:'harmonic(mag(vh('pss "/VOUT")) 1)'.
+\o Ensure that the definition of output is correct.
+\o 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Fundamental_VOUT1_dB' returned 'nil' for point:'34' test:'MC'
+\o 	Expression:'harmonic(db(vh('pss "/VOUT")) 1)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/034/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/034/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'34' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/034/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/034/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'34' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'd2_dB' failed for point:'34' test:'MC'
+\o 	Expression:'(harmonic(db(vh('pss "/VOUT1")) 1) - harmonic(db(vh('pss "/VOUT1")) 2))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/034//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/034//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'34' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 34) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'VOUT1' returned 'nil' for point:'35' test:'MC'
+\o 	Expression:'db(vh('pss "/VOUT1"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'v /VOUT1; pss (V)' returned 'nil' for point:'35' test:'MC'
+\o 	Expression:'vtime('pss "/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'VOUT_pss' returned 'nil' for point:'35' test:'MC'
+\o 	Expression:'vtime('pss "/VOUT")'.
+\o Ensure that the definition of output is correct.
+\o 
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Fundamental_VOUT1_mag' returned 'nil' for point:'35' test:'MC'
+\o 	Expression:'harmonic(mag(vh('pss "/VOUT")) 1)'.
+\o Ensure that the definition of output is correct.
+\o 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Fundamental_VOUT1_dB' returned 'nil' for point:'35' test:'MC'
+\o 	Expression:'harmonic(db(vh('pss "/VOUT")) 1)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/035/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/035/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'35' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/035/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/035/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'35' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'd2_dB' failed for point:'35' test:'MC'
+\o 	Expression:'(harmonic(db(vh('pss "/VOUT1")) 1) - harmonic(db(vh('pss "/VOUT1")) 2))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/035//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/035//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'35' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 35) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'VOUT1' returned 'nil' for point:'36' test:'MC'
+\o 	Expression:'db(vh('pss "/VOUT1"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'v /VOUT1; pss (V)' returned 'nil' for point:'36' test:'MC'
+\o 	Expression:'vtime('pss "/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'VOUT_pss' returned 'nil' for point:'36' test:'MC'
+\o 	Expression:'vtime('pss "/VOUT")'.
+\o Ensure that the definition of output is correct.
+\o 
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Fundamental_VOUT1_mag' returned 'nil' for point:'36' test:'MC'
+\o 	Expression:'harmonic(mag(vh('pss "/VOUT")) 1)'.
+\o Ensure that the definition of output is correct.
+\o 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'Fundamental_VOUT1_dB' returned 'nil' for point:'36' test:'MC'
+\o 	Expression:'harmonic(db(vh('pss "/VOUT")) 1)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/036/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/036/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'36' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/036/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/036/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'36' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\e *Error* ("difference" 0 t nil ("*Error* difference: can't handle (nil - nil)"))
+\e 
+\e 
+\o ERROR (ADE-2708): Evaluation of output 'd2_dB' failed for point:'36' test:'MC'
+\o 	Expression:'(harmonic(db(vh('pss "/VOUT1")) 1) - harmonic(db(vh('pss "/VOUT1")) 2))'
+\o 	because of the following error(s)
+\o 	*Error* difference: can't handle (nil - nil).
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/036//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.6/28/MC/groupRunDataDir/psf/mc1_separate/036//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'36' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (0 36) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Monte Carlo Simulation completed successfully...
+\# Memory report: using         476 MB, process size 2,286 MB at UTC 2026.03.27 08:31:16.277
+\# Available memory:         53,062 MB at UTC 2026.03.27 08:31:18.554
+\# Memory report: Maximum memory size now 53,538 MB at UTC 2026.03.27 08:31:18.554
+\# Thread usage report: 22 active threads, active load 1.40 at UTC 2026.03.27 08:31:18.554
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = FECG
+\o 	Cell         = fecg_ia_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = MC_ECG_IA:ecg_ia_tb:1:1_state_MonteCarlo.7
+\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7.rdb
+\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/1/MC
+\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
+\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_ia_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 19) on testbench [ MC ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var FC = "4k"
+\o Setting var VCM_AC = "1"
+\o Setting var VCM_AMP = "0"
+\o Setting var VCM_DC = "1.6"
+\o Setting var VDD = "3.3"
+\o Setting var VDD_STEP = "0"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_AMP = "1m"
+\o Setting var VIN_DC = "0"
+\o Setting var VIN_FREQ = "50"
+\o Setting var VIN_STEP = "0"
+\o Setting var temperature = "27"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 19)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 27 08:31:52 2026
+\o End netlisting Mar 27 08:31:52 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ MC ] for Point ID (1 19).
+\o 
+\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 27 08:31:52 2026
+\o End netlisting Mar 27 08:31:52 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\# Memory report: Maximum memory size now 52,235 MB at UTC 2026.03.27 08:31:58.554
+\o ERROR (ADE-2709): Evaluation of output 'DC Vout' returned 'nil' for point:'19' test:'MC'
+\o 	Expression:'VDC("/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/019/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/019/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'19' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/019/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/019/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'19' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/019//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/019//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'19' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 19) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'DC Vout' returned 'nil' for point:'20' test:'MC'
+\o 	Expression:'VDC("/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/020/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/020/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'20' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/020/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/020/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'20' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/020//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/020//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'20' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 20) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'DC Vout' returned 'nil' for point:'21' test:'MC'
+\o 	Expression:'VDC("/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/021/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/021/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'21' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/021/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/021/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'21' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/021//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/021//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'21' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 21) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'DC Vout' returned 'nil' for point:'22' test:'MC'
+\o 	Expression:'VDC("/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/022/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/022/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'22' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/022/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/022/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'22' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/022//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/022//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'22' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 22) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'DC Vout' returned 'nil' for point:'23' test:'MC'
+\o 	Expression:'VDC("/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/023/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/023/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'23' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/023/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/023/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'23' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/023//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/023//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'23' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 23) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'DC Vout' returned 'nil' for point:'24' test:'MC'
+\o 	Expression:'VDC("/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/024/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/024/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'24' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/024/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/024/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'24' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/024//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/024//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'24' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 24) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'DC Vout' returned 'nil' for point:'25' test:'MC'
+\o 	Expression:'VDC("/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/025/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/025/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'25' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/025/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/025/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'25' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/025//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/025//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'25' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 25) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'DC Vout' returned 'nil' for point:'26' test:'MC'
+\o 	Expression:'VDC("/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/026/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/026/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'26' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/026/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/026/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'26' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/026//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/026//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'26' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 26) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o ERROR (ADE-2709): Evaluation of output 'DC Vout' returned 'nil' for point:'27' test:'MC'
+\o 	Expression:'VDC("/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/027/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/027/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'27' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/027/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/027/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'27' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/027//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.7/19/MC/groupRunDataDir/psf/mc1_separate/027//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'27' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 27) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Monte Carlo Simulation completed successfully...
+\# Memory report: Maximum memory size now 53,516 MB at UTC 2026.03.27 08:34:08.553
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = FECG
+\o 	Cell         = fecg_ia_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = MC_ECG_IA:ecg_ia_tb:1:1_state_MonteCarlo.8
+\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8.rdb
+\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/1/MC
+\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
+\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_ia_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 28) on testbench [ MC ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var FC = "4k"
+\o Setting var VCM_AC = "1"
+\o Setting var VCM_AMP = "0"
+\o Setting var VCM_DC = "1.6"
+\o Setting var VDD = "3.3"
+\o Setting var VDD_STEP = "0"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_AMP = "1m"
+\o Setting var VIN_DC = "0"
+\o Setting var VIN_FREQ = "50"
+\o Setting var VIN_STEP = "0"
+\o Setting var temperature = "27"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/28/MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/28/MC/groupRunDataDir
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 28)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 27 08:39:10 2026
+\o End netlisting Mar 27 08:39:10 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ MC ] for Point ID (2 28).
+\o 
+\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/28/MC/groupRunDataDir/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 27 08:39:10 2026
+\o End netlisting Mar 27 08:39:10 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o ERROR (ADE-2709): Evaluation of output 'DC Vout' returned 'nil' for point:'28' test:'MC'
+\o 	Expression:'VDC("/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/28/MC/groupRunDataDir/psf/mc1_separate/028/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/28/MC/groupRunDataDir/psf/mc1_separate/028/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'28' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/28/MC/groupRunDataDir/psf/mc1_separate/028/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/28/MC/groupRunDataDir/psf/mc1_separate/028/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'28' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/28/MC/groupRunDataDir/psf/mc1_separate/028//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/28/MC/groupRunDataDir/psf/mc1_separate/028//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'28' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 28) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\# Memory report: Maximum memory size now 52,361 MB at UTC 2026.03.27 08:39:38.553
+\o ERROR (ADE-2709): Evaluation of output 'DC Vout' returned 'nil' for point:'29' test:'MC'
+\o 	Expression:'VDC("/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/28/MC/groupRunDataDir/psf/mc1_separate/029/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/28/MC/groupRunDataDir/psf/mc1_separate/029/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'29' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/28/MC/groupRunDataDir/psf/mc1_separate/029/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/28/MC/groupRunDataDir/psf/mc1_separate/029/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'29' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/28/MC/groupRunDataDir/psf/mc1_separate/029//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/28/MC/groupRunDataDir/psf/mc1_separate/029//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'29' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 29) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'DC Vout' returned 'nil' for point:'30' test:'MC'
+\o 	Expression:'VDC("/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/28/MC/groupRunDataDir/psf/mc1_separate/030/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/28/MC/groupRunDataDir/psf/mc1_separate/030/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'30' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/28/MC/groupRunDataDir/psf/mc1_separate/030/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/28/MC/groupRunDataDir/psf/mc1_separate/030/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'30' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/28/MC/groupRunDataDir/psf/mc1_separate/030//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/28/MC/groupRunDataDir/psf/mc1_separate/030//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'30' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 30) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'DC Vout' returned 'nil' for point:'31' test:'MC'
+\o 	Expression:'VDC("/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/28/MC/groupRunDataDir/psf/mc1_separate/031/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/28/MC/groupRunDataDir/psf/mc1_separate/031/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'31' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/28/MC/groupRunDataDir/psf/mc1_separate/031/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/28/MC/groupRunDataDir/psf/mc1_separate/031/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'31' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/28/MC/groupRunDataDir/psf/mc1_separate/031//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.8/28/MC/groupRunDataDir/psf/mc1_separate/031//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'31' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 31) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Current simulation for points ((2 28) (2 29) (2 30) (2 31)
+\o           (2 32) (2 33) (2 34) (2 35) (2 36)).
+\o *Info*    (ADE-3072): Simulation stopped because you selected the
+\o           'Stop Simulation' command in ADE.
+\o 
+\o *Info*    Monte Carlo Simulation unsuccessful...
+\o *Info*    See simulation output log for more information.
+\o INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
+\o         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
+\o         to view the simulation run log.
+\o reading simulation data...
+\o       ...successful.
+\# Memory report: Maximum memory size now 53,835 MB at UTC 2026.03.27 08:40:28.554
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = FECG
+\o 	Cell         = fecg_ia_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = MC_ECG_IA:ecg_ia_tb:1:1_state_MonteCarlo.9
+\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9.rdb
+\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/1/MC
+\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
+\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_ia_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (3 19) on testbench [ MC ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var FC = "4k"
+\o Setting var VCM_AC = "1"
+\o Setting var VCM_AMP = "0"
+\o Setting var VCM_DC = "1.6"
+\o Setting var VDD = "3.3"
+\o Setting var VDD_STEP = "0"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_AMP = "1m"
+\o Setting var VIN_DC = "0"
+\o Setting var VIN_FREQ = "50"
+\o Setting var VIN_STEP = "0"
+\o Setting var temperature = "27"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (3 19)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 27 08:41:01 2026
+\o End netlisting Mar 27 08:41:01 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ MC ] for Point ID (3 19).
+\o 
+\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf.
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Mar 27 08:41:01 2026
+\o End netlisting Mar 27 08:41:01 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\# Memory report: Maximum memory size now 52,353 MB at UTC 2026.03.27 08:41:08.553
+\o ERROR (ADE-2709): Evaluation of output 'DC Vout' returned 'nil' for point:'19' test:'MC'
+\o 	Expression:'VDC("/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/019/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/019/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'19' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/019/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/019/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'19' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/019//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/019//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'19' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 19) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'DC Vout' returned 'nil' for point:'20' test:'MC'
+\o 	Expression:'VDC("/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/020/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/020/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'20' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/020/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/020/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'20' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/020//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/020//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'20' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 20) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'DC Vout' returned 'nil' for point:'21' test:'MC'
+\o 	Expression:'VDC("/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/021/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/021/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'21' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/021/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/021/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'21' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/021//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/021//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'21' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 21) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'DC Vout' returned 'nil' for point:'22' test:'MC'
+\o 	Expression:'VDC("/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/022/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/022/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'22' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/022/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/022/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'22' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/022//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/022//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'22' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 22) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'DC Vout' returned 'nil' for point:'23' test:'MC'
+\o 	Expression:'VDC("/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/023/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/023/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'23' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/023/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/023/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'23' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/023//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/023//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'23' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 23) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'DC Vout' returned 'nil' for point:'24' test:'MC'
+\o 	Expression:'VDC("/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/024/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/024/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'24' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/024/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/024/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'24' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/024//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/024//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'24' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 24) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'DC Vout' returned 'nil' for point:'25' test:'MC'
+\o 	Expression:'VDC("/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/025/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/025/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'25' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/025/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/025/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'25' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/025//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/025//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'25' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 25) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o ERROR (ADE-2709): Evaluation of output 'DC Vout' returned 'nil' for point:'26' test:'MC'
+\o 	Expression:'VDC("/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/026/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/026/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'26' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/026/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/026/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'26' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/026//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/026//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'26' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 26) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o ERROR (ADE-2709): Evaluation of output 'DC Vout' returned 'nil' for point:'27' test:'MC'
+\o 	Expression:'VDC("/VOUT1")'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/027/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/027/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'27' test:'MC'
+\o 	Expression:'db(getData("/V2" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/027/. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/027/. Use results() for a list of available results.
+\e *Error* db: can't handle db(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'27' test:'MC'
+\o 	Expression:'db(getData("/V7" ?result "xf"))'.
+\o Ensure that the definition of output is correct.
+\o 
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/027//.eval/MC/psf. Use results() for a list of available results.
+\o WARNING (OCN-6038): Results ac are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/MonteCarlo.9/19/MC/groupRunDataDir/psf/mc1_separate/027//.eval/MC/psf. Use results() for a list of available results.
+\e *Error* mag: can't handle mag(nil)
+\e 
+\e 
+\o ERROR (ADE-2709): Evaluation of output 'value(mag(VF("/VOUT")) 50)' returned 'nil' for point:'27' test:'MC'
+\o 	Expression:'value(mag(VF("/VOUT")) 50)'.
+\o Ensure that the definition of output is correct.
+\o 
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (3 27) on testbench [ MC ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Monte Carlo Simulation completed successfully...
+\# Memory report: Maximum memory size now 53,501 MB at UTC 2026.03.27 08:43:18.553
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\# Lic Summary:
+\# [08:48:26.063155] Cdslmd servers:3000@lic08.ug.kth.se:29000@lic06.ug.kth.se
+\# [08:48:26.063176] Feature usage summary:
+\# Memory report: on exit            547 MB, process size 2,354 MB at UTC 2026.03.27 08:48:26.591
+\# Memory report: peak usage         547 MB, process size 2,357 MB

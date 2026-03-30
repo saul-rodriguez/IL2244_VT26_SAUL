@@ -1,0 +1,29 @@
+;----------------------------------------------------------------------------
+; @(#)$CDS: assura version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/24 05:07 (sjfhw885) $
+; sub-version 4.1_USR7_main
+;----------------------------------------------------------------------------
+
+
+;----------------------------------------------------------------------------
+; Assura VLW saved state
+;----------------------------------------------------------------------------
+
+vuiLayerListOrder  =  "Alphabetical"
+vuiLayerList  = '(
+		("POLY2" 191 "POLY2 = geomOr( POLY2 )" 1 12 t "y0 (drawing)" t)
+		("ndiff_n_zener" 605 "ndiff_n_zener = geomAndNot( net_ndiff ZENER )" 0 2 t "y1 (drawing)" t)
+		("net_met1" 1550 "net_met1 = geomOr( net_met1 MET1_pinshape )" 1 14 t "y2 (drawing)" t)
+		("net_ndiff" 306 "net_ndiff = geomAndNot( ndiff_2 RDIFFN_device )" 0 13 t "y3 (drawing)" t)
+		("net_ndiff_stamp" 9335 "net_ndiff_stamp = geomOr( net_ndiff_stamp )" 1 9 t "y4 (drawing)" t)
+		("net_ndiffcon" 599 "net_ndiffcon = geomAndNot( T?598 net_poly1con )" 0 1 t "y5 (drawing)" t)
+		("net_nwell" 304 "net_nwell = geomOr( T?303 nmos30_ntub_clos )" 0 11 t "y6 (drawing)" t)
+		("net_poly2" 289 "net_poly2 = geomAndNot( poly2_4 presz )" 0 7 t "y7 (drawing)" t)
+		("net_poly2con" 198 "net_poly2con = geomAnd( CONT poly2_cut )" 0 15 t "y8 (drawing)" t)
+		("net_psub" 184 "net_psub = geomOr( T?182 T?183 )" 0 10 t "y9 (drawing)" t)
+		("net_welltap" 810 "net_welltap = geomAnd( net_ndiff net_nwell )" 0 0 t "y0 (drawing)" t)
+		("presh_exp" 9439 "presh_exp = groupVias(  via(presh_exp) conn1(presh_lexp) conn2(presh_wexp) )" 1 6 t "y1 (drawing)" t)
+		("presh_lexp" 722 "presh_lexp = geomOr( T?721 )" 0 4 t "y2 (drawing)" t)
+		("presh_trm" 281 "presh_trm = geomButting( preshterm presh )" 0 5 t "y3 (drawing)" t)
+		("presh_wexp" 720 "presh_wexp = geomOr( T?719 )" 0 3 t "y4 (drawing)" t)
+		("routingnwell_check" 4588 "routingnwell_check = geomAvoiding( net_nwell routingnwell_nocheck )" 0 8 t "y5 (drawing)" t)
+)

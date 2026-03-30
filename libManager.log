@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 04/25/2024 14:34 (csvcm36c-7) $
 \o Sub version:		sub-version  s364 
-\o Arguments:		-mpssession virtuoso327048 -mpshost edatools 
+\o Arguments:		-mpssession virtuoso682996 -mpshost edatools 
 \o Working Directory:	edatools:/home/saul/projects/IL2244_VT26_SAUL
 \o 64-bit offsets
 \o MPS virtuoso types registered: 65
@@ -12,13 +12,12 @@
 \o Log file is "/home/saul/projects/IL2244_VT26_SAUL/libManager.log".
 \o Opening libManager window.
 \o Library Manager customization server connected.
-\a nrResizeWindow(cdsLibManager list(812 54 1460 932))
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(840 47 1460 932))
+\a nrResizeWindow(cdsLibManager list(0 27 1489 950))
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = "FECG"
 \a cdsLibManager->libLineEdit->value = "FECG"
+\a cdsLibManager->cellListBox->value = "fecg_ia_tb"
+\a cdsLibManager->cellLineEdit->value = "fecg_ia_tb"
 \a cdsLibManager->cellListBox->value = "fecg_tb"
 \a cdsLibManager->cellLineEdit->value = "fecg_tb"
 \a cdsLibManager->viewListBox->value = "schematic"
@@ -57,6 +56,64 @@
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "fecg_ia_2"
+\a cdsLibManager->cellLineEdit->value = "fecg_ia_2"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 27 56 2 "fecg_ia_2")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->CopyFromLibrary->value = "BORDERS"
+\a copyCellForm->CopyToLibrary->value = "BORDERS"
+\a copyCellForm->CopyFromLibrary->value = "FECG"
+\a copyCellForm->CopyFromCell->value = "fecg_ia_2"
+\a copyCellForm->CopyToLibrary->value = "FECG"
+\a copyCellForm->CopyToCell->value = "fecg_ia_2"
+\a copyCellForm->ViewsToCopy->value = "schematic symbol"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "BORDERS CHARACTERIZATION CORELIBD ECG_IA ESDLIB GATES LEADFRAMES PACKAGES PRIMLIB SFCLIB_C35B4C3 TECH_C35B3 TECH_C35B4 TEST US_8ths ahdlLib ambit analogLib avTech basic bmslib cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib ecg_ia_tb functional ieee ncinternal ncmodels ncutils sbaLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetWindowVisibility(copyCellForm "show")
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(505 144 468 659))
+\a copyCellForm->CopyToCell->value = "fecg_ia_3"
+\a nrDialogAccept(copyCellForm)
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "FECG".
+\o Processing files to be copied...
+\a nrSetWindowVisibility(workingDialogForm "show")
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\o Copy succeeded.
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "FECG"
+\a cdsLibManager->libLineEdit->value = "FECG"
+\a cdsLibManager->cellListBox->value = "fecg_ia_2"
+\a cdsLibManager->cellLineEdit->value = "fecg_ia_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(workingDialogForm list(608 436 273 133))
+\a cdsLibManager->cellListBox->value = "fecg_ia_3"
+\a cdsLibManager->cellLineEdit->value = "fecg_ia_3"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a nrSetCurrentWindow(cdsLibManager)
@@ -75,14 +132,46 @@
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "gmc_lpf_2"
+\a cdsLibManager->cellLineEdit->value = "gmc_lpf_2"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "gmc_lpf_1"
+\a cdsLibManager->cellLineEdit->value = "gmc_lpf_1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "gmc_lpf_2"
+\a cdsLibManager->cellLineEdit->value = "gmc_lpf_2"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "gmc_lpf_1"
+\a cdsLibManager->cellLineEdit->value = "gmc_lpf_1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "gmc_lpf_2"
+\a cdsLibManager->cellLineEdit->value = "gmc_lpf_2"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(115 51 1460 932))
 \a cdsLibManager->cellListBox->value = "fecg_tb"
 \a cdsLibManager->cellLineEdit->value = "fecg_tb"
 \a cdsLibManager->viewLineEdit->value = ""
@@ -98,20 +187,276 @@
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->libListBox->value = "ECG_IA"
-\a cdsLibManager->libLineEdit->value = "ECG_IA"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "gmc_lpf_1"
+\a cdsLibManager->cellLineEdit->value = "gmc_lpf_1"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 48 162 2 "gmc_lpf_1")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "BORDERS"
+\a copyCellForm->CopyToLibrary->value = "BORDERS"
+\a copyCellForm->CopyFromLibrary->value = "FECG"
+\a copyCellForm->CopyFromCell->value = "gmc_lpf_1"
+\a copyCellForm->CopyToLibrary->value = "FECG"
+\a copyCellForm->CopyToCell->value = "gmc_lpf_1"
+\a copyCellForm->ViewsToCopy->value = "layout schematic spectre_state1 symbol"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "BORDERS CHARACTERIZATION CORELIBD ECG_IA ESDLIB GATES LEADFRAMES PACKAGES PRIMLIB SFCLIB_C35B4C3 TECH_C35B3 TECH_C35B4 TEST US_8ths ahdlLib ambit analogLib avTech basic bmslib cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib ecg_ia_tb functional ieee ncinternal ncmodels ncutils sbaLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a nrResizeWindow(copyCellForm list(505 144 468 659))
+\a copyCellForm->CopyToCell->value = "gmc_lpf_3"
+\a nrDialogAccept(copyCellForm)
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "FECG".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(608 436 273 133))
+\o Copy succeeded.
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "FECG"
+\a cdsLibManager->libLineEdit->value = "FECG"
+\a cdsLibManager->cellListBox->value = "gmc_lpf_1"
+\a cdsLibManager->cellLineEdit->value = "gmc_lpf_1"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "gmc_lpf_3"
+\a cdsLibManager->cellLineEdit->value = "gmc_lpf_3"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\a nrSetWindowVisibility(cdsLibManager "show")
+\o MPS service: map window
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "fecg_ia_tb"
+\a cdsLibManager->cellLineEdit->value = "fecg_ia_tb"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(0 153 1146 824))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(0 219 977 758))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(107 188 977 758))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "gmc_lpf_3"
+\a cdsLibManager->cellLineEdit->value = "gmc_lpf_3"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 33 197 2 "gmc_lpf_3")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "BORDERS"
+\a copyCellForm->CopyToLibrary->value = "BORDERS"
+\a copyCellForm->CopyFromLibrary->value = "FECG"
+\a copyCellForm->CopyFromCell->value = "gmc_lpf_3"
+\a copyCellForm->CopyToLibrary->value = "FECG"
+\a copyCellForm->CopyToCell->value = "gmc_lpf_3"
+\a copyCellForm->ViewsToCopy->value = "layout schematic spectre_state1 symbol"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "BORDERS CHARACTERIZATION CORELIBD ECG_IA ESDLIB GATES LEADFRAMES PACKAGES PRIMLIB SFCLIB_C35B4C3 TECH_C35B3 TECH_C35B4 TEST US_8ths ahdlLib ambit analogLib avTech basic bmslib cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib ecg_ia_tb functional ieee ncinternal ncmodels ncutils sbaLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a copyCellForm->CopyToCell->value = "gmc_3"
+\a nrDialogAccept(copyCellForm)
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "FECG".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(459 501 273 133))
+\o Copy succeeded.
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "FECG"
+\a cdsLibManager->libLineEdit->value = "FECG"
+\a cdsLibManager->cellListBox->value = "gmc_lpf_3"
+\a cdsLibManager->cellLineEdit->value = "gmc_lpf_3"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "gmc_3"
+\a cdsLibManager->cellLineEdit->value = "gmc_3"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "gmc_lpf_tb"
+\a cdsLibManager->cellLineEdit->value = "gmc_lpf_tb"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 37 232 2 "gmc_lpf_tb")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "BORDERS"
+\a copyCellForm->CopyToLibrary->value = "BORDERS"
+\a copyCellForm->CopyFromLibrary->value = "FECG"
+\a copyCellForm->CopyFromCell->value = "gmc_lpf_tb"
+\a copyCellForm->CopyToLibrary->value = "FECG"
+\a copyCellForm->CopyToCell->value = "gmc_lpf_tb"
+\a copyCellForm->ViewsToCopy->value = "schematic spectre_state1"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "BORDERS CHARACTERIZATION CORELIBD ECG_IA ESDLIB GATES LEADFRAMES PACKAGES PRIMLIB SFCLIB_C35B4C3 TECH_C35B3 TECH_C35B4 TEST US_8ths ahdlLib ambit analogLib avTech basic bmslib cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib ecg_ia_tb functional ieee ncinternal ncmodels ncutils sbaLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a copyCellForm->CopyToCell->value = "gmc_lpf_2nd_tb"
+\a nrDialogAccept(copyCellForm)
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "FECG".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\o Copy succeeded.
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "FECG"
+\a cdsLibManager->libLineEdit->value = "FECG"
+\a cdsLibManager->cellListBox->value = "gmc_lpf_tb"
+\a cdsLibManager->cellLineEdit->value = "gmc_lpf_tb"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrResizeWindow(workingDialogForm list(459 501 273 133))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "gmc_lpf_2"
+\a cdsLibManager->cellLineEdit->value = "gmc_lpf_2"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "gmc_lpf_2nd_tb"
+\a cdsLibManager->cellLineEdit->value = "gmc_lpf_2nd_tb"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->libListBox->value = "ESDLIB"
-\a cdsLibManager->libLineEdit->value = "ESDLIB"
+\a cdsLibManager->cellListBox->value = "gmc_lpf_tb"
+\a cdsLibManager->cellLineEdit->value = "gmc_lpf_tb"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(-145 192 977 758))
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->libListBox->value = "FECG"
 \a cdsLibManager->libLineEdit->value = "FECG"
-\a cdsLibManager->libListBox->value = "ECG_IA"
-\a cdsLibManager->libLineEdit->value = "ECG_IA"
-\a cdsLibManager->cellListBox->value = "ecg_vga_tb"
-\a cdsLibManager->cellLineEdit->value = "ecg_vga_tb"
+\a cdsLibManager->cellListBox->value = "gmc_lpf_tb"
+\a cdsLibManager->cellLineEdit->value = "gmc_lpf_tb"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(110 130 977 758))
+\a cdsLibManager->cellListBox->value = "fecg_ia_tb"
+\a cdsLibManager->cellLineEdit->value = "fecg_ia_tb"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewListBox->value = nil
@@ -124,7 +469,145 @@
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
-\a nrResizeWindow(cdsLibManager list(45 74 1460 932))
+\a nrResizeWindow(cdsLibManager list(218 131 977 758))
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a lmgrLogShowPopup("mainListPopup1" 31 93 2 "fecg_ia_tb")
+\a cdsLibManager->copySimpleButton->value = t
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a copyCellForm->ViewsToCopy->value = ""
+\a copyCellForm->CopyFromCell->value = ""
+\a copyCellForm->CopyToCell->value = ""
+\a copyCellForm->CopyFromLibrary->value = ""
+\a copyCellForm->CopyToLibrary->value = ""
+\a copyCellForm->CopyFromLibrary->value = "BORDERS"
+\a copyCellForm->CopyToLibrary->value = "BORDERS"
+\a copyCellForm->CopyFromLibrary->value = "FECG"
+\a copyCellForm->CopyFromCell->value = "fecg_ia_tb"
+\a copyCellForm->CopyToLibrary->value = "FECG"
+\a copyCellForm->CopyToCell->value = "fecg_ia_tb"
+\a copyCellForm->ViewsToCopy->value = "adexl schematic"
+\a copyCellForm->SkipLibrariesEdit->value = ""
+\a copyCellForm->SkipLibrariesEdit->value = "BORDERS CHARACTERIZATION CORELIBD ECG_IA ESDLIB GATES LEADFRAMES PACKAGES PRIMLIB SFCLIB_C35B4C3 TECH_C35B3 TECH_C35B4 TEST US_8ths ahdlLib ambit analogLib avTech basic bmslib cdsDefTechLib cds_amsfunctions cds_assertions cds_inhconn cds_spicelib connectLib dmsLib ecg_ia_tb functional ieee ncinternal ncmodels ncutils sbaLib sdilib std synopsys vital_memory xminternal xmmodels xmutils"
+\a nrSetCurrentWindow(copyCellForm)
+\a copyCellForm->CopyToCell->value = "fecg_ia_step_tb"
+\a copyCellForm->OK->value = t
+\o Beginning simple copy to library "FECG".
+\o Processing files to be copied...
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(workingDialogForm)
+\a nrResizeWindow(workingDialogForm list(570 444 273 133))
+\o Copy succeeded.
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "FECG"
+\a cdsLibManager->libLineEdit->value = "FECG"
+\a cdsLibManager->cellListBox->value = "fecg_ia_tb"
+\a cdsLibManager->cellLineEdit->value = "fecg_ia_tb"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a copyCellForm->SkipLibrariesEdit->value = "*"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "fecg_ia_step_tb"
+\a cdsLibManager->cellLineEdit->value = "fecg_ia_step_tb"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 1 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "FECG"
+\a cdsLibManager->libLineEdit->value = "FECG"
+\a cdsLibManager->cellListBox->value = "fecg_ia_step_tb"
+\a cdsLibManager->cellLineEdit->value = "fecg_ia_step_tb"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "FECG"
+\a cdsLibManager->libLineEdit->value = "FECG"
+\a cdsLibManager->cellListBox->value = "fecg_ia_step_tb"
+\a cdsLibManager->cellLineEdit->value = "fecg_ia_step_tb"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->libListBox->value = "FECG"
+\a cdsLibManager->libLineEdit->value = "FECG"
+\a cdsLibManager->cellListBox->value = "fecg_ia_step_tb"
+\a cdsLibManager->cellLineEdit->value = "fecg_ia_step_tb"
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetWindowVisibility(cdsLibManager "hide")
+\a _lmgrCloseIconify("cdsLibManager" 1)
+\a nrSetWindowVisibility(cdsLibManager "show")
+\o MPS service: map window
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "TEST"
+\a cdsLibManager->libLineEdit->value = "TEST"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->cellListBox->value = "test_res"
+\a cdsLibManager->cellLineEdit->value = "test_res"
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "layout"
+\a cdsLibManager->viewLineEdit->value = "layout"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetWindowVisibility(cdsLibManager "hide")
 \a _lmgrCloseIconify("cdsLibManager" 1)
