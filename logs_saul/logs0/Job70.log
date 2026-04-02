@@ -7,16 +7,16 @@
 *Info*    Configuring the session ...
 
 	Library      = FECG
-	Cell         = fecg_tb
+	Cell         = buffer_tb_pss
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = Noise_CMRR_FECG:fecg_tb:1:1_state_Interactive.44
-	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.44.rdb
-	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.44/1/Noise_CMRR
-	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data
+	State Name   = VIN_spectre_state1_Interactive.18
+	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/buffer_tb_pss/adexl/results/data/Interactive.18.rdb
+	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb_pss/adexl/results/data/Interactive.18/1/VIN
+	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb_pss/adexl/results/data
 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
-	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path
+	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/buffer_tb_pss/adexl
 	File Encoding = 0
 
 
@@ -28,55 +28,54 @@
 
 
 
-*Info*    Run start for Point ID (34 1) on testbench [ Noise_CMRR ].
+*Info*    Run start for Point ID (0 1) on testbench [ VIN ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var FC = "4K"
-Setting var S0 = "3.3"
-Setting var S1 = "3.3"
-Setting var S2 = "3.3"
-Setting var VCM_AC = "0"
-Setting var VCM_DC = "1.6"
+Setting var VCM = "1.6"
 Setting var VDD = "3.3"
-Setting var VIN_AC = "1"
-Setting var VIN_AMP = "0"
-Setting var VIN_DC = "50m"
+Setting var VDD_PULSE = "0"
+Setting var VDD_RT = "1u"
+Setting var VIN_AMP = "1"
 Setting var VIN_FREQ = "50"
+Setting var VIN_PULSE = "0"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.44/1/Noise_CMRR/netlist
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb_pss/adexl/results/data/Interactive.18/1/VIN/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.44/1/Noise_CMRR
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb_pss/adexl/results/data/Interactive.18/1/VIN
 
 
-*Info*    Creating Netlist for Point ID (34 1)
+*Info*    Creating Netlist for Point ID (0 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Apr  2 08:05:07 2026
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.10/1/FECG:fecg_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
-Ensure that you have the write permission for the mentioned file.
+Initializing the control file using cp:
+    cp /opt/tools/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb_pss/adexl/results/data/Interactive.18/1/VIN/netlist/control
+Copying Spectre source file 'spectre.inp'
+Copying Spectre command file 'spectre.sim'
+Begin Incremental Netlisting Apr  2 10:21:16 2026
+End netlisting Apr  2 10:21:17 2026
 
-End netlisting Apr  2 08:05:07 2026
+Netlisting Statistics:
+	Number of components:   40
 
-	The netlist is up to date.
-	Time taken to compare the design with netlist:   0.0s
+	Elapsed time:          1.0s (40.00/s)
+Errors: 0	Warnings: 0
       ...successful.
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ Noise_CMRR ] for Point ID
-          (34 1).
+*Info*    Running simulation on testbench [ VIN ] for Point ID (0 1).
 
-Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.44/1/Noise_CMRR/psf.
+Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb_pss/adexl/results/data/Interactive.18/1/VIN/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -93,9 +92,16 @@ reading simulation data...
       ...successful.
 *Info*    Client has finished evaluating ... 
 
+WARNING (OCN-6038): Results noise are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb_pss/adexl/results/data/Interactive.18/1/VIN. Use results() for a list of available results.
+WARNING (OCN-6038): Results noise are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb_pss/adexl/results/data/Interactive.18/1/VIN. Use results() for a list of available results.
+ERROR (ADEXL-2708): Evaluation of output 'integrated noise V' failed for point:'1' test:'VIN'
+	Expression:'sqrt(totalNoise("noise" 0.01 100000000 nil))'
+	because of the following error(s)
+	*Error* expt: can't handle (nil**2).
+Ensure that the definition of output is correct.
 
-*Info*    Run complete for Point ID (34 1) on testbench [ Noise_CMRR
-          ].
+
+*Info*    Run complete for Point ID (0 1) on testbench [ VIN ].
 
 
 

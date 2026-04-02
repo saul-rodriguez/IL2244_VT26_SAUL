@@ -7,77 +7,86 @@
 *Info*    Configuring the session ...
 
 	Library      = FECG
-	Cell         = fecg_tb
+	Cell         = gmc_lpf_tb
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = FECG:fecg_tb:1_none_Interactive.10
-	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.10.rdb
-	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.10/1/FECG:fecg_tb:1
-	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data
+	State Name   = FECG:gmc_lpf_tb:1_spectre_state1_Interactive.0
+	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/gmc_lpf_tb/adexl/results/data/Interactive.0.rdb
+	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.0/1/FECG:gmc_lpf_tb:1
+	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
-	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path
+	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/gmc_lpf_tb/adexl
 	File Encoding = 0
 
 
 
 *Info*    The auto suspension is disabled.
 
-Loading monte.cxt 
 
 
 
 
 
-*Info*    Run start for Point ID (0 1) on testbench [ FECG:fecg_tb:1
-          ].
+*Info*    Run start for Point ID (0 1) on testbench [
+          FECG:gmc_lpf_tb:1 ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var FC = "4K"
-Setting var S0 = "3.3"
-Setting var S1 = "3.3"
-Setting var S2 = "0"
-Setting var VCM_AC = "0"
-Setting var VCM_DC = "1.6"
+Setting var DC_IN = "1.6"
 Setting var VDD = "3.3"
-Setting var VIN_AC = "1"
-Setting var VIN_AMP = "0.8m"
-Setting var VIN_DC = "50m"
-Setting var VIN_FREQ = "50"
+Setting var VIN_AMPV = "1"
+Setting var VIN_DC = "0"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.10/1/FECG:fecg_tb:1/netlist
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.0/1/FECG:gmc_lpf_tb:1/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.10/1/FECG:fecg_tb:1
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.0/1/FECG:gmc_lpf_tb:1
 
 
 *Info*    Creating Netlist for Point ID (0 1)
 
 generate netlist...
-Loading hnlInit.cxt 
-Loading seCore.cxt 
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Apr  1 11:39:52 2026
-End netlisting Apr  1 11:39:52 2026
+Initializing the control file using cp:
+    cp /opt/tools/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.0/1/FECG:gmc_lpf_tb:1/netlist/control
+Copying Spectre source file 'spectre.inp'
+Copying Spectre command file 'spectre.sim'
+Begin Incremental Netlisting Apr  2 08:56:51 2026
+WARNING (ADE-6003): Terminal "IN", specified in the CDF termOrder, does not exist
+           in the cell-view "FECG" "gmc_4" "schematic"
+WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
+           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
+           be ignored. The terminals in the cellView will be netlisted in the alphabetical
+           order of their names. Eliminate the mismatch if you want the CDF termOrder
+           property to be used for netlisting.
+           To edit CDF of a cell, 
+           i) Open CIW->Tools->CDF->Edit.
+           ii) Select Library Name & Cell Name.
+           iii) Click on the Edit button in the simulation information section of the
+                Edit CDF window.
+End netlisting Apr  2 08:56:51 2026
 
-	The netlist is up to date.
-	Time taken to compare the design with netlist:   0.0s
+Netlisting Statistics:
+	Number of components:   48
+
+	Elapsed time:          0.0s
+Errors: 0	Warnings: 2
       ...successful.
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ FECG:fecg_tb:1 ] for
+*Info*    Running simulation on testbench [ FECG:gmc_lpf_tb:1 ] for
           Point ID (0 1).
 
-Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.10/1/FECG:fecg_tb:1/psf.
+Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.0/1/FECG:gmc_lpf_tb:1/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -89,7 +98,6 @@ choose "Output Log" menu option.
 WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
        There will be no performance impact on data visualization due to this change.
-Loading paraplot.cxt 
 INFO (ADE-3071): Simulation completed successfully.
 reading simulation data...
       ...successful.
@@ -97,7 +105,7 @@ reading simulation data...
 
 
 *Info*    Run complete for Point ID (0 1) on testbench [
-          FECG:fecg_tb:1 ].
+          FECG:gmc_lpf_tb:1 ].
 
 
 
