@@ -7,16 +7,16 @@
 *Info*    Configuring the session ...
 
 	Library      = FECG
-	Cell         = fecg_ia_step_tb
+	Cell         = fecg_tb
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = FECG:fecg_ia_step_tb:1_none_Interactive.8
-	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_ia_step_tb/adexl/results/data/Interactive.8.rdb
-	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_step_tb/adexl/results/data/Interactive.8/1/FECG:fecg_ia_step_tb:1
-	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_step_tb/adexl/results/data
+	State Name   = IN_none_Interactive.55
+	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.55.rdb
+	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.55/1/IN
+	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data
 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
-	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_ia_step_tb/adexl
+	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path
 	File Encoding = 0
 
 
@@ -28,56 +28,60 @@
 
 
 
-*Info*    Run start for Point ID (8 1) on testbench [
-          FECG:fecg_ia_step_tb:1 ].
+*Info*    Run start for Point ID (4 1) on testbench [ IN ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var FC = "4k"
+Setting var F0 = "3.3"
+Setting var F1 = "3.3"
+Setting var F2 = "0"
+Setting var FC = "4K"
+Setting var S0 = "3.3"
+Setting var S1 = "3.3"
+Setting var S2 = "0"
 Setting var VCM_AC = "0"
-Setting var VCM_AMP = "0"
-Setting var VCM_DC = "1.6"
+Setting var VCM_DC = "1.5"
 Setting var VDD = "3.3"
 Setting var VIN_AC = "1"
-Setting var VIN_AMP = "0"
-Setting var VIN_DC = "0"
+Setting var VIN_AMP = "0.5m"
+Setting var VIN_DC = "50m"
 Setting var VIN_FREQ = "50"
-Setting var VIN_PULSE = "300m"
-Setting var s = "0"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_step_tb/adexl/results/data/Interactive.8/1/FECG:fecg_ia_step_tb:1/netlist
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.55/1/IN/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_step_tb/adexl/results/data/Interactive.8/1/FECG:fecg_ia_step_tb:1
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.55/1/IN
 
 
-*Info*    Creating Netlist for Point ID (8 1)
+*Info*    Creating Netlist for Point ID (4 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Mar 30 05:11:39 2026
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.325/1/ECG_IA:ecg_ia_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
+Begin Incremental Netlisting Apr  2 19:34:58 2026
+WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.32/1/IN/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
 Ensure that you have the write permission for the mentioned file.
 
-End netlisting Mar 30 05:11:39 2026
+End netlisting Apr  2 19:34:58 2026
 
-	The netlist is up to date.
-	Time taken to compare the design with netlist:   0.0s
+Netlisting Statistics:
+	Number of components:   25
+
+	Elapsed time:          0.0s
+Errors: 0	Warnings: 0
       ...successful.
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ FECG:fecg_ia_step_tb:1 ]
-          for Point ID (8 1).
+*Info*    Running simulation on testbench [ IN ] for Point ID (4 1).
 
-Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_step_tb/adexl/results/data/Interactive.8/1/FECG:fecg_ia_step_tb:1/psf.
+Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.55/1/IN/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -89,9 +93,57 @@ choose "Output Log" menu option.
 WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
        There will be no performance impact on data visualization due to this change.
-*Info*    Current simulation for points ((8 1)).
-*Info*    (ADE-3072): Simulation stopped because you selected the
-          'Stop Simulation' command in ADE.
+INFO (ADE-3071): Simulation completed successfully.
+reading simulation data...
+      ...successful.
+*Info*    Client has finished evaluating ... 
+
+WARNING (OCN-6038): Results pxf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.55/1/IN. Use results() for a list of available results.
+WARNING (OCN-6038): Results pxf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.55/1/IN. Use results() for a list of available results.
+ERROR (ADEXL-2708): Evaluation of output 'CMRR' failed for point:'1' test:'IN'
+	Expression:'(db(getData("/V7" ?result "pxf")) (- db(getData("/V2" ?result "pxf"))))'
+	because of the following error(s)
+	*Error* minus: can't handle (- nil).
+Ensure that the definition of output is correct.
+
+ERROR (ADEXL-2709): Evaluation of output 'v /VLF2; pac dB20(V)' returned 'nil' for point:'1' test:'IN'
+	Expression:'db(vh('pac "/VLF2"))'.
+Ensure that the definition of output is correct.
+
+ERROR (ADEXL-2709): Evaluation of output 'v /VIA; pac dB20(V)' returned 'nil' for point:'1' test:'IN'
+	Expression:'db(vh('pac "/VIA"))'.
+Ensure that the definition of output is correct.
+
+WARNING (OCN-6038): Results pxf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.55/1/IN. Use results() for a list of available results.
+WARNING (OCN-6038): Results pxf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.55/1/IN. Use results() for a list of available results.
+ERROR (ADEXL-2709): Evaluation of output 'V/V /V7; pxf dB20(V/V)' returned 'nil' for point:'1' test:'IN'
+	Expression:'db(getData("/V7" ?result "pxf"))'.
+Ensure that the definition of output is correct.
+
+ERROR (ADEXL-2709): Evaluation of output 'v /VLF1; pac dB20(V)' returned 'nil' for point:'1' test:'IN'
+	Expression:'db(vh('pac "/VLF1"))'.
+Ensure that the definition of output is correct.
+
+WARNING (OCN-6038): Results pxf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.55/1/IN. Use results() for a list of available results.
+WARNING (OCN-6038): Results pxf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.55/1/IN. Use results() for a list of available results.
+ERROR (ADEXL-2709): Evaluation of output 'V/V /V2; pxf dB20(V/V)' returned 'nil' for point:'1' test:'IN'
+	Expression:'db(getData("/V2" ?result "pxf"))'.
+Ensure that the definition of output is correct.
+
+ERROR (ADEXL-2709): Evaluation of output 'v /VGA; pac dB20(V)' returned 'nil' for point:'1' test:'IN'
+	Expression:'db(vh('pac "/VGA"))'.
+Ensure that the definition of output is correct.
+
+ERROR (ADEXL-2709): Evaluation of output 'v /VOUT; pac dB20(V)' returned 'nil' for point:'1' test:'IN'
+	Expression:'db(vh('pac "/VOUT"))'.
+Ensure that the definition of output is correct.
+
+
+*Info*    Run complete for Point ID (4 1) on testbench [ IN ].
+
+
+
+
 
 Simulation design variables differ from those on the cellView,
 they have been saved in the file "/tmp/saved-design-variables".

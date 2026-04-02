@@ -7,16 +7,16 @@
 *Info*    Configuring the session ...
 
 	Library      = FECG
-	Cell         = fecg_ia_step_tb
+	Cell         = fecg_tb
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = FECG:fecg_ia_step_tb:1_none_Interactive.9
-	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_ia_step_tb/adexl/results/data/Interactive.9.rdb
-	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_step_tb/adexl/results/data/Interactive.9/1/FECG:fecg_ia_step_tb:1
-	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_step_tb/adexl/results/data
+	State Name   = Noise_CMRR_FECG:fecg_tb:1:1_state_Interactive.56
+	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.56.rdb
+	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.56/1/Noise_CMRR
+	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data
 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
-	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_ia_step_tb/adexl
+	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path
 	File Encoding = 0
 
 
@@ -28,56 +28,65 @@
 
 
 
-*Info*    Run start for Point ID (9 1) on testbench [
-          FECG:fecg_ia_step_tb:1 ].
+*Info*    Run start for Point ID (5 1) on testbench [ Noise_CMRR ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var FC = "0"
+Setting var F0 = "3.3"
+Setting var F1 = "3.3"
+Setting var F2 = "0"
+Setting var FC = "4K"
+Setting var S0 = "3.3"
+Setting var S1 = "3.3"
+Setting var S2 = "0"
 Setting var VCM_AC = "0"
-Setting var VCM_AMP = "0"
-Setting var VCM_DC = "1.6"
+Setting var VCM_DC = "1.5"
 Setting var VDD = "3.3"
 Setting var VIN_AC = "1"
-Setting var VIN_AMP = "0"
-Setting var VIN_DC = "0"
+Setting var VIN_AMP = "10m"
+Setting var VIN_DC = "50m"
 Setting var VIN_FREQ = "50"
-Setting var VIN_PULSE = "300m"
-Setting var s = "0"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_step_tb/adexl/results/data/Interactive.9/1/FECG:fecg_ia_step_tb:1/netlist
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.56/1/Noise_CMRR/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_step_tb/adexl/results/data/Interactive.9/1/FECG:fecg_ia_step_tb:1
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.56/1/Noise_CMRR
 
 
-*Info*    Creating Netlist for Point ID (9 1)
+*Info*    Creating Netlist for Point ID (5 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Mar 30 05:14:09 2026
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.325/1/ECG_IA:ecg_ia_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
+Initializing the control file using cp:
+    cp /opt/tools/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.56/1/Noise_CMRR/netlist/control
+Copying Spectre source file 'spectre.inp'
+Copying Spectre command file 'spectre.sim'
+Begin Incremental Netlisting Apr  2 19:36:10 2026
+WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.32/1/IN/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
 Ensure that you have the write permission for the mentioned file.
 
-End netlisting Mar 30 05:14:09 2026
+End netlisting Apr  2 19:36:10 2026
 
-	The netlist is up to date.
-	Time taken to compare the design with netlist:   0.0s
+Netlisting Statistics:
+	Number of components:  220
+
+	Elapsed time:          0.0s
+Errors: 0	Warnings: 0
       ...successful.
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ FECG:fecg_ia_step_tb:1 ]
-          for Point ID (9 1).
+*Info*    Running simulation on testbench [ Noise_CMRR ] for Point ID
+          (5 1).
 
-Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_step_tb/adexl/results/data/Interactive.9/1/FECG:fecg_ia_step_tb:1/psf.
+Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.56/1/Noise_CMRR/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -92,104 +101,60 @@ WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTS
 INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
         on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
         to view the simulation run log.
+reading simulation data...
+      ...successful.
 
 *Error*   Error ID  = 5011
 *Error*   Error Msg = Simulator failed to complete the simulation.
 
-          Fatal error found by spectre during hierarchy
-          flattening.
-FATAL (SFE-1973): "input.scs" 256: Cannot run
-          the simulation, because V0 in parameter `period': Attempt
-          to divide by zero (1 / 0).
-FATAL (SFE-1973): "input.scs"
-          256: Cannot run the simulation, because V0 in parameter
-          `width': Attempt to divide by zero (1 / 0).
+          Error found by spectre during periodic steady state
+          analysis `pss'.
+Error found by spectre during periodic
+          steady state analysis `pss'.
+ERROR (CMI-2207): V8: The
+          fundamental frequency 'fund' 4 kHz does not divide evenly
+          into the stimulus frequency 'freq' 50 Hz. To fix the
+          problem, adju
+st the fundamental frequency so that an
+          integer multiple of 'fund' equals 'freq'. 
+Error found by
+          spectre.
+Error found by spectre.
+ERROR (SPCRTRF-15024): The
+          pac analysis was skipped because a PSS analysis must be run
+          first.
+Error found by spectre.
+Error found by
+          spectre.
+ERROR (SPCRTRF-15024): The pxf analysis was
+          skipped because a PSS analysis must be run first.
+Error
+          found by spectre.
+Error found by spectre.
+ERROR
+          (SPCRTRF-15024): The pnoise analysis was skipped because a
+          PSS analysis must be run first.
 
 
 
 
 
+*Info*    Client has finished evaluating ... 
+
+WARNING (OCN-6038): Results pnoise are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.56/1/Noise_CMRR. Use results() for a list of available results.
+WARNING (OCN-6038): Results pnoise are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.56/1/Noise_CMRR. Use results() for a list of available results.
+ERROR (ADEXL-2708): Evaluation of output 'Output_Noise_Vrms' failed for point:'1' test:'Noise_CMRR'
+	Expression:'sqrt(totalNoise("pnoise" 0.01 100000 nil))'
+	because of the following error(s)
+	*Error* expt: can't handle (nil**2).
+Ensure that the definition of output is correct.
+
+ERROR (ADEXL-2709): Evaluation of output 'Gain' returned 'nil' for point:'1' test:'Noise_CMRR'
+	Expression:'mag(vh('pac "/VOUT"))'.
+Ensure that the definition of output is correct.
 
 
-
-
-
-*Info*    Run start for Point ID (9 1) on testbench [
-          FECG:fecg_ia_step_tb:1 ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting var FC = "0"
-Setting var VCM_AC = "0"
-Setting var VCM_AMP = "0"
-Setting var VCM_DC = "1.6"
-Setting var VDD = "3.3"
-Setting var VIN_AC = "1"
-Setting var VIN_AMP = "0"
-Setting var VIN_DC = "0"
-Setting var VIN_FREQ = "50"
-Setting var VIN_PULSE = "300m"
-Setting var s = "0"
-Setting var temperature = "27"
-Setting temp(T) = 27
-
-*Info*    Netlist Directory =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_step_tb/adexl/results/data/Interactive.9/1/FECG:fecg_ia_step_tb:1/netlist
-
-
-*Info*    Data Directory    =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_step_tb/adexl/results/data/Interactive.9/1/FECG:fecg_ia_step_tb:1
-
-
-*Info*    Creating Netlist for Point ID (9 1)
-
-generate netlist...
-function ansCdlCompPrim redefined
-function ansCdlCompPrim redefined
-Begin Incremental Netlisting Mar 30 05:14:10 2026
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.325/1/ECG_IA:ecg_ia_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
-Ensure that you have the write permission for the mentioned file.
-
-End netlisting Mar 30 05:14:10 2026
-
-	The netlist is up to date.
-	Time taken to compare the design with netlist:   0.0s
-      ...successful.
-compose simulator input file...
-      ...successful.
-
-*Info*    Running simulation on testbench [ FECG:fecg_ia_step_tb:1 ]
-          for Point ID (9 1).
-
-Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_step_tb/adexl/results/data/Interactive.9/1/FECG:fecg_ia_step_tb:1/psf.
-compose simulator input file...
-      ...successful.
-start simulator if needed...
-      ...successful.
-simulate...
-To view the simulator output, right-click on the test name, result 
-name, or any value in the "Results" tab of the Outputs section and 
-choose "Output Log" menu option.
-WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
-       and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
-       There will be no performance impact on data visualization due to this change.
-INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
-        on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
-        to view the simulation run log.
-
-*Error*   Error ID  = 5011
-*Error*   Error Msg = Simulator failed to complete the simulation.
-
-          Fatal error found by spectre during hierarchy
-          flattening.
-FATAL (SFE-1973): "input.scs" 256: Cannot run
-          the simulation, because V0 in parameter `period': Attempt
-          to divide by zero (1 / 0).
-FATAL (SFE-1973): "input.scs"
-          256: Cannot run the simulation, because V0 in parameter
-          `width': Attempt to divide by zero (1 / 0).
+*Info*    Run complete for Point ID (5 1) on testbench [ Noise_CMRR ].
 
 
 

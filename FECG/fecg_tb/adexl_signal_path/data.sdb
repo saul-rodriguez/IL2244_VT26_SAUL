@@ -3,8 +3,264 @@
 	<active>Active Setup
 		<corners>
 			<corner enabled="1">_default</corner>
+			<corner enabled="0">CMOS
+				<models>
+					<model enabled="1">processOption.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/processOption.scs</modelfile>
+						<modelsection></modelsection>
+					</model>
+					<model enabled="1">cmos53.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/cmos53.scs</modelfile>
+						<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+					</model>
+					<model enabled="1">res.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/res.scs</modelfile>
+						<modelsection>"restm"</modelsection>
+					</model>
+					<model enabled="1">cap.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/cap.scs</modelfile>
+						<modelsection>"captm"</modelsection>
+					</model>
+					<model enabled="1">bip.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/bip.scs</modelfile>
+						<modelsection>"biptm"</modelsection>
+					</model>
+					<model enabled="1">ind.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/ind.scs</modelfile>
+						<modelsection>"indtm"</modelsection>
+					</model>
+					<model enabled="1">esddiode.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/esddiode.scs</modelfile>
+						<modelsection>"esddiodetm"</modelsection>
+					</model>
+				</models>
+			</corner>
+			<corner enabled="0">CMOS_VDD
+				<vars>
+					<var>VDD
+						<value>2.97 3.63</value>
+					</var>
+				</vars>
+				<models>
+					<model enabled="1">processOption.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/processOption.scs</modelfile>
+						<modelsection></modelsection>
+					</model>
+					<model enabled="1">cmos53.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/cmos53.scs</modelfile>
+						<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+					</model>
+					<model enabled="1">res.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/res.scs</modelfile>
+						<modelsection>"restm"</modelsection>
+					</model>
+					<model enabled="1">cap.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/cap.scs</modelfile>
+						<modelsection>"captm"</modelsection>
+					</model>
+					<model enabled="1">bip.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/bip.scs</modelfile>
+						<modelsection>"biptm"</modelsection>
+					</model>
+					<model enabled="1">ind.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/ind.scs</modelfile>
+						<modelsection>"indtm"</modelsection>
+					</model>
+					<model enabled="1">esddiode.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/esddiode.scs</modelfile>
+						<modelsection>"esddiodetm"</modelsection>
+					</model>
+				</models>
+			</corner>
+			<corner enabled="0">CMOS_VDD_TEMP
+				<vars>
+					<var>temperature
+						<value>-40 85</value>
+					</var>
+					<var>VDD
+						<value>2.97 3.63</value>
+					</var>
+				</vars>
+				<models>
+					<model enabled="1">processOption.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/processOption.scs</modelfile>
+						<modelsection></modelsection>
+					</model>
+					<model enabled="1">cmos53.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/cmos53.scs</modelfile>
+						<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+					</model>
+					<model enabled="1">res.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/res.scs</modelfile>
+						<modelsection>"restm"</modelsection>
+					</model>
+					<model enabled="1">cap.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/cap.scs</modelfile>
+						<modelsection>"captm"</modelsection>
+					</model>
+					<model enabled="1">bip.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/bip.scs</modelfile>
+						<modelsection>"biptm"</modelsection>
+					</model>
+					<model enabled="1">ind.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/ind.scs</modelfile>
+						<modelsection>"indtm"</modelsection>
+					</model>
+					<model enabled="1">esddiode.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/esddiode.scs</modelfile>
+						<modelsection>"esddiodetm"</modelsection>
+					</model>
+				</models>
+			</corner>
+			<corner enabled="0">CMOS_RES_CAP_VDD_TEMP
+				<vars>
+					<var>temperature
+						<value>-40 85</value>
+					</var>
+					<var>VDD
+						<value>2.97 3.63</value>
+					</var>
+				</vars>
+				<models>
+					<model enabled="1">processOption.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/processOption.scs</modelfile>
+						<modelsection></modelsection>
+					</model>
+					<model enabled="1">cmos53.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/cmos53.scs</modelfile>
+						<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+					</model>
+					<model enabled="1">res.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/res.scs</modelfile>
+						<modelsection>"reswp" "resws"</modelsection>
+					</model>
+					<model enabled="1">cap.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/cap.scs</modelfile>
+						<modelsection>"capwp" "capws"</modelsection>
+					</model>
+					<model enabled="1">bip.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/bip.scs</modelfile>
+						<modelsection>"biptm"</modelsection>
+					</model>
+					<model enabled="1">ind.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/ind.scs</modelfile>
+						<modelsection>"indtm"</modelsection>
+					</model>
+					<model enabled="1">esddiode.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/esddiode.scs</modelfile>
+						<modelsection>"esddiodetm"</modelsection>
+					</model>
+				</models>
+			</corner>
+			<corner enabled="1">CMOS_RES_CAP_TEMP
+				<vars>
+					<var>temperature
+						<value>-40 85</value>
+					</var>
+				</vars>
+				<models>
+					<model enabled="1">processOption.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/processOption.scs</modelfile>
+						<modelsection></modelsection>
+					</model>
+					<model enabled="1">cmos53.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/cmos53.scs</modelfile>
+						<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+					</model>
+					<model enabled="1">res.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/res.scs</modelfile>
+						<modelsection>"reswp" "resws"</modelsection>
+					</model>
+					<model enabled="1">cap.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/cap.scs</modelfile>
+						<modelsection>"capwp" "capws"</modelsection>
+					</model>
+					<model enabled="1">bip.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/bip.scs</modelfile>
+						<modelsection>"biptm"</modelsection>
+					</model>
+					<model enabled="1">ind.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/ind.scs</modelfile>
+						<modelsection>"indtm"</modelsection>
+					</model>
+					<model enabled="1">esddiode.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/esddiode.scs</modelfile>
+						<modelsection>"esddiodetm"</modelsection>
+					</model>
+				</models>
+			</corner>
 		</corners>
-		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<currentmode>Monte Carlo Sampling</currentmode>
 		<extensions>
 			<extension>Parasitics
 				<callback>_parSetupDBExtensionCB</callback>
@@ -154,6 +410,86 @@
 					</option>
 				</origoptions>
 			</test>
+			<test enabled="1">IN_MC
+				<tool>ADE</tool>
+				<outputs>
+					<output>d2_VOUT_db
+						<evalType>point</evalType>
+					</output>
+					<output>d2_VIA_db
+						<units></units>
+						<significantDigits>0</significantDigits>
+						<notation></notation>
+						<suffix></suffix>
+						<evalType>point</evalType>
+					</output>
+					<output>d2_VLF1_db
+						<units></units>
+						<significantDigits>0</significantDigits>
+						<notation></notation>
+						<suffix></suffix>
+						<evalType>point</evalType>
+					</output>
+					<output>d2_VGA_db
+						<units></units>
+						<significantDigits>0</significantDigits>
+						<notation></notation>
+						<suffix></suffix>
+						<evalType>point</evalType>
+					</output>
+					<output>d2_VLF2_db
+						<units></units>
+						<significantDigits>0</significantDigits>
+						<notation></notation>
+						<suffix></suffix>
+						<evalType>point</evalType>
+					</output>
+					<output>CMRR
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+				<tooloptions>
+					<option>cell
+						<value>fecg_tb</value>
+					</option>
+					<option>lib
+						<value>FECG</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>state
+						<value>IN_MC_active</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</tooloptions>
+				<prerunscript>0</prerunscript>
+				<origoptions>
+					<option>cell
+						<value>fecg_tb</value>
+					</option>
+					<option>lib
+						<value>FECG</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>state
+						<value>IN:1_state</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+			</test>
 		</tests>
 		<vars>
 			<var enabled="0">VIN_FREQ
@@ -161,6 +497,7 @@
 				<dependentTests>
 					<dependentTest enabled="0">IN</dependentTest>
 					<dependentTest enabled="1">Noise_CMRR</dependentTest>
+					<dependentTest enabled="0">IN_MC</dependentTest>
 				</dependentTests>
 			</var>
 			<var enabled="0">VIN_AMP
@@ -168,6 +505,7 @@
 				<dependentTests>
 					<dependentTest enabled="0">IN</dependentTest>
 					<dependentTest enabled="1">Noise_CMRR</dependentTest>
+					<dependentTest enabled="0">IN_MC</dependentTest>
 				</dependentTests>
 			</var>
 			<var>FC
@@ -175,6 +513,7 @@
 				<dependentTests>
 					<dependentTest enabled="1">IN</dependentTest>
 					<dependentTest enabled="1">Noise_CMRR</dependentTest>
+					<dependentTest enabled="1">IN_MC</dependentTest>
 				</dependentTests>
 			</var>
 			<var>VCM_AC
@@ -182,6 +521,7 @@
 				<dependentTests>
 					<dependentTest enabled="1">IN</dependentTest>
 					<dependentTest enabled="1">Noise_CMRR</dependentTest>
+					<dependentTest enabled="1">IN_MC</dependentTest>
 				</dependentTests>
 			</var>
 			<var>VCM_DC
@@ -189,6 +529,7 @@
 				<dependentTests>
 					<dependentTest enabled="1">IN</dependentTest>
 					<dependentTest enabled="1">Noise_CMRR</dependentTest>
+					<dependentTest enabled="1">IN_MC</dependentTest>
 				</dependentTests>
 			</var>
 			<var>VDD
@@ -196,6 +537,7 @@
 				<dependentTests>
 					<dependentTest enabled="1">IN</dependentTest>
 					<dependentTest enabled="1">Noise_CMRR</dependentTest>
+					<dependentTest enabled="1">IN_MC</dependentTest>
 				</dependentTests>
 			</var>
 			<var>VIN_AC
@@ -203,6 +545,7 @@
 				<dependentTests>
 					<dependentTest enabled="1">IN</dependentTest>
 					<dependentTest enabled="1">Noise_CMRR</dependentTest>
+					<dependentTest enabled="1">IN_MC</dependentTest>
 				</dependentTests>
 			</var>
 			<var>VIN_DC
@@ -210,13 +553,15 @@
 				<dependentTests>
 					<dependentTest enabled="1">IN</dependentTest>
 					<dependentTest enabled="1">Noise_CMRR</dependentTest>
+					<dependentTest enabled="1">IN_MC</dependentTest>
 				</dependentTests>
 			</var>
 			<var>S0
-				<value>0</value>
+				<value>3.3</value>
 				<dependentTests>
 					<dependentTest enabled="1">IN</dependentTest>
 					<dependentTest enabled="1">Noise_CMRR</dependentTest>
+					<dependentTest enabled="1">IN_MC</dependentTest>
 				</dependentTests>
 			</var>
 			<var>S1
@@ -224,6 +569,7 @@
 				<dependentTests>
 					<dependentTest enabled="1">IN</dependentTest>
 					<dependentTest enabled="1">Noise_CMRR</dependentTest>
+					<dependentTest enabled="1">IN_MC</dependentTest>
 				</dependentTests>
 			</var>
 			<var>S2
@@ -231,6 +577,31 @@
 				<dependentTests>
 					<dependentTest enabled="1">IN</dependentTest>
 					<dependentTest enabled="1">Noise_CMRR</dependentTest>
+					<dependentTest enabled="1">IN_MC</dependentTest>
+				</dependentTests>
+			</var>
+			<var>F0
+				<value>3.3</value>
+				<dependentTests>
+					<dependentTest omitted="0">IN</dependentTest>
+					<dependentTest omitted="0">Noise_CMRR</dependentTest>
+					<dependentTest enabled="1">IN_MC</dependentTest>
+				</dependentTests>
+			</var>
+			<var>F1
+				<value>3.3</value>
+				<dependentTests>
+					<dependentTest omitted="0">IN</dependentTest>
+					<dependentTest omitted="0">Noise_CMRR</dependentTest>
+					<dependentTest enabled="1">IN_MC</dependentTest>
+				</dependentTests>
+			</var>
+			<var>F2
+				<value>0</value>
+				<dependentTests>
+					<dependentTest omitted="0">IN</dependentTest>
+					<dependentTest omitted="0">Noise_CMRR</dependentTest>
+					<dependentTest enabled="1">IN_MC</dependentTest>
 				</dependentTests>
 			</var>
 		</vars>
@@ -263,6 +634,7 @@
 		</plottingoptions>
 		<disabledtests>
 			<test>FECG:fecg_tb:1</test>
+			<test>Noise_CMRR</test>
 			<test>IN</test>
 		</disabledtests>
 		<jobpolicyname>ADE XL Default</jobpolicyname>
@@ -286,9 +658,59 @@
 				<tol></tol>
 			</spec>
 		</specs>
+		<runoptions>
+			<mode>Monte Carlo Sampling
+				<runoption>mcmethod
+					<value>all</value>
+				</runoption>
+				<runoption>mcnumpoints
+					<value>100</value>
+				</runoption>
+				<runoption>mcnumbins
+					<value></value>
+				</runoption>
+				<runoption>mcStopEarly
+					<value>0</value>
+				</runoption>
+				<runoption>mcStopMethod
+					<value>Significance Test</value>
+				</runoption>
+				<runoption>samplingmode
+					<value>lds</value>
+				</runoption>
+				<runoption>saveprocess
+					<value>0</value>
+				</runoption>
+				<runoption>savemismatch
+					<value>0</value>
+				</runoption>
+				<runoption>parasiticanalysis
+					<value>0</value>
+				</runoption>
+				<runoption>mcreferencepoint
+					<value>0</value>
+				</runoption>
+				<runoption>donominal
+					<value>1</value>
+				</runoption>
+				<runoption>saveallplots
+					<value>1</value>
+				</runoption>
+				<runoption>montecarloseed
+					<value></value>
+				</runoption>
+				<runoption>mcstartingrunnumber
+					<value></value>
+				</runoption>
+				<runoption>dumpParamMode
+					<value>no</value>
+				</runoption>
+			</mode>
+		</runoptions>
+		<allcornersenabled>0</allcornersenabled>
 	</active>
 	<history>History
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.41
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.56
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -322,292 +744,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IN_none_Interactive.41</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>d2_VOUT_db
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VIA_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VLF1_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VGA_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VLF2_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>CMRR
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-					<test enabled="1">Noise_CMRR
-						<tool>ADE</tool>
-						<outputs>
-							<output>Output_Noise_Vrms
-								<evalType>point</evalType>
-							</output>
-							<output>Gain
-								<evalType>point</evalType>
-							</output>
-							<output>CM_Gain_dB_50
-								<evalType>point</evalType>
-							</output>
-							<output>DIF_Gain_dB_50
-								<evalType>point</evalType>
-							</output>
-							<output>CMRR_dB
-								<evalType>point</evalType>
-							</output>
-							<output>DIF_Gain
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-						<tooloptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>Noise_CMRR_FECG:fecg_tb:1:1_state_Interactive.41</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</tooloptions>
-						<prerunscript>0</prerunscript>
-						<origoptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>FECG:fecg_tb:1:1_state</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var enabled="0">VIN_FREQ
-						<value>50</value>
-						<dependentTests>
-							<dependentTest enabled="0">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">VIN_AMP
-						<value>0.8m</value>
-						<dependentTests>
-							<dependentTest enabled="0">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>FC
-						<value>4K</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_AC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_DC
-						<value>1.6</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD
-						<value>3.3</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AC
-						<value>1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_DC
-						<value>50m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>S0
-						<value>3.3</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>S1
-						<value>3.3</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>S2
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottingmode
-						<value>Append</value>
-					</plottingoption>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>useMaestroPlottingTemplate
-						<value>yes</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>distributedplot_enabled
-						<value>no</value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests>
-					<test>FECG:fecg_tb:1</test>
-					<test>IN</test>
-				</disabledtests>
-				<jobpolicyname>ADE XL Default</jobpolicyname>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Apr 2 07:56:58 2026</timestamp>
-			<uuid>{e6e09e32-2ca5-4d72-ba5a-65c62bc8db4a}</uuid>
-			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.41.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.41.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/edatools_saul_075658953</localpsfdir>
-			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.41</psfdir>
-			<simdir>$AXL_PROJECT_DIR/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.41</simdir>
-			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.41.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.41.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.42
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">IN
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IN_none_Interactive.42</value>
+								<value>IN_none_Interactive.56</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -700,1219 +837,7 @@
 								<value>spectre</value>
 							</option>
 							<option>state
-								<value>Noise_CMRR_FECG:fecg_tb:1:1_state_Interactive.42</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</tooloptions>
-						<prerunscript>0</prerunscript>
-						<origoptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>FECG:fecg_tb:1:1_state</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var enabled="0">VIN_FREQ
-						<value>50</value>
-						<dependentTests>
-							<dependentTest enabled="0">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">VIN_AMP
-						<value>0.8m</value>
-						<dependentTests>
-							<dependentTest enabled="0">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>FC
-						<value>4K</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_AC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_DC
-						<value>1.6</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD
-						<value>3.3</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AC
-						<value>1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_DC
-						<value>50m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>S0
-						<value>3.3</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>S1
-						<value>3.3</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>S2
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottingmode
-						<value>Append</value>
-					</plottingoption>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>useMaestroPlottingTemplate
-						<value>yes</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>distributedplot_enabled
-						<value>no</value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests>
-					<test>FECG:fecg_tb:1</test>
-					<test>IN</test>
-				</disabledtests>
-				<jobpolicyname>ADE XL Default</jobpolicyname>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Apr 2 07:58:43 2026</timestamp>
-			<uuid>{536c4ccc-56ca-4c89-ae4c-ae28bf043b1a}</uuid>
-			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.42.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.42.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/edatools_saul_075843108</localpsfdir>
-			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.42</psfdir>
-			<simdir>$AXL_PROJECT_DIR/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.42</simdir>
-			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.42.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.42.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.43
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">IN
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IN_none_Interactive.43</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>d2_VOUT_db
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VIA_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VLF1_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VGA_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VLF2_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>CMRR
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-					<test enabled="1">Noise_CMRR
-						<tool>ADE</tool>
-						<outputs>
-							<output>Output_Noise_Vrms
-								<evalType>point</evalType>
-							</output>
-							<output>Gain
-								<evalType>point</evalType>
-							</output>
-							<output>CM_Gain_dB_50
-								<evalType>point</evalType>
-							</output>
-							<output>DIF_Gain_dB_50
-								<evalType>point</evalType>
-							</output>
-							<output>CMRR_dB
-								<evalType>point</evalType>
-							</output>
-							<output>DIF_Gain
-								<evalType>point</evalType>
-							</output>
-							<output>Input_ref_noise_Vrms
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-						<tooloptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>Noise_CMRR_FECG:fecg_tb:1:1_state_Interactive.43</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</tooloptions>
-						<prerunscript>0</prerunscript>
-						<origoptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>FECG:fecg_tb:1:1_state</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var enabled="0">VIN_FREQ
-						<value>50</value>
-						<dependentTests>
-							<dependentTest enabled="0">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">VIN_AMP
-						<value>0.8m</value>
-						<dependentTests>
-							<dependentTest enabled="0">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>FC
-						<value>4K</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_AC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_DC
-						<value>1.6</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD
-						<value>3.3</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AC
-						<value>1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_DC
-						<value>50m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>S0
-						<value>3.3</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>S1
-						<value>3.3</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>S2
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottingmode
-						<value>Append</value>
-					</plottingoption>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>useMaestroPlottingTemplate
-						<value>yes</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>distributedplot_enabled
-						<value>no</value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests>
-					<test>FECG:fecg_tb:1</test>
-					<test>IN</test>
-				</disabledtests>
-				<jobpolicyname>ADE XL Default</jobpolicyname>
-				<specs>
-					<spec>Noise_CMRR.CMRR_dB
-						<testname>Noise_CMRR</testname>
-						<resname>CMRR_dB</resname>
-						<specType>gt</specType>
-						<min>90</min>
-						<max></max>
-						<target></target>
-						<tol></tol>
-					</spec>
-					<spec>Noise_CMRR.Input_ref_noise_Vrms
-						<testname>Noise_CMRR</testname>
-						<resname>Input_ref_noise_Vrms</resname>
-						<specType>lt</specType>
-						<min></min>
-						<max>1e-6</max>
-						<target></target>
-						<tol></tol>
-					</spec>
-				</specs>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Apr 2 08:02:25 2026</timestamp>
-			<uuid>{c43dda0c-8dbe-4f41-bf20-8588f9137a0b}</uuid>
-			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.43.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.43.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/edatools_saul_080225468</localpsfdir>
-			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.43</psfdir>
-			<simdir>$AXL_PROJECT_DIR/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.43</simdir>
-			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.43.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.43.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.44
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">IN
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IN_none_Interactive.44</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>d2_VOUT_db
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VIA_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VLF1_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VGA_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VLF2_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>CMRR
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-					<test enabled="1">Noise_CMRR
-						<tool>ADE</tool>
-						<outputs>
-							<output>Output_Noise_Vrms
-								<evalType>point</evalType>
-							</output>
-							<output>Gain
-								<evalType>point</evalType>
-							</output>
-							<output>CM_Gain_dB_50
-								<evalType>point</evalType>
-							</output>
-							<output>DIF_Gain_dB_50
-								<evalType>point</evalType>
-							</output>
-							<output>CMRR_dB
-								<evalType>point</evalType>
-							</output>
-							<output>DIF_Gain
-								<evalType>point</evalType>
-							</output>
-							<output>Input_ref_noise_Vrms
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-						<tooloptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>Noise_CMRR_FECG:fecg_tb:1:1_state_Interactive.44</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</tooloptions>
-						<prerunscript>0</prerunscript>
-						<origoptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>FECG:fecg_tb:1:1_state</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var enabled="0">VIN_FREQ
-						<value>50</value>
-						<dependentTests>
-							<dependentTest enabled="0">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">VIN_AMP
-						<value>0.8m</value>
-						<dependentTests>
-							<dependentTest enabled="0">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>FC
-						<value>4K</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_AC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_DC
-						<value>1.6</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD
-						<value>3.3</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AC
-						<value>1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_DC
-						<value>50m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>S0
-						<value>3.3</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>S1
-						<value>3.3</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>S2
-						<value>3.3</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottingmode
-						<value>Append</value>
-					</plottingoption>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>useMaestroPlottingTemplate
-						<value>yes</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>distributedplot_enabled
-						<value>no</value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests>
-					<test>FECG:fecg_tb:1</test>
-					<test>IN</test>
-				</disabledtests>
-				<jobpolicyname>ADE XL Default</jobpolicyname>
-				<specs>
-					<spec>Noise_CMRR.CMRR_dB
-						<testname>Noise_CMRR</testname>
-						<resname>CMRR_dB</resname>
-						<specType>gt</specType>
-						<min>90</min>
-						<max></max>
-						<target></target>
-						<tol></tol>
-					</spec>
-					<spec>Noise_CMRR.Input_ref_noise_Vrms
-						<testname>Noise_CMRR</testname>
-						<resname>Input_ref_noise_Vrms</resname>
-						<specType>lt</specType>
-						<min></min>
-						<max>1e-6</max>
-						<target></target>
-						<tol></tol>
-					</spec>
-				</specs>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Apr 2 08:05:06 2026</timestamp>
-			<uuid>{d574e421-9ecd-40e1-90f6-d40c12513103}</uuid>
-			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.44.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.44.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/edatools_saul_080506462</localpsfdir>
-			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.44</psfdir>
-			<simdir>$AXL_PROJECT_DIR/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.44</simdir>
-			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.44.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.44.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.45
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">IN
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IN_none_Interactive.45</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>d2_VOUT_db
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VIA_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VLF1_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VGA_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VLF2_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>CMRR
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-					<test enabled="1">Noise_CMRR
-						<tool>ADE</tool>
-						<outputs>
-							<output>Output_Noise_Vrms
-								<evalType>point</evalType>
-							</output>
-							<output>Gain
-								<evalType>point</evalType>
-							</output>
-							<output>CM_Gain_dB_50
-								<evalType>point</evalType>
-							</output>
-							<output>DIF_Gain_dB_50
-								<evalType>point</evalType>
-							</output>
-							<output>CMRR_dB
-								<evalType>point</evalType>
-							</output>
-							<output>DIF_Gain
-								<evalType>point</evalType>
-							</output>
-							<output>Input_ref_noise_Vrms
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-						<tooloptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>Noise_CMRR_FECG:fecg_tb:1:1_state_Interactive.45</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</tooloptions>
-						<prerunscript>0</prerunscript>
-						<origoptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>FECG:fecg_tb:1:1_state</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var enabled="0">VIN_FREQ
-						<value>50</value>
-						<dependentTests>
-							<dependentTest enabled="0">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">VIN_AMP
-						<value>0.8m</value>
-						<dependentTests>
-							<dependentTest enabled="0">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>FC
-						<value>4K</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_AC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_DC
-						<value>1.6</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD
-						<value>3.3</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AC
-						<value>1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_DC
-						<value>50m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>S0
-						<value>3.3</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>S1
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>S2
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottingmode
-						<value>Append</value>
-					</plottingoption>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>useMaestroPlottingTemplate
-						<value>yes</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>distributedplot_enabled
-						<value>no</value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests>
-					<test>FECG:fecg_tb:1</test>
-					<test>Noise_CMRR</test>
-				</disabledtests>
-				<jobpolicyname>ADE XL Default</jobpolicyname>
-				<specs>
-					<spec>Noise_CMRR.CMRR_dB
-						<testname>Noise_CMRR</testname>
-						<resname>CMRR_dB</resname>
-						<specType>gt</specType>
-						<min>90</min>
-						<max></max>
-						<target></target>
-						<tol></tol>
-					</spec>
-					<spec>Noise_CMRR.Input_ref_noise_Vrms
-						<testname>Noise_CMRR</testname>
-						<resname>Input_ref_noise_Vrms</resname>
-						<specType>lt</specType>
-						<min></min>
-						<max>1e-6</max>
-						<target></target>
-						<tol></tol>
-					</spec>
-				</specs>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Apr 2 11:39:50 2026</timestamp>
-			<uuid>{83485a8e-4cdc-4cfe-b841-24111097e025}</uuid>
-			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.45.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.45.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/edatools_saul_113950757</localpsfdir>
-			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.45</psfdir>
-			<simdir>$AXL_PROJECT_DIR/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.45</simdir>
-			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.45.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.45.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.46
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">IN
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IN_none_Interactive.46</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>d2_VOUT_db
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VIA_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VLF1_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VGA_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VLF2_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>CMRR
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-					<test enabled="1">Noise_CMRR
-						<tool>ADE</tool>
-						<outputs>
-							<output>Output_Noise_Vrms
-								<evalType>point</evalType>
-							</output>
-							<output>Gain
-								<evalType>point</evalType>
-							</output>
-							<output>CM_Gain_dB_50
-								<evalType>point</evalType>
-							</output>
-							<output>DIF_Gain_dB_50
-								<evalType>point</evalType>
-							</output>
-							<output>CMRR_dB
-								<evalType>point</evalType>
-							</output>
-							<output>DIF_Gain
-								<evalType>point</evalType>
-							</output>
-							<output>Input_ref_noise_Vrms
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-						<tooloptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>Noise_CMRR_FECG:fecg_tb:1:1_state_Interactive.46</value>
+								<value>Noise_CMRR_FECG:fecg_tb:1:1_state_Interactive.56</value>
 							</option>
 							<option>view
 								<value>schematic</value>
@@ -1971,7 +896,7 @@
 						</dependentTests>
 					</var>
 					<var>VCM_DC
-						<value>1.6</value>
+						<value>1.5</value>
 						<dependentTests>
 							<dependentTest enabled="1">IN</dependentTest>
 							<dependentTest enabled="1">Noise_CMRR</dependentTest>
@@ -2006,7 +931,7 @@
 						</dependentTests>
 					</var>
 					<var>S1
-						<value>0</value>
+						<value>3.3</value>
 						<dependentTests>
 							<dependentTest enabled="1">IN</dependentTest>
 							<dependentTest enabled="1">Noise_CMRR</dependentTest>
@@ -2017,6 +942,27 @@
 						<dependentTests>
 							<dependentTest enabled="1">IN</dependentTest>
 							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>F0
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>F1
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>F2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -2049,7 +995,7 @@
 				</plottingoptions>
 				<disabledtests>
 					<test>FECG:fecg_tb:1</test>
-					<test>Noise_CMRR</test>
+					<test>IN</test>
 				</disabledtests>
 				<jobpolicyname>ADE XL Default</jobpolicyname>
 				<specs>
@@ -2074,26 +1020,26 @@
 				</specs>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Apr 2 11:40:59 2026</timestamp>
-			<uuid>{224be8ad-cecb-4822-8256-63d817603dcf}</uuid>
-			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.46.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.46.rdb</simresults>
+			<timestamp>Apr 2 19:36:08 2026</timestamp>
+			<uuid>{e56fcc0f-d670-4e24-ba99-64531aa7d053}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.56.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.56.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/edatools_saul_114059782</localpsfdir>
-			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.46</psfdir>
-			<simdir>$AXL_PROJECT_DIR/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.46</simdir>
+			<localpsfdir>/tmp/edatools_saul_193608917</localpsfdir>
+			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.56</psfdir>
+			<simdir>$AXL_PROJECT_DIR/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.56</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.46.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.46.log</runlogfile>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.56.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.56.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.47
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.57
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -2127,7 +1073,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IN_none_Interactive.47</value>
+								<value>IN_none_Interactive.57</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -2220,7 +1166,994 @@
 								<value>spectre</value>
 							</option>
 							<option>state
-								<value>Noise_CMRR_FECG:fecg_tb:1:1_state_Interactive.47</value>
+								<value>Noise_CMRR_FECG:fecg_tb:1:1_state_Interactive.57</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>FECG:fecg_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="0">VIN_FREQ
+						<value>50</value>
+						<dependentTests>
+							<dependentTest enabled="0">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VIN_AMP
+						<value>1m</value>
+						<dependentTests>
+							<dependentTest enabled="0">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FC
+						<value>4K</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_DC
+						<value>1.5</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_DC
+						<value>50m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S0
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S1
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>F0
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>F1
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>F2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>FECG:fecg_tb:1</test>
+					<test>IN</test>
+				</disabledtests>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<specs>
+					<spec>Noise_CMRR.CMRR_dB
+						<testname>Noise_CMRR</testname>
+						<resname>CMRR_dB</resname>
+						<specType>gt</specType>
+						<min>90</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>Noise_CMRR.Input_ref_noise_Vrms
+						<testname>Noise_CMRR</testname>
+						<resname>Input_ref_noise_Vrms</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>1e-6</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 2 19:36:51 2026</timestamp>
+			<uuid>{ecd83ec6-90e3-4a64-8afb-cde700951a58}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.57.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.57.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/edatools_saul_193651517</localpsfdir>
+			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.57</psfdir>
+			<simdir>$AXL_PROJECT_DIR/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.57</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.57.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.57.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.58
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IN
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IN_none_Interactive.58</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>d2_VOUT_db
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VIA_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VLF1_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VGA_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VLF2_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>CMRR
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test enabled="1">Noise_CMRR
+						<tool>ADE</tool>
+						<outputs>
+							<output>Output_Noise_Vrms
+								<evalType>point</evalType>
+							</output>
+							<output>Gain
+								<evalType>point</evalType>
+							</output>
+							<output>CM_Gain_dB_50
+								<evalType>point</evalType>
+							</output>
+							<output>DIF_Gain_dB_50
+								<evalType>point</evalType>
+							</output>
+							<output>CMRR_dB
+								<evalType>point</evalType>
+							</output>
+							<output>DIF_Gain
+								<evalType>point</evalType>
+							</output>
+							<output>Input_ref_noise_Vrms
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>Noise_CMRR_FECG:fecg_tb:1:1_state_Interactive.58</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>FECG:fecg_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="0">VIN_FREQ
+						<value>50</value>
+						<dependentTests>
+							<dependentTest enabled="0">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VIN_AMP
+						<value>1m</value>
+						<dependentTests>
+							<dependentTest enabled="0">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FC
+						<value>4K</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_DC
+						<value>1.5</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_DC
+						<value>50m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S0
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S1
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>F0
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>F1
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>F2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>FECG:fecg_tb:1</test>
+					<test>IN</test>
+				</disabledtests>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<specs>
+					<spec>Noise_CMRR.CMRR_dB
+						<testname>Noise_CMRR</testname>
+						<resname>CMRR_dB</resname>
+						<specType>gt</specType>
+						<min>90</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>Noise_CMRR.Input_ref_noise_Vrms
+						<testname>Noise_CMRR</testname>
+						<resname>Input_ref_noise_Vrms</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>1e-6</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 2 19:37:15 2026</timestamp>
+			<uuid>{3aeddbed-ede5-4526-a165-45778d77c187}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.58.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.58.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/edatools_saul_193715290</localpsfdir>
+			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.58</psfdir>
+			<simdir>$AXL_PROJECT_DIR/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.58</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.58.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.58.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.59
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IN
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IN_none_Interactive.59</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>d2_VOUT_db
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VIA_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VLF1_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VGA_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VLF2_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>CMRR
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test enabled="1">Noise_CMRR
+						<tool>ADE</tool>
+						<outputs>
+							<output>Output_Noise_Vrms
+								<evalType>point</evalType>
+							</output>
+							<output>Gain
+								<evalType>point</evalType>
+							</output>
+							<output>CM_Gain_dB_50
+								<evalType>point</evalType>
+							</output>
+							<output>DIF_Gain_dB_50
+								<evalType>point</evalType>
+							</output>
+							<output>CMRR_dB
+								<evalType>point</evalType>
+							</output>
+							<output>DIF_Gain
+								<evalType>point</evalType>
+							</output>
+							<output>Input_ref_noise_Vrms
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>Noise_CMRR_FECG:fecg_tb:1:1_state_Interactive.59</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>FECG:fecg_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="0">VIN_FREQ
+						<value>50</value>
+						<dependentTests>
+							<dependentTest enabled="0">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VIN_AMP
+						<value>1m</value>
+						<dependentTests>
+							<dependentTest enabled="0">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FC
+						<value>4K</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_DC
+						<value>1.5</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_DC
+						<value>50m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S0
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S1
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>F0
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>F1
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>F2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>FECG:fecg_tb:1</test>
+					<test>IN</test>
+				</disabledtests>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<specs>
+					<spec>Noise_CMRR.CMRR_dB
+						<testname>Noise_CMRR</testname>
+						<resname>CMRR_dB</resname>
+						<specType>gt</specType>
+						<min>90</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>Noise_CMRR.Input_ref_noise_Vrms
+						<testname>Noise_CMRR</testname>
+						<resname>Input_ref_noise_Vrms</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>1e-6</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 2 19:37:55 2026</timestamp>
+			<uuid>{800cbe5c-8dee-48c0-b72a-9763b20d310f}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.59.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.59.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/edatools_saul_193755411</localpsfdir>
+			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.59</psfdir>
+			<simdir>$AXL_PROJECT_DIR/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.59</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.59.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.59.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.60
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IN
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IN_none_Interactive.60</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>d2_VOUT_db
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VIA_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VLF1_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VGA_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VLF2_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>CMRR
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test enabled="1">Noise_CMRR
+						<tool>ADE</tool>
+						<outputs>
+							<output>Output_Noise_Vrms
+								<evalType>point</evalType>
+							</output>
+							<output>Gain
+								<evalType>point</evalType>
+							</output>
+							<output>CM_Gain_dB_50
+								<evalType>point</evalType>
+							</output>
+							<output>DIF_Gain_dB_50
+								<evalType>point</evalType>
+							</output>
+							<output>CMRR_dB
+								<evalType>point</evalType>
+							</output>
+							<output>DIF_Gain
+								<evalType>point</evalType>
+							</output>
+							<output>Input_ref_noise_Vrms
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>Noise_CMRR_FECG:fecg_tb:1:1_state_Interactive.60</value>
 							</option>
 							<option>view
 								<value>schematic</value>
@@ -2327,620 +2260,25 @@
 							<dependentTest enabled="1">Noise_CMRR</dependentTest>
 						</dependentTests>
 					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottingmode
-						<value>Append</value>
-					</plottingoption>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>useMaestroPlottingTemplate
-						<value>yes</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>distributedplot_enabled
-						<value>no</value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests>
-					<test>FECG:fecg_tb:1</test>
-					<test>Noise_CMRR</test>
-				</disabledtests>
-				<jobpolicyname>ADE XL Default</jobpolicyname>
-				<specs>
-					<spec>Noise_CMRR.CMRR_dB
-						<testname>Noise_CMRR</testname>
-						<resname>CMRR_dB</resname>
-						<specType>gt</specType>
-						<min>90</min>
-						<max></max>
-						<target></target>
-						<tol></tol>
-					</spec>
-					<spec>Noise_CMRR.Input_ref_noise_Vrms
-						<testname>Noise_CMRR</testname>
-						<resname>Input_ref_noise_Vrms</resname>
-						<specType>lt</specType>
-						<min></min>
-						<max>1e-6</max>
-						<target></target>
-						<tol></tol>
-					</spec>
-				</specs>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Apr 2 11:43:40 2026</timestamp>
-			<uuid>{32b5ac20-a763-4051-830c-df9b117b63fb}</uuid>
-			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.47.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.47.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/edatools_saul_114340080</localpsfdir>
-			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.47</psfdir>
-			<simdir>$AXL_PROJECT_DIR/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.47</simdir>
-			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.47.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.47.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.48
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">IN
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IN_none_Interactive.48</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>d2_VOUT_db
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VIA_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VLF1_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VGA_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VLF2_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>CMRR
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-					<test enabled="1">Noise_CMRR
-						<tool>ADE</tool>
-						<outputs>
-							<output>Output_Noise_Vrms
-								<evalType>point</evalType>
-							</output>
-							<output>Gain
-								<evalType>point</evalType>
-							</output>
-							<output>CM_Gain_dB_50
-								<evalType>point</evalType>
-							</output>
-							<output>DIF_Gain_dB_50
-								<evalType>point</evalType>
-							</output>
-							<output>CMRR_dB
-								<evalType>point</evalType>
-							</output>
-							<output>DIF_Gain
-								<evalType>point</evalType>
-							</output>
-							<output>Input_ref_noise_Vrms
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-						<tooloptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>Noise_CMRR_FECG:fecg_tb:1:1_state_Interactive.48</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</tooloptions>
-						<prerunscript>0</prerunscript>
-						<origoptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>FECG:fecg_tb:1:1_state</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var enabled="0">VIN_FREQ
-						<value>50</value>
-						<dependentTests>
-							<dependentTest enabled="0">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">VIN_AMP
-						<value>1m</value>
-						<dependentTests>
-							<dependentTest enabled="0">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>FC
-						<value>4K</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_AC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_DC
-						<value>1.5</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD
+					<var>F0
 						<value>3.3</value>
 						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
 						</dependentTests>
 					</var>
-					<var>VIN_AC
-						<value>1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_DC
-						<value>50m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>S0
+					<var>F1
 						<value>3.3</value>
 						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
 						</dependentTests>
 					</var>
-					<var>S1
+					<var>F2
 						<value>0</value>
 						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>S2
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottingmode
-						<value>Append</value>
-					</plottingoption>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>useMaestroPlottingTemplate
-						<value>yes</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>distributedplot_enabled
-						<value>no</value>
-					</plottingoption>
-				</plottingoptions>
-				<disabledtests>
-					<test>FECG:fecg_tb:1</test>
-					<test>Noise_CMRR</test>
-				</disabledtests>
-				<jobpolicyname>ADE XL Default</jobpolicyname>
-				<specs>
-					<spec>Noise_CMRR.CMRR_dB
-						<testname>Noise_CMRR</testname>
-						<resname>CMRR_dB</resname>
-						<specType>gt</specType>
-						<min>90</min>
-						<max></max>
-						<target></target>
-						<tol></tol>
-					</spec>
-					<spec>Noise_CMRR.Input_ref_noise_Vrms
-						<testname>Noise_CMRR</testname>
-						<resname>Input_ref_noise_Vrms</resname>
-						<specType>lt</specType>
-						<min></min>
-						<max>1e-6</max>
-						<target></target>
-						<tol></tol>
-					</spec>
-				</specs>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Apr 2 11:46:34 2026</timestamp>
-			<uuid>{c34143d3-e849-4705-be43-b88d90affb02}</uuid>
-			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.48.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.48.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/edatools_saul_114634509</localpsfdir>
-			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.48</psfdir>
-			<simdir>$AXL_PROJECT_DIR/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.48</simdir>
-			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.48.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.48.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.49
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">IN
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>IN_none_Interactive.49</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-						<outputs>
-							<output>d2_VOUT_db
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VIA_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VLF1_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VGA_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>d2_VLF2_db
-								<units></units>
-								<significantDigits>0</significantDigits>
-								<notation></notation>
-								<suffix></suffix>
-								<evalType>point</evalType>
-							</output>
-							<output>CMRR
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-					<test enabled="1">Noise_CMRR
-						<tool>ADE</tool>
-						<outputs>
-							<output>Output_Noise_Vrms
-								<evalType>point</evalType>
-							</output>
-							<output>Gain
-								<evalType>point</evalType>
-							</output>
-							<output>CM_Gain_dB_50
-								<evalType>point</evalType>
-							</output>
-							<output>DIF_Gain_dB_50
-								<evalType>point</evalType>
-							</output>
-							<output>CMRR_dB
-								<evalType>point</evalType>
-							</output>
-							<output>DIF_Gain
-								<evalType>point</evalType>
-							</output>
-							<output>Input_ref_noise_Vrms
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-						<tooloptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>Noise_CMRR_FECG:fecg_tb:1:1_state_Interactive.49</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</tooloptions>
-						<prerunscript>0</prerunscript>
-						<origoptions>
-							<option>cell
-								<value>fecg_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>FECG:fecg_tb:1:1_state</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<vars>
-					<var enabled="0">VIN_FREQ
-						<value>50</value>
-						<dependentTests>
-							<dependentTest enabled="0">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var enabled="0">VIN_AMP
-						<value>1m</value>
-						<dependentTests>
-							<dependentTest enabled="0">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>FC
-						<value>4K</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_AC
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VCM_DC
-						<value>1.5</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VDD
-						<value>3.3</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_AC
-						<value>1</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>VIN_DC
-						<value>50m</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>S0
-						<value>3.3</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>S1
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
-						</dependentTests>
-					</var>
-					<var>S2
-						<value>0</value>
-						<dependentTests>
-							<dependentTest enabled="1">IN</dependentTest>
-							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -2998,26 +2336,26 @@
 				</specs>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Apr 2 11:48:00 2026</timestamp>
-			<uuid>{045bdbf6-2d69-47eb-8cb9-32e23f03c95a}</uuid>
-			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.49.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.49.rdb</simresults>
+			<timestamp>Apr 2 19:38:56 2026</timestamp>
+			<uuid>{0d50a2bb-a751-44dd-8ab2-3cdd75af75c0}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.60.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.60.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/edatools_saul_114800941</localpsfdir>
-			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.49</psfdir>
-			<simdir>$AXL_PROJECT_DIR/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.49</simdir>
+			<localpsfdir>/tmp/edatools_saul_193857010</localpsfdir>
+			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.60</psfdir>
+			<simdir>$AXL_PROJECT_DIR/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.60</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.49.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.49.log</runlogfile>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.60.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.60.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.50
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.61
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -3051,7 +2389,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>IN_none_Interactive.50</value>
+								<value>IN_none_Interactive.61</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -3144,7 +2482,7 @@
 								<value>spectre</value>
 							</option>
 							<option>state
-								<value>Noise_CMRR_FECG:fecg_tb:1:1_state_Interactive.50</value>
+								<value>Noise_CMRR_FECG:fecg_tb:1:1_state_Interactive.61</value>
 							</option>
 							<option>view
 								<value>schematic</value>
@@ -3231,7 +2569,7 @@
 						</dependentTests>
 					</var>
 					<var>S0
-						<value>0</value>
+						<value>3.3</value>
 						<dependentTests>
 							<dependentTest enabled="1">IN</dependentTest>
 							<dependentTest enabled="1">Noise_CMRR</dependentTest>
@@ -3249,6 +2587,27 @@
 						<dependentTests>
 							<dependentTest enabled="1">IN</dependentTest>
 							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>F0
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>F1
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>F2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
 						</dependentTests>
 					</var>
 				</vars>
@@ -3281,7 +2640,7 @@
 				</plottingoptions>
 				<disabledtests>
 					<test>FECG:fecg_tb:1</test>
-					<test>IN</test>
+					<test>Noise_CMRR</test>
 				</disabledtests>
 				<jobpolicyname>ADE XL Default</jobpolicyname>
 				<specs>
@@ -3306,22 +2665,2251 @@
 				</specs>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Apr 2 11:54:04 2026</timestamp>
-			<uuid>{cb25ea73-a3cd-42db-aed5-a389eef7ce8e}</uuid>
-			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.50.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.50.rdb</simresults>
+			<timestamp>Apr 2 19:40:34 2026</timestamp>
+			<uuid>{bf3a5112-825d-4035-8034-78695320d47c}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.61.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.61.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/edatools_saul_115404882</localpsfdir>
-			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.50</psfdir>
-			<simdir>$AXL_PROJECT_DIR/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.50</simdir>
+			<localpsfdir>/tmp/edatools_saul_194034703</localpsfdir>
+			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.61</psfdir>
+			<simdir>$AXL_PROJECT_DIR/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.61</simdir>
 			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.50.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.50.log</runlogfile>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.61.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.61.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.62
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IN
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IN_none_Interactive.62</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>d2_VOUT_db
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VIA_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VLF1_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VGA_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VLF2_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>CMRR
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test enabled="1">Noise_CMRR
+						<tool>ADE</tool>
+						<outputs>
+							<output>Output_Noise_Vrms
+								<evalType>point</evalType>
+							</output>
+							<output>Gain
+								<evalType>point</evalType>
+							</output>
+							<output>CM_Gain_dB_50
+								<evalType>point</evalType>
+							</output>
+							<output>DIF_Gain_dB_50
+								<evalType>point</evalType>
+							</output>
+							<output>CMRR_dB
+								<evalType>point</evalType>
+							</output>
+							<output>DIF_Gain
+								<evalType>point</evalType>
+							</output>
+							<output>Input_ref_noise_Vrms
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>Noise_CMRR_FECG:fecg_tb:1:1_state_Interactive.62</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>FECG:fecg_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="0">VIN_FREQ
+						<value>50</value>
+						<dependentTests>
+							<dependentTest enabled="0">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VIN_AMP
+						<value>1m</value>
+						<dependentTests>
+							<dependentTest enabled="0">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FC
+						<value>4K</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_DC
+						<value>1.5</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_DC
+						<value>50m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S0
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S1
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>F0
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>F1
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>F2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>FECG:fecg_tb:1</test>
+					<test>Noise_CMRR</test>
+				</disabledtests>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<specs>
+					<spec>Noise_CMRR.CMRR_dB
+						<testname>Noise_CMRR</testname>
+						<resname>CMRR_dB</resname>
+						<specType>gt</specType>
+						<min>90</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>Noise_CMRR.Input_ref_noise_Vrms
+						<testname>Noise_CMRR</testname>
+						<resname>Input_ref_noise_Vrms</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>1e-6</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 2 19:41:31 2026</timestamp>
+			<uuid>{30960591-74e0-4d34-81d5-4fccbd9dd004}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.62.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.62.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/edatools_saul_194131452</localpsfdir>
+			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.62</psfdir>
+			<simdir>$AXL_PROJECT_DIR/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.62</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.62.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.62.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.63
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">CMOS
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cap.scs</modelfile>
+								<modelsection>"captm"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">CMOS_VDD
+						<vars>
+							<var>VDD
+								<value>2.97 3.63</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cap.scs</modelfile>
+								<modelsection>"captm"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">CMOS_VDD_TEMP
+						<vars>
+							<var>temperature
+								<value>-40 85</value>
+							</var>
+							<var>VDD
+								<value>2.97 3.63</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cap.scs</modelfile>
+								<modelsection>"captm"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">CMOS_RES_CAP_VDD_TEMP
+						<vars>
+							<var>temperature
+								<value>-40 85</value>
+							</var>
+							<var>VDD
+								<value>2.97 3.63</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/res.scs</modelfile>
+								<modelsection>"reswp" "resws"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cap.scs</modelfile>
+								<modelsection>"capwp" "capws"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">CMOS_RES_CAP_TEMP
+						<vars>
+							<var>temperature
+								<value>-40 85</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/res.scs</modelfile>
+								<modelsection>"reswp" "resws"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cap.scs</modelfile>
+								<modelsection>"capwp" "capws"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IN
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IN_none_Interactive.63</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>d2_VOUT_db
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VIA_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VLF1_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VGA_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VLF2_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>CMRR
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test enabled="1">Noise_CMRR
+						<tool>ADE</tool>
+						<outputs>
+							<output>Output_Noise_Vrms
+								<evalType>point</evalType>
+							</output>
+							<output>Gain
+								<evalType>point</evalType>
+							</output>
+							<output>CM_Gain_dB_50
+								<evalType>point</evalType>
+							</output>
+							<output>DIF_Gain_dB_50
+								<evalType>point</evalType>
+							</output>
+							<output>CMRR_dB
+								<evalType>point</evalType>
+							</output>
+							<output>DIF_Gain
+								<evalType>point</evalType>
+							</output>
+							<output>Input_ref_noise_Vrms
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>Noise_CMRR_FECG:fecg_tb:1:1_state_Interactive.63</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>FECG:fecg_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="0">VIN_FREQ
+						<value>50</value>
+						<dependentTests>
+							<dependentTest enabled="0">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VIN_AMP
+						<value>1m</value>
+						<dependentTests>
+							<dependentTest enabled="0">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FC
+						<value>4K</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_DC
+						<value>1.5</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_DC
+						<value>50m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S0
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S1
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>F0
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>F1
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>F2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>FECG:fecg_tb:1</test>
+					<test>Noise_CMRR</test>
+				</disabledtests>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<specs>
+					<spec>Noise_CMRR.CMRR_dB
+						<testname>Noise_CMRR</testname>
+						<resname>CMRR_dB</resname>
+						<specType>gt</specType>
+						<min>90</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>Noise_CMRR.Input_ref_noise_Vrms
+						<testname>Noise_CMRR</testname>
+						<resname>Input_ref_noise_Vrms</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>1e-6</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 2 19:44:18 2026</timestamp>
+			<uuid>{b984b809-ede4-4732-8929-4367b8fe4e06}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.63.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.63.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/edatools_saul_194418862</localpsfdir>
+			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.63</psfdir>
+			<simdir>$AXL_PROJECT_DIR/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.63</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.63.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.63.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.64
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">CMOS
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cap.scs</modelfile>
+								<modelsection>"captm"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">CMOS_VDD
+						<vars>
+							<var>VDD
+								<value>2.97 3.63</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cap.scs</modelfile>
+								<modelsection>"captm"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">CMOS_VDD_TEMP
+						<vars>
+							<var>temperature
+								<value>-40 85</value>
+							</var>
+							<var>VDD
+								<value>2.97 3.63</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cap.scs</modelfile>
+								<modelsection>"captm"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">CMOS_RES_CAP_VDD_TEMP
+						<vars>
+							<var>temperature
+								<value>-40 85</value>
+							</var>
+							<var>VDD
+								<value>2.97 3.63</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/res.scs</modelfile>
+								<modelsection>"reswp" "resws"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cap.scs</modelfile>
+								<modelsection>"capwp" "capws"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">CMOS_RES_CAP_TEMP
+						<vars>
+							<var>temperature
+								<value>-40 85</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/res.scs</modelfile>
+								<modelsection>"reswp" "resws"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cap.scs</modelfile>
+								<modelsection>"capwp" "capws"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IN
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IN_none_Interactive.64</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>d2_VOUT_db
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VIA_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VLF1_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VGA_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VLF2_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>CMRR
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test enabled="1">Noise_CMRR
+						<tool>ADE</tool>
+						<outputs>
+							<output>Output_Noise_Vrms
+								<evalType>point</evalType>
+							</output>
+							<output>Gain
+								<evalType>point</evalType>
+							</output>
+							<output>CM_Gain_dB_50
+								<evalType>point</evalType>
+							</output>
+							<output>DIF_Gain_dB_50
+								<evalType>point</evalType>
+							</output>
+							<output>CMRR_dB
+								<evalType>point</evalType>
+							</output>
+							<output>DIF_Gain
+								<evalType>point</evalType>
+							</output>
+							<output>Input_ref_noise_Vrms
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>Noise_CMRR_FECG:fecg_tb:1:1_state_Interactive.64</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>FECG:fecg_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="0">VIN_FREQ
+						<value>50</value>
+						<dependentTests>
+							<dependentTest enabled="0">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VIN_AMP
+						<value>1m</value>
+						<dependentTests>
+							<dependentTest enabled="0">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FC
+						<value>4K</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_DC
+						<value>1.5</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_DC
+						<value>50m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S0
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S1
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>F0
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>F1
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+					<var>F2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>FECG:fecg_tb:1</test>
+					<test>Noise_CMRR</test>
+				</disabledtests>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<specs>
+					<spec>Noise_CMRR.CMRR_dB
+						<testname>Noise_CMRR</testname>
+						<resname>CMRR_dB</resname>
+						<specType>gt</specType>
+						<min>90</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>Noise_CMRR.Input_ref_noise_Vrms
+						<testname>Noise_CMRR</testname>
+						<resname>Input_ref_noise_Vrms</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>1e-6</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 2 19:51:21 2026</timestamp>
+			<uuid>{9886a324-2b54-4acc-9591-57643f8503a6}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.64.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.64.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/edatools_saul_195121063</localpsfdir>
+			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.64</psfdir>
+			<simdir>$AXL_PROJECT_DIR/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.64</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.64.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.64.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">MonteCarlo.0
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">CMOS
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cap.scs</modelfile>
+								<modelsection>"captm"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">CMOS_VDD
+						<vars>
+							<var>VDD
+								<value>2.97 3.63</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cap.scs</modelfile>
+								<modelsection>"captm"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">CMOS_VDD_TEMP
+						<vars>
+							<var>temperature
+								<value>-40 85</value>
+							</var>
+							<var>VDD
+								<value>2.97 3.63</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cap.scs</modelfile>
+								<modelsection>"captm"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="0">CMOS_RES_CAP_VDD_TEMP
+						<vars>
+							<var>temperature
+								<value>-40 85</value>
+							</var>
+							<var>VDD
+								<value>2.97 3.63</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/res.scs</modelfile>
+								<modelsection>"reswp" "resws"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cap.scs</modelfile>
+								<modelsection>"capwp" "capws"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+					<corner enabled="1">CMOS_RES_CAP_TEMP
+						<vars>
+							<var>temperature
+								<value>-40 85</value>
+							</var>
+						</vars>
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/res.scs</modelfile>
+								<modelsection>"reswp" "resws"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/cap.scs</modelfile>
+								<modelsection>"capwp" "capws"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<currentmode>Monte Carlo Sampling</currentmode>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">IN
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>IN_none_MonteCarlo.0</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>d2_VOUT_db
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VIA_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VLF1_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VGA_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VLF2_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>CMRR
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test enabled="1">Noise_CMRR
+						<tool>ADE</tool>
+						<outputs>
+							<output>Output_Noise_Vrms
+								<evalType>point</evalType>
+							</output>
+							<output>Gain
+								<evalType>point</evalType>
+							</output>
+							<output>CM_Gain_dB_50
+								<evalType>point</evalType>
+							</output>
+							<output>DIF_Gain_dB_50
+								<evalType>point</evalType>
+							</output>
+							<output>CMRR_dB
+								<evalType>point</evalType>
+							</output>
+							<output>DIF_Gain
+								<evalType>point</evalType>
+							</output>
+							<output>Input_ref_noise_Vrms
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>Noise_CMRR_FECG:fecg_tb:1:1_state_MonteCarlo.0</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>FECG:fecg_tb:1:1_state</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+					<test enabled="1">IN_MC
+						<tool>ADE</tool>
+						<outputs>
+							<output>d2_VOUT_db
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VIA_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VLF1_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VGA_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>d2_VLF2_db
+								<units></units>
+								<significantDigits>0</significantDigits>
+								<notation></notation>
+								<suffix></suffix>
+								<evalType>point</evalType>
+							</output>
+							<output>CMRR
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<tooloptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IN_MC_IN:1_state_MonteCarlo.0</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+						<origoptions>
+							<option>cell
+								<value>fecg_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>IN:1_state</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var enabled="0">VIN_FREQ
+						<value>50</value>
+						<dependentTests>
+							<dependentTest enabled="0">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+							<dependentTest enabled="0">IN_MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var enabled="0">VIN_AMP
+						<value>1m</value>
+						<dependentTests>
+							<dependentTest enabled="0">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+							<dependentTest enabled="0">IN_MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var>FC
+						<value>4K</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+							<dependentTest enabled="1">IN_MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+							<dependentTest enabled="1">IN_MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_DC
+						<value>1.5</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+							<dependentTest enabled="1">IN_MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDD
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+							<dependentTest enabled="1">IN_MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+							<dependentTest enabled="1">IN_MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_DC
+						<value>50m</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+							<dependentTest enabled="1">IN_MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S0
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+							<dependentTest enabled="1">IN_MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S1
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+							<dependentTest enabled="1">IN_MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var>S2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1">IN</dependentTest>
+							<dependentTest enabled="1">Noise_CMRR</dependentTest>
+							<dependentTest enabled="1">IN_MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var>F0
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
+							<dependentTest enabled="1">IN_MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var>F1
+						<value>3.3</value>
+						<dependentTests>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
+							<dependentTest enabled="1">IN_MC</dependentTest>
+						</dependentTests>
+					</var>
+					<var>F2
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">IN</dependentTest>
+							<dependentTest omitted="0">Noise_CMRR</dependentTest>
+							<dependentTest enabled="1">IN_MC</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Append</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>FECG:fecg_tb:1</test>
+					<test>Noise_CMRR</test>
+					<test>IN</test>
+				</disabledtests>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<specs>
+					<spec>Noise_CMRR.CMRR_dB
+						<testname>Noise_CMRR</testname>
+						<resname>CMRR_dB</resname>
+						<specType>gt</specType>
+						<min>90</min>
+						<max></max>
+						<target></target>
+						<tol></tol>
+					</spec>
+					<spec>Noise_CMRR.Input_ref_noise_Vrms
+						<testname>Noise_CMRR</testname>
+						<resname>Input_ref_noise_Vrms</resname>
+						<specType>lt</specType>
+						<min></min>
+						<max>1e-6</max>
+						<target></target>
+						<tol></tol>
+					</spec>
+				</specs>
+				<runoptions>
+					<mode>Monte Carlo Sampling
+						<runoption>mcmethod
+							<value>all</value>
+						</runoption>
+						<runoption>mcnumpoints
+							<value>100</value>
+						</runoption>
+						<runoption>mcnumbins
+							<value></value>
+						</runoption>
+						<runoption>mcStopEarly
+							<value>0</value>
+						</runoption>
+						<runoption>mcStopMethod
+							<value>Significance Test</value>
+						</runoption>
+						<runoption>samplingmode
+							<value>lds</value>
+						</runoption>
+						<runoption>saveprocess
+							<value>0</value>
+						</runoption>
+						<runoption>savemismatch
+							<value>0</value>
+						</runoption>
+						<runoption>parasiticanalysis
+							<value>0</value>
+						</runoption>
+						<runoption>mcreferencepoint
+							<value>0</value>
+						</runoption>
+						<runoption>donominal
+							<value>1</value>
+						</runoption>
+						<runoption>saveallplots
+							<value>1</value>
+						</runoption>
+						<runoption>montecarloseed
+							<value></value>
+						</runoption>
+						<runoption>mcstartingrunnumber
+							<value></value>
+						</runoption>
+						<runoption>dumpParamMode
+							<value>no</value>
+						</runoption>
+					</mode>
+				</runoptions>
+				<allcornersenabled>0</allcornersenabled>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 2 19:59:18 2026</timestamp>
+			<uuid>{2aa37a15-f10a-4197-875e-725337b70162}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/MonteCarlo.0.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/MonteCarlo.0.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/edatools_saul_195918095</localpsfdir>
+			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/MonteCarlo.0</psfdir>
+			<simdir>$AXL_PROJECT_DIR/FECG/fecg_tb/adexl_signal_path/results/data/MonteCarlo.0</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/MonteCarlo.0.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/MonteCarlo.0.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>

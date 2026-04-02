@@ -11,9 +11,9 @@
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = FECG:gmc_lpf_tb:1_spectre_state1_Interactive.0
-	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/gmc_lpf_tb/adexl/results/data/Interactive.0.rdb
-	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.0/1/FECG:gmc_lpf_tb:1
+	State Name   = IN_spectre_state1_Interactive.32
+	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/gmc_lpf_tb/adexl/results/data/Interactive.32.rdb
+	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.32/1/IN
 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/gmc_lpf_tb/adexl
@@ -23,70 +23,52 @@
 
 *Info*    The auto suspension is disabled.
 
+Loading monte.cxt 
 
 
 
 
 
-*Info*    Run start for Point ID (0 1) on testbench [
-          FECG:gmc_lpf_tb:1 ].
+*Info*    Run start for Point ID (1 1) on testbench [ IN ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var DC_IN = "1.6"
+Setting var DC_IN = "1.5"
 Setting var VDD = "3.3"
-Setting var VIN_AMPV = "1"
+Setting var VIN_AMPV = "0.5"
 Setting var VIN_DC = "0"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.0/1/FECG:gmc_lpf_tb:1/netlist
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.32/1/IN/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.0/1/FECG:gmc_lpf_tb:1
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.32/1/IN
 
 
-*Info*    Creating Netlist for Point ID (0 1)
+*Info*    Creating Netlist for Point ID (1 1)
 
 generate netlist...
+Loading hnlInit.cxt 
+Loading seCore.cxt 
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Initializing the control file using cp:
-    cp /opt/tools/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.0/1/FECG:gmc_lpf_tb:1/netlist/control
-Copying Spectre source file 'spectre.inp'
-Copying Spectre command file 'spectre.sim'
-Begin Incremental Netlisting Apr  2 08:56:51 2026
-WARNING (ADE-6003): Terminal "IN", specified in the CDF termOrder, does not exist
-           in the cell-view "FECG" "gmc_4" "schematic"
-WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
-           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
-           be ignored. The terminals in the cellView will be netlisted in the alphabetical
-           order of their names. Eliminate the mismatch if you want the CDF termOrder
-           property to be used for netlisting.
-           To edit CDF of a cell, 
-           i) Open CIW->Tools->CDF->Edit.
-           ii) Select Library Name & Cell Name.
-           iii) Click on the Edit button in the simulation information section of the
-                Edit CDF window.
-End netlisting Apr  2 08:56:51 2026
+Begin Incremental Netlisting Apr  2 12:02:48 2026
+End netlisting Apr  2 12:02:48 2026
 
-Netlisting Statistics:
-	Number of components:   48
-
-	Elapsed time:          0.0s
-Errors: 0	Warnings: 2
+	The netlist is up to date.
+	Time taken to compare the design with netlist:   0.0s
       ...successful.
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ FECG:gmc_lpf_tb:1 ] for
-          Point ID (0 1).
+*Info*    Running simulation on testbench [ IN ] for Point ID (1 1).
 
-Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.0/1/FECG:gmc_lpf_tb:1/psf.
+Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.32/1/IN/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -98,14 +80,14 @@ choose "Output Log" menu option.
 WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
        There will be no performance impact on data visualization due to this change.
+Loading paraplot.cxt 
 INFO (ADE-3071): Simulation completed successfully.
 reading simulation data...
       ...successful.
 *Info*    Client has finished evaluating ... 
 
 
-*Info*    Run complete for Point ID (0 1) on testbench [
-          FECG:gmc_lpf_tb:1 ].
+*Info*    Run complete for Point ID (1 1) on testbench [ IN ].
 
 
 

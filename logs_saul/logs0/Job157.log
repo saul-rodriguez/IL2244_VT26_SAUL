@@ -7,16 +7,16 @@
 *Info*    Configuring the session ...
 
 	Library      = FECG
-	Cell         = fecg_ia_step_tb
+	Cell         = gmc_lpf_tb
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = FECG:fecg_ia_step_tb:1_none_Interactive.7
-	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_ia_step_tb/adexl/results/data/Interactive.7.rdb
-	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_step_tb/adexl/results/data/Interactive.7/1/FECG:fecg_ia_step_tb:1
-	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_step_tb/adexl/results/data
+	State Name   = IN_spectre_state1_Interactive.147
+	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/gmc_lpf_tb/adexl/results/data/Interactive.147.rdb
+	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.147/1/IN
+	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
-	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_ia_step_tb/adexl
+	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/gmc_lpf_tb/adexl
 	File Encoding = 0
 
 
@@ -28,56 +28,53 @@
 
 
 
-*Info*    Run start for Point ID (7 1) on testbench [
-          FECG:fecg_ia_step_tb:1 ].
+*Info*    Run start for Point ID (116 1) on testbench [ IN ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var FC = "4k"
-Setting var VCM_AC = "0"
-Setting var VCM_AMP = "0"
-Setting var VCM_DC = "1.6"
+Setting var DC_IN = "1.5"
+Setting var F0 = "0"
+Setting var F1 = "3.3"
+Setting var F2 = "3.3"
 Setting var VDD = "3.3"
-Setting var VIN_AC = "1"
-Setting var VIN_AMP = "0"
+Setting var VIN_AMPV = "0.5"
 Setting var VIN_DC = "0"
-Setting var VIN_FREQ = "50"
-Setting var VIN_PULSE = "300m"
-Setting var s = "0"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_step_tb/adexl/results/data/Interactive.7/1/FECG:fecg_ia_step_tb:1/netlist
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.147/1/IN/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_step_tb/adexl/results/data/Interactive.7/1/FECG:fecg_ia_step_tb:1
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.147/1/IN
 
 
-*Info*    Creating Netlist for Point ID (7 1)
+*Info*    Creating Netlist for Point ID (116 1)
 
 generate netlist...
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Mar 30 05:11:26 2026
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_tb/adexl/results/data/Interactive.325/1/ECG_IA:ecg_ia_tb:1/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
+Begin Incremental Netlisting Apr  2 19:33:18 2026
+WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.32/1/IN/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
 Ensure that you have the write permission for the mentioned file.
 
-End netlisting Mar 30 05:11:26 2026
+End netlisting Apr  2 19:33:18 2026
 
-	The netlist is up to date.
-	Time taken to compare the design with netlist:   0.0s
+Netlisting Statistics:
+	Number of components:    9
+
+	Elapsed time:          1.0s (9.00/s)
+Errors: 0	Warnings: 0
       ...successful.
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ FECG:fecg_ia_step_tb:1 ]
-          for Point ID (7 1).
+*Info*    Running simulation on testbench [ IN ] for Point ID (116 1).
 
-Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_ia_step_tb/adexl/results/data/Interactive.7/1/FECG:fecg_ia_step_tb:1/psf.
+Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.147/1/IN/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -95,8 +92,7 @@ reading simulation data...
 *Info*    Client has finished evaluating ... 
 
 
-*Info*    Run complete for Point ID (7 1) on testbench [
-          FECG:fecg_ia_step_tb:1 ].
+*Info*    Run complete for Point ID (116 1) on testbench [ IN ].
 
 
 
