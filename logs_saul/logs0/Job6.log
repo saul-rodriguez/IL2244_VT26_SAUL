@@ -1,14 +1,14 @@
-\# Program start time:     UTC 2026.03.27 08:10:14.264
-\# Local time: UTC (UTC+00:00) 2026.03.27 08:10:14.264
+\# Program start time:     UTC 2026.04.01 05:30:33.681
+\# Local time: UTC (UTC+00:00) 2026.04.01 05:30:33.681
 \o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 09/03/2024 19:11 (sjfhw316) $
 \o Hierarchy:		/opt/tools/cadence/installs/IC618/tools.lnx86/dfII/
 \o Sub version:		sub-version  IC6.1.8-64b.500.36  (64-bit addresses)
-\# Command line:	/opt/tools/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso682996 -mpshost edatools -davinciService DaVinciService_682996_1774598955 -log /home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job6.log -licenseLockFileName /home/saul/projects/IL2244_VT26_SAUL/.tmp_saul/.edatools_682996 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 6
+\# Command line:	/opt/tools/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso962994 -mpshost edatools -davinciService DaVinciService_962994_1775021157 -log /home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job6.log -licenseLockFileName /home/saul/projects/IL2244_VT26_SAUL/.tmp_saul/.edatools_962994 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 6
 \# Host name (type):	edatools (x86_64)
 \# Operating system:	Linux 6.17.0-19-generic #19~24.04.2-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar  6 23:08:46 UTC 2
 \# Linux /etc/issue:	\S
 \# Linux /etc/issue:	Kernel \r on an \m
-\# X display name (WxH):	:6726 (1024x868)
+\# X display name (WxH):	:4111 (1024x868)
 \# Available geometry:			TL(0:0) BR(1023:867)
 \# X server:			The X.Org Foundation
 \# Depth of Visual (Root):	24 (24)
@@ -18,11 +18,11 @@
 \# 			current id 0x0, current max 0x1ffffa (2097146)
 \# Max data seg size:	     unlimited
 \# Max process size:	     unlimited
-\# Initial sbrk value:	      1,523 MB
-\# Available memory:	     55,924 MB
+\# Initial sbrk value:	      1,083 MB
+\# Available memory:	     51,276 MB
 \# System memory:	     72,238 MB
-\# Maximum memory size:	     70,834 MB
-\# Max mem available:	     56,044 MB
+\# Maximum memory size:	     71,275 MB
+\# Max mem available:	     51,395 MB
 \# Initial memory used:	        119 MB
 \#        process size:	      1,676 MB
 \# Thread usage limits (effective/default):	maxthreads 4294967295/4294967295 maxload 16.00/16.00
@@ -30,7 +30,7 @@
 \# Window Manager:	other
 \# User Name:		saul
 \o Working Directory:	edatools:/home/saul/projects/IL2244_VT26_SAUL
-\# Process Id:		685363
+\# Process Id:		965622
 \o 
 \o COPYRIGHT (C) 1992-2024  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
 \o           (C) 1992-2024  UNIX SYSTEMS Laboratories INC.,
@@ -66,7 +66,6 @@
 \o Loading caa.cxt 
 \o Loading amps.cxt 
 \o Loading adexlCore.cxt 
-\# Memory report: using         230 MB, process size 1,910 MB at UTC 2026.03.27 08:10:15.134
 \o Loading adexl.cxt 
 \o *Info*    Exporting services from client ... 
 \o 
@@ -74,12 +73,12 @@
 \o Loading cpf.cxt 
 \o Loading cli.cxt 
 \o Loading lp.cxt 
-\o INFO (ELI-00302) Connecting to parent process (session=virtuoso682996, host=edatools). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso962994, host=edatools). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
 \o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
-\o INFO (ELI-00304) The registration of the child 685363 within 90 seconds is being processed...
+\o INFO (ELI-00304) The registration of the child 965622 within 90 seconds is being processed...
 \o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
 \o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
-\# [08:10:14.445298] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se:29000@lic06.ug.kth.se
+\# [05:30:33.445298] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se:29000@lic06.ug.kth.se
 \o ......................................................................................
 \o            ams AG HIT-Kit v.ams_4.10
 \o ......................................................................................
@@ -88,6 +87,7 @@
 \o only be used as authorized by the HIT-Kit license agreement.
 \o ......................................................................................
 \# Current Window: window(2)
+\# Memory report: using         274 MB, process size 1,965 MB at UTC 2026.04.01 05:30:35.014
 \o Loading simulator default settings.
 \o //
 \o //  Calibre Skill Interface * (v2024.4_12.9) *
@@ -107,7 +107,7 @@
 \w *WARNING* could not load font "-*-courier-medium-r-*-*-12-*", using font "fixed"
 \# Loading perfDiag...
 \# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
-\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 685363' to open it when Virtuoso freezes.
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 965622' to open it when Virtuoso freezes.
 \# (PerfDiag): Use backtrace from GLIBC.
 \w *WARNING* _perfPstackCheck: Cannot find pstack/gstack. Please setup PATH environment variable to pstack/gstack executable.
 \o Loading vqp.cxt 
@@ -118,24 +118,24 @@
 \o 
 \o Loading simui.cxt 
 \o 	Library      = FECG
-\o 	Cell         = fecg_tb
+\o 	Cell         = buffer_tb
 \o 	View         = schematic
 \o 	Simulator    = spectre
 \o 	State Path   = $AXL_SETUPDB_DIR/test_states
-\o 	State Name   = MC_VIN:1_state_MonteCarlo.7
-\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl/results/data/MonteCarlo.7.rdb
-\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/1/MC
-\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data
+\o 	State Name   = FECG:buffer_tb:1_spectre_state1_Interactive.1
+\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/buffer_tb/adexl/results/data/Interactive.1.rdb
+\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/3/FECG:buffer_tb:1
+\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data
 \o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
-\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl
+\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/buffer_tb/adexl
 \o 	File Encoding = 0
 \o 
 \o 
 \o Loading viva.cxt 
 \o Loading spectrei.cxt 
-\# Memory report: using         349 MB, process size 2,045 MB at UTC 2026.03.27 08:10:17.121
 \o Loading devCheck.cxt 
 \o Loading relXpert.cxt 
+\# Memory report: using         375 MB, process size 2,071 MB at UTC 2026.04.01 05:30:38.317
 \o Loading hspiceD.cxt 
 \o Loading spectreinl.cxt 
 \o Loading msgHandler.cxt 
@@ -151,50 +151,38 @@
 \o 
 \o 
 \o 
-\o *Info*    Run start for Point ID (2 52) on testbench [ MC ].
+\o *Info*    Run start for Point ID (1 6) on testbench [
+\o           FECG:buffer_tb:1 ].
 \o 
 \o Resetting statistical vars
 \o 
 \o *Info*    Setting parameter values ...
 \o 
-\o Setting var FC = "4k"
-\o Setting var S0 = "3.3"
-\o Setting var S1 = "3.3"
-\o Setting var S2 = "0"
-\o Setting var T0 = "0"
-\o Setting var T1 = "0"
-\o Setting var T2 = "0"
-\o Setting var VCM_AC = "1"
-\o Setting var VCM_DC = "1.6"
-\o Setting var VDD = "3.3"
-\o Setting var VDD_STEP = "0"
-\o Setting var VIN_AC = "1"
-\o Setting var VIN_AMP = "0.5m"
-\o Setting var VIN_DC = "0"
-\o Setting var VIN_FREQ = "50"
-\o Setting var VIN_STEP = "0"
-\o Setting var temperature = "27"
-\o Setting temp(T) = 27
+\o Setting var VCM = "1.6"
+\o Setting var VDD = "2.97"
+\o Setting var VIN_PULSE = "10m"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
 \o 
 \o *Info*    Netlist Directory =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/netlist
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/6/FECG:buffer_tb:1/netlist
 \o 
 \o 
 \o *Info*    Data Directory    =
-\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/6/FECG:buffer_tb:1
 \o 
 \o 
-\o *Info*    Creating Netlist for Point ID (2 52)
+\o *Info*    Creating Netlist for Point ID (1 6)
 \o 
 \o generate netlist...
 \o Loading hnlInit.cxt 
 \o Loading seCore.cxt 
 \o function ansCdlCompPrim redefined
 \o function ansCdlCompPrim redefined
-\# [08:10:17.442113] Periodic Lic check successful
-\# [08:10:17.442114] Feature usage summary:
-\o Begin Incremental Netlisting Mar 27 08:10:17 2026
-\o End netlisting Mar 27 08:10:17 2026
+\# [05:30:38.298961] Periodic Lic check successful
+\# [05:30:38.298963] Feature usage summary:
+\o Begin Incremental Netlisting Apr  1 05:30:38 2026
+\o End netlisting Apr  1 05:30:38 2026
 \o 
 \o 	The netlist is up to date.
 \o 	Time taken to compare the design with netlist:   0.0s
@@ -202,20 +190,10 @@
 \o compose simulator input file...
 \o       ...successful.
 \o 
-\o *Info*    Running simulation on testbench [ MC ] for Point ID (2 52).
+\o *Info*    Running simulation on testbench [ FECG:buffer_tb:1 ] for
+\o           Point ID (1 6).
 \o 
-\o *Info*    Spectre controlMode is set "batch" due to monte carlo run.
-\o 
-\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf.
-\o generate netlist...
-\o function ansCdlCompPrim redefined
-\o function ansCdlCompPrim redefined
-\o Begin Incremental Netlisting Mar 27 08:10:18 2026
-\o End netlisting Mar 27 08:10:18 2026
-\o 
-\o 	The netlist is up to date.
-\o 	Time taken to compare the design with netlist:   0.0s
-\o       ...successful.
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/6/FECG:buffer_tb:1/psf.
 \o compose simulator input file...
 \o       ...successful.
 \o start simulator if needed...
@@ -228,968 +206,1333 @@
 \o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
 \o        There will be no performance impact on data visualization due to this change.
 \o Loading paraplot.cxt 
-\# Available memory:         53,206 MB at UTC 2026.03.27 08:10:24.553
-\# Memory report: Maximum memory size now 53,647 MB at UTC 2026.03.27 08:10:24.553
-\# Thread usage report: 22 active threads, active load 1.40 at UTC 2026.03.27 08:10:24.553
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/052/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/052/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'52' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/052/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/052/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'52' test:'MC'
-\o 	Expression:'db(getData("/V2" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/052/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/052/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'52' test:'MC'
-\o 	Expression:'db(getData("/V7" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/052/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/052/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'52' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/052/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/052/. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'52' test:'MC'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 52) on testbench [ MC ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: using         455 MB, process size 2,265 MB at UTC 2026.03.27 08:10:53.553
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/053/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/053/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'53' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/053/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/053/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'53' test:'MC'
-\o 	Expression:'db(getData("/V2" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/053/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/053/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'53' test:'MC'
-\o 	Expression:'db(getData("/V7" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/053/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/053/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'53' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/053/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/053/. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'53' test:'MC'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 53) on testbench [ MC ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/054/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/054/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'54' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/054/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/054/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'54' test:'MC'
-\o 	Expression:'db(getData("/V2" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/054/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/054/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'54' test:'MC'
-\o 	Expression:'db(getData("/V7" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/054/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/054/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'54' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/054/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/054/. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'54' test:'MC'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 54) on testbench [ MC ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/055/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/055/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'55' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/055/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/055/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'55' test:'MC'
-\o 	Expression:'db(getData("/V2" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/055/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/055/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'55' test:'MC'
-\o 	Expression:'db(getData("/V7" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/055/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/055/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'55' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/055/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/055/. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'55' test:'MC'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 55) on testbench [ MC ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\# Memory report: Maximum memory size now 52,588 MB at UTC 2026.03.27 08:12:43.553
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/056/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/056/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'56' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/056/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/056/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'56' test:'MC'
-\o 	Expression:'db(getData("/V2" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/056/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/056/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'56' test:'MC'
-\o 	Expression:'db(getData("/V7" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/056/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/056/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'56' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/056/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/056/. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'56' test:'MC'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 56) on testbench [ MC ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/057/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/057/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'57' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/057/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/057/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'57' test:'MC'
-\o 	Expression:'db(getData("/V2" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/057/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/057/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'57' test:'MC'
-\o 	Expression:'db(getData("/V7" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/057/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/057/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'57' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/057/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/057/. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'57' test:'MC'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 57) on testbench [ MC ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/058/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/058/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'58' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/058/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/058/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'58' test:'MC'
-\o 	Expression:'db(getData("/V2" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/058/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/058/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'58' test:'MC'
-\o 	Expression:'db(getData("/V7" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/058/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/058/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'58' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/058/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/058/. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'58' test:'MC'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 58) on testbench [ MC ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/059/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/059/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'59' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/059/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/059/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'59' test:'MC'
-\o 	Expression:'db(getData("/V2" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/059/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/059/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'59' test:'MC'
-\o 	Expression:'db(getData("/V7" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/059/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/059/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'59' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/059/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/059/. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'59' test:'MC'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 59) on testbench [ MC ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/060/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/060/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'60' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/060/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/060/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'60' test:'MC'
-\o 	Expression:'db(getData("/V2" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/060/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/060/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'60' test:'MC'
-\o 	Expression:'db(getData("/V7" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/060/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/060/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'60' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/060/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/060/. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'60' test:'MC'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 60) on testbench [ MC ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/061/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/061/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'61' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/061/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/061/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'61' test:'MC'
-\o 	Expression:'db(getData("/V2" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/061/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/061/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'61' test:'MC'
-\o 	Expression:'db(getData("/V7" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/061/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/061/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'61' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/061/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/061/. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'61' test:'MC'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 61) on testbench [ MC ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/062/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/062/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'62' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/062/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/062/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'62' test:'MC'
-\o 	Expression:'db(getData("/V2" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/062/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/062/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'62' test:'MC'
-\o 	Expression:'db(getData("/V7" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/062/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/062/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'62' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/062/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/062/. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'62' test:'MC'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 62) on testbench [ MC ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/063/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/063/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'63' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/063/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/063/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'63' test:'MC'
-\o 	Expression:'db(getData("/V2" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/063/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/063/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'63' test:'MC'
-\o 	Expression:'db(getData("/V7" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/063/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/063/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'63' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/063/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/063/. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'63' test:'MC'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 63) on testbench [ MC ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/064/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/064/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'64' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/064/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/064/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'64' test:'MC'
-\o 	Expression:'db(getData("/V2" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/064/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/064/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'64' test:'MC'
-\o 	Expression:'db(getData("/V7" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/064/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/064/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'64' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/064/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/064/. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'64' test:'MC'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 64) on testbench [ MC ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/065/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/065/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'65' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/065/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/065/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'65' test:'MC'
-\o 	Expression:'db(getData("/V2" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/065/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/065/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'65' test:'MC'
-\o 	Expression:'db(getData("/V7" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/065/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/065/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'65' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/065/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/065/. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'65' test:'MC'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 65) on testbench [ MC ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/066/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/066/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'66' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/066/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/066/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'66' test:'MC'
-\o 	Expression:'db(getData("/V2" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/066/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/066/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'66' test:'MC'
-\o 	Expression:'db(getData("/V7" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/066/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/066/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'66' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/066/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/066/. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'66' test:'MC'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 66) on testbench [ MC ].
-\o 
-\o 
-\o 
-\o 
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/067/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/067/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'67' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/067/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/067/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'67' test:'MC'
-\o 	Expression:'db(getData("/V2" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/067/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/067/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'67' test:'MC'
-\o 	Expression:'db(getData("/V7" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/067/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/067/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'67' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/067/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/067/. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'67' test:'MC'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
-\o *Info*    Client has finished evaluating ... 
-\o 
-\o 
-\o *Info*    Run complete for Point ID (2 67) on testbench [ MC ].
-\o 
-\o 
-\o 
-\o 
-\o 
 \o INFO (ADE-3071): Simulation completed successfully.
 \o reading simulation data...
 \o       ...successful.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/068/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/068/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Zeros' returned 'nil' for point:'68' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("zeros" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/068/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/068/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_CM' returned 'nil' for point:'68' test:'MC'
-\o 	Expression:'db(getData("/V2" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/068/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results xf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/068/. Use results() for a list of available results.
-\e *Error* db: can't handle db(nil)
-\e 
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'GAIN_DIF' returned 'nil' for point:'68' test:'MC'
-\o 	Expression:'db(getData("/V7" ?result "xf"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/068/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pz are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/068/. Use results() for a list of available results.
-\e *Error* 
-\e  Error in locating poles-zeros. Ensure that poles and zeros exist in this simualtion data.
-\e 
-\o ERROR (ADE-2709): Evaluation of output 'Poles' returned 'nil' for point:'68' test:'MC'
-\o 	Expression:'pzFrequencyAndRealFilter(getData("poles" ?result "pz"))'.
-\o Ensure that the definition of output is correct.
-\o 
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/068/. Use results() for a list of available results.
-\o WARNING (OCN-6038): Results pnoiseOut1 are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl/results/data/MonteCarlo.7/52/MC/groupRunDataDir/psf/mc1_separate/068/. Use results() for a list of available results.
-\e *Error* ("expt" 0 t nil ("*Error* expt: can't handle (nil**2)"))
-\e 
-\e 
-\o ERROR (ADE-2708): Evaluation of output 'output noise-(VOUT 0); V/sqrt(Hz)' failed for point:'68' test:'MC'
-\o 	Expression:'rfOutputNoise("V/sqrt(Hz)" ?result "pnoiseOut1")'
-\o 	because of the following error(s)
-\o 	*Error* expt: can't handle (nil**2).
-\o Ensure that the definition of output is correct.
-\o 
 \o *Info*    Client has finished evaluating ... 
 \o 
 \o 
-\o *Info*    Run complete for Point ID (2 68) on testbench [ MC ].
+\o *Info*    Run complete for Point ID (1 6) on testbench [
+\o           FECG:buffer_tb:1 ].
 \o 
 \o 
 \o 
 \o 
 \o 
-\o *Info*    Monte Carlo Simulation completed successfully...
-\# Memory report: Maximum memory size now 53,917 MB at UTC 2026.03.27 08:19:22.554
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 13) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/13/FECG:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/13/FECG:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 13)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  1 05:30:40 2026
+\o End netlisting Apr  1 05:30:40 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ FECG:buffer_tb:1 ] for
+\o           Point ID (1 13).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/13/FECG:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 13) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 19) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "2.97"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/19/FECG:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/19/FECG:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 19)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  1 05:30:41 2026
+\o End netlisting Apr  1 05:30:41 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ FECG:buffer_tb:1 ] for
+\o           Point ID (1 19).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/19/FECG:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\# Available memory:         49,595 MB at UTC 2026.04.01 05:30:43.584
+\# Memory report: Maximum memory size now 50,061 MB at UTC 2026.04.01 05:30:43.584
+\# Thread usage report: 22 active threads, active load 1.40 at UTC 2026.04.01 05:30:43.584
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 19) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 25) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/25/FECG:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/25/FECG:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 25)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  1 05:30:46 2026
+\o End netlisting Apr  1 05:30:46 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ FECG:buffer_tb:1 ] for
+\o           Point ID (1 25).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/25/FECG:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 25) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 31) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "2.97"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/31/FECG:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/31/FECG:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 31)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  1 05:30:48 2026
+\o End netlisting Apr  1 05:30:48 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ FECG:buffer_tb:1 ] for
+\o           Point ID (1 31).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/31/FECG:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 31) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 37) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/37/FECG:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/37/FECG:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 37)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  1 05:30:49 2026
+\o End netlisting Apr  1 05:30:49 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ FECG:buffer_tb:1 ] for
+\o           Point ID (1 37).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/37/FECG:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 37) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 43) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "2.97"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/43/FECG:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/43/FECG:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 43)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  1 05:30:50 2026
+\o End netlisting Apr  1 05:30:50 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ FECG:buffer_tb:1 ] for
+\o           Point ID (1 43).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/43/FECG:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 43) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 49) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/49/FECG:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/49/FECG:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 49)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  1 05:30:52 2026
+\o End netlisting Apr  1 05:30:52 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ FECG:buffer_tb:1 ] for
+\o           Point ID (1 49).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/49/FECG:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 49) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 55) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "2.97"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/55/FECG:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/55/FECG:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 55)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  1 05:30:53 2026
+\o End netlisting Apr  1 05:30:53 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ FECG:buffer_tb:1 ] for
+\o           Point ID (1 55).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/55/FECG:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 55) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (1 61) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/61/FECG:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/61/FECG:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (1 61)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  1 05:30:54 2026
+\o End netlisting Apr  1 05:30:54 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ FECG:buffer_tb:1 ] for
+\o           Point ID (1 61).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.1/61/FECG:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (1 61) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = FECG
+\o 	Cell         = buffer_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = FECG:buffer_tb:1_spectre_state1_Interactive.2
+\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/buffer_tb/adexl/results/data/Interactive.2.rdb
+\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/1/FECG:buffer_tb:1
+\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
+\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/buffer_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 3) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VCM = "1.6"
+\o Setting var VDD = "2.97"
+\o Setting var VIN_PULSE = "10m"
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/3/FECG:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/3/FECG:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 3)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  1 05:31:31 2026
+\o End netlisting Apr  1 05:31:31 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ FECG:buffer_tb:1 ] for
+\o           Point ID (2 3).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/3/FECG:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 3) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 11) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/11/FECG:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/11/FECG:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 11)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  1 05:31:33 2026
+\o End netlisting Apr  1 05:31:33 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ FECG:buffer_tb:1 ] for
+\o           Point ID (2 11).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/11/FECG:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 11) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 17) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/17/FECG:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/17/FECG:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 17)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  1 05:31:35 2026
+\o End netlisting Apr  1 05:31:35 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ FECG:buffer_tb:1 ] for
+\o           Point ID (2 17).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/17/FECG:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 17) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 23) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "2.97"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/23/FECG:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/23/FECG:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 23)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  1 05:31:36 2026
+\o End netlisting Apr  1 05:31:36 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ FECG:buffer_tb:1 ] for
+\o           Point ID (2 23).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/23/FECG:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 23) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 29) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/29/FECG:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/29/FECG:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 29)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  1 05:31:37 2026
+\o End netlisting Apr  1 05:31:37 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ FECG:buffer_tb:1 ] for
+\o           Point ID (2 29).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/29/FECG:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\# Memory report: using         481 MB, process size 2,291 MB at UTC 2026.04.01 05:31:38.072
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 29) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 35) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "2.97"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/35/FECG:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/35/FECG:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 35)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  1 05:31:39 2026
+\o End netlisting Apr  1 05:31:39 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ FECG:buffer_tb:1 ] for
+\o           Point ID (2 35).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/35/FECG:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 35) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 41) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/41/FECG:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/41/FECG:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 41)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  1 05:31:40 2026
+\o End netlisting Apr  1 05:31:40 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ FECG:buffer_tb:1 ] for
+\o           Point ID (2 41).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/41/FECG:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 41) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 47) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "2.97"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/47/FECG:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/47/FECG:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 47)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  1 05:31:42 2026
+\o End netlisting Apr  1 05:31:42 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ FECG:buffer_tb:1 ] for
+\o           Point ID (2 47).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/47/FECG:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 47) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 53) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/53/FECG:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/53/FECG:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 53)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  1 05:31:43 2026
+\o End netlisting Apr  1 05:31:43 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ FECG:buffer_tb:1 ] for
+\o           Point ID (2 53).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/53/FECG:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 53) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 59) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "2.97"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/59/FECG:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/59/FECG:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 59)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  1 05:31:45 2026
+\o End netlisting Apr  1 05:31:45 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ FECG:buffer_tb:1 ] for
+\o           Point ID (2 59).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/59/FECG:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 59) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (2 65) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/65/FECG:buffer_tb:1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/65/FECG:buffer_tb:1
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (2 65)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr  1 05:31:46 2026
+\o End netlisting Apr  1 05:31:46 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ FECG:buffer_tb:1 ] for
+\o           Point ID (2 65).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.2/65/FECG:buffer_tb:1/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (2 65) on testbench [
+\o           FECG:buffer_tb:1 ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Job 6 timed out after no activity in 300 seconds.
 \o Simulation design variables differ from those on the cellView,
 \o they have been saved in the file "/tmp/saved-design-variables".
 \o To save future changes, copy variables to cellView before exiting.
