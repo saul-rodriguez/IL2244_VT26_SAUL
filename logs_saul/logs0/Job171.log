@@ -1,150 +1,45 @@
-*Info*    Exporting services from client ... 
-
-*Info*    Client has finished starting ... 
-
-
-
-*Info*    Configuring the session ...
-
-	Library      = FECG
-	Cell         = fecg_tb
-	View         = schematic
-	Simulator    = spectre
-	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = IN_none_Interactive.61
-	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.61.rdb
-	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.61/1/IN
-	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data
-	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
-	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path
-	File Encoding = 0
-
-
-
-*Info*    The auto suspension is disabled.
-
-
-
-
-
-
-*Info*    Run start for Point ID (10 1) on testbench [ IN ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting var F0 = "3.3"
-Setting var F1 = "3.3"
-Setting var F2 = "0"
-Setting var FC = "4K"
-Setting var S0 = "3.3"
-Setting var S1 = "0"
-Setting var S2 = "0"
-Setting var VCM_AC = "0"
-Setting var VCM_DC = "1.5"
-Setting var VDD = "3.3"
-Setting var VIN_AC = "1"
-Setting var VIN_AMP = "0.5m"
-Setting var VIN_DC = "50m"
-Setting var VIN_FREQ = "50"
-Setting var temperature = "27"
-Setting temp(T) = 27
-
-*Info*    Netlist Directory =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.61/1/IN/netlist
-
-
-*Info*    Data Directory    =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.61/1/IN
-
-
-*Info*    Creating Netlist for Point ID (10 1)
-
-generate netlist...
-function ansCdlCompPrim redefined
-function ansCdlCompPrim redefined
-Begin Incremental Netlisting Apr  2 19:40:36 2026
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.32/1/IN/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
-Ensure that you have the write permission for the mentioned file.
-
-End netlisting Apr  2 19:40:36 2026
-
-Netlisting Statistics:
-	Number of components:   25
-
-	Elapsed time:          0.0s
-Errors: 0	Warnings: 0
-      ...successful.
-compose simulator input file...
-      ...successful.
-
-*Info*    Running simulation on testbench [ IN ] for Point ID (10 1).
-
-Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.61/1/IN/psf.
-compose simulator input file...
-      ...successful.
-start simulator if needed...
-      ...successful.
-simulate...
-To view the simulator output, right-click on the test name, result 
-name, or any value in the "Results" tab of the Outputs section and 
-choose "Output Log" menu option.
-WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
-       and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
-       There will be no performance impact on data visualization due to this change.
-INFO (ADE-3071): Simulation completed successfully.
-reading simulation data...
-      ...successful.
-*Info*    Client has finished evaluating ... 
-
-WARNING (OCN-6038): Results pxf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.61/1/IN. Use results() for a list of available results.
-WARNING (OCN-6038): Results pxf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.61/1/IN. Use results() for a list of available results.
-ERROR (ADEXL-2708): Evaluation of output 'CMRR' failed for point:'1' test:'IN'
-	Expression:'(db(getData("/V7" ?result "pxf")) (- db(getData("/V2" ?result "pxf"))))'
-	because of the following error(s)
-	*Error* minus: can't handle (- nil).
-Ensure that the definition of output is correct.
-
-ERROR (ADEXL-2709): Evaluation of output 'v /VLF2; pac dB20(V)' returned 'nil' for point:'1' test:'IN'
-	Expression:'db(vh('pac "/VLF2"))'.
-Ensure that the definition of output is correct.
-
-ERROR (ADEXL-2709): Evaluation of output 'v /VIA; pac dB20(V)' returned 'nil' for point:'1' test:'IN'
-	Expression:'db(vh('pac "/VIA"))'.
-Ensure that the definition of output is correct.
-
-WARNING (OCN-6038): Results pxf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.61/1/IN. Use results() for a list of available results.
-WARNING (OCN-6038): Results pxf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.61/1/IN. Use results() for a list of available results.
-ERROR (ADEXL-2709): Evaluation of output 'V/V /V7; pxf dB20(V/V)' returned 'nil' for point:'1' test:'IN'
-	Expression:'db(getData("/V7" ?result "pxf"))'.
-Ensure that the definition of output is correct.
-
-ERROR (ADEXL-2709): Evaluation of output 'v /VLF1; pac dB20(V)' returned 'nil' for point:'1' test:'IN'
-	Expression:'db(vh('pac "/VLF1"))'.
-Ensure that the definition of output is correct.
-
-WARNING (OCN-6038): Results pxf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.61/1/IN. Use results() for a list of available results.
-WARNING (OCN-6038): Results pxf are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.61/1/IN. Use results() for a list of available results.
-ERROR (ADEXL-2709): Evaluation of output 'V/V /V2; pxf dB20(V/V)' returned 'nil' for point:'1' test:'IN'
-	Expression:'db(getData("/V2" ?result "pxf"))'.
-Ensure that the definition of output is correct.
-
-ERROR (ADEXL-2709): Evaluation of output 'v /VGA; pac dB20(V)' returned 'nil' for point:'1' test:'IN'
-	Expression:'db(vh('pac "/VGA"))'.
-Ensure that the definition of output is correct.
-
-ERROR (ADEXL-2709): Evaluation of output 'v /VOUT; pac dB20(V)' returned 'nil' for point:'1' test:'IN'
-	Expression:'db(vh('pac "/VOUT"))'.
-Ensure that the definition of output is correct.
-
-
-*Info*    Run complete for Point ID (10 1) on testbench [ IN ].
-
-
-
-
-
-Simulation design variables differ from those on the cellView,
-they have been saved in the file "/tmp/saved-design-variables".
-To save future changes, copy variables to cellView before exiting.
+\# Program start time:     UTC 2026.04.03 18:38:24.184
+\# Local time: UTC (UTC+00:00) 2026.04.03 18:38:24.184
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 09/03/2024 19:11 (sjfhw316) $
+\o Hierarchy:		/opt/tools/cadence/installs/IC618/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.36  (64-bit addresses)
+\# Command line:	/opt/tools/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso2253894 -mpshost edatools -davinciService DaVinciService_2253894_1775230525 -log /home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job171.log -licenseLockFileName /home/saul/projects/IL2244_VT26_SAUL/.tmp_saul/.edatools_2253894 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 171
+\# Host name (type):	edatools (x86_64)
+\# Operating system:	Linux 6.17.0-19-generic #19~24.04.2-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar  6 23:08:46 UTC 2
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:4560 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12011000)
+\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	      1,300 MB
+\# Available memory:	     53,835 MB
+\# System memory:	     72,238 MB
+\# Maximum memory size:	     71,058 MB
+\# Max mem available:	     53,955 MB
+\# Initial memory used:	        119 MB
+\#        process size:	      1,676 MB
+\# Thread usage limits (effective/default):	maxthreads 4294967295/4294967295 maxload 16.00/16.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		saul
+\o Working Directory:	edatools:/home/saul/projects/IL2244_VT26_SAUL
+\# Process Id:		2652922
+\o 
+\o COPYRIGHT (C) 1992-2024  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2024  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.

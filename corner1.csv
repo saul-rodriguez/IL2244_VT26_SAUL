@@ -1,15 +1,14 @@
-Corner,CMOS,CMOS_VDD,CMOS_VDD_TEMP,CMOS_RES_CAP_VDD_TEMP
-Enable,f,f,f,t
-Temperature,,,-40 85,-40 85
-Tags,,,,
-VDD,,2.97 3.63,2.97 3.63,2.97 3.63
-Modelfile::/opt/pdk/ams/410/spectre/c35/processOption.scs,t ,t ,t ,t 
-Modelfile::/opt/pdk/ams/410/spectre/c35/cmos53.scs,t cmoswo cmoswp cmosws cmoswz,t cmoswo cmoswp cmosws cmoswz,t cmoswo cmoswp cmosws cmoswz,t cmoswo cmoswp cmosws cmoswz
-Modelfile::/opt/pdk/ams/410/spectre/c35/res.scs,t restm,t restm,t restm,t reswp resws
-Modelfile::/opt/pdk/ams/410/spectre/c35/cap.scs,t captm,t captm,t captm,t capwp capws
-Modelfile::/opt/pdk/ams/410/spectre/c35/bip.scs,t biptm,t biptm,t biptm,t biptm
-Modelfile::/opt/pdk/ams/410/spectre/c35/ind.scs,t indtm,t indtm,t indtm,t indtm
-Modelfile::/opt/pdk/ams/410/spectre/c35/esddiode.scs,t esddiodetm,t esddiodetm,t esddiodetm,t esddiodetm
-f Test::VIN,t,t,t,t
-f Test::Noise,t,t,t,t
-f Test::MC,t,t,t,t
+Corner,CMOS,CMOS_VDD,CMOS_VDD_TEMP,CMOS_RES_CAP_VDD_TEMP,CMOS_RES_CAP_TEMP
+Enable,f,f,f,f,t
+Temperature,,,-40 85,-40 85,-40 85
+Tags,,,,,
+VDD,,2.97 3.63,2.97 3.63,2.97 3.63,
+Modelfile::/opt/pdk/ams/410/spectre/c35/processOption.scs,t ,t ,t ,t ,t 
+Modelfile::/opt/pdk/ams/410/spectre/c35/cmos53.scs,t cmoswo cmoswp cmosws cmoswz,t cmoswo cmoswp cmosws cmoswz,t cmoswo cmoswp cmosws cmoswz,t cmoswo cmoswp cmosws cmoswz,t cmoswo cmoswp cmosws cmoswz
+Modelfile::/opt/pdk/ams/410/spectre/c35/res.scs,t restm,t restm,t restm,t reswp resws,t reswp resws
+Modelfile::/opt/pdk/ams/410/spectre/c35/cap.scs,t captm,t captm,t captm,t capwp capws,t capwp capws
+Modelfile::/opt/pdk/ams/410/spectre/c35/bip.scs,t biptm,t biptm,t biptm,t biptm,t biptm
+Modelfile::/opt/pdk/ams/410/spectre/c35/ind.scs,t indtm,t indtm,t indtm,t indtm,t indtm
+Modelfile::/opt/pdk/ams/410/spectre/c35/esddiode.scs,t esddiodetm,t esddiodetm,t esddiodetm,t esddiodetm,t esddiodetm
+f Test::IN,t,t,t,t,t
+t Test::STEP,t,t,t,t,t

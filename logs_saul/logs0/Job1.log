@@ -7,16 +7,16 @@
 *Info*    Configuring the session ...
 
 	Library      = FECG
-	Cell         = gmc_lpf_tb
+	Cell         = fecg_tb
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = IN_spectre_state1_Interactive.32
-	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/gmc_lpf_tb/adexl/results/data/Interactive.32.rdb
-	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.32/1/IN
-	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data
+	State Name   = Noise_CMRR_FECG:fecg_tb:1:1_state_Interactive.65
+	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.65.rdb
+	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.65/1/Noise_CMRR
+	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data
 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
-	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/gmc_lpf_tb/adexl
+	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path
 	File Encoding = 0
 
 
@@ -29,46 +29,65 @@ Loading monte.cxt
 
 
 
-*Info*    Run start for Point ID (1 1) on testbench [ IN ].
+*Info*    Run start for Point ID (0 1) on testbench [ Noise_CMRR ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var DC_IN = "1.5"
+Setting var F0 = "3.3"
+Setting var F1 = "3.3"
+Setting var F2 = "0"
+Setting var FC = "4K"
+Setting var S0 = "3.3"
+Setting var S1 = "0"
+Setting var S2 = "0"
+Setting var VCM_AC = "0"
+Setting var VCM_DC = "1.5"
 Setting var VDD = "3.3"
-Setting var VIN_AMPV = "0.5"
-Setting var VIN_DC = "0"
+Setting var VIN_AC = "1"
+Setting var VIN_AMP = "0"
+Setting var VIN_DC = "50m"
+Setting var VIN_FREQ = "50"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.32/1/IN/netlist
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.65/1/Noise_CMRR/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.32/1/IN
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.65/1/Noise_CMRR
 
 
-*Info*    Creating Netlist for Point ID (1 1)
+*Info*    Creating Netlist for Point ID (0 1)
 
 generate netlist...
 Loading hnlInit.cxt 
 Loading seCore.cxt 
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
-Begin Incremental Netlisting Apr  2 12:02:48 2026
-End netlisting Apr  2 12:02:48 2026
+Initializing the control file using cp:
+    cp /opt/tools/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.65/1/Noise_CMRR/netlist/control
+Copying Spectre source file 'spectre.inp'
+Copying Spectre command file 'spectre.sim'
+Begin Incremental Netlisting Apr  5 18:31:08 2026
+Loading json.cxt 
+End netlisting Apr  5 18:31:08 2026
 
-	The netlist is up to date.
-	Time taken to compare the design with netlist:   0.0s
+Netlisting Statistics:
+	Number of components:  220
+
+	Elapsed time:          0.0s
+Errors: 0	Warnings: 0
       ...successful.
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ IN ] for Point ID (1 1).
+*Info*    Running simulation on testbench [ Noise_CMRR ] for Point ID
+          (0 1).
 
-Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.32/1/IN/psf.
+Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.65/1/Noise_CMRR/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -87,7 +106,7 @@ reading simulation data...
 *Info*    Client has finished evaluating ... 
 
 
-*Info*    Run complete for Point ID (1 1) on testbench [ IN ].
+*Info*    Run complete for Point ID (0 1) on testbench [ Noise_CMRR ].
 
 
 

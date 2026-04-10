@@ -1,123 +1,201 @@
-*Info*    Exporting services from client ... 
-
-*Info*    Client has finished starting ... 
-
-
-
-*Info*    Configuring the session ...
-
-	Library      = FECG
-	Cell         = gmc_lpf_tb
-	View         = schematic
-	Simulator    = spectre
-	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = IN_spectre_state1_Interactive.43
-	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/gmc_lpf_tb/adexl/results/data/Interactive.43.rdb
-	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.43/1/IN
-	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data
-	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
-	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/gmc_lpf_tb/adexl
-	File Encoding = 0
-
-
-
-*Info*    The auto suspension is disabled.
-
-
-
-
-
-
-*Info*    Run start for Point ID (12 1) on testbench [ IN ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting var DC_IN = "1.5"
-Setting var VDD = "3.3"
-Setting var VIN_AMPV = "0.5"
-Setting var VIN_DC = "0"
-Setting var temperature = "27"
-Setting temp(T) = 27
-
-*Info*    Netlist Directory =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.43/1/IN/netlist
-
-
-*Info*    Data Directory    =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.43/1/IN
-
-
-*Info*    Creating Netlist for Point ID (12 1)
-
-generate netlist...
-function ansCdlCompPrim redefined
-function ansCdlCompPrim redefined
-Begin Incremental Netlisting Apr  2 13:18:14 2026
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.32/1/IN/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
-Ensure that you have the write permission for the mentioned file.
-
-End netlisting Apr  2 13:18:14 2026
-
-	The netlist is up to date.
-	Time taken to compare the design with netlist:   0.0s
-      ...successful.
-compose simulator input file...
-      ...successful.
-
-*Info*    Running simulation on testbench [ IN ] for Point ID (12 1).
-
-Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.43/1/IN/psf.
-compose simulator input file...
-      ...successful.
-start simulator if needed...
-      ...successful.
-simulate...
-To view the simulator output, right-click on the test name, result 
-name, or any value in the "Results" tab of the Outputs section and 
-choose "Output Log" menu option.
-WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
-       and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
-       There will be no performance impact on data visualization due to this change.
-INFO (ADE-3071): Simulation completed successfully.
-reading simulation data...
-      ...successful.
-*Info*    Client has finished evaluating ... 
-
-ERROR (ADEXL-2709): Evaluation of output 'Fundamental_dB' returned 'nil' for point:'1' test:'IN'
-	Expression:'harmonic(db(vh('pss "/OUT")) 1)'.
-Ensure that the definition of output is correct.
-
-ERROR (ADEXL-2709): Evaluation of output 'v /OUT; pss dB20(V)' returned 'nil' for point:'1' test:'IN'
-	Expression:'db(vh('pss "/OUT"))'.
-Ensure that the definition of output is correct.
-
-WARNING (OCN-6038): Results noise are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.43/1/IN. Use results() for a list of available results.
-WARNING (OCN-6038): Results noise are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.43/1/IN. Use results() for a list of available results.
-ERROR (ADEXL-2708): Evaluation of output 'output_noise_V' failed for point:'1' test:'IN'
-	Expression:'sqrt(totalNoise("noise" 0.01 100000000 nil))'
-	because of the following error(s)
-	*Error* expt: can't handle (nil**2).
-Ensure that the definition of output is correct.
-
-ERROR (ADEXL-2708): Evaluation of output 'd2_dB' failed for point:'1' test:'IN'
-	Expression:'(harmonic(db(vh('pss "/OUT")) 1) - harmonic(db(vh('pss "/OUT")) 2))'
-	because of the following error(s)
-	*Error* difference: can't handle (nil - nil).
-Ensure that the definition of output is correct.
-
-ERROR (ADEXL-2709): Evaluation of output 'harm_2nd_dB' returned 'nil' for point:'1' test:'IN'
-	Expression:'harmonic(db(vh('pss "/OUT")) 2)'.
-Ensure that the definition of output is correct.
-
-
-*Info*    Run complete for Point ID (12 1) on testbench [ IN ].
-
-
-
-
-
-Simulation design variables differ from those on the cellView,
-they have been saved in the file "/tmp/saved-design-variables".
-To save future changes, copy variables to cellView before exiting.
+[Simulation Monitor: 22]
+[2026-04-06 21:01:35.872 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation Monitor has successfully started up. Trying to set up communication channels to other components ... {"hostname": "edatools", "processid": 2915655, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job22.log"}
+[2026-04-06 21:01:35.872 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Communication channels have been successfully set up. Start processing events ... {"hostname": "edatools", "processid": 2915655, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job22.log"}
+[2026-04-06 21:01:35.872 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Considering to start history {"hostname": "edatools", "processid": 2915655, "history": "Interactive.18", "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job22.log"}
+[2026-04-06 21:01:35.873 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started History {"hostname": "edatools", "processid": 2915655, "history": "MonteCarlo.6", "testname": "IN_MC", "cornername": "Nominal", "point": 5, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job22.log"}
+[2026-04-06 21:01:35.873 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - HostInfo:
+Host name (type):	edatools (x86_64)
+Operating system:	Linux 6.17.0-19-generic #19~24.04.2-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar  6 23:08:46 UTC 2 {"hostname": "edatools", "processid": 2915655, "history": "MonteCarlo.6", "testname": "IN_MC", "cornername": "Nominal", "point": 5, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job22.log", "nodename": "edatools", "domainname": "(none)", "machine": "x86_64", "sysname": "Linux", "release": "6.17.0-19-generic", "version": "#19~24.04.2-Ubuntu SMP PREEMPT_DYNAMIC Fri Mar  6 23:08:46 UTC 2"}
+[2026-04-06 21:01:35.873 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - UsageInfo:
+pid=2915655
+totalPhysicalMemory=62.544987GB,Used=40.389370GB,totalVirtualMemory=70.544983GB,Used=40.389370GB
+Cpu: Cores=16, Load average:0.290000,0.320000,0.450000 {"hostname": "edatools", "processid": 2915655, "history": "MonteCarlo.6", "testname": "IN_MC", "cornername": "Nominal", "point": 5, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job22.log", "pid": "2915655", "totalPhysicalMemory": "62.544987", "physicalMemoryUsed": "40.389370", "totalVirtualMemory": "70.544983", "virtualMemoryUsed": "40.389370", "cpuCores": "16", "processes": "1751", "loadAverage1": "0.290000", "loadAverage5": "0.320000", "loadAverage15": "0.450000", "loadAverage1Percent": "0.018125"}
+[2026-04-06 21:01:35.874 Z] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - GroupPoints {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal", "event": "GroupPoints", "EventSource": "Simulation Monitor", "Points": "5:1:6", "HistoryName": "MonteCarlo.6", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job22.log", "logFileSize": "2623"}
+[2026-04-06 21:01:35.974 Z] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - GroupPoints {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal", "event": "GroupPoints", "EventSource": "spectre", "Points": "5:1:6", "HistoryName": "MonteCarlo.6", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/maestro/results/maestro/MonteCarlo.6/5/IN_MC/groupRunDataDir/psf/spectre.out", "logFileSize": "-1"}
+[2026-04-06 21:01:35.977 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator launched {"hostname": "edatools", "processid": 2915655, "history": "MonteCarlo.6", "testname": "IN_MC", "cornername": "Nominal", "point": 5, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job22.log", "simid": "1"}
+[2026-04-06 21:01:35.978 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Expression evaluator launched {"hostname": "edatools", "processid": 2915655, "history": "MonteCarlo.6", "testname": "IN_MC", "cornername": "Nominal", "point": 5, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job22.log"}
+[2026-04-06 21:01:35.998 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started Simulation {"hostname": "edatools", "processid": 2915655, "history": "MonteCarlo.6", "testname": "IN_MC", "cornername": "Nominal", "point": 5, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job22.log", "event": "started", "task": "simulation"}
+[2026-04-06 21:01:36.498 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during circuit read-in.
+    Pre_Configuration file used: /opt/tools/cadence/installs/SPECTRE241/tools.lnx86/spectre/etc/configs/preset.precfg
+    Configuration file used: `/opt/tools/cadence/installs/SPECTRE241/tools.lnx86/spectre/etc/configs/preset.cfg'. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.498 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-8360): line 1511: `ac' is an undefined primitive device. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.498 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-8360): line 1512: `ac' is an undefined primitive device. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.499 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-8360): line 1513: `ac' is an undefined primitive device. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.499 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-8360): line 1514: `ac' is an undefined primitive device. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.499 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-8360): line 1515: `ac' is an undefined primitive device.
+        Further occurrences of this warning will be suppressed. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.499 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 173 Mbytes. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.499 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (VACOMP-2435): The environment variable CDS_AHDLCMI_ENABLE is no longer supported. Therefore, the simulator will use the default compiled C code flow. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.499 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3031): The floating capacitor I14.C2.C1 is removed. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.499 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3031): The floating capacitor I11.C7<0>_turbo_m3.C1 is removed. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.499 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3031): The floating capacitor I12.C6<0>_turbo_m3.C1 is removed. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.499 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3031): The floating capacitor I11.C10<0>_turbo_m12.C1 is removed. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.499 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3031): The floating capacitor I8.C7<0>_turbo_m3.C1 is removed.
+        Further occurrences of this warning will be suppressed. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.499 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 190 Mbytes. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.499 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during hierarchy flattening.
+    The value 'psf' specified for the 'checklimitdest' option will no longer be supported in future releases. Use 'spectre -h' to see other recommended values for the 'checklimitdest' option. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.499 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 193 Mbytes. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.500 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): I14.C1: `Acde' = 2.393 is unusually large. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.500 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): I14.C1: `Noff' = 4.732 is unusually large. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.500 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): I14.C1: `Voffcv' = -867.4e-03 is unusually small. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.500 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_rpolyh_vminuspsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.500 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_rpolyh_vpluspsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.500 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvarm_vspsub:Specified subcircuit master `cvarm' was not found. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.500 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvarm_vspsub:Error in specification of subcircuit master. Assert is ignored. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.500 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvarm_vbs:Specified subcircuit master `cvarm' was not found. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.500 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvarm_vbs:Error in specification of subcircuit master. Assert is ignored. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.500 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvarm_vgb:Specified subcircuit master `cvarm' was not found. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.500 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvarm_vgb:Error in specification of subcircuit master. Assert is ignored. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.500 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvart_vspsub:Specified subcircuit master `cvart' was not found. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.500 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvart_vspsub:Error in specification of subcircuit master. Assert is ignored. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.500 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvart_vbs:Specified subcircuit master `cvart' was not found.
+        Further occurrences of this warning will be suppressed. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.500 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvart_vbs:Error in specification of subcircuit master. Assert is ignored.
+        Further occurrences of this warning will be suppressed. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.500 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_cvar_vspsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.500 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_cvar_vbpsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:36.501 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_cvar_vgpsub' is ignored because it contains an expression which is invalid or not supported by native evaluator. 
+        Further occurrences of this warning will be suppressed. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.001 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during initial setup.
+    Multithreading is disabled due to the size of the design being too small. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.001 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-592): Following parameters are disabled because they are ignored or redefined in Spectre X:
+        
+        
+        PSS Parameters:
+          errpreset {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.001 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] -               nodes 151 {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.001 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during initial setup.
+    Spectre X preset=mx enabled. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.002 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): I14.C1: `Acde' = 2.393 is unusually large. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.002 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): I14.C1: `Noff' = 4.732 is unusually large. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.002 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): I14.C1: `Voffcv' = -867.4e-03 is unusually small. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.002 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre.
+    85 warnings suppressed. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.002 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 202 Mbytes. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.002 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] -    -   (Spectre X) Multi-threading. The recommended number of threads is 1, consider adding +mt=1 on command line. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.002 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): I14.C1: `Acde' = 2.393 is unusually large. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.002 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): I14.C1: `Noff' = 4.732 is unusually large. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.002 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): I14.C1: `Voffcv' = -867.4e-03 is unusually small. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.002 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at iteration = 5 during DC analysis `dcOp', during Monte Carlo analysis `mc1'.
+    No checklimit analysis defined for asserts. A default checklimit analysis 'SpectreChecklimitAnal' has been created with all asserts enabled. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.003 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at iteration = 5 during DC analysis `dcOp', during Monte Carlo analysis `mc1'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I14.C1.d1) = 2.5533 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.003 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'C0'. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.003 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'C1'. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.003 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'I14.C0<0>_turbo_m8.C1'. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.003 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'I14.C3.C1'. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.003 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'I14.R0.CM'.
+        Further occurrences of this warning will be suppressed. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.003 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for dc analysis `dcOp': CPU = 43.113 ms, elapsed = 54.3189 ms, util. = 79.4%. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.003 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 213 Mbytes. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.003 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at iteration = 5 during Monte Carlo analysis `mc1'.
+    62 warnings suppressed. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.003 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at iteration = 5 during IC analysis, during periodic steady state analysis `pss', during Monte Carlo analysis `mc1'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I14.C1.d1) = 2.5533 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.004 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'C0'. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.004 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'C1'. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.004 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'I14.C0<0>_turbo_m8.C1'. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.004 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'I14.C3.C1'. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.004 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'I14.R0.CM'.
+        Further occurrences of this warning will be suppressed. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.004 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 32.1707 us during periodic steady state analysis `pss', during Monte Carlo analysis `mc1'.
+    Found trapezoidal ringing on node I2.net3. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.004 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 81.2402 us during periodic steady state analysis `pss', during Monte Carlo analysis `mc1'.
+    Found trapezoidal ringing on node V2:p. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.004 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 102.609 us during periodic steady state analysis `pss', during Monte Carlo analysis `mc1'.
+    Found trapezoidal ringing on node V2:p. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.005 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 125.001 us during periodic steady state analysis `pss', during Monte Carlo analysis `mc1'.
+    Found trapezoidal ringing on node V2:p. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:37.005 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 165.8 us during periodic steady state analysis `pss', during Monte Carlo analysis `mc1'.
+    Found trapezoidal ringing on node I2.A.
+        Further occurrences of this notice will be suppressed. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:48.014 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for tstab analysis `pss': CPU = 6.47327 s, elapsed = 10.7477 s. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:48.014 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 218 Mbytes. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:48.015 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during periodic steady state analysis `pss', during Monte Carlo analysis `mc1'.
+    62 warnings suppressed. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.019 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during periodic steady state analysis `pss', during Monte Carlo analysis `mc1'.
+    Trapezoidal ringing is detected during pss analysis.
+        Please use method=trap for better results and performance. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.019 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for pss analysis `pss': CPU = 16.7653 s, elapsed = 21.8066 s, util. = 76.9%. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.019 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 384 Mbytes. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.019 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during periodic steady state analysis `pss', during Monte Carlo analysis `mc1'.
+    1008 notices suppressed. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.019 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): I14.C1: `Acde' = 2.393 is unusually large. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.019 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): I14.C1: `Noff' = 4.732 is unusually large. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.019 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): I14.C1: `Voffcv' = -867.4e-03 is unusually small. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.020 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during DC analysis `dcOp', during Monte Carlo analysis `mc1'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I14.C1.d1) = 2.5036 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.020 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'C0'. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.020 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'C1'. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.020 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'I14.C0<0>_turbo_m8.C1'. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.020 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'I14.C3.C1'. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.020 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'I14.R0.CM'.
+        Further occurrences of this warning will be suppressed. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.020 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for dc analysis `dcOp': CPU = 9.486 ms, elapsed = 15.3191 ms, util. = 61.9%. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.020 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 384 Mbytes. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.020 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during Monte Carlo analysis `mc1'.
+    62 warnings suppressed. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.020 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during IC analysis, during periodic steady state analysis `pss', during Monte Carlo analysis `mc1'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I14.C1.d1) = 2.5036 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.020 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'C0'. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.020 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'C1'. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.020 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'I14.C0<0>_turbo_m8.C1'. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.020 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'I14.C3.C1'. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.020 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'I14.R0.CM'.
+        Further occurrences of this warning will be suppressed. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.020 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 76.8724 us during periodic steady state analysis `pss', during Monte Carlo analysis `mc1'.
+    Found trapezoidal ringing on node V7:p. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.020 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 95.2443 us during periodic steady state analysis `pss', during Monte Carlo analysis `mc1'.
+    Found trapezoidal ringing on node V7:p. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.020 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 105.795 us during periodic steady state analysis `pss', during Monte Carlo analysis `mc1'.
+    Found trapezoidal ringing on node V7:p. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.020 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 91.3907 us during periodic steady state analysis `pss', during Monte Carlo analysis `mc1'.
+    Found trapezoidal ringing on node I2.A. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.021 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 125.001 us during periodic steady state analysis `pss', during Monte Carlo analysis `mc1'.
+    Found trapezoidal ringing on node I2.A.
+        Further occurrences of this notice will be suppressed. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:01:59.021 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished simulating for one iteration {"hostname": "edatools", "processid": 2915655, "history": "MonteCarlo.6", "testname": "IN_MC", "cornername": "Nominal", "point": 5, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job22.log", "simid": "1"}
+[2026-04-06 21:01:59.021 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started Simulation {"hostname": "edatools", "processid": 2915655, "history": "MonteCarlo.6", "testname": "IN_MC", "cornername": "Nominal", "point": 6, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job22.log", "event": "started", "task": "simulation"}
+[2026-04-06 21:02:00.521 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for tstab analysis `pss': CPU = 1.45143 s, elapsed = 1.45143 s. {"history": "MonteCarlo.6", "point": 6, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:02:00.522 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 384 Mbytes. {"history": "MonteCarlo.6", "point": 6, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:02:00.522 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during periodic steady state analysis `pss', during Monte Carlo analysis `mc1'.
+    62 warnings suppressed. {"history": "MonteCarlo.6", "point": 6, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:02:13.527 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during periodic steady state analysis `pss', during Monte Carlo analysis `mc1'.
+    Trapezoidal ringing is detected during pss analysis.
+        Please use method=trap for better results and performance. {"history": "MonteCarlo.6", "point": 6, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:02:13.527 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for pss analysis `pss': CPU = 14.2681 s, elapsed = 14.3496 s, util. = 99.4%. {"history": "MonteCarlo.6", "point": 6, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:02:13.527 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 396 Mbytes. {"history": "MonteCarlo.6", "point": 6, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:02:13.527 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during periodic steady state analysis `pss', during Monte Carlo analysis `mc1'.
+    1046 notices suppressed. {"history": "MonteCarlo.6", "point": 6, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:02:13.527 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for montecarlo analysis `mc1': CPU = 31.2103 s, elapsed = 36.574 s, util. = 85.3%. {"history": "MonteCarlo.6", "point": 6, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:02:13.527 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 396 Mbytes. {"history": "MonteCarlo.6", "point": 6, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:02:13.527 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time used: CPU = 31.4 s, elapsed = 37 s, util. = 84.9%. {"history": "MonteCarlo.6", "point": 6, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:02:13.527 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time spent in licensing: elapsed = 97.7 ms. {"history": "MonteCarlo.6", "point": 6, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:02:13.527 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak memory used = 395 Mbytes. {"history": "MonteCarlo.6", "point": 6, "testname": "IN_MC", "cornername": "Nominal"}
+[2026-04-06 21:02:13.528 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation started at: 9:01:36 PM, Mon Apr 6, 2026, ended at: 9:02:13 PM, Mon Apr 6, 2026, with elapsed time (wall clock): 37 s. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal", "Points": "5 6 "}
+[2026-04-06 21:02:13.528 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - spectre completes with 0 errors, 59 warnings, and 35 notices. {"history": "MonteCarlo.6", "point": 5, "testname": "IN_MC", "cornername": "Nominal", "Points": "5 6 "}
+[2026-04-06 21:02:13.528 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished simulating for one iteration {"hostname": "edatools", "processid": 2915655, "history": "MonteCarlo.6", "testname": "IN_MC", "cornername": "Nominal", "point": 6, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job22.log", "simid": "1"}
+[2026-04-06 21:02:13.528 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator exited {"hostname": "edatools", "processid": 2915655, "history": "MonteCarlo.6", "testname": "IN_MC", "cornername": "Nominal", "point": 6, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job22.log", "exitStatus": "0"}
+[2026-04-06 21:02:13.528 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished Simulation {"hostname": "edatools", "processid": 2915655, "history": "MonteCarlo.6", "testname": "IN_MC", "cornername": "Nominal", "point": 5, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job22.log", "simid": "1"}
+[2026-04-06 21:02:14.529 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Point Finished {"hostname": "edatools", "processid": 2915655, "history": "MonteCarlo.6", "testname": "IN_MC", "cornername": "Nominal", "point": 5, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job22.log"}
+[2026-04-06 21:02:15.530 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Stay with the runId '9', Linger time '300', currentRunSyn '19', currentTestSyn '7' {"hostname": "edatools", "processid": 2915655, "history": "MonteCarlo.6", "testname": "IN_MC", "cornername": "Nominal", "point": 5, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job22.log"}
+[2026-04-06 21:02:16.531 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Stay with the runId '9', Linger time '300', currentRunSyn '19', currentTestSyn '7' {"hostname": "edatools", "processid": 2915655, "history": "MonteCarlo.6", "testname": "IN_MC", "cornername": "Nominal", "point": 5, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job22.log"}
+[2026-04-06 21:02:17.531 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Stay with the runId '9', Linger time '300', currentRunSyn '19', currentTestSyn '7' {"hostname": "edatools", "processid": 2915655, "history": "MonteCarlo.6", "testname": "IN_MC", "cornername": "Nominal", "point": 5, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job22.log"}
+[2026-04-06 21:02:18.532 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Stay with the runId '9', Linger time '300', currentRunSyn '19', currentTestSyn '7' {"hostname": "edatools", "processid": 2915655, "history": "MonteCarlo.6", "testname": "IN_MC", "cornername": "Nominal", "point": 5, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job22.log"}
+[2026-04-06 21:02:19.535 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Stay with the runId '9', Linger time '300', currentRunSyn '19', currentTestSyn '7' {"hostname": "edatools", "processid": 2915655, "history": "MonteCarlo.6", "testname": "IN_MC", "cornername": "Nominal", "point": 5, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job22.log"}
+[2026-04-06 21:02:20.535 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Stay with the runId '9', Linger time '300', currentRunSyn '19', currentTestSyn '7' {"hostname": "edatools", "processid": 2915655, "history": "MonteCarlo.6", "testname": "IN_MC", "cornername": "Nominal", "point": 5, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job22.log"}
+[2026-04-06 21:07:14.991 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Current memory used: 52.3828 MBytes, peak memory used: 52.3828 MBytes {"hostname": "edatools", "processid": 2915655, "history": "MonteCarlo.6", "testname": "IN_MC", "cornername": "Nominal", "point": 5, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job22.log"}
+[2026-04-06 21:07:14.992 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation Monitor process exit. {"hostname": "edatools", "processid": 2915655, "history": "MonteCarlo.6", "testname": "IN_MC", "cornername": "Nominal", "point": 5, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job22.log"}

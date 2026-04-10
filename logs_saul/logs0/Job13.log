@@ -1,109 +1,163 @@
-*Info*    Exporting services from client ... 
-
-*Info*    Client has finished starting ... 
-
-
-
-*Info*    Configuring the session ...
-
-	Library      = FECG
-	Cell         = gmc_lpf_tb
-	View         = schematic
-	Simulator    = spectre
-	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = IN_spectre_state1_Interactive.38
-	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/gmc_lpf_tb/adexl/results/data/Interactive.38.rdb
-	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.38/1/IN
-	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data
-	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
-	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/gmc_lpf_tb/adexl
-	File Encoding = 0
-
-
-
-*Info*    The auto suspension is disabled.
-
-
-
-
-
-
-*Info*    Run start for Point ID (7 1) on testbench [ IN ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting var DC_IN = "1.5"
-Setting var VDD = "3.3"
-Setting var VIN_AMPV = "0.5"
-Setting var VIN_DC = "0"
-Setting var temperature = "27"
-Setting temp(T) = 27
-
-*Info*    Netlist Directory =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.38/1/IN/netlist
-
-
-*Info*    Data Directory    =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.38/1/IN
-
-
-*Info*    Creating Netlist for Point ID (7 1)
-
-generate netlist...
-function ansCdlCompPrim redefined
-function ansCdlCompPrim redefined
-Begin Incremental Netlisting Apr  2 12:24:00 2026
-WARNING (ADE-6003): Terminal "IN", specified in the CDF termOrder, does not exist
-           in the cell-view "FECG" "gmc_5" "schematic"
-WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
-           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
-           be ignored. The terminals in the cellView will be netlisted in the alphabetical
-           order of their names. Eliminate the mismatch if you want the CDF termOrder
-           property to be used for netlisting.
-           To edit CDF of a cell, 
-           i) Open CIW->Tools->CDF->Edit.
-           ii) Select Library Name & Cell Name.
-           iii) Click on the Edit button in the simulation information section of the
-                Edit CDF window.
-End netlisting Apr  2 12:24:00 2026
-
-Netlisting Statistics:
-	Number of components:   41
-
-	Elapsed time:          0.0s
-Errors: 0	Warnings: 2
-      ...successful.
-compose simulator input file...
-      ...successful.
-
-*Info*    Running simulation on testbench [ IN ] for Point ID (7 1).
-
-Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.38/1/IN/psf.
-compose simulator input file...
-      ...successful.
-start simulator if needed...
-      ...successful.
-simulate...
-To view the simulator output, right-click on the test name, result 
-name, or any value in the "Results" tab of the Outputs section and 
-choose "Output Log" menu option.
-WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
-       and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
-       There will be no performance impact on data visualization due to this change.
-INFO (ADE-3071): Simulation completed successfully.
-reading simulation data...
-      ...successful.
-*Info*    Client has finished evaluating ... 
-
-
-*Info*    Run complete for Point ID (7 1) on testbench [ IN ].
-
-
-
-
-
-Simulation design variables differ from those on the cellView,
-they have been saved in the file "/tmp/saved-design-variables".
-To save future changes, copy variables to cellView before exiting.
+[Simulation Monitor: 13]
+[2026-04-09 05:34:59.391 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation Monitor has successfully started up. Trying to set up communication channels to other components ... {"hostname": "edatools", "processid": 78244, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job13.log"}
+[2026-04-09 05:34:59.391 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Communication channels have been successfully set up. Start processing events ... {"hostname": "edatools", "processid": 78244, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job13.log"}
+[2026-04-09 05:34:59.392 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Considering to start history {"hostname": "edatools", "processid": 78244, "history": "Interactive.80", "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job13.log"}
+[2026-04-09 05:34:59.393 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - HostInfo:
+Host name (type):	edatools (x86_64)
+Operating system:	Linux 6.17.0-20-generic #20~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Mar 19 01:28:37 UTC 2 {"hostname": "edatools", "processid": 78244, "history": "Interactive.80", "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job13.log", "nodename": "edatools", "domainname": "(none)", "machine": "x86_64", "sysname": "Linux", "release": "6.17.0-20-generic", "version": "#20~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Mar 19 01:28:37 UTC 2"}
+[2026-04-09 05:34:59.393 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - UsageInfo:
+pid=78244
+totalPhysicalMemory=62.544991GB,Used=20.348354GB,totalVirtualMemory=70.544987GB,Used=20.348354GB
+Cpu: Cores=16, Load average:0.420000,0.330000,0.370000 {"hostname": "edatools", "processid": 78244, "history": "Interactive.80", "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job13.log", "pid": "78244", "totalPhysicalMemory": "62.544991", "physicalMemoryUsed": "20.348354", "totalVirtualMemory": "70.544987", "virtualMemoryUsed": "20.348354", "cpuCores": "16", "processes": "1909", "loadAverage1": "0.420000", "loadAverage5": "0.330000", "loadAverage15": "0.370000", "loadAverage1Percent": "0.026250"}
+[2026-04-09 05:34:59.393 Z] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal", "event": "NewPoint", "EventSource": "Simulation Monitor", "HistoryName": "Interactive.80", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job13.log", "logFileSize": "2191"}
+[2026-04-09 05:34:59.494 Z] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal", "event": "NewPoint", "EventSource": "spectre", "HistoryName": "Interactive.80", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_cmfb_tb/maestro/results/maestro/Interactive.80/1/FECG_fecg_cmfb_tb_1/psf/spectre.out", "logFileSize": "-1"}
+[2026-04-09 05:34:59.508 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator launched {"hostname": "edatools", "processid": 78244, "history": "Interactive.80", "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job13.log", "simid": "1"}
+[2026-04-09 05:34:59.512 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Expression evaluator launched {"hostname": "edatools", "processid": 78244, "history": "Interactive.80", "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job13.log"}
+[2026-04-09 05:34:59.545 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started Simulation {"hostname": "edatools", "processid": 78244, "history": "Interactive.80", "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job13.log", "event": "started", "task": "simulation"}
+[2026-04-09 05:35:00.046 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during circuit read-in.
+    Pre_Configuration file used: /opt/tools/cadence/installs/SPECTRE241/tools.lnx86/spectre/etc/configs/preset.precfg
+    Configuration file used: `/opt/tools/cadence/installs/SPECTRE241/tools.lnx86/spectre/etc/configs/preset.cfg'. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.046 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-8360): line 1511: `ac' is an undefined primitive device. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.046 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-8360): line 1512: `ac' is an undefined primitive device. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.047 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-8360): line 1513: `ac' is an undefined primitive device. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.047 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-8360): line 1514: `ac' is an undefined primitive device. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.047 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-8360): line 1515: `ac' is an undefined primitive device.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.047 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 171 Mbytes. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.047 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (VACOMP-2435): The environment variable CDS_AHDLCMI_ENABLE is no longer supported. Therefore, the simulator will use the default compiled C code flow. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.048 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3029): The dummy capacitor C8 is removed. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.048 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 187 Mbytes. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.048 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during hierarchy flattening.
+    The value 'psf' specified for the 'checklimitdest' option will no longer be supported in future releases. Use 'spectre -h' to see other recommended values for the 'checklimitdest' option.
+    I7.R10.CS0 of rpolyhc: `c' has the unusually small value of 0 F.
+    I7.R10.CS1 of rpolyhc: `c' has the unusually small value of 0 F.
+    I7.R9.CS0 of rpolyhc: `c' has the unusually small value of 0 F.
+    I7.R9.CS1 of rpolyhc: `c' has the unusually small value of 0... {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.048 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 189 Mbytes. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.049 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): I7.I3.C1: `Acde' = 2.393 is unusually large. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.049 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): I7.I3.C1: `Noff' = 4.732 is unusually large. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.049 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): I7.I3.C1: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.049 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): I7.C0: `Acde' = 2.393 is unusually large. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.049 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): I7.C0: `Noff' = 4.732 is unusually large. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.049 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): I7.C0: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.049 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_rpolyh_vminuspsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.049 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_rpolyh_vpluspsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.049 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvarm_vspsub:Specified subcircuit master `cvarm' was not found. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.050 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvarm_vspsub:Error in specification of subcircuit master. Assert is ignored. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.050 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvarm_vbs:Specified subcircuit master `cvarm' was not found. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.050 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvarm_vbs:Error in specification of subcircuit master. Assert is ignored. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.050 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvarm_vgb:Specified subcircuit master `cvarm' was not found. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.050 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvarm_vgb:Error in specification of subcircuit master. Assert is ignored. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.050 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvart_vspsub:Specified subcircuit master `cvart' was not found. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.050 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvart_vspsub:Error in specification of subcircuit master. Assert is ignored. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.050 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvart_vbs:Specified subcircuit master `cvart' was not found.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.050 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvart_vbs:Error in specification of subcircuit master. Assert is ignored.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.051 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_cvar_vspsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.051 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_cvar_vbpsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.051 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_cvar_vgpsub' is ignored because it contains an expression which is invalid or not supported by native evaluator. 
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.552 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during topology check.
+    Only one connection to node `I7.net1'.
+    No DC path from node `VA' to ground, Gmin installed to provide path.
+    No DC path from node `I7.net1' to ground, Gmin installed to provide path. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.552 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during initial setup.
+    Multithreading is disabled due to the size of the design being too small. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.553 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] -               nodes 64 {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.553 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during initial setup.
+    2 resistors are shorted because their absolute value is less than or equal to 'rabsshort'.
+    1 vsources are shorted because their absolute value is less than or equal to 'vabsshort'.
+    Spectre X preset=cx enabled. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.553 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): I7.I3.C1: `Acde' = 2.393 is unusually large.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.554 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): I7.I3.C1: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.554 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): I7.C0: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.554 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre.
+    7 notices suppressed.
+    77 warnings suppressed. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.555 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 196 Mbytes. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.555 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] -    -   (Spectre X) Multi-threading. The recommended number of threads is 1, consider adding +mt=1 on command line. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.556 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during DC analysis `dcOp'.
+    No checklimit analysis defined for asserts. A default checklimit analysis 'SpectreChecklimitAnal' has been created with all asserts enabled. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.556 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during DC analysis `dcOp'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I7.I3.C1.s1) = 2.5885 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.557 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'C0'. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.557 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'C1'. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.557 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'C4'. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.558 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'C5'. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.558 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'C6'.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.558 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for dc analysis `dcOp': CPU = 36.974 ms, elapsed = 48.4931 ms, util. = 76.2%. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.558 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 203 Mbytes. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.558 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre.
+    45 warnings suppressed. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.559 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): I7.C0: `Acde' = 2.393 is unusually large. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.559 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): I7.C0: `Noff' = 4.732 is unusually large. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.559 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): I7.C0: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.559 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): I7.I3.C1: `Acde' = 2.393 is unusually large. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.559 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): I7.I3.C1: `Noff' = 4.732 is unusually large. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.559 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): I7.I3.C1: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.559 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING: BSIM3v3 MOS Transistor - frequency dependent components are present in the circuit, approximated as AC equivalents at 1.000000e+00Hz for pz analysis. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.559 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during DC analysis, during PZ analysis `pz'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I7.I3.C1.s1) = 2.5885 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.560 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'C0'. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.560 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'C1'. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.560 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'C4'. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.560 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'C5'. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.560 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'C6'.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.560 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at 0 during DC analysis, during PZ analysis `pz'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I7.I5.C1.s1) = 2.5885 mV
+        Use the `gmin_check' option to eliminate or expand this report. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.560 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (UWI-8101): The specified waveform format 'psf' (improper context for requested action) could not be added. The simulator will ignore the waveform. Check the application programming interface (API) before running the simulation again. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.560 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (UWI-8101): The specified waveform format 'psf' (improper context for requested action) could not be added. The simulator will ignore the waveform. Check the application programming interface (API) before running the simulation again. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.560 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (UWI-8101): The specified waveform format 'psf' (improper context for requested action) could not be added. The simulator will ignore the waveform. Check the application programming interface (API) before running the simulation again. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.560 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (UWI-8101): The specified waveform format 'psf' (improper context for requested action) could not be added. The simulator will ignore the waveform. Check the application programming interface (API) before running the simulation again. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.560 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (UWI-8101): The specified waveform format 'psf' (improper context for requested action) could not be added. The simulator will ignore the waveform. Check the application programming interface (API) before running the simulation again.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.560 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for pz analysis `pz': CPU = 21.655 ms, elapsed = 25.4622 ms, util. = 85%. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.560 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 211 Mbytes. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.560 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre.
+    124 warnings suppressed. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.560 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): I7.C0: `Acde' = 2.393 is unusually large. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.560 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): I7.C0: `Noff' = 4.732 is unusually large. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.560 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): I7.C0: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.560 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): I7.I3.C1: `Acde' = 2.393 is unusually large. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.560 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): I7.I3.C1: `Noff' = 4.732 is unusually large. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.560 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): I7.I3.C1: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.560 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during IC analysis, during transient analysis `tran'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(I7.I3.C1.s1) = 2.5885 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.560 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'C0'. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.560 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'C1'. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.560 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'C4'. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.561 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'C5'. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.561 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'C6'.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.561 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during transient analysis `tran'.
+    Multithreading is disabled due to the size of the design being too small. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.561 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for tran analysis `tran': CPU = 14.781 ms, elapsed = 16.5489 ms, util. = 89.3%. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.561 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 214 Mbytes. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.561 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre.
+    45 warnings suppressed. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.561 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time used: CPU = 291 ms, elapsed = 569 ms, util. = 51.2%. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.561 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time spent in licensing: elapsed = 53.6 ms, percentage of total = 9.41%. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.561 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak memory used = 213 Mbytes. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.561 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation started at: 5:34:59 AM, Thur Apr 9, 2026, ended at: 5:35:00 AM, Thur Apr 9, 2026, with elapsed time (wall clock): 569 ms. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.561 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - spectre completes with 0 errors, 64 warnings, and 31 notices. {"history": "Interactive.80", "point": 1, "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal"}
+[2026-04-09 05:35:00.561 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished simulating for one point {"hostname": "edatools", "processid": 78244, "history": "Interactive.80", "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job13.log", "simid": "1"}
+[2026-04-09 05:35:00.561 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator exited {"hostname": "edatools", "processid": 78244, "history": "Interactive.80", "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job13.log", "exitStatus": "0"}
+[2026-04-09 05:35:00.561 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished Simulation {"hostname": "edatools", "processid": 78244, "history": "Interactive.80", "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job13.log", "simid": "1"}
+[2026-04-09 05:35:02.566 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Point Finished {"hostname": "edatools", "processid": 78244, "history": "Interactive.80", "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job13.log"}
+[2026-04-09 05:35:07.074 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Current memory used: 52.2188 MBytes, peak memory used: 52.2188 MBytes {"hostname": "edatools", "processid": 78244, "history": "Interactive.80", "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job13.log"}
+[2026-04-09 05:35:07.074 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation Monitor process exit. {"hostname": "edatools", "processid": 78244, "history": "Interactive.80", "testname": "FECG_fecg_cmfb_tb_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job13.log"}
