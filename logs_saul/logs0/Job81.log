@@ -1,111 +1,78 @@
-*Info*    Exporting services from client ... 
-
-*Info*    Client has finished starting ... 
-
-
-
-*Info*    Configuring the session ...
-
-	Library      = FECG
-	Cell         = fecg_tb
-	View         = schematic
-	Simulator    = spectre
-	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = Noise_CMRR_FECG:fecg_tb:1:1_state_Interactive.75
-	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.75.rdb
-	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.75/1/Noise_CMRR
-	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data
-	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
-	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_tb/adexl_signal_path
-	File Encoding = 0
-
-
-
-*Info*    The auto suspension is disabled.
-
-
-
-
-
-
-*Info*    Run start for Point ID (0 1) on testbench [ Noise_CMRR ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting var F0 = "3.3"
-Setting var F1 = "3.3"
-Setting var F2 = "0"
-Setting var FC = "4K"
-Setting var S0 = "3.3"
-Setting var S1 = "0"
-Setting var S2 = "0"
-Setting var VCM_AC = "0"
-Setting var VCM_DC = "1.5"
-Setting var VDD = "3.3"
-Setting var VIN_AC = "1"
-Setting var VIN_AMP = "0"
-Setting var VIN_DC = "50m"
-Setting var VIN_FREQ = "50"
-Setting var temperature = "27"
-Setting temp(T) = 27
-
-*Info*    Netlist Directory =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.75/1/Noise_CMRR/netlist
-
-
-*Info*    Data Directory    =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.75/1/Noise_CMRR
-
-
-*Info*    Creating Netlist for Point ID (0 1)
-
-generate netlist...
-function ansCdlCompPrim redefined
-function ansCdlCompPrim redefined
-Begin Incremental Netlisting Apr  5 21:19:03 2026
-WARNING (OSSHNL-941): Failed to open the sameCellNamesInMultipleLibs file '/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.65/1/Noise_CMRR/netlist/ihnl/sameCellNamesInMultipleLibs', in the append mode.
-Ensure that you have the write permission for the mentioned file.
-
-End netlisting Apr  5 21:19:03 2026
-
-Netlisting Statistics:
-	Number of components:  121
-
-	Elapsed time:          0.0s
-Errors: 0	Warnings: 0
-      ...successful.
-compose simulator input file...
-      ...successful.
-
-*Info*    Running simulation on testbench [ Noise_CMRR ] for Point ID
-          (0 1).
-
-Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_tb/adexl_signal_path/results/data/Interactive.75/1/Noise_CMRR/psf.
-compose simulator input file...
-      ...successful.
-start simulator if needed...
-      ...successful.
-simulate...
-To view the simulator output, right-click on the test name, result 
-name, or any value in the "Results" tab of the Outputs section and 
-choose "Output Log" menu option.
-WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
-       and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
-       There will be no performance impact on data visualization due to this change.
-INFO (ADE-3071): Simulation completed successfully.
-reading simulation data...
-      ...successful.
-*Info*    Client has finished evaluating ... 
-
-
-*Info*    Run complete for Point ID (0 1) on testbench [ Noise_CMRR ].
-
-
-
-
-
-Simulation design variables differ from those on the cellView,
-they have been saved in the file "/tmp/saved-design-variables".
-To save future changes, copy variables to cellView before exiting.
+[Simulation Monitor: 81]
+[2026-04-10 13:15:01.188 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation Monitor has successfully started up. Trying to set up communication channels to other components ... {"hostname": "edatools", "processid": 392838, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job81.log"}
+[2026-04-10 13:15:01.189 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Communication channels have been successfully set up. Start processing events ... {"hostname": "edatools", "processid": 392838, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job81.log"}
+[2026-04-10 13:15:01.189 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Considering to start history {"hostname": "edatools", "processid": 392838, "history": "ExplorerRun.0", "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job81.log"}
+[2026-04-10 13:15:01.189 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - HostInfo:
+Host name (type):	edatools (x86_64)
+Operating system:	Linux 6.17.0-20-generic #20~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Mar 19 01:28:37 UTC 2 {"hostname": "edatools", "processid": 392838, "history": "ExplorerRun.0", "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job81.log", "nodename": "edatools", "domainname": "(none)", "machine": "x86_64", "sysname": "Linux", "release": "6.17.0-20-generic", "version": "#20~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Mar 19 01:28:37 UTC 2"}
+[2026-04-10 13:15:01.190 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - UsageInfo:
+pid=392838
+totalPhysicalMemory=62.544991GB,Used=37.610893GB,totalVirtualMemory=70.544987GB,Used=37.610893GB
+Cpu: Cores=16, Load average:0.240000,0.180000,0.130000 {"hostname": "edatools", "processid": 392838, "history": "ExplorerRun.0", "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job81.log", "pid": "392838", "totalPhysicalMemory": "62.544991", "physicalMemoryUsed": "37.610893", "totalVirtualMemory": "70.544987", "virtualMemoryUsed": "37.610893", "cpuCores": "16", "processes": "2185", "loadAverage1": "0.240000", "loadAverage5": "0.180000", "loadAverage15": "0.130000", "loadAverage1Percent": "0.015000"}
+[2026-04-10 13:15:01.190 Z] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal", "event": "NewPoint", "EventSource": "Simulation Monitor", "HistoryName": "ExplorerRun.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job81.log", "logFileSize": "2195"}
+[2026-04-10 13:15:01.291 Z] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal", "event": "NewPoint", "EventSource": "spectre", "HistoryName": "ExplorerRun.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_bandgap_tb/maestro/results/maestro/ExplorerRun.0/1/ECG_IA_ecg_bandgap_tb_1/psf/spectre.out", "logFileSize": "-1"}
+[2026-04-10 13:15:01.305 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator launched {"hostname": "edatools", "processid": 392838, "history": "ExplorerRun.0", "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job81.log", "simid": "1"}
+[2026-04-10 13:15:01.308 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Expression evaluator launched {"hostname": "edatools", "processid": 392838, "history": "ExplorerRun.0", "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job81.log"}
+[2026-04-10 13:15:01.336 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started Simulation {"hostname": "edatools", "processid": 392838, "history": "ExplorerRun.0", "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job81.log", "event": "started", "task": "simulation"}
+[2026-04-10 13:15:01.837 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-8360): line 1511: `ac' is an undefined primitive device. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:01.837 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-8360): line 1512: `ac' is an undefined primitive device. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:01.837 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-8360): line 1513: `ac' is an undefined primitive device. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:01.838 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-8360): line 1514: `ac' is an undefined primitive device. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:01.838 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-8360): line 1515: `ac' is an undefined primitive device.
+        Further occurrences of this warning will be suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:01.838 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 166 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:01.838 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 176 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:01.839 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during hierarchy flattening.
+    The value 'psf' specified for the 'checklimitdest' option will no longer be supported in future releases. Use 'spectre -h' to see other recommended values for the 'checklimitdest' option.
+    I0.Q1<0>_turbo_m31.bjtinsub: `minr' has the unusually small value of 10 fOhm.
+    I0.Q0.bjtinsub: `minr' has the unusually small value of 10 fOhm. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:01.839 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 178 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:01.839 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_vert10_vsubpsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:01.839 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_vert10_vcsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:01.839 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvarm_vspsub:Specified subcircuit master `cvarm' was not found. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:01.839 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvarm_vspsub:Error in specification of subcircuit master. Assert is ignored. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:01.839 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvarm_vbs:Specified subcircuit master `cvarm' was not found. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:01.839 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvarm_vbs:Error in specification of subcircuit master. Assert is ignored. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:01.839 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvarm_vgb:Specified subcircuit master `cvarm' was not found. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:01.839 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvarm_vgb:Error in specification of subcircuit master. Assert is ignored. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:01.839 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvart_vspsub:Specified subcircuit master `cvart' was not found. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:01.839 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvart_vspsub:Error in specification of subcircuit master. Assert is ignored. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:01.839 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvart_vbs:Specified subcircuit master `cvart' was not found.
+        Further occurrences of this warning will be suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:01.840 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvart_vbs:Error in specification of subcircuit master. Assert is ignored.
+        Further occurrences of this warning will be suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:01.840 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_cpoly_vminuspsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:01.840 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_cpoly_vpluspsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:01.840 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_modp_vbpsub' is ignored because it contains an expression which is invalid or not supported by native evaluator. 
+        Further occurrences of this warning will be suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:02.341 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during initial setup.
+    Multithreading is disabled due to the size of the design being too small. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:02.342 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] -               nodes 11 {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:02.342 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during initial setup.
+    APS enabled.
+    73 warnings suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:02.343 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 185 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:02.343 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] -    -   (APS) Multi-threading. The recommended number of threads is 1, consider adding +mt=1 on command line. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:02.343 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during DC analysis `dcOp'.
+    No checklimit analysis defined for asserts. A default checklimit analysis 'SpectreChecklimitAnal' has been created with all asserts enabled. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:02.344 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'I0.C0.C1'. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:02.344 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'C0'. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:02.344 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'I0.C0.C0'. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:02.345 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'I0.R0'. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:02.345 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2943): Parameter checks have been ignored because the valid value for parameter 'trise' could not be found in 'I0.R2'.
+        Further occurrences of this warning will be suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:02.346 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for dc analysis `dcOp': CPU = 42.916 ms, elapsed = 53.3221 ms, util. = 80.5%. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:02.346 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 192 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:02.346 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre.
+    1 warning suppressed. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:02.347 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time used: CPU = 199 ms, elapsed = 433 ms, util. = 45.9%. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:02.347 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time spent in licensing: elapsed = 28 ms, percentage of total = 6.46%. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:02.347 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak memory used = 194 Mbytes. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:02.347 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation started at: 1:15:01 PM, Fri Apr 10, 2026, ended at: 1:15:01 PM, Fri Apr 10, 2026, with elapsed time (wall clock): 433 ms. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:02.347 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - spectre completes with 0 errors, 25 warnings, and 9 notices. {"history": "ExplorerRun.0", "point": 1, "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal"}
+[2026-04-10 13:15:02.348 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished simulating for one point {"hostname": "edatools", "processid": 392838, "history": "ExplorerRun.0", "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job81.log", "simid": "1"}
+[2026-04-10 13:15:02.348 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator exited {"hostname": "edatools", "processid": 392838, "history": "ExplorerRun.0", "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job81.log", "exitStatus": "0"}
+[2026-04-10 13:15:02.348 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished Simulation {"hostname": "edatools", "processid": 392838, "history": "ExplorerRun.0", "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job81.log", "simid": "1"}
+[2026-04-10 13:15:04.353 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Point Finished {"hostname": "edatools", "processid": 392838, "history": "ExplorerRun.0", "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job81.log"}
+[2026-04-10 13:20:04.970 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Current memory used: 52.2500 MBytes, peak memory used: 52.2500 MBytes {"hostname": "edatools", "processid": 392838, "history": "ExplorerRun.0", "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job81.log"}
+[2026-04-10 13:20:04.971 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation Monitor process exit. {"hostname": "edatools", "processid": 392838, "history": "ExplorerRun.0", "testname": "ECG_IA_ecg_bandgap_tb_1", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job81.log"}
