@@ -49,7 +49,7 @@
 						<value>0</value>
 					</var>
 					<var>VREF
-						<value>1</value>
+						<value>1.2</value>
 					</var>
 					<var>VS_CM
 						<value>14.14</value>
@@ -140,6 +140,7 @@
 		</tests>
 		<disabledtests>
 			<test>FECG_fecg_cmfb_tb_1_1</test>
+			<test>STAB</test>
 		</disabledtests>
 		<checksasserts netlist="0">
 			<test netlist="0" netlistscope="all">FECG_fecg_cmfb_tb_1</test>
@@ -147,7 +148,7 @@
 		</checksasserts>
 		<plottingoptions>
 			<plottingoption>waveformtemplate
-				<value>(None)</value>
+				<value></value>
 			</plottingoption>
 			<plottingoption>plottingmode
 				<value>New Win</value>
@@ -159,7 +160,7 @@
 				<value>no</value>
 			</plottingoption>
 			<plottingoption>useMaestroPlottingTemplate
-				<value>yes</value>
+				<value>no</value>
 			</plottingoption>
 			<plottingoption>allplottingtemplates
 				<value></value>
@@ -410,456 +411,6 @@
 			<loggingdatabasedir>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_cmfb_tb/maestro/results/maestro</loggingdatabasedir>
 			<runlog>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_cmfb_tb/maestro/results/maestro/ExplorerRun.0.log</runlog>
 			<runlogfile>$AXL_SETUPDB_DIR/results/maestro/ExplorerRun.0.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="assembler" roOrView="view" runningOrFinished="finished">Interactive.83
-			<checkpoint>
-				<jobcontrolmode>LSCS</jobcontrolmode>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<sharedvarinfo></sharedvarinfo>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">FECG_fecg_cmfb_tb_1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>fecg_cmfb_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>Interactive.83</value>
-							</option>
-						</tooloptions>
-						<vars>
-							<var>Ce_sg
-								<value>5p</value>
-							</var>
-							<var>Csg_tg
-								<value>10p</value>
-							</var>
-							<var>RL
-								<value>0</value>
-							</var>
-							<var>VREF
-								<value>1</value>
-							</var>
-							<var>VS_CM
-								<value>14.14</value>
-							</var>
-							<var>VREF_PULSE
-								<value>0</value>
-							</var>
-						</vars>
-						<outputs>
-							<output>/INN
-								<evalType>point</evalType>
-							</output>
-							<output>/INP
-								<evalType>point</evalType>
-							</output>
-							<output>/CMFB
-								<evalType>point</evalType>
-							</output>
-							<output>/CM
-								<evalType>point</evalType>
-							</output>
-							<output>(VT("/INP") - VT("/INN"))
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-					<test enabled="1">STAB
-						<tool>ADE</tool>
-						<outputs>
-							<output>/INN
-								<evalType>point</evalType>
-							</output>
-							<output>/INP
-								<evalType>point</evalType>
-							</output>
-							<output>/CMFB
-								<evalType>point</evalType>
-							</output>
-							<output>/CM
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-						<vars>
-							<var>Ce_sg
-								<value>5p</value>
-							</var>
-							<var>Csg_tg
-								<value>10p</value>
-							</var>
-							<var>RL
-								<value>51k</value>
-							</var>
-							<var>VREF
-								<value>1</value>
-							</var>
-							<var>VS_CM
-								<value>0</value>
-							</var>
-							<var>VREF_PULSE
-								<value>10m</value>
-							</var>
-						</vars>
-						<tooloptions>
-							<option>cell
-								<value>fecg_cmfb_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>Interactive.83</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</tooloptions>
-						<prerunscript>0</prerunscript>
-					</test>
-				</tests>
-				<disabledtests>
-					<test>FECG_fecg_cmfb_tb_1_1</test>
-					<test>STAB</test>
-				</disabledtests>
-				<checksasserts netlist="0">
-					<test netlist="0" netlistscope="all">FECG_fecg_cmfb_tb_1</test>
-					<test netlist="0" netlistscope="all">STAB</test>
-				</checksasserts>
-				<plottingoptions>
-					<plottingoption>waveformtemplate
-						<value>(None)</value>
-					</plottingoption>
-					<plottingoption>plottingmode
-						<value>New Win</value>
-					</plottingoption>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>useMaestroPlottingTemplate
-						<value>yes</value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>distributedplot_enabled
-						<value>no</value>
-					</plottingoption>
-				</plottingoptions>
-				<exploreroptions>
-					<exploreroption>waveformtemplate
-						<value>(None)</value>
-					</exploreroption>
-				</exploreroptions>
-				<incrementalsimsetup>
-					<useincremental>0</useincremental>
-					<reusenetlist>0</reusenetlist>
-					<reusesaverunhist>0</reusesaverunhist>
-					<copyreferenceresults>1</copyreferenceresults>
-				</incrementalsimsetup>
-				<overwritehistoryname>ExplorerRun.0</overwritehistoryname>
-				<incrementalsimulationoptions>
-					<incrementalSimulation>0</incrementalSimulation>
-				</incrementalsimulationoptions>
-				<jobpolicyname>Maestro Default</jobpolicyname>
-				<netlistjobpolicyname>Netlisting Default</netlistjobpolicyname>
-				<vars>
-					<var>Ce_sg
-						<value>10p</value>
-						<dependentTests>
-							<dependentTest omitted="0">FECG_fecg_cmfb_tb_1</dependentTest>
-							<dependentTest omitted="0">STAB</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<sortVariableValues>0</sortVariableValues>
-				<waveglobalsetups>
-					<waveglobals>
-						<waveglobal>algorithm
-							<value>Asymmetrical</value>
-						</waveglobal>
-					</waveglobals>
-				</waveglobalsetups>
-			</checkpoint>
-			<timestamp>Apr 9 05:40:30 2026</timestamp>
-			<uuid>{4a5ce79f-ca70-4092-b041-d8a8aff2b3c5}</uuid>
-			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_cmfb_tb/maestro/results/maestro/Interactive.83.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/maestro/Interactive.83.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/edatools_saul_054030047</localpsfdir>
-			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_cmfb_tb/maestro/results/maestro/Interactive.83</psfdir>
-			<simdir>$AXL_PROJECT_DIR/FECG/fecg_cmfb_tb/maestro/results/maestro/Interactive.83</simdir>
-			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<loggingdatabasedir>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_cmfb_tb/maestro/results/maestro</loggingdatabasedir>
-			<runlog>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_cmfb_tb/maestro/results/maestro/Interactive.83.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/maestro/Interactive.83.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="assembler" roOrView="view" runningOrFinished="finished">Interactive.84
-			<checkpoint>
-				<jobcontrolmode>LSCS</jobcontrolmode>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<sharedvarinfo></sharedvarinfo>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test enabled="1">FECG_fecg_cmfb_tb_1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>fecg_cmfb_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>Interactive.84</value>
-							</option>
-						</tooloptions>
-						<vars>
-							<var>Ce_sg
-								<value>5p</value>
-							</var>
-							<var>Csg_tg
-								<value>10p</value>
-							</var>
-							<var>RL
-								<value>0</value>
-							</var>
-							<var>VREF
-								<value>1</value>
-							</var>
-							<var>VS_CM
-								<value>14.14</value>
-							</var>
-							<var>VREF_PULSE
-								<value>0</value>
-							</var>
-						</vars>
-						<outputs>
-							<output>/INN
-								<evalType>point</evalType>
-							</output>
-							<output>/INP
-								<evalType>point</evalType>
-							</output>
-							<output>/CMFB
-								<evalType>point</evalType>
-							</output>
-							<output>/CM
-								<evalType>point</evalType>
-							</output>
-							<output>(VT("/INP") - VT("/INN"))
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-					</test>
-					<test enabled="1">STAB
-						<tool>ADE</tool>
-						<outputs>
-							<output>/INN
-								<evalType>point</evalType>
-							</output>
-							<output>/INP
-								<evalType>point</evalType>
-							</output>
-							<output>/CMFB
-								<evalType>point</evalType>
-							</output>
-							<output>/CM
-								<evalType>point</evalType>
-							</output>
-						</outputs>
-						<vars>
-							<var>Ce_sg
-								<value>5p</value>
-							</var>
-							<var>Csg_tg
-								<value>10p</value>
-							</var>
-							<var>RL
-								<value>51k</value>
-							</var>
-							<var>VREF
-								<value>1</value>
-							</var>
-							<var>VS_CM
-								<value>0</value>
-							</var>
-							<var>VREF_PULSE
-								<value>10m</value>
-							</var>
-						</vars>
-						<tooloptions>
-							<option>cell
-								<value>fecg_cmfb_tb</value>
-							</option>
-							<option>lib
-								<value>FECG</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>sim
-								<value>spectre</value>
-							</option>
-							<option>state
-								<value>Interactive.84</value>
-							</option>
-							<option>view
-								<value>schematic</value>
-							</option>
-						</tooloptions>
-						<prerunscript>0</prerunscript>
-					</test>
-				</tests>
-				<disabledtests>
-					<test>FECG_fecg_cmfb_tb_1_1</test>
-					<test>STAB</test>
-				</disabledtests>
-				<checksasserts netlist="0">
-					<test netlist="0" netlistscope="all">FECG_fecg_cmfb_tb_1</test>
-					<test netlist="0" netlistscope="all">STAB</test>
-				</checksasserts>
-				<plottingoptions>
-					<plottingoption>waveformtemplate
-						<value>(None)</value>
-					</plottingoption>
-					<plottingoption>plottingmode
-						<value>New Win</value>
-					</plottingoption>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>useMaestroPlottingTemplate
-						<value>yes</value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>distributedplot_enabled
-						<value>no</value>
-					</plottingoption>
-				</plottingoptions>
-				<exploreroptions>
-					<exploreroption>waveformtemplate
-						<value>(None)</value>
-					</exploreroption>
-				</exploreroptions>
-				<incrementalsimsetup>
-					<useincremental>0</useincremental>
-					<reusenetlist>0</reusenetlist>
-					<reusesaverunhist>0</reusesaverunhist>
-					<copyreferenceresults>1</copyreferenceresults>
-				</incrementalsimsetup>
-				<overwritehistoryname>ExplorerRun.0</overwritehistoryname>
-				<incrementalsimulationoptions>
-					<incrementalSimulation>0</incrementalSimulation>
-				</incrementalsimulationoptions>
-				<jobpolicyname>Maestro Default</jobpolicyname>
-				<netlistjobpolicyname>Netlisting Default</netlistjobpolicyname>
-				<vars>
-					<var>Ce_sg
-						<value>10p</value>
-						<dependentTests>
-							<dependentTest omitted="0">FECG_fecg_cmfb_tb_1</dependentTest>
-							<dependentTest omitted="0">STAB</dependentTest>
-						</dependentTests>
-					</var>
-					<var>Csg_tg
-						<value>10p</value>
-						<dependentTests>
-							<dependentTest omitted="0">FECG_fecg_cmfb_tb_1</dependentTest>
-							<dependentTest omitted="0">STAB</dependentTest>
-						</dependentTests>
-					</var>
-				</vars>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Apr 9 05:42:44 2026</timestamp>
-			<uuid>{9bbc4085-ac8b-4f18-8302-5f5c1a36a5f0}</uuid>
-			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_cmfb_tb/maestro/results/maestro/Interactive.84.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/maestro/Interactive.84.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/edatools_saul_054244228</localpsfdir>
-			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_cmfb_tb/maestro/results/maestro/Interactive.84</psfdir>
-			<simdir>$AXL_PROJECT_DIR/FECG/fecg_cmfb_tb/maestro/results/maestro/Interactive.84</simdir>
-			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
-			<loggingdatabasedir>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_cmfb_tb/maestro/results/maestro</loggingdatabasedir>
-			<runlog>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_cmfb_tb/maestro/results/maestro/Interactive.84.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/maestro/Interactive.84.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
@@ -2778,6 +2329,476 @@
 			<loggingdatabasedir>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_cmfb_tb/maestro/results/maestro</loggingdatabasedir>
 			<runlog>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_cmfb_tb/maestro/results/maestro/Interactive.92.log</runlog>
 			<runlogfile>$AXL_SETUPDB_DIR/results/maestro/Interactive.92.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="assembler" roOrView="view" runningOrFinished="finished">Interactive.93
+			<checkpoint>
+				<jobcontrolmode>LSCS</jobcontrolmode>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<sharedvarinfo></sharedvarinfo>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">FECG_fecg_cmfb_tb_1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>fecg_cmfb_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Interactive.93</value>
+							</option>
+						</tooloptions>
+						<vars>
+							<var>Ce_sg
+								<value>5p</value>
+							</var>
+							<var>Csg_tg
+								<value>10p</value>
+							</var>
+							<var>RL
+								<value>0</value>
+							</var>
+							<var>VREF
+								<value>1</value>
+							</var>
+							<var>VS_CM
+								<value>14.14</value>
+							</var>
+							<var>VREF_PULSE
+								<value>0</value>
+							</var>
+						</vars>
+						<outputs>
+							<output>/INN
+								<evalType>point</evalType>
+							</output>
+							<output>/INP
+								<evalType>point</evalType>
+							</output>
+							<output>/CMFB
+								<evalType>point</evalType>
+							</output>
+							<output>/CM
+								<evalType>point</evalType>
+							</output>
+							<output>(VT("/INP") - VT("/INN"))
+								<evalType>point</evalType>
+							</output>
+							<output>CM_amplitude
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test enabled="1">STAB
+						<tool>ADE</tool>
+						<outputs>
+							<output>/INN
+								<evalType>point</evalType>
+							</output>
+							<output>/INP
+								<evalType>point</evalType>
+							</output>
+							<output>/CMFB
+								<evalType>point</evalType>
+							</output>
+							<output>/CM
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<vars>
+							<var>Ce_sg
+								<value>5p</value>
+							</var>
+							<var>Csg_tg
+								<value>10p</value>
+							</var>
+							<var>RL
+								<value>51k</value>
+							</var>
+							<var>VREF
+								<value>1</value>
+							</var>
+							<var>VS_CM
+								<value>0</value>
+							</var>
+							<var>VREF_PULSE
+								<value>10m</value>
+							</var>
+						</vars>
+						<tooloptions>
+							<option>cell
+								<value>fecg_cmfb_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>Interactive.93</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+					</test>
+				</tests>
+				<disabledtests>
+					<test>FECG_fecg_cmfb_tb_1_1</test>
+					<test>STAB</test>
+				</disabledtests>
+				<checksasserts netlist="0">
+					<test netlist="0" netlistscope="all">FECG_fecg_cmfb_tb_1</test>
+					<test netlist="0" netlistscope="all">STAB</test>
+				</checksasserts>
+				<plottingoptions>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>plottingmode
+						<value>New Win</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<exploreroptions>
+					<exploreroption>waveformtemplate
+						<value>(None)</value>
+					</exploreroption>
+				</exploreroptions>
+				<incrementalsimsetup>
+					<useincremental>0</useincremental>
+					<reusenetlist>0</reusenetlist>
+					<reusesaverunhist>0</reusesaverunhist>
+					<copyreferenceresults>1</copyreferenceresults>
+				</incrementalsimsetup>
+				<overwritehistoryname>ExplorerRun.0</overwritehistoryname>
+				<incrementalsimulationoptions>
+					<incrementalSimulation>0</incrementalSimulation>
+				</incrementalsimulationoptions>
+				<jobpolicyname>Maestro Default</jobpolicyname>
+				<netlistjobpolicyname>Netlisting Default</netlistjobpolicyname>
+				<vars>
+					<var>Ce_sg
+						<value>30p</value>
+						<dependentTests>
+							<dependentTest omitted="0">FECG_fecg_cmfb_tb_1</dependentTest>
+							<dependentTest omitted="0">STAB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Csg_tg
+						<value>5p</value>
+						<dependentTests>
+							<dependentTest omitted="0">FECG_fecg_cmfb_tb_1</dependentTest>
+							<dependentTest omitted="0">STAB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">FECG_fecg_cmfb_tb_1</dependentTest>
+							<dependentTest omitted="0">STAB</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 18 19:52:28 2026</timestamp>
+			<uuid>{5deba095-4a45-4d1c-b3b0-0341aef4f17f}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_cmfb_tb/maestro/results/maestro/Interactive.93.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/maestro/Interactive.93.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/edatools_saul_195228402</localpsfdir>
+			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_cmfb_tb/maestro/results/maestro/Interactive.93</psfdir>
+			<simdir>$AXL_PROJECT_DIR/FECG/fecg_cmfb_tb/maestro/results/maestro/Interactive.93</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<loggingdatabasedir>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_cmfb_tb/maestro/results/maestro</loggingdatabasedir>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_cmfb_tb/maestro/results/maestro/Interactive.93.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/maestro/Interactive.93.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="assembler" roOrView="view" runningOrFinished="finished">Interactive.94
+			<checkpoint>
+				<jobcontrolmode>LSCS</jobcontrolmode>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<sharedvarinfo></sharedvarinfo>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">FECG_fecg_cmfb_tb_1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>fecg_cmfb_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>Interactive.94</value>
+							</option>
+						</tooloptions>
+						<vars>
+							<var>Ce_sg
+								<value>5p</value>
+							</var>
+							<var>Csg_tg
+								<value>10p</value>
+							</var>
+							<var>RL
+								<value>0</value>
+							</var>
+							<var>VREF
+								<value>1.2</value>
+							</var>
+							<var>VS_CM
+								<value>14.14</value>
+							</var>
+							<var>VREF_PULSE
+								<value>0</value>
+							</var>
+						</vars>
+						<outputs>
+							<output>/INN
+								<evalType>point</evalType>
+							</output>
+							<output>/INP
+								<evalType>point</evalType>
+							</output>
+							<output>/CMFB
+								<evalType>point</evalType>
+							</output>
+							<output>/CM
+								<evalType>point</evalType>
+							</output>
+							<output>(VT("/INP") - VT("/INN"))
+								<evalType>point</evalType>
+							</output>
+							<output>CM_amplitude
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+					<test enabled="1">STAB
+						<tool>ADE</tool>
+						<outputs>
+							<output>/INN
+								<evalType>point</evalType>
+							</output>
+							<output>/INP
+								<evalType>point</evalType>
+							</output>
+							<output>/CMFB
+								<evalType>point</evalType>
+							</output>
+							<output>/CM
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+						<vars>
+							<var>Ce_sg
+								<value>5p</value>
+							</var>
+							<var>Csg_tg
+								<value>10p</value>
+							</var>
+							<var>RL
+								<value>51k</value>
+							</var>
+							<var>VREF
+								<value>1</value>
+							</var>
+							<var>VS_CM
+								<value>0</value>
+							</var>
+							<var>VREF_PULSE
+								<value>10m</value>
+							</var>
+						</vars>
+						<tooloptions>
+							<option>cell
+								<value>fecg_cmfb_tb</value>
+							</option>
+							<option>lib
+								<value>FECG</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>state
+								<value>Interactive.94</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</tooloptions>
+						<prerunscript>0</prerunscript>
+					</test>
+				</tests>
+				<disabledtests>
+					<test>FECG_fecg_cmfb_tb_1_1</test>
+					<test>STAB</test>
+				</disabledtests>
+				<checksasserts netlist="0">
+					<test netlist="0" netlistscope="all">FECG_fecg_cmfb_tb_1</test>
+					<test netlist="0" netlistscope="all">STAB</test>
+				</checksasserts>
+				<plottingoptions>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>plottingmode
+						<value>New Win</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<exploreroptions>
+					<exploreroption>waveformtemplate
+						<value>(None)</value>
+					</exploreroption>
+				</exploreroptions>
+				<incrementalsimsetup>
+					<useincremental>0</useincremental>
+					<reusenetlist>0</reusenetlist>
+					<reusesaverunhist>0</reusesaverunhist>
+					<copyreferenceresults>1</copyreferenceresults>
+				</incrementalsimsetup>
+				<overwritehistoryname>ExplorerRun.0</overwritehistoryname>
+				<incrementalsimulationoptions>
+					<incrementalSimulation>0</incrementalSimulation>
+				</incrementalsimulationoptions>
+				<jobpolicyname>Maestro Default</jobpolicyname>
+				<netlistjobpolicyname>Netlisting Default</netlistjobpolicyname>
+				<vars>
+					<var>Ce_sg
+						<value>30p</value>
+						<dependentTests>
+							<dependentTest omitted="0">FECG_fecg_cmfb_tb_1</dependentTest>
+							<dependentTest omitted="0">STAB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Csg_tg
+						<value>5p</value>
+						<dependentTests>
+							<dependentTest omitted="0">FECG_fecg_cmfb_tb_1</dependentTest>
+							<dependentTest omitted="0">STAB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>RL
+						<value>0</value>
+						<dependentTests>
+							<dependentTest omitted="0">FECG_fecg_cmfb_tb_1</dependentTest>
+							<dependentTest omitted="0">STAB</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Apr 18 19:53:24 2026</timestamp>
+			<uuid>{948599b9-1edb-4644-9f22-401de75ed201}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_cmfb_tb/maestro/results/maestro/Interactive.94.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/maestro/Interactive.94.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/edatools_saul_195324116</localpsfdir>
+			<psfdir>/home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_cmfb_tb/maestro/results/maestro/Interactive.94</psfdir>
+			<simdir>$AXL_PROJECT_DIR/FECG/fecg_cmfb_tb/maestro/results/maestro/Interactive.94</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<loggingdatabasedir>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_cmfb_tb/maestro/results/maestro</loggingdatabasedir>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_cmfb_tb/maestro/results/maestro/Interactive.94.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/maestro/Interactive.94.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
