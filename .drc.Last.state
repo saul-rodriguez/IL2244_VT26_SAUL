@@ -14,29 +14,33 @@ vuiDRCFormTable = '(
 	format  "DFII"
 	vui2dbxor  nil
 	runName  ""
-	runDir  "ASSURA_DRC/test_res2"
+	runDir  "ASSURA_DRC/cmfb_opamp1_f"
 	machineLoc  "local"
-	viewRules  t
+	viewRules  nil
 	technologyField  "c35b4c3"
 	runsetField  "dfII"
-	rules  "/opt/pdk/ams/410/assura/c35b4/c35b4c3/drc.rul"
-	switches  ""
-	rsfInclude  "/opt/pdk/ams/410/assura/c35b4/c35b4c3/DRCinclude.rsf"
-	varTag  "None"
-	varVal  ""
-	varDefVal  ""
-	varDesc  ""
 	avView  nil
-	additionalFunctionsButton  nil
+	additionalFunctionsButton  t
 	limitDRCswitcher  nil
-	library  "TEST"
-	cell  "test_res2"
+	library  "FECG"
+	cell  "cmfb_opamp1_f"
 	view  "layout"
 	saveExtracted  nil
 	extractedView  "drc_extracted"
 	areaButton  "Full"
-	rulesButton  nil
-	rsfIncludeButton  nil
+	flattenCellButton  nil
+	joinableNetsButton  nil
+	outFileButton  nil
+	changeLabelButton  nil
+)
+
+
+
+
+rulesFieldsTable = '(
+	f3rules  "/opt/pdk/ams/410/assura/c35b4/c35b4c3/drc.rul"
+	f3switches  ""
+	f3rsfInclude  "/opt/pdk/ams/410/assura/c35b4/c35b4c3/DRCinclude.rsf"
 )
 
 
@@ -54,17 +58,6 @@ limitDrcCheckTable = '(
 
 vuiDRCFormVarTable = '(
 )
-
-
-additionalFunctionsFieldsTable = '(
-	AFflattenCellFlag  nil
-	AFjoinableNetsFlag  nil
-	AFoutFileFlag  nil
-	AFchangeLabelFlag  nil
-	AFdeleteCellTextFlag  nil
-)
-
-
 vuiDRCFormAdditionalFunctionsTable = '(
      flattenCell  nil
      joinableNets nil
