@@ -6,7 +6,7 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:34 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/assura on Mon Apr 20 07:06:07 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/assura on Mon Apr 20 15:27:50 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -15,7 +15,7 @@ Starting /opt/tools/cadence/installs/ASSURA41_618//tools.lnx86/assura/bin/aveng 
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Mon Apr 20 07:06:07 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Mon Apr 20 15:27:50 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -87,7 +87,7 @@ Running in restart mode.
 
 
 Finished building the VDB. VDB build times for main process:
-cpu: 0.10  elap: 0  pf: 0  in: 0  out: 40  virt: 172M  phys: 834M
+cpu: 0.10  elap: 0  pf: 0  in: 0  out: 40  virt: 172M  phys: 833M
 
 Running the Task Processor, 1 cells, 12713 steps...
 
@@ -7205,17 +7205,17 @@ Executing: bkgnd3 = geomOr(substrate_all)
 	   errorLayer(bkgnd3 "# INFO: C35B4/C35B3 ASSURA DRC DECK (REV9 DATE 26-Apr-2011) Last modified 07-Sept-2016 #")
 
 Finished running rules. Task processor time in main process:
-cpu: 0.46  elap: 1  pf: 0  in: 0  out: 3128  virt: 199M  phys: 1369M
+cpu: 0.50  elap: 1  pf: 0  in: 0  out: 3128  virt: 199M  phys: 1366M
 
 Started output post-processing ...
 
 Nothing to postprocess: No grid cells in the design
 
 Finished output post-processing
-cpu: 0.20  elap: 0  pf: 0  in: 0  out: 0  virt: 496M  phys: 1589M
+cpu: 0.20  elap: 0  pf: 0  in: 0  out: 0  virt: 496M  phys: 1587M
 
 Finished building the persistent database.
-cpu: 0.00  elap: 0  pf: 0  in: 0  out: 6472  virt: 501M  phys: 1602M
+cpu: 0.00  elap: 0  pf: 0  in: 0  out: 6472  virt: 501M  phys: 1600M
 
 
 *****  aveng terminated normally  *****
@@ -7253,7 +7253,7 @@ Loading tech rule set file : /opt/pdk/ams/410/assura/c35b4/c35b4c3/techRuleSets
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/avrpt on Mon Apr 20 07:06:08 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/avrpt on Mon Apr 20 15:27:51 2026
 
 
    Creating Error Database 'cmfb_opamp1_f'...
@@ -7682,7 +7682,7 @@ Rule      Message                                    FlatCount     RealCount
 (  418)  REC002 REC002 VIA3 not multiple 45 degre            0            0
 (  419)  REC002 REC002 MET4 not multiple 45 degre            0            0
 (  420)  REC002 REC002 PAD not multiple 45 degree            0            0
-(  421)  INFO: hot nwell                                     3            3
+(  421)  INFO: hot nwell                                     2            2
 (  422)  NW_W_1 Minimum NTUB width = 1.7                     0            0
 (  423)  NW_W_2 Minimum HOT_NTUB width = 3                   0            0
 (  424)  NW_S_1 Minimum spacing of NTUB with diff            0            0
@@ -8029,13 +8029,13 @@ Rule      Message                                    FlatCount     RealCount
 (  765)  ERC Warning: Floating Poly1                         0            0
 (  766)  ERC Warning: Floating Poly2                         0            0
 (  767)  ERC Warning: Floating met1                          0            0
-(  768)  ERC Warning: Floating met2                          1            1
+(  768)  ERC Warning: Floating met2                          0            0
 (  769)  ERC Warning: Floating met3                          0            0
 (  770)  ERC Warning: Floating met4                          0            0
 (  771)  ERC Warning: possible Z Diode                       0            0
-(  772)  ERC Warning: Gates connected to VDD/VCC             0            0
-(  773)  ERC Warning: Gates connected to VSS/GND             0            0
-(  774)  ERC Warning: floating gate not connected          120          120
+(  772)  ERC Warning: Gates connected to VDD/VCC           106          106
+(  773)  ERC Warning: Gates connected to VSS/GND             4            4
+(  774)  ERC Warning: floating gate not connected            0            0
 (  775)  ERC Warning: Distance well taps > 50                0            0
 (  776)  ERC Warning: illegal contact covering po            0            0
 (  777)  ERC Warning: illegal contact covering po            0            0
@@ -8739,7 +8739,7 @@ Rule      Message                                    FlatCount     RealCount
 ( 1475)  spiral_open_spiral_term22: ERC Warning :            0            0
 ( 1476)  # INFO: C35B4/C35B3 ASSURA DRC DECK (REV            1            1
 --------------------------------------------------------------------------------
-Total  errors:                                             133          129
+Total  errors:                                             121          117
 --------------------------------------------------------------------------------
 
    Finished creating Error Database ...
@@ -8750,8 +8750,8 @@ Total  errors:                                             133          129
    Rule 510 done.
    Rule 521 done.
    Rule 532 done.
-   Rule 768 done.
-   Rule 774 done.
+   Rule 772 done.
+   Rule 773 done.
    Rule 1476 done.
 
 avrpt cpu sec:    0.19  elapsed:     0  virtual:    93M
@@ -8789,7 +8789,7 @@ Loading tech rule set file : /opt/pdk/ams/410/assura/c35b4/c35b4c3/techRuleSets
 Finished /opt/tools/cadence/installs/ASSURA41_618//tools.lnx86/assura/bin/avcallproc
 
 
-Run ended: Mon Apr 20 07:06:09 2026
+Run ended: Mon Apr 20 15:27:51 2026
 
 *****  Assura terminated normally  *****
 
