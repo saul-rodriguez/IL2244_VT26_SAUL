@@ -6,17 +6,17 @@
 
 *Info*    Configuring the session ...
 
-	Library      = ECG_IA
-	Cell         = ecg_vga_tb
+	Library      = FECG
+	Cell         = gmc_lpf_tb
 	View         = schematic
 	Simulator    = spectre
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = ECG_IA:ecg_vga_tb:1_none_Interactive.188
-	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.188.rdb
-	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.188/1/ECG_IA:ecg_vga_tb:1
-	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data
+	State Name   = IN_spectre_state1_Interactive.148
+	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/gmc_lpf_tb/adexl/results/data/Interactive.148.rdb
+	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.148/1/IN
+	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data
 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
-	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_vga_tb/adexl
+	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/gmc_lpf_tb/adexl
 	File Encoding = 0
 
 
@@ -29,29 +29,28 @@ Loading monte.cxt
 
 
 
-*Info*    Run start for Point ID (0 1) on testbench [
-          ECG_IA:ecg_vga_tb:1 ].
+*Info*    Run start for Point ID (0 1) on testbench [ IN ].
 
 Resetting statistical vars
 
 *Info*    Setting parameter values ...
 
-Setting var S0 = "3.3"
-Setting var S1 = "3.3"
-Setting var S2 = "3.3"
+Setting var DC_IN = "1.5"
+Setting var F0 = "3.3"
+Setting var F1 = "3.3"
+Setting var F2 = "0"
 Setting var VDD = "3.3"
-Setting var VIN_AMP = "0"
-Setting var VIN_FREQ = "1k"
-Setting var VIN_STEP = "10m"
+Setting var VIN_AMPV = "0.5"
+Setting var VIN_DC = "0"
 Setting var temperature = "27"
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.188/1/ECG_IA:ecg_vga_tb:1/netlist
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.148/1/IN/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.188/1/ECG_IA:ecg_vga_tb:1
+          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.148/1/IN
 
 
 *Info*    Creating Netlist for Point ID (0 1)
@@ -62,15 +61,15 @@ Loading seCore.cxt
 function ansCdlCompPrim redefined
 function ansCdlCompPrim redefined
 Initializing the control file using cp:
-    cp /opt/tools/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.188/1/ECG_IA:ecg_vga_tb:1/netlist/control
+    cp /opt/tools/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.148/1/IN/netlist/control
 Copying Spectre source file 'spectre.inp'
 Copying Spectre command file 'spectre.sim'
-Begin Incremental Netlisting Apr 12 14:03:19 2026
+Begin Incremental Netlisting Apr 21 05:35:03 2026
 Loading json.cxt 
-End netlisting Apr 12 14:03:19 2026
+End netlisting Apr 21 05:35:03 2026
 
 Netlisting Statistics:
-	Number of components:   50
+	Number of components:   73
 
 	Elapsed time:          0.0s
 Errors: 0	Warnings: 0
@@ -78,10 +77,9 @@ Errors: 0	Warnings: 0
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ ECG_IA:ecg_vga_tb:1 ] for
-          Point ID (0 1).
+*Info*    Running simulation on testbench [ IN ] for Point ID (0 1).
 
-Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/ECG_IA/ecg_vga_tb/adexl/results/data/Interactive.188/1/ECG_IA:ecg_vga_tb:1/psf.
+Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/gmc_lpf_tb/adexl/results/data/Interactive.148/1/IN/psf.
 compose simulator input file...
       ...successful.
 start simulator if needed...
@@ -100,8 +98,7 @@ reading simulation data...
 *Info*    Client has finished evaluating ... 
 
 
-*Info*    Run complete for Point ID (0 1) on testbench [
-          ECG_IA:ecg_vga_tb:1 ].
+*Info*    Run complete for Point ID (0 1) on testbench [ IN ].
 
 
 
