@@ -6,7 +6,7 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:34 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/assura on Tue Apr 28 12:34:53 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/assura on Tue Apr 28 17:39:18 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -15,7 +15,7 @@ Starting /opt/tools/cadence/installs/ASSURA41_618//tools.lnx86/assura/bin/aveng 
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Tue Apr 28 12:34:53 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Tue Apr 28 17:39:18 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -87,7 +87,7 @@ Running in restart mode.
 
 
 Finished building the VDB. VDB build times for main process:
-cpu: 0.09  elap: 0  pf: 0  in: 0  out: 40  virt: 172M  phys: 835M
+cpu: 0.10  elap: 0  pf: 0  in: 0  out: 40  virt: 172M  phys: 834M
 
 Running the Task Processor, 5 cells, 12713 steps...
 
@@ -7205,17 +7205,17 @@ Executing: bkgnd3 = geomOr(substrate_all)
 	   errorLayer(bkgnd3 "# INFO: C35B4/C35B3 ASSURA DRC DECK (REV9 DATE 26-Apr-2011) Last modified 07-Sept-2016 #")
 
 Finished running rules. Task processor time in main process:
-cpu: 0.53  elap: 1  pf: 0  in: 0  out: 3120  virt: 201M  phys: 1378M
+cpu: 0.56  elap: 1  pf: 0  in: 0  out: 3120  virt: 201M  phys: 1378M
 
 Started output post-processing ...
 
 Nothing to postprocess: No grid cells in the design
 
 Finished output post-processing
-cpu: 0.20  elap: 0  pf: 0  in: 0  out: 0  virt: 499M  phys: 1596M
+cpu: 0.20  elap: 0  pf: 0  in: 0  out: 0  virt: 501M  phys: 1594M
 
 Finished building the persistent database.
-cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6480  virt: 501M  phys: 1608M
+cpu: 0.00  elap: 0  pf: 0  in: 0  out: 6488  virt: 501M  phys: 1607M
 
 
 *****  aveng terminated normally  *****
@@ -7253,7 +7253,7 @@ Loading tech rule set file : /opt/pdk/ams/410/assura/c35b4/c35b4c3/techRuleSets
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/avrpt on Tue Apr 28 12:34:54 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/avrpt on Tue Apr 28 17:39:19 2026
 
 
    Creating Error Database 'opamp_ws_f'...
@@ -7328,9 +7328,9 @@ Rule      Message                                    FlatCount     RealCount
 (   64)  ERROR : MET4 pin outside met4                       0            0
 (   65)  ERROR : PAD pin outside pad metal                   0            0
 (   66)  BAD_SUBSTR_SUBTAP_FLOAT_ERC                         0            0
-(   67)  BAD_SUBSTR_SUBTAP_MULTCONN_ERC                      5            5
+(   67)  BAD_SUBSTR_SUBTAP_MULTCONN_ERC                      0            0
 (   68)  BAD_NWELL_WELLTAP_FLOAT_ERC                         0            0
-(   69)  BAD_NWELL_WELLTAP_MULTCONN_ERC                     12           12
+(   69)  BAD_NWELL_WELLTAP_MULTCONN_ERC                      0            0
 (   70)  INFO: any HVDEF used as isolation                   0            0
 (   71)  NMOSRF_OPEN_GATE                                    0            0
 (   72)  PMOSRF_OPEN_GATE                                    0            0
@@ -7682,7 +7682,7 @@ Rule      Message                                    FlatCount     RealCount
 (  418)  REC002 REC002 VIA3 not multiple 45 degre            0            0
 (  419)  REC002 REC002 MET4 not multiple 45 degre            0            0
 (  420)  REC002 REC002 PAD not multiple 45 degree            0            0
-(  421)  INFO: hot nwell                                    16            5
+(  421)  INFO: hot nwell                                     2            2
 (  422)  NW_W_1 Minimum NTUB width = 1.7                     0            0
 (  423)  NW_W_2 Minimum HOT_NTUB width = 3                   0            0
 (  424)  NW_S_1 Minimum spacing of NTUB with diff            0            0
@@ -8026,16 +8026,16 @@ Rule      Message                                    FlatCount     RealCount
 (  762)  Warning: Illegal Layout Convention: RESD            0            0
 (  763)  Warning: Illegal Layout Convention: REST            0            0
 (  764)  ERC Warning: DIFF without any contact               0            0
-(  765)  ERC Warning: Floating Poly1                         4            4
+(  765)  ERC Warning: Floating Poly1                         0            0
 (  766)  ERC Warning: Floating Poly2                         0            0
 (  767)  ERC Warning: Floating met1                          0            0
 (  768)  ERC Warning: Floating met2                          0            0
 (  769)  ERC Warning: Floating met3                          0            0
 (  770)  ERC Warning: Floating met4                          0            0
 (  771)  ERC Warning: possible Z Diode                       0            0
-(  772)  ERC Warning: Gates connected to VDD/VCC             0            0
-(  773)  ERC Warning: Gates connected to VSS/GND             0            0
-(  774)  ERC Warning: floating gate not connected           48           13
+(  772)  ERC Warning: Gates connected to VDD/VCC             4            4
+(  773)  ERC Warning: Gates connected to VSS/GND            38           38
+(  774)  ERC Warning: floating gate not connected            0            0
 (  775)  ERC Warning: Distance well taps > 50                0            0
 (  776)  ERC Warning: illegal contact covering po            0            0
 (  777)  ERC Warning: illegal contact covering po            0            0
@@ -8739,23 +8739,21 @@ Rule      Message                                    FlatCount     RealCount
 ( 1475)  spiral_open_spiral_term22: ERC Warning :            0            0
 ( 1476)  # INFO: C35B4/C35B3 ASSURA DRC DECK (REV            1            1
 --------------------------------------------------------------------------------
-Total  errors:                                              92           43
+Total  errors:                                              51           48
 --------------------------------------------------------------------------------
 
    Finished creating Error Database ...
 
    Writing Report into /home/saul/projects/IL2244_VT26_SAUL/ASSURA_DRC/opamp_ws_f/opamp_ws_f.err ...
-   Rule 67 done.
-   Rule 69 done.
    Rule 421 done.
    Rule 510 done.
    Rule 521 done.
    Rule 532 done.
-   Rule 765 done.
-   Rule 774 done.
+   Rule 772 done.
+   Rule 773 done.
    Rule 1476 done.
 
-avrpt cpu sec:    0.20  elapsed:     0  virtual:    93M
+avrpt cpu sec:    0.19  elapsed:     0  virtual:    93M
 
 Finished /opt/tools/cadence/installs/ASSURA41_618//tools.lnx86/assura/bin/avrpt
 
@@ -8794,7 +8792,7 @@ Virtuoso Framework License (111) was checked out successfully. Total checkout ti
 @(#)$CDS: rcxToDfII_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:40 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/rcxToDfII on Tue Apr 28 12:34:55 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/rcxToDfII on Tue Apr 28 17:39:20 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -8820,33 +8818,33 @@ Layer net_via3 has 0 shapes.
 Copying layer net_met4
 Layer net_met4 has 0 shapes.
 Copying layer net_met3
-Layer net_met3 has 24 shapes.
+Layer net_met3 has 20 shapes.
 Copying layer net_via2_metcap
 Layer net_via2_metcap has 0 shapes.
 Copying layer net_via2_met2
-Layer net_via2_met2 has 386 shapes.
+Layer net_via2_met2 has 464 shapes.
 Copying layer net_met2
-Layer net_met2 has 58 shapes.
+Layer net_met2 has 60 shapes.
 Copying layer net_via1
-Layer net_via1 has 2232 shapes.
+Layer net_via1 has 2350 shapes.
 Copying layer net_met1
-Layer net_met1 has 521 shapes.
+Layer net_met1 has 498 shapes.
 Copying layer net_poly2con
 Layer net_poly2con has 44 shapes.
 Copying layer net_poly2
 Layer net_poly2 has 3 shapes.
 Copying layer net_poly1con
-Layer net_poly1con has 970 shapes.
+Layer net_poly1con has 978 shapes.
 Copying layer net_poly1
-Layer net_poly1 has 222 shapes.
+Layer net_poly1 has 226 shapes.
 Copying layer net_pdiffcon
-Layer net_pdiffcon has 2189 shapes.
+Layer net_pdiffcon has 3392 shapes.
 Copying layer net_pdiff
-Layer net_pdiff has 62 shapes.
+Layer net_pdiff has 63 shapes.
 Copying layer net_ndiffcon
-Layer net_ndiffcon has 3792 shapes.
+Layer net_ndiffcon has 3768 shapes.
 Copying layer net_ndiff
-Layer net_ndiff has 250 shapes.
+Layer net_ndiff has 246 shapes.
 
 
 Summary for IL2244_VT26_LAYOUT_WS/opamp_ws_f/drc_extracted
@@ -8856,12 +8854,12 @@ instance count totals:
     lib              cell             view                    total
 
 extracted view creation completed
-cpu: 0.07  elap: 0  pf: 0  in: 0  out: 984  virt: 432M  phys: 856M
+cpu: 0.07  elap: 0  pf: 0  in: 0  out: 1072  virt: 434M  phys: 860M
 
 Finished /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/rcxToDfII
 
 
-Run ended: Tue Apr 28 12:34:55 2026
+Run ended: Tue Apr 28 17:39:20 2026
 
 *****  Assura terminated normally  *****
 
