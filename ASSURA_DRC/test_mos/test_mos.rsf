@@ -88,3 +88,19 @@ avParameters(
   ?overwrite t
   ?verbose "hideOptimization"
 )
+
+
+;----------------------------------------------------------------------------
+; Save Extracted View Section
+; Created by the Assura UI
+;----------------------------------------------------------------------------
+
+rcxParameters(
+  ?lvsExtractedCellView t
+  ?outputFormat "df2"
+  ?extractedView "drc_extracted"
+  ?runName "test_mos"
+             )
+setShellEnvVar("CDS_AUTO_CKOUT=all")
+avDX()
+avRCX()

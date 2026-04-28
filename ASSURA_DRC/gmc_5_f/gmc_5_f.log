@@ -6,7 +6,7 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:34 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/assura on Wed Apr 22 20:32:01 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/assura on Thu Apr 23 04:45:36 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -15,7 +15,7 @@ Starting /opt/tools/cadence/installs/ASSURA41_618//tools.lnx86/assura/bin/aveng 
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Wed Apr 22 20:32:01 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Thu Apr 23 04:45:36 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -7205,17 +7205,17 @@ Executing: bkgnd3 = geomOr(substrate_all)
 	   errorLayer(bkgnd3 "# INFO: C35B4/C35B3 ASSURA DRC DECK (REV9 DATE 26-Apr-2011) Last modified 07-Sept-2016 #")
 
 Finished running rules. Task processor time in main process:
-cpu: 0.76  elap: 1  pf: 0  in: 0  out: 3120  virt: 199M  phys: 1379M
+cpu: 0.74  elap: 0  pf: 0  in: 0  out: 3120  virt: 201M  phys: 1379M
 
 Started output post-processing ...
 
 Nothing to postprocess: No grid cells in the design
 
 Finished output post-processing
-cpu: 0.19  elap: 0  pf: 0  in: 0  out: 0  virt: 501M  phys: 1595M
+cpu: 0.20  elap: 1  pf: 0  in: 0  out: 0  virt: 501M  phys: 1598M
 
 Finished building the persistent database.
-cpu: 0.00  elap: 0  pf: 0  in: 0  out: 6480  virt: 504M  phys: 1608M
+cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6480  virt: 504M  phys: 1611M
 
 
 *****  aveng terminated normally  *****
@@ -7253,7 +7253,7 @@ Loading tech rule set file : /opt/pdk/ams/410/assura/c35b4/c35b4c3/techRuleSets
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/avrpt on Wed Apr 22 20:32:03 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/avrpt on Thu Apr 23 04:45:38 2026
 
 
    Creating Error Database 'gmc_5_f'...
@@ -7321,7 +7321,7 @@ Rule      Message                                    FlatCount     RealCount
 (   57)  rmet4 INFO : rmet4 does not open met4 fo            0            0
 (   58)  rvia3 INFO : rvia3 not opens met3/4 for             0            0
 (   59)  ERROR : POLY1 pin outside poly1                     0            0
-(   60)  ERROR : MET1 pin outside met1                       9            9
+(   60)  ERROR : MET1 pin outside met1                       0            0
 (   61)  ERROR : MET2 pin outside met2                       0            0
 (   62)  ERROR: PADTSV pin outside METTSV                    0            0
 (   63)  ERROR : MET3 pin outside met3                       0            0
@@ -8029,13 +8029,13 @@ Rule      Message                                    FlatCount     RealCount
 (  765)  ERC Warning: Floating Poly1                         0            0
 (  766)  ERC Warning: Floating Poly2                         0            0
 (  767)  ERC Warning: Floating met1                          0            0
-(  768)  ERC Warning: Floating met2                          9            9
+(  768)  ERC Warning: Floating met2                          0            0
 (  769)  ERC Warning: Floating met3                          0            0
 (  770)  ERC Warning: Floating met4                          0            0
 (  771)  ERC Warning: possible Z Diode                       0            0
 (  772)  ERC Warning: Gates connected to VDD/VCC             0            0
 (  773)  ERC Warning: Gates connected to VSS/GND            28           28
-(  774)  ERC Warning: floating gate not connected           89           25
+(  774)  ERC Warning: floating gate not connected            0            0
 (  775)  ERC Warning: Distance well taps > 50                0            0
 (  776)  ERC Warning: illegal contact covering po            0            0
 (  777)  ERC Warning: illegal contact covering po            0            0
@@ -8739,22 +8739,19 @@ Rule      Message                                    FlatCount     RealCount
 ( 1475)  spiral_open_spiral_term22: ERC Warning :            0            0
 ( 1476)  # INFO: C35B4/C35B3 ASSURA DRC DECK (REV            1            1
 --------------------------------------------------------------------------------
-Total  errors:                                             184           90
+Total  errors:                                              77           47
 --------------------------------------------------------------------------------
 
    Finished creating Error Database ...
 
    Writing Report into /home/saul/projects/IL2244_VT26_SAUL/ASSURA_DRC/gmc_5_f/gmc_5_f.err ...
-   Rule 60 done.
    Rule 421 done.
    Rule 510 done.
    Rule 521 done.
    Rule 532 done.
    Rule 544 done.
    Rule 719 done.
-   Rule 768 done.
    Rule 773 done.
-   Rule 774 done.
    Rule 1476 done.
 
 avrpt cpu sec:    0.19  elapsed:     0  virtual:    93M
@@ -8796,7 +8793,7 @@ Virtuoso Framework License (111) was checked out successfully. Total checkout ti
 @(#)$CDS: rcxToDfII_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:40 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/rcxToDfII on Wed Apr 22 20:32:03 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/rcxToDfII on Thu Apr 23 04:45:38 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -8822,17 +8819,17 @@ Layer net_via3 has 8 shapes.
 Copying layer net_met4
 Layer net_met4 has 1 shapes.
 Copying layer net_met3
-Layer net_met3 has 44 shapes.
+Layer net_met3 has 48 shapes.
 Copying layer net_via2_metcap
 Layer net_via2_metcap has 0 shapes.
 Copying layer net_via2_met2
-Layer net_via2_met2 has 2979 shapes.
+Layer net_via2_met2 has 3006 shapes.
 Copying layer net_met2
-Layer net_met2 has 141 shapes.
+Layer net_met2 has 136 shapes.
 Copying layer net_via1
-Layer net_via1 has 3146 shapes.
+Layer net_via1 has 3156 shapes.
 Copying layer net_met1
-Layer net_met1 has 576 shapes.
+Layer net_met1 has 567 shapes.
 Copying layer net_poly2con
 Layer net_poly2con has 1468 shapes.
 Copying layer net_poly2
@@ -8858,12 +8855,12 @@ instance count totals:
     lib              cell             view                    total
 
 extracted view creation completed
-cpu: 0.10  elap: 0  pf: 0  in: 0  out: 2256  virt: 438M  phys: 875M
+cpu: 0.11  elap: 0  pf: 0  in: 0  out: 2256  virt: 438M  phys: 875M
 
 Finished /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/rcxToDfII
 
 
-Run ended: Wed Apr 22 20:32:03 2026
+Run ended: Thu Apr 23 04:45:38 2026
 
 *****  Assura terminated normally  *****
 

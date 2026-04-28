@@ -5,7 +5,7 @@
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Mon Apr 20 05:27:26 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Mon Apr 27 08:15:30 2026
 
 Echoing run specific file...
     ;----------------------------------------------------------------------------
@@ -98,13 +98,29 @@ Echoing run specific file...
       ?overwrite t
       ?verbose "hideOptimization"
     )
+    
+    
+    ;----------------------------------------------------------------------------
+    ; Save Extracted View Section
+    ; Created by the Assura UI
+    ;----------------------------------------------------------------------------
+    
+    rcxParameters(
+      ?lvsExtractedCellView t
+      ?outputFormat "df2"
+      ?extractedView "drc_extracted"
+      ?runName "test_mos"
+                 )
+    setShellEnvVar("CDS_AUTO_CKOUT=all")
+    avDX()
+    avRCX()
 
 
 ************************************************************************
 
                   Time Summary - Database
 
-reading DFII data. . . .      0 cpu      0 elap 5190.1M virt     749 pf
+reading DFII data. . . .      0 cpu      0 elap 4686.9M virt       1 pf
 duplicate inst removal .      0 cpu      0 elap  171.9M virt       0 pf
 cell boundary layer. . .      0 cpu      0 elap  171.9M virt       0 pf
 small cell flattening. .      0 cpu      0 elap  171.9M virt       0 pf
@@ -117,7 +133,6 @@ extended dup inst remove      0 cpu      0 elap  171.9M virt       0 pf
 cell repetition analysis      0 cpu      0 elap  171.9M virt       0 pf
 enclosing polygon proc .      0 cpu      0 elap  171.9M virt       0 pf
 building avGrids . . . .      0 cpu      0 elap  171.9M virt       0 pf
-array analysis . . . . .      0 cpu      0 elap  171.9M virt       0 pf
 overlapping array proc .      0 cpu      0 elap  174.4M virt       0 pf
 small cell flattening. .      0 cpu      0 elap  174.4M virt       0 pf
 small cell flattening. .      0 cpu      0 elap  174.4M virt       0 pf
@@ -127,7 +142,7 @@ duplicate cell removal .      0 cpu      0 elap  174.4M virt       0 pf
 create background layer.      0 cpu      0 elap  174.4M virt       0 pf
 final VDB processing . .      0 cpu      0 elap  174.4M virt       0 pf
 -----------------------------------------------------------------------
-TOTALS (secs). . . . . .      0 cpu      0 elap 5190.1M virt     749 pf
+TOTALS (secs). . . . . .      0 cpu      0 elap 4686.9M virt       1 pf
 
 
 ************************************************************************
@@ -512,7 +527,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 5190.1M virt     749 pf
 
  ;# 95
     POLY1 = geomOr( POLY1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 5
 
  ;# 96
     dataReduction( POLY1 ) 
@@ -520,7 +535,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 5190.1M virt     749 pf
 
  ;# 97
  ;  region( POLY1 )
-    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 5
 
  ;# 98
     PO1CUT = geomOr( PO1CUT ) 
@@ -532,7 +547,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 5190.1M virt     749 pf
 
  ;# 100
     poly1_cut = geomAndNot( POLY1 PO1CUT ) 
-    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 5
 
  ;# 101
     dataReduction( poly1_cut ) 
@@ -540,7 +555,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 5190.1M virt     749 pf
 
  ;# 102
  ;  region( poly1_cut )
-    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 5
 
  ;# 103
     POLY2 = geomOr( POLY2 ) 
@@ -580,7 +595,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 5190.1M virt     749 pf
 
  ;# 112
     poly1_n_poly2 = geomAndNot( poly1_cut poly2_cut ) 
-    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 5
 
  ;# 113
     dataReduction( poly1_n_poly2 ) 
@@ -1459,7 +1474,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 5190.1M virt     749 pf
 
  ;# 331
     T?283 = geomAndNot( poly1_cut pres1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 5
 
  ;# 332
     dataReduction( T?283 ) 
@@ -1467,7 +1482,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 5190.1M virt     749 pf
 
  ;# 333
     net_poly1 = geomAndNot( T?283 pfuse ) 
-    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 5
 
  ;# 334
     dataReduction( net_poly1 ) 
@@ -1475,7 +1490,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 5190.1M virt     749 pf
 
  ;# 335
  ;  region( net_poly1 )
-    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 5
 
  ;# 336
     poly2_1 = geomAndNot( poly2_cut pres ) 
@@ -2091,7 +2106,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 5190.1M virt     749 pf
 
  ;# 489
     routp_n_trans = geomAndNot( net_poly1 trans ) 
-    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 15
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 17
 
  ;# 490
     dataReduction( routp_n_trans ) 
@@ -2099,7 +2114,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 5190.1M virt     749 pf
 
  ;# 491
  ;  region( routp_n_trans )
-    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 15
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 17
 
  ;# 492
     waffle_poly1_1 = geomGetHoled( net_poly1 ) 
@@ -5009,7 +5024,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 5190.1M virt     749 pf
 
  ;# 1216
     T?770 = geomAndNot( POLY1 T?769 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 5
 
  ;# 1217
     dataReduction( T?770 ) 
@@ -5017,11 +5032,11 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 5190.1M virt     749 pf
 
  ;# 1218
  ;  region( T?770 )
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 5
 
  ;# 1219
     poly1check  = geomGetEdge( T?770 outside pres145 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 48
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 56
 
  ;# 1220
     dataReduction( poly1check ) 
@@ -5361,7 +5376,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 5190.1M virt     749 pf
 
  ;# 1304
     p1_or_p2 = geomOr( POLY1 POLY2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 5
 
  ;# 1305
     dataReduction( p1_or_p2 ) 
@@ -5369,7 +5384,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 5190.1M virt     749 pf
 
  ;# 1306
     diff_or_poly = geomOr( DIFF p1_or_p2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 5
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 7
 
  ;# 1307
     dataReduction( diff_or_poly ) 
@@ -9675,7 +9690,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 5190.1M virt     749 pf
 
  ;# 2377
     p1_not_bondpad = geomAvoiding( POLY1 net_bondpad ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 5
 
  ;# 2378
     dataReduction( p1_not_bondpad ) 
@@ -9802,7 +9817,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 5190.1M virt     749 pf
 
  ;# 2407
     net_poly1 = geomOr( net_poly1 POLY1_pinshape ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 5
 
  ;# 2408
     dataReduction( net_poly1 ) 
@@ -9810,7 +9825,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 5190.1M virt     749 pf
 
  ;# 2409
  ;  region( net_poly1 )
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 5
 
  ;# 2410
     net_met1 = geomOr( net_met1 MET1_pinshape ) 
@@ -28524,7 +28539,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 5190.1M virt     749 pf
 
  ;# 6996
     poly1_field = geomAndNot( POLY1 gate ) 
-    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 15
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 17
 
  ;# 6997
     dataReduction( poly1_field ) 
@@ -28532,7 +28547,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 5190.1M virt     749 pf
 
  ;# 6998
  ;  region( poly1_field )
-    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 15
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 17
 
  ;# 6999
     T?4736 = drc( poly1_field width < 0.35 "width_poly_pow3 = drc(poly1_field (width < 0.35))" ) 
@@ -28544,16 +28559,16 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 5190.1M virt     749 pf
 
  ;# 7001
     T?4739 = drc( POLY1 sep < 0.45 "spac_poly1_pos1 = drc(POLY1 (sep < 0.45))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 1
 
  ;# 7002
     spac_poly1_pos1 = drcWidenZeroAreaErrorRegion( T?4739 "PO_S_1 Minimum POLY1 spacing = 0.45 " ) 
-    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 1
 
  ;# 7003
     spac_poly1_notch_pos1 = drc( poly1check sep < 0.45 opposite "spac_poly1_notch_pos1 = drc(poly1check (notch < 0.45) opposite)" )
     errorLayer( spac_poly1_notch_pos1 "PO_S_1 Minimum POLY1 spacing = 0.45 notch" ) 
-    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 1
 
  ;# 7004
     T?4743 = drc( POLY1 DIFF sep < 0.2 "spac_diff_poly_poc1 = drc(POLY1 DIFF (sep < 0.2))" ) 
@@ -41369,7 +41384,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 5190.1M virt     749 pf
  ;# 10173
     ill_poly1_floating_erc = geomAvoiding( poly1_cut net_poly1con  )
     errorLayer( ill_poly1_floating_erc "ERC Warning: Floating Poly1" ) 
-    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 5
 
  ;# 10174
     ill_poly2_floating_erc = geomAvoiding( poly2_cut net_poly2con  )
@@ -51350,7 +51365,7 @@ processCoverage( withinLayer( bLayer_mttv ) precision = 6 backup
 
  ;# 12548
     poly1_copy1 = geomOr( net_poly1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 5
 
  ;# 12549
     dataReduction( poly1_copy1 ) 
@@ -51358,7 +51373,7 @@ processCoverage( withinLayer( bLayer_mttv ) precision = 6 backup
 
  ;# 12550
     poly1_copy2 = geomCat( poly1_copy1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 5
 
  ;# 12551
     dataReduction( poly1_copy2 ) 
@@ -51366,7 +51381,7 @@ processCoverage( withinLayer( bLayer_mttv ) precision = 6 backup
 
  ;# 12552
  ;  region( poly1_copy2 )
-    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 5
 
  ;# 12553
     poly1_copy1 = groupVias(  via(poly1_copy1) conn1(net_poly1) conn2(poly1_copy2) )
@@ -51378,7 +51393,7 @@ processCoverage( withinLayer( bLayer_mttv ) precision = 6 backup
 
  ;# 12555
  ;  region( poly1_copy1 )
-    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 5
 
  ;# 12556
     geomFlushConnect( net_via1 net_via2_met2 net_via3 net_met1 net_met2 net_met3 net_met4 net_ndiff_stamp net_pdiff_stamp net_ndiffcon net_pdiffcon )
@@ -51386,18 +51401,18 @@ processCoverage( withinLayer( bLayer_mttv ) precision = 6 backup
 
  ;# 12557
  ;  via( poly1_copy1 net_poly1 )
-    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 5
 
  ;# 12558
  ;  via( poly1_copy1 poly1_copy2 )
-    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 5
 
  ;# 12559
     mustJoinNet()
     geomConnect(
         via( poly1_copy1 net_poly1 poly1_copy2 )
     ) 
-    cpu: 0.0   elapsed: 0   virtual: 233M   task sum: 3
+    cpu: 0.0   elapsed: 0   virtual: 233M   task sum: 5
 
  ;# 12560
     gate_T?9349 = geomCat( gate ) 
@@ -51422,7 +51437,7 @@ processCoverage( withinLayer( bLayer_mttv ) precision = 6 backup
         poly1Ratio = ( net_poly1.perimeter * 0.282 ) / gate_T?9349.area 
         AR1_error = drcAntenna( net_poly1 ( gate_T?9349 ) poly1Ratio  200 < keep "AR1: Maximum ratio of floating POLY1 edge area to connected GATE area = 200" ) 
     )
-    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 12565
     geomFlushConnect( net_poly1 poly1_copy1 poly1_copy2 gate_T?9349 )
@@ -52157,7 +52172,7 @@ processCoverage( withinLayer( bLayer_mttv ) precision = 6 backup
         spirRatio = spiral_term11.area / spiral_term22.area 
         spiral_open = drcAntenna( spiral_term11 ( spiral_term22 ) spirRatio  0.1 < ignore < 2 "ERC Warning : This spiral is open" ) 
     )
-    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 12713
     bkgnd3 = geomOr( substrate_all  )
@@ -52173,8 +52188,8 @@ Total cells checked = 1
 Total rules checked = 12713
 
 Run time =  1.00 seconds
-CPU time =  0.67 seconds
-VM HWM   =  5190 Mbytes
+CPU time =  0.64 seconds
+VM HWM   =  4687 Mbytes
 Disk HWM =     0 Mbytes
 Disk end =     0 Mbytes
 Eman HWM =     0 Mbytes

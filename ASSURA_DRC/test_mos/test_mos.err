@@ -21,6 +21,50 @@ Shape               Environments Status & Error Marker
    1      X        1.900     12.550     17.850     52.950
 
 ================================================================================
+Rule No. 452 : PO_S_1 Minimum POLY1 spacing = 0.45 
+
+Real Error Count : 1; Flat Error Count : 1
+================================================================================
+
+--------------------------------------------------------------------------------
+Cell Name : test_mos layout TEST
+
+                   Cell Errors    Real Errors   Cell Placements     Environments
+                             1              1                 1                1
+--------------------------------------------------------------------------------
+Env.  Env. Placements            X1           Y1          X2           Y2
+
+  1        1                 15.050       42.700      15.100       48.600
+
+Shape               Environments Status & Error Marker 
+
+          1           X1         Y1         X2         Y2
+
+   1      X       15.050     42.700     15.100     48.600
+
+================================================================================
+Rule No. 453 : PO_S_1 Minimum POLY1 spacing = 0.45 notch
+
+Real Error Count : 1; Flat Error Count : 1
+================================================================================
+
+--------------------------------------------------------------------------------
+Cell Name : test_mos layout TEST
+
+                   Cell Errors    Real Errors   Cell Placements     Environments
+                             1              1                 1                1
+--------------------------------------------------------------------------------
+Env.  Env. Placements            X1           Y1          X2           Y2
+
+  1        1                 15.050       42.700      15.100       48.600
+
+Shape               Environments Status & Error Marker 
+
+          1           X1         Y1         X2         Y2
+
+   1      X       15.050     42.700     15.100     48.600
+
+================================================================================
 Rule No. 457 : PO_R_1 Minimum density of POLY1 area [%] = 14
 
 Real Error Count : 1; Flat Error Count : 2
@@ -67,18 +111,18 @@ Shape               Environments Status & Error Marker
 ================================================================================
 Rule No. 765 : ERC Warning: Floating Poly1
 
-Real Error Count : 3; Flat Error Count : 3
+Real Error Count : 5; Flat Error Count : 5
 ================================================================================
 
 --------------------------------------------------------------------------------
 Cell Name : test_mos layout TEST
 
                    Cell Errors    Real Errors   Cell Placements     Environments
-                             3              3                 1                1
+                             5              5                 1                1
 --------------------------------------------------------------------------------
 Env.  Env. Placements            X1           Y1          X2           Y2
 
-  1        1                  3.000       15.800      15.500       52.950
+  1        1                  3.000       15.800      16.250       52.950
 
 Shape               Environments Status & Error Marker 
 
@@ -87,6 +131,8 @@ Shape               Environments Status & Error Marker
    1      X        3.000     15.800     15.500     21.750
    2      X        3.000     47.150      4.000     52.950
    3      X        7.050     47.150      8.050     52.950
+   4      X       13.900     42.700     15.050     48.600
+   5      X       15.100     42.700     16.250     48.600
 
 ================================================================================
 Rule No. 774 : ERC Warning: floating gate not connected to s/d, pad or resistor

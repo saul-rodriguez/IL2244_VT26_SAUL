@@ -6,16 +6,16 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:34 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/assura on Mon Apr 20 05:27:26 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/assura on Mon Apr 27 08:15:30 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
 
-Starting /opt/tools/cadence/installs/ASSURA41_618//tools.lnx86/assura/bin/aveng /home/saul/projects/IL2244_VT26_SAUL/ASSURA_DRC/test_mos/test_mos.rsf -restart -cdslib /home/saul/projects/IL2244_VT26_SAUL/cds.lib
+Starting /opt/tools/cadence/installs/ASSURA41_618//tools.lnx86/assura/bin/aveng /home/saul/projects/IL2244_VT26_SAUL/ASSURA_DRC/test_mos/test_mos.rsf -restart -exec1 -cdslib /home/saul/projects/IL2244_VT26_SAUL/cds.lib
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Mon Apr 20 05:27:26 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Mon Apr 27 08:15:30 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -60,7 +60,7 @@ Loading tech rule set file : /opt/pdk/ams/410/assura/c35b4/c35b4c3/techRuleSets
  Cell Name     : test_mos
  View Name     : layout
  Rules File    : /opt/pdk/ams/410/assura/c35b4/c35b4c3/drc.rul
- Options       : -restart -cdslib /home/saul/projects/IL2244_VT26_SAUL/cds.lib 
+ Options       : -restart -exec1 -cdslib /home/saul/projects/IL2244_VT26_SAUL/cds.lib 
  Work Directory: /home/saul/projects/IL2244_VT26_SAUL/ASSURA_DRC/test_mos
  Operating Mode: Legacy Mode is Off
 
@@ -87,7 +87,7 @@ Running in restart mode.
 
 
 Finished building the VDB. VDB build times for main process:
-cpu: 0.12  elap: 0  pf: 0  in: 0  out: 40  virt: 172M  phys: 831M
+cpu: 0.10  elap: 1  pf: 0  in: 0  out: 40  virt: 172M  phys: 832M
 
 Running the Task Processor, 1 cells, 12713 steps...
 
@@ -7203,17 +7203,17 @@ Executing: bkgnd3 = geomOr(substrate_all)
 	   errorLayer(bkgnd3 "# INFO: C35B4/C35B3 ASSURA DRC DECK (REV9 DATE 26-Apr-2011) Last modified 07-Sept-2016 #")
 
 Finished running rules. Task processor time in main process:
-cpu: 0.35  elap: 1  pf: 0  in: 0  out: 3112  virt: 199M  phys: 1364M
+cpu: 0.34  elap: 0  pf: 0  in: 0  out: 3112  virt: 199M  phys: 1367M
 
 Started output post-processing ...
 
 Nothing to postprocess: No grid cells in the design
 
 Finished output post-processing
-cpu: 0.19  elap: 0  pf: 0  in: 0  out: 0  virt: 496M  phys: 1584M
+cpu: 0.19  elap: 0  pf: 0  in: 0  out: 0  virt: 496M  phys: 1586M
 
 Finished building the persistent database.
-cpu: 0.00  elap: 0  pf: 0  in: 0  out: 6464  virt: 501M  phys: 1596M
+cpu: 0.00  elap: 0  pf: 0  in: 0  out: 6464  virt: 501M  phys: 1598M
 
 
 *****  aveng terminated normally  *****
@@ -7221,7 +7221,7 @@ cpu: 0.00  elap: 0  pf: 0  in: 0  out: 6464  virt: 501M  phys: 1596M
 
 Finished /opt/tools/cadence/installs/ASSURA41_618//tools.lnx86/assura/bin/aveng
 
-Starting /opt/tools/cadence/installs/ASSURA41_618//tools.lnx86/assura/bin/avrpt /home/saul/projects/IL2244_VT26_SAUL/ASSURA_DRC/test_mos/test_mos.rsf
+Starting /opt/tools/cadence/installs/ASSURA41_618//tools.lnx86/assura/bin/avrpt /home/saul/projects/IL2244_VT26_SAUL/ASSURA_DRC/test_mos/test_mos.rsf -exec1
 Loading all available p-cell functions
 AMS_DB set to cds
 *WARNING* No technology dir found at /opt/pdk/ams/410/assura/c35b4/c35b4o7
@@ -7251,7 +7251,7 @@ Loading tech rule set file : /opt/pdk/ams/410/assura/c35b4/c35b4c3/techRuleSets
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/avrpt on Mon Apr 20 05:27:27 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/avrpt on Mon Apr 27 08:15:31 2026
 
 
    Creating Error Database 'test_mos'...
@@ -7711,8 +7711,8 @@ Rule      Message                                    FlatCount     RealCount
 (  449)  PO_W_2a Minimum GATE length of NMOS = 0.            0            0
 (  450)  PO_W_2b Minimum GATE length of NMOSM = 0            0            0
 (  451)  PO_W_3 Minimum POLY1 width for interconn            0            0
-(  452)  PO_S_1 Minimum POLY1 spacing = 0.45                 0            0
-(  453)  PO_S_1 Minimum POLY1 spacing = 0.45 notc            0            0
+(  452)  PO_S_1 Minimum POLY1 spacing = 0.45                 1            1
+(  453)  PO_S_1 Minimum POLY1 spacing = 0.45 notc            1            1
 (  454)  PO_C_1 Minimum POLY1 to DIFF spacing = 0            0            0
 (  455)  PO_C_2 Minimum DIFF extension of GATE =             0            0
 (  456)  PO_O_1 Minimum POLY1 extension of GATE =            0            0
@@ -8024,7 +8024,7 @@ Rule      Message                                    FlatCount     RealCount
 (  762)  Warning: Illegal Layout Convention: RESD            0            0
 (  763)  Warning: Illegal Layout Convention: REST            0            0
 (  764)  ERC Warning: DIFF without any contact               0            0
-(  765)  ERC Warning: Floating Poly1                         3            3
+(  765)  ERC Warning: Floating Poly1                         5            5
 (  766)  ERC Warning: Floating Poly2                         0            0
 (  767)  ERC Warning: Floating met1                          0            0
 (  768)  ERC Warning: Floating met2                          0            0
@@ -8737,13 +8737,15 @@ Rule      Message                                    FlatCount     RealCount
 ( 1475)  spiral_open_spiral_term22: ERC Warning :            0            0
 ( 1476)  # INFO: C35B4/C35B3 ASSURA DRC DECK (REV            1            1
 --------------------------------------------------------------------------------
-Total  errors:                                              36           34
+Total  errors:                                              40           38
 --------------------------------------------------------------------------------
 
    Finished creating Error Database ...
 
    Writing Report into /home/saul/projects/IL2244_VT26_SAUL/ASSURA_DRC/test_mos/test_mos.err ...
    Rule 66 done.
+   Rule 452 done.
+   Rule 453 done.
    Rule 457 done.
    Rule 510 done.
    Rule 765 done.
@@ -8751,11 +8753,11 @@ Total  errors:                                              36           34
    Rule 790 done.
    Rule 1476 done.
 
-avrpt cpu sec:    0.20  elapsed:     0  virtual:    93M
+avrpt cpu sec:    0.20  elapsed:     1  virtual:    93M
 
 Finished /opt/tools/cadence/installs/ASSURA41_618//tools.lnx86/assura/bin/avrpt
 
-Starting /opt/tools/cadence/installs/ASSURA41_618//tools.lnx86/assura/bin/avcallproc /home/saul/projects/IL2244_VT26_SAUL/ASSURA_DRC/test_mos/test_mos.rsf -restart -cdslib /home/saul/projects/IL2244_VT26_SAUL/cds.lib
+Starting /opt/tools/cadence/installs/ASSURA41_618//tools.lnx86/assura/bin/avcallproc /home/saul/projects/IL2244_VT26_SAUL/ASSURA_DRC/test_mos/test_mos.rsf -restart -exec1 -cdslib /home/saul/projects/IL2244_VT26_SAUL/cds.lib
 Loading all available p-cell functions
 AMS_DB set to cds
 *WARNING* No technology dir found at /opt/pdk/ams/410/assura/c35b4/c35b4o7
@@ -8785,8 +8787,79 @@ Loading tech rule set file : /opt/pdk/ams/410/assura/c35b4/c35b4c3/techRuleSets
 
 Finished /opt/tools/cadence/installs/ASSURA41_618//tools.lnx86/assura/bin/avcallproc
 
+Starting /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/rcxToDfII /home/saul/projects/IL2244_VT26_SAUL/ASSURA_DRC/test_mos/test_mos.rsf -l -cdslib /home/saul/projects/IL2244_VT26_SAUL/cds.lib
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.01s.
+@(#)$CDS: rcxToDfII_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:40 (sjfhw885) $
+sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-Run ended: Mon Apr 20 05:27:27 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/rcxToDfII on Mon Apr 27 08:15:32 2026
+
+Loading all available p-cell functions
+AMS_DB set to cds
+*WARNING* No technology dir found at /opt/pdk/ams/410/assura/c35b4/c35b4o7
+	  Defined in assura_tech map file /opt/pdk/ams/410/assura/c35b4/assura_tech.lib at line 20
+*WARNING* No technology dir found at /opt/pdk/ams/410/assura/c35b4/c35b4l7
+	  Defined in assura_tech map file /opt/pdk/ams/410/assura/c35b4/assura_tech.lib at line 21
+*WARNING* No technology dir found at /opt/pdk/ams/410/assura/c35b4/c35b4o7
+	  Defined in assura_tech map file /opt/pdk/ams/410/assura/c35b4/assura_tech.lib at line 20
+*WARNING* No technology dir found at /opt/pdk/ams/410/assura/c35b4/c35b4l7
+	  Defined in assura_tech map file /opt/pdk/ams/410/assura/c35b4/assura_tech.lib at line 21
+
+Loading tech rule set file : /opt/pdk/ams/410/assura/c35b4/c35b4c3/techRuleSets
+
+*WARNING* Failed to open xref db. Only layout names used.
+
+Creating extracted view for TEST test_mos layout
+
+Copying layer METTSV
+Layer METTSV has 0 shapes.
+Copying layer net_via3
+Layer net_via3 has 0 shapes.
+Copying layer net_met4
+Layer net_met4 has 0 shapes.
+Copying layer net_met3
+Layer net_met3 has 0 shapes.
+Copying layer net_via2_metcap
+Layer net_via2_metcap has 0 shapes.
+Copying layer net_via2_met2
+Layer net_via2_met2 has 0 shapes.
+Copying layer net_met2
+Layer net_met2 has 0 shapes.
+Copying layer net_via1
+Layer net_via1 has 0 shapes.
+Copying layer net_met1
+Layer net_met1 has 6 shapes.
+Copying layer net_poly2con
+Layer net_poly2con has 0 shapes.
+Copying layer net_poly2
+Layer net_poly2 has 0 shapes.
+Copying layer net_poly1con
+Layer net_poly1con has 0 shapes.
+Copying layer net_poly1
+Layer net_poly1 has 5 shapes.
+Copying layer net_pdiffcon
+Layer net_pdiffcon has 0 shapes.
+Copying layer net_pdiff
+Layer net_pdiff has 0 shapes.
+Copying layer net_ndiffcon
+Layer net_ndiffcon has 90 shapes.
+Copying layer net_ndiff
+Layer net_ndiff has 15 shapes.
+
+
+Summary for TEST/test_mos/drc_extracted
+
+instance count totals:
+
+    lib              cell             view                    total
+
+extracted view creation completed
+cpu: 0.05  elap: 0  pf: 0  in: 0  out: 256  virt: 430M  phys: 842M
+
+Finished /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/rcxToDfII
+
+
+Run ended: Mon Apr 27 08:15:32 2026
 
 *****  Assura terminated normally  *****
 
