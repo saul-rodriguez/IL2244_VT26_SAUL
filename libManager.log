@@ -1,6 +1,6 @@
 \o Program:		@(#)$CDS: libManager version 6.1.8 - CAT37 04/25/2024 14:34 (csvcm36c-7) $
 \o Sub version:		sub-version  s364 
-\o Arguments:		-mpssession virtuoso4131696 -mpshost edatools 
+\o Arguments:		-mpssession virtuoso4149184 -mpshost edatools 
 \o Working Directory:	edatools:/home/saul/projects/IL2244_VT26_SAUL
 \o 64-bit offsets
 \o Qt version: 		5.9.1
@@ -13,14 +13,48 @@
 \o ddSetForcedLib("") unnecessary.
 \o MPS service: map window
 \o Library Manager customization server connected.
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrResizeWindow(cdsLibManager list(0 41 710 770))
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = "IL2244_VT26_LAYOUT_WS"
+\a cdsLibManager->libLineEdit->value = "IL2244_VT26_LAYOUT_WS"
+\a cdsLibManager->cellListBox->value = "opamp_ws_tb"
+\a cdsLibManager->cellLineEdit->value = "opamp_ws_tb"
+\a cdsLibManager->cellListBox->value = "opamp_ws_f"
+\a cdsLibManager->cellLineEdit->value = "opamp_ws_f"
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellListBox->value = "opamp_ws_f"
+\a cdsLibManager->cellLineEdit->value = "opamp_ws_f"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->cellListBox 1 0)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->libListBox->value = "IL2244_VT26_LAYOUT_WS"
 \a cdsLibManager->libLineEdit->value = "IL2244_VT26_LAYOUT_WS"
 \a cdsLibManager->cellListBox->value = "opamp_ws_f"
 \a cdsLibManager->cellLineEdit->value = "opamp_ws_f"
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->libListBox->value = nil
+\a cdsLibManager->libLineEdit->value = ""
+\a cdsLibManager->cellLineEdit->value = ""
+\a cdsLibManager->cellListBox->value = nil
+\a cdsLibManager->libListBox->value = "IL2244_VT26_LAYOUT_WS"
+\a cdsLibManager->libLineEdit->value = "IL2244_VT26_LAYOUT_WS"
+\a cdsLibManager->cellListBox->value = "opamp_ws_f"
+\a cdsLibManager->cellLineEdit->value = "opamp_ws_f"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \o MPS request: edit design
-\a nrListItemAction(cdsLibManager->gdmXTView 3 0)
+\a nrListItemAction(cdsLibManager->gdmXTView 4 0)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = nil
@@ -40,6 +74,13 @@
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->cellListBox->value = "opamp_ws_tb"
+\a cdsLibManager->cellLineEdit->value = "opamp_ws_tb"
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewListBox->value = "schematic"
+\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->FileNewCVButton->value = t
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
@@ -48,14 +89,21 @@
 \a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->libListBox->value = "IL2244_VT26_LAYOUT_WS"
 \a cdsLibManager->libLineEdit->value = "IL2244_VT26_LAYOUT_WS"
-\a cdsLibManager->cellListBox->value = "opamp_ws_f"
-\a cdsLibManager->cellLineEdit->value = "opamp_ws_f"
+\a cdsLibManager->cellListBox->value = "opamp_ws_tb"
+\a cdsLibManager->cellLineEdit->value = "opamp_ws_tb"
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
 \a cdsLibManager->viewListBox->value = "schematic"
 \a cdsLibManager->viewLineEdit->value = "schematic"
+\a nrSetCurrentWindow(cdsLibManager)
+\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
+\a nrSetCurrentWindow(cdsLibManager)
 \a cdsLibManager->libListBox->value = nil
 \a cdsLibManager->libLineEdit->value = ""
 \a cdsLibManager->cellListBox->value = nil
@@ -64,22 +112,21 @@
 \a cdsLibManager->cellLineEdit->value = ""
 \a cdsLibManager->libListBox->value = "IL2244_VT26_LAYOUT_WS"
 \a cdsLibManager->libLineEdit->value = "IL2244_VT26_LAYOUT_WS"
-\a cdsLibManager->cellListBox->value = "opamp_ws_f"
-\a cdsLibManager->cellLineEdit->value = "opamp_ws_f"
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->cellListBox->value = "opamp_ws_tb"
+\a cdsLibManager->cellLineEdit->value = "opamp_ws_tb"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
 \a cdsLibManager->viewLineEdit->value = ""
 \a cdsLibManager->viewListBox->value = nil
-\a cdsLibManager->viewListBox->value = "schematic"
-\a cdsLibManager->viewLineEdit->value = "schematic"
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
 \a nrSetCurrentWindow(cdsLibManager)
-\a cdsLibManager->viewListBox->value = "av_extracted"
-\a cdsLibManager->viewLineEdit->value = "av_extracted"
-\a lmgrLogShowPopup("mainListPopup2" 61 3 2 "av_extracted")
-\a cdsLibManager->FileOpenROButton->value = t
-\o MPS request: open design readonly
-\a nrSetCurrentWindow(cdsLibManager)
-\a nrSetCurrentWindow(cdsLibManager)
+\a cdsLibManager->viewListBox->value = nil
+\a cdsLibManager->viewLineEdit->value = ""
+\a cdsLibManager->viewListBox->value = "config"
+\a cdsLibManager->viewLineEdit->value = "config"
+\o MPS request: edit design
+\a nrListItemAction(cdsLibManager->gdmXTView 0 0)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)
 \a nrSetCurrentWindow(cdsLibManager)

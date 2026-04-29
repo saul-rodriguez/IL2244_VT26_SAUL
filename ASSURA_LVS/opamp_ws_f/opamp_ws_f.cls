@@ -7,16 +7,18 @@ Filter/Reduce statistics only. Network matching was OK.
 Pre-expand Statistics                      
 ======================                          Original       
 Cell/Device                               schematic  layout
+(CVAR) Generic                                    4       1*
 (RPOLYH) RES                                      1       1
 (cpolyc schematic PRIMLIB, _) Cell                1       0*
 (PMOS4) MOS                                      13       8*
 (NMOS4) MOS                                     116      26*
+(_, cvar layout PRIMLIB col=12 ro...) Cell        0       3*
 (_, nmos4 layout PRIMLIB l="5u" w...) Cell        0      36*
 (_, nmos4 layout PRIMLIB jd=FALSE...) Cell        0       2*
 (_, pmos4 layout PRIMLIB l="10u" ...) Cell        0      12*
 (CPOLYA) CAP                                      0       1*
                                              ------  ------
-Total                                           131      86
+Total                                           135      90
 
 Reduce Statistics
 =================                               Original             Reduced
@@ -25,7 +27,8 @@ Cell/Device                               schematic  layout   schematic  layout
 (PMOS4) MOS                                      13      20*          4       4
 (RPOLYH) RES                                      1       1           1       1
 (CPOLYA) CAP                                      1       1           1       1
+(CVAR) Generic                                    4       4           4       4
                                              ------  ------      ------  ------
-Total                                           131     140          15      15
+Total                                           135     144          19      19
 
 Schematic and Layout Match

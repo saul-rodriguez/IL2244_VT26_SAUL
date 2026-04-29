@@ -6,7 +6,7 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:34 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/assura on Tue Apr 28 17:40:45 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/assura on Wed Apr 29 04:52:10 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -15,7 +15,7 @@ Starting /opt/tools/cadence/installs/ASSURA41_618//tools.lnx86/assura/bin/aveng 
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Tue Apr 28 17:40:45 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Wed Apr 29 04:52:10 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -70,7 +70,7 @@ Virtuoso Framework License (111) was checked out successfully. Total checkout ti
 @(#)$CDS: dfIIToVdb_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:38 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/dfIIToVdb on Tue Apr 28 17:40:45 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/dfIIToVdb on Wed Apr 29 04:52:10 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -149,7 +149,7 @@ Checking out license for Pegasus_LVS_SP
 Checking out license for Pegasus_LVS
 @(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:39 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
-run on edatools at Tue Apr 28 17:40:46 2026
+run on edatools at Wed Apr 29 04:52:11 2026
 Loading all available p-cell functions
 AMS_DB set to cds
 Reading schematic network
@@ -158,7 +158,7 @@ Virtuoso Framework License (111) was checked out successfully. Total checkout ti
 @(#)$CDS: dfIIToVldb_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:38 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/dfIIToVldb on Tue Apr 28 17:40:46 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/dfIIToVldb on Wed Apr 29 04:52:11 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -183,11 +183,11 @@ Top Cell View: "schematic"
 Output Data Base Name: "/home/saul/projects/IL2244_VT26_SAUL/ASSURA_LVS/opamp_ws_f/opamp_ws_f.sdb"
 Simulator Name: "auCdl"
 Failed to obtain license for "Assura_LVS". 
-Checking out license for Phys_Ver_Sys_LVS_XL
 ERROR (LMF-02005): License call failed for feature Assura_LVS, version 4.100 and quantity 1. The license server search path is defined as 3000@lic08.ug.kth.se:29000@lic06.ug.kth.se. The FLEXnet error message is as follows,
     FLEXnet ERROR(-5, 0, 0): No such feature exists.
 
 Run 'lic_error LMF-02005' for more information.
+Checking out license for Phys_Ver_Sys_LVS_XL
 Failed to obtain license for Phys_Ver_Sys_LVS_XL
 Checking out license for Phys_Ver_Sys_LVS_XL
 Failed to obtain license for Phys_Ver_Sys_LVS_XL
@@ -226,7 +226,7 @@ Preprocessing layout network phase 1
 *WARNING* deleteCellPin - Unable to find cell 'PMOSD30M'
 Preprocessing schematic network phase 2
 Preprocessing layout network phase 2
-cpu=0.00m  wall=0.00m  mem=77.70mb
+cpu=0.00m  wall=0.00m  mem=77.83mb
 
 Finished /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/nvn
 
@@ -237,7 +237,7 @@ Building the VDB part 3 in background mode.
 Finished building the VDB. VDB build times for main process:
 cpu: 0.06  elap: 1  pf: 0  in: 0  out: 128  virt: 103M  phys: 560M
 
-Running the Task Processor, 6 cells, 5094 steps...
+Running the Task Processor, 7 cells, 5094 steps...
 
 Top Cell is 'opamp_ws_f layout IL2244_VT26_LAYOUT_WS'
 
@@ -2291,7 +2291,8 @@ Executing: nameParameter(perimeter "perimeter")
 Executing: nameParameter(perimeter "pj")
 
 Executing: extractDIODE("P_NWD" P_NWD_device (net_psub "PLUS") (net_nwell "MINUS") (targ...
-         4 'P_NWD' created in cell 'opamp_ws_f layout IL2244_VT26_LAYOUT_WS'.
+         1 'P_NWD' created in cell 'cvar layout PRIMLIB col=12 row=12 in1=C028029'.
+         5 'P_NWD' created in cell 'opamp_ws_f layout IL2244_VT26_LAYOUT_WS'.
 
 Executing: saveRecognition(P_NWD_device "device")
 
@@ -2974,6 +2975,8 @@ Executing: cvar_ndiff_cross = geomSize(cvar_ndiff_cross1 -0.1 edges)
 Executing: CVAR_device = geomOr(cvar_ndiff_closed)
 
 Executing: extractDevice("CVAR" CVAR_device (net_poly1 "G") (net_welltap "B") (net_psub ...
+         1 'CVAR' created in cell 'cvar layout PRIMLIB col=12 row=12 in1=C028029'.
+         1 'CVAR' created in cell 'opamp_ws_f layout IL2244_VT26_LAYOUT_WS'.
 
 Executing: saveRecognition(CVAR_device "device")
 
@@ -3144,12 +3147,12 @@ Executing: errorLayer(bkgnd2 "# INFO: Don't use -resimulate_extracted- Switch fo
 Executing: errorLayer(bkgnd3 "# C35B4 ENG - 183 Rev9 (Last updated 26-Apr-2017 12:48) #")
 
 Finished running rules. Task processor time in main process:
-cpu: 0.29  elap: 1  pf: 1  in: 8  out: 1192  virt: 147M  phys: 711M
+cpu: 0.36  elap: 1  pf: 0  in: 0  out: 1192  virt: 147M  phys: 714M
 
 No output post-processing: This is not a DRC run
 
 Finished building the persistent database.
-cpu: 0.00  elap: 0  pf: 0  in: 0  out: 6496  virt: 152M  phys: 723M
+cpu: 0.00  elap: 0  pf: 0  in: 0  out: 6496  virt: 152M  phys: 726M
 
 
 *****  aveng terminated normally  *****
@@ -3187,7 +3190,7 @@ Loading tech rule set file : /opt/pdk/ams/410/assura/c35b4/c35b4c3/techRuleSets
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/avrpt on Tue Apr 28 17:40:47 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/avrpt on Wed Apr 29 04:52:12 2026
 
 
    Creating Error Database 'opamp_ws_f'...
@@ -3239,8 +3242,8 @@ Rule      Message                                    FlatCount     RealCount
 (   41)  ERROR : MET3 pin outside met3                       0            0
 (   42)  ERROR : MET4 pin outside met4                       0            0
 (   43)  ERROR : PAD pin outside pad metal                   0            0
-(   44)  # INFO: Don't use -resimulate_extracted-          117           19
-(   45)  # C35B4 ENG - 183 Rev9 (Last updated 26-          117           19
+(   44)  # INFO: Don't use -resimulate_extracted-          120           20
+(   45)  # C35B4 ENG - 183 Rev9 (Last updated 26-          120           20
 (   46)  malformed device NMOSH_device                       0            0
 (   47)  malformed device NMOSMH_device                      0            0
 (   48)  malformed device NMOS30M_device                     0            0
@@ -3384,7 +3387,7 @@ Rule      Message                                    FlatCount     RealCount
 (  284)  unstable device for NMOS_WAFFLE_device_D            0            0
 (  286)  unstable device for NMOS_device_MOS_1               0            0
 --------------------------------------------------------------------------------
-Total  errors:                                             234           38
+Total  errors:                                             240           40
 --------------------------------------------------------------------------------
 
    Finished creating Error Database ...
@@ -3467,10 +3470,10 @@ Checking out license for Pegasus_LVS
 @(#)$CDS: avnx_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/avnx on Tue Apr 28 17:40:47 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/avnx on Wed Apr 29 04:52:12 2026
 
 avnx started...
-cpu: 0.07  elap: 0  pf: 0  in: 0  out: 48  virt: 570M  phys: 981M
+cpu: 0.07  elap: 0  pf: 0  in: 0  out: 48  virt: 571M  phys: 978M
 
 Run time =  0.00 seconds
 CPU time =  0.10 seconds
@@ -3478,7 +3481,7 @@ CPU time =  0.10 seconds
                   End of Summary Report
 
 ************************************************************************
-cpu: 0.00  elap: 0  pf: 0  in: 0  out: 16440  virt: 502M  phys: 981M
+cpu: 0.00  elap: 0  pf: 0  in: 0  out: 16704  virt: 499M  phys: 978M
 ***** avnx terminated normally ***** 
 
 
@@ -3492,7 +3495,7 @@ Checking out license for Pegasus_LVS_SP
 Checking out license for Pegasus_LVS
 @(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:39 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
-run on edatools at Tue Apr 28 17:40:47 2026
+run on edatools at Wed Apr 29 04:52:12 2026
 Loading all available p-cell functions
 AMS_DB set to cds
 Reading schematic network
@@ -3533,7 +3536,7 @@ Preprocessing schematic network phase 2
 Preprocessing layout network phase 2
 Top cell  opamp_ws_f schematic IL2244_VT26_LAYOUT_WS vs opamp_ws_f layout IL2244_VT26_LAYOUT_WS
 Schematic and Layout Match
-cpu=0.00m  wall=0.02m  mem=78.74mb
+cpu=0.00m  wall=0.00m  mem=78.80mb
 
 Finished /opt/tools/cadence/installs/ASSURA41_618//tools.lnx86/assura/bin/nvn
 
@@ -3621,7 +3624,7 @@ Assura LVS terminated normally.
 
 
 
-Run ended: Tue Apr 28 17:40:48 2026
+Run ended: Wed Apr 29 04:52:13 2026
 
 *****  Assura terminated normally  *****
 
