@@ -1,0 +1,4590 @@
+\# Program start time:     UTC 2026.05.14 19:12:21.774
+\# Local time: UTC (UTC+00:00) 2026.05.14 19:12:21.774
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 09/03/2024 19:11 (sjfhw316) $
+\o Hierarchy:		/opt/tools/cadence/installs/IC618/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.36  (64-bit addresses)
+\# Command line:	/opt/tools/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -noautostart -mpssession virtuoso644200 -mpshost edatools -davinciService DaVinciService_644200_1778772865 -log /home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job61.log -licenseLockFileName /home/saul/projects/IL2244_VT26_SAUL/.tmp_saul/.edatools_644200 -interactiveA -interactiveE -interactiveRTT -nostdin -nographE -axlChildIdFlag 61
+\# Host name (type):	edatools (x86_64)
+\# Operating system:	Linux 6.17.0-20-generic #20~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Mar 19 01:28:37 UTC 2
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:2756 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12011000)
+\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        626 MB
+\# Available memory:	     55,065 MB
+\# System memory:	     72,238 MB
+\# Maximum memory size:	     71,731 MB
+\# Max mem available:	     55,185 MB
+\# Initial memory used:	        119 MB
+\#        process size:	      1,676 MB
+\# Thread usage limits (effective/default):	maxthreads 4294967295/4294967295 maxload 16.00/16.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		saul
+\o Working Directory:	edatools:/home/saul/projects/IL2244_VT26_SAUL
+\# Process Id:		719851
+\o 
+\o COPYRIGHT (C) 1992-2024  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2024  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\o Loading adexlDM.cxt 
+\o Loading cpf.cxt 
+\o Loading cli.cxt 
+\o Loading lp.cxt 
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso644200, host=edatools). Connection mode is ICRP. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
+\o INFO (ELI-00304) The registration of the child 719851 within 90 seconds is being processed...
+\o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
+\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\# [19:12:21.445314] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se:29000@lic06.ug.kth.se
+\o ......................................................................................
+\o            ams AG HIT-Kit v.ams_4.10
+\o ......................................................................................
+\o COPYRIGHT (c) 2012 Full Service Foundry @ ams AG.  ALL RIGHTS RESERVED
+\o This HIT-Kit and attached documentation are confidential information and may 
+\o only be used as authorized by the HIT-Kit license agreement.
+\o ......................................................................................
+\# Current Window: window(2)
+\o Loading simulator default settings.
+\o //
+\o //  Calibre Skill Interface * (v2024.4_12.9) *
+\o //
+\o //                         Copyright Siemens 1996-2020     
+\o //                             All Rights Reserved.
+\o //         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+\o //            WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+\o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+\o //
+\o //
+\# Memory report: using         280 MB, process size 1,972 MB at UTC 2026.05.14 19:12:23.496
+\o Loading simulator default settings.
+\o *Info*    Client has finished starting ... 
+\o 
+\o Loading vdsil.cxt 
+\p hitkit: ams_4.10  Tech: c35b4c3  User: saul 
+\# Loading perfDiag...
+\# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 719851' to open it when Virtuoso freezes.
+\# (PerfDiag): Use backtrace from GLIBC.
+\w *WARNING* _perfPstackCheck: Cannot find pstack/gstack. Please setup PATH environment variable to pstack/gstack executable.
+\o Loading vqp.cxt 
+\o Loading hdlPkg.cxt 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o Loading simui.cxt 
+\o 	Library      = FECG
+\o 	Cell         = fecg_vga_tb
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = STEP_IN:1_state_Interactive.109
+\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_vga_tb/adexl/results/data/Interactive.109.rdb
+\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/1/STEP
+\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
+\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_vga_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o Loading viva.cxt 
+\o Loading spectrei.cxt 
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o Loading monte.cxt 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 1) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var S0 = "3.3"
+\o Setting var S1 = "3.3"
+\o Setting var S2 = "3.3"
+\o Setting var VDD = "3.3"
+\o Setting var VDD_STEP = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_FREQ = "50"
+\o Setting var VIN_STEP = "10m"
+\o Setting var temperature = "27"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/1/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/1/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 1)
+\o 
+\o generate netlist...
+\o Loading hnlInit.cxt 
+\o Loading seCore.cxt 
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\# [19:12:24.322544] Periodic Lic check successful
+\# [19:12:24.322545] Feature usage summary:
+\o Begin Incremental Netlisting May 14 19:12:24 2026
+\o End netlisting May 14 19:12:24 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\# Memory report: using         405 MB, process size 2,165 MB at UTC 2026.05.14 19:12:25.123
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           1).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/1/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o Loading paraplot.cxt 
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 1) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 2) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/2/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/2/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 2)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:12:26 2026
+\o End netlisting May 14 19:12:26 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           2).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/2/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 2) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 3) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/3/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/3/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 3)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:12:29 2026
+\o End netlisting May 14 19:12:29 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           3).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/3/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 3) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 4) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/4/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/4/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 4)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:12:30 2026
+\o End netlisting May 14 19:12:30 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           4).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/4/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\# Available memory:         54,558 MB at UTC 2026.05.14 19:12:31.257
+\# Memory report: Maximum memory size now 55,023 MB at UTC 2026.05.14 19:12:31.257
+\# Thread usage report: 22 active threads, active load 1.40 at UTC 2026.05.14 19:12:31.257
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 4) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 5) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/5/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/5/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 5)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:12:32 2026
+\o End netlisting May 14 19:12:32 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           5).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/5/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 5) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 6) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/6/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/6/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 6)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:12:33 2026
+\o End netlisting May 14 19:12:34 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           6).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/6/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 6) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 7) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/7/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/7/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 7)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:12:35 2026
+\o End netlisting May 14 19:12:35 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           7).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/7/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 7) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 8) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/8/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/8/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 8)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:12:37 2026
+\o End netlisting May 14 19:12:37 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           8).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/8/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 8) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 9) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/9/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/9/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 9)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:12:38 2026
+\o End netlisting May 14 19:12:38 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           9).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/9/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 9) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 10) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/10/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/10/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 10)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:12:40 2026
+\o End netlisting May 14 19:12:40 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           10).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/10/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 10) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 11) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/11/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/11/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 11)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:12:42 2026
+\o End netlisting May 14 19:12:42 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           11).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/11/STEP/psf.
+\# Memory report: using         506 MB, process size 2,316 MB at UTC 2026.05.14 19:12:43.015
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 11) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 12) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/12/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/12/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 12)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:12:44 2026
+\o End netlisting May 14 19:12:44 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           12).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/12/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 12) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 13) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/13/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/13/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 13)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:12:46 2026
+\o End netlisting May 14 19:12:46 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           13).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/13/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 13) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 14) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/14/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/14/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 14)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:12:48 2026
+\o End netlisting May 14 19:12:48 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           14).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/14/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 14) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 15) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/15/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/15/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 15)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:12:49 2026
+\o End netlisting May 14 19:12:49 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           15).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/15/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 15) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 16) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/16/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/16/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 16)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:12:51 2026
+\o End netlisting May 14 19:12:51 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           16).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/16/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 16) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 17) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/17/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/17/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 17)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:12:53 2026
+\o End netlisting May 14 19:12:53 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           17).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/17/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 17) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 18) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/18/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/18/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 18)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:12:54 2026
+\o End netlisting May 14 19:12:54 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           18).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/18/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 18) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 19) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/19/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/19/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 19)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:12:56 2026
+\o End netlisting May 14 19:12:56 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           19).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/19/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 19) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 20) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/20/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/20/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 20)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:12:57 2026
+\o End netlisting May 14 19:12:57 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           20).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/20/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 20) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 21) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/21/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/21/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 21)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:12:59 2026
+\o End netlisting May 14 19:12:59 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           21).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/21/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 21) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 22) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/22/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/22/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 22)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:13:01 2026
+\o End netlisting May 14 19:13:01 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           22).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/22/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 22) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 23) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/23/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/23/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 23)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:13:02 2026
+\o End netlisting May 14 19:13:02 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           23).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/23/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 23) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 24) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/24/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/24/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 24)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:13:04 2026
+\o End netlisting May 14 19:13:04 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           24).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/24/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 24) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 25) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/25/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/25/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 25)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:13:06 2026
+\o End netlisting May 14 19:13:06 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           25).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/25/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 25) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 26) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/26/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/26/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 26)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:13:07 2026
+\o End netlisting May 14 19:13:07 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           26).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/26/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 26) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 27) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/27/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/27/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 27)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:13:09 2026
+\o End netlisting May 14 19:13:09 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           27).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/27/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\# Memory report: using         612 MB, process size 2,422 MB at UTC 2026.05.14 19:13:11.107
+\o 
+\o *Info*    Run complete for Point ID (11 27) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 28) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/28/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/28/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 28)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:13:11 2026
+\o End netlisting May 14 19:13:11 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           28).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/28/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 28) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 29) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/29/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/29/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 29)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:13:12 2026
+\o End netlisting May 14 19:13:12 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           29).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/29/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 29) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 30) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/30/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/30/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 30)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:13:14 2026
+\o End netlisting May 14 19:13:14 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           30).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/30/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 30) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 31) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/31/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/31/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 31)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:13:16 2026
+\o End netlisting May 14 19:13:16 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           31).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/31/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 31) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 32) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/32/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/32/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 32)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:13:17 2026
+\o End netlisting May 14 19:13:17 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           32).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/32/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 32) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (11 33) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/33/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/33/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (11 33)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:13:19 2026
+\o End netlisting May 14 19:13:19 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (11
+\o           33).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.109/33/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (11 33) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = FECG
+\o 	Cell         = fecg_vga_tb
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = STEP_IN:1_state_Interactive.110
+\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_vga_tb/adexl/results/data/Interactive.110.rdb
+\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/1/STEP
+\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
+\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_vga_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 1) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var S0 = "3.3"
+\o Setting var S1 = "3.3"
+\o Setting var S2 = "0"
+\o Setting var VDD = "3.3"
+\o Setting var VDD_STEP = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_FREQ = "50"
+\o Setting var VIN_STEP = "10m"
+\o Setting var temperature = "27"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/1/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/1/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:13:41 2026
+\o End netlisting May 14 19:13:41 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           1).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/1/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 1) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 2) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/2/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/2/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 2)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:13:43 2026
+\o End netlisting May 14 19:13:43 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           2).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/2/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 2) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 3) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/3/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/3/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 3)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:13:45 2026
+\o End netlisting May 14 19:13:45 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           3).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/3/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 3) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 4) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/4/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/4/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 4)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:13:47 2026
+\o End netlisting May 14 19:13:47 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           4).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/4/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 4) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 5) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/5/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/5/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 5)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:13:48 2026
+\o End netlisting May 14 19:13:49 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           5).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/5/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 5) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 6) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/6/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/6/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 6)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:13:50 2026
+\o End netlisting May 14 19:13:50 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           6).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/6/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 6) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 7) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/7/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/7/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 7)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:13:52 2026
+\o End netlisting May 14 19:13:52 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           7).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/7/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 7) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 8) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/8/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/8/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 8)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:13:53 2026
+\o End netlisting May 14 19:13:53 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           8).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/8/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 8) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 9) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/9/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/9/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 9)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:13:55 2026
+\o End netlisting May 14 19:13:55 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           9).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/9/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 9) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 10) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/10/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/10/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 10)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:13:57 2026
+\o End netlisting May 14 19:13:57 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           10).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/10/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 10) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 11) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/11/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/11/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 11)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:13:58 2026
+\o End netlisting May 14 19:13:58 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           11).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/11/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 11) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 12) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/12/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/12/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 12)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:14:00 2026
+\o End netlisting May 14 19:14:00 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           12).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/12/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 12) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 13) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/13/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/13/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 13)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:14:01 2026
+\o End netlisting May 14 19:14:01 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           13).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/13/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 13) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 14) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/14/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/14/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 14)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:14:03 2026
+\o End netlisting May 14 19:14:03 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           14).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/14/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\# Memory report: using         714 MB, process size 2,524 MB at UTC 2026.05.14 19:14:04.157
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 14) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 15) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/15/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/15/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 15)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:14:05 2026
+\o End netlisting May 14 19:14:05 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           15).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/15/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 15) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 16) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/16/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/16/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 16)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:14:06 2026
+\o End netlisting May 14 19:14:06 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           16).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/16/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 16) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 17) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/17/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/17/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 17)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:14:08 2026
+\o End netlisting May 14 19:14:08 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           17).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/17/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 17) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 18) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/18/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/18/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 18)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:14:10 2026
+\o End netlisting May 14 19:14:10 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           18).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/18/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 18) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 19) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/19/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/19/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 19)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:14:11 2026
+\o End netlisting May 14 19:14:11 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           19).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/19/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 19) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 20) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/20/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/20/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 20)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:14:13 2026
+\o End netlisting May 14 19:14:13 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           20).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/20/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 20) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 21) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/21/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/21/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 21)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:14:14 2026
+\o End netlisting May 14 19:14:14 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           21).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/21/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 21) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 22) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/22/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/22/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 22)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:14:16 2026
+\o End netlisting May 14 19:14:16 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           22).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/22/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 22) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 23) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/23/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/23/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 23)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:14:18 2026
+\o End netlisting May 14 19:14:18 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           23).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/23/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 23) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 24) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/24/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/24/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 24)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:14:19 2026
+\o End netlisting May 14 19:14:19 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           24).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/24/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 24) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 25) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/25/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/25/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 25)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:14:21 2026
+\o End netlisting May 14 19:14:21 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           25).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/25/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 25) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 26) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/26/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/26/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 26)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:14:23 2026
+\o End netlisting May 14 19:14:23 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           26).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/26/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 26) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 27) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/27/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/27/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 27)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:14:24 2026
+\o End netlisting May 14 19:14:24 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           27).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/27/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 27) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 28) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/28/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/28/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 28)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:14:26 2026
+\o End netlisting May 14 19:14:26 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           28).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/28/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 28) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 29) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/29/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/29/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 29)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:14:27 2026
+\o End netlisting May 14 19:14:27 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           29).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/29/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 29) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 30) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/30/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/30/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 30)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:14:29 2026
+\o End netlisting May 14 19:14:29 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           30).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/30/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 30) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 31) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/31/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/31/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 31)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:14:30 2026
+\o End netlisting May 14 19:14:31 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   1.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           31).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/31/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\# Memory report: using         818 MB, process size 2,628 MB at UTC 2026.05.14 19:14:32.438
+\o 
+\o *Info*    Run complete for Point ID (12 31) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 32) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/32/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/32/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 32)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:14:32 2026
+\o End netlisting May 14 19:14:32 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           32).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/32/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 32) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (12 33) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/33/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/33/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (12 33)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:14:34 2026
+\o End netlisting May 14 19:14:34 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (12
+\o           33).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.110/33/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (12 33) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = FECG
+\o 	Cell         = fecg_vga_tb
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = STEP_IN:1_state_Interactive.111
+\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_vga_tb/adexl/results/data/Interactive.111.rdb
+\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.111/1/STEP
+\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data
+\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
+\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_vga_tb/adexl
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (13 1) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var S0 = "3.3"
+\o Setting var S1 = "3.3"
+\o Setting var S2 = "0"
+\o Setting var VDD = "3.3"
+\o Setting var VDD_STEP = "0"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_FREQ = "50"
+\o Setting var VIN_STEP = "10m"
+\o Setting var temperature = "27"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.111/1/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.111/1/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (13 1)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:15:15 2026
+\o Loading json.cxt 
+\o End netlisting May 14 19:15:15 2026
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:  163
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (13
+\o           1).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.111/1/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (13 1) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (13 2) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.111/2/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.111/2/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (13 2)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:15:17 2026
+\o End netlisting May 14 19:15:17 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (13
+\o           2).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.111/2/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o INFO (ADE-3071): Simulation completed successfully.
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (13 2) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Run start for Point ID (13 3) on testbench [ STEP ].
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.111/3/STEP/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.111/3/STEP
+\o 
+\o 
+\o *Info*    Creating Netlist for Point ID (13 3)
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 14 19:15:19 2026
+\o End netlisting May 14 19:15:19 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o 
+\o *Info*    Running simulation on testbench [ STEP ] for Point ID (13
+\o           3).
+\o 
+\o Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_vga_tb/adexl/results/data/Interactive.111/3/STEP/psf.
+\o compose simulator input file...
+\o       ...successful.
+\o start simulator if needed...
+\o       ...successful.
+\o simulate...
+\o To view the simulator output, right-click on the test name, result 
+\o name, or any value in the "Results" tab of the Outputs section and 
+\o choose "Output Log" menu option.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o *Info*    Current simulation for points ((13 3)).
+\o *Info*    (ADE-3072): Simulation stopped because you selected the
+\o           'Stop Simulation' command in ADE.
+\o 
+\o reading simulation data...
+\o       ...successful.
+\o *Info*    Client has finished evaluating ... 
+\o 
+\o 
+\o *Info*    Run complete for Point ID (13 3) on testbench [ STEP ].
+\o 
+\o 
+\o 
+\o 
+\o 
+\o 
+\o *Info*    Received signal SIGTERM.
+\o 
+\o 
+\w *WARNING* aaDeleteEventCB: cb nil not on event "sim-env:set-modelPath"

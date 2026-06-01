@@ -1,0 +1,38 @@
+// VerilogA for TEST_PDK, inv, veriloga
+
+`include "constants.vams"
+`include "disciplines.vams"
+
+module inv(GNDA, IN, OUT, VDDA);
+inout GNDA;
+electrical GNDA;
+inout IN;
+electrical IN;
+inout OUT;
+electrical OUT;
+inout VDDA;
+electrical VDDA;
+
+
+real vdd = 0;
+
+real aux = 0;
+
+analog begin
+
+	vdd = V(VDDA,GNDA);
+
+    @(cross(V(IN) - 0.5*vdd))
+	;        
+
+
+    if (V(IN) > 0.5*vdd)
+        aux= 0;
+    else
+        aux = vdd;
+
+	V(OUT,GNDA) <+ transition(aux, 0, 1n); //smooths the output 
+
+end
+
+endmodule

@@ -1,0 +1,1953 @@
+<?xml version="1.0"?>
+<setupdb version="6">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+			<corner enabled="0">C0
+				<models>
+					<model enabled="1">processOption.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
+						<modelsection></modelsection>
+					</model>
+					<model enabled="1">cmos53.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
+						<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+					</model>
+					<model enabled="1">res.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
+						<modelsection>"restm"</modelsection>
+					</model>
+					<model enabled="1">cap.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
+						<modelsection>"captm"</modelsection>
+					</model>
+					<model enabled="1">bip.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
+						<modelsection>"biptm"</modelsection>
+					</model>
+					<model enabled="1">ind.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
+						<modelsection>"indtm"</modelsection>
+					</model>
+					<model enabled="1">esddiode.scs
+						<modeltest>All</modeltest>
+						<modelblock>Global</modelblock>
+						<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
+						<modelsection>"esddiodetm"</modelsection>
+					</model>
+				</models>
+			</corner>
+		</corners>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test enabled="1">ECG_IA:ecg_ia1:1
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>ecg_ia2</value>
+					</option>
+					<option>lib
+						<value>ECG_IA</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>ECG_IA:ecg_ia1:1_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>ecg_ia1</value>
+					</option>
+					<option>lib
+						<value>ECG_IA</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+				</origoptions>
+				<outputs>
+					<output>VDC("/VOUT")
+						<evalType>point</evalType>
+					</output>
+				</outputs>
+			</test>
+		</tests>
+		<vars>
+			<var>VCM_AC
+				<value>0</value>
+				<dependentTests>
+					<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VCM_DC
+				<value>1.6</value>
+				<dependentTests>
+					<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VIN_AC
+				<value>1</value>
+				<dependentTests>
+					<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VIN_DC
+				<value>0</value>
+				<dependentTests>
+					<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
+		<plottingoptions>
+			<plottingoption>plottingmode
+				<value>Replace</value>
+			</plottingoption>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>useMaestroPlottingTemplate
+				<value>yes</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value></value>
+			</plottingoption>
+			<plottingoption>allplottingtemplates
+				<value></value>
+			</plottingoption>
+			<plottingoption>defaultplottingtemplate
+				<value></value>
+			</plottingoption>
+			<plottingoption>distributedplot_enabled
+				<value>no</value>
+			</plottingoption>
+		</plottingoptions>
+		<jobpolicyname>ADE XL Default</jobpolicyname>
+	</active>
+	<history>History
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.44
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">C0
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
+								<modelsection>"captm"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">ECG_IA:ecg_ia1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>ecg_ia2</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_ia1:1_none_Interactive.44</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>ecg_ia1</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VDC("/VOUT")
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>VCM_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_DC
+						<value>1.6</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_DC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mar 8 20:01:16 2026</timestamp>
+			<uuid>{a9fd9e34-e72d-48c1-988f-3fd970e88a2d}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia2/adexl/results/data/Interactive.44.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.44.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/edatools_saul_200116649</localpsfdir>
+			<psfdir>/home/saul/projects/AMS_35_V4_MINIMAL/Sim/ECG_IA/ecg_ia2/adexl/results/data/Interactive.44</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_ia2/adexl/results/data/Interactive.44</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia2/adexl/results/data/Interactive.44.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.44.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.45
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">C0
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
+								<modelsection>"captm"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">ECG_IA:ecg_ia1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>ecg_ia2</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_ia1:1_none_Interactive.45</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>ecg_ia1</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VDC("/VOUT")
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>VCM_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_DC
+						<value>1.6</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_DC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mar 8 20:01:40 2026</timestamp>
+			<uuid>{15b1ad7d-1d2b-45a4-be5a-840d1bf78108}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia2/adexl/results/data/Interactive.45.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.45.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/edatools_saul_200140581</localpsfdir>
+			<psfdir>/home/saul/projects/AMS_35_V4_MINIMAL/Sim/ECG_IA/ecg_ia2/adexl/results/data/Interactive.45</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_ia2/adexl/results/data/Interactive.45</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia2/adexl/results/data/Interactive.45.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.45.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.46
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">C0
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
+								<modelsection>"captm"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">ECG_IA:ecg_ia1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>ecg_ia2</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_ia1:1_none_Interactive.46</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>ecg_ia1</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VDC("/VOUT")
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>VCM_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_DC
+						<value>1.6</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_DC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mar 8 20:02:44 2026</timestamp>
+			<uuid>{78ad1132-74fa-4d5d-b9b5-99bae76a4780}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia2/adexl/results/data/Interactive.46.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.46.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/edatools_saul_200244309</localpsfdir>
+			<psfdir>/home/saul/projects/AMS_35_V4_MINIMAL/Sim/ECG_IA/ecg_ia2/adexl/results/data/Interactive.46</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_ia2/adexl/results/data/Interactive.46</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia2/adexl/results/data/Interactive.46.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.46.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.47
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">C0
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
+								<modelsection>"captm"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">ECG_IA:ecg_ia1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>ecg_ia2</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_ia1:1_none_Interactive.47</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>ecg_ia1</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VDC("/VOUT")
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>VCM_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_DC
+						<value>1.6</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_DC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mar 8 20:03:44 2026</timestamp>
+			<uuid>{170a4f3c-0ec2-48cf-a846-4f38194f33b0}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia2/adexl/results/data/Interactive.47.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.47.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/edatools_saul_200344905</localpsfdir>
+			<psfdir>/home/saul/projects/AMS_35_V4_MINIMAL/Sim/ECG_IA/ecg_ia2/adexl/results/data/Interactive.47</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_ia2/adexl/results/data/Interactive.47</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia2/adexl/results/data/Interactive.47.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.47.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.48
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">C0
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
+								<modelsection>"captm"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">ECG_IA:ecg_ia1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>ecg_ia2</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_ia1:1_none_Interactive.48</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>ecg_ia1</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VDC("/VOUT")
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>VCM_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_DC
+						<value>1.6</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_DC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mar 8 20:04:36 2026</timestamp>
+			<uuid>{022e9014-7a26-46f0-9df5-a87808834f2d}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia2/adexl/results/data/Interactive.48.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.48.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/edatools_saul_200436596</localpsfdir>
+			<psfdir>/home/saul/projects/AMS_35_V4_MINIMAL/Sim/ECG_IA/ecg_ia2/adexl/results/data/Interactive.48</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_ia2/adexl/results/data/Interactive.48</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia2/adexl/results/data/Interactive.48.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.48.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.49
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">C0
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
+								<modelsection>"captm"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">ECG_IA:ecg_ia1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>ecg_ia2</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_ia1:1_none_Interactive.49</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>ecg_ia1</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VDC("/VOUT")
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>VCM_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_DC
+						<value>1.6</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_DC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mar 8 20:17:49 2026</timestamp>
+			<uuid>{7d3142c6-372e-494f-adf3-9a11557879b7}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia2/adexl/results/data/Interactive.49.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.49.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/edatools_saul_201749698</localpsfdir>
+			<psfdir>/home/saul/projects/AMS_35_V4_MINIMAL/Sim/ECG_IA/ecg_ia2/adexl/results/data/Interactive.49</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_ia2/adexl/results/data/Interactive.49</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia2/adexl/results/data/Interactive.49.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.49.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.50
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">C0
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
+								<modelsection>"captm"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">ECG_IA:ecg_ia1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>ecg_ia2</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_ia1:1_none_Interactive.50</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>ecg_ia1</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VDC("/VOUT")
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>VCM_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_DC
+						<value>1.6</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_DC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mar 8 20:18:00 2026</timestamp>
+			<uuid>{5d06fd23-a327-497b-a7a1-50bc4c8fffb8}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia2/adexl/results/data/Interactive.50.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.50.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/edatools_saul_201800341</localpsfdir>
+			<psfdir>/home/saul/projects/AMS_35_V4_MINIMAL/Sim/ECG_IA/ecg_ia2/adexl/results/data/Interactive.50</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_ia2/adexl/results/data/Interactive.50</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia2/adexl/results/data/Interactive.50.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.50.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.51
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">C0
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
+								<modelsection>"captm"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">ECG_IA:ecg_ia1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>ecg_ia2</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_ia1:1_none_Interactive.51</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>ecg_ia1</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VDC("/VOUT")
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>VCM_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_DC
+						<value>1.6</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_DC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mar 8 20:18:04 2026</timestamp>
+			<uuid>{dcb026cd-c64b-4166-b24e-98479809d249}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia2/adexl/results/data/Interactive.51.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.51.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/edatools_saul_201804816</localpsfdir>
+			<psfdir>/home/saul/projects/AMS_35_V4_MINIMAL/Sim/ECG_IA/ecg_ia2/adexl/results/data/Interactive.51</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_ia2/adexl/results/data/Interactive.51</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia2/adexl/results/data/Interactive.51.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.51.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.52
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">C0
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
+								<modelsection>"captm"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">ECG_IA:ecg_ia1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>ecg_ia2</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_ia1:1_none_Interactive.52</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>ecg_ia1</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VDC("/VOUT")
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>VCM_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_DC
+						<value>1.6</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_DC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mar 8 20:18:24 2026</timestamp>
+			<uuid>{19773612-dbd5-4991-8d03-65aad254cdf5}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia2/adexl/results/data/Interactive.52.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.52.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/edatools_saul_201825025</localpsfdir>
+			<psfdir>/home/saul/projects/AMS_35_V4_MINIMAL/Sim/ECG_IA/ecg_ia2/adexl/results/data/Interactive.52</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_ia2/adexl/results/data/Interactive.52</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia2/adexl/results/data/Interactive.52.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.52.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.53
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+					<corner enabled="0">C0
+						<models>
+							<model enabled="1">processOption.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/processOption.scs</modelfile>
+								<modelsection></modelsection>
+							</model>
+							<model enabled="1">cmos53.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs</modelfile>
+								<modelsection>"cmoswo" "cmoswp" "cmosws" "cmoswz"</modelsection>
+							</model>
+							<model enabled="1">res.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/res.scs</modelfile>
+								<modelsection>"restm"</modelsection>
+							</model>
+							<model enabled="1">cap.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/cap.scs</modelfile>
+								<modelsection>"captm"</modelsection>
+							</model>
+							<model enabled="1">bip.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/bip.scs</modelfile>
+								<modelsection>"biptm"</modelsection>
+							</model>
+							<model enabled="1">ind.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/ind.scs</modelfile>
+								<modelsection>"indtm"</modelsection>
+							</model>
+							<model enabled="1">esddiode.scs
+								<modeltest>All</modeltest>
+								<modelblock>Global</modelblock>
+								<modelfile>/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs</modelfile>
+								<modelsection>"esddiodetm"</modelsection>
+							</model>
+						</models>
+					</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">ECG_IA:ecg_ia1:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>ecg_ia2</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>ECG_IA:ecg_ia1:1_none_Interactive.53</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>ecg_ia1</value>
+							</option>
+							<option>lib
+								<value>ECG_IA</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+						</origoptions>
+						<outputs>
+							<output>VDC("/VOUT")
+								<evalType>point</evalType>
+							</output>
+						</outputs>
+					</test>
+				</tests>
+				<vars>
+					<var>VCM_AC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VCM_DC
+						<value>1.6</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_AC
+						<value>1</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VIN_DC
+						<value>0</value>
+						<dependentTests>
+							<dependentTest enabled="1" omitted="0">ECG_IA:ecg_ia1:1</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>distributedplot_enabled
+						<value>no</value>
+					</plottingoption>
+				</plottingoptions>
+				<jobpolicyname>ADE XL Default</jobpolicyname>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Mar 8 20:18:39 2026</timestamp>
+			<uuid>{70bb48c8-40ce-48c0-9559-5861532dcefa}</uuid>
+			<resultsname>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia2/adexl/results/data/Interactive.53.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.53.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<saveevalerrorstrategy>SaveNone</saveevalerrorstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/edatools_saul_201839665</localpsfdir>
+			<psfdir>/home/saul/projects/AMS_35_V4_MINIMAL/Sim/ECG_IA/ecg_ia2/adexl/results/data/Interactive.53</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ECG_IA/ecg_ia2/adexl/results/data/Interactive.53</simdir>
+			<gendatasheetplotsonsimulation>0</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/IL2244_VT26_SAUL/ECG_IA/ecg_ia2/adexl/results/data/Interactive.53.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.53.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>

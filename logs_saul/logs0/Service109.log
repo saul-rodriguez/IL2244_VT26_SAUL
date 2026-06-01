@@ -1,0 +1,1965 @@
+\# Program start time:     UTC 2026.04.15 09:16:36.371
+\# Local time: UTC (UTC+00:00) 2026.04.15 09:16:36.371
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 09/03/2024 19:11 (sjfhw316) $
+\o Hierarchy:		/opt/tools/cadence/installs/IC618/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.36  (64-bit addresses)
+\# Command line:	/opt/tools/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -beanhost edatools -beanport 11300 -beanbinlog  -beanLogFile /home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/amps_Service109.log -mpssession virtuoso1088559 -mpshost edatools -davinciService DaVinciService_1088559_1776141365 -scopedPid 1088559 -axlSession fnxSession3 -axlServiceIdFlag 109 -uuid 7671e217-748f-4624-81e7-4fcaa8946b84 -heartbeat /dev/shm/swift-heartbeat.FmVdrUat9O -log /home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log -noautostart -nographE -lscs 000175E1894CBE06FF0966E38F1FFC06BC4D138FFC7EFC06BC4D68F886089075D3225CD1A12FD236867F66E38F1FFC06BC4D66E38F1FFC06BC4D0F3CD86CAB75D59200001E56 -interactive -offlineExprEval -fenixMode assembler -heartbeatTimeout  -lingerTimeout 300 -pointlifetime -1
+\# Host name (type):	edatools (x86_64)
+\# Operating system:	Linux 6.17.0-20-generic #20~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Mar 19 01:28:37 UTC 2
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:5697 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12011000)
+\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        974 MB
+\# Available memory:	     53,778 MB
+\# System memory:	     72,238 MB
+\# Maximum memory size:	     71,383 MB
+\# Max mem available:	     53,898 MB
+\# Initial memory used:	        119 MB
+\#        process size:	      1,676 MB
+\# Thread usage limits (effective/default):	maxthreads 4294967295/4294967295 maxload 16.00/16.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		saul
+\o Working Directory:	edatools:/home/saul/projects/IL2244_VT26_SAUL
+\# Process Id:		1908253
+\o 
+\o COPYRIGHT (C) 1992-2024  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2024  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading par.cxt 
+\# Memory report: using         224 MB, process size 1,789 MB at UTC 2026.04.15 09:16:37.051
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\o Loading adexlDM.cxt 
+\o Loading cpf.cxt 
+\o Loading cli.cxt 
+\o Loading lp.cxt 
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso1088559, host=edatools). Connection mode is LSCS. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
+\o INFO (ELI-00304) The registration of the child 1908253 within 90 seconds is being processed...
+\o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
+\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\# [09:16:36.445386] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se:29000@lic06.ug.kth.se
+\o ......................................................................................
+\o            ams AG HIT-Kit v.ams_4.10
+\o ......................................................................................
+\o COPYRIGHT (c) 2012 Full Service Foundry @ ams AG.  ALL RIGHTS RESERVED
+\o This HIT-Kit and attached documentation are confidential information and may 
+\o only be used as authorized by the HIT-Kit license agreement.
+\o ......................................................................................
+\# Current Window: window(2)
+\o Loading simulator default settings.
+\o //
+\o //  Calibre Skill Interface * (v2024.4_12.9) *
+\o //
+\o //                         Copyright Siemens 1996-2020     
+\o //                             All Rights Reserved.
+\o //         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+\o //            WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+\o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+\o //
+\o //
+\o Loading simulator default settings.
+\p hitkit: ams_4.10  Tech: c35b4c3  User: saul 
+\w *WARNING* could not load font "-*-courier-medium-r-*-*-12-*", using font "fixed"
+\# Loading perfDiag...
+\# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 1908253' to open it when Virtuoso freezes.
+\# (PerfDiag): Use backtrace from GLIBC.
+\w *WARNING* _perfPstackCheck: Cannot find pstack/gstack. Please setup PATH environment variable to pstack/gstack executable.
+\i _axlRunServices()
+\# [09:16:38.088114] periodic Lic check successful
+\# [09:16:38.088115] Feature usage summary:
+\o Loading simui.cxt 
+\o [2026-04-15 09:16:38.634 Z] [PROCESS] [cadence.virtuoso.ade.services] - Netlist Service has successfully started. Waiting for incoming messages ... {"hostname": "edatools", "processid": 1908253, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:16:38.678 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 0, "testname": "DC_MC", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "5758"}
+\o [2026-04-15 09:16:38.679 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started preparing netlist {"point": 0, "testname": "DC_MC", "testnameKey": "DC_MC"}
+\o Loading vqp.cxt 
+\o Loading vdsil.cxt 
+\o *Warning* AXL Context Manager : job 109 is already registered. 
+\o 
+\o Loading hdlPkg.cxt 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = FBIAS
+\o 	Cell         = fbias_gm_c_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = MonteCarlo.0
+\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0.rdb
+\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/1/DC_MC
+\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro
+\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
+\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FBIAS/fbias_gm_c_tb/maestro
+\o 	File Encoding = 0
+\o 
+\o 
+\o Loading viva.cxt 
+\o Loading spectrei.cxt 
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\# Memory report: using         382 MB, process size 2,142 MB at UTC 2026.04.15 09:16:40.152
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o Loading elec.cxt 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "0"
+\o Setting var VDD_STEP = "3.3"
+\o Setting var VDD_TR = "0"
+\o Loading monte.cxt 
+\o Reusing AHDL Data dir
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/psf/DC_MC
+\o 
+\o generate netlist...
+\o Loading hnlInit.cxt 
+\o Loading seCore.cxt 
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 15 09:16:40 2026
+\o Loading json.cxt 
+\o End netlisting Apr 15 09:16:40 2026
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   21
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o [2026-04-15 09:16:40.817 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished preparing netlist {"point": 0, "testname": "DC_MC", "testnameKey": "DC_MC"}
+\o [2026-04-15 09:16:41.823 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 1, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "1:33:6568", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "7877"}
+\o [2026-04-15 09:16:41.824 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 1, "testname": "DC_MC"}
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o *Warning* AXL Context Manager : job 109 is already registered. 
+\o 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = FBIAS
+\o 	Cell         = fbias_gm_c_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = MonteCarlo.0
+\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0.rdb
+\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/1/DC_MC
+\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro
+\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
+\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FBIAS/fbias_gm_c_tb/maestro
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "0"
+\o Setting var VDD_STEP = "3.3"
+\o Setting var VDD_TR = "0"
+\o Setting var temperature = "27"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/1/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/1/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:16:42.931 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 706.0312 MBytes, peak memory used: 706.0312 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:16:42.932 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 1, "testname": "DC_MC"}
+\o [2026-04-15 09:16:42.936 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 2, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "2:33:6569", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "12280"}
+\o [2026-04-15 09:16:42.936 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 2, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/2/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/2/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:16:43.456 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 706.0352 MBytes, peak memory used: 706.0352 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 2, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:16:43.456 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 2, "testname": "DC_MC"}
+\o [2026-04-15 09:16:43.457 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 3, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "3:33:6570", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "14282"}
+\o [2026-04-15 09:16:43.457 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 3, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/3/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/3/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:16:43.688 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 706.0352 MBytes, peak memory used: 706.0352 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 3, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:16:43.688 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 3, "testname": "DC_MC"}
+\o [2026-04-15 09:16:43.689 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 4, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "4:33:6571", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "16282"}
+\o [2026-04-15 09:16:43.689 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 4, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/4/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/4/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:16:44.204 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 706.3125 MBytes, peak memory used: 706.3125 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 4, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:16:44.205 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 4, "testname": "DC_MC"}
+\o [2026-04-15 09:16:44.208 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 5, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "5:33:6572", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "18284"}
+\o [2026-04-15 09:16:44.208 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 5, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/5/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/5/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:16:44.646 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 707.3242 MBytes, peak memory used: 707.3242 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 5, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:16:44.646 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 5, "testname": "DC_MC"}
+\o [2026-04-15 09:16:44.647 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 6, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "6:33:6573", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "20284"}
+\o [2026-04-15 09:16:44.647 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 6, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/6/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/6/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:16:45.156 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 709.3477 MBytes, peak memory used: 709.3477 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 6, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:16:45.157 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 6, "testname": "DC_MC"}
+\o [2026-04-15 09:16:45.158 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 7, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "7:33:6574", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "22286"}
+\o [2026-04-15 09:16:45.158 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 7, "testname": "DC_MC"}
+\# Available memory:         53,134 MB at UTC 2026.04.15 09:16:48.943
+\# Memory report: Maximum memory size now 53,583 MB at UTC 2026.04.15 09:16:48.943
+\# Thread usage report: 22 active threads, active load 1.40 at UTC 2026.04.15 09:16:48.943
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/7/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/7/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:16:49.409 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 710.0117 MBytes, peak memory used: 710.0117 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 7, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:16:49.409 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 7, "testname": "DC_MC"}
+\o [2026-04-15 09:16:49.410 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 8, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "8:33:6575", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "24530"}
+\o [2026-04-15 09:16:49.410 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 8, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/8/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/8/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:16:49.671 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 712.0352 MBytes, peak memory used: 712.0352 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 8, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:16:49.672 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 8, "testname": "DC_MC"}
+\o [2026-04-15 09:16:49.673 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 9, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "9:33:6576", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "26532"}
+\o [2026-04-15 09:16:49.673 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 9, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/9/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/9/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:16:53.013 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 713.2656 MBytes, peak memory used: 713.2656 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 9, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:16:53.015 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 9, "testname": "DC_MC"}
+\o [2026-04-15 09:16:53.021 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 10, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "10:33:6577", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "28532"}
+\o [2026-04-15 09:16:53.021 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 10, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/10/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/10/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:16:54.831 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 718.5781 MBytes, peak memory used: 718.5781 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 10, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:16:54.831 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 10, "testname": "DC_MC"}
+\o [2026-04-15 09:16:54.832 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 11, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "11:33:6578", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "30541"}
+\o [2026-04-15 09:16:54.832 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 11, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/11/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/11/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:16:55.151 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 718.6953 MBytes, peak memory used: 718.6953 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 11, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:16:55.151 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 11, "testname": "DC_MC"}
+\o [2026-04-15 09:16:55.152 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 12, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "12:33:6579", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "32548"}
+\o [2026-04-15 09:16:55.152 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 12, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/12/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/12/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:16:55.405 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 718.6953 MBytes, peak memory used: 718.6953 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 12, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:16:55.406 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 12, "testname": "DC_MC"}
+\o [2026-04-15 09:16:55.407 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 13, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "13:33:6580", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "34557"}
+\o [2026-04-15 09:16:55.407 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 13, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/13/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/13/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:16:55.633 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 718.6953 MBytes, peak memory used: 718.6953 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 13, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:16:55.634 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 13, "testname": "DC_MC"}
+\o [2026-04-15 09:16:55.635 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 14, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "14:33:6581", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "36564"}
+\o [2026-04-15 09:16:55.635 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 14, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/14/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/14/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:16:56.078 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 718.6953 MBytes, peak memory used: 718.6953 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 14, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:16:56.079 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 14, "testname": "DC_MC"}
+\o [2026-04-15 09:16:56.080 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 15, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "15:33:6582", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "38573"}
+\o [2026-04-15 09:16:56.080 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 15, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/15/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/15/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:16:56.332 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 718.6953 MBytes, peak memory used: 718.6953 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 15, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:16:56.333 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 15, "testname": "DC_MC"}
+\o [2026-04-15 09:16:56.336 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 16, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "16:33:6583", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "40580"}
+\o [2026-04-15 09:16:56.337 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 16, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/16/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/16/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:16:56.717 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 718.6953 MBytes, peak memory used: 718.6953 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 16, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:16:56.717 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 16, "testname": "DC_MC"}
+\o [2026-04-15 09:16:56.718 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 17, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "17:33:6584", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "42589"}
+\o [2026-04-15 09:16:56.718 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 17, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/17/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/17/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:16:57.362 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 718.6953 MBytes, peak memory used: 718.6953 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 17, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:16:57.363 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 17, "testname": "DC_MC"}
+\o [2026-04-15 09:16:57.366 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 18, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "18:33:6585", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "44596"}
+\o [2026-04-15 09:16:57.367 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 18, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/18/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/18/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:16:57.747 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 718.6992 MBytes, peak memory used: 718.6992 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 18, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:16:57.748 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 18, "testname": "DC_MC"}
+\o [2026-04-15 09:16:57.748 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 19, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "19:33:6586", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "46605"}
+\o [2026-04-15 09:16:57.748 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 19, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/19/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/19/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\# Memory report: Maximum memory size now 52,522 MB at UTC 2026.04.15 09:16:58.141
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:16:58.201 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 718.6992 MBytes, peak memory used: 718.6992 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 19, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:16:58.202 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 19, "testname": "DC_MC"}
+\o [2026-04-15 09:16:58.206 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 20, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "20:33:6587", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "48695"}
+\o [2026-04-15 09:16:58.207 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 20, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/20/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/20/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:16:58.693 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 718.6992 MBytes, peak memory used: 718.6992 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 20, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:16:58.694 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 20, "testname": "DC_MC"}
+\o [2026-04-15 09:16:58.695 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 21, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "21:33:6588", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "50704"}
+\o [2026-04-15 09:16:58.695 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 21, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/21/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/21/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:16:59.254 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 718.6992 MBytes, peak memory used: 718.6992 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 21, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:16:59.255 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 21, "testname": "DC_MC"}
+\o [2026-04-15 09:16:59.258 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 22, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "22:33:6589", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "52711"}
+\o [2026-04-15 09:16:59.258 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 22, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/22/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/22/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:16:59.740 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 718.6992 MBytes, peak memory used: 718.6992 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 22, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:16:59.740 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 22, "testname": "DC_MC"}
+\o [2026-04-15 09:16:59.741 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 23, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "23:33:6590", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "54720"}
+\o [2026-04-15 09:16:59.741 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 23, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/23/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/23/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:17:00.115 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 718.6992 MBytes, peak memory used: 718.6992 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 23, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:17:00.116 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 23, "testname": "DC_MC"}
+\o [2026-04-15 09:17:00.120 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 24, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "24:33:6591", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "56727"}
+\o [2026-04-15 09:17:00.120 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 24, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/24/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/24/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:17:00.708 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 718.7383 MBytes, peak memory used: 718.7383 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 24, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:17:00.708 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 24, "testname": "DC_MC"}
+\o [2026-04-15 09:17:00.709 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 25, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "25:33:6592", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "58736"}
+\o [2026-04-15 09:17:00.709 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 25, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/25/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/25/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:17:01.302 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 718.7383 MBytes, peak memory used: 718.7383 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 25, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:17:01.303 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 25, "testname": "DC_MC"}
+\o [2026-04-15 09:17:01.306 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 26, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "26:33:6593", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "60743"}
+\o [2026-04-15 09:17:01.306 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 26, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/26/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/26/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:17:01.724 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 718.7383 MBytes, peak memory used: 718.7383 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 26, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:17:01.724 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 26, "testname": "DC_MC"}
+\o [2026-04-15 09:17:01.725 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 27, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "27:33:6594", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "62752"}
+\o [2026-04-15 09:17:01.725 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 27, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/27/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/27/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:17:02.164 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 718.7383 MBytes, peak memory used: 718.7383 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 27, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:17:02.164 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 27, "testname": "DC_MC"}
+\o [2026-04-15 09:17:02.165 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 28, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "28:33:6595", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "64759"}
+\o [2026-04-15 09:17:02.165 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 28, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/28/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/28/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:17:02.529 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 718.7383 MBytes, peak memory used: 718.7383 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 28, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:17:02.529 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 28, "testname": "DC_MC"}
+\o [2026-04-15 09:17:02.530 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 29, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "29:33:6596", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "66768"}
+\o [2026-04-15 09:17:02.530 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 29, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/29/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/29/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:17:02.760 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 718.7383 MBytes, peak memory used: 718.7383 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 29, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:17:02.760 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 29, "testname": "DC_MC"}
+\o [2026-04-15 09:17:02.761 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 30, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "30:33:6597", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "68775"}
+\o [2026-04-15 09:17:02.761 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 30, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/30/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/30/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:17:03.046 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 718.7383 MBytes, peak memory used: 718.7383 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 30, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:17:03.046 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 30, "testname": "DC_MC"}
+\o [2026-04-15 09:17:03.047 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 31, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "31:33:6598", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "70784"}
+\o [2026-04-15 09:17:03.047 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 31, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/31/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/31/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:17:04.318 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 718.7383 MBytes, peak memory used: 718.7383 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 31, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:17:04.319 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 31, "testname": "DC_MC"}
+\o [2026-04-15 09:17:04.322 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 32, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "32:33:6599", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "72791"}
+\o [2026-04-15 09:17:04.322 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 32, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/32/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/32/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:17:04.606 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 718.7383 MBytes, peak memory used: 718.7383 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 32, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:17:04.606 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 32, "testname": "DC_MC"}
+\o [2026-04-15 09:17:04.608 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 33, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "33:33:6600", "HistoryName": "MonteCarlo.0", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "74800"}
+\o [2026-04-15 09:17:04.608 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 33, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/33/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.0/33/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:17:04.926 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 718.7383 MBytes, peak memory used: 718.7383 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 33, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:17:04.926 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 33, "testname": "DC_MC"}
+\o **** stopping dspf2oa stdobj@0x4ab598d8 28 109
+\o [2026-04-15 09:19:29.818 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 0, "testname": "DC_MC", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "MonteCarlo.1", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "76857"}
+\o [2026-04-15 09:19:29.819 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started preparing netlist {"point": 0, "testname": "DC_MC", "testnameKey": "DC_MC"}
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o *Warning* AXL Context Manager : job 109 is already registered. 
+\o 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = FBIAS
+\o 	Cell         = fbias_gm_c_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = MonteCarlo.1
+\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.1.rdb
+\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.1/1/DC_MC
+\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro
+\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
+\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FBIAS/fbias_gm_c_tb/maestro
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "0"
+\o Setting var VDD_STEP = "3.3"
+\o Setting var VDD_TR = "1u"
+\o Reusing AHDL Data dir
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.1/psf/DC_MC
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 15 09:19:31 2026
+\o End netlisting Apr 15 09:19:31 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o [2026-04-15 09:19:31.448 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished preparing netlist {"point": 0, "testname": "DC_MC", "testnameKey": "DC_MC"}
+\o [2026-04-15 09:19:32.456 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 1, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "1:33:6568", "HistoryName": "MonteCarlo.1", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "78386"}
+\o [2026-04-15 09:19:32.456 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 1, "testname": "DC_MC"}
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o *Warning* AXL Context Manager : job 109 is already registered. 
+\o 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = FBIAS
+\o 	Cell         = fbias_gm_c_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = MonteCarlo.1
+\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.1.rdb
+\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.1/1/DC_MC
+\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro
+\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
+\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FBIAS/fbias_gm_c_tb/maestro
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "0"
+\o Setting var VDD_STEP = "3.3"
+\o Setting var VDD_TR = "1u"
+\o Setting var temperature = "27"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.1/1/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.1/1/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:19:33.395 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 722.7773 MBytes, peak memory used: 722.7773 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:19:33.395 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 1, "testname": "DC_MC"}
+\o [2026-04-15 09:19:33.397 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 2, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "2:33:6569", "HistoryName": "MonteCarlo.1", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "82502"}
+\o [2026-04-15 09:19:33.397 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 2, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.1/2/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.1/2/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:19:33.816 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 722.7773 MBytes, peak memory used: 722.7773 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 2, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:19:33.818 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 2, "testname": "DC_MC"}
+\o [2026-04-15 09:19:33.822 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 3, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "3:33:6570", "HistoryName": "MonteCarlo.1", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "84504"}
+\o [2026-04-15 09:19:33.822 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 3, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.1/3/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.1/3/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:19:34.320 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 722.8398 MBytes, peak memory used: 722.8398 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 3, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:19:34.320 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 3, "testname": "DC_MC"}
+\o [2026-04-15 09:19:34.321 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 4, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "4:33:6571", "HistoryName": "MonteCarlo.1", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "86504"}
+\o [2026-04-15 09:19:34.321 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 4, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.1/4/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.1/4/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:19:34.571 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 722.8398 MBytes, peak memory used: 722.8398 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 4, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:19:34.572 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 4, "testname": "DC_MC"}
+\o [2026-04-15 09:19:34.573 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 5, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "5:33:6572", "HistoryName": "MonteCarlo.1", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "88506"}
+\o [2026-04-15 09:19:34.573 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 5, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.1/5/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.1/5/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:19:35.058 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 722.8398 MBytes, peak memory used: 722.8398 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 5, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:19:35.058 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 5, "testname": "DC_MC"}
+\o [2026-04-15 09:19:35.059 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 6, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "6:33:6573", "HistoryName": "MonteCarlo.1", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "90506"}
+\o [2026-04-15 09:19:35.059 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 6, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.1/6/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.1/6/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:19:35.612 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 722.8398 MBytes, peak memory used: 722.8398 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 6, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:19:35.613 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 6, "testname": "DC_MC"}
+\o [2026-04-15 09:19:35.613 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 7, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "7:33:6574", "HistoryName": "MonteCarlo.1", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "92508"}
+\o [2026-04-15 09:19:35.614 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 7, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.1/7/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.1/7/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:19:36.118 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 722.8398 MBytes, peak memory used: 722.8398 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 7, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:19:36.118 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 7, "testname": "DC_MC"}
+\o [2026-04-15 09:19:36.119 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 8, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "8:33:6575", "HistoryName": "MonteCarlo.1", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "94508"}
+\o [2026-04-15 09:19:36.119 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 8, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.1/8/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.1/8/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:19:37.612 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 722.8398 MBytes, peak memory used: 722.8398 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 8, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:19:37.615 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 8, "testname": "DC_MC"}
+\o [2026-04-15 09:19:37.622 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 9, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "9:33:6576", "HistoryName": "MonteCarlo.1", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "96510"}
+\o [2026-04-15 09:19:37.623 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 9, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.1/9/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.1/9/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:19:44.676 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 722.8398 MBytes, peak memory used: 722.8398 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 9, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:19:44.676 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 9, "testname": "DC_MC"}
+\o **** stopping dspf2oa stdobj@0x47348218 28 109
+\o [2026-04-15 09:19:51.923 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 0, "testname": "DC_MC", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "MonteCarlo.2", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "98560"}
+\o [2026-04-15 09:19:51.924 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started preparing netlist {"point": 0, "testname": "DC_MC", "testnameKey": "DC_MC"}
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o *Warning* AXL Context Manager : job 109 is already registered. 
+\o 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = FBIAS
+\o 	Cell         = fbias_gm_c_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = MonteCarlo.2
+\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.2.rdb
+\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.2/1/DC_MC
+\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro
+\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
+\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FBIAS/fbias_gm_c_tb/maestro
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "0"
+\o Setting var VDD_STEP = "3.3"
+\o Setting var VDD_TR = "1u"
+\o Reusing AHDL Data dir
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.2/psf/DC_MC
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 15 09:19:53 2026
+\o End netlisting Apr 15 09:19:53 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o [2026-04-15 09:19:53.556 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished preparing netlist {"point": 0, "testname": "DC_MC", "testnameKey": "DC_MC"}
+\o [2026-04-15 09:19:54.563 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 1, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "1:1:34", "HistoryName": "MonteCarlo.2", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "100089"}
+\o [2026-04-15 09:19:54.563 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 1, "testname": "DC_MC"}
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o *Warning* AXL Context Manager : job 109 is already registered. 
+\o 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = FBIAS
+\o 	Cell         = fbias_gm_c_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = MonteCarlo.2
+\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.2.rdb
+\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.2/1/DC_MC
+\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro
+\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
+\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FBIAS/fbias_gm_c_tb/maestro
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "0"
+\o Setting var VDD_STEP = "3.3"
+\o Setting var VDD_TR = "1u"
+\o Setting var temperature = "27"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.2/1/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.2/1/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:19:55.295 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 730.4297 MBytes, peak memory used: 730.4297 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:19:55.296 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 1, "testname": "DC_MC"}
+\o [2026-04-15 09:19:55.299 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 35, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "35:1:68", "HistoryName": "MonteCarlo.2", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "104203"}
+\o [2026-04-15 09:19:55.299 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 35, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.2/35/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.2/35/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:19:55.814 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 730.4297 MBytes, peak memory used: 730.4297 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 35, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:19:55.815 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 35, "testname": "DC_MC"}
+\o [2026-04-15 09:19:55.818 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 69, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "69:1:102", "HistoryName": "MonteCarlo.2", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "106150"}
+\o [2026-04-15 09:19:55.818 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 69, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.2/69/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.2/69/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:19:56.284 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 730.4375 MBytes, peak memory used: 730.4375 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 69, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:19:56.285 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 69, "testname": "DC_MC"}
+\o [2026-04-15 09:19:56.288 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 103, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "103:1:136", "HistoryName": "MonteCarlo.2", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "108098"}
+\o [2026-04-15 09:19:56.289 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 103, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.2/103/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.2/103/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:19:56.794 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 732.3555 MBytes, peak memory used: 732.3555 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 103, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:19:56.794 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 103, "testname": "DC_MC"}
+\o [2026-04-15 09:19:56.796 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 137, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "137:1:170", "HistoryName": "MonteCarlo.2", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "110053"}
+\o [2026-04-15 09:19:56.797 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 137, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.2/137/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.2/137/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:19:57.305 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 732.3555 MBytes, peak memory used: 732.3555 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 137, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:19:57.306 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 137, "testname": "DC_MC"}
+\o [2026-04-15 09:19:57.310 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 171, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "171:1:200", "HistoryName": "MonteCarlo.2", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "112008"}
+\o [2026-04-15 09:19:57.311 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 171, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.2/171/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.2/171/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:19:57.839 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 732.3555 MBytes, peak memory used: 732.3555 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 171, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:19:57.840 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 171, "testname": "DC_MC"}
+\# Memory report: Maximum memory size now 51,212 MB at UTC 2026.04.15 09:21:46.062
+\o [2026-04-15 09:24:16.167 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 0, "testname": "DC_MC", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "MonteCarlo.3", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "114046"}
+\o [2026-04-15 09:24:16.167 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started preparing netlist {"point": 0, "testname": "DC_MC", "testnameKey": "DC_MC"}
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o *Warning* AXL Context Manager : job 109 is already registered. 
+\o 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = FBIAS
+\o 	Cell         = fbias_gm_c_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = MonteCarlo.3
+\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.3.rdb
+\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.3/1/DC_MC
+\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro
+\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
+\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FBIAS/fbias_gm_c_tb/maestro
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "0"
+\o Setting var VDD_STEP = "3.3"
+\o Setting var VDD_TR = "1u"
+\o Reusing AHDL Data dir
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.3/psf/DC_MC
+\o 
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 15 09:24:17 2026
+\o End netlisting Apr 15 09:24:17 2026
+\o 
+\o 	The netlist is up to date.
+\o 	Time taken to compare the design with netlist:   0.0s
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o [2026-04-15 09:24:17.822 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished preparing netlist {"point": 0, "testname": "DC_MC", "testnameKey": "DC_MC"}
+\o [2026-04-15 09:24:18.827 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 1, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "1:1:34", "HistoryName": "MonteCarlo.3", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "114365"}
+\o [2026-04-15 09:24:18.828 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 1, "testname": "DC_MC"}
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o *Warning* AXL Context Manager : job 109 is already registered. 
+\o 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = FBIAS
+\o 	Cell         = fbias_gm_c_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = MonteCarlo.3
+\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.3.rdb
+\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.3/1/DC_MC
+\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro
+\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
+\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FBIAS/fbias_gm_c_tb/maestro
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "0"
+\o Setting var VDD_STEP = "3.3"
+\o Setting var VDD_TR = "1u"
+\o Setting var temperature = "27"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.3/1/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.3/1/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:24:19.735 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 741.7969 MBytes, peak memory used: 741.7969 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:24:19.736 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 1, "testname": "DC_MC"}
+\o [2026-04-15 09:24:19.739 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 35, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "35:1:68", "HistoryName": "MonteCarlo.3", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "119690"}
+\o [2026-04-15 09:24:19.740 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 35, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.3/35/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.3/35/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:24:20.109 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 741.7969 MBytes, peak memory used: 741.7969 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 35, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:24:20.109 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 35, "testname": "DC_MC"}
+\o [2026-04-15 09:24:20.110 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 69, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "69:1:102", "HistoryName": "MonteCarlo.3", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "121637"}
+\o [2026-04-15 09:24:20.110 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 69, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.3/69/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.3/69/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:24:20.428 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 741.7969 MBytes, peak memory used: 741.7969 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 69, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:24:20.429 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 69, "testname": "DC_MC"}
+\o [2026-04-15 09:24:20.432 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 103, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "103:1:136", "HistoryName": "MonteCarlo.3", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "123585"}
+\o [2026-04-15 09:24:20.433 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 103, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.3/103/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.3/103/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:24:20.771 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 741.7969 MBytes, peak memory used: 741.7969 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 103, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:24:20.772 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 103, "testname": "DC_MC"}
+\o [2026-04-15 09:24:20.773 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 137, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "137:1:170", "HistoryName": "MonteCarlo.3", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "125540"}
+\o [2026-04-15 09:24:20.773 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 137, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.3/137/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.3/137/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:24:21.009 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 741.8047 MBytes, peak memory used: 741.8047 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 137, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:24:21.009 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 137, "testname": "DC_MC"}
+\o [2026-04-15 09:24:21.010 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - GroupPoints {"point": 171, "testname": "DC_MC", "event": "GroupPoints", "EventSource": "Netlist Service", "Points": "171:1:200", "HistoryName": "MonteCarlo.3", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log", "logFileSize": "127495"}
+\o [2026-04-15 09:24:21.011 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 171, "testname": "DC_MC"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.3/171/DC_MC/groupRunDataDir/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FBIAS/fbias_gm_c_tb/maestro/results/maestro/MonteCarlo.3/171/DC_MC/groupRunDataDir
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-15 09:24:21.281 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 741.8516 MBytes, peak memory used: 741.8516 MBytes {"hostname": "edatools", "processid": 1908253, "testname": "DC_MC", "point": 171, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service109.log"}
+\o [2026-04-15 09:24:21.282 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 171, "testname": "DC_MC"}
+\# Memory report: Maximum memory size now 52,290 MB at UTC 2026.04.15 09:24:25.313
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\# Lic Summary:
+\# [09:29:24.220408] Cdslmd servers:3000@lic08.ug.kth.se:29000@lic06.ug.kth.se
+\# [09:29:24.220432] Feature usage summary:
+\# Memory report: on exit            469 MB, process size 2,232 MB at UTC 2026.04.15 09:29:24.744
+\# Memory report: peak usage         469 MB, process size 2,234 MB

@@ -1,0 +1,1179 @@
+\# Program start time:     UTC 2026.05.26 10:22:57.930
+\# Local time: UTC (UTC+00:00) 2026.05.26 10:22:57.930
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 09/03/2024 19:11 (sjfhw316) $
+\o Hierarchy:		/opt/tools/cadence/installs/IC618/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.36  (64-bit addresses)
+\# Command line:	/opt/tools/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -beanhost edatools -beanport 11300 -beanbinlog  -beanLogFile /home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/amps_Service52.log -mpssession virtuoso93243 -mpshost edatools -davinciService DaVinciService_93243_1779769417 -scopedPid 93243 -axlSession fnxSession1 -axlServiceIdFlag 52 -uuid 55013fcf-eedd-4ebd-8616-c2d9bbb89303 -heartbeat /dev/shm/swift-heartbeat.sUaZpI3FpT -log /home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log -noautostart -nographE -lscs 000175E1894CBE06FF0966E38F1FFC06BC4D138FFC7EFC06BC4D68F886089075D3225CD1A12FD236867F66E38F1FFC06BC4D66E38F1FFC06BC4D0CF6FB9F8886D65800001E5D -interactive -offlineExprEval -fenixMode assembler -heartbeatTimeout  -lingerTimeout 300 -pointlifetime -1
+\# Host name (type):	edatools (x86_64)
+\# Operating system:	Linux 6.17.0-29-generic #29~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon May 11 10:30:58 UTC 2
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:4246 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12011000)
+\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        786 MB
+\# Available memory:	     52,900 MB
+\# System memory:	     72,238 MB
+\# Maximum memory size:	     71,571 MB
+\# Max mem available:	     53,019 MB
+\# Initial memory used:	        119 MB
+\#        process size:	      1,676 MB
+\# Thread usage limits (effective/default):	maxthreads 4294967295/4294967295 maxload 16.00/16.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		saul
+\o Working Directory:	edatools:/home/saul/projects/IL2244_VT26_SAUL
+\# Process Id:		258181
+\o 
+\o COPYRIGHT (C) 1992-2024  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2024  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\o Loading adexlDM.cxt 
+\o Loading cpf.cxt 
+\o Loading cli.cxt 
+\o Loading lp.cxt 
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso93243, host=edatools). Connection mode is LSCS. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
+\o INFO (ELI-00304) The registration of the child 258181 within 90 seconds is being processed...
+\o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
+\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\# [10:22:57.445322] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se:29000@lic06.ug.kth.se
+\# Memory report: using         269 MB, process size 1,956 MB at UTC 2026.05.26 10:22:59.026
+\o ......................................................................................
+\o            ams AG HIT-Kit v.ams_4.10
+\o ......................................................................................
+\o COPYRIGHT (c) 2012 Full Service Foundry @ ams AG.  ALL RIGHTS RESERVED
+\o This HIT-Kit and attached documentation are confidential information and may 
+\o only be used as authorized by the HIT-Kit license agreement.
+\o ......................................................................................
+\# Current Window: window(2)
+\o Loading simulator default settings.
+\o //
+\o //  Calibre Skill Interface * (v2024.4_12.9) *
+\o //
+\o //                         Copyright Siemens 1996-2020     
+\o //                             All Rights Reserved.
+\o //         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+\o //            WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+\o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+\o //
+\o //
+\o Loading simulator default settings.
+\p hitkit: ams_4.10  Tech: c35b4c3  User: saul 
+\# Loading perfDiag...
+\# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 258181' to open it when Virtuoso freezes.
+\# (PerfDiag): Use backtrace from GLIBC.
+\w *WARNING* _perfPstackCheck: Cannot find pstack/gstack. Please setup PATH environment variable to pstack/gstack executable.
+\i _axlRunServices()
+\# [10:22:59.430369] Periodic Lic check successful
+\# [10:22:59.430370] Feature usage summary:
+\o Loading simui.cxt 
+\o [2026-05-26 10:22:59.967 Z] [PROCESS] [cadence.virtuoso.ade.services] - Netlist Service has successfully started. Waiting for incoming messages ... {"hostname": "edatools", "processid": 258181, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:00.009 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 0, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "5660"}
+\o [2026-05-26 10:23:00.009 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started preparing netlist {"point": 0, "testname": "TRAN_VDD_PULSE", "testnameKey": "TRAN_VDD_PULSE"}
+\o Loading vqp.cxt 
+\o Loading vdsil.cxt 
+\o *Warning* AXL Context Manager : job 52 is already registered. 
+\o 
+\o Loading hdlPkg.cxt 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = FECG
+\o 	Cell         = fecg_front_end_tran_tb
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = Interactive.78
+\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78.rdb
+\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/1/TRAN_VDD_PULSE
+\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro
+\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
+\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_front_end_tran_tb/maestro
+\o 	File Encoding = 0
+\o 
+\o 
+\o Loading viva.cxt 
+\o Loading spectrei.cxt 
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o Loading elec.cxt 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CM_PULSE = "0"
+\o Setting var F0 = "3.3"
+\o Setting var F1 = "3.3"
+\o Setting var F2 = "0"
+\o Setting var FC = "4k"
+\o Setting var S0 = "3.3"
+\o Setting var S1 = "0"
+\o Setting var S2 = "0"
+\o Setting var VCM_AC = "0"
+\o Setting var VCM_AMP = "0"
+\o Setting var VCM_DC = "1.5"
+\o Setting var VDD = "0"
+\o Setting var VDD_PULSE = "3.3"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "0"
+\o Setting var VIN_FREQ = "50"
+\o Setting var VIN_PULSE = "0"
+\o Loading monte.cxt 
+\o Reusing AHDL Data dir
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/psf/TRAN_VDD_PULSE
+\o 
+\o generate netlist...
+\# Memory report: using         414 MB, process size 2,179 MB at UTC 2026.05.26 10:23:02.008
+\o Loading hnlInit.cxt 
+\o Loading seCore.cxt 
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting May 26 10:23:02 2026
+\o Loading json.cxt 
+\o End netlisting May 26 10:23:02 2026
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:   31
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o [2026-05-26 10:23:02.232 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished preparing netlist {"point": 0, "testname": "TRAN_VDD_PULSE", "testnameKey": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:03.236 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 1, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "6733"}
+\o [2026-05-26 10:23:03.237 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 1, "testname": "TRAN_VDD_PULSE"}
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o *Warning* AXL Context Manager : job 52 is already registered. 
+\o 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = FECG
+\o 	Cell         = fecg_front_end_tran_tb
+\o 	View         = config
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = Interactive.78
+\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78.rdb
+\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/1/TRAN_VDD_PULSE
+\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro
+\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
+\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/fecg_front_end_tran_tb/maestro
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var CM_PULSE = "0"
+\o Setting var F0 = "3.3"
+\o Setting var F1 = "3.3"
+\o Setting var F2 = "0"
+\o Setting var FC = "4k"
+\o Setting var S0 = "3.3"
+\o Setting var S1 = "0"
+\o Setting var S2 = "0"
+\o Setting var VCM_AC = "0"
+\o Setting var VCM_AMP = "0"
+\o Setting var VCM_DC = "1.5"
+\o Setting var VDD = "0"
+\o Setting var VDD_PULSE = "3.3"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "0"
+\o Setting var VIN_FREQ = "50"
+\o Setting var VIN_PULSE = "0"
+\o Setting var temperature = "27"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/1/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/1/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:04.356 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 714.8320 MBytes, peak memory used: 714.8320 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:04.356 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 1, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:04.357 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 2, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "13183"}
+\o [2026-05-26 10:23:04.357 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 2, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/2/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/2/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:04.760 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 714.8359 MBytes, peak memory used: 714.8359 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 2, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:04.761 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 2, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:04.763 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 3, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "15197"}
+\o [2026-05-26 10:23:04.763 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 3, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/3/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/3/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:05.503 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 714.8359 MBytes, peak memory used: 714.8359 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 3, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:05.504 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 3, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:05.506 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 4, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "17209"}
+\o [2026-05-26 10:23:05.507 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 4, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/4/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/4/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:06.231 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 714.8359 MBytes, peak memory used: 714.8359 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 4, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:06.233 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 4, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:06.235 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 5, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "19223"}
+\o [2026-05-26 10:23:06.236 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 5, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/5/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/5/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:06.650 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 714.8359 MBytes, peak memory used: 714.8359 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 5, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:06.651 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 5, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:06.652 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 6, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "21235"}
+\o [2026-05-26 10:23:06.652 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 6, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/6/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/6/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:07.301 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 715.8945 MBytes, peak memory used: 715.8945 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 6, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:07.302 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 6, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:07.303 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 7, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "23249"}
+\o [2026-05-26 10:23:07.303 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 7, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/7/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/7/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:07.592 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 716.8594 MBytes, peak memory used: 716.8594 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 7, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:07.593 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 7, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:07.593 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 8, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "25261"}
+\o [2026-05-26 10:23:07.594 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 8, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/8/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/8/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:07.909 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 719.0547 MBytes, peak memory used: 719.0547 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 8, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:07.910 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 8, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:07.911 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 9, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "27275"}
+\o [2026-05-26 10:23:07.911 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 9, "testname": "TRAN_VDD_PULSE"}
+\# Available memory:         51,922 MB at UTC 2026.05.26 10:23:08.130
+\# Memory report: Maximum memory size now 52,368 MB at UTC 2026.05.26 10:23:08.130
+\# Thread usage report: 22 active threads, active load 1.40 at UTC 2026.05.26 10:23:08.130
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/9/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/9/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:08.696 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 719.6445 MBytes, peak memory used: 719.6445 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 9, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:08.698 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 9, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:08.703 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 10, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "29531"}
+\o [2026-05-26 10:23:08.704 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 10, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/10/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/10/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:10.017 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 720.7422 MBytes, peak memory used: 720.7422 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 10, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:10.017 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 10, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:10.019 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 11, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "31551"}
+\o [2026-05-26 10:23:10.019 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 11, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/11/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/11/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:11.340 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8516 MBytes, peak memory used: 724.8516 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 11, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:11.341 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 11, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:11.342 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 12, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "33569"}
+\o [2026-05-26 10:23:11.379 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 12, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/12/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/12/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:12.189 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8555 MBytes, peak memory used: 724.8555 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 12, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:12.189 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 12, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:12.191 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 13, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "35589"}
+\o [2026-05-26 10:23:12.191 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 13, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/13/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/13/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:12.745 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8555 MBytes, peak memory used: 724.8555 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 13, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:12.745 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 13, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:12.746 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 14, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "37607"}
+\o [2026-05-26 10:23:12.747 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 14, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/14/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/14/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:13.350 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8555 MBytes, peak memory used: 724.8555 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 14, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:13.350 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 14, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:13.351 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 15, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "39627"}
+\o [2026-05-26 10:23:13.352 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 15, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/15/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/15/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:13.910 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8555 MBytes, peak memory used: 724.8555 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 15, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:13.911 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 15, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:13.913 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 16, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "41645"}
+\o [2026-05-26 10:23:13.913 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 16, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/16/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/16/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:15.512 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8555 MBytes, peak memory used: 724.8555 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 16, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:15.514 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 16, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:15.519 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 17, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "43665"}
+\o [2026-05-26 10:23:15.520 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 17, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/17/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/17/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:17.187 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8555 MBytes, peak memory used: 724.8555 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 17, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:17.188 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 17, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:17.189 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 18, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "45683"}
+\o [2026-05-26 10:23:17.189 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 18, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/18/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/18/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\# Memory report: Maximum memory size now 50,925 MB at UTC 2026.05.26 10:23:18.201
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:18.514 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8555 MBytes, peak memory used: 724.8555 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 18, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:18.516 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 18, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:18.520 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 19, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "47786"}
+\o [2026-05-26 10:23:18.521 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 19, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/19/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/19/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:19.410 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8555 MBytes, peak memory used: 724.8555 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 19, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:19.410 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 19, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:19.411 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 20, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "49804"}
+\o [2026-05-26 10:23:19.412 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 20, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/20/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/20/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:19.801 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8555 MBytes, peak memory used: 724.8555 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 20, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:19.802 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 20, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:19.803 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 21, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "51824"}
+\o [2026-05-26 10:23:19.803 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 21, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/21/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/21/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:20.212 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8555 MBytes, peak memory used: 724.8555 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 21, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:20.212 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 21, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:20.213 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 22, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "53842"}
+\o [2026-05-26 10:23:20.214 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 22, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/22/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/22/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:20.611 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8555 MBytes, peak memory used: 724.8555 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 22, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:20.611 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 22, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:20.612 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 23, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "55862"}
+\o [2026-05-26 10:23:20.613 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 23, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/23/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/23/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:21.094 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8555 MBytes, peak memory used: 724.8555 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 23, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:21.094 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 23, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:21.095 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 24, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "57880"}
+\o [2026-05-26 10:23:21.096 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 24, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/24/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/24/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:21.505 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8555 MBytes, peak memory used: 724.8555 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 24, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:21.505 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 24, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:21.506 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 25, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "59900"}
+\o [2026-05-26 10:23:21.506 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 25, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/25/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/25/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:21.915 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8555 MBytes, peak memory used: 724.8555 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 25, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:21.915 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 25, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:21.916 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 26, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "61918"}
+\o [2026-05-26 10:23:21.916 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 26, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/26/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/26/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:22.333 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8555 MBytes, peak memory used: 724.8555 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 26, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:22.334 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 26, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:22.334 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 27, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "63938"}
+\o [2026-05-26 10:23:22.335 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 27, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/27/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/27/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:22.742 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8555 MBytes, peak memory used: 724.8555 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 27, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:22.743 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 27, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:22.744 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 28, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "65956"}
+\o [2026-05-26 10:23:22.744 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 28, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/28/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/28/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:23.153 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8555 MBytes, peak memory used: 724.8555 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 28, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:23.154 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 28, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:23.155 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 29, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "67976"}
+\o [2026-05-26 10:23:23.155 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 29, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/29/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/29/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:23.559 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8555 MBytes, peak memory used: 724.8555 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 29, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:23.559 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 29, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:23.560 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 30, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "69994"}
+\o [2026-05-26 10:23:23.560 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 30, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/30/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/30/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:23.999 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8555 MBytes, peak memory used: 724.8555 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 30, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:23.999 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 30, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:24.000 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 31, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "72014"}
+\o [2026-05-26 10:23:24.000 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 31, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/31/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/31/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:24.418 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8555 MBytes, peak memory used: 724.8555 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 31, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:24.418 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 31, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:24.419 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 32, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "74032"}
+\o [2026-05-26 10:23:24.420 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 32, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/32/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/32/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:24.848 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8555 MBytes, peak memory used: 724.8555 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 32, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:24.849 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 32, "testname": "TRAN_VDD_PULSE"}
+\o [2026-05-26 10:23:24.850 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 33, "testname": "TRAN_VDD_PULSE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.78", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log", "logFileSize": "76052"}
+\o [2026-05-26 10:23:24.850 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 33, "testname": "TRAN_VDD_PULSE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/33/TRAN_VDD_PULSE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/fecg_front_end_tran_tb/maestro/results/maestro/Interactive.78/33/TRAN_VDD_PULSE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-05-26 10:23:25.260 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8555 MBytes, peak memory used: 724.8555 MBytes {"hostname": "edatools", "processid": 258181, "testname": "TRAN_VDD_PULSE", "point": 33, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service52.log"}
+\o [2026-05-26 10:23:25.260 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 33, "testname": "TRAN_VDD_PULSE"}
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\# Lic Summary:
+\# [10:28:28.446226] Cdslmd servers:3000@lic08.ug.kth.se:29000@lic06.ug.kth.se
+\# [10:28:28.446235] Feature usage summary:
+\# Memory report: on exit            452 MB, process size 2,214 MB at UTC 2026.05.26 10:28:28.446
+\# Memory report: peak usage         452 MB, process size 2,217 MB

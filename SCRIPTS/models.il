@@ -1,0 +1,13 @@
+modelFile( 
+    '("/opt/pdk/ams/410/spectre/c35/soac/processOption.scs" "")
+    '("/opt/pdk/ams/410/spectre/c35/soac/cmos53.scs" "cmostm")
+    '("/opt/pdk/ams/410/spectre/c35/soac/res.scs" "restm")
+    '("/opt/pdk/ams/410/spectre/c35/soac/cap.scs" "captm")
+    '("/opt/pdk/ams/410/spectre/c35/soac/bip.scs" "biptm")
+    '("/opt/pdk/ams/410/spectre/c35/soac/ind.scs" "indtm")
+    '("/opt/pdk/ams/410/spectre/c35/soac/esddiode.scs" "esddiodetm")
+)
+definitionFile(
+    "/opt/pdk/ams/410/spectre/c35/soac/soac.scs"
+)
+

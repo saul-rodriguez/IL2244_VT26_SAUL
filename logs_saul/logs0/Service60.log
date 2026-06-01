@@ -1,0 +1,2110 @@
+\# Program start time:     UTC 2026.04.18 20:59:31.262
+\# Local time: UTC (UTC+00:00) 2026.04.18 20:59:31.262
+\o Program:		@(#)$CDS: virtuoso version 6.1.8-64b 09/03/2024 19:11 (sjfhw316) $
+\o Hierarchy:		/opt/tools/cadence/installs/IC618/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC6.1.8-64b.500.36  (64-bit addresses)
+\# Command line:	/opt/tools/cadence/installs/IC618/tools.lnx86/dfII/bin/64bit/virtuoso -beanhost edatools -beanport 11300 -beanbinlog  -beanLogFile /home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/amps_Service60.log -mpssession virtuoso2818667 -mpshost edatools -davinciService DaVinciService_2818667_1776408715 -scopedPid 2818667 -axlSession fnxSession4 -axlServiceIdFlag 60 -uuid 3190c6fd-9df6-471b-a4ae-2a6b55987934 -heartbeat /dev/shm/swift-heartbeat.pLarG9yZPZ -log /home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log -noautostart -nographE -lscs 000175E1894CBE06FF0966E38F1FFC06BC4D138FFC7EFC06BC4D68F886089075D3225CD1A12FD236867F66E38F1FFC06BC4D66E38F1FFC06BC4D0F007FAE0CB7D5AE00001E66 -interactive -offlineExprEval -fenixMode assembler -heartbeatTimeout  -lingerTimeout 300 -pointlifetime -1
+\# Host name (type):	edatools (x86_64)
+\# Operating system:	Linux 6.17.0-20-generic #20~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Mar 19 01:28:37 UTC 2
+\# Linux /etc/issue:	\S
+\# Linux /etc/issue:	Kernel \r on an \m
+\# X display name (WxH):	:1077 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12011000)
+\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        925 MB
+\# Available memory:	     54,366 MB
+\# System memory:	     72,238 MB
+\# Maximum memory size:	     71,432 MB
+\# Max mem available:	     54,486 MB
+\# Initial memory used:	        119 MB
+\#        process size:	      1,676 MB
+\# Thread usage limits (effective/default):	maxthreads 4294967295/4294967295 maxload 16.00/16.00
+\# Qt version:		5.9.1
+\# Window Manager:	other
+\# User Name:		saul
+\o Working Directory:	edatools:/home/saul/projects/IL2244_VT26_SAUL
+\# Process Id:		3694742
+\o 
+\o COPYRIGHT (C) 1992-2024  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2024  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading analog.cxt 
+\o Loading asimenv.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\# Memory report: using         221 MB, process size 1,786 MB at UTC 2026.04.18 20:59:32.008
+\o Loading socket.cxt 
+\o Loading par.cxt 
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\o Loading adexlDM.cxt 
+\o Loading cpf.cxt 
+\o Loading cli.cxt 
+\o Loading lp.cxt 
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso2818667, host=edatools). Connection mode is LSCS. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
+\o INFO (ELI-00304) The registration of the child 3694742 within 90 seconds is being processed...
+\o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
+\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\# [20:59:31.445346] Configured Lic search path (22.01-s002): 3000@lic08.ug.kth.se:29000@lic06.ug.kth.se
+\o ......................................................................................
+\o            ams AG HIT-Kit v.ams_4.10
+\o ......................................................................................
+\o COPYRIGHT (c) 2012 Full Service Foundry @ ams AG.  ALL RIGHTS RESERVED
+\o This HIT-Kit and attached documentation are confidential information and may 
+\o only be used as authorized by the HIT-Kit license agreement.
+\o ......................................................................................
+\# Current Window: window(2)
+\o Loading simulator default settings.
+\o //
+\o //  Calibre Skill Interface * (v2024.4_12.9) *
+\o //
+\o //                         Copyright Siemens 1996-2020     
+\o //                             All Rights Reserved.
+\o //         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+\o //            WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+\o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+\o //
+\o //
+\o Loading simulator default settings.
+\p hitkit: ams_4.10  Tech: c35b4c3  User: saul 
+\w *WARNING* could not load font "-*-courier-medium-r-*-*-12-*", using font "fixed"
+\# Loading perfDiag...
+\# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
+\# Performance Diagnostic tool is installed. You can access PerfDiag from CIW Tools or use the shell command 'cdsPerfDiag -p 3694742' to open it when Virtuoso freezes.
+\# (PerfDiag): Use backtrace from GLIBC.
+\w *WARNING* _perfPstackCheck: Cannot find pstack/gstack. Please setup PATH environment variable to pstack/gstack executable.
+\i _axlRunServices()
+\# [20:59:33.031650] periodic Lic check successful
+\# [20:59:33.031651] Feature usage summary:
+\o Loading simui.cxt 
+\o [2026-04-18 20:59:33.578 Z] [PROCESS] [cadence.virtuoso.ade.services] - Netlist Service has successfully started. Waiting for incoming messages ... {"hostname": "edatools", "processid": 3694742, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 20:59:33.621 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 0, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "5755"}
+\o [2026-04-18 20:59:33.622 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started preparing netlist {"point": 0, "testname": "PSS_PXF_PNOISE", "testnameKey": "PSS_PXF_PNOISE"}
+\# Memory report: using         323 MB, process size 2,083 MB at UTC 2026.04.18 20:59:34.723
+\o Loading vqp.cxt 
+\o Loading vdsil.cxt 
+\o *Warning* AXL Context Manager : job 60 is already registered. 
+\o 
+\o Loading hdlPkg.cxt 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = FCORE
+\o 	Cell         = fcore_core_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = Interactive.39
+\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39.rdb
+\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/1/PSS_PXF_PNOISE
+\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro
+\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
+\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FCORE/fcore_core_tb/maestro
+\o 	File Encoding = 0
+\o 
+\o 
+\o Loading viva.cxt 
+\o Loading spectrei.cxt 
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o Loading elec.cxt 
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var F0 = "3.3"
+\o Setting var F1 = "3.3"
+\o Setting var F2 = "0"
+\o Setting var FC = "4k"
+\o Setting var S0 = "3.3"
+\o Setting var S1 = "0"
+\o Setting var S2 = "0"
+\o Setting var VCM_AC = "0"
+\o Setting var VCM_AMP = "0"
+\o Setting var VCM_DC = "1.6"
+\o Setting var VDD = "3.3"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "0"
+\o Setting var VIN_FREQ = "50"
+\o Setting var VREF_SEL = "0"
+\o Loading monte.cxt 
+\o Reusing AHDL Data dir
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/psf/PSS_PXF_PNOISE
+\o 
+\o generate netlist...
+\o Loading hnlInit.cxt 
+\o Loading seCore.cxt 
+\o function ansCdlCompPrim redefined
+\o function ansCdlCompPrim redefined
+\o Begin Incremental Netlisting Apr 18 20:59:35 2026
+\o WARNING (OSSHNL-225): The design variable 'temperature', used in the last netlisting session in the current
+\o run directory is not used in this netlisting session. The netlist(s) generated
+\o in the last netlisting session cannot be reused for incremental netlisting.
+\o Therefore re-netlisting the design.
+\o 
+\o Loading json.cxt 
+\o End netlisting Apr 18 20:59:36 2026
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:  414
+\o 
+\o 	Elapsed time:          1.0s (414.00/s)
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o [2026-04-18 20:59:36.357 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished preparing netlist {"point": 0, "testname": "PSS_PXF_PNOISE", "testnameKey": "PSS_PXF_PNOISE"}
+\o [2026-04-18 20:59:37.363 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 1, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "7939"}
+\o [2026-04-18 20:59:37.364 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 1, "testname": "PSS_PXF_PNOISE"}
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\o *Warning* AXL Context Manager : job 60 is already registered. 
+\o 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = FCORE
+\o 	Cell         = fcore_core_tb
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = Interactive.39
+\o 	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39.rdb
+\o 	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/1/PSS_PXF_PNOISE
+\o 	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro
+\o 	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
+\o 	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FCORE/fcore_core_tb/maestro
+\o 	File Encoding = 0
+\o 
+\o 
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\# Memory report: using         429 MB, process size 2,195 MB at UTC 2026.04.18 20:59:38.599
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var F0 = "3.3"
+\o Setting var F1 = "3.3"
+\o Setting var F2 = "0"
+\o Setting var FC = "4k"
+\o Setting var S0 = "3.3"
+\o Setting var S1 = "0"
+\o Setting var S2 = "0"
+\o Setting var VCM_AC = "0"
+\o Setting var VCM_AMP = "0"
+\o Setting var VCM_DC = "1.6"
+\o Setting var VDD = "3.3"
+\o Setting var VIN_AC = "1"
+\o Setting var VIN_AMP = "0"
+\o Setting var VIN_DC = "0"
+\o Setting var VIN_FREQ = "50"
+\o Setting var VREF_SEL = "0"
+\o Setting var temperature = "27"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/1/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/1/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 20:59:38.873 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 723.9844 MBytes, peak memory used: 723.9844 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 20:59:38.874 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 1, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 20:59:38.877 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 2, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "13477"}
+\o [2026-04-18 20:59:38.877 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 2, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "2.97"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/2/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/2/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 20:59:39.768 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 723.9922 MBytes, peak memory used: 723.9922 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 2, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 20:59:39.769 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 2, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 20:59:39.772 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 3, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "15504"}
+\o [2026-04-18 20:59:39.773 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 3, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/3/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/3/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 20:59:40.414 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.0547 MBytes, peak memory used: 724.0547 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 3, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 20:59:40.415 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 3, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 20:59:40.417 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 4, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "17501"}
+\o [2026-04-18 20:59:40.417 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 4, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/4/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/4/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 20:59:40.755 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.0547 MBytes, peak memory used: 724.0547 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 4, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 20:59:40.755 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 4, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 20:59:40.756 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 5, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "19528"}
+\o [2026-04-18 20:59:40.756 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 5, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/5/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/5/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\# Available memory:         53,782 MB at UTC 2026.04.18 20:59:41.024
+\# Memory report: Maximum memory size now 54,229 MB at UTC 2026.04.18 20:59:41.024
+\# Thread usage report: 22 active threads, active load 1.40 at UTC 2026.04.18 20:59:41.024
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 20:59:41.081 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.0547 MBytes, peak memory used: 724.0547 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 5, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 20:59:41.082 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 5, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 20:59:41.082 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 6, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "21769"}
+\o [2026-04-18 20:59:41.083 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 6, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "2.97"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/6/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/6/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 20:59:41.474 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8125 MBytes, peak memory used: 724.8125 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 6, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 20:59:41.475 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 6, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 20:59:41.476 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 7, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "23796"}
+\o [2026-04-18 20:59:41.476 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 7, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/7/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/7/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 20:59:41.818 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 7, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 20:59:41.818 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 7, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 20:59:41.819 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 8, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "25793"}
+\o [2026-04-18 20:59:41.820 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 8, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/8/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/8/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 20:59:42.152 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 8, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 20:59:42.153 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 8, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 20:59:42.153 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 9, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "27820"}
+\o [2026-04-18 20:59:42.153 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 9, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/9/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/9/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 20:59:42.477 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 9, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 20:59:42.477 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 9, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 20:59:42.478 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 10, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "29817"}
+\o [2026-04-18 20:59:42.478 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 10, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "2.97"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/10/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/10/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 20:59:42.871 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 10, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 20:59:42.871 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 10, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 20:59:42.872 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 11, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "31850"}
+\o [2026-04-18 20:59:42.872 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 11, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/11/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/11/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 20:59:43.200 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 11, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 20:59:43.200 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 11, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 20:59:43.201 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 12, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "33853"}
+\o [2026-04-18 20:59:43.201 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 12, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/12/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/12/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 20:59:43.534 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 12, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 20:59:43.534 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 12, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 20:59:43.535 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 13, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "35886"}
+\o [2026-04-18 20:59:43.535 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 13, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/13/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/13/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 20:59:43.916 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 13, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 20:59:43.917 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 13, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 20:59:43.918 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 14, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "37889"}
+\o [2026-04-18 20:59:43.918 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 14, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "2.97"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/14/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/14/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 20:59:44.263 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 14, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 20:59:44.264 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 14, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 20:59:44.264 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 15, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "39922"}
+\o [2026-04-18 20:59:44.265 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 15, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/15/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/15/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 20:59:44.583 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 15, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 20:59:44.583 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 15, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 20:59:44.584 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 16, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "41925"}
+\o [2026-04-18 20:59:44.584 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 16, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/16/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/16/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 20:59:44.977 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 16, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 20:59:44.978 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 16, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 20:59:44.979 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 17, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "43958"}
+\o [2026-04-18 20:59:44.979 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 17, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/17/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/17/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 20:59:48.216 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 17, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 20:59:48.221 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 17, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 20:59:48.227 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 18, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "45961"}
+\o [2026-04-18 20:59:48.228 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 18, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "2.97"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/18/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/18/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 20:59:54.509 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 18, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 20:59:54.514 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 18, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 20:59:54.519 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 19, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "47994"}
+\o [2026-04-18 20:59:54.520 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 19, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/19/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/19/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\# Memory report: Maximum memory size now 52,636 MB at UTC 2026.04.18 21:00:01.220
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:00:01.436 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 19, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:00:01.440 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 19, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:00:01.517 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 20, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "50080"}
+\o [2026-04-18 21:00:01.518 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 20, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/20/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/20/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:00:08.440 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 20, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:00:08.443 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 20, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:00:08.514 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 21, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "52113"}
+\o [2026-04-18 21:00:08.516 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 21, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/21/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/21/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:00:14.917 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 21, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:00:14.917 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 21, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:00:14.918 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 22, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "54116"}
+\o [2026-04-18 21:00:14.918 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 22, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "2.97"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/22/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/22/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:00:18.427 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 22, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:00:18.432 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 22, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:00:18.441 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 23, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "56149"}
+\o [2026-04-18 21:00:18.508 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 23, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/23/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/23/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:00:22.621 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 23, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:00:22.623 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 23, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:00:22.628 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 24, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "58152"}
+\o [2026-04-18 21:00:22.628 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 24, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/24/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/24/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:00:26.058 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 24, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:00:26.059 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 24, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:00:26.063 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 25, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "60185"}
+\o [2026-04-18 21:00:26.064 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 25, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/25/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/25/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:00:30.038 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 25, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:00:30.040 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 25, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:00:30.046 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 26, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "62188"}
+\o [2026-04-18 21:00:30.047 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 26, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "2.97"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/26/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/26/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:00:34.331 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 26, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:00:34.333 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 26, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:00:34.338 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 27, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "64221"}
+\o [2026-04-18 21:00:34.339 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 27, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/27/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/27/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:00:36.220 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 27, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:00:36.222 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 27, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:00:36.227 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 28, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "66224"}
+\o [2026-04-18 21:00:36.228 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 28, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/28/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/28/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:00:37.923 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 28, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:00:37.925 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 28, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:00:37.930 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 29, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "68257"}
+\o [2026-04-18 21:00:37.930 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 29, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/29/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/29/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:00:39.928 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 29, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:00:39.931 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 29, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:00:39.936 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 30, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "70260"}
+\o [2026-04-18 21:00:39.937 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 30, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "2.97"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/30/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/30/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:00:45.544 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 30, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:00:45.613 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 30, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:00:45.620 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 31, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "72293"}
+\o [2026-04-18 21:00:45.621 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 31, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/31/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/31/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:00:51.730 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 31, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:00:51.732 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 31, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:00:51.809 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 32, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "74296"}
+\o [2026-04-18 21:00:51.810 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 32, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/32/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/32/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:00:58.430 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 32, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:00:58.432 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 32, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:00:58.436 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 33, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "76329"}
+\o [2026-04-18 21:00:58.437 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 33, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/33/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/33/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:01:05.227 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 33, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:01:05.229 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 33, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:01:05.237 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 34, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "78332"}
+\o [2026-04-18 21:01:05.238 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 34, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "2.97"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/34/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/34/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:01:12.043 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 34, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:01:12.116 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 34, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:01:12.124 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 35, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "80365"}
+\o [2026-04-18 21:01:12.125 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 35, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/35/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/35/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:01:18.433 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 35, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:01:18.434 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 35, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:01:18.438 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 36, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "82368"}
+\o [2026-04-18 21:01:18.439 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 36, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/36/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/36/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:01:24.051 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 36, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:01:24.052 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 36, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:01:24.056 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 37, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "84401"}
+\o [2026-04-18 21:01:24.057 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 37, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/37/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/37/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:01:30.912 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 37, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:01:30.915 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 37, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:01:30.920 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 38, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "86404"}
+\o [2026-04-18 21:01:30.921 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 38, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "2.97"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/38/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/38/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:01:37.312 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 38, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:01:37.316 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 38, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:01:37.324 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 39, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "88437"}
+\o [2026-04-18 21:01:37.327 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 39, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/39/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/39/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:01:42.841 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 39, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:01:42.844 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 39, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:01:42.910 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 40, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "90440"}
+\o [2026-04-18 21:01:42.911 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 40, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/40/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/40/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:01:48.922 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 40, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:01:48.925 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 40, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:01:48.932 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 41, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "92473"}
+\o [2026-04-18 21:01:48.933 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 41, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/41/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/41/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:01:52.142 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 41, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:01:52.143 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 41, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:01:52.145 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 42, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "94476"}
+\o [2026-04-18 21:01:52.145 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 42, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "2.97"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/42/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/42/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:01:53.224 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 42, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:01:53.226 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 42, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:01:53.230 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 43, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "96509"}
+\o [2026-04-18 21:01:53.230 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 43, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/43/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/43/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:01:56.236 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 43, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:01:56.237 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 43, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:01:56.241 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 44, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "98512"}
+\o [2026-04-18 21:01:56.241 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 44, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/44/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/44/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:01:58.562 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 44, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:01:58.564 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 44, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:01:58.567 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 45, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "100545"}
+\o [2026-04-18 21:01:58.568 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 45, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/45/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/45/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:02:02.844 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 45, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:02:02.847 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 45, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:02:02.853 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 46, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "102549"}
+\o [2026-04-18 21:02:02.909 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 46, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "2.97"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/46/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/46/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:02:07.122 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 46, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:02:07.124 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 46, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:02:07.129 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 47, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "104583"}
+\o [2026-04-18 21:02:07.130 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 47, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/47/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/47/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:02:10.732 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 47, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:02:10.733 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 47, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:02:10.739 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 48, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "106587"}
+\o [2026-04-18 21:02:10.740 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 48, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/48/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/48/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:02:14.916 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 48, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:02:14.918 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 48, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:02:14.924 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 49, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "108621"}
+\o [2026-04-18 21:02:14.924 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 49, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/49/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/49/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:02:18.457 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 49, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:02:18.458 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 49, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:02:18.462 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 50, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "110625"}
+\o [2026-04-18 21:02:18.462 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 50, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "2.97"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/50/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/50/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:02:22.643 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 50, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:02:22.645 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 50, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:02:22.710 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 51, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "112659"}
+\o [2026-04-18 21:02:22.711 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 51, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/51/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/51/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:02:26.442 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 51, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:02:26.444 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 51, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:02:26.514 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 52, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "114663"}
+\o [2026-04-18 21:02:26.515 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 52, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/52/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/52/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:02:29.732 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 52, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:02:29.734 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 52, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:02:29.739 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 53, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "116697"}
+\o [2026-04-18 21:02:29.740 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 53, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/53/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/53/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:02:32.558 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 53, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:02:32.560 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 53, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:02:32.563 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 54, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "118701"}
+\o [2026-04-18 21:02:32.564 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 54, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "2.97"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/54/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/54/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:02:34.943 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 54, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:02:34.945 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 54, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:02:35.010 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 55, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "120735"}
+\o [2026-04-18 21:02:35.011 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 55, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/55/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/55/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:02:37.447 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 55, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:02:37.449 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 55, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:02:37.452 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 56, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "122739"}
+\o [2026-04-18 21:02:37.453 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 56, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/56/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/56/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:02:38.941 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 56, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:02:38.943 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 56, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:02:38.949 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 57, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "124773"}
+\o [2026-04-18 21:02:38.950 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 57, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/57/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/57/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:02:42.424 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 57, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:02:42.426 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 57, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:02:42.432 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 58, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "126777"}
+\o [2026-04-18 21:02:42.433 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 58, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "2.97"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/58/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/58/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:02:47.710 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 58, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:02:47.712 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 58, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:02:47.718 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 59, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "128811"}
+\o [2026-04-18 21:02:47.719 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 59, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/59/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/59/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:02:53.928 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 59, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:02:53.930 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 59, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:02:53.937 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 60, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "130815"}
+\o [2026-04-18 21:02:53.938 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 60, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/60/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/60/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:03:03.338 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 60, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:03:03.342 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 60, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:03:03.418 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 61, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "132849"}
+\o [2026-04-18 21:03:03.419 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 61, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/61/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/61/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:03:10.422 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 61, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:03:10.427 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 61, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:03:10.434 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 62, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "134853"}
+\o [2026-04-18 21:03:10.435 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 62, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "2.97"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/62/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/62/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:03:16.934 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 62, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:03:16.940 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 62, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:03:17.013 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 63, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "136887"}
+\o [2026-04-18 21:03:17.014 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 63, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/63/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/63/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:03:23.930 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 63, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:03:23.933 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 63, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:03:23.939 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 64, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "138891"}
+\o [2026-04-18 21:03:23.940 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 64, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var VDD = "3.63"
+\o Setting var temperature = "-40"
+\o Setting temp(T) = -40
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/64/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/64/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:03:30.644 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 64, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:03:30.708 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 64, "testname": "PSS_PXF_PNOISE"}
+\o [2026-04-18 21:03:30.714 Z] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"point": 65, "testname": "PSS_PXF_PNOISE", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "Interactive.39", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log", "logFileSize": "140925"}
+\o [2026-04-18 21:03:30.714 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"point": 65, "testname": "PSS_PXF_PNOISE"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var temperature = "85"
+\o Setting temp(T) = 85
+\o 
+\o *Info*    Netlist Directory =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/65/PSS_PXF_PNOISE/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /home/saul/projects/IL2244_VT26_SAUL/Sim/FCORE/fcore_core_tb/maestro/results/maestro/Interactive.39/65/PSS_PXF_PNOISE
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o function ansCdlCompPrim redefined
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
+\o        and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
+\o        There will be no performance impact on data visualization due to this change.
+\o [2026-04-18 21:03:37.409 Z] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 724.8164 MBytes, peak memory used: 724.8164 MBytes {"hostname": "edatools", "processid": 3694742, "testname": "PSS_PXF_PNOISE", "point": 65, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Service60.log"}
+\o [2026-04-18 21:03:37.412 Z] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"point": 65, "testname": "PSS_PXF_PNOISE"}
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables".
+\o To save future changes, copy variables to cellView before exiting.
+\# Lic Summary:
+\# [21:08:40.203498] Cdslmd servers:3000@lic08.ug.kth.se:29000@lic06.ug.kth.se
+\# [21:08:40.203536] Feature usage summary:
+\# Memory report: on exit            448 MB, process size 2,219 MB at UTC 2026.04.18 21:08:40.727
+\# Memory report: peak usage         448 MB, process size 2,221 MB

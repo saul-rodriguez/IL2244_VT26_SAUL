@@ -1,0 +1,72 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-type"/>
+        <title>Html Report</title>
+        <script src="report.js"></script>
+        <style> body { background-color : Lavender } table{ border: 1px solid black; border-collapse: collapse; background-color : GhostWhite;} thead { background-color : lightGray } tfoot { border: 2px solid black; background-color : lightGray } td, th { padding : 10px ; border: 1px solid black } th.noTop { border-style: none solid solid solid} th.noBottom { border-style: solid solid none solid} .Red { background-color : #FF0000; } .Orange { background-color : #FFA500; } .Yellow { background-color : #FFFF00; } .LightGreen { background-color : #ADFF2F; } .Green { background-color : #00FF00; } .sort-by { display: inline-block; padding-left: 0.25rem; padding-right: 0.25rem; margin-bottom: 1px; vertical-align: middle;} .sort-by-asc, .sort-by-desc { display: block; width: 0; height: 0; margin: 0; margin-top: 1px; margin-bottom: 1px; border: solid 0.3rem transparent; background: transparent; cursor: pointer} .sort-by-asc { border-bottom: solid 0.5rem dimgray; border-top-width: 0;} .sort-by-desc { border-top: solid 0.5rem dimgray; border-bottom-width: 0;}</style>
+    </head>
+    <body class="page">
+        <h1 id="Top"></h1>
+        <hr/>
+        <h2 id="FECG cmfb_opamp1_f layout">FECG cmfb_opamp1_f layout</h2>
+        <a href="#Top">Top</a>
+        <p>
+            <pre>FECG cmfb_opamp1_f physConfig<br/>FECG cmfb_opamp1_f schematic</pre>
+        </p>
+        <h3>Summary</h3>
+        <table id="info0">
+            <thead>
+                <tr>
+                    <th/>
+                    <th>Bound</th>
+                    <th>Opens</th>
+                    <th>Shorts</th>
+                    <th>%Compliance</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td data-value="Total">Total</td>
+                    <td data-value="103">103</td>
+                    <td data-value="10">10</td>
+                    <td data-value="0">0</td>
+                    <td class="LightGreen" data-value="84">84</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td data-value="Terminals">Terminals</td>
+                    <td data-value="6">6</td>
+                    <td data-value=""/>
+                    <td data-value=""/>
+                    <td class="Green" data-value="100">100</td>
+                </tr>
+                <tr>
+                    <td data-value="Instances">Instances</td>
+                    <td data-value="85">85</td>
+                    <td data-value=""/>
+                    <td data-value=""/>
+                    <td class="Green" data-value="100">100</td>
+                </tr>
+                <tr>
+                    <td data-value="Nets">Nets</td>
+                    <td data-value="12">12</td>
+                    <td data-value="10">10</td>
+                    <td data-value="0">0</td>
+                    <td class="Yellow" data-value="54">54</td>
+                </tr>
+            </tbody>
+        </table>
+        <br/>
+        <h3>INFOS:</h3>
+        <p>
+            <pre>INFO (BND-1107): Cell mapping<br/>                            instances  permute  component       split   terminals<br/>                                       rule     type            params  mapped<br/>    PRIMLIB  cvar   symbol          1                                   B G S<br/> -&gt; PRIMLIB  cvar   layout          1                                   B G<br/>                                                                        <br/>    PRIMLIB  nmos4  symbol         31  (p D S)  NMOS(inferred)  w l     B D G S<br/> -&gt; PRIMLIB  nmos4  layout         31  (p D S)  NMOS(inferred)  w l     D G S<br/>                                                                        <br/>    PRIMLIB  pmos4  symbol         53  (p D S)  PMOS(inferred)  w l     B D G S<br/> -&gt; PRIMLIB  pmos4  layout         53  (p D S)  PMOS(inferred)  w l     D G S<br/>                                                                        </pre>
+        </p>
+        <h3>WARNINGS:</h3>
+        <p>
+            <pre>WARNING (LX-2305): The following cellviews have shapes or routes with the lxStickyNet property:<br/>    FECG  cmfb_opamp1_f  layout<br/>    If the lxStickyNet property is invalid, this can result in shorts and bad bindings.<br/>    Use the Property Editor assistant to remove the lxStickyNet property from shapes, or use the following SKILL code:<br/>        foreach(shape geGetEditCellView()~&gt;shapes dbDeletePropByName(shape &quot;lxStickyNet&quot;))<br/>        foreach(route geGetEditCellView()~&gt;routes dbDeletePropByName(route &quot;lxStickyNet&quot;))<br/>    If the design is fully routed, run Update Binding with 'Connectivity - Clear' option selected.</pre>
+        </p>
+    </body>
+</html>
