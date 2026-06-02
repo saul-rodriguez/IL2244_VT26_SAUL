@@ -1,0 +1,53 @@
+!<alc> v1 158
+0   99    0 G12_1_2_5300_0_r270 sub_array
+0   97    0 G48_1_7_3250_0_r0 sub_array
+0   95    0 G48_1_7_3250_0_my sub_array
+0   69    0 pmos4 layout PRIMLIB l="15u" in1=MP428129
+0   13    0 pmos4 layout PRIMLIB l="350n" w="5u" wtot="5u" in1=MP128729
+0   12    0 pmos4 layout PRIMLIB l="3u" in1=MP528129
+0    8    0 nmos4 layout PRIMLIB l="1u" w="5u" wtot="5u" in1=MN628129
+0    7    0 nmos4 layout PRIMLIB l="4u" w="4u" wtot="4u" in1=MN8
+0    5    0 nmos4 layout PRIMLIB l="1u" ng="2" wtot="20u" in1=MN9
+0   84    0 rpolyhc layout PRIMLIB Bends=10 Dummy=TRUE ResShape="90_deg" l="500u" r="1M" w="0.8u" in1=R1
+0   83    0 rpolyhc layout PRIMLIB Bends=28 Dummy=TRUE ResShape="90_deg" gwell="N-Well" l="5000u" r="10M" rleft="Cont" rright="Cont" id_=38be6356325ad8cb in1=R10
+0   81    0 rpolyhc layout PRIMLIB Bends=10 Dummy=TRUE ResShape="90_deg" gwell="N-Well" l="500u" r="1M" w="0.8u" in1=R8
+0   78    0 rpolyhc layout PRIMLIB Bends=12 Dummy=TRUE ResShape="90_deg" gwell="N-Well" l="1000u" r="2M" rtop="Cont" w="0.8u" in1=R3
+0   74    0 pmos4 layout PRIMLIB l="3u" w="5u" wtot="5u" in1=MP628129
+0   73    0 pmos4 layout PRIMLIB jd=FALSE jg="no" js=FALSE l="1u" ng="2" w="5u" in1=MP4
+0   67    0 pmos4 layout PRIMLIB l="5u" w="5u" wtot="5u" in1=MP8
+0   66    0 pmos4 layout PRIMLIB jd=FALSE js=FALSE l="350n" ng="20" w="15u" wtot="300u" in1=MP128129
+0   65    0 pmos4 layout PRIMLIB l="5u" w="6u" wtot="6u" in1=MP628129
+0   64    0 pmos4 layout PRIMLIB l="4u" w="12.5u" wtot="12.5u" in1=MP928729
+0   63    0 pmos4 layout PRIMLIB l="20u" w="12.5u" wtot="12.5u" in1=MP328329
+0   62    0 pmos4 layout PRIMLIB jd=FALSE jg="no" js=FALSE l="4u" ng="6" w="33.35u" wtot="200u" in1=MP128129
+0   61    0 pmos4 layout PRIMLIB l="500n" w="12.5u" wtot="12.5u" in1=MP1283129
+0   59    0 pmos4 layout PRIMLIB jd=FALSE jg="no" js=FALSE l="4u" ng="10" wtot="100u" in1=MP7
+0   58    0 nmos4 layout PRIMLIB l="10u" w="8u" wtot="8u" in1=MN828129
+0   57    0 nmos4 layout PRIMLIB jd=FALSE jg="no" js=FALSE l="1u" ng="4" w="5u" wtot="20u" in1=MN9
+0   56    0 nmos4 layout PRIMLIB l="350n" w="5u" wtot="5u" in1=MN128729
+0   55    0 nmos4 layout PRIMLIB l="20u" w="15u" wtot="15u" in1=MN1628129
+0   54    0 nmos4 layout PRIMLIB l="4u" ng="2" wtot="20u" in1=MN5
+0   51    0 nmos4 layout PRIMLIB l="12u" in1=MN728129
+0   47    0 nmos4 layout PRIMLIB jd=FALSE jg="no" js=FALSE l="2u" ng="2" wtot="20u" in1=MN9
+0   45    0 nmos4 layout PRIMLIB l="12u" w="4u" wtot="4u" in1=MN328329
+0   43    0 nmos4 layout PRIMLIB jd=FALSE jg="no" js=FALSE l="4u" ng="10" w="1u" in1=MN14
+0   40    0 nmos4 layout PRIMLIB l="8u" in1=MN3728329
+0   38    0 nmos4 layout PRIMLIB l="10u" in1=MN828129
+0   37    0 mux21c_f layout FECG
+0   35    0 cvar layout PRIMLIB col=21 row=5 in1=C128029
+0   24    0 cpolyc layout PRIMLIB area="3.5n" c="3.03p" gwell="N-Well" l="70u" perimeter="240u" rbottom="Cont" rleft="Cont" rright="Cont" id_=5d5c206d9147e606 in1=C928329
+0   23    0 cpolyc layout PRIMLIB area="1.26n" c="1.09p" gwell="N-Well" l="41.95u" perimeter="143.9u" rbottom="Cont" rleft="Cont" id_=1eea3daa63e42b4e in1=C928129
+0   22    0 cpolyc layout PRIMLIB area="2.56n" c="2.22p" gwell="N-Well" l="51u" perimeter="202.4u" rbottom="Cont" rleft="Cont" id_=d867af6116578121 in1=C228029
+0   21    0 cpolyc layout PRIMLIB area="1.60n" c="1.39p" l="50u" perimeter="164u" rbottom="Cont" rleft="Cont" rright="Cont" rtop="Cont" id_=44e51500f779483f in1=C028729
+0   18    0 cmfb_opamp1_f layout FECG
+0   17    0 chopper2 layout FECG
+0   16    0 V500_20 layout POWER_TRACKS
+0   15    0 INVX1 layout CORELIBD
+0   92    0 gmc_5_f layout FECG
+0   91    0 fecg_vga2_f_2 layout FECG
+0   90    0 fecg_ia_5_fn layout FECG
+0   89    0 fecg_cmfb2_f layout FECG
+0   88    0 buffer2_f_3 layout FECG
+0   87    0 V200_20 layout POWER_TRACKS
+0   86    0 V1000_20 layout POWER_TRACKS
+0   93    0 fecg_front_end_f_3 layout FECG
