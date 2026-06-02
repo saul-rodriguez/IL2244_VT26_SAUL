@@ -1,0 +1,2 @@
+RPOLYH_PSUB_device_RES_65,1,rpolyhc#20auLvs#20PRIMLIB
+RPOLYH_NTUB_device_RES_66,1,rpolyhc#20auLvs#20PRIMLIB

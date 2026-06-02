@@ -20,13 +20,12 @@ Cell/Device                               schematic  layout   schematic  layout
                                              ------  ------      ------  ------
 Total                                             2       2           2       2
 
-###############################################################################
-###### Gm_C_filter schematic YAOWEN  <vs>  Gm_C_filter layout YAOWEN
-###############################################################################
-###### This report is for informational purposes only. This cell
-###### has been expanded because of unstable devices.
-###############################################################################
-                     
+*******************************************************************************
+****** Gm_C_filter schematic YAOWEN  <vs>  Gm_C_filter layout YAOWEN
+*******************************************************************************
+
+Filter/Reduce statistics only. Network matching was OK.
+                                                                                                                                                                   
 Pre-expand Statistics                      
 ======================                          Original       
 Cell/Device                               schematic  layout
@@ -35,14 +34,14 @@ Cell/Device                               schematic  layout
 (NMOS4) MOS                                     309     202*
 (RPOLYH) RES                                      1       1
 (PMOS4) MOS                                      37       3*
+(_, cpolyc layout PRIMLIB area="1...) Cell        0       3*
 (_, cpolyc layout PRIMLIB area="3...) Cell        0       6*
 (_, cpolyc layout PRIMLIB area="3...) Cell        0      12*
 (_, cpolyc layout PRIMLIB area="4...) Cell        0       3*
-(_, cpolyc layout PRIMLIB area="1...) Cell        0       3*
 (_, nmos4 layout PRIMLIB jd=FALSE...) Cell        0       2*
-(_, pmos4 layout PRIMLIB l="5u" w...) Cell        0       4*
-(_, pmos4 layout PRIMLIB jd=FALSE...) Cell        0       4*
 (_, pmos4 layout PRIMLIB l="5u" w...) Cell        0      26*
+(_, pmos4 layout PRIMLIB jd=FALSE...) Cell        0       4*
+(_, pmos4 layout PRIMLIB l="5u" w...) Cell        0       4*
                                              ------  ------
 Total                                           374     269
 
@@ -166,14 +165,14 @@ Cell/Device                               schematic  layout
 (chopper_f schematic YAOWEN, chopper_f) Cell              3       3
 (NMOS4) MOS                                      66       5*
 (_, cpolyc layout PRIMLIB area="2...) Cell        0       9*
-(_, nmos4 layout PRIMLIB l="80u" ...) Cell        0      25*
-(_, nmos4 layout PRIMLIB l="4u" n...) Cell        0       4*
-(_, nmos4 layout PRIMLIB l="8u" i...) Cell        0      12*
 (_, nmos4 layout PRIMLIB l="12u" ...) Cell        0      20*
+(_, nmos4 layout PRIMLIB l="80u" ...) Cell        0      25*
+(_, nmos4 layout PRIMLIB l="8u" i...) Cell        0      12*
+(_, nmos4 layout PRIMLIB l="4u" n...) Cell        0       4*
 (_, pmos4 layout PRIMLIB l="4u" w...) Cell        0      20*
 (_, pmos4 layout PRIMLIB l="20u" ...) Cell        0       6*
-(_, pmos4 layout PRIMLIB jd=FALSE...) Cell        0       4*
 (_, pmos4 layout PRIMLIB l="4u" n...) Cell        0       2*
+(_, pmos4 layout PRIMLIB jd=FALSE...) Cell        0       4*
 (_, rpolyhc layout PRIMLIB double...) Cell        0       4*
 (_, rpolyhc layout PRIMLIB Dummy=...) Cell        0       4*
 (CPOLYA) CAP                                      0       1*
@@ -228,9 +227,9 @@ Cell/Device                               schematic  layout
 (PMOS4) MOS                                     129      10*
 (NMOS4) MOS                                      19       0*
 (_, cpolyc layout PRIMLIB area="1...) Cell        0       6*
+(_, nmos4 layout PRIMLIB l="15u" ...) Cell        0      12*
 (_, nmos4 layout PRIMLIB l="12u" ...) Cell        0       4*
 (_, nmos4 layout PRIMLIB jd=FALSE...) Cell        0       2*
-(_, nmos4 layout PRIMLIB l="15u" ...) Cell        0      12*
 (_, nmos4 layout PRIMLIB jd=FALSE...) Cell        0       1*
 (_, pmos4 layout PRIMLIB l="4u" i...) Cell        0      24*
 (_, rpolyhc layout PRIMLIB Bends=...) Cell        0      16*
@@ -295,9 +294,9 @@ Cell/Device                               schematic  layout
 (NMOS4) MOS                                      31       2*
 (PMOS4) MOS                                      53       0*
 (CVAR) Generic                                    1       1
+(_, nmos4 layout PRIMLIB l="1u" n...) Cell        0       2*
 (_, nmos4 layout PRIMLIB l="1u" w...) Cell        0      26*
 (_, nmos4 layout PRIMLIB l="4u" w...) Cell        0       2*
-(_, nmos4 layout PRIMLIB l="1u" n...) Cell        0       2*
 (_, pmos4 layout PRIMLIB l="3u" i...) Cell        0       3*
 (_, pmos4 layout PRIMLIB l="350n"...) Cell        0      20*
                                              ------  ------
@@ -330,8 +329,8 @@ Cell/Device                               schematic  layout
 (_, nmos4 layout PRIMLIB l="10u" ...) Cell        0      18*
 (_, nmos4 layout PRIMLIB l="350n"...) Cell        0      22*
 (_, nmos4 layout PRIMLIB jd=FALSE...) Cell        0       2*
-(_, pmos4 layout PRIMLIB l="3u" w...) Cell        0      10*
 (_, pmos4 layout PRIMLIB jd=FALSE...) Cell        0       3*
+(_, pmos4 layout PRIMLIB l="3u" w...) Cell        0      10*
 (_, rpolyhc layout PRIMLIB Bends=...) Cell        0       2*
 (_, rpolyhc layout PRIMLIB Bends=...) Cell        0       2*
                                              ------  ------
@@ -359,31 +358,27 @@ Pre-expand Statistics
 Cell/Device                               schematic  layout
 (Gm_C_filter schematic YAOWEN, Gm_C_filter) Cell          3       3
 (V200_20 schematic POWER_TRACKS, V200_20) Cell            8       8
-(V500_20 schematic POWER_TRACKS, V500_20) Cell           11      11
+(V500_20 schematic POWER_TRACKS, V500_20) Cell           10      10
 (V1000_20 schematic POWER_TRACKS, V1000_20) Cell          1       1
 (ia_new_f schematic YAOWEN, ia_new_f) Cell        1       1
 (VGA_1 schematic YAOWEN, VGA_1) Cell              1       1
 (BUFFER schematic YAOWEN, BUFFER) Cell            1       1
 (fecg_cmfb2_f schematic FECG, fecg_cmfb2_f) Cell          1       1
                                              ------  ------
-Total                                            27      27
+Total                                            26      26
 
 Reduce Statistics
 =================                               Original             Reduced
 Cell/Device                               schematic  layout   schematic  layout
 (BUFFER) Cell                                     1       1           1       1
-(INVX1) Cell                                      9       9           9       9
+(Gm_C_filter) Cell                                3       3           3       3
 (V1000_20) Cell                                   1       1           1       1
 (V200_20) Cell                                    8       8           8       8
-(V500_20) Cell                                   11      11          11      11
+(V500_20) Cell                                   10      10          10      10
 (VGA_1) Cell                                      1       1           1       1
 (fecg_cmfb2_f) Cell                               1       1           1       1
 (ia_new_f) Cell                                   1       1           1       1
-(NMOS4) MOS                                     927     933*        145     145
-(PMOS4) MOS                                     111     339*         37      37
-(RPOLYH) RES                                      3       3           3       3
-(CPOLYA) CAP                                     72      72          12      12
                                              ------  ------      ------  ------
-Total                                          1146    1380         230     230
+Total                                            26      26          26      26
 
 Schematic and Layout Match
