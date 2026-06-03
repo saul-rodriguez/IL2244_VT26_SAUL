@@ -151,6 +151,8 @@ I C6<0>/C0 C6(2)/avD83_1
 I C3<0>/C0 C3(0)/avD83_1
 I C2<0>/C0 C2(0)/avD83_1
 I C1<0>/C0 C1(2)/avD83_1
+I C5/C0 avD83_2
+I C4/C0 avD83_1
 I I4 I4
 I I3 I3
 I I2 I2
@@ -171,19 +173,14 @@ N VDD VDD
 I I4 I4
 I I3 I3
 
-C CVAR(Generic) CVAR(Generic)
-N G G
-N S S
-N B B
-
 C "ia_new_f schematic YAOWEN" "ia_new_f layout YAOWEN"
 N net4 avC27
 N net3 avC28
 N net1 avC26
-N E avC204
+N E avC71
 N H avC30
 N G avC29
-N F avC203
+N F avC70
 N A avC23
 N R avC22
 N N avC24
@@ -191,21 +188,21 @@ N K avC14
 N VinNc avC18
 N clk~ clk~
 N clk clk
-N Q avC206
+N Q avC73
 N O avC19
 N net123 avC20
 N T avC25
 N J avC15
 N VinPc avC17
 N S avC21
-N Dc avC201
-N D avC198
-N B avC205
-N Bc avC202
+N Dc avC68
+N D avC65
+N B avC72
+N Bc avC69
 N U avC16
 N net2 avC32
-N L avC200
-N M avC199
+N L avC67
+N M avC66
 N GNDA avT1611_1
 N GNDD avT1611_60
 N VOUT VOUT
@@ -241,7 +238,6 @@ I MN16<0> MN16(0)/avD1_1
 I MN2<0> MN2(0)/avD1_1
 I MN5<0> MN5(9)/avD1_1
 I MN4 MN4/avD1_1
-I C1 avD85_1
 I R13 avD66_1
 I R12 avD66_2
 I R11 avD66_3
@@ -268,6 +264,7 @@ I MP9<0> MP9(0)/avD5_1
 I MP2<0> MP2(0)/avD5_1
 I MP5<0> avI121/avD5_2
 I C2<0>/C0 C2(0)/avD84_1
+I C3/C0 avD83_1
 I C0/C0 avD84_1
 I I1/MP0 I1/avD1_1
 I I1/MP1 I1/avD1_3
@@ -372,7 +369,7 @@ I I8 I8
 I I6 I6
 
 C "BUFFER schematic YAOWEN" "BUFFER layout YAOWEN"
-N Vtop avC556
+N Vtop avC37
 N A avC10
 N Vmid avC9
 N B avC8
@@ -389,20 +386,23 @@ I MN2 MN2/avD1_1
 I MN1 MN1/avD1_1
 I MN3 MN3/avD1_1
 I MN4 MN4/avD1_1
-I C3 avD85_2
-I C2 avD85_1
-I C1 C1/avD85_1
 I R0 R11/avD66_1
 I R5 avD66_1
 I R12 R1/avD66_1
-I Dummy1<0> avI40/avI1/avD5_1
-I MP4<0> avI40/avI33/avD5_1
-I MP5<0> avI40/avI9/avD5_1
-I MP6<0> avI40/avI40/avD5_2
+I Dummy1<0> avI39/avI1/avD5_1
+I MP4<0> avI39/avI33/avD5_1
+I MP5<0> avI39/avI9/avD5_1
+I MP6<0> avI39/avI40/avD5_2
 I dummy2<0> dummy2(0)/avD5_1
 I MP2<0> MP2(0)/avD5_1
 I MP3<0> MP3(0)/avD5_1
+I C4/C0 avD83_1
 I C5/C0 C5/avD83_1
+
+C CVAR(Generic) CVAR(Generic)
+N G G
+N S S
+N B B
 
 C "cmfb_opamp1_f schematic FECG" "cmfb_opamp1_f layout FECG"
 N net1 avC7

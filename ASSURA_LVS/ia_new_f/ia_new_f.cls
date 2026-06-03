@@ -59,10 +59,9 @@ Filter/Reduce statistics only. Network matching was OK.
 Pre-expand Statistics                      
 ======================                          Original       
 Cell/Device                               schematic  layout
-(CVAR) Generic                                    1       1
 (RPOLYH) RES                                     12       4*
 (PMOS4) MOS                                     118       2*
-(cpolyc schematic PRIMLIB, cpolyc) Cell          10       9*
+(cpolyc schematic PRIMLIB, cpolyc) Cell          11       9*
 (chopper_f schematic YAOWEN, chopper_f) Cell              3       3
 (NMOS4) MOS                                      66       5*
 (_, nmos4 layout PRIMLIB l="80u" ...) Cell        0      25*
@@ -75,7 +74,7 @@ Cell/Device                               schematic  layout
 (_, pmos4 layout PRIMLIB jd=FALSE...) Cell        0       4*
 (_, rpolyhc layout PRIMLIB Dummy=...) Cell        0       4*
 (_, rpolyhc layout PRIMLIB double...) Cell        0       4*
-(CPOLYA) CAP                                      0       1*
+(CPOLYA) CAP                                      0       2*
                                              ------  ------
 Total                                           210     126
 
@@ -85,8 +84,7 @@ Cell/Device                               schematic  layout   schematic  layout
 (NMOS4) MOS                                      78     126*         35      35
 (PMOS4) MOS                                     130     204*         30      30
 (RPOLYH) RES                                     12      12           7       7
-(CPOLYA) CAP                                     10      10           2       2
-(CVAR) Generic                                    1       1           1       1
+(CPOLYA) CAP                                     11      11           3       3
                                              ------  ------      ------  ------
 Total                                           231     353          75      75
 

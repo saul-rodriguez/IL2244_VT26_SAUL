@@ -29,7 +29,7 @@ Filter/Reduce statistics only. Network matching was OK.
 Pre-expand Statistics                      
 ======================                          Original       
 Cell/Device                               schematic  layout
-(cpolyc schematic PRIMLIB, _) Cell               24       0*
+(cpolyc schematic PRIMLIB, _) Cell               26       0*
 (INVX1 cmos_sch CORELIBD, INVX1) Cell             3       3
 (NMOS4) MOS                                     309     202*
 (RPOLYH) RES                                      1       1
@@ -42,8 +42,9 @@ Cell/Device                               schematic  layout
 (_, pmos4 layout PRIMLIB l="5u" w...) Cell        0      26*
 (_, pmos4 layout PRIMLIB jd=FALSE...) Cell        0       4*
 (_, pmos4 layout PRIMLIB l="5u" w...) Cell        0       4*
+(CPOLYA) CAP                                      0       2*
                                              ------  ------
-Total                                           374     269
+Total                                           376     271
 
 Reduce Statistics
 =================                               Original             Reduced
@@ -52,9 +53,9 @@ Cell/Device                               schematic  layout   schematic  layout
 (NMOS4) MOS                                     309     311*         49      49
 (PMOS4) MOS                                      37     113*         13      13
 (RPOLYH) RES                                      1       1           1       1
-(CPOLYA) CAP                                     24      24           4       4
+(CPOLYA) CAP                                     26      26           6       6
                                              ------  ------      ------  ------
-Total                                           374     452          70      70
+Total                                           376     454          72      72
 
 *******************************************************************************
 ****** V200_20 schematic POWER_TRACKS  <vs>  V200_20 layout POWER_TRACKS
@@ -158,24 +159,23 @@ Filter/Reduce statistics only. Network matching was OK.
 Pre-expand Statistics                      
 ======================                          Original       
 Cell/Device                               schematic  layout
-(CVAR) Generic                                    1       1
 (RPOLYH) RES                                     12       4*
 (PMOS4) MOS                                     118       2*
-(cpolyc schematic PRIMLIB, _) Cell               10       0*
+(cpolyc schematic PRIMLIB, _) Cell               11       0*
 (chopper_f schematic YAOWEN, chopper_f) Cell              3       3
 (NMOS4) MOS                                      66       5*
 (_, cpolyc layout PRIMLIB area="2...) Cell        0       9*
-(_, nmos4 layout PRIMLIB l="12u" ...) Cell        0      20*
-(_, nmos4 layout PRIMLIB l="80u" ...) Cell        0      25*
 (_, nmos4 layout PRIMLIB l="8u" i...) Cell        0      12*
 (_, nmos4 layout PRIMLIB l="4u" n...) Cell        0       4*
-(_, pmos4 layout PRIMLIB l="4u" w...) Cell        0      20*
+(_, nmos4 layout PRIMLIB l="80u" ...) Cell        0      25*
+(_, nmos4 layout PRIMLIB l="12u" ...) Cell        0      20*
 (_, pmos4 layout PRIMLIB l="20u" ...) Cell        0       6*
-(_, pmos4 layout PRIMLIB l="4u" n...) Cell        0       2*
+(_, pmos4 layout PRIMLIB l="4u" w...) Cell        0      20*
 (_, pmos4 layout PRIMLIB jd=FALSE...) Cell        0       4*
-(_, rpolyhc layout PRIMLIB double...) Cell        0       4*
+(_, pmos4 layout PRIMLIB l="4u" n...) Cell        0       2*
 (_, rpolyhc layout PRIMLIB Dummy=...) Cell        0       4*
-(CPOLYA) CAP                                      0       1*
+(_, rpolyhc layout PRIMLIB double...) Cell        0       4*
+(CPOLYA) CAP                                      0       2*
                                              ------  ------
 Total                                           210     126
 
@@ -185,8 +185,7 @@ Cell/Device                               schematic  layout   schematic  layout
 (NMOS4) MOS                                      78     126*         35      35
 (PMOS4) MOS                                     130     204*         30      30
 (RPOLYH) RES                                     12      12           7       7
-(CPOLYA) CAP                                     10      10           2       2
-(CVAR) Generic                                    1       1           1       1
+(CPOLYA) CAP                                     11      11           3       3
                                              ------  ------      ------  ------
 Total                                           231     353          75      75
 
@@ -227,9 +226,9 @@ Cell/Device                               schematic  layout
 (PMOS4) MOS                                     129      10*
 (NMOS4) MOS                                      19       0*
 (_, cpolyc layout PRIMLIB area="1...) Cell        0       6*
-(_, nmos4 layout PRIMLIB l="15u" ...) Cell        0      12*
 (_, nmos4 layout PRIMLIB l="12u" ...) Cell        0       4*
 (_, nmos4 layout PRIMLIB jd=FALSE...) Cell        0       2*
+(_, nmos4 layout PRIMLIB l="15u" ...) Cell        0      12*
 (_, nmos4 layout PRIMLIB jd=FALSE...) Cell        0       1*
 (_, pmos4 layout PRIMLIB l="4u" i...) Cell        0      24*
 (_, rpolyhc layout PRIMLIB Bends=...) Cell        0      16*
@@ -257,19 +256,18 @@ Filter/Reduce statistics only. Network matching was OK.
 Pre-expand Statistics                      
 ======================                          Original       
 Cell/Device                               schematic  layout
-(CVAR) Generic                                    3       2*
 (PMOS4) MOS                                     184       0*
-(cpolyc schematic PRIMLIB, _) Cell                2       0*
+(cpolyc schematic PRIMLIB, _) Cell                4       0*
 (RPOLYH) RES                                      9       1*
 (NMOS4) MOS                                       5      10*
 (_, cpolyc layout PRIMLIB area="6...) Cell        0       2*
-(_, cvar layout PRIMLIB col=16 ro...) Cell        0       1*
 (_, nmos4 layout PRIMLIB l="10u" ...) Cell        0       2*
 (_, nmos4 layout PRIMLIB l="4u" i...) Cell        0       2*
 (_, pmos4 layout PRIMLIB l="2u" i...) Cell        0      24*
 (_, rpolyhc layout PRIMLIB Bends=...) Cell        0       8*
+(CPOLYA) CAP                                      0       2*
                                              ------  ------
-Total                                           203      52
+Total                                           202      51
 
 Reduce Statistics
 =================                               Original             Reduced
@@ -277,10 +275,9 @@ Cell/Device                               schematic  layout   schematic  layout
 (NMOS4) MOS                                       5      14*          5       5
 (PMOS4) MOS                                     184     184           7       7
 (RPOLYH) RES                                      9       9           3       3
-(CPOLYA) CAP                                      2       2           1       1
-(CVAR) Generic                                    3       3           3       3
+(CPOLYA) CAP                                      4       4           2       2
                                              ------  ------      ------  ------
-Total                                           203     212          19      19
+Total                                           202     211          17      17
 
 *******************************************************************************
 ****** cmfb_opamp1_f schematic FECG  <vs>  cmfb_opamp1_f layout FECG
@@ -297,8 +294,8 @@ Cell/Device                               schematic  layout
 (_, nmos4 layout PRIMLIB l="1u" n...) Cell        0       2*
 (_, nmos4 layout PRIMLIB l="1u" w...) Cell        0      26*
 (_, nmos4 layout PRIMLIB l="4u" w...) Cell        0       2*
-(_, pmos4 layout PRIMLIB l="3u" i...) Cell        0       3*
 (_, pmos4 layout PRIMLIB l="350n"...) Cell        0      20*
+(_, pmos4 layout PRIMLIB l="3u" i...) Cell        0       3*
                                              ------  ------
 Total                                            85      56
 
@@ -329,8 +326,8 @@ Cell/Device                               schematic  layout
 (_, nmos4 layout PRIMLIB l="10u" ...) Cell        0      18*
 (_, nmos4 layout PRIMLIB l="350n"...) Cell        0      22*
 (_, nmos4 layout PRIMLIB jd=FALSE...) Cell        0       2*
-(_, pmos4 layout PRIMLIB jd=FALSE...) Cell        0       3*
 (_, pmos4 layout PRIMLIB l="3u" w...) Cell        0      10*
+(_, pmos4 layout PRIMLIB jd=FALSE...) Cell        0       3*
 (_, rpolyhc layout PRIMLIB Bends=...) Cell        0       2*
 (_, rpolyhc layout PRIMLIB Bends=...) Cell        0       2*
                                              ------  ------
