@@ -1,4 +1,31 @@
 *******************************************************************************
+****** fbias_gm_c1_f2c schematic FBIAS  <vs>  fbias_gm_c1_f2c layout FBIAS
+*******************************************************************************
+
+Filter/Reduce statistics only. Network matching was OK.
+                                                                                                                                                                   
+Pre-expand Statistics                      
+======================                          Original       
+Cell/Device                               schematic  layout
+(cpolyc schematic PRIMLIB, _) Cell                1       0*
+(PMOS4) MOS                                      36      36
+(RPOLYH) RES                                      1       1
+(NMOS4) MOS                                      14      17*
+(CPOLYA) CAP                                      0       1*
+                                             ------  ------
+Total                                            52      55
+
+Reduce Statistics
+=================                               Original             Reduced
+Cell/Device                               schematic  layout   schematic  layout
+(NMOS4) MOS                                      14      17*          5       5
+(PMOS4) MOS                                      36      36          15      15
+(RPOLYH) RES                                      1       1           1       1
+(CPOLYA) CAP                                      1       1           1       1
+                                             ------  ------      ------  ------
+Total                                            52      55          22      22
+
+*******************************************************************************
 ****** V500_20 schematic POWER_TRACKS  <vs>  V500_20 layout POWER_TRACKS
 *******************************************************************************
 
@@ -84,10 +111,10 @@ Cell/Device                               schematic  layout
 (PMOS4) MOS                                     116       0*
 (PNPVERT10) BJT                                  63       0*
 (cpolyc schematic PRIMLIB, _) Cell                1       0*
-(_, nmos4 layout PRIMLIB l="10u" ...) Cell        0       7*
 (_, nmos4 layout PRIMLIB l="10u" ...) Cell        0       8*
-(_, pmos4 layout PRIMLIB l="4u" w...) Cell        0      20*
+(_, nmos4 layout PRIMLIB l="10u" ...) Cell        0       7*
 (_, pmos4 layout PRIMLIB l="350n"...) Cell        0       8*
+(_, pmos4 layout PRIMLIB l="4u" w...) Cell        0      20*
 (_, pmos4 layout PRIMLIB l="10u" ...) Cell        0      88*
 (_, rpolyhc layout PRIMLIB Bends=...) Cell        0      45*
 (CPOLYA) CAP                                      0       1*
@@ -120,10 +147,10 @@ Cell/Device                               schematic  layout
 (NMOS4) MOS                                      39       0*
 (_, nmos4 layout PRIMLIB l="1u" w...) Cell        0      32*
 (_, nmos4 layout PRIMLIB l="10u" ...) Cell        0       7*
-(_, pmos4 layout PRIMLIB l="30u" ...) Cell        0      19*
-(_, pmos4 layout PRIMLIB l="2u" w...) Cell        0      14*
 (_, pmos4 layout PRIMLIB l="5u" w...) Cell        0      16*
+(_, pmos4 layout PRIMLIB l="30u" ...) Cell        0      19*
 (_, pmos4 layout PRIMLIB l="1u" w...) Cell        0       2*
+(_, pmos4 layout PRIMLIB l="2u" w...) Cell        0      14*
                                              ------  ------
 Total                                            97      91
 
@@ -182,7 +209,7 @@ Cell/Device                               schematic  layout   schematic  layout
 Total                                             2       2           2       2
 
 *******************************************************************************
-****** fbias_por2_f schematic FBIAS  <vs>  fbias_por2_f layout FBIAS
+****** fbias_por2_fc schematic FBIAS  <vs>  fbias_por2_fc layout FBIAS
 *******************************************************************************
 
 Filter/Reduce statistics only. Network matching was OK.
@@ -191,16 +218,18 @@ Pre-expand Statistics
 ======================                          Original       
 Cell/Device                               schematic  layout
 (INVX2 cmos_sch CORELIBD, INVX2) Cell             1       1
+(cpolyc schematic PRIMLIB, _) Cell                2       0*
 (INVX1 cmos_sch CORELIBD, INVX1) Cell             1       1
-(CVAR) Generic                                    8       2*
+(CVAR) Generic                                    6       0*
 (RPOLYH) RES                                      2       2
 (NMOS4) MOS                                      16       4*
 (PMOS4) MOS                                      23       0*
 (_, cvar layout PRIMLIB col=12 ro...) Cell        0       6*
-(_, nmos4 layout PRIMLIB l="10u" ...) Cell        0      11*
 (_, nmos4 layout PRIMLIB l="10u" ...) Cell        0       4*
+(_, nmos4 layout PRIMLIB l="10u" ...) Cell        0      11*
 (_, pmos4 layout PRIMLIB l="500n"...) Cell        0       6*
 (_, pmos4 layout PRIMLIB l="10u" ...) Cell        0      17*
+(CPOLYA) CAP                                      0       2*
                                              ------  ------
 Total                                            51      54
 
@@ -212,35 +241,10 @@ Cell/Device                               schematic  layout   schematic  layout
 (NMOS4) MOS                                      16      19*          7       7
 (PMOS4) MOS                                      23      23           9       9
 (RPOLYH) RES                                      2       2           2       2
-(CVAR) Generic                                    8       8           8       8
+(CPOLYA) CAP                                      2       2           2       2
+(CVAR) Generic                                    6       6           6       6
                                              ------  ------      ------  ------
 Total                                            51      54          28      28
-
-*******************************************************************************
-****** fbias_gm_c1_f2 schematic FBIAS  <vs>  fbias_gm_c1_f2 layout FBIAS
-*******************************************************************************
-
-Filter/Reduce statistics only. Network matching was OK.
-                                                                                                                                                                   
-Pre-expand Statistics                      
-======================                          Original       
-Cell/Device                               schematic  layout
-(CVAR) Generic                                    1       1
-(PMOS4) MOS                                      36      36
-(RPOLYH) RES                                      1       1
-(NMOS4) MOS                                      14      17*
-                                             ------  ------
-Total                                            52      55
-
-Reduce Statistics
-=================                               Original             Reduced
-Cell/Device                               schematic  layout   schematic  layout
-(NMOS4) MOS                                      14      17*          5       5
-(PMOS4) MOS                                      36      36          15      15
-(RPOLYH) RES                                      1       1           1       1
-(CVAR) Generic                                    1       1           1       1
-                                             ------  ------      ------  ------
-Total                                            52      55          22      22
 
 *******************************************************************************
 ****** fbias_bias2_f schematic FBIAS  <vs>  fbias_bias2_f layout FBIAS
@@ -251,13 +255,13 @@ Filter/Reduce statistics only. Network matching was OK.
 Pre-expand Statistics                      
 ======================                          Original       
 Cell/Device                               schematic  layout
+(fbias_gm_c1_f2c schematic FBIAS, fbias_gm_c1_f2c) Cell             1       1
 (V500_20 schematic POWER_TRACKS, V500_20) Cell            4       4
 (V200_20 schematic POWER_TRACKS, V200_20) Cell            5       5
 (fbias_vol_ref1_layout schematic FBIAS, fbias_vol_ref1_layout) Cell           1       1
 (fecg_bandgap3_layout schematic FBIAS, fecg_bandgap3_layout) Cell             1       1
 (fbias_cur_ref2_layout schematic FBIAS, fbias_cur_ref2_layout) Cell           1       1
-(fbias_por2_f schematic FBIAS, fbias_por2_f) Cell         1       1
-(fbias_gm_c1_f2 schematic FBIAS, fbias_gm_c1_f2) Cell               1       1
+(fbias_por2_fc schematic FBIAS, fbias_por2_fc) Cell                 1       1
                                              ------  ------
 Total                                            14      14
 
@@ -267,46 +271,15 @@ Cell/Device                               schematic  layout   schematic  layout
 (V200_20) Cell                                    5       5           5       5
 (V500_20) Cell                                    4       4           4       4
 (fbias_cur_ref2_layout) Cell                      1       1           1       1
-(fbias_gm_c1_f2) Cell                             1       1           1       1
-(fbias_por2_f) Cell                               1       1           1       1
+(fbias_gm_c1_f2c) Cell                            1       1           1       1
+(fbias_por2_fc) Cell                              1       1           1       1
 (fbias_vol_ref1_layout) Cell                      1       1           1       1
 (fecg_bandgap3_layout) Cell                       1       1           1       1
                                              ------  ------      ------  ------
 Total                                            14      14          14      14
 
-###############################################################################
-###### chopper2 schematic FECG  <vs>  chopper2 layout FECG
-###############################################################################
-###### This report is for informational purposes only. This cell
-###### has been expanded because of a pin-swapping analysis error.
-###############################################################################
-        
-Pre-expand Statistics                      
-======================                          Original       
-Cell/Device                               schematic  layout
-(NMOS4) MOS                                       4       8*
-(PMOS4) MOS                                       4      16*
-                                             ------  ------
-Total                                             8      24
-
-Reduce Statistics
-=================                               Original             Reduced
-Cell/Device                               schematic  layout   schematic  layout
-(NMOS4) MOS                                       4       8*          4       4
-(PMOS4) MOS                                       4      16*          4       4
-
-Match Statistics
-================                                  Total             Unmatched
-Cell/Device                               schematic  layout   schematic  layout
-(NMOS4) MOS                                       4       4           0       0
-(PMOS4) MOS                                       4       4           0       0
-                                             ------  ------      ------  ------
-Total                                             8       8           0       0
-
-Match Statistics for Nets                         8       8           0       0
-
 *******************************************************************************
-****** fecg_ia_5_fn schematic FECG  <vs>  fecg_ia_5_fn layout FECG
+****** buffer2_f_3c schematic FECG  <vs>  buffer2_f_3c layout FECG
 *******************************************************************************
 
 Filter/Reduce statistics only. Network matching was OK.
@@ -314,34 +287,30 @@ Filter/Reduce statistics only. Network matching was OK.
 Pre-expand Statistics                      
 ======================                          Original       
 Cell/Device                               schematic  layout
-(chopper2 schematic FECG, chopper2) Cell          3       3
-(RPOLYH) RES                                      5       5
-(CVAR) Generic                                    1       1
-(cpolyc schematic PRIMLIB, _) Cell               10       0*
-(NMOS4) MOS                                      66      37*
-(PMOS4) MOS                                     124       2*
-(_, cpolyc layout PRIMLIB area="2...) Cell        0       9*
-(_, nmos4 layout PRIMLIB jd=FALSE...) Cell        0       4*
-(_, nmos4 layout PRIMLIB l="12u" ...) Cell        0      20*
-(_, nmos4 layout PRIMLIB l="8u" i...) Cell        0      12*
-(_, pmos4 layout PRIMLIB l="20u" ...) Cell        0      12*
-(_, pmos4 layout PRIMLIB jd=FALSE...) Cell        0       2*
-(_, pmos4 layout PRIMLIB jd=FALSE...) Cell        0       4*
-(_, pmos4 layout PRIMLIB l="4u" w...) Cell        0      20*
-(CPOLYA) CAP                                      0       1*
+(cpolyc schematic PRIMLIB, _) Cell               11       0*
+(RPOLYH) RES                                      3       1*
+(NMOS4) MOS                                      11       8*
+(PMOS4) MOS                                     102       0*
+(_, pmos4 layout PRIMLIB l="3u" i...) Cell        0      34*
+(_, cpolyc layout PRIMLIB area="1...) Cell        0       8*
+(_, nmos4 layout PRIMLIB l="8u" i...) Cell        0       4*
+(_, nmos4 layout PRIMLIB jd=FALSE...) Cell        0       2*
+(_, nmos4 layout PRIMLIB l="10u" ...) Cell        0       4*
+(_, pmos4 layout PRIMLIB l="500n"...) Cell        0      68*
+(_, rpolyhc layout PRIMLIB Bends=...) Cell        0       2*
+(CPOLYA) CAP                                      0       3*
                                              ------  ------
-Total                                           209     132
+Total                                           127     134
 
 Reduce Statistics
 =================                               Original             Reduced
 Cell/Device                               schematic  layout   schematic  layout
-(NMOS4) MOS                                      78     133*         35      35
-(PMOS4) MOS                                     136     210*         30      30
-(RPOLYH) RES                                      5       5           5       5
-(CPOLYA) CAP                                     10      10           2       2
-(CVAR) Generic                                    1       1           1       1
+(NMOS4) MOS                                      11      24*          7       7
+(PMOS4) MOS                                     102     102           7       7
+(RPOLYH) RES                                      3       3           3       3
+(CPOLYA) CAP                                     11      11           4       4
                                              ------  ------      ------  ------
-Total                                           230     359          73      73
+Total                                           127     140          21      21
 
 *******************************************************************************
 ****** mux21c_f schematic FECG  <vs>  mux21c_f layout FECG
@@ -380,9 +349,9 @@ Cell/Device                               schematic  layout
 (RPOLYH) RES                                     17       1*
 (NMOS4) MOS                                      11       8*
 (_, cpolyc layout PRIMLIB area="1...) Cell        0       6*
+(_, nmos4 layout PRIMLIB l="12u" ...) Cell        0       4*
 (_, nmos4 layout PRIMLIB l="20u" ...) Cell        0       4*
 (_, nmos4 layout PRIMLIB jd=FALSE...) Cell        0       2*
-(_, nmos4 layout PRIMLIB l="12u" ...) Cell        0       4*
 (_, pmos4 layout PRIMLIB l="4u" w...) Cell        0      20*
 (_, rpolyhc layout PRIMLIB Bends=...) Cell        0      16*
 (CPOLYA) CAP                                      0       2*
@@ -401,7 +370,140 @@ Cell/Device                               schematic  layout   schematic  layout
 Total                                           164     182          28      28
 
 *******************************************************************************
-****** gmc_5_f schematic FECG  <vs>  gmc_5_f layout FECG
+****** cmfb_opamp1_fc schematic FECG  <vs>  cmfb_opamp1_fc layout FECG
+*******************************************************************************
+
+Filter/Reduce statistics only. Network matching was OK.
+                                                                                                                                                                   
+Pre-expand Statistics                      
+======================                          Original       
+Cell/Device                               schematic  layout
+(cpolyc schematic PRIMLIB, _) Cell                1       0*
+(NMOS4) MOS                                      31       2*
+(PMOS4) MOS                                      53       0*
+(_, nmos4 layout PRIMLIB l="1u" w...) Cell        0      26*
+(_, nmos4 layout PRIMLIB l="4u" w...) Cell        0       2*
+(_, nmos4 layout PRIMLIB l="1u" n...) Cell        0       2*
+(_, pmos4 layout PRIMLIB l="350n"...) Cell        0      20*
+(_, pmos4 layout PRIMLIB l="3u" i...) Cell        0       3*
+(CPOLYA) CAP                                      0       1*
+                                             ------  ------
+Total                                            85      56
+
+Reduce Statistics
+=================                               Original             Reduced
+Cell/Device                               schematic  layout   schematic  layout
+(NMOS4) MOS                                      31      34*          8       8
+(PMOS4) MOS                                      53      53           7       7
+(CPOLYA) CAP                                      1       1           1       1
+                                             ------  ------      ------  ------
+Total                                            85      88          16      16
+
+*******************************************************************************
+****** fecg_cmfb2_fc schematic FECG  <vs>  fecg_cmfb2_fc layout FECG
+*******************************************************************************
+
+Filter/Reduce statistics only. Network matching was OK.
+                                                                                                                                                                   
+Pre-expand Statistics                      
+======================                          Original       
+Cell/Device                               schematic  layout
+(PMOS4) MOS                                      16       5*
+(cpolyc schematic PRIMLIB, _) Cell                4       0*
+(RPOLYH) RES                                      5       1*
+(cmfb_opamp1_fc schematic FECG, cmfb_opamp1_fc) Cell                2       2
+(NMOS4) MOS                                      43       1*
+(_, nmos4 layout PRIMLIB jd=FALSE...) Cell        0       2*
+(_, nmos4 layout PRIMLIB l="350n"...) Cell        0      22*
+(_, nmos4 layout PRIMLIB l="10u" ...) Cell        0      18*
+(_, pmos4 layout PRIMLIB jd=FALSE...) Cell        0       3*
+(_, pmos4 layout PRIMLIB l="3u" w...) Cell        0      10*
+(_, rpolyhc layout PRIMLIB Bends=...) Cell        0       2*
+(_, rpolyhc layout PRIMLIB Bends=...) Cell        0       2*
+(CPOLYA) CAP                                      0       4*
+                                             ------  ------
+Total                                            70      72
+
+Reduce Statistics
+=================                               Original             Reduced
+Cell/Device                               schematic  layout   schematic  layout
+(cmfb_opamp1_fc) Cell                             2       2           2       2
+(NMOS4) MOS                                      43      49*         13      13
+(PMOS4) MOS                                      16      21*         10      10
+(RPOLYH) RES                                      5       5           5       5
+(CPOLYA) CAP                                      4       4           3       3
+                                             ------  ------      ------  ------
+Total                                            70      81          33      33
+
+###############################################################################
+###### chopper2 schematic FECG  <vs>  chopper2 layout FECG
+###############################################################################
+###### This report is for informational purposes only. This cell
+###### has been expanded because of a pin-swapping analysis error.
+###############################################################################
+        
+Pre-expand Statistics                      
+======================                          Original       
+Cell/Device                               schematic  layout
+(NMOS4) MOS                                       4       8*
+(PMOS4) MOS                                       4      16*
+                                             ------  ------
+Total                                             8      24
+
+Reduce Statistics
+=================                               Original             Reduced
+Cell/Device                               schematic  layout   schematic  layout
+(NMOS4) MOS                                       4       8*          4       4
+(PMOS4) MOS                                       4      16*          4       4
+
+Match Statistics
+================                                  Total             Unmatched
+Cell/Device                               schematic  layout   schematic  layout
+(NMOS4) MOS                                       4       4           0       0
+(PMOS4) MOS                                       4       4           0       0
+                                             ------  ------      ------  ------
+Total                                             8       8           0       0
+
+Match Statistics for Nets                         8       8           0       0
+
+*******************************************************************************
+****** fecg_ia_5_fc schematic FECG  <vs>  fecg_ia_5_fc layout FECG
+*******************************************************************************
+
+Filter/Reduce statistics only. Network matching was OK.
+                                                                                                                                                                   
+Pre-expand Statistics                      
+======================                          Original       
+Cell/Device                               schematic  layout
+(chopper2 schematic FECG, chopper2) Cell          3       3
+(RPOLYH) RES                                      5       5
+(cpolyc schematic PRIMLIB, _) Cell               12       0*
+(NMOS4) MOS                                      66      37*
+(PMOS4) MOS                                     124       2*
+(_, cpolyc layout PRIMLIB area="2...) Cell        0       9*
+(_, nmos4 layout PRIMLIB l="12u" ...) Cell        0      20*
+(_, nmos4 layout PRIMLIB jd=FALSE...) Cell        0       4*
+(_, nmos4 layout PRIMLIB l="8u" i...) Cell        0      12*
+(_, pmos4 layout PRIMLIB jd=FALSE...) Cell        0       4*
+(_, pmos4 layout PRIMLIB l="20u" ...) Cell        0      12*
+(_, pmos4 layout PRIMLIB jd=FALSE...) Cell        0       2*
+(_, pmos4 layout PRIMLIB l="4u" w...) Cell        0      20*
+(CPOLYA) CAP                                      0       3*
+                                             ------  ------
+Total                                           210     133
+
+Reduce Statistics
+=================                               Original             Reduced
+Cell/Device                               schematic  layout   schematic  layout
+(NMOS4) MOS                                      78     133*         35      35
+(PMOS4) MOS                                     136     210*         30      30
+(RPOLYH) RES                                      5       5           5       5
+(CPOLYA) CAP                                     12      12           4       4
+                                             ------  ------      ------  ------
+Total                                           231     360          74      74
+
+*******************************************************************************
+****** gmc_5_fc schematic FECG  <vs>  gmc_5_fc layout FECG
 *******************************************************************************
 
 Filter/Reduce statistics only. Network matching was OK.
@@ -410,16 +512,16 @@ Pre-expand Statistics
 ======================                          Original       
 Cell/Device                               schematic  layout
 (RPOLYH) RES                                      1       1
-(cpolyc schematic PRIMLIB, _) Cell               24       0*
+(cpolyc schematic PRIMLIB, _) Cell               26       0*
 (NMOS4) MOS                                     309      97*
 (PMOS4) MOS                                      33       3*
-(CVAR) Generic                                    2       2
 (INVX1 cmos_sch CORELIBD, INVX1) Cell             3       3
 (_, cpolyc layout PRIMLIB area="3...) Cell        0      24*
 (_, nmos4 layout PRIMLIB l="4u" n...) Cell        0       2*
 (_, pmos4 layout PRIMLIB l="5u" w...) Cell        0      22*
 (_, pmos4 layout PRIMLIB jd=FALSE...) Cell        0       4*
 (_, pmos4 layout PRIMLIB l="5u" w...) Cell        0       4*
+(CPOLYA) CAP                                      0       2*
                                              ------  ------
 Total                                           372     162
 
@@ -430,110 +532,9 @@ Cell/Device                               schematic  layout   schematic  layout
 (NMOS4) MOS                                     309     311*         49      49
 (PMOS4) MOS                                      33     109*         12      12
 (RPOLYH) RES                                      1       1           1       1
-(CPOLYA) CAP                                     24      24           4       4
-(CVAR) Generic                                    2       2           2       2
+(CPOLYA) CAP                                     26      26           6       6
                                              ------  ------      ------  ------
 Total                                           372     450          71      71
-
-*******************************************************************************
-****** buffer2_f_3 schematic FECG  <vs>  buffer2_f_3 layout FECG
-*******************************************************************************
-
-Filter/Reduce statistics only. Network matching was OK.
-                                                                                                                                                                   
-Pre-expand Statistics                      
-======================                          Original       
-Cell/Device                               schematic  layout
-(cpolyc schematic PRIMLIB, _) Cell                8       0*
-(RPOLYH) RES                                      3       1*
-(NMOS4) MOS                                      11       8*
-(PMOS4) MOS                                     102       0*
-(CVAR) Generic                                    3       3
-(_, pmos4 layout PRIMLIB l="3u" i...) Cell        0      34*
-(_, cpolyc layout PRIMLIB area="1...) Cell        0       8*
-(_, nmos4 layout PRIMLIB l="8u" i...) Cell        0       4*
-(_, nmos4 layout PRIMLIB jd=FALSE...) Cell        0       2*
-(_, nmos4 layout PRIMLIB l="10u" ...) Cell        0       4*
-(_, pmos4 layout PRIMLIB l="500n"...) Cell        0      68*
-(_, rpolyhc layout PRIMLIB Bends=...) Cell        0       2*
-                                             ------  ------
-Total                                           127     134
-
-Reduce Statistics
-=================                               Original             Reduced
-Cell/Device                               schematic  layout   schematic  layout
-(NMOS4) MOS                                      11      24*          7       7
-(PMOS4) MOS                                     102     102           7       7
-(RPOLYH) RES                                      3       3           3       3
-(CPOLYA) CAP                                      8       8           1       1
-(CVAR) Generic                                    3       3           3       3
-                                             ------  ------      ------  ------
-Total                                           127     140          21      21
-
-*******************************************************************************
-****** cmfb_opamp1_f schematic FECG  <vs>  cmfb_opamp1_f layout FECG
-*******************************************************************************
-
-Filter/Reduce statistics only. Network matching was OK.
-                                                                                                                                                                   
-Pre-expand Statistics                      
-======================                          Original       
-Cell/Device                               schematic  layout
-(NMOS4) MOS                                      31       2*
-(PMOS4) MOS                                      53       0*
-(CVAR) Generic                                    1       1
-(_, nmos4 layout PRIMLIB l="4u" w...) Cell        0       2*
-(_, nmos4 layout PRIMLIB l="1u" w...) Cell        0      26*
-(_, nmos4 layout PRIMLIB l="1u" n...) Cell        0       2*
-(_, pmos4 layout PRIMLIB l="350n"...) Cell        0      20*
-(_, pmos4 layout PRIMLIB l="3u" i...) Cell        0       3*
-                                             ------  ------
-Total                                            85      56
-
-Reduce Statistics
-=================                               Original             Reduced
-Cell/Device                               schematic  layout   schematic  layout
-(NMOS4) MOS                                      31      34*          8       8
-(PMOS4) MOS                                      53      53           7       7
-(CVAR) Generic                                    1       1           1       1
-                                             ------  ------      ------  ------
-Total                                            85      88          16      16
-
-*******************************************************************************
-****** fecg_cmfb2_f schematic FECG  <vs>  fecg_cmfb2_f layout FECG
-*******************************************************************************
-
-Filter/Reduce statistics only. Network matching was OK.
-                                                                                                                                                                   
-Pre-expand Statistics                      
-======================                          Original       
-Cell/Device                               schematic  layout
-(cmfb_opamp1_f schematic FECG, cmfb_opamp1_f) Cell                  2       2
-(PMOS4) MOS                                      16       5*
-(RPOLYH) RES                                      5       1*
-(CVAR) Generic                                    8       3*
-(NMOS4) MOS                                      43       1*
-(_, cvar layout PRIMLIB col=21 ro...) Cell        0       5*
-(_, nmos4 layout PRIMLIB jd=FALSE...) Cell        0       2*
-(_, nmos4 layout PRIMLIB l="350n"...) Cell        0      22*
-(_, nmos4 layout PRIMLIB l="10u" ...) Cell        0      18*
-(_, pmos4 layout PRIMLIB jd=FALSE...) Cell        0       3*
-(_, pmos4 layout PRIMLIB l="3u" w...) Cell        0      10*
-(_, rpolyhc layout PRIMLIB Bends=...) Cell        0       2*
-(_, rpolyhc layout PRIMLIB Bends=...) Cell        0       2*
-                                             ------  ------
-Total                                            74      76
-
-Reduce Statistics
-=================                               Original             Reduced
-Cell/Device                               schematic  layout   schematic  layout
-(cmfb_opamp1_f) Cell                              2       2           2       2
-(NMOS4) MOS                                      43      49*         13      13
-(PMOS4) MOS                                      16      21*         10      10
-(RPOLYH) RES                                      5       5           5       5
-(CVAR) Generic                                    8       8           8       8
-                                             ------  ------      ------  ------
-Total                                            74      85          38      38
 
 *******************************************************************************
 ****** V1000_20 schematic POWER_TRACKS  <vs>  V1000_20 layout POWER_TRACKS
@@ -564,13 +565,13 @@ Filter/Reduce statistics only. Network matching was OK.
 Pre-expand Statistics                      
 ======================                          Original       
 Cell/Device                               schematic  layout
-(fecg_ia_5_fn schematic FECG, fecg_ia_5_fn) Cell          1       1
+(buffer2_f_3c schematic FECG, buffer2_f_3c) Cell          1       1
 (fecg_vga2_f_2 schematic FECG, fecg_vga2_f_2) Cell                  1       1
 (V500_20 schematic POWER_TRACKS, V500_20) Cell            9       9
-(gmc_5_f schematic FECG, gmc_5_f) Cell            3       3
-(buffer2_f_3 schematic FECG, buffer2_f_3) Cell            1       1
+(fecg_cmfb2_fc schematic FECG, fecg_cmfb2_fc) Cell                  1       1
+(fecg_ia_5_fc schematic FECG, fecg_ia_5_fc) Cell          1       1
 (V200_20 schematic POWER_TRACKS, V200_20) Cell            5       5
-(fecg_cmfb2_f schematic FECG, fecg_cmfb2_f) Cell          1       1
+(gmc_5_fc schematic FECG, gmc_5_fc) Cell          3       3
 (V1000_20 schematic POWER_TRACKS, V1000_20) Cell          1       1
                                              ------  ------
 Total                                            22      22
@@ -581,11 +582,11 @@ Cell/Device                               schematic  layout   schematic  layout
 (V1000_20) Cell                                   1       1           1       1
 (V200_20) Cell                                    5       5           5       5
 (V500_20) Cell                                    9       9           9       9
-(buffer2_f_3) Cell                                1       1           1       1
-(fecg_cmfb2_f) Cell                               1       1           1       1
-(fecg_ia_5_fn) Cell                               1       1           1       1
+(buffer2_f_3c) Cell                               1       1           1       1
+(fecg_cmfb2_fc) Cell                              1       1           1       1
+(fecg_ia_5_fc) Cell                               1       1           1       1
 (fecg_vga2_f_2) Cell                              1       1           1       1
-(gmc_5_f) Cell                                    3       3           3       3
+(gmc_5_fc) Cell                                   3       3           3       3
                                              ------  ------      ------  ------
 Total                                            22      22          22      22
 
@@ -834,6 +835,32 @@ Cell/Device                               schematic  layout   schematic  layout
 Total                                            15      29           9       9
 
 *******************************************************************************
+****** APRIO200P schematic IOLIB_ANA_4M  <vs>  APRIO200P_VAR1 layout IOLIB_ANA_4M
+*******************************************************************************
+
+Filter/Reduce statistics only. Network matching was OK.
+                                                                                                                                                                   
+Pre-expand Statistics                      
+======================                          Original       
+Cell/Device                               schematic  layout
+(NWD) DIO                                         2       4*
+(RPOLY2) RES                                      9       9
+(ND) DIO                                          2       8*
+(PD) DIO                                          2       8*
+                                             ------  ------
+Total                                            15      29
+
+Reduce Statistics
+=================                               Original             Reduced
+Cell/Device                               schematic  layout   schematic  layout
+(RPOLY2) RES                                      9       9           3       3
+(ND) DIO                                          2       8*          2       2
+(NWD) DIO                                         2       4*          2       2
+(PD) DIO                                          2       8*          2       2
+                                             ------  ------      ------  ------
+Total                                            15      29           9       9
+
+*******************************************************************************
 ****** AVDD3ALLP schematic IOLIB_ANA_4M  <vs>  AVDD3ALLP layout IOLIB_ANA_4M
 *******************************************************************************
 
@@ -906,11 +933,25 @@ Cell/Device                               schematic  layout
 (VDD3OP cmos_sch IOLIB_4M, VDD3OP) Cell           1       1
 (VDD3RP cmos_sch IOLIB_4M, VDD3RP) Cell           1       1
 (PWRCUT_DIG_P_DX cmos_sch IOLIB_4M, PWRCUT_DIG_P_DX) Cell           3       3
-(APRIO200P schematic IOLIB_ANA_4M, APRIO200P) Cell                 27      27
+(APRIO200P schematic IOLIB_ANA_4M, APRIO200P) Cell                 27      26*
 (AVDD3ALLP schematic IOLIB_ANA_4M, AVDD3ALLP) Cell                  3       3
 (AGND3ALLP schematic IOLIB_ANA_4M, AGND3ALLP) Cell                  3       3
 (_, CORNERP layout IOLIB_4M) Cell                 0       4*
-(_, PERI_SPACER_100_P layout IOLIB_4M) Cell               0      53*
+(_, PERI_SPACER_100_P_VAR1 layout IOLIB_4M) Cell          0      25*
+(_, PERI_SPACER_100_P_VAR10 layout IOLIB_4M) Cell         0       3*
+(_, PERI_SPACER_100_P layout IOLIB_4M) Cell               0       2*
+(_, PERI_SPACER_100_P_VAR14 layout IOLIB_4M) Cell         0       3*
+(_, PERI_SPACER_100_P_VAR5 layout IOLIB_4M) Cell          0       6*
+(_, PERI_SPACER_100_P_VAR2 layout IOLIB_4M) Cell          0       4*
+(_, PERI_SPACER_100_P_VAR3 layout IOLIB_4M) Cell          0       1*
+(_, PERI_SPACER_100_P_VAR12 layout IOLIB_4M) Cell         0       1*
+(_, PERI_SPACER_100_P_VAR4 layout IOLIB_4M) Cell          0       1*
+(_, PERI_SPACER_100_P_VAR11 layout IOLIB_4M) Cell         0       1*
+(_, PERI_SPACER_100_P_VAR13 layout IOLIB_4M) Cell         0       1*
+(_, PERI_SPACER_100_P_VAR9 layout IOLIB_4M) Cell          0       2*
+(_, PERI_SPACER_100_P_VAR8 layout IOLIB_4M) Cell          0       1*
+(_, PERI_SPACER_100_P_VAR7 layout IOLIB_4M) Cell          0       1*
+(_, PERI_SPACER_100_P_VAR6 layout IOLIB_4M) Cell          0       1*
 (_, PERI_SPACER_10_P layout IOLIB_4M) Cell        0       2*
 (_, PERI_SPACER_20_P layout IOLIB_4M) Cell        0       2*
 (_, PERI_SPACER_2_P layout IOLIB_4M) Cell         0       4*
@@ -918,7 +959,7 @@ Cell/Device                               schematic  layout
 (_, PERI_SPACER_5_P layout IOLIB_4M) Cell         0       2*
 (NWD) DIO                                         0       1*
                                              ------  ------
-Total                                            47     120
+Total                                            47     119
 
 Reduce Statistics
 =================                               Original             Reduced

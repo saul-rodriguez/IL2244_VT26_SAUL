@@ -1,0 +1,23 @@
+ ;# 12604
+    processAntenna( 
+        gate( sum (pres_wexp pres_exp) )
+        antenna( sum pres_lexp )
+        presRatio = pres_lexp.area / pres_wexp.area 
+        rpoly2_g1 = drcAntenna( pres_lexp ( pres_wexp ) presRatio  keep < 5 "RPOLY2_G1: Minimum number of RPOLY2 squares = 5" ) 
+    )
+
+ Seq#       Net           Location          Area of   Area of   presRatio   Cell
+                     pres_wexp             pres_lexp pres_wexp
+
+    1      avC9  (    15.000,   221.900)     4.200000     1.100000      3.8182  APRIO200P layout IOLIB_ANA_4M
+    2      avC8  (    25.500,   215.900)     2.100000     1.100000      1.9091  APRIO200P layout IOLIB_ANA_4M
+    3      avC7  (    15.000,   227.900)     4.200000     1.100000      3.8182  APRIO200P layout IOLIB_ANA_4M
+    4      avC6  (    39.400,   221.900)     4.200000     1.100000      3.8182  APRIO200P layout IOLIB_ANA_4M
+    5      avC5  (    39.400,   215.900)     4.200000     1.100000      3.8182  APRIO200P layout IOLIB_ANA_4M
+    6      avC4  (    39.400,   227.900)     4.200000     1.100000      3.8182  APRIO200P layout IOLIB_ANA_4M
+    7      avC3  (    63.800,   221.900)     4.200000     1.100000      3.8182  APRIO200P layout IOLIB_ANA_4M
+    8      avC2  (    63.800,   215.900)     4.200000     1.100000      3.8182  APRIO200P layout IOLIB_ANA_4M
+    9      avC1  (    63.800,   227.900)     4.200000     1.100000      3.8182  APRIO200P layout IOLIB_ANA_4M
+
+    9 errors detected
+--------------------------------------------------------------------------------

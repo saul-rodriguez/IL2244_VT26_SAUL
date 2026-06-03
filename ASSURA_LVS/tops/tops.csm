@@ -1,5 +1,6 @@
 Schematic                            | Layout                            | Status
 ------------------------------------------------------------------------------------------------------
+fbias_gm_c1_f2c schematic FBIAS      | fbias_gm_c1_f2c layout FBIAS      | matched                   
 V500_20 schematic POWER_TRACKS       | V500_20 layout POWER_TRACKS       | matched                   
 V200_20 schematic POWER_TRACKS       | V200_20 layout POWER_TRACKS       | matched                   
 fbias_vol_ref1_layout schematic FBIAS| fbias_vol_ref1_layout layout FBIAS| matched                   
@@ -7,17 +8,16 @@ fecg_bandgap3_layout schematic FBIAS | fecg_bandgap3_layout layout FBIAS | match
 fbias_cur_ref2_layout schematic FBIAS| fbias_cur_ref2_layout layout FBIAS| matched                   
 INVX2 cmos_sch CORELIBD              | INVX2 layout CORELIBD             | matched                   
 INVX1 cmos_sch CORELIBD              | INVX1 layout CORELIBD             | matched                   
-fbias_por2_f schematic FBIAS         | fbias_por2_f layout FBIAS         | matched                   
-fbias_gm_c1_f2 schematic FBIAS       | fbias_gm_c1_f2 layout FBIAS       | matched                   
+fbias_por2_fc schematic FBIAS        | fbias_por2_fc layout FBIAS        | matched                   
 fbias_bias2_f schematic FBIAS        | fbias_bias2_f layout FBIAS        | matched                   
-chopper2 schematic FECG              | chopper2 layout FECG              | expanded                  
-fecg_ia_5_fn schematic FECG          | fecg_ia_5_fn layout FECG          | matched                   
+buffer2_f_3c schematic FECG          | buffer2_f_3c layout FECG          | matched                   
 mux21c_f schematic FECG              | mux21c_f layout FECG              | matched                   
 fecg_vga2_f_2 schematic FECG         | fecg_vga2_f_2 layout FECG         | matched                   
-gmc_5_f schematic FECG               | gmc_5_f layout FECG               | matched                   
-buffer2_f_3 schematic FECG           | buffer2_f_3 layout FECG           | matched                   
-cmfb_opamp1_f schematic FECG         | cmfb_opamp1_f layout FECG         | matched                   
-fecg_cmfb2_f schematic FECG          | fecg_cmfb2_f layout FECG          | matched                   
+cmfb_opamp1_fc schematic FECG        | cmfb_opamp1_fc layout FECG        | matched                   
+fecg_cmfb2_fc schematic FECG         | fecg_cmfb2_fc layout FECG         | matched                   
+chopper2 schematic FECG              | chopper2 layout FECG              | expanded                  
+fecg_ia_5_fc schematic FECG          | fecg_ia_5_fc layout FECG          | matched                   
+gmc_5_fc schematic FECG              | gmc_5_fc layout FECG              | matched                   
 V1000_20 schematic POWER_TRACKS      | V1000_20 layout POWER_TRACKS      | matched                   
 fecg_front_end_f_3 schematic FECG    | fecg_front_end_f_3 layout FECG    | matched                   
 GND3IP cmos_sch IOLIB_4M             | GND3IP layout IOLIB_4M            | matched                   
@@ -29,6 +29,7 @@ VDD3OP cmos_sch IOLIB_4M             | VDD3OP layout IOLIB_4M            | expan
 VDD3RP cmos_sch IOLIB_4M             | VDD3RP layout IOLIB_4M            | matched                   
 PWRCUT_DIG_P_DX cmos_sch IOLIB_4M    | PWRCUT_DIG_P_DX layout IOLIB_4M   | matched                   
 APRIO200P schematic IOLIB_ANA_4M     | APRIO200P layout IOLIB_ANA_4M     | matched                   
+APRIO200P schematic IOLIB_ANA_4M     | APRIO200P_VAR1 layout IOLIB_ANA_4M| matched                   
 AVDD3ALLP schematic IOLIB_ANA_4M     | AVDD3ALLP layout IOLIB_ANA_4M     | matched                   
 AGND3ALLP schematic IOLIB_ANA_4M     | AGND3ALLP layout IOLIB_ANA_4M     | matched                   
 IO_RING_S_VHS schematic VT26_IO_RING | IO_RING_S_VHS layout VT26_IO_RING | matched                   

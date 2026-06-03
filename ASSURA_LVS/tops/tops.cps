@@ -1,6 +1,8 @@
                                                                                
 ; autoPinSwap() results for schematic network.
 
+swapPins("fbias_gm_c1_f2c" "(p OUT1 OUT2 OUT3)")
+
 swapPins("V500_20" "")
 
 swapPins("V200_20" "")
@@ -16,29 +18,27 @@ swapPins("INVX2" "")
 
 swapPins("INVX1" "")
 
-swapPins("fbias_por2_f" "")
-
-swapPins("fbias_gm_c1_f2" "(p OUT1 OUT2 OUT3)")
+swapPins("fbias_por2_fc" "")
 
 swapPins("fbias_bias2_f" "(p OUT7 OUT1 OUT2 OUT3 OUT4 OUT5 OUT6 OUT8 OUT9 OUT10
    OUT11)")
 
-; INFORMATION: pinswap analysis failed, cell will be expanded.
-; Cell: chopper2
-
-swapPins("fecg_ia_5_fn" "")
+swapPins("buffer2_f_3c" "")
 
 swapPins("mux21c_f" "")
 
 swapPins("fecg_vga2_f_2" "")
 
-swapPins("gmc_5_f" "")
+swapPins("cmfb_opamp1_fc" "")
 
-swapPins("buffer2_f_3" "")
+swapPins("fecg_cmfb2_fc" "(p INP INN)")
 
-swapPins("cmfb_opamp1_f" "")
+; INFORMATION: pinswap analysis failed, cell will be expanded.
+; Cell: chopper2
 
-swapPins("fecg_cmfb2_f" "(p INP INN)")
+swapPins("fecg_ia_5_fc" "")
+
+swapPins("gmc_5_fc" "")
 
 swapPins("V1000_20" "")
 
