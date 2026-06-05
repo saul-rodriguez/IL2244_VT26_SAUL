@@ -1,0 +1,35 @@
+//Revision 5
+//NOTE
+// Default austriamicrosystems template for AMS Designer
+// Note:
+//      Please remember to replace the Library, Cell, and View fields
+//      for the Top Cell with the actual names used by your design.
+//END_NOTE
+
+config topsy_tb;
+design VT26_TOP.topsy_tb:schematic;
+
+const digital behavioral, functional, schematic, symbol;
+const analog veriloga, functional, schematic, symbol;
+liblist basic, analogLib, DIG_SPI;
+
+viewlist verilogams, veriloga, behavioral, functional, \module , schematic, spectre, cmos_sch, symbol;
+stoplist symbol, spectre;
+
+
+cell CORELIBD.INVX1 binding :cmos_sch;
+cell CORELIBD.INVX2 binding :cmos_sch;
+
+cell IOLIB_4M.GND3IP binding :cmos_sch;
+cell IOLIB_4M.GND3OP binding :cmos_sch;
+cell IOLIB_4M.GND3RP binding :cmos_sch;
+cell IOLIB_4M.ICP binding :cmos_sch;
+cell IOLIB_4M.PWRCUT_DIG_P_DX binding :cmos_sch;
+cell IOLIB_4M.VDD3IP binding :cmos_sch;
+cell IOLIB_4M.VDD3OP binding :cmos_sch;
+cell IOLIB_4M.VDD3RP binding :cmos_sch;
+
+cell DIG_SPI.il2244_dig binding :schematic;
+
+
+endconfig
