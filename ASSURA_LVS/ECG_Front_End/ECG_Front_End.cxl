@@ -134,6 +134,12 @@ I MN57<0> avD1_122
 I MN56<0> avD1_119
 I MN59<0> avD1_11
 I R2 avD65_1
+I C6<0>/C0 C6(2)/avD83_1
+I C3<0>/C0 C3(0)/avD83_1
+I C2<0>/C0 C2(0)/avD83_1
+I C1<0>/C0 C1(2)/avD83_1
+I C5/C0 avD83_2
+I C4/C0 avD83_1
 I MP24 MP24/avD5_1
 I MP23 MP23/avD5_1
 I MP22<0> MP22(0)/avD5_1
@@ -147,12 +153,6 @@ I MP16<0> MP16(0)/avD5_1
 I MP15 avD5_3
 I MP14 avD5_2
 I MP12 avD5_1
-I C6<0>/C0 C6(2)/avD83_1
-I C3<0>/C0 C3(0)/avD83_1
-I C2<0>/C0 C2(0)/avD83_1
-I C1<0>/C0 C1(2)/avD83_1
-I C5/C0 avD83_2
-I C4/C0 avD83_1
 I I4 I4
 I I3 I3
 I I2 I2
@@ -245,6 +245,9 @@ I R10 R10/avD66_1
 I R6 R6/avD66_1
 I R5 R2/avD66_1
 I R1 avD66_4
+I C2<0>/C0 C2(0)/avD84_1
+I C3/C0 avD83_1
+I C0/C0 avD84_1
 I MP30<0> MP30(0)/avD5_1
 I MP6<0> avI122/avD5_1
 I MP1<0> MP1(0)/avD5_1
@@ -263,9 +266,6 @@ I MP0<0> MP0(0)/avD5_1
 I MP9<0> MP9(0)/avD5_1
 I MP2<0> MP2(0)/avD5_1
 I MP5<0> avI121/avD5_2
-I C2<0>/C0 C2(0)/avD84_1
-I C3/C0 avD83_1
-I C0/C0 avD84_1
 I I1/MP0 I1/avD1_1
 I I1/MP1 I1/avD1_3
 I I1/MP2 I1/avD1_5
@@ -351,6 +351,9 @@ I R1 R1/avD66_1
 I R18 avD66_3
 I R16 R16/avD66_1
 I R0 R0/avD66_1
+I C5<0>/C0 C5(0)/avD84_1
+I C7/C0 avD83_1
+I C6/C0 avD84_1
 I MP4<0> avI70/avI49/avD5_1
 I MP13<0> MP13(0)/avD5_1
 I MP5 avI70/avI59/avD5_1
@@ -360,57 +363,18 @@ I MP3<0> avI70/avI16/avD5_1
 I MP0<0> MP0(0)/avD5_1
 I MP6 avD5_1
 I MP1<0> MP1(0)/avD5_1
-I C5<0>/C0 C5(0)/avD84_1
-I C7/C0 avD83_1
-I C6/C0 avD84_1
 I I7 I7
 I I9 I9
 I I8 I8
 I I6 I6
 
-C "BUFFER schematic YAOWEN" "BUFFER layout YAOWEN"
-N Vtop avC37
-N A avC10
-N Vmid avC9
+C "cmfb_opamp1_fc schematic FECG" "cmfb_opamp1_fc layout FECG"
+N net1 avC11
+N net32 avC12
+N net16 avC9
 N B avC8
-N D avC7
-N G avC11
-N GNDA avT1611_1
-N CBUF CBUF
-N VOUT VOUT
-N IBIAS IBIAS
-N VIN VIN
-N VDDA VDDA
-I MN0 avD1_1
-I MN2 MN2/avD1_1
-I MN1 MN1/avD1_1
-I MN3 MN3/avD1_1
-I MN4 MN4/avD1_1
-I R0 R11/avD66_1
-I R5 avD66_1
-I R12 R1/avD66_1
-I Dummy1<0> avI39/avI1/avD5_1
-I MP4<0> avI39/avI33/avD5_1
-I MP5<0> avI39/avI9/avD5_1
-I MP6<0> avI39/avI40/avD5_2
-I dummy2<0> dummy2(0)/avD5_1
-I MP2<0> MP2(0)/avD5_1
-I MP3<0> MP3(0)/avD5_1
-I C4/C0 avD83_1
-I C5/C0 C5/avD83_1
-
-C CVAR(Generic) CVAR(Generic)
-N G G
-N S S
-N B B
-
-C "cmfb_opamp1_f schematic FECG" "cmfb_opamp1_f layout FECG"
-N net1 avC7
-N net32 avC277
-N net16 avC10
-N B avC9
-N net6 avC11
-N A avC8
+N net6 avC10
+N A avC7
 N VDDA VDDA
 N GNDA avT1611_27
 N INN INN
@@ -425,7 +389,7 @@ I MN14<0> MN14(0)/avD1_1
 I MN2<0> MN2(0)/avD1_1
 I MN7 avD1_1
 I MN6<0> MN6(0)/avD1_1
-I C1 avD85_1
+I C0/C0 avD83_1
 I MP12<0> avI54/avI5/avD5_2
 I MP13<0> MP13(0)/avD5_1
 I MP6 avI54/avI8/avD5_1
@@ -434,21 +398,21 @@ I MP1<0> MP1(0)/avD5_1
 I MP3<0> avI54/avI1/avD5_1
 I MP5<0> avI54/avI3/avD5_1
 
-C "fecg_cmfb2_f schematic FECG" "fecg_cmfb2_f layout FECG"
-N net5 avC516
-N VCM avC14
-N net10 avC517
+C "fecg_cmfb2_fc schematic FECG" "fecg_cmfb2_fc layout FECG"
 N D avC10
-N net6 avC515
+N net6 avC33
 N EN_CMFB_N avC13
 N net8 avC16
+N net10 avC35
 N E avC12
-N net7 avC514
+N net7 avC32
 N net11 avC15
-N C avC512
-N B avC511
+N net5 avC34
+N VCM avC14
+N C avC30
+N B avC29
 N A avC11
-N net26 avC513
+N net26 avC31
 N BIAS BIAS
 N VDDA VDDA
 N GNDA avT1611_1
@@ -471,19 +435,14 @@ I MN11 MN11/avD1_1
 I MN0<0> MN0(0)/avD1_1
 I MN4<0> MN4(0)/avD1_1
 I MN1<0> MN1(0)/avD1_1
-I C2 avD85_3
-I C3 avD85_2
-I C0 avD85_1
-I C1<0> C1(4)/avD85_1
-I C1<1> C1(3)/avD85_1
-I C1<2> C1(2)/avD85_1
-I C1<3> C1(1)/avD85_1
-I C1<4> C1(0)/avD85_1
 I R10 R10/avD66_1
 I R9 R9/avD66_1
 I R7 avD66_1
 I R1 R1/avD66_1
 I R0 R0/avD66_1
+I C5/C0 avD83_1
+I C4/C0 avD83_3
+I C0/C0 avD83_2
 I MP11<0> MP11(0)/avD5_1
 I MP6<0> MP6(0)/avD5_1
 I MP1<0> MP1(0)/avD5_1
@@ -496,6 +455,37 @@ I MP3<0> MP3(0)/avD5_1
 I MP0 MP0/avD5_1
 I I3 I3
 I I5 I5
+
+C "BUFFER schematic YAOWEN" "BUFFER layout YAOWEN"
+N Vtop avC37
+N A avC10
+N Vmid avC9
+N B avC8
+N D avC7
+N G avC11
+N GNDA avT1611_1
+N CBUF CBUF
+N VOUT VOUT
+N IBIAS IBIAS
+N VIN VIN
+N VDDA VDDA
+I MN0 avD1_1
+I MN2 MN2/avD1_1
+I MN1 MN1/avD1_1
+I MN3 MN3/avD1_1
+I MN4 MN4/avD1_1
+I R0 R11/avD66_1
+I R5 avD66_1
+I R12 R1/avD66_1
+I C4/C0 avD83_1
+I C5/C0 C5/avD83_1
+I Dummy1<0> avI39/avI1/avD5_1
+I MP4<0> avI39/avI33/avD5_1
+I MP5<0> avI39/avI9/avD5_1
+I MP6<0> avI39/avI40/avD5_2
+I dummy2<0> dummy2(0)/avD5_1
+I MP2<0> MP2(0)/avD5_1
+I MP3<0> MP3(0)/avD5_1
 
 C "ECG_Front_End schematic YAOWEN" "ECG_Front_End layout YAOWEN"
 N VLF1 avC32
@@ -534,8 +524,8 @@ N S<3> S<3>
 N S<2> S<2>
 N S<1> S<1>
 N S<0> S<0>
-I I0 I0
 I I14 I14
+I I0 I0
 I I27 I27
 I I28 I28
 I I35 I9

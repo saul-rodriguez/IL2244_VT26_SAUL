@@ -51,19 +51,18 @@ Pre-expand Statistics
 Cell/Device                               schematic  layout
 (NMOS4) MOS                                      58       0*
 (RPOLYH) RES                                      3       3
-(CVAR) Generic                                    4       0*
-(cpolyc schematic PRIMLIB, cpolyc) Cell           2       2
+(cpolyc schematic PRIMLIB, cpolyc) Cell           4       2*
 (PMOS4) MOS                                      68       0*
-(_, cvar layout PRIMLIB col=12 ro...) Cell        0       4*
 (_, nmos4 layout PRIMLIB l="10u" ...) Cell        0      18*
 (_, nmos4 layout PRIMLIB l="10u" ...) Cell        0      40*
 (_, pmos4 layout PRIMLIB l="10u" ...) Cell        0      17*
+(_, pmos4 layout PRIMLIB l="1u" i...) Cell        0       8*
 (_, pmos4 layout PRIMLIB l="2u" w...) Cell        0      14*
 (_, pmos4 layout PRIMLIB l="30u" ...) Cell        0      28*
-(_, pmos4 layout PRIMLIB l="1u" i...) Cell        0       8*
 (_, pmos4 layout PRIMLIB l="1u" w...) Cell        0       1*
+(CPOLYA) CAP                                      0       2*
                                              ------  ------
-Total                                           135     135
+Total                                           133     133
 
 Reduce Statistics
 =================                               Original             Reduced
@@ -71,10 +70,9 @@ Cell/Device                               schematic  layout   schematic  layout
 (NMOS4) MOS                                      58      58          10      10
 (PMOS4) MOS                                      68      68          26      26
 (RPOLYH) RES                                      3       3           3       3
-(CPOLYA) CAP                                      2       2           2       2
-(CVAR) Generic                                    4       4           4       4
+(CPOLYA) CAP                                      4       4           4       4
                                              ------  ------      ------  ------
-Total                                           135     135          45      45
+Total                                           133     133          43      43
 
 *******************************************************************************
 ****** V200_20 schematic POWER_TRACKS  <vs>  V200_20 layout POWER_TRACKS
@@ -115,9 +113,9 @@ Cell/Device                               schematic  layout
 (_, nmos4 layout PRIMLIB l="10u" ...) Cell        0      11*
 (_, nmos4 layout PRIMLIB l="5u" i...) Cell        0       3*
 (_, nmos4 layout PRIMLIB l="40u" ...) Cell        0       8*
+(_, pmos4 layout PRIMLIB l="10u" ...) Cell        0       2*
 (_, pmos4 layout PRIMLIB l="500n"...) Cell        0       8*
 (_, pmos4 layout PRIMLIB l="4u" w...) Cell        0      12*
-(_, pmos4 layout PRIMLIB l="10u" ...) Cell        0       2*
 (_, rpolyhc layout PRIMLIB Bends=...) Cell        0       2*
 (_, vert10_4 layout PRIMLIB) Cell                 0       7*
 (CPOLYA) CAP                                      0       1*

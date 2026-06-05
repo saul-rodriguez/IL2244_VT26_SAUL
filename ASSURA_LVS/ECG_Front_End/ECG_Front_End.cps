@@ -20,8 +20,8 @@ swapPins("mux21" "")
 
 swapPins("VGA_1" "")
 
+swapPins("cmfb_opamp1_fc" "")
+
+swapPins("fecg_cmfb2_fc" "(p INP INN)")
+
 swapPins("BUFFER" "")
-
-swapPins("cmfb_opamp1_f" "")
-
-swapPins("fecg_cmfb2_f" "(p INP INN)")
