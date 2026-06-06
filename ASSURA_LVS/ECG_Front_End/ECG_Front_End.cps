@@ -3,8 +3,6 @@
 
 swapPins("INVX1" "")
 
-swapPins("Gm_C_filter" "")
-
 swapPins("V200_20" "")
 
 swapPins("V500_20" "")

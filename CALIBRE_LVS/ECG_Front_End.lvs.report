@@ -1,0 +1,703 @@
+
+
+
+                  ##################################################
+                  ##                                              ##
+                  ##         C A L I B R E    S Y S T E M         ##
+                  ##                                              ##
+                  ##             L V S   R E P O R T              ##
+                  ##                                              ##
+                  ##################################################
+
+
+
+REPORT FILE NAME:         ECG_Front_End.lvs.report
+LAYOUT NAME:              ECG_Front_End.sp ('ECG_Front_End')
+SOURCE NAME:              ECG_Front_End.src.net ('ECG_Front_End')
+RULE FILE:                _c35b4c3.rules_
+RULE FILE TITLE:          DRC/LVS 0.35 U CMOS C35B4/C35B3 REV9 polycide 3V/5V ENG-356 BRDLTSV80 REV3(last modified 22-May-2017)
+CREATION TIME:            Sat Jun  6 08:47:10 2026
+CURRENT DIRECTORY:        /home/saul/projects/IL2244_VT26_SAUL/CALIBRE_LVS
+USER NAME:                saul
+CALIBRE VERSION:          v2024.4_12.9    Tue Oct 1 20:34:12 PDT 2024
+
+
+
+                               OVERALL COMPARISON RESULTS
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Different numbers of nets.
+  Error:    Connectivity errors.
+  Warning:  Unbalanced smashed mosfets were matched.
+  Warning:  Ambiguity points were found and resolved arbitrarily.
+
+
+**************************************************************************************************************
+                                      CELL  SUMMARY
+**************************************************************************************************************
+
+  Result         Layout                        Source
+  -----------    -----------                   --------------
+  INCORRECT      ECG_Front_End                 ECG_Front_End
+
+
+
+**************************************************************************************************************
+                                      LVS PARAMETERS
+**************************************************************************************************************
+
+
+o LVS Setup:
+
+   // LVS COMPONENT TYPE PROPERTY
+   // LVS COMPONENT SUBTYPE PROPERTY
+   // LVS PIN NAME PROPERTY
+   LVS POWER NAME                         "?VCC?" "?VDD?"
+   LVS GROUND NAME                        "?VSS?" "?GND?"
+   LVS CELL SUPPLY                        NO
+   LVS RECOGNIZE GATES                    ALL
+   // LVS HCELL REPORT
+   LVS IGNORE PORTS                       NO
+   LVS CHECK PORT NAMES                   YES
+   LVS IGNORE TRIVIAL NAMED PORTS         NO
+   LVS BUILTIN DEVICE PIN SWAP            YES
+   LVS ALL CAPACITOR PINS SWAPPABLE       NO
+   LVS DISCARD PINS BY DEVICE             YES
+   LVS SOFT SUBSTRATE PINS                YES
+   LVS INJECT LOGIC                       YES
+   LVS EXPAND UNBALANCED CELLS            YES
+   LVS FLATTEN INSIDE CELL                NO
+   LVS EXPAND SEED PROMOTIONS             NO
+   LVS PRESERVE PARAMETERIZED CELLS       NO
+   LVS GLOBALS ARE PORTS                  YES
+   LVS RELAX INITIAL CPOINTS              NONE
+   LVS REVERSE WL                         NO
+   // LVS NETLIST FILTER DEVICES          NO
+   // LVS PRESERVE BOX PORTS              NO
+   LVS SPICE PREFER PINS                  NO
+   LVS SPICE SLASH IS SPACE               YES
+   LVS SPICE ALLOW FLOATING PINS          YES
+   // LVS SPICE ALLOW INLINE PARAMETERS     
+   LVS SPICE ALLOW UNQUOTED STRINGS       NO
+   LVS SPICE CONDITIONAL LDD              NO
+   LVS SPICE CULL PRIMITIVE SUBCIRCUITS   NO
+   // LVS SPICE EXCLUDE CELL SOURCE
+   // LVS SPICE EXCLUDE CELL LAYOUT
+   // LVS SPICE IGNORE PARAMETER
+   LVS SPICE IMPLIED MOS AREA             NO
+   // LVS SPICE MULTIPLIER NAME
+   LVS SPICE OVERRIDE GLOBALS             NO
+   LVS SPICE REDEFINE PARAM               NO
+   LVS SPICE REPLICATE DEVICES            NO
+   LVS SPICE SCALE X PARAMETERS           NO
+   LVS SPICE STRICT WL                    NO
+   // LVS SPICE OPTION
+   LVS STRICT SUBTYPES                    NO
+   LVS EXACT SUBTYPES                     NO
+   LAYOUT CASE                            NO
+   SOURCE CASE                            NO
+   LVS COMPARE CASE                       NO
+   LVS COMPARE CASE STRICT                NO
+   LVS DOWNCASE DEVICE                    NO
+   LVS REPORT MAXIMUM                     ALL
+   LVS PROPERTY RESOLUTION MAXIMUM        32
+   // LVS SIGNATURE MAXIMUM
+   // LVS FILTER UNUSED OPTION
+   // LVS REPORT OPTION
+   LVS REPORT UNITS                       YES
+   LVS SWAPPABLE HCELL PINS               GENERAL
+   // LVS NON USER NAME PORT
+   // LVS NON USER NAME NET
+   // LVS NON USER NAME INSTANCE
+   // LVS IGNORE DEVICE PIN
+   // LVS PREFER NETS FILTER SOURCE
+   // LVS PREFER NETS FILTER LAYOUT
+   LVS PREFER PORT NETS                   NO
+   LVS EXPAND ON ERROR                    NO
+   LVS EXPAND AMBIGUOUSLY HIGH SHORTED HCELLS NO
+   LVS AUGMENT HCELLS                     NONE
+
+   // Reduction
+
+   LVS REDUCE SERIES MOS                  NO
+   LVS REDUCE PARALLEL MOS                YES [ TOLERANCE L 0 ]
+   LVS REDUCE SEMI SERIES MOS             NO
+   LVS REDUCE SPLIT GATES                 YES
+   LVS REDUCE PARALLEL BIPOLAR            YES
+   LVS REDUCE SERIES CAPACITORS           YES
+   LVS REDUCE PARALLEL CAPACITORS         YES
+   LVS REDUCE SERIES RESISTORS            YES
+   LVS REDUCE PARALLEL RESISTORS          NO
+   LVS REDUCE PARALLEL DIODES             YES
+
+   LVS REDUCE  mn(nmosrf)  PARALLEL NO
+   LVS REDUCE  mp(pmosrf)  PARALLEL NO
+   LVS REDUCE  C(cpolyrf)  PARALLEL NO
+   LVS REDUCE  rx  PARALLEL
+   LVS REDUCE  esddlv2  PARALLEL [ TOLERANCE L 0 W 0 ]
+   LVS REDUCE  esddlv  PARALLEL [ TOLERANCE L 0 W 0 ]
+   LVS REDUCTION PRIORITY                 PARALLEL
+   
+   LVS SHORT EQUIVALENT NODES             NO
+
+   // Filter
+
+   LVS FILTER  R(RP)  SHORT
+   LVS FILTER  R(RESISTOR)  SHORT
+   LVS FILTER  C(CP)  OPEN
+   LVS FILTER  C(CAPACITOR)  OPEN
+   LVS FILTER  D(p_nd)  OPEN
+   LVS FILTER  D(p_pd)  OPEN
+   LVS FILTER  D(p_nwd)  OPEN
+
+   // Trace Property
+
+   TRACE PROPERTY  mn(nmosrf)  w w 1
+   TRACE PROPERTY  mn(nmosrf)  l l 1
+   TRACE PROPERTY  mn(nmosrf)  ng ng 1
+   TRACE PROPERTY  mp(pmosrf)  w w 1
+   TRACE PROPERTY  mp(pmosrf)  l l 1
+   TRACE PROPERTY  mp(pmosrf)  ng ng 1
+   TRACE PROPERTY  mn  w w 1
+   TRACE PROPERTY  mp  w w 1
+   TRACE PROPERTY  mn  l l 1
+   TRACE PROPERTY  mp  l l 1
+   TRACE PROPERTY  md  w w 1
+   TRACE PROPERTY  md  l l 1
+   TRACE PROPERTY  m(cvart)  w w 1
+   TRACE PROPERTY  m(cvart)  l l 1
+   TRACE PROPERTY  m(cvarm)  w w 1
+   TRACE PROPERTY  m(cvarm)  l l 1
+   TRACE PROPERTY  m(cvar)  w w 1
+   TRACE PROPERTY  m(cvar)  l l 1
+   TRACE PROPERTY  lddn  w w 1
+   TRACE PROPERTY  lddn  l l 1
+   TRACE PROPERTY  lddp  w w 1
+   TRACE PROPERTY  lddp  l l 1
+   TRACE PROPERTY  r  w w 1
+   TRACE PROPERTY  r  l l 1
+   TRACE PROPERTY  q(pnplat)  a a 1
+   TRACE PROPERTY  q(pnpvert10)  a a 1
+   TRACE PROPERTY  c(cpolyrf)  w w 1
+   TRACE PROPERTY  c(cpolyrf)  l l 1
+   TRACE PROPERTY  c  a a 1
+   TRACE PROPERTY  c  p p 1
+   TRACE PROPERTY  d(nd)  a a 1
+   TRACE PROPERTY  d(nd)  p p 1
+   TRACE PROPERTY  d(pd)  a a 1
+   TRACE PROPERTY  d(pd)  p p 1
+   TRACE PROPERTY  d(nwd)  a a 1
+   TRACE PROPERTY  phd(phdnwa850)  w w 1
+   TRACE PROPERTY  phd(phdnwa850)  l l 1
+   TRACE PROPERTY  phd(phdnwb850)  w w 1
+   TRACE PROPERTY  phd(phdnwb850)  l l 1
+   TRACE PROPERTY  sbd(sbd5)  w w 1
+   TRACE PROPERTY  sbd(sbd5)  l l 1
+   TRACE PROPERTY  esddlv2(esdfdn5)  w w 1
+   TRACE PROPERTY  esddlv2(esdfdn5)  l l 1
+   TRACE PROPERTY  esddlv2(esdgcn5)  w w 1
+   TRACE PROPERTY  esddlv2(esdgcn5)  l l 1
+   TRACE PROPERTY  esddlv(esdgcp5)  w w 1
+   TRACE PROPERTY  esddlv(esdgcp5)  l l 1
+   TRACE PROPERTY  esddlv(esdfdp5)  w w 1
+   TRACE PROPERTY  esddlv(esdfdp5)  l l 1
+   TRACE PROPERTY  esddlv2(esdpd12)  w w 1
+   TRACE PROPERTY  esddlv2(esdpd12)  l l 1
+   TRACE PROPERTY  esddlv2(esdpd18)  w w 1
+   TRACE PROPERTY  esddlv2(esdpd18)  l l 1
+   TRACE PROPERTY  esddlv2(esdpd26)  w w 1
+   TRACE PROPERTY  esddlv2(esdpd26)  l l 1
+   TRACE PROPERTY  esddlv2(esdpd30)  w w 1
+   TRACE PROPERTY  esddlv2(esdpd30)  l l 1
+
+
+
+                   CELL COMPARISON RESULTS ( TOP LEVEL )
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Different numbers of nets (see below).
+  Error:    Connectivity errors.
+  Warning:  Unbalanced smashed mosfets were matched.
+  Warning:  Ambiguity points were found and resolved arbitrarily.
+
+LAYOUT CELL NAME:         ECG_Front_End
+SOURCE CELL NAME:         ECG_Front_End
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:             31        31
+
+ Nets:             622       621    *
+
+ Instances:       1239      1155    *    MN (4 pins)
+                  1021       697    *    MP (4 pins)
+                   127       127         C (2 pins)
+                    48        48         R (2 pins)
+                    70         0    *    D (2 pins)
+                ------    ------
+ Total Inst:      2505      2027
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:             31        31
+
+ Nets:             148       147    *
+
+ Instances:         77        77         MN (4 pins)
+                    79        79         MP (4 pins)
+                    26        26         C (2 pins)
+                    31        31         R (2 pins)
+                     8         8         _invb (6 pins)
+                    16        16         _invv (4 pins)
+                     7         7         _smn2v (4 pins)
+                    15        15         _smn4v (6 pins)
+                     3         3         _smn5v (7 pins)
+                     6         6         _smn8v (10 pins)
+                     9         9         _sup2v (4 pins)
+                     2         2         _tgmb (7 pins)
+                ------    ------
+ Total Inst:       279       279
+
+
+       * = Number of objects in layout different from number in source.
+
+
+
+**************************************************************************************************************
+                                 INCORRECT OBJECTS
+**************************************************************************************************************
+
+
+LEGEND:
+-------
+
+  ne  = Naming Error (same layout name found in source
+        circuit, but object was matched otherwise).
+
+
+**************************************************************************************************************
+                                   INCORRECT NETS
+
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+  1    Net CLK                                                   CLK
+           X29/23                                               
+       --- 13 Connections On This Net ---                        --- 13 Connections On This Net ---
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:              31         31            0            0
+
+   Nets:              148        147            0            0
+
+   Instances:          77         77            0            0    MN(NMOS4)
+                       79         79            0            0    MP(PMOS4)
+                       26         26            0            0    C(CPOLYA)
+                       31         31            0            0    R(RPOLYH)
+                        8          8            0            0    _invb
+                       16         16            0            0    _invv
+                        7          7            0            0    _smn2v
+                       15         15            0            0    _smn4v
+                        3          3            0            0    _smn5v
+                        6          6            0            0    _smn8v
+                        9          9            0            0    _sup2v
+                        2          2            0            0    _tgmb
+                  -------    -------    ---------    ---------
+   Total Inst:        279        279            0            0
+
+
+o Statistics:
+
+   70 layout instances were filtered and their pins removed from adjoining nets.
+
+   2125 layout mos transistors were reduced to 232.  342 connecting nets were deleted.
+     1437 mos transistors were deleted by parallel reduction.
+     456 mos transistors and 342 connecting nets were deleted by split-gate reduction.
+   1655 source mos transistors were reduced to 170.  342 connecting nets were deleted.
+     1029 mos transistors were deleted by parallel reduction.
+     456 mos transistors and 342 connecting nets were deleted by split-gate reduction.
+
+   117 parallel layout capacitors were reduced to 16.
+   117 parallel source capacitors were reduced to 16.
+
+   22 series layout resistors were reduced to 5.  17 connecting nets were deleted.
+   22 series source resistors were reduced to 5.  17 connecting nets were deleted.
+
+   4 nets and 5 instances were matched arbitrarily.
+
+
+o Initial Correspondence Points:
+
+   Ports:        VDDA VDDD GNDA GNDD VINP VINN F<0> F<1> F<2> VREF_CM CM EN_CMFB BIAS7 BIAS4
+                 S<0> CVGA S<1> S<2> CMFB S<3> EXC1 EXC2 CBUF BIAS6 OUT VREF BIAS1 CLK BIAS2
+                 BIAS3 BIAS5
+
+
+o Voltage Names Matched by Wildcard:
+
+   Power Names from Layout:
+
+                 VDDD
+                 VDDA
+
+   Ground Names from Layout:
+
+                 GNDD
+                 GNDA
+
+   Power Names from Source:
+
+                 VDDD
+                 VDDA
+
+   Ground Names from Source:
+
+                 GNDD
+                 GNDA
+
+
+o Ambiguity Resolution Points:
+
+      (Each one of the following objects belongs to a group of indistinguishable objects.
+       The listed objects were matched arbitrarily by the Ambiguity Resolution feature of LVS.
+       Arbitrary matching may be prevented by assigning names to these objects or to adjacent nets).
+
+       Layout                                                    Source
+       ------                                                    ------
+
+                                     Nets
+                                     ----
+
+       X24/28                                                    XI27/NET8
+       X29/41                                                    XI27/NET11
+       X29/40                                                    XI28/NET1
+       X24/33                                                    XI28/NET4
+
+
+                                   Instances
+                                   ---------
+
+       X29/X323/R0(237.300,261.500)  R(RPOLYH)                   XI28/RR6  R(RPOLYH)
+       X29/X321/R0(207.750,261.500)  R(RPOLYH)                   XI28/RR5  R(RPOLYH)
+       X29/X320/R0(239.700,281.300)  R(RPOLYH)                   XI28/RR7  R(RPOLYH)
+       X29/X319/R0(239.700,250.400)  R(RPOLYH)                   XI28/RR8  R(RPOLYH)
+       X29/X318/R0(205.350,281.300)  R(RPOLYH)                   XI28/RR9  R(RPOLYH)
+
+
+
+o Matched Mosfets Which Have Been Unequally Reduced:
+
+       X29/X314/M0(325.050,316.200)                              XI28/MMP0<0>
+       X29/X315/M5(337.150,243.400)                              XI28/MMP0<1>
+       X29/X315/M4(342.150,243.400)                              ** missing smashed mosfet **
+       X29/X315/M3(347.150,243.400)                              ** missing smashed mosfet **
+       X29/X315/M2(352.150,243.400)                              ** missing smashed mosfet **
+       X29/X315/M1(357.150,243.400)                              ** missing smashed mosfet **
+       X29/X315/M0(362.150,243.400)                              ** missing smashed mosfet **
+       X29/X314/M5(300.050,316.200)                              ** missing smashed mosfet **
+       X29/X314/M4(305.050,316.200)                              ** missing smashed mosfet **
+       X29/X314/M3(310.050,316.200)                              ** missing smashed mosfet **
+       X29/X314/M2(315.050,316.200)                              ** missing smashed mosfet **
+       X29/X314/M1(320.050,316.200)                              ** missing smashed mosfet **
+
+       X29/X313/M0(325.050,243.400)                              XI28/MMP1<0>
+       X29/X316/M5(337.150,316.200)                              XI28/MMP1<1>
+       X29/X316/M4(342.150,316.200)                              ** missing smashed mosfet **
+       X29/X316/M3(347.150,316.200)                              ** missing smashed mosfet **
+       X29/X316/M2(352.150,316.200)                              ** missing smashed mosfet **
+       X29/X316/M1(357.150,316.200)                              ** missing smashed mosfet **
+       X29/X316/M0(362.150,316.200)                              ** missing smashed mosfet **
+       X29/X313/M5(300.050,243.400)                              ** missing smashed mosfet **
+       X29/X313/M4(305.050,243.400)                              ** missing smashed mosfet **
+       X29/X313/M3(310.050,243.400)                              ** missing smashed mosfet **
+       X29/X313/M2(315.050,243.400)                              ** missing smashed mosfet **
+       X29/X313/M1(320.050,243.400)                              ** missing smashed mosfet **
+
+       X27/X232/M0(1291.475,599.900)                             XI6/MMP16<0>
+       X27/X233/M19(1356.225,560.800)                            XI6/MMP16<1>
+       X27/X233/M18(1354.875,560.800)                            ** missing smashed mosfet **
+       X27/X233/M17(1353.525,560.800)                            ** missing smashed mosfet **
+       X27/X233/M16(1352.175,560.800)                            ** missing smashed mosfet **
+       X27/X233/M15(1350.825,560.800)                            ** missing smashed mosfet **
+       X27/X233/M14(1349.475,560.800)                            ** missing smashed mosfet **
+       X27/X233/M13(1348.125,560.800)                            ** missing smashed mosfet **
+       X27/X233/M12(1346.775,560.800)                            ** missing smashed mosfet **
+       X27/X233/M11(1345.425,560.800)                            ** missing smashed mosfet **
+       X27/X233/M10(1344.075,560.800)                            ** missing smashed mosfet **
+       X27/X233/M9(1342.725,560.800)                             ** missing smashed mosfet **
+       X27/X233/M8(1341.375,560.800)                             ** missing smashed mosfet **
+       X27/X233/M7(1340.025,560.800)                             ** missing smashed mosfet **
+       X27/X233/M6(1338.675,560.800)                             ** missing smashed mosfet **
+       X27/X233/M5(1337.325,560.800)                             ** missing smashed mosfet **
+       X27/X233/M4(1335.975,560.800)                             ** missing smashed mosfet **
+       X27/X233/M3(1334.625,560.800)                             ** missing smashed mosfet **
+       X27/X233/M2(1333.275,560.800)                             ** missing smashed mosfet **
+       X27/X233/M1(1331.925,560.800)                             ** missing smashed mosfet **
+       X27/X233/M0(1330.575,560.800)                             ** missing smashed mosfet **
+       X27/X232/M19(1317.125,599.900)                            ** missing smashed mosfet **
+       X27/X232/M18(1315.775,599.900)                            ** missing smashed mosfet **
+       X27/X232/M17(1314.425,599.900)                            ** missing smashed mosfet **
+       X27/X232/M16(1313.075,599.900)                            ** missing smashed mosfet **
+       X27/X232/M15(1311.725,599.900)                            ** missing smashed mosfet **
+       X27/X232/M14(1310.375,599.900)                            ** missing smashed mosfet **
+       X27/X232/M13(1309.025,599.900)                            ** missing smashed mosfet **
+       X27/X232/M12(1307.675,599.900)                            ** missing smashed mosfet **
+       X27/X232/M11(1306.325,599.900)                            ** missing smashed mosfet **
+       X27/X232/M10(1304.975,599.900)                            ** missing smashed mosfet **
+       X27/X232/M9(1303.625,599.900)                             ** missing smashed mosfet **
+       X27/X232/M8(1302.275,599.900)                             ** missing smashed mosfet **
+       X27/X232/M7(1300.925,599.900)                             ** missing smashed mosfet **
+       X27/X232/M6(1299.575,599.900)                             ** missing smashed mosfet **
+       X27/X232/M5(1298.225,599.900)                             ** missing smashed mosfet **
+       X27/X232/M4(1296.875,599.900)                             ** missing smashed mosfet **
+       X27/X232/M3(1295.525,599.900)                             ** missing smashed mosfet **
+       X27/X232/M2(1294.175,599.900)                             ** missing smashed mosfet **
+       X27/X232/M1(1292.825,599.900)                             ** missing smashed mosfet **
+
+       X27/X231/M0(1291.475,560.800)                             XI6/MMP17<0>
+       X27/X234/M19(1356.225,599.900)                            XI6/MMP17<1>
+       X27/X234/M18(1354.875,599.900)                            ** missing smashed mosfet **
+       X27/X234/M17(1353.525,599.900)                            ** missing smashed mosfet **
+       X27/X234/M16(1352.175,599.900)                            ** missing smashed mosfet **
+       X27/X234/M15(1350.825,599.900)                            ** missing smashed mosfet **
+       X27/X234/M14(1349.475,599.900)                            ** missing smashed mosfet **
+       X27/X234/M13(1348.125,599.900)                            ** missing smashed mosfet **
+       X27/X234/M12(1346.775,599.900)                            ** missing smashed mosfet **
+       X27/X234/M11(1345.425,599.900)                            ** missing smashed mosfet **
+       X27/X234/M10(1344.075,599.900)                            ** missing smashed mosfet **
+       X27/X234/M9(1342.725,599.900)                             ** missing smashed mosfet **
+       X27/X234/M8(1341.375,599.900)                             ** missing smashed mosfet **
+       X27/X234/M7(1340.025,599.900)                             ** missing smashed mosfet **
+       X27/X234/M6(1338.675,599.900)                             ** missing smashed mosfet **
+       X27/X234/M5(1337.325,599.900)                             ** missing smashed mosfet **
+       X27/X234/M4(1335.975,599.900)                             ** missing smashed mosfet **
+       X27/X234/M3(1334.625,599.900)                             ** missing smashed mosfet **
+       X27/X234/M2(1333.275,599.900)                             ** missing smashed mosfet **
+       X27/X234/M1(1331.925,599.900)                             ** missing smashed mosfet **
+       X27/X234/M0(1330.575,599.900)                             ** missing smashed mosfet **
+       X27/X231/M19(1317.125,560.800)                            ** missing smashed mosfet **
+       X27/X231/M18(1315.775,560.800)                            ** missing smashed mosfet **
+       X27/X231/M17(1314.425,560.800)                            ** missing smashed mosfet **
+       X27/X231/M16(1313.075,560.800)                            ** missing smashed mosfet **
+       X27/X231/M15(1311.725,560.800)                            ** missing smashed mosfet **
+       X27/X231/M14(1310.375,560.800)                            ** missing smashed mosfet **
+       X27/X231/M13(1309.025,560.800)                            ** missing smashed mosfet **
+       X27/X231/M12(1307.675,560.800)                            ** missing smashed mosfet **
+       X27/X231/M11(1306.325,560.800)                            ** missing smashed mosfet **
+       X27/X231/M10(1304.975,560.800)                            ** missing smashed mosfet **
+       X27/X231/M9(1303.625,560.800)                             ** missing smashed mosfet **
+       X27/X231/M8(1302.275,560.800)                             ** missing smashed mosfet **
+       X27/X231/M7(1300.925,560.800)                             ** missing smashed mosfet **
+       X27/X231/M6(1299.575,560.800)                             ** missing smashed mosfet **
+       X27/X231/M5(1298.225,560.800)                             ** missing smashed mosfet **
+       X27/X231/M4(1296.875,560.800)                             ** missing smashed mosfet **
+       X27/X231/M3(1295.525,560.800)                             ** missing smashed mosfet **
+       X27/X231/M2(1294.175,560.800)                             ** missing smashed mosfet **
+       X27/X231/M1(1292.825,560.800)                             ** missing smashed mosfet **
+
+       X26/X232/M0(252.100,901.150)                              XI3/MMP16<0>
+       X26/X233/M19(316.850,862.050)                             XI3/MMP16<1>
+       X26/X233/M18(315.500,862.050)                             ** missing smashed mosfet **
+       X26/X233/M17(314.150,862.050)                             ** missing smashed mosfet **
+       X26/X233/M16(312.800,862.050)                             ** missing smashed mosfet **
+       X26/X233/M15(311.450,862.050)                             ** missing smashed mosfet **
+       X26/X233/M14(310.100,862.050)                             ** missing smashed mosfet **
+       X26/X233/M13(308.750,862.050)                             ** missing smashed mosfet **
+       X26/X233/M12(307.400,862.050)                             ** missing smashed mosfet **
+       X26/X233/M11(306.050,862.050)                             ** missing smashed mosfet **
+       X26/X233/M10(304.700,862.050)                             ** missing smashed mosfet **
+       X26/X233/M9(303.350,862.050)                              ** missing smashed mosfet **
+       X26/X233/M8(302.000,862.050)                              ** missing smashed mosfet **
+       X26/X233/M7(300.650,862.050)                              ** missing smashed mosfet **
+       X26/X233/M6(299.300,862.050)                              ** missing smashed mosfet **
+       X26/X233/M5(297.950,862.050)                              ** missing smashed mosfet **
+       X26/X233/M4(296.600,862.050)                              ** missing smashed mosfet **
+       X26/X233/M3(295.250,862.050)                              ** missing smashed mosfet **
+       X26/X233/M2(293.900,862.050)                              ** missing smashed mosfet **
+       X26/X233/M1(292.550,862.050)                              ** missing smashed mosfet **
+       X26/X233/M0(291.200,862.050)                              ** missing smashed mosfet **
+       X26/X232/M19(277.750,901.150)                             ** missing smashed mosfet **
+       X26/X232/M18(276.400,901.150)                             ** missing smashed mosfet **
+       X26/X232/M17(275.050,901.150)                             ** missing smashed mosfet **
+       X26/X232/M16(273.700,901.150)                             ** missing smashed mosfet **
+       X26/X232/M15(272.350,901.150)                             ** missing smashed mosfet **
+       X26/X232/M14(271.000,901.150)                             ** missing smashed mosfet **
+       X26/X232/M13(269.650,901.150)                             ** missing smashed mosfet **
+       X26/X232/M12(268.300,901.150)                             ** missing smashed mosfet **
+       X26/X232/M11(266.950,901.150)                             ** missing smashed mosfet **
+       X26/X232/M10(265.600,901.150)                             ** missing smashed mosfet **
+       X26/X232/M9(264.250,901.150)                              ** missing smashed mosfet **
+       X26/X232/M8(262.900,901.150)                              ** missing smashed mosfet **
+       X26/X232/M7(261.550,901.150)                              ** missing smashed mosfet **
+       X26/X232/M6(260.200,901.150)                              ** missing smashed mosfet **
+       X26/X232/M5(258.850,901.150)                              ** missing smashed mosfet **
+       X26/X232/M4(257.500,901.150)                              ** missing smashed mosfet **
+       X26/X232/M3(256.150,901.150)                              ** missing smashed mosfet **
+       X26/X232/M2(254.800,901.150)                              ** missing smashed mosfet **
+       X26/X232/M1(253.450,901.150)                              ** missing smashed mosfet **
+
+       X26/X231/M0(252.100,862.050)                              XI3/MMP17<0>
+       X26/X234/M19(316.850,901.150)                             XI3/MMP17<1>
+       X26/X234/M18(315.500,901.150)                             ** missing smashed mosfet **
+       X26/X234/M17(314.150,901.150)                             ** missing smashed mosfet **
+       X26/X234/M16(312.800,901.150)                             ** missing smashed mosfet **
+       X26/X234/M15(311.450,901.150)                             ** missing smashed mosfet **
+       X26/X234/M14(310.100,901.150)                             ** missing smashed mosfet **
+       X26/X234/M13(308.750,901.150)                             ** missing smashed mosfet **
+       X26/X234/M12(307.400,901.150)                             ** missing smashed mosfet **
+       X26/X234/M11(306.050,901.150)                             ** missing smashed mosfet **
+       X26/X234/M10(304.700,901.150)                             ** missing smashed mosfet **
+       X26/X234/M9(303.350,901.150)                              ** missing smashed mosfet **
+       X26/X234/M8(302.000,901.150)                              ** missing smashed mosfet **
+       X26/X234/M7(300.650,901.150)                              ** missing smashed mosfet **
+       X26/X234/M6(299.300,901.150)                              ** missing smashed mosfet **
+       X26/X234/M5(297.950,901.150)                              ** missing smashed mosfet **
+       X26/X234/M4(296.600,901.150)                              ** missing smashed mosfet **
+       X26/X234/M3(295.250,901.150)                              ** missing smashed mosfet **
+       X26/X234/M2(293.900,901.150)                              ** missing smashed mosfet **
+       X26/X234/M1(292.550,901.150)                              ** missing smashed mosfet **
+       X26/X234/M0(291.200,901.150)                              ** missing smashed mosfet **
+       X26/X231/M19(277.750,862.050)                             ** missing smashed mosfet **
+       X26/X231/M18(276.400,862.050)                             ** missing smashed mosfet **
+       X26/X231/M17(275.050,862.050)                             ** missing smashed mosfet **
+       X26/X231/M16(273.700,862.050)                             ** missing smashed mosfet **
+       X26/X231/M15(272.350,862.050)                             ** missing smashed mosfet **
+       X26/X231/M14(271.000,862.050)                             ** missing smashed mosfet **
+       X26/X231/M13(269.650,862.050)                             ** missing smashed mosfet **
+       X26/X231/M12(268.300,862.050)                             ** missing smashed mosfet **
+       X26/X231/M11(266.950,862.050)                             ** missing smashed mosfet **
+       X26/X231/M10(265.600,862.050)                             ** missing smashed mosfet **
+       X26/X231/M9(264.250,862.050)                              ** missing smashed mosfet **
+       X26/X231/M8(262.900,862.050)                              ** missing smashed mosfet **
+       X26/X231/M7(261.550,862.050)                              ** missing smashed mosfet **
+       X26/X231/M6(260.200,862.050)                              ** missing smashed mosfet **
+       X26/X231/M5(258.850,862.050)                              ** missing smashed mosfet **
+       X26/X231/M4(257.500,862.050)                              ** missing smashed mosfet **
+       X26/X231/M3(256.150,862.050)                              ** missing smashed mosfet **
+       X26/X231/M2(254.800,862.050)                              ** missing smashed mosfet **
+       X26/X231/M1(253.450,862.050)                              ** missing smashed mosfet **
+
+       X25/X232/M0(252.100,599.900)                              XI2/MMP16<0>
+       X25/X233/M19(316.850,560.800)                             XI2/MMP16<1>
+       X25/X233/M18(315.500,560.800)                             ** missing smashed mosfet **
+       X25/X233/M17(314.150,560.800)                             ** missing smashed mosfet **
+       X25/X233/M16(312.800,560.800)                             ** missing smashed mosfet **
+       X25/X233/M15(311.450,560.800)                             ** missing smashed mosfet **
+       X25/X233/M14(310.100,560.800)                             ** missing smashed mosfet **
+       X25/X233/M13(308.750,560.800)                             ** missing smashed mosfet **
+       X25/X233/M12(307.400,560.800)                             ** missing smashed mosfet **
+       X25/X233/M11(306.050,560.800)                             ** missing smashed mosfet **
+       X25/X233/M10(304.700,560.800)                             ** missing smashed mosfet **
+       X25/X233/M9(303.350,560.800)                              ** missing smashed mosfet **
+       X25/X233/M8(302.000,560.800)                              ** missing smashed mosfet **
+       X25/X233/M7(300.650,560.800)                              ** missing smashed mosfet **
+       X25/X233/M6(299.300,560.800)                              ** missing smashed mosfet **
+       X25/X233/M5(297.950,560.800)                              ** missing smashed mosfet **
+       X25/X233/M4(296.600,560.800)                              ** missing smashed mosfet **
+       X25/X233/M3(295.250,560.800)                              ** missing smashed mosfet **
+       X25/X233/M2(293.900,560.800)                              ** missing smashed mosfet **
+       X25/X233/M1(292.550,560.800)                              ** missing smashed mosfet **
+       X25/X233/M0(291.200,560.800)                              ** missing smashed mosfet **
+       X25/X232/M19(277.750,599.900)                             ** missing smashed mosfet **
+       X25/X232/M18(276.400,599.900)                             ** missing smashed mosfet **
+       X25/X232/M17(275.050,599.900)                             ** missing smashed mosfet **
+       X25/X232/M16(273.700,599.900)                             ** missing smashed mosfet **
+       X25/X232/M15(272.350,599.900)                             ** missing smashed mosfet **
+       X25/X232/M14(271.000,599.900)                             ** missing smashed mosfet **
+       X25/X232/M13(269.650,599.900)                             ** missing smashed mosfet **
+       X25/X232/M12(268.300,599.900)                             ** missing smashed mosfet **
+       X25/X232/M11(266.950,599.900)                             ** missing smashed mosfet **
+       X25/X232/M10(265.600,599.900)                             ** missing smashed mosfet **
+       X25/X232/M9(264.250,599.900)                              ** missing smashed mosfet **
+       X25/X232/M8(262.900,599.900)                              ** missing smashed mosfet **
+       X25/X232/M7(261.550,599.900)                              ** missing smashed mosfet **
+       X25/X232/M6(260.200,599.900)                              ** missing smashed mosfet **
+       X25/X232/M5(258.850,599.900)                              ** missing smashed mosfet **
+       X25/X232/M4(257.500,599.900)                              ** missing smashed mosfet **
+       X25/X232/M3(256.150,599.900)                              ** missing smashed mosfet **
+       X25/X232/M2(254.800,599.900)                              ** missing smashed mosfet **
+       X25/X232/M1(253.450,599.900)                              ** missing smashed mosfet **
+
+       X25/X231/M0(252.100,560.800)                              XI2/MMP17<0>
+       X25/X234/M19(316.850,599.900)                             XI2/MMP17<1>
+       X25/X234/M18(315.500,599.900)                             ** missing smashed mosfet **
+       X25/X234/M17(314.150,599.900)                             ** missing smashed mosfet **
+       X25/X234/M16(312.800,599.900)                             ** missing smashed mosfet **
+       X25/X234/M15(311.450,599.900)                             ** missing smashed mosfet **
+       X25/X234/M14(310.100,599.900)                             ** missing smashed mosfet **
+       X25/X234/M13(308.750,599.900)                             ** missing smashed mosfet **
+       X25/X234/M12(307.400,599.900)                             ** missing smashed mosfet **
+       X25/X234/M11(306.050,599.900)                             ** missing smashed mosfet **
+       X25/X234/M10(304.700,599.900)                             ** missing smashed mosfet **
+       X25/X234/M9(303.350,599.900)                              ** missing smashed mosfet **
+       X25/X234/M8(302.000,599.900)                              ** missing smashed mosfet **
+       X25/X234/M7(300.650,599.900)                              ** missing smashed mosfet **
+       X25/X234/M6(299.300,599.900)                              ** missing smashed mosfet **
+       X25/X234/M5(297.950,599.900)                              ** missing smashed mosfet **
+       X25/X234/M4(296.600,599.900)                              ** missing smashed mosfet **
+       X25/X234/M3(295.250,599.900)                              ** missing smashed mosfet **
+       X25/X234/M2(293.900,599.900)                              ** missing smashed mosfet **
+       X25/X234/M1(292.550,599.900)                              ** missing smashed mosfet **
+       X25/X234/M0(291.200,599.900)                              ** missing smashed mosfet **
+       X25/X231/M19(277.750,560.800)                             ** missing smashed mosfet **
+       X25/X231/M18(276.400,560.800)                             ** missing smashed mosfet **
+       X25/X231/M17(275.050,560.800)                             ** missing smashed mosfet **
+       X25/X231/M16(273.700,560.800)                             ** missing smashed mosfet **
+       X25/X231/M15(272.350,560.800)                             ** missing smashed mosfet **
+       X25/X231/M14(271.000,560.800)                             ** missing smashed mosfet **
+       X25/X231/M13(269.650,560.800)                             ** missing smashed mosfet **
+       X25/X231/M12(268.300,560.800)                             ** missing smashed mosfet **
+       X25/X231/M11(266.950,560.800)                             ** missing smashed mosfet **
+       X25/X231/M10(265.600,560.800)                             ** missing smashed mosfet **
+       X25/X231/M9(264.250,560.800)                              ** missing smashed mosfet **
+       X25/X231/M8(262.900,560.800)                              ** missing smashed mosfet **
+       X25/X231/M7(261.550,560.800)                              ** missing smashed mosfet **
+       X25/X231/M6(260.200,560.800)                              ** missing smashed mosfet **
+       X25/X231/M5(258.850,560.800)                              ** missing smashed mosfet **
+       X25/X231/M4(257.500,560.800)                              ** missing smashed mosfet **
+       X25/X231/M3(256.150,560.800)                              ** missing smashed mosfet **
+       X25/X231/M2(254.800,560.800)                              ** missing smashed mosfet **
+       X25/X231/M1(253.450,560.800)                              ** missing smashed mosfet **
+
+
+
+**************************************************************************************************************
+                                         SUMMARY
+**************************************************************************************************************
+
+Total CPU Time:      0 sec
+Total Elapsed Time:  0 sec

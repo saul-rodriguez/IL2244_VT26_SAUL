@@ -3,11 +3,41 @@
 
 swapPins("V500_20" "")
 
+swapPins("Current_Voltage_Reference" "(p IOUT2 IOUT3 IOUT1 IOUT4 IOUT5 IOUT6
+   IOUT7)")
+
 swapPins("V200_20" "")
+
+swapPins("ECG_bandgap_f_v1" "")
+
+swapPins("Constant_gm" "(p IBIAS1 IBIAS2 IBIAS3)")
+
+swapPins("ECG_BIAS" "(p IOUT1 IOUT2 IOUT3 IOUT4 IOUT5 IOUT6 IOUT7)")
 
 swapPins("INVX1" "")
 
+swapPins("Gm_C_filter" "")
+
 swapPins("V1000_20" "")
+
+; INFORMATION: pinswap analysis failed, cell will be expanded.
+; Cell: chopper_f
+
+swapPins("ia_new_f" "")
+
+swapPins("mux21" "")
+
+swapPins("VGA_1" "")
+
+swapPins("cmfb_opamp1_fc" "")
+
+swapPins("fecg_cmfb2_fc" "(p INP INN)")
+
+swapPins("BUFFER" "")
+
+swapPins("ECG_Front_End" "")
+
+swapPins("fbias_gm_c1_f2c" "(p OUT1 OUT2 OUT3)")
 
 swapPins("fbias_vol_ref1_layout" "")
 
@@ -18,29 +48,23 @@ swapPins("fbias_cur_ref2_layout" "(p OUT1 OUT2 OUT3 OUT4 OUT5 OUT6 OUT7 OUT8
 
 swapPins("INVX2" "")
 
-swapPins("fbias_por2_f" "")
-
-swapPins("fbias_gm_c1_f2" "(p OUT1 OUT2 OUT3)")
+swapPins("fbias_por2_fc" "")
 
 swapPins("fbias_bias2_f" "(p OUT7 OUT1 OUT2 OUT3 OUT4 OUT5 OUT6 OUT8 OUT9 OUT10
    OUT11)")
 
-; INFORMATION: pinswap analysis failed, cell will be expanded.
-; Cell: chopper2
-
-swapPins("fecg_ia_5_fn" "")
+swapPins("buffer2_f_3c" "")
 
 swapPins("mux21c_f" "")
 
 swapPins("fecg_vga2_f_2" "")
 
-swapPins("cmfb_opamp1_fc" "")
+; INFORMATION: pinswap analysis failed, cell will be expanded.
+; Cell: chopper2
 
-swapPins("fecg_cmfb2_fc" "(p INP INN)")
+swapPins("fecg_ia_5_fc" "")
 
-swapPins("gmc_5_f" "")
-
-swapPins("buffer2_f_3" "")
+swapPins("gmc_5_fc" "")
 
 swapPins("fecg_front_end_f_3" "")
 

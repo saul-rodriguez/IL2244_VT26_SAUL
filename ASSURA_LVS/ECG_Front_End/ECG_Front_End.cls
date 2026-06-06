@@ -20,12 +20,13 @@ Cell/Device                               schematic  layout   schematic  layout
                                              ------  ------      ------  ------
 Total                                             2       2           2       2
 
-*******************************************************************************
-****** Gm_C_filter schematic YAOWEN  <vs>  Gm_C_filter layout YAOWEN
-*******************************************************************************
-
-Filter/Reduce statistics only. Network matching was OK.
-                                                                                                                                                                   
+###############################################################################
+###### Gm_C_filter schematic YAOWEN  <vs>  Gm_C_filter layout YAOWEN
+###############################################################################
+###### This report is for informational purposes only. This cell
+###### has been expanded because of unstable devices.
+###############################################################################
+                     
 Pre-expand Statistics                      
 ======================                          Original       
 Cell/Device                               schematic  layout
@@ -369,14 +370,18 @@ Reduce Statistics
 =================                               Original             Reduced
 Cell/Device                               schematic  layout   schematic  layout
 (BUFFER) Cell                                     1       1           1       1
-(Gm_C_filter) Cell                                3       3           3       3
+(INVX1) Cell                                      9       9           9       9
 (V1000_20) Cell                                   1       1           1       1
 (V200_20) Cell                                    8       8           8       8
 (V500_20) Cell                                   10      10          10      10
 (VGA_1) Cell                                      1       1           1       1
 (fecg_cmfb2_fc) Cell                              1       1           1       1
 (ia_new_f) Cell                                   1       1           1       1
+(NMOS4) MOS                                     927     933*        145     145
+(PMOS4) MOS                                     111     339*         37      37
+(RPOLYH) RES                                      3       3           3       3
+(CPOLYA) CAP                                     78      78          16      16
                                              ------  ------      ------  ------
-Total                                            26      26          26      26
+Total                                          1151    1385         233     233
 
 Schematic and Layout Match

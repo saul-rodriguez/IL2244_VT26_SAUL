@@ -1,0 +1,11 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/ECG_Front_End.dv
+dv_start unmatched                                
+dv_cell {ECG_Front_End} {ECG_Front_End} unmatched
+dv_obj_count -transformed_nets {148 147} -transformed_inst {279 279} -transformed_port {31 31}
+dv_discrep 1 {Incorrect Nets} -inst_count { 13 13}
+dv_discrep_line {Net } -lnet {CLK} {                                                   } -snet {CLK} {}
+dv_discrep_line {    } -lnet {X29/23} {                                               }
+dv_discrep_line {--- 13 Connections On This Net ---                        --- 13 Connections On This Net ---}
+dv_discrep_line {}
+dv_end
