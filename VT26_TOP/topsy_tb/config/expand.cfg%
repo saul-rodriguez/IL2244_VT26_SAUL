@@ -1,4 +1,4 @@
-//Revision 5
+//Revision 17
 //NOTE
 // Default austriamicrosystems template for AMS Designer
 // Note:
@@ -17,19 +17,10 @@ viewlist verilogams, veriloga, behavioral, functional, \module , schematic, spec
 stoplist symbol, spectre;
 
 
-cell CORELIBD.INVX1 binding :cmos_sch;
-cell CORELIBD.INVX2 binding :cmos_sch;
-
-cell IOLIB_4M.GND3IP binding :cmos_sch;
-cell IOLIB_4M.GND3OP binding :cmos_sch;
-cell IOLIB_4M.GND3RP binding :cmos_sch;
-cell IOLIB_4M.ICP binding :cmos_sch;
-cell IOLIB_4M.PWRCUT_DIG_P_DX binding :cmos_sch;
-cell IOLIB_4M.VDD3IP binding :cmos_sch;
-cell IOLIB_4M.VDD3OP binding :cmos_sch;
-cell IOLIB_4M.VDD3RP binding :cmos_sch;
-
 cell DIG_SPI.il2244_dig binding :schematic;
+cell DIG_SPI.stimulus binding :verilogams_por;
+
+cell VT26_TOP.topsy binding :av_extracted_rc_fast;
 
 
 endconfig

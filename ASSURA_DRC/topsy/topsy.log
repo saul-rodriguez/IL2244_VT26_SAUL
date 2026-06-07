@@ -6,7 +6,7 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:34 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/assura on Fri Jun  5 19:48:59 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/assura on Sat Jun  6 14:17:27 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -15,7 +15,7 @@ Starting /opt/tools/cadence/installs/ASSURA41_618//tools.lnx86/assura/bin/aveng 
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Fri Jun  5 19:49:00 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Sat Jun  6 14:17:27 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -87,9 +87,9 @@ Running in restart mode.
 
 
 Finished building the VDB. VDB build times for main process:
-cpu: 0.11  elap: 1  pf: 0  in: 0  out: 40  virt: 172M  phys: 862M
+cpu: 0.10  elap: 1  pf: 0  in: 0  out: 40  virt: 172M  phys: 860M
 
-Running the Task Processor, 161 cells, 12713 steps...
+Running the Task Processor, 155 cells, 12713 steps...
 
 Top Cell is 'topsy layout VT26_TOP'
 
@@ -7211,17 +7211,17 @@ Executing: bkgnd3 = geomOr(substrate_all)
 	   errorLayer(bkgnd3 "# INFO: C35B4/C35B3 ASSURA DRC DECK (REV9 DATE 26-Apr-2011) Last modified 07-Sept-2016 #")
 
 Finished running rules. Task processor time in main process:
-cpu: 13.34  elap: 14  pf: 0  in: 0  out: 3320  virt: 260M  phys: 1633M
+cpu: 12.80  elap: 13  pf: 0  in: 0  out: 3272  virt: 260M  phys: 1631M
 
 Started output post-processing ...
 
 Nothing to postprocess: No grid cells in the design
 
 Finished output post-processing
-cpu: 0.24  elap: 0  pf: 0  in: 0  out: 8  virt: 533M  phys: 1859M
+cpu: 0.24  elap: 0  pf: 0  in: 0  out: 16  virt: 531M  phys: 1856M
 
 Finished building the persistent database.
-cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6896  virt: 526M  phys: 1859M
+cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6920  virt: 526M  phys: 1856M
 
 
 *****  aveng terminated normally  *****
@@ -7259,7 +7259,7 @@ Loading tech rule set file : /opt/pdk/ams/410/assura/c35b4/c35b4c3/techRuleSets
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/avrpt on Fri Jun  5 19:49:14 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/avrpt on Sat Jun  6 14:17:42 2026
 
 
    Creating Error Database 'topsy'...
@@ -7327,13 +7327,13 @@ Rule      Message                                    FlatCount     RealCount
 (   57)  rmet4 INFO : rmet4 does not open met4 fo            0            0
 (   58)  rvia3 INFO : rvia3 not opens met3/4 for             0            0
 (   59)  ERROR : POLY1 pin outside poly1                     0            0
-(   60)  ERROR : MET1 pin outside met1                       5            5
+(   60)  ERROR : MET1 pin outside met1                       0            0
 (   61)  ERROR : MET2 pin outside met2                       0            0
 (   62)  ERROR: PADTSV pin outside METTSV                    0            0
 (   63)  ERROR : MET3 pin outside met3                       0            0
 (   64)  ERROR : MET4 pin outside met4                       0            0
 (   65)  ERROR : PAD pin outside pad metal                   0            0
-(   66)  BAD_SUBSTR_SUBTAP_FLOAT_ERC                        15           15
+(   66)  BAD_SUBSTR_SUBTAP_FLOAT_ERC                        14           14
 (   67)  BAD_SUBSTR_SUBTAP_MULTCONN_ERC                      0            0
 (   68)  BAD_NWELL_WELLTAP_FLOAT_ERC                         3            3
 (   69)  BAD_NWELL_WELLTAP_MULTCONN_ERC                      0            0
@@ -7669,7 +7669,7 @@ Rule      Message                                    FlatCount     RealCount
 (  399)  MET4 net layer must not be used in layou            0            0
 (  400)  Warning: No MET4 on MET4 Pin                        0            0
 (  401)  Warning: No POLY1 on POLY1 Pin                      0            0
-(  402)  Warning: No MET1 on MET1 Pin                        5            5
+(  402)  Warning: No MET1 on MET1 Pin                        0            0
 (  403)  Warning: No MET2 on MET2 Pin                        0            0
 (  404)  Warning: No MET3 on MET3 Pin                        0            0
 (  405)  REC002 REC002 NTUB not multiple 45 degre            0            0
@@ -7688,7 +7688,7 @@ Rule      Message                                    FlatCount     RealCount
 (  418)  REC002 REC002 VIA3 not multiple 45 degre            0            0
 (  419)  REC002 REC002 MET4 not multiple 45 degre            0            0
 (  420)  REC002 REC002 PAD not multiple 45 degree            0            0
-(  421)  INFO: hot nwell                                   737          132
+(  421)  INFO: hot nwell                                   736          129
 (  422)  NW_W_1 Minimum NTUB width = 1.7                     0            0
 (  423)  NW_W_2 Minimum HOT_NTUB width = 3                   0            0
 (  424)  NW_S_1 Minimum spacing of NTUB with diff            0            0
@@ -7936,7 +7936,7 @@ Rule      Message                                    FlatCount     RealCount
 (  666)  E1IPCT Minimum PPLUS enclosure of POLY2C            0            0
 (  667)  E1IPCT Minimum PPLUS enclosure of POLY2C            0            0
 (  668)  S1IPP2 Minimum PPLUS to RPOLYH spacing =            0            0
-(  669)  RPOLYH_G2 Minimum high precision RPOLYH          4711         1740
+(  669)  RPOLYH_G2 Minimum high precision RPOLYH          4711         1710
 (  670)  W4P2 Minimum RPOLYZ width = 0.8                     0            0
 (  671)  S4P2P2 Minimum RPOLYZ spacing = 0.75                0            0
 (  672)  S4P2P2 Minimum RPOLYZ spacing = 0.75 not            0            0
@@ -7986,7 +7986,7 @@ Rule      Message                                    FlatCount     RealCount
 (  716)  AM ERROR BAD SLOT: met4 slot over via3              0            0
 (  717)  AMTW1 AMTL1 fixed with of dummy MTOP thi            0            0
 (  718)  AMTS2  Minimum MTOP feature to dummy MTO            0            0
-(  719)  AMTS1 Maximum MTOP spacing when the widt           41           41
+(  719)  AMTS1 Maximum MTOP spacing when the widt           68           68
 (  720)  AMTS3 maximum met4 to met4 block spacing            0            0
 (  721)   AMTS4 fixed met4 block spacing (checked            0            0
 (  722)  NWR001 NTUB overlapping KEPOUT is not al            0            0
@@ -8039,9 +8039,9 @@ Rule      Message                                    FlatCount     RealCount
 (  769)  ERC Warning: Floating met3                          0            0
 (  770)  ERC Warning: Floating met4                          0            0
 (  771)  ERC Warning: possible Z Diode                       0            0
-(  772)  ERC Warning: Gates connected to VDD/VCC           372          302
-(  773)  ERC Warning: Gates connected to VSS/GND          1617          467
-(  774)  ERC Warning: floating gate not connected           67           34
+(  772)  ERC Warning: Gates connected to VDD/VCC           372          296
+(  773)  ERC Warning: Gates connected to VSS/GND           990          248
+(  774)  ERC Warning: floating gate not connected            0            0
 (  775)  ERC Warning: Distance well taps > 50                0            0
 (  776)  ERC Warning: illegal contact covering po            0            0
 (  777)  ERC Warning: illegal contact covering po            0            0
@@ -8745,7 +8745,7 @@ Rule      Message                                    FlatCount     RealCount
 ( 1475)  spiral_open_spiral_term22: ERC Warning :            0            0
 ( 1476)  # INFO: C35B4/C35B3 ASSURA DRC DECK (REV            1            1
 --------------------------------------------------------------------------------
-Total  errors:                                            8420         2937
+Total  errors:                                            7741         2661
 --------------------------------------------------------------------------------
 
    Finished creating Error Database ...
@@ -8754,10 +8754,8 @@ Total  errors:                                            8420         2937
    Rule 14 done.
    Rule 55 done.
    Rule 56 done.
-   Rule 60 done.
    Rule 66 done.
    Rule 68 done.
-   Rule 402 done.
    Rule 421 done.
    Rule 510 done.
    Rule 521 done.
@@ -8774,12 +8772,11 @@ Total  errors:                                            8420         2937
    Rule 767 done.
    Rule 772 done.
    Rule 773 done.
-   Rule 774 done.
    Rule 1450 done.
    Rule 1458 done.
    Rule 1476 done.
 
-avrpt cpu sec:    0.21  elapsed:     0  virtual:    93M
+avrpt cpu sec:    0.19  elapsed:     0  virtual:    93M
 
 Finished /opt/tools/cadence/installs/ASSURA41_618//tools.lnx86/assura/bin/avrpt
 
@@ -8818,7 +8815,7 @@ Virtuoso Framework License (111) was checked out successfully. Total checkout ti
 @(#)$CDS: rcxToDfII_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:40 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/rcxToDfII on Fri Jun  5 19:49:15 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/rcxToDfII on Sat Jun  6 14:17:42 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -8837,55 +8834,40 @@ Loading tech rule set file : /opt/pdk/ams/410/assura/c35b4/c35b4c3/techRuleSets
 
 Creating extracted view for VT26_TOP topsy layout
 
-*WARNING* (DB-270368): dbCreateNet: Net with name 'gnd3o!' already exists
-*WARNING* (DB-270357): dbCreateTerm: invalid net specified
-*WARNING* (DB-270000): dbSetPinFigName: Invalid pin figure; figure not attached to a pin.
-*WARNING* (DB-270368): dbCreateNet: Net with name 'gnd3r!' already exists
-*WARNING* (DB-270357): dbCreateTerm: invalid net specified
-*WARNING* (DB-270000): dbSetPinFigName: Invalid pin figure; figure not attached to a pin.
-*WARNING* (DB-270368): dbCreateNet: Net with name 'vdd3o!' already exists
-*WARNING* (DB-270357): dbCreateTerm: invalid net specified
-*WARNING* (DB-270000): dbSetPinFigName: Invalid pin figure; figure not attached to a pin.
-*WARNING* (DB-270368): dbCreateNet: Net with name 'vdd3r1!' already exists
-*WARNING* (DB-270357): dbCreateTerm: invalid net specified
-*WARNING* (DB-270000): dbSetPinFigName: Invalid pin figure; figure not attached to a pin.
-*WARNING* (DB-270368): dbCreateNet: Net with name 'vdd3r2!' already exists
-*WARNING* (DB-270357): dbCreateTerm: invalid net specified
 Copying layer METTSV
 Layer METTSV has 0 shapes.
 Copying layer net_via3
-Layer net_via3 has 377107 shapes.
+Layer net_via3 has 377713 shapes.
 Copying layer net_met4
-Layer net_met4 has 774 shapes.
+Layer net_met4 has 820 shapes.
 Copying layer net_met3
-Layer net_met3 has 1844 shapes.
+Layer net_met3 has 1914 shapes.
 Copying layer net_via2_metcap
 Layer net_via2_metcap has 0 shapes.
 Copying layer net_via2_met2
-Layer net_via2_met2 has 411471 shapes.
+Layer net_via2_met2 has 411974 shapes.
 Copying layer net_met2
-Layer net_met2 has 7840 shapes.
+Layer net_met2 has 7845 shapes.
 Copying layer net_via1
-Layer net_via1 has 499619 shapes.
+Layer net_via1 has 496630 shapes.
 Copying layer net_met1
-Layer net_met1 has 30866 shapes.
+Layer net_met1 has 28777 shapes.
 Copying layer net_poly2con
-Layer net_poly2con has 50188 shapes.
+Layer net_poly2con has 50461 shapes.
 Copying layer net_poly2
-Layer net_poly2 has 1237 shapes.
+Layer net_poly2 has 1241 shapes.
 Copying layer net_poly1con
-Layer net_poly1con has 67699 shapes.
+Layer net_poly1con has 66874 shapes.
 Copying layer net_poly1
-Layer net_poly1 has 6881 shapes.
+Layer net_poly1 has 6682 shapes.
 Copying layer net_pdiffcon
-Layer net_pdiffcon has 553350 shapes.
+Layer net_pdiffcon has 554702 shapes.
 Copying layer net_pdiff
-Layer net_pdiff has 9232 shapes.
+Layer net_pdiff has 9238 shapes.
 Copying layer net_ndiffcon
-Layer net_ndiffcon has 517631 shapes.
+Layer net_ndiffcon has 510876 shapes.
 Copying layer net_ndiff
-Layer net_ndiff has 14685 shapes.
-*WARNING* (DB-270000): dbSetPinFigName: Invalid pin figure; figure not attached to a pin.
+Layer net_ndiff has 13720 shapes.
 
 
 Summary for VT26_TOP/topsy/drc_extracted
@@ -8895,12 +8877,12 @@ instance count totals:
     lib              cell             view                    total
 
 extracted view creation completed
-cpu: 4.49  elap: 5  pf: 0  in: 0  out: 201856  virt: 580M  phys: 1452M
+cpu: 4.47  elap: 5  pf: 0  in: 0  out: 200928  virt: 580M  phys: 1447M
 
 Finished /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/rcxToDfII
 
 
-Run ended: Fri Jun  5 19:49:20 2026
+Run ended: Sat Jun  6 14:17:47 2026
 
 *****  Assura terminated normally  *****
 

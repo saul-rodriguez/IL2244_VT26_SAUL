@@ -12,16 +12,16 @@ extraction_setup \
 	 -net_name_space "SCHEMATIC" \
 	 -split_via_by_unit_area false
 filter_res \
-	 -merge_parallel_res false \
+	 -merge_parallel_res true \
 	 -min_res 1
 input_db -type assura \
-	 -design_cell_name "top layout VT26_TOP" \
-	 -directory_name "/home/saul/projects/IL2244_VT26_SAUL/ASSURA_LVS/top" \
+	 -design_cell_name "topsy layout VT26_TOP" \
+	 -directory_name "/home/saul/projects/IL2244_VT26_SAUL/ASSURA_LVS/topsy" \
 	 -format "DFII" \
 	 -library_definitions_file "/home/saul/projects/IL2244_VT26_SAUL/cds.lib" \
-	 -run_name "top"
+	 -run_name "topsy"
 log_file \
-	 -file_name "/home/saul/projects/IL2244_VT26_SAUL/ASSURA_LVS/top/qrc.top.log"
+	 -file_name "/home/saul/projects/IL2244_VT26_SAUL/ASSURA_LVS/topsy/qrc.topsy.log"
 output_db -type extracted_view \
 	 -enable_cellview_check false \
 	 -include_cap_model "false" \
@@ -32,8 +32,10 @@ output_db -type extracted_view \
 	 -res_property_name "r" \
 	 -view_name "av_extracted_r"
 output_setup \
-	 -directory_name "/home/saul/projects/IL2244_VT26_SAUL/ASSURA_LVS/top" \
-	 -temporary_directory_name "top"
+	 -directory_name "/home/saul/projects/IL2244_VT26_SAUL/ASSURA_LVS/topsy" \
+	 -temporary_directory_name "topsy"
+parasitic_reduction \
+	 -enable_reduction "true"
 process_technology \
 	 -technology_corner \
 		"Typical" \

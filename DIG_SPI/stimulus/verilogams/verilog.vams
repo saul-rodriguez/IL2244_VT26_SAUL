@@ -97,20 +97,18 @@ module stimulus (
 		/****************/
 		/* Default conf, internal CMFB enabled */
 		/****************/
-		default_all;
-
+		//default_all;
 
 		/****************/
 		/* Default conf no intern CMFB (needs to connect 3rd RL electrode ) */
 		/****************/
 		//default_nocmfb_all;
 
-
 		/***************/
 		/*Gain test FECG*/
 		/***************/
 		// Set VAMP to 0.25 mV and VIN_FREQ to 50 Hz before running this test
-		//gain_test_FECG;
+		gain_test_FECG;
 
 		/***************/
 		/*Filter test FECG*/
@@ -118,15 +116,14 @@ module stimulus (
 		// Set VAMP to 1 mV and VIN_FREQ to 800 Hz before running this test
 		//filter_test_FECG;
 
-
 		/***************/
 		/*POR BOR  test*/
 		/***************/
 		// Set a delay after the porl signal is finised before configuring a register
 		// A BOR event can be placed at 2000ms
+		// Disable the Reset section above!
 		//#(10*MSEC);
 	    //por_test_FECG;
-		
 
 
 		/*****************/
@@ -183,8 +180,6 @@ module stimulus (
 		// Change conf0 again
         //send_SPI(8'h00,t_conf0);
 		//check_conf0;
-
-
 
 
         #(10000000*SPI_CLK_DELAY); 
