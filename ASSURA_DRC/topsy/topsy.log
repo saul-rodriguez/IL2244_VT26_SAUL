@@ -6,7 +6,7 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:34 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/assura on Sat Jun  6 14:17:27 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/assura on Sun Jun  7 05:22:12 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -15,7 +15,7 @@ Starting /opt/tools/cadence/installs/ASSURA41_618//tools.lnx86/assura/bin/aveng 
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Sat Jun  6 14:17:27 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Sun Jun  7 05:22:12 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -87,7 +87,7 @@ Running in restart mode.
 
 
 Finished building the VDB. VDB build times for main process:
-cpu: 0.10  elap: 1  pf: 0  in: 0  out: 40  virt: 172M  phys: 860M
+cpu: 0.11  elap: 1  pf: 0  in: 0  out: 40  virt: 172M  phys: 861M
 
 Running the Task Processor, 155 cells, 12713 steps...
 
@@ -7211,17 +7211,17 @@ Executing: bkgnd3 = geomOr(substrate_all)
 	   errorLayer(bkgnd3 "# INFO: C35B4/C35B3 ASSURA DRC DECK (REV9 DATE 26-Apr-2011) Last modified 07-Sept-2016 #")
 
 Finished running rules. Task processor time in main process:
-cpu: 12.80  elap: 13  pf: 0  in: 0  out: 3272  virt: 260M  phys: 1631M
+cpu: 12.80  elap: 13  pf: 0  in: 0  out: 3272  virt: 255M  phys: 1620M
 
 Started output post-processing ...
 
 Nothing to postprocess: No grid cells in the design
 
 Finished output post-processing
-cpu: 0.24  elap: 0  pf: 0  in: 0  out: 16  virt: 531M  phys: 1856M
+cpu: 0.24  elap: 0  pf: 0  in: 0  out: 16  virt: 533M  phys: 1845M
 
 Finished building the persistent database.
-cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6920  virt: 526M  phys: 1856M
+cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6920  virt: 526M  phys: 1845M
 
 
 *****  aveng terminated normally  *****
@@ -7259,7 +7259,7 @@ Loading tech rule set file : /opt/pdk/ams/410/assura/c35b4/c35b4c3/techRuleSets
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/avrpt on Sat Jun  6 14:17:42 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/avrpt on Sun Jun  7 05:22:27 2026
 
 
    Creating Error Database 'topsy'...
@@ -8776,7 +8776,7 @@ Total  errors:                                            7741         2661
    Rule 1458 done.
    Rule 1476 done.
 
-avrpt cpu sec:    0.19  elapsed:     0  virtual:    93M
+avrpt cpu sec:    0.20  elapsed:     0  virtual:    93M
 
 Finished /opt/tools/cadence/installs/ASSURA41_618//tools.lnx86/assura/bin/avrpt
 
@@ -8815,7 +8815,7 @@ Virtuoso Framework License (111) was checked out successfully. Total checkout ti
 @(#)$CDS: rcxToDfII_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:40 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/rcxToDfII on Sat Jun  6 14:17:42 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/rcxToDfII on Sun Jun  7 05:22:27 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -8837,7 +8837,7 @@ Creating extracted view for VT26_TOP topsy layout
 Copying layer METTSV
 Layer METTSV has 0 shapes.
 Copying layer net_via3
-Layer net_via3 has 377713 shapes.
+Layer net_via3 has 377725 shapes.
 Copying layer net_met4
 Layer net_met4 has 820 shapes.
 Copying layer net_met3
@@ -8877,12 +8877,12 @@ instance count totals:
     lib              cell             view                    total
 
 extracted view creation completed
-cpu: 4.47  elap: 5  pf: 0  in: 0  out: 200928  virt: 580M  phys: 1447M
+cpu: 4.44  elap: 5  pf: 0  in: 0  out: 200944  virt: 578M  phys: 1443M
 
 Finished /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/rcxToDfII
 
 
-Run ended: Sat Jun  6 14:17:47 2026
+Run ended: Sun Jun  7 05:22:32 2026
 
 *****  Assura terminated normally  *****
 
