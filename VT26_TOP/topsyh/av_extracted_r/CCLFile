@@ -1,0 +1,47 @@
+#
+# OPTION COMMAND FILE created byCadence Quantus Extraction Version 24.1.0-p089 from CCL
+#
+extract \
+	 -selection "all" \
+	 -type "r_only"
+extraction_setup \
+	 -array_vias_spacing "auto" \
+	 -macro_cells_type "default" \
+	 -max_fracture_length infinite \
+	 -max_fracture_length_unit "MICRONS" \
+	 -net_name_space "SCHEMATIC" \
+	 -split_via_by_unit_area false
+filter_res \
+	 -merge_parallel_res true \
+	 -min_res 1
+input_db -type assura \
+	 -design_cell_name "topsy layout VT26_TOP" \
+	 -directory_name "/home/saul/projects/IL2244_VT26_SAUL/ASSURA_LVS/topsy" \
+	 -format "DFII" \
+	 -library_definitions_file "/home/saul/projects/IL2244_VT26_SAUL/cds.lib" \
+	 -run_name "topsy"
+log_file \
+	 -file_name "/home/saul/projects/IL2244_VT26_SAUL/ASSURA_LVS/topsy/qrc.topsy.log"
+output_db -type extracted_view \
+	 -enable_cellview_check false \
+	 -include_cap_model "false" \
+	 -include_parasitic_cap_model "false" \
+	 -include_parasitic_res_model "comment" \
+	 -include_res_model "false" \
+	 -res_component "presistor" \
+	 -res_property_name "r" \
+	 -view_name "av_extracted_r"
+output_setup \
+	 -directory_name "/home/saul/projects/IL2244_VT26_SAUL/ASSURA_LVS/topsy" \
+	 -temporary_directory_name "topsy"
+parasitic_reduction \
+	 -enable_reduction "true"
+process_technology \
+	 -technology_corner \
+		"Typical" \
+	 -technology_library_file "/home/saul/projects/IL2244_VT26_SAUL/assura_tech.lib" \
+	 -technology_name "c35b4c3" \
+	 -temperature \
+		"25.0"
+
+
