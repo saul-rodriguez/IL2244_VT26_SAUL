@@ -5,7 +5,7 @@
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Wed Jun  3 17:27:40 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Tue Jun  9 08:32:58 2026
 
 Echoing run specific file...
     ;----------------------------------------------------------------------------
@@ -120,7 +120,7 @@ Echoing run specific file...
 
                   Time Summary - Database
 
-reading DFII data. . . .      0 cpu      1 elap 3686.8M virt       4 pf
+reading DFII data. . . .      0 cpu      0 elap 2395.3M virt       0 pf
 duplicate inst removal .      0 cpu      0 elap  171.9M virt       0 pf
 cell boundary layer. . .      0 cpu      0 elap  171.9M virt       0 pf
 small cell flattening. .      0 cpu      0 elap  174.4M virt       0 pf
@@ -142,7 +142,7 @@ duplicate cell removal .      0 cpu      0 elap  176.8M virt       0 pf
 create background layer.      0 cpu      0 elap  196.5M virt       0 pf
 final VDB processing . .      0 cpu      0 elap  196.5M virt       0 pf
 -----------------------------------------------------------------------
-TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
+TOTALS (secs). . . . . .      0 cpu      0 elap 2395.3M virt       0 pf
 
 
 ************************************************************************
@@ -716,7 +716,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 142
     VIA1 = geomOr( VIA1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 1785
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 1791
 
  ;# 143
     dataReduction( VIA1 ) 
@@ -724,11 +724,11 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 144
  ;  region( VIA1 )
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 1785
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 1791
 
  ;# 145
     T?207 = geomOr( VIA1 CONT ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 10864
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 10870
 
  ;# 146
     dataReduction( T?207 ) 
@@ -736,7 +736,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 147
     via_cont_pin = geomOr( T?207 MET1_pinshape ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 10867
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 10873
 
  ;# 148
     dataReduction( via_cont_pin ) 
@@ -744,11 +744,11 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 149
  ;  region( via_cont_pin )
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 10867
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 10873
 
  ;# 150
     T?209 = geomOr( VIA2 VIA1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 2833
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 2839
 
  ;# 151
     dataReduction( T?209 ) 
@@ -756,7 +756,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 152
     via2_via_pin = geomOr( T?209 MET2_pinshape ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 2839
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 2845
 
  ;# 153
     dataReduction( via2_via_pin ) 
@@ -764,7 +764,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 154
  ;  region( via2_via_pin )
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 2839
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 2845
 
  ;# 155
     VIA3 = geomOr( VIA3 ) 
@@ -2447,7 +2447,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 574
  ;  region( LVTDEF )
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 575
     T?391 = geomAndNot( T?389 LVTDEF ) 
@@ -2463,11 +2463,11 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 578
     dataReduction( pmosw_device_all ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 579
  ;  region( pmosw_device_all )
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 580
     T?393 = geomAnd( pmos_waffle_w MIDOX ) 
@@ -2483,7 +2483,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 583
     dataReduction( T?394 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 584
     pmosmw_device_all = geomAndNot( T?394 RFDEF ) 
@@ -3920,7 +3920,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 941
     MET1 = geomOr( MET1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 400
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 399
 
  ;# 942
     dataReduction( MET1 ) 
@@ -3928,7 +3928,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 943
  ;  region( MET1 )
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 400
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 399
 
  ;# 944
     T?641 = geomInside( PAD MET1 ) 
@@ -5304,7 +5304,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 1286
     met1_withslots = geomAndNot( MET1 M1HOLE ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 400
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 399
 
  ;# 1287
     dataReduction( met1_withslots ) 
@@ -5312,7 +5312,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 1288
  ;  region( met1_withslots )
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 400
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 399
 
  ;# 1289
     M2HOLE = geomOr( M2HOLE ) 
@@ -8574,7 +8574,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 2101
     T?1392 = geomCat( CONT VIA2 VIA1 VIA3 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 13200
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 13206
 
  ;# 2102
     dataReduction( T?1392 ) 
@@ -8582,7 +8582,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 2103
  ;  region( T?1392 )
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 13200
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 13206
 
  ;# 2104
     METRES_bad = geomOverlap( METRES T?1392  )
@@ -8615,7 +8615,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 2111
     T?1396 = geomCat( CONT VIA1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 11373
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 11379
 
  ;# 2112
     dataReduction( T?1396 ) 
@@ -8623,7 +8623,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 2113
  ;  region( T?1396 )
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 11373
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 11379
 
  ;# 2114
     MET1RES_bad = geomOverlap( MET1RES T?1396  )
@@ -8656,7 +8656,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 2121
     T?1400 = geomCat( VIA2 VIA1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 3591
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 3597
 
  ;# 2122
     dataReduction( T?1400 ) 
@@ -8664,7 +8664,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 2123
  ;  region( T?1400 )
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 3591
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 3597
 
  ;# 2124
     MET2RES_bad = geomOverlap( MET2RES T?1400  )
@@ -9171,7 +9171,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 2249
     met1_withslots_trunc = geomAndNot( met1_withslots RMET1_device ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 400
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 399
 
  ;# 2250
     dataReduction( met1_withslots_trunc ) 
@@ -9610,7 +9610,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 2357
     net_met1 = geomAndNot( met1_withslots spiral_body ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 400
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 399
 
  ;# 2358
     dataReduction( net_met1 ) 
@@ -9618,7 +9618,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 2359
  ;  region( net_met1 )
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 400
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 399
 
  ;# 2360
     net_met2 = geomAndNot( met2_withslots spiral_body ) 
@@ -9646,7 +9646,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 2366
     net_via1 = geomAndNot( VIA1 spiral_body ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 1785
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 1791
 
  ;# 2367
     dataReduction( net_via1 ) 
@@ -9829,7 +9829,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 2410
     net_met1 = geomOr( net_met1 MET1_pinshape ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 400
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 399
 
  ;# 2411
     dataReduction( net_met1 ) 
@@ -9837,7 +9837,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 2412
  ;  region( net_met1 )
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 400
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 399
 
  ;# 2413
     net_met2 = geomOr( net_met2 MET2_pinshape ) 
@@ -9861,7 +9861,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 2418
  ;  region( net_via1 )
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 1785
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 1791
 
  ;# 2419
     net_met3 = geomOr( net_met3 MET3_pinshape ) 
@@ -9969,11 +9969,11 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 2445
  ;  via( net_via1 net_met2 )
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 1785
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 1791
 
  ;# 2446
  ;  via( net_via1 net_met1 )
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 1785
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 1791
 
  ;# 2447
  ;  via( net_poly2con net_met1 )
@@ -10017,11 +10017,11 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 2457
  ;  via( net_met1 net_sbd_anode_diff )
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 400
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 399
 
  ;# 2458
  ;  via( net_met1 sbdcon )
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 400
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 399
 
  ;# 2459
  ;  via( spiral_term spiral_term11 )
@@ -10158,7 +10158,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 2482
  ;  region( T?1560 )
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 1
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 2483
     T?1559 = geomCat( net_subtap ) 
@@ -10179,7 +10179,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 2487
     T?1561 = geomOverlap( net_subtap T?1560 diffNet ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 2488
     dataReduction( T?1561 ) 
@@ -10188,7 +10188,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
  ;# 2489
     BAD_SUBSTR_SUBTAP_MULTCONN_ERC = geomCat( T?1561  )
     errorLayer( BAD_SUBSTR_SUBTAP_MULTCONN_ERC "BAD_SUBSTR_SUBTAP_MULTCONN_ERC" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 2490
     geomStamp( net_nwell net_welltap multConnect "T?1566" ) 
@@ -29039,7 +29039,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 7118
  ;  region( T?4855 )
-    cpu: 0.0   elapsed: 1   virtual: 204M   task sum: 9588
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 9588
 
  ;# 7119
     width_cont_cow1_x = geomContactCheck( T?4855 width == 0.4 length == 0.4 ignore) 
@@ -29274,11 +29274,11 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 7175
     T?4906 = geomAndNot( met1_withslots T?4905 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 412
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 411
 
  ;# 7176
     dataReduction( T?4906 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 408
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 407
 
  ;# 7177
     T?4907 = geomOverSizePrep( T?4905 0.2 ) 
@@ -29382,7 +29382,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 7202
     met1_withslots_edges  = geomGetEdge( met1_withslots ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 3785
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 3789
 
  ;# 7203
     dataReduction( met1_withslots_edges ) 
@@ -29390,11 +29390,11 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 7204
     met1small = geomAndNot( met1_withslots_edges met1wideext_edges ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 3707
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 3709
 
  ;# 7205
     dataReduction( met1small ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 3698
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 3700
 
  ;# 7206
     met1wideext = geomAnd( met1_withslots_edges met1wideext_edges ) 
@@ -29451,7 +29451,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 7219
     T?4943 = geomOr( VIA1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 1785
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 1791
 
  ;# 7220
     dataReduction( T?4943 ) 
@@ -29459,7 +29459,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 7221
  ;  region( T?4943 )
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 1785
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 1791
 
  ;# 7222
     width_via1_via1w1 = geomContactCheck( T?4943 width == 0.5 length == 0.5 ignore )
@@ -31379,262 +31379,262 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 7692
     spac_poly2_bondpad_s1p2pa = drcWidenZeroAreaErrorRegion( T?5321 "S1P2PA Minimum PAD_ST to POLY2 spacing = 9" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7693
     T?5324 = drc( net_bondpad_st net_met1 sep < 9 diffNet "spac_met1_bondpad_s1m1pa = drc(net_bondpad_st net_met1 (sep < 9) diffNet)" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7694
     spac_met1_bondpad_s1m1pa = drcWidenZeroAreaErrorRegion( T?5324 "S1M1PA Minimum PAD_ST to MET1 spacing (different net) = 9" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7695
     T?5327 = drc( net_bondpad_st net_met2 sep < 9 diffNet "spac_met2_bondpad_s1m2pa = drc(net_bondpad_st net_met2 (sep < 9) diffNet)" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7696
     spac_met2_bondpad_s1m2pa = drcWidenZeroAreaErrorRegion( T?5327 "S1M2PA Minimum PAD_ST to MET2 spacing (different net) = 9" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7697
     T?5330 = drc( net_bondpad_st net_met3 sep < 9 diffNet "spac_met3_bondpad_s1m3pa = drc(net_bondpad_st net_met3 (sep < 9) diffNet)" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7698
     spac_met3_bondpad_s1m3pa = drcWidenZeroAreaErrorRegion( T?5330 "S1M3PA Minimum PAD_ST to MET3 spacing (different net) = 9" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7699
     T?5333 = drc( net_bondpad_st net_met4 sep < 9 diffNet "spac_met4_bondpad_s1m4pa = drc(net_bondpad_st net_met4 (sep < 9) diffNet)" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7700
     spac_met4_bondpad_s1m4pa = drcWidenZeroAreaErrorRegion( T?5333 "S1M4PA Minimum PAD_ST to MET4 spacing (different net) = 9" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7701
     ill_pad_missing_met4_r01pa = geomAndNot( PAD MET4  )
     errorLayer( ill_pad_missing_met4_r01pa "R01PA PAD without MET4 is not allowed" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7702
     pad_poa_all_met1 = geomInside( pad_poa_all MET1  )
     errorLayer( pad_poa_all_met1 "TOPOLOGY PROBLEM : POA pad met 4 stack found, but totally enclosed by MET1" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7703
     pad_3oa_2 = geomOr( pad_3oa  )
     errorLayer( pad_3oa_2 "Illegal POA pad met3 stack for 4 metal process" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7704
     pad_poa_all_met2 = geomInside( pad_poa_all MET2  )
     errorLayer( pad_poa_all_met2 "TOPOLOGY PROBLEM : POA pad met 4 stack found, but totally enclosed by MET2" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7705
     T?5342 = drc( pad_4oa width < 70 "width_pad_4oa_cbw1 = drc(pad_4oa (width < 70.0))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7706
     width_pad_4oa_cbw1 = drcWidenZeroAreaErrorRegion( T?5342 "CB_W_1_G1 Minimum bonding PAD width (85um preferred, 60um on request) = 70 Min bonding pad width 70 U, 85 U preferred, 60 U request" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7707
     T?5344 = drc( pad_4oa width < 85 "width_pad_4oa_cbw1_rec1 = drc(pad_4oa (width < 85.0))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7708
     width_pad_4oa_cbw1_rec1 = drcWidenZeroAreaErrorRegion( T?5344 "CB_W_1_G1 Minimum bonding PAD width (85um preferred, 60um on request) = 70 Min bonding pad width 70 U, 85 U preferred, 60 U request" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7709
     T?5346 = drc( pad_4oa width < 60 "width_pad_4oa_cbw1_rec2 = drc(pad_4oa (width < 60.0))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7710
     width_pad_4oa_cbw1_rec2 = drcWidenZeroAreaErrorRegion( T?5346 "CB_W_1_G1 Minimum bonding PAD width (85um preferred, 60um on request) = 70 Min bonding pad width 70 U, 85 U preferred, 60 U request" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7711
     spac_pad_4oa_via2_and = geomAnd( pad_4oa VIA2  )
     errorLayer( spac_pad_4oa_via2_and "PAR006 : PAD_4OA overlapping VIA2 is not allowed" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7712
     spac_pad_4oa_via2_out = geomAndNot( VIA2 pad_4oa ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7713
     dataReduction( spac_pad_4oa_via2_out ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7714
     T?5350 = drc( spac_pad_4oa_via2_out pad_4oa sep < 0.5 "spac_pad_4oa_via2 = drc(spac_pad_4oa_via2_out pad_4oa (sep < 0.5))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7715
     spac_pad_4oa_via2 = drcWidenZeroAreaErrorRegion( T?5350 "S2PAV2 : Minimum PAD_4OA to VIA2 spacing = 0.5" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7716
     spac_pad_4oa_via3_out = geomAndNot( VIA3 pad_4oa ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7717
     dataReduction( spac_pad_4oa_via3_out ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7718
     T?5353 = drc( spac_pad_4oa_via3_out pad_4oa sep < 0.25 "spac_pad_4oa_via3 = drc(spac_pad_4oa_via3_out pad_4oa (sep < 0.25))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7719
     spac_pad_4oa_via3 = drcWidenZeroAreaErrorRegion( T?5353 "S1PAV3 : Minimum PAD_4OA to VIA3 spacing = 0.25" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7720
     encl_pad_4oa_via3_and = geomAnd( pad_4oa VIA3 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7721
     dataReduction( encl_pad_4oa_via3_and ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7722
     T?5357 = drc( pad_4oa encl_pad_4oa_via3_and enc < 0.2 "encl_pad_4oa_via3 = drc(pad_4oa encl_pad_4oa_via3_and (enc < 0.2))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7723
     encl_pad_4oa_via3 = drcWidenZeroAreaErrorRegion( T?5357 "E1PAV3 Minimum PAD_4OA enclosure of VIA3 = 0.2" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7724
     pad_4oa_45_edge = geomGetAngledEdge( pad_4oa keep == 45  mode0) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7725
     dataReduction( pad_4oa_45_edge ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7726
  ;  region( pad_4oa_45_edge )
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7727
     T?5360 = geomOr( pad_4oa_45_edge ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7728
     dataReduction( T?5360 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7729
     pad_4oa_45_edge_size = geomSize( T?5360 -1 edges unmergedOut ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7730
     dataReduction( pad_4oa_45_edge_size ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7731
  ;  region( pad_4oa_45_edge_size )
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7732
     T?5362 = geomUnderSizePrep( pad_4oa -0.7 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7733
     dataReduction( T?5362 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7734
     T?5364 = geomSize( T?5362 -0.7 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7735
     dataReduction( T?5364 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7736
  ;  region( T?5364 )
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7737
     T?5365 = geomOverlap( VIA3 T?5364 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7738
     dataReduction( T?5365 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7739
  ;  region( T?5365 )
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7740
     par007_pad_4oa_via3 = geomAvoiding( T?5365 pad_4oa_45_edge_size  )
     errorLayer( par007_pad_4oa_via3 "PAR007 : (PAD_4OA sized by -0.7) overlapping VIA3 is not allowed" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7741
     KEPOUT = geomOr( KEPOUT ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7742
     dataReduction( KEPOUT ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7743
     par002_pad_4oa_kepout = geomAnd( pad_4oa KEPOUT  )
     errorLayer( par002_pad_4oa_kepout "PAR002 KEPOUT definition : (PAD_4OA AND KEPOUT) is not allowed" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7744
     kepout_or_sfcdef = geomOr( KEPOUT SFCDEF ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7745
     dataReduction( kepout_or_sfcdef ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7746
     T?5370 = drc( pad_4oa kepout_or_sfcdef sep < 7 "s2kopa_pad_4oa_kepout_or_sfcdef = drc(pad_4oa geomOr(KEPOUT SFCDEF) (sep < 7))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7747
     s2kopa_pad_4oa_kepout_or_sfcdef = drcWidenZeroAreaErrorRegion( T?5370 "S2KOPA KEPOUT definition : Minimum spacing PAD_4OA to (KEPOUT or SFCDEF) = 7" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7748
     net_pad_4oa = geomCat( pad_4oa ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7749
     dataReduction( net_pad_4oa ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7750
  ;  region( net_pad_4oa )
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7751
     geomStamp( net_pad_4oa PAD ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7752
     T?5376 = drc( net_pad_4oa net_met3 sep < 7 diffNet "spac_pad_4oa_met3 = drc(net_pad_4oa net_met3 (sep < 7) diffNet)" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7753
     spac_pad_4oa_met3 = drcWidenZeroAreaErrorRegion( T?5376 "S2M3PA Minimum PAD_4OA to MET3 spacing (different net) = 7" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7754
     T?5379 = drc( net_pad_4oa net_met4 sep < 7 diffNet "spac_pad_4oa_met4 = drc(net_pad_4oa net_met4 (sep < 7) diffNet)" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 7755
     spac_pad_4oa_met4 = drcWidenZeroAreaErrorRegion( T?5379 "S2M4PA Minimum PAD_4OA to MET4 spacing (different net) = 7" ) 
@@ -34400,7 +34400,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 8435
     met1_wide_1 = geomWidth( met1_withslots 0.5 <= keep ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 389
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 388
 
  ;# 8436
     dataReduction( met1_wide_1 ) 
@@ -34408,11 +34408,11 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 8437
  ;  region( met1_wide_1 )
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 389
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 388
 
  ;# 8438
     T?5813 = geomHoles( met1_wide_1 outermost ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 23
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 24
 
  ;# 8439
     dataReduction( T?5813 ) 
@@ -34420,7 +34420,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 8440
     T?5814 = _geomPushDown( T?5813 met1_wide_1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 46
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 48
 
  ;# 8441
     dataReduction( T?5814 ) 
@@ -36384,7 +36384,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 8931
     T?6148 = geomAndNot( met1_wide_1 PAD ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 389
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 388
 
  ;# 8932
     dataReduction( T?6148 ) 
@@ -36392,7 +36392,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 8933
  ;  region( T?6148 )
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 389
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 388
 
  ;# 8934
     ill_met1_noholes_amw0 = geomWidth( T?6148 35 < keep  )
@@ -44342,7 +44342,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 10905
     T?7666 = geomOr( T?7665 MET1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 259
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 257
 
  ;# 10906
     dataReduction( T?7666 ) 
@@ -44350,15 +44350,15 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 10907
  ;  region( T?7666 )
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 259
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 257
 
  ;# 10908
     MET_all_holes = geomHoles( T?7666 innermost ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 697
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 698
 
  ;# 10909
     dataReduction( MET_all_holes ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 678
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 679
 
  ;# 10910
     T?7668 = geomOr( DIODE OPTDEF ) 
@@ -44742,7 +44742,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 11005
     T?7747 = geomOr( T?7746 MET1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 400
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 399
 
  ;# 11006
     dataReduction( T?7747 ) 
@@ -44750,7 +44750,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 11007
     T?7748 = geomOr( T?7747 MET2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 209
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 210
 
  ;# 11008
     dataReduction( T?7748 ) 
@@ -44758,7 +44758,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 11009
     T?7749 = geomOr( T?7748 MET3 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 256
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 262
 
  ;# 11010
     dataReduction( T?7749 ) 
@@ -44766,7 +44766,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 11011
     T?7750 = geomOr( T?7749 MET4 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 263
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 268
 
  ;# 11012
     dataReduction( T?7750 ) 
@@ -44774,7 +44774,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 11013
     T?7751 = geomOr( T?7750 METTSV ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 263
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 268
 
  ;# 11014
     dataReduction( T?7751 ) 
@@ -44782,7 +44782,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 11015
     T?7752 = geomOr( T?7751 PADTSV ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 263
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 268
 
  ;# 11016
     dataReduction( T?7752 ) 
@@ -44790,7 +44790,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
 
  ;# 11017
     design_data = geomOr( T?7752 TUBDEF ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 263
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 268
 
  ;# 11018
     dataReduction( design_data ) 
@@ -44799,7 +44799,7 @@ TOTALS (secs). . . . . .      0 cpu      1 elap 3686.8M virt       4 pf
  ;# 11019
     errCER001 = geomAndNot( design_data xchip_edge_for_check  )
     errorLayer( errCER001 "GRCER001: DESIGN_DATA outside CHIPEDGE is not allowed!" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 475
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 472
 
  ;# 11020
     T?7755 = geomOutside( VIATSV any_filter_exists ) 
@@ -52187,9 +52187,9 @@ processCoverage( withinLayer( bLayer_mttv ) precision = 6 backup
 Total cells checked = 9
 Total rules checked = 12713
 
-Run time =  1.00 seconds
-CPU time =  1.04 seconds
-VM HWM   =  3687 Mbytes
+Run time =  2.00 seconds
+CPU time =  1.09 seconds
+VM HWM   =  2395 Mbytes
 Disk HWM =     0 Mbytes
 Disk end =     0 Mbytes
 Eman HWM =     0 Mbytes

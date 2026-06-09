@@ -187,12 +187,13 @@ Cell/Device                               schematic  layout   schematic  layout
                                              ------  ------      ------  ------
 Total                                             2       2           2       2
 
-*******************************************************************************
-****** Gm_C_filter schematic YAOWEN  <vs>  Gm_C_filter layout YAOWEN
-*******************************************************************************
-
-Filter/Reduce statistics only. Network matching was OK.
-                                                                                                                                                                   
+###############################################################################
+###### Gm_C_filter schematic YAOWEN  <vs>  Gm_C_filter layout YAOWEN
+###############################################################################
+###### This report is for informational purposes only. This cell
+###### has been expanded because of unstable devices.
+###############################################################################
+                     
 Pre-expand Statistics                      
 ======================                          Original       
 Cell/Device                               schematic  layout
@@ -498,15 +499,19 @@ Reduce Statistics
 =================                               Original             Reduced
 Cell/Device                               schematic  layout   schematic  layout
 (BUFFER) Cell                                     1       1           1       1
-(Gm_C_filter) Cell                                3       3           3       3
+(INVX1) Cell                                      9       9           9       9
 (V1000_20) Cell                                   1       1           1       1
 (V200_20) Cell                                    8       8           8       8
 (V500_20) Cell                                   10      10          10      10
 (VGA_1) Cell                                      1       1           1       1
 (fecg_cmfb2_fc) Cell                              1       1           1       1
 (ia_new_f) Cell                                   1       1           1       1
+(NMOS4) MOS                                     927     933*        145     145
+(PMOS4) MOS                                     111     339*         37      37
+(RPOLYH) RES                                      3       3           3       3
+(CPOLYA) CAP                                     78      78          16      16
                                              ------  ------      ------  ------
-Total                                            26      26          26      26
+Total                                          1151    1385         233     233
 
 *******************************************************************************
 ****** fbias_gm_c1_f2c schematic FBIAS  <vs>  fbias_gm_c1_f2c layout FBIAS
@@ -1200,32 +1205,6 @@ Cell/Device                               schematic  layout   schematic  layout
 Total                                            15      29           9       9
 
 *******************************************************************************
-****** APRIO200P schematic IOLIB_ANA_4M  <vs>  APRIO200P_VAR1 layout IOLIB_ANA_4M
-*******************************************************************************
-
-Filter/Reduce statistics only. Network matching was OK.
-                                                                                                                                                                   
-Pre-expand Statistics                      
-======================                          Original       
-Cell/Device                               schematic  layout
-(NWD) DIO                                         2       4*
-(RPOLY2) RES                                      9       9
-(ND) DIO                                          2       8*
-(PD) DIO                                          2       8*
-                                             ------  ------
-Total                                            15      29
-
-Reduce Statistics
-=================                               Original             Reduced
-Cell/Device                               schematic  layout   schematic  layout
-(RPOLY2) RES                                      9       9           3       3
-(ND) DIO                                          2       8*          2       2
-(NWD) DIO                                         2       4*          2       2
-(PD) DIO                                          2       8*          2       2
-                                             ------  ------      ------  ------
-Total                                            15      29           9       9
-
-*******************************************************************************
 ****** AVDD3ALLP schematic IOLIB_ANA_4M  <vs>  AVDD3ALLP layout IOLIB_ANA_4M
 *******************************************************************************
 
@@ -1298,25 +1277,11 @@ Cell/Device                               schematic  layout
 (VDD3OP cmos_sch IOLIB_4M, VDD3OP) Cell           1       1
 (VDD3RP cmos_sch IOLIB_4M, VDD3RP) Cell           1       1
 (PWRCUT_DIG_P_DX cmos_sch IOLIB_4M, PWRCUT_DIG_P_DX) Cell           3       3
-(APRIO200P schematic IOLIB_ANA_4M, APRIO200P) Cell                 27      26*
+(APRIO200P schematic IOLIB_ANA_4M, APRIO200P) Cell                 27      27
 (AVDD3ALLP schematic IOLIB_ANA_4M, AVDD3ALLP) Cell                  3       3
 (AGND3ALLP schematic IOLIB_ANA_4M, AGND3ALLP) Cell                  3       3
 (_, CORNERP layout IOLIB_4M) Cell                 0       4*
-(_, PERI_SPACER_100_P_VAR1 layout IOLIB_4M) Cell          0      25*
-(_, PERI_SPACER_100_P_VAR10 layout IOLIB_4M) Cell         0       3*
-(_, PERI_SPACER_100_P layout IOLIB_4M) Cell               0       2*
-(_, PERI_SPACER_100_P_VAR14 layout IOLIB_4M) Cell         0       3*
-(_, PERI_SPACER_100_P_VAR5 layout IOLIB_4M) Cell          0       6*
-(_, PERI_SPACER_100_P_VAR2 layout IOLIB_4M) Cell          0       4*
-(_, PERI_SPACER_100_P_VAR3 layout IOLIB_4M) Cell          0       1*
-(_, PERI_SPACER_100_P_VAR12 layout IOLIB_4M) Cell         0       1*
-(_, PERI_SPACER_100_P_VAR4 layout IOLIB_4M) Cell          0       1*
-(_, PERI_SPACER_100_P_VAR11 layout IOLIB_4M) Cell         0       1*
-(_, PERI_SPACER_100_P_VAR13 layout IOLIB_4M) Cell         0       1*
-(_, PERI_SPACER_100_P_VAR9 layout IOLIB_4M) Cell          0       2*
-(_, PERI_SPACER_100_P_VAR8 layout IOLIB_4M) Cell          0       1*
-(_, PERI_SPACER_100_P_VAR7 layout IOLIB_4M) Cell          0       1*
-(_, PERI_SPACER_100_P_VAR6 layout IOLIB_4M) Cell          0       1*
+(_, PERI_SPACER_100_P layout IOLIB_4M) Cell               0      53*
 (_, PERI_SPACER_10_P layout IOLIB_4M) Cell        0       2*
 (_, PERI_SPACER_20_P layout IOLIB_4M) Cell        0       2*
 (_, PERI_SPACER_2_P layout IOLIB_4M) Cell         0       4*
@@ -1324,7 +1289,7 @@ Cell/Device                               schematic  layout
 (_, PERI_SPACER_5_P layout IOLIB_4M) Cell         0       2*
 (NWD) DIO                                         0       1*
                                              ------  ------
-Total                                            47     119
+Total                                            47     120
 
 Reduce Statistics
 =================                               Original             Reduced

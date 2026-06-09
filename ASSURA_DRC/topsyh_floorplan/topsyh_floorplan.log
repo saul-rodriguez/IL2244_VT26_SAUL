@@ -6,7 +6,7 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:34 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/assura on Mon Jun  8 06:11:16 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/assura on Mon Jun  8 07:26:31 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -15,7 +15,7 @@ Starting /opt/tools/cadence/installs/ASSURA41_618//tools.lnx86/assura/bin/aveng 
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Mon Jun  8 06:11:16 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Mon Jun  8 07:26:31 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -87,7 +87,7 @@ Running in restart mode.
 
 
 Finished building the VDB. VDB build times for main process:
-cpu: 0.11  elap: 1  pf: 0  in: 0  out: 40  virt: 172M  phys: 865M
+cpu: 0.11  elap: 1  pf: 0  in: 0  out: 40  virt: 172M  phys: 864M
 
 Running the Task Processor, 176 cells, 12713 steps...
 
@@ -4585,6 +4585,7 @@ Executing: m1_hole = geomButtOrOver(m1_hole_2 m1_hole_3)
 Executing: met1_wide = geomOr(geomButtOnly(met1_wide_1 m1_hole) m1_hole)
 
 Executing: met2_wide_1 = geomWidth(met2_withslots (keep >= 0.5))
+  shape is RQ
 
 Executing: met2_holes = geomAndNot(geomHoles(met2_wide_1) met2_wide_1)
 
@@ -4615,6 +4616,7 @@ Executing: m2_hole = geomButtOrOver(m2_hole_2 m2_hole_3)
 Executing: met2_wide = geomOr(geomButtOnly(met2_wide_1 m2_hole) m2_hole)
 
 Executing: met3_wide_1 = geomWidth(met3_withslots (keep >= 0.5))
+  shape is RQ
 
 Executing: met3_holes = geomAndNot(geomHoles(met3_wide_1) met3_wide_1)
 
@@ -4645,6 +4647,7 @@ Executing: m3_hole = geomButtOrOver(m3_hole_2 m3_hole_3)
 Executing: met3_wide = geomOr(geomButtOnly(met3_wide_1 m3_hole) m3_hole)
 
 Executing: met4_wide_1 = geomWidth(met4_withslots (keep >= 0.5))
+  shape is RQ
 
 Executing: met4_holes = geomAndNot(geomHoles(met4_wide_1) met4_wide_1)
 
@@ -7211,17 +7214,17 @@ Executing: bkgnd3 = geomOr(substrate_all)
 	   errorLayer(bkgnd3 "# INFO: C35B4/C35B3 ASSURA DRC DECK (REV9 DATE 26-Apr-2011) Last modified 07-Sept-2016 #")
 
 Finished running rules. Task processor time in main process:
-cpu: 14.84  elap: 15  pf: 0  in: 0  out: 3288  virt: 265M  phys: 1670M
+cpu: 16.58  elap: 17  pf: 0  in: 0  out: 3344  virt: 275M  phys: 1715M
 
 Started output post-processing ...
 
 Nothing to postprocess: No grid cells in the design
 
 Finished output post-processing
-cpu: 0.25  elap: 0  pf: 0  in: 0  out: 8  virt: 536M  phys: 1887M
+cpu: 0.25  elap: 0  pf: 0  in: 0  out: 16  virt: 536M  phys: 1921M
 
 Finished building the persistent database.
-cpu: 0.01  elap: 0  pf: 0  in: 0  out: 7000  virt: 528M  phys: 1887M
+cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6952  virt: 528M  phys: 1921M
 
 
 *****  aveng terminated normally  *****
@@ -7259,7 +7262,7 @@ Loading tech rule set file : /opt/pdk/ams/410/assura/c35b4/c35b4c3/techRuleSets
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/avrpt on Mon Jun  8 06:11:32 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/avrpt on Mon Jun  8 07:26:49 2026
 
 
    Creating Error Database 'topsyh_floorplan'...
@@ -7334,7 +7337,7 @@ Rule      Message                                    FlatCount     RealCount
 (   64)  ERROR : MET4 pin outside met4                       0            0
 (   65)  ERROR : PAD pin outside pad metal                   0            0
 (   66)  BAD_SUBSTR_SUBTAP_FLOAT_ERC                         1            1
-(   67)  BAD_SUBSTR_SUBTAP_MULTCONN_ERC                      0            0
+(   67)  BAD_SUBSTR_SUBTAP_MULTCONN_ERC                      1            1
 (   68)  BAD_NWELL_WELLTAP_FLOAT_ERC                         3            3
 (   69)  BAD_NWELL_WELLTAP_MULTCONN_ERC                      0            0
 (   70)  INFO: any HVDEF used as isolation                   0            0
@@ -7748,7 +7751,7 @@ Rule      Message                                    FlatCount     RealCount
 (  478)  PP_C_2 Minimum PPLUS to NGATE spacing =             0            0
 (  479)  PP_C_3 Minimum PPLUS extension of PGATE             0            0
 (  480)  PP_O_1  Minimum overlap of PPLUS and DIF            0            0
-(  481)  PP_E_1 Minimum PPLUS extension of DIFF =            0            0
+(  481)  PP_E_1 Minimum PPLUS extension of DIFF =            8            8
 (  482)  PP_C_5 NP_C_5 NPC5/PPC5  Minimum PPLUS t            0            0
 (  483)  PP_C_6 Minimum PPLUS to NPLUS spacing on            0            0
 (  484)  NP_W_1 Minimum NPLUS width = 0.6                    0            0
@@ -7822,8 +7825,8 @@ Rule      Message                                    FlatCount     RealCount
 (  552)  CBR1 CB_R_1 missing met4                            0            0
 (  553)  ERC Warning: Missing top met4 on Test or            0            0
 (  554)  W1PA Minimum PAD width = 15                         0            0
-(  555)  CB_W_1 Minimum bonding PAD width (85um p            0            0
-(  556)  CB_W_1_G1 Minimum bonding PAD width (85u            0            0
+(  555)  CB_W_1 Minimum bonding PAD width (85um p            4            4
+(  556)  CB_W_1_G1 Minimum bonding PAD width (85u            4            4
 (  557)  CB_S_1 Minimum PAD spacing = 15                     0            0
 (  558)  CB_E_1 Minimum MET1 enclosure of PAD_ST             0            0
 (  559)  CB_E_2 Minimum MET2 enclosure of PAD_3OA            0            0
@@ -7858,7 +7861,7 @@ Rule      Message                                    FlatCount     RealCount
 (  588)  S1M2PA Minimum PAD_ST to MET2 spacing (d            0            0
 (  589)  S1M3PA Minimum PAD_ST to MET3 spacing (d            0            0
 (  590)  S1M4PA Minimum PAD_ST to MET4 spacing (d            0            0
-(  591)  R01PA PAD without MET4 is not allowed               0            0
+(  591)  R01PA PAD without MET4 is not allowed               1            1
 (  592)  TOPOLOGY PROBLEM : POA pad met 4 stack f            0            0
 (  593)  Illegal POA pad met3 stack for 4 metal p            0            0
 (  594)  TOPOLOGY PROBLEM : POA pad met 4 stack f            0            0
@@ -7986,7 +7989,7 @@ Rule      Message                                    FlatCount     RealCount
 (  716)  AM ERROR BAD SLOT: met4 slot over via3              0            0
 (  717)  AMTW1 AMTL1 fixed with of dummy MTOP thi            0            0
 (  718)  AMTS2  Minimum MTOP feature to dummy MTO            0            0
-(  719)  AMTS1 Maximum MTOP spacing when the widt           70           70
+(  719)  AMTS1 Maximum MTOP spacing when the widt           72           72
 (  720)  AMTS3 maximum met4 to met4 block spacing            0            0
 (  721)   AMTS4 fixed met4 block spacing (checked            0            0
 (  722)  NWR001 NTUB overlapping KEPOUT is not al            0            0
@@ -8034,7 +8037,7 @@ Rule      Message                                    FlatCount     RealCount
 (  764)  ERC Warning: DIFF without any contact               0            0
 (  765)  ERC Warning: Floating Poly1                         0            0
 (  766)  ERC Warning: Floating Poly2                         0            0
-(  767)  ERC Warning: Floating met1                        119           18
+(  767)  ERC Warning: Floating met1                          0            0
 (  768)  ERC Warning: Floating met2                          0            0
 (  769)  ERC Warning: Floating met3                          0            0
 (  770)  ERC Warning: Floating met4                          0            0
@@ -8745,7 +8748,7 @@ Rule      Message                                    FlatCount     RealCount
 ( 1475)  spiral_open_spiral_term22: ERC Warning :            0            0
 ( 1476)  # INFO: C35B4/C35B3 ASSURA DRC DECK (REV            1            1
 --------------------------------------------------------------------------------
-Total  errors:                                            9424         3147
+Total  errors:                                            9325         3149
 --------------------------------------------------------------------------------
 
    Finished creating Error Database ...
@@ -8755,10 +8758,15 @@ Total  errors:                                            9424         3147
    Rule 55 done.
    Rule 56 done.
    Rule 66 done.
+   Rule 67 done.
    Rule 68 done.
    Rule 421 done.
    Rule 434 done.
+   Rule 481 done.
    Rule 544 done.
+   Rule 555 done.
+   Rule 556 done.
+   Rule 591 done.
    Rule 669 done.
    Rule 679 done.
    Rule 680 done.
@@ -8768,7 +8776,6 @@ Total  errors:                                            9424         3147
    Rule 699 done.
    Rule 703 done.
    Rule 719 done.
-   Rule 767 done.
    Rule 772 done.
    Rule 773 done.
    Rule 774 done.
@@ -8776,7 +8783,7 @@ Total  errors:                                            9424         3147
    Rule 1458 done.
    Rule 1476 done.
 
-avrpt cpu sec:    0.21  elapsed:     1  virtual:    93M
+avrpt cpu sec:    0.21  elapsed:     0  virtual:    93M
 
 Finished /opt/tools/cadence/installs/ASSURA41_618//tools.lnx86/assura/bin/avrpt
 
@@ -8815,7 +8822,7 @@ Virtuoso Framework License (111) was checked out successfully. Total checkout ti
 @(#)$CDS: rcxToDfII_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:40 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/rcxToDfII on Mon Jun  8 06:11:33 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/rcxToDfII on Mon Jun  8 07:26:50 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -8837,21 +8844,21 @@ Creating extracted view for VT26_TOP topsyh_floorplan layout
 Copying layer METTSV
 Layer METTSV has 0 shapes.
 Copying layer net_via3
-Layer net_via3 has 377737 shapes.
+Layer net_via3 has 404944 shapes.
 Copying layer net_met4
-Layer net_met4 has 823 shapes.
+Layer net_met4 has 824 shapes.
 Copying layer net_met3
-Layer net_met3 has 2094 shapes.
+Layer net_met3 has 2095 shapes.
 Copying layer net_via2_metcap
 Layer net_via2_metcap has 0 shapes.
 Copying layer net_via2_met2
-Layer net_via2_met2 has 418137 shapes.
+Layer net_via2_met2 has 458947 shapes.
 Copying layer net_met2
-Layer net_met2 has 8401 shapes.
+Layer net_met2 has 8402 shapes.
 Copying layer net_via1
-Layer net_via1 has 516441 shapes.
+Layer net_via1 has 543648 shapes.
 Copying layer net_met1
-Layer net_met1 has 32653 shapes.
+Layer net_met1 has 32652 shapes.
 Copying layer net_poly2con
 Layer net_poly2con has 58946 shapes.
 Copying layer net_poly2
@@ -8861,9 +8868,9 @@ Layer net_poly1con has 79614 shapes.
 Copying layer net_poly1
 Layer net_poly1 has 7664 shapes.
 Copying layer net_pdiffcon
-Layer net_pdiffcon has 595944 shapes.
+Layer net_pdiffcon has 644406 shapes.
 Copying layer net_pdiff
-Layer net_pdiff has 10786 shapes.
+Layer net_pdiff has 10787 shapes.
 Copying layer net_ndiffcon
 Layer net_ndiffcon has 544806 shapes.
 Copying layer net_ndiff
@@ -8877,12 +8884,12 @@ instance count totals:
     lib              cell             view                    total
 
 extracted view creation completed
-cpu: 4.78  elap: 5  pf: 0  in: 0  out: 212752  virt: 586M  phys: 1471M
+cpu: 5.00  elap: 6  pf: 0  in: 0  out: 223008  virt: 593M  phys: 1501M
 
 Finished /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/rcxToDfII
 
 
-Run ended: Mon Jun  8 06:11:38 2026
+Run ended: Mon Jun  8 07:26:55 2026
 
 *****  Assura terminated normally  *****
 

@@ -6,7 +6,7 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:34 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/assura on Wed Jun  3 17:27:40 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/assura on Tue Jun  9 08:32:58 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -15,7 +15,7 @@ Starting /opt/tools/cadence/installs/ASSURA41_618//tools.lnx86/assura/bin/aveng 
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Wed Jun  3 17:27:40 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Tue Jun  9 08:32:58 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -87,7 +87,7 @@ Running in restart mode.
 
 
 Finished building the VDB. VDB build times for main process:
-cpu: 0.09  elap: 0  pf: 0  in: 0  out: 40  virt: 172M  phys: 835M
+cpu: 0.10  elap: 1  pf: 0  in: 0  out: 40  virt: 172M  phys: 835M
 
 Running the Task Processor, 9 cells, 12713 steps...
 
@@ -7205,17 +7205,17 @@ Executing: bkgnd3 = geomOr(substrate_all)
 	   errorLayer(bkgnd3 "# INFO: C35B4/C35B3 ASSURA DRC DECK (REV9 DATE 26-Apr-2011) Last modified 07-Sept-2016 #")
 
 Finished running rules. Task processor time in main process:
-cpu: 0.74  elap: 1  pf: 0  in: 0  out: 3128  virt: 201M  phys: 1381M
+cpu: 0.77  elap: 0  pf: 0  in: 0  out: 3128  virt: 201M  phys: 1378M
 
 Started output post-processing ...
 
 Nothing to postprocess: No grid cells in the design
 
 Finished output post-processing
-cpu: 0.20  elap: 0  pf: 0  in: 0  out: 0  virt: 501M  phys: 1601M
+cpu: 0.20  elap: 1  pf: 0  in: 0  out: 0  virt: 501M  phys: 1599M
 
 Finished building the persistent database.
-cpu: 0.00  elap: 0  pf: 0  in: 0  out: 6488  virt: 501M  phys: 1612M
+cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6488  virt: 501M  phys: 1610M
 
 
 *****  aveng terminated normally  *****
@@ -7253,7 +7253,7 @@ Loading tech rule set file : /opt/pdk/ams/410/assura/c35b4/c35b4c3/techRuleSets
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/avrpt on Wed Jun  3 17:27:41 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/avrpt on Tue Jun  9 08:33:00 2026
 
 
    Creating Error Database 'fecg_cmfb2_fc'...
@@ -7328,7 +7328,7 @@ Rule      Message                                    FlatCount     RealCount
 (   64)  ERROR : MET4 pin outside met4                       0            0
 (   65)  ERROR : PAD pin outside pad metal                   0            0
 (   66)  BAD_SUBSTR_SUBTAP_FLOAT_ERC                         0            0
-(   67)  BAD_SUBSTR_SUBTAP_MULTCONN_ERC                      2            2
+(   67)  BAD_SUBSTR_SUBTAP_MULTCONN_ERC                      0            0
 (   68)  BAD_NWELL_WELLTAP_FLOAT_ERC                         0            0
 (   69)  BAD_NWELL_WELLTAP_MULTCONN_ERC                      0            0
 (   70)  INFO: any HVDEF used as isolation                   0            0
@@ -8739,13 +8739,12 @@ Rule      Message                                    FlatCount     RealCount
 ( 1475)  spiral_open_spiral_term22: ERC Warning :            0            0
 ( 1476)  # INFO: C35B4/C35B3 ASSURA DRC DECK (REV            1            1
 --------------------------------------------------------------------------------
-Total  errors:                                             850          668
+Total  errors:                                             848          666
 --------------------------------------------------------------------------------
 
    Finished creating Error Database ...
 
    Writing Report into /home/saul/projects/IL2244_VT26_SAUL/ASSURA_DRC/fecg_cmfb2_fc/fecg_cmfb2_fc.err ...
-   Rule 67 done.
    Rule 421 done.
    Rule 510 done.
    Rule 521 done.
@@ -8757,7 +8756,7 @@ Total  errors:                                             850          668
    Rule 773 done.
    Rule 1476 done.
 
-avrpt cpu sec:    0.20  elapsed:     1  virtual:    93M
+avrpt cpu sec:    0.19  elapsed:     0  virtual:    93M
 
 Finished /opt/tools/cadence/installs/ASSURA41_618//tools.lnx86/assura/bin/avrpt
 
@@ -8796,7 +8795,7 @@ Virtuoso Framework License (111) was checked out successfully. Total checkout ti
 @(#)$CDS: rcxToDfII_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:40 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/rcxToDfII on Wed Jun  3 17:27:42 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/rcxToDfII on Tue Jun  9 08:33:00 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -8830,9 +8829,9 @@ Layer net_via2_met2 has 2332 shapes.
 Copying layer net_met2
 Layer net_met2 has 155 shapes.
 Copying layer net_via1
-Layer net_via1 has 2581 shapes.
+Layer net_via1 has 2587 shapes.
 Copying layer net_met1
-Layer net_met1 has 736 shapes.
+Layer net_met1 has 734 shapes.
 Copying layer net_poly2con
 Layer net_poly2con has 286 shapes.
 Copying layer net_poly2
@@ -8858,12 +8857,12 @@ instance count totals:
     lib              cell             view                    total
 
 extracted view creation completed
-cpu: 0.09  elap: 0  pf: 0  in: 0  out: 1688  virt: 434M  phys: 862M
+cpu: 0.09  elap: 0  pf: 0  in: 0  out: 1688  virt: 434M  phys: 863M
 
 Finished /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/rcxToDfII
 
 
-Run ended: Wed Jun  3 17:27:42 2026
+Run ended: Tue Jun  9 08:33:00 2026
 
 *****  Assura terminated normally  *****
 
