@@ -5,7 +5,7 @@
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Tue Jun  9 08:42:46 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Tue Jun  9 10:15:36 2026
 
 Echoing run specific file...
     ;----------------------------------------------------------------------------
@@ -985,8 +985,8 @@ Echoing run specific file...
 
                   Time Summary - Database
 
-reading DFII data. . . .      0 cpu      0 elap  521.8M virt       0 pf
-LVS preprocessing. . . .      0 cpu      0 elap  100.8M virt       0 pf
+reading DFII data. . . .      0 cpu      0 elap  522.4M virt       0 pf
+LVS preprocessing. . . .      0 cpu      1 elap  100.8M virt       0 pf
 duplicate inst removal .      0 cpu      0 elap  103.2M virt       0 pf
 cell boundary layer. . .      0 cpu      0 elap  103.2M virt       0 pf
 small cell flattening. .      0 cpu      0 elap  108.1M virt       0 pf
@@ -1009,7 +1009,7 @@ duplicate inst removal .      0 cpu      0 elap  132.7M virt       0 pf
 duplicate cell removal .      0 cpu      0 elap  132.7M virt       0 pf
 final VDB processing . .      0 cpu      0 elap  132.7M virt       0 pf
 -----------------------------------------------------------------------
-TOTALS (secs). . . . . .      0 cpu      0 elap  521.8M virt       0 pf
+TOTALS (secs). . . . . .      0 cpu      1 elap  522.4M virt       0 pf
 
 
 ************************************************************************
@@ -1217,11 +1217,11 @@ TOTALS (secs). . . . . .      0 cpu      0 elap  521.8M virt       0 pf
 
  ;# 51
     ntub_subdefcut = geomAndNot( NTUB subdef_ring ) 
-    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 93
+    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 92
 
  ;# 52
  ;  region( ntub_subdefcut )
-    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 93
+    cpu: 0.0   elapsed: 0   virtual: 130M   task sum: 92
 
  ;# 53
     substrate_all = geomOr( substrate_all ) 
@@ -1845,11 +1845,11 @@ TOTALS (secs). . . . . .      0 cpu      0 elap  521.8M virt       0 pf
 
  ;# 208
     T?297 = geomAndNot( ntub_subdefcut RNWELL_device ) 
-    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 93
+    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 92
 
  ;# 209
     net_nwell = geomOr( T?297 nmos30_ntub_clos ) 
-    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 93
+    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 92
 
  ;# 210
     dataReduction( net_nwell ) 
@@ -1857,7 +1857,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap  521.8M virt       0 pf
 
  ;# 211
  ;  region( net_nwell )
-    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 93
+    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 92
 
  ;# 212
     ndiff_2 = geomAndNot( ndiff_1 net_poly1 ) 
@@ -1953,7 +1953,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap  521.8M virt       0 pf
 
  ;# 235
     pnpvert_0 = geomAnd( net_pdiff T?314 ) 
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 144
+    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 144
 
  ;# 236
  ;  region( pnpvert_0 )
@@ -2161,7 +2161,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap  521.8M virt       0 pf
 
  ;# 287
     nwell_ovlp_good = drc( nwell_hv_trans trans ovlp == 1.6 parallel opposite "nwell_ovlp_good = drc(nwell_hv_trans trans ((1.6 <= ovlp) <= 1.6) opposite parallel)" ) 
-    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 0
 
  ;# 288
  ;  region( nwell_ovlp_good )
@@ -2273,7 +2273,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap  521.8M virt       0 pf
 
  ;# 315
     T?360 = geomAnd( T?359 waffle_poly1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 0
 
  ;# 316
  ;  region( T?360 )
@@ -2421,7 +2421,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap  521.8M virt       0 pf
 
  ;# 352
     nmos_waffle_w = geomButtOnly( waffle_w_gate net_ndiff keep == 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 138M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 140M   task sum: 0
 
  ;# 353
     MIDOX = geomOr( MIDOX ) 
@@ -4657,7 +4657,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap  521.8M virt       0 pf
 
  ;# 910
     p_nwd_1 = geomAndNot( net_nwell T?1036 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 93
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 92
 
  ;# 911
  ;  region( p_nwd_1 )
@@ -4677,7 +4677,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap  521.8M virt       0 pf
 
  ;# 915
     p_nwd_2 = geomAndNot( p_nwd_1 T?1039 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 93
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 92
 
  ;# 916
  ;  region( p_nwd_2 )
@@ -4689,7 +4689,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap  521.8M virt       0 pf
 
  ;# 918
     p_nwd_3 = geomAndNot( p_nwd_2 T?1041 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 93
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 92
 
  ;# 919
     T?1043 = geomOr( diodes_modeled ) 
@@ -4697,7 +4697,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap  521.8M virt       0 pf
 
  ;# 920
     p_nwd_4 = geomAndNot( p_nwd_3 T?1043 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 93
+    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 92
 
  ;# 921
     T?1045 = geomOr( cvar cvar_all_c35 ) 
@@ -4705,957 +4705,957 @@ TOTALS (secs). . . . . .      0 cpu      0 elap  521.8M virt       0 pf
 
  ;# 922
     p_nwd_5 = geomAndNot( p_nwd_4 T?1045 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 93
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 92
 
  ;# 923
     T?1047 = geomStraddle( p_nwd_2 ZD2SM24_device ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 924
     P_NWD_device = geomAndNot( p_nwd_5 T?1047 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 93
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 92
 
  ;# 925
     p_pd_1 = geomAndNot( pdiode_1 DIODE ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 926
  ;  region( p_pd_1 )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 927
     T?1050 = geomOutside( p_pd_1 ZD2SM24_device ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 928
     p_pd_2 = geomAndNot( T?1050 T?1038 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 929
     p_pd_3 = geomAndNot( p_pd_2 T?1043 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 930
     T?1055 = geomAndNot( p_pd_3 pnplat2_e ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 931
     P_PD_device = geomAndNot( T?1055 pnplat2_c ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 932
     INDDEF = geomOr( INDDEF ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 933
  ;  region( INDDEF )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 934
     T?1058 = geomButtOrOver( RESTRM INDDEF ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 935
  ;  region( T?1058 )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 936
     spiral_term11_1 = geomGetTexted( T?1058 MET3_pintext "P1" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 937
     spiral_term22_1 = geomGetTexted( T?1058 MET3_pintext "P2" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 938
     spiral_term11_2 = geomGetTexted( T?1058 MET4_pintext "P1" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 939
     spiral_term22_2 = geomGetTexted( T?1058 MET4_pintext "P2" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 940
     spiral_term11 = geomOr( spiral_term11_1 spiral_term11_2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 941
     dataReduction( spiral_term11 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 942
  ;  region( spiral_term11 )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 943
     spiral_term22 = geomOr( spiral_term22_1 spiral_term22_2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 944
     dataReduction( spiral_term22 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 945
  ;  region( spiral_term22 )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 946
     spiral_term11_met4 = geomGetTexted( T?1058 MET4_pintext "P1" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 947
     spiral_term22_met4 = geomGetTexted( T?1058 MET4_pintext "P2" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 948
     T?1076 = geomAnd( MET2 INDDEF ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 949
     T?1077 = geomAnd( MET3 INDDEF ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 950
     spiral_met_all_1 = geomOr( T?1076 T?1077 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 951
     T?1079 = geomAnd( MET4 INDDEF ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 952
     spiral_met_all = geomOr( spiral_met_all_1 T?1079 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 953
  ;  region( spiral_met_all )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 954
     T?1081 = geomOr( spiral_term11 spiral_term22 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 955
     T?1082 = geomOr( spiral_term11_met4 spiral_term22_met4 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 956
     spiral_term_xx = geomOr( T?1081 T?1082 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 957
     T?1084 = geomAnd( spiral_term_xx INDDEF ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 958
  ;  region( T?1084 )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 959
     spiral_term = geomButtOrOver( T?1084 spiral_met_all ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 960
     dataReduction( spiral_term ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 961
  ;  region( spiral_term )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 962
     spiral_inddef = geomButtOrOver( INDDEF spiral_term keep == 2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 963
  ;  region( spiral_inddef )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 964
     spiral_body = geomAnd( spiral_inddef spiral_met_all ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 965
     T?1097 = geomGetTexted( spiral_inddef INDDEF_text "SP133S300T" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 966
     SP133S300T_device = geomAnd( spiral_body T?1097 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 967
     T?1099 = geomGetTexted( spiral_inddef INDDEF_text "SP100S250T" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 968
     SP100S250T_device = geomAnd( spiral_body T?1099 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 969
     T?1101 = geomGetTexted( spiral_inddef INDDEF_text "SP073S250T" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 970
     SP073S250T_device = geomAnd( spiral_body T?1101 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 971
     T?1103 = geomGetTexted( spiral_inddef INDDEF_text "SP060S300T" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 972
     SP060S300T_device = geomAnd( spiral_body T?1103 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 973
     T?1105 = geomGetTexted( spiral_inddef INDDEF_text "SP049S300T" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 974
     SP049S300T_device = geomAnd( spiral_body T?1105 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 975
     T?1107 = geomGetTexted( spiral_inddef INDDEF_text "SP047S250T" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 976
     SP047S250T_device = geomAnd( spiral_body T?1107 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 977
     T?1109 = geomGetTexted( spiral_inddef INDDEF_text "SP037S250T" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 978
     SP037S250T_device = geomAnd( spiral_body T?1109 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 979
     T?1111 = geomGetTexted( spiral_inddef INDDEF_text "SP033S150T" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 980
     SP033S150T_device = geomAnd( spiral_body T?1111 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 981
     T?1113 = geomGetTexted( spiral_inddef INDDEF_text "SP031S250T" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 982
     SP031S250T_device = geomAnd( spiral_body T?1113 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 983
     T?1115 = geomGetTexted( spiral_inddef INDDEF_text "SP024S250T" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 984
     SP024S250T_device = geomAnd( spiral_body T?1115 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 985
     T?1117 = geomGetTexted( spiral_inddef INDDEF_text "SP021S200T" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 986
     SP021S200T_device = geomAnd( spiral_body T?1117 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 987
     T?1119 = geomGetTexted( spiral_inddef INDDEF_text "SP020S250T" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 988
     SP020S250T_device = geomAnd( spiral_body T?1119 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 989
     T?1121 = geomGetTexted( spiral_inddef INDDEF_text "SP015S250T" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 990
     SP015S250T_device = geomAnd( spiral_body T?1121 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 991
     T?1123 = geomGetTexted( spiral_inddef INDDEF_text "SP011S200T" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 992
     SP011S200T_device = geomAnd( spiral_body T?1123 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 993
     spiral_body_named_typet = geomCat( SP133S300T_device SP100S250T_device SP073S250T_device SP060S300T_device SP049S300T_device SP047S250T_device SP037S250T_device SP033S150T_device SP031S250T_device SP024S250T_device SP021S200T_device SP020S250T_device SP015S250T_device SP011S200T_device ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 994
     T?1126 = geomGetTexted( spiral_inddef INDDEF_text "SP014S300D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 995
     SP014S300D_device = geomAnd( spiral_body T?1126 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 996
  ;  region( SP014S300D_device )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 997
     T?1128 = geomGetTexted( spiral_inddef INDDEF_text "SP018S300D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 998
     SP018S300D_device = geomAnd( spiral_body T?1128 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 999
     T?1130 = geomGetTexted( spiral_inddef INDDEF_text "SP020S180D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1000
     SP020S180D_device = geomAnd( spiral_body T?1130 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1001
  ;  region( SP020S180D_device )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1002
     T?1132 = geomGetTexted( spiral_inddef INDDEF_text "SP023S200D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1003
     SP023S200D_device = geomAnd( spiral_body T?1132 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1004
     T?1134 = geomGetTexted( spiral_inddef INDDEF_text "SP025C200D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1005
     SP025C200D_device = geomAnd( spiral_body T?1134 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1006
     T?1136 = geomGetTexted( spiral_inddef INDDEF_text "SP026S200D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1007
     SP026S200D_device = geomAnd( spiral_body T?1136 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1008
  ;  region( SP026S200D_device )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1009
     T?1138 = geomGetTexted( spiral_inddef INDDEF_text "SP028S300D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1010
     SP028S300D_device = geomAnd( spiral_body T?1138 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1011
     T?1140 = geomGetTexted( spiral_inddef INDDEF_text "SP028C200D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1012
     SP028C200D_device = geomAnd( spiral_body T?1140 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1013
     T?1142 = geomGetTexted( spiral_inddef INDDEF_text "SP030C200D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1014
     SP030C200D_device = geomAnd( spiral_body T?1142 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1015
     T?1144 = geomGetTexted( spiral_inddef INDDEF_text "SP037S180D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1016
     SP037S180D_device = geomAnd( spiral_body T?1144 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1017
  ;  region( SP037S180D_device )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1018
     T?1146 = geomGetTexted( spiral_inddef INDDEF_text "SP038S300D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1019
     SP038S300D_device = geomAnd( spiral_body T?1146 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1020
     T?1148 = geomGetTexted( spiral_inddef INDDEF_text "SP040C200D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1021
     SP040C200D_device = geomAnd( spiral_body T?1148 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1022
     T?1150 = geomGetTexted( spiral_inddef INDDEF_text "SP040C300D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1023
     SP040C300D_device = geomAnd( spiral_body T?1150 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1024
     T?1152 = geomGetTexted( spiral_inddef INDDEF_text "SP045C200D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1025
     SP045C200D_device = geomAnd( spiral_body T?1152 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1026
     T?1154 = geomGetTexted( spiral_inddef INDDEF_text "SP047S180D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1027
     SP047S180D_device = geomAnd( spiral_body T?1154 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1028
  ;  region( SP047S180D_device )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1029
     T?1156 = geomGetTexted( spiral_inddef INDDEF_text "SP050S155D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1030
     SP050S155D_device = geomAnd( spiral_body T?1156 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1031
  ;  region( SP050S155D_device )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1032
     T?1158 = geomGetTexted( spiral_inddef INDDEF_text "SP051C300D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1033
     SP051C300D_device = geomAnd( spiral_body T?1158 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1034
     T?1160 = geomGetTexted( spiral_inddef INDDEF_text "SP068C300D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1035
     SP068C300D_device = geomAnd( spiral_body T?1160 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1036
     T?1162 = geomGetTexted( spiral_inddef INDDEF_text "SP090C200D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1037
     SP090C200D_device = geomAnd( spiral_body T?1162 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1038
     T?1164 = geomGetTexted( spiral_inddef INDDEF_text "SP090S155D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1039
     SP090S155D_device = geomAnd( spiral_body T?1164 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1040
  ;  region( SP090S155D_device )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1041
     T?1166 = geomGetTexted( spiral_inddef INDDEF_text "SP112C300D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1042
     SP112C300D_device = geomAnd( spiral_body T?1166 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1043
     T?1168 = geomGetTexted( spiral_inddef INDDEF_text "SP140C200D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1044
     SP140C200D_device = geomAnd( spiral_body T?1168 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1045
     T?1170 = geomGetTexted( spiral_inddef INDDEF_text "SP200C200D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1046
     SP200C200D_device = geomAnd( spiral_body T?1170 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1047
     T?1172 = geomGetTexted( spiral_inddef INDDEF_text "SY014C165D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1048
     SY014C165D_device = geomAnd( spiral_body T?1172 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1049
     T?1174 = geomGetTexted( spiral_inddef INDDEF_text "SY015C200D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1050
     SY015C200D_device = geomAnd( spiral_body T?1174 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1051
     T?1176 = geomGetTexted( spiral_inddef INDDEF_text "SY016C180D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1052
     SY016C180D_device = geomAnd( spiral_body T?1176 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1053
     T?1178 = geomGetTexted( spiral_inddef INDDEF_text "SY017C165D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1054
     SY017C165D_device = geomAnd( spiral_body T?1178 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1055
     T?1180 = geomGetTexted( spiral_inddef INDDEF_text "SY019C180D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1056
     SY019C180D_device = geomAnd( spiral_body T?1180 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1057
     T?1182 = geomGetTexted( spiral_inddef INDDEF_text "SY028C160D" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1058
     SY028C160D_device = geomAnd( spiral_body T?1182 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1059
     spiral_body_named_typed = geomCat( SP014S300D_device SP018S300D_device SP020S180D_device SP023S200D_device SP025C200D_device SP026S200D_device SP028S300D_device SP028C200D_device SP030C200D_device SP037S180D_device SP038S300D_device SP040C200D_device SP040C300D_device SP045C200D_device SP047S180D_device SP050S155D_device SP051C300D_device SP068C300D_device SP090C200D_device SP090S155D_device SP112C300D_device SP140C200D_device SP200C200D_device SY014C165D_device SY015C200D_device SY016C180D_device SY017C165D_device SY019C180D_device SY028C160D_device ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1060
     T?1185 = geomGetTexted( spiral_inddef INDDEF_text "model=DI15PT*" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1061
     spiral_body_di_15 = geomAnd( spiral_body T?1185 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1062
     T?1187 = geomGetTexted( spiral_inddef INDDEF_text "model=DI20PT*" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1063
     spiral_body_di_20 = geomAnd( spiral_body T?1187 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1064
     T?1189 = geomGetTexted( spiral_inddef INDDEF_text "model=DI25PT*" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1065
     spiral_body_di_25 = geomAnd( spiral_body T?1189 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1066
     T?1191 = geomGetTexted( spiral_inddef INDDEF_text "model=DI30PT*" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1067
     spiral_body_di_30 = geomAnd( spiral_body T?1191 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1068
     T?1193 = geomGetTexted( spiral_inddef INDDEF_text "model=DI35PT*" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1069
     spiral_body_di_35 = geomAnd( spiral_body T?1193 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1070
     T?1195 = geomGetTexted( spiral_inddef INDDEF_text "model=DI40PT*" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1071
     spiral_body_di_40 = geomAnd( spiral_body T?1195 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1072
     T?1197 = geomGetTexted( spiral_inddef INDDEF_text "model=DI45PT*" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1073
     spiral_body_di_45 = geomAnd( spiral_body T?1197 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1074
     T?1199 = geomGetTexted( spiral_inddef INDDEF_text "model=DI50PT*" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1075
     spiral_body_di_50 = geomAnd( spiral_body T?1199 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1076
     T?1201 = geomGetTexted( spiral_inddef INDDEF_text "model=DI55PT*" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1077
     spiral_body_di_55 = geomAnd( spiral_body T?1201 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1078
     T?1203 = geomGetTexted( spiral_inddef INDDEF_text "model=DI60PT*" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1079
     spiral_body_di_60 = geomAnd( spiral_body T?1203 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1080
     DI15PT_device = geomCat( spiral_body_di_15 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1081
     DI20PT_device = geomCat( spiral_body_di_20 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1082
     DI25PT_device = geomCat( spiral_body_di_25 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1083
     DI30PT_device = geomCat( spiral_body_di_30 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1084
     DI35PT_device = geomCat( spiral_body_di_35 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1085
     DI40PT_device = geomCat( spiral_body_di_40 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1086
     DI45PT_device = geomCat( spiral_body_di_45 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1087
     DI50PT_device = geomCat( spiral_body_di_50 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1088
     DI55PT_device = geomCat( spiral_body_di_55 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1089
     DI60PT_device = geomCat( spiral_body_di_60 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1090
     spiral_body_named_type_diff = geomCat( DI15PT_device DI20PT_device DI25PT_device DI30PT_device DI35PT_device DI40PT_device DI45PT_device DI50PT_device DI55PT_device DI60PT_device ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1091
  ;  region( spiral_body_named_type_diff )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1092
     T?1226 = geomGetTexted( spiral_inddef INDDEF_text "SP014S300C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1093
     SP014S300C_device = geomAnd( spiral_body T?1226 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1094
     T?1228 = geomGetTexted( spiral_inddef INDDEF_text "SP018S300C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1095
     SP018S300C_device = geomAnd( spiral_body T?1228 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1096
     T?1230 = geomGetTexted( spiral_inddef INDDEF_text "SP020S180C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1097
     SP020S180C_device = geomAnd( spiral_body T?1230 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1098
     T?1232 = geomGetTexted( spiral_inddef INDDEF_text "SP023S200C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1099
     SP023S200C_device = geomAnd( spiral_body T?1232 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1100
     T?1234 = geomGetTexted( spiral_inddef INDDEF_text "SP025C200C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1101
     SP025C200C_device = geomAnd( spiral_body T?1234 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1102
     T?1236 = geomGetTexted( spiral_inddef INDDEF_text "SP026S200C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1103
     SP026S200C_device = geomAnd( spiral_body T?1236 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1104
     T?1238 = geomGetTexted( spiral_inddef INDDEF_text "SP028S300C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1105
     SP028S300C_device = geomAnd( spiral_body T?1238 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1106
     T?1240 = geomGetTexted( spiral_inddef INDDEF_text "SP028C200C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1107
     SP028C200C_device = geomAnd( spiral_body T?1240 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1108
     T?1242 = geomGetTexted( spiral_inddef INDDEF_text "SP030C200C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1109
     SP030C200C_device = geomAnd( spiral_body T?1242 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1110
     T?1244 = geomGetTexted( spiral_inddef INDDEF_text "SP037S180C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1111
     SP037S180C_device = geomAnd( spiral_body T?1244 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1112
     T?1246 = geomGetTexted( spiral_inddef INDDEF_text "SP038S300C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1113
     SP038S300C_device = geomAnd( spiral_body T?1246 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1114
     T?1248 = geomGetTexted( spiral_inddef INDDEF_text "SP040C200C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1115
     SP040C200C_device = geomAnd( spiral_body T?1248 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1116
     T?1250 = geomGetTexted( spiral_inddef INDDEF_text "SP040C300C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1117
     SP040C300C_device = geomAnd( spiral_body T?1250 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1118
     T?1252 = geomGetTexted( spiral_inddef INDDEF_text "SP045C200C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1119
     SP045C200C_device = geomAnd( spiral_body T?1252 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1120
     T?1254 = geomGetTexted( spiral_inddef INDDEF_text "SP047S180C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1121
     SP047S180C_device = geomAnd( spiral_body T?1254 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1122
     T?1256 = geomGetTexted( spiral_inddef INDDEF_text "SP050S155C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1123
     SP050S155C_device = geomAnd( spiral_body T?1256 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1124
     T?1258 = geomGetTexted( spiral_inddef INDDEF_text "SP051C300C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1125
     SP051C300C_device = geomAnd( spiral_body T?1258 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1126
     T?1260 = geomGetTexted( spiral_inddef INDDEF_text "SP068C300C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1127
     SP068C300C_device = geomAnd( spiral_body T?1260 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1128
     T?1262 = geomGetTexted( spiral_inddef INDDEF_text "SP090C200C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1129
     SP090C200C_device = geomAnd( spiral_body T?1262 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1130
     T?1264 = geomGetTexted( spiral_inddef INDDEF_text "SP090S155C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1131
     SP090S155C_device = geomAnd( spiral_body T?1264 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1132
     T?1266 = geomGetTexted( spiral_inddef INDDEF_text "SP112C300C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1133
     SP112C300C_device = geomAnd( spiral_body T?1266 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1134
     T?1268 = geomGetTexted( spiral_inddef INDDEF_text "SP140C200C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1135
     SP140C200C_device = geomAnd( spiral_body T?1268 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1136
     T?1270 = geomGetTexted( spiral_inddef INDDEF_text "SP200C200C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1137
     SP200C200C_device = geomAnd( spiral_body T?1270 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1138
     T?1272 = geomGetTexted( spiral_inddef INDDEF_text "SY014C165C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1139
     SY014C165C_device = geomAnd( spiral_body T?1272 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1140
     T?1274 = geomGetTexted( spiral_inddef INDDEF_text "SY015C200C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1141
     SY015C200C_device = geomAnd( spiral_body T?1274 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1142
     T?1276 = geomGetTexted( spiral_inddef INDDEF_text "SY016C180C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1143
     SY016C180C_device = geomAnd( spiral_body T?1276 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1144
     T?1278 = geomGetTexted( spiral_inddef INDDEF_text "SY017C165C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1145
     SY017C165C_device = geomAnd( spiral_body T?1278 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1146
     T?1280 = geomGetTexted( spiral_inddef INDDEF_text "SY019C180C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1147
     SY019C180C_device = geomAnd( spiral_body T?1280 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1148
     T?1282 = geomGetTexted( spiral_inddef INDDEF_text "SY028C160C" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1149
     SY028C160C_device = geomAnd( spiral_body T?1282 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1150
     spiral_body_named_typec = geomCat( SP014S300C_device SP018S300C_device SP020S180C_device SP023S200C_device SP025C200C_device SP026S200C_device SP028S300C_device SP028C200C_device SP030C200C_device SP037S180C_device SP038S300C_device SP040C200C_device SP040C300C_device SP045C200C_device SP047S180C_device SP050S155C_device SP051C300C_device SP068C300C_device SP090C200C_device SP090S155C_device SP112C300C_device SP140C200C_device SP200C200C_device SY014C165C_device SY015C200C_device SY016C180C_device SY017C165C_device SY019C180C_device SY028C160C_device ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1151
     spiral_body_named = geomCat( spiral_body_named_typet spiral_body_named_typed spiral_body_named_type_diff spiral_body_named_typec ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1152
  ;  region( spiral_body_named )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1153
     T?1286 = geomOr( spiral_body_named ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1154
     spiral_body_unknown = geomAndNot( spiral_body T?1286 ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1155
  ;  region( spiral_body_unknown )
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1156
     inddef_bad = geomButtOrOver( INDDEF spiral_body_unknown  )
     errorLayer( inddef_bad "ERC Warning : Name of Spiral not identified" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1157
     inddef_bad_all = geomAvoiding( INDDEF spiral_body_named  )
     errorLayer( inddef_bad_all "ERC Warning : INDDEF does not define a correct spiral or is not valid for this process" ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1158
     bad_spirlay_1 = geomAnd( INDDEF DIFF ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1159
     bad_spirlay_2 = geomAnd( INDDEF implant ) 
-    cpu: 0.0   elapsed: 0   virtual: 150M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 0
 
  ;# 1160
     bad_spirlay_3 = geomAnd( INDDEF POLY1 ) 
@@ -6243,7 +6243,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap  521.8M virt       0 pf
 
  ;# 1304
     m2m3_commonx = geomStraddle( T?1411 VIA2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 147M   task sum: 750
+    cpu: 0.0   elapsed: 1   virtual: 147M   task sum: 750
 
  ;# 1305
     METRES_VIA2 = geomOr( METRES_VIA2 ) 
@@ -11873,7 +11873,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap  521.8M virt       0 pf
 
  ;# 2699
     unstable_device_for_P_NWD_device_Device_43 = unstableDevices( "RCX_DUMMY" P_NWD_device_Device_43 T?3343)
-    cpu: 0.0   elapsed: 0   virtual: 165M   task sum: 505
+    cpu: 0.0   elapsed: 0   virtual: 165M   task sum: 504
 
  ;# 2700
     dataReduction( T?3343 ) 
@@ -14893,7 +14893,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap  521.8M virt       0 pf
 
  ;# 3454
  ;  region( T?2560 )
-    cpu: 0.0   elapsed: 1   virtual: 165M   task sum: 2138
+    cpu: 0.0   elapsed: 0   virtual: 165M   task sum: 2138
 
  ;# 3455
     T?2562  = geomGetEdge( T?3412 over net_psub ) 
@@ -19219,7 +19219,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap  521.8M virt       0 pf
 Total cells checked = 64
 Total rules checked = 4533
 
-Run time =  3.00 seconds
+Run time =  2.00 seconds
 CPU time =  1.20 seconds
 VM HWM   =   522 Mbytes
 Disk HWM =     0 Mbytes

@@ -16,6 +16,8 @@ swapPins("ECG_BIAS" "(p IOUT1 IOUT2 IOUT3 IOUT4 IOUT5 IOUT6 IOUT7)")
 
 swapPins("INVX1" "")
 
+swapPins("Gm_C_filter" "")
+
 swapPins("V1000_20" "")
 
 ; INFORMATION: pinswap analysis failed, cell will be expanded.
