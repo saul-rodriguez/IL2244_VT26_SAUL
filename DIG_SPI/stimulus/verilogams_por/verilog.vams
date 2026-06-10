@@ -229,7 +229,7 @@ module stimulus (
 	task por_test_FECG;
 		begin
 			
-			change_conf0(3'b011,3'b001,1'b1,4'b0000,1'b0,1'b0);  //default gain and filter fECG , sets 0 to BIOCHEM
+			change_conf0(3'b011,3'b001,1'b1,4'b0100,1'b0,1'b0);  //default gain and filter fECG , sets 0 to BIOCHEM
 			send_SPI(8'h00,t_conf0);
 		
 			change_conf1(3'b011,4'b0011,1'b1);  //gain2 ECG,  default ECG
@@ -239,7 +239,7 @@ module stimulus (
 			// Wait after the bor event has passed before config again
 			#(60*MSEC);			
 
-			change_conf0(3'b011,3'b001,1'b1,4'b0000,1'b0,1'b0);  //default gain and filter fECG , sets 0 to BIOCHEM
+			change_conf0(3'b011,3'b001,1'b1,4'b0100,1'b0,1'b0);  //default gain and filter fECG , sets 0 to BIOCHEM
 			send_SPI(8'h00,t_conf0);
 
 			change_conf1(3'b011,4'b0011,1'b1);  //gain2 ECG,  default ECG

@@ -5,7 +5,7 @@
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Wed Jun  3 19:59:52 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Wed Jun 10 12:03:53 2026
 
 Echoing run specific file...
     ;----------------------------------------------------------------------------
@@ -120,7 +120,7 @@ Echoing run specific file...
 
                   Time Summary - Database
 
-reading DFII data. . . .      0 cpu      0 elap 4109.7M virt       4 pf
+reading DFII data. . . .      0 cpu      0 elap 2707.1M virt       0 pf
 duplicate inst removal .      0 cpu      0 elap  171.9M virt       0 pf
 cell boundary layer. . .      0 cpu      0 elap  171.9M virt       0 pf
 small cell flattening. .      0 cpu      0 elap  174.4M virt       0 pf
@@ -142,7 +142,7 @@ duplicate cell removal .      0 cpu      0 elap  176.8M virt       0 pf
 create background layer.      0 cpu      0 elap  196.5M virt       0 pf
 final VDB processing . .      0 cpu      0 elap  196.5M virt       0 pf
 -----------------------------------------------------------------------
-TOTALS (secs). . . . . .      0 cpu      0 elap 4109.7M virt       4 pf
+TOTALS (secs). . . . . .      0 cpu      0 elap 2707.1M virt       0 pf
 
 
 ************************************************************************
@@ -2507,15 +2507,15 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 4109.7M virt       4 pf
 
  ;# 589
     T?397 = geomAndNot( T?396 LVTDEF ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 590
     dataReduction( T?397 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 591
     nmosw_device_all = geomAndNot( T?397 RFDEF ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 592
     dataReduction( nmosw_device_all ) 
@@ -2531,11 +2531,11 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 4109.7M virt       4 pf
 
  ;# 595
     dataReduction( T?399 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 596
     T?400 = geomAndNot( T?399 LVTDEF ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 597
     dataReduction( T?400 ) 
@@ -2543,15 +2543,15 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 4109.7M virt       4 pf
 
  ;# 598
     nmosmw_device_all = geomAndNot( T?400 RFDEF ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 599
     dataReduction( nmosmw_device_all ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 600
  ;  region( nmosmw_device_all )
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 601
     waffle_w_poly1_good = geomButtOrOver( waffle_w_poly1 waffle_w_holes_good ) 
@@ -19667,7 +19667,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 4109.7M virt       4 pf
 
  ;# 4825
     NOFILL = geomOr( NOFILL ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 5
 
  ;# 4826
     dataReduction( NOFILL ) 
@@ -28732,282 +28732,282 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 4109.7M virt       4 pf
 
  ;# 7043
     spac_rpolyh_po2s3 = drcWidenZeroAreaErrorRegion( T?4786 "PO2_S_3 Minimum RPOLYH spacing = 0.75" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7044
     spac_rpolyh_notch_po2s3 = drc( poly2hcheck sep < 0.75 opposite "spac_rpolyh_notch_po2s3 = drc(poly2hcheck (notch < 0.75) opposite)" )
     errorLayer( spac_rpolyh_notch_po2s3 "PO2_S_3 Minimum RPOLYH spacing = 0.75 notch" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7045
     T?4790 = drc( DIFF POLY2 sep < 0.2 "spac_diff_poly2_po2c2 = drc(DIFF POLY2 (sep < 0.2))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7046
     spac_diff_poly2_po2c2 = drcWidenZeroAreaErrorRegion( T?4790 "PO2_C_2 Minimum DIFF to POLY2 spacing = 0.2" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7047
     T?4792 = drc( POLY1 POLY2 sep < 0.65 "spac_poly1_poly2_po2c3 = drc(POLY1 POLY2 (sep < 0.65))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7048
     spac_poly1_poly2_po2c3 = drcWidenZeroAreaErrorRegion( T?4792 "PO2_C_3 Minimum POLY1 to POLY2 spacing = 0.65" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7049
     ovlp_poly2_cont_po2e3_1 = geomStraddle( CONT POLY2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7050
     dataReduction( ovlp_poly2_cont_po2e3_1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7051
     T?4796 = drc( POLY2 CONT enc < 0.25 "ovlp_poly2_cont_po2e3_2 = drc(POLY2 CONT (enc < 0.25))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7052
     ovlp_poly2_cont_po2e3_2 = drcWidenZeroAreaErrorRegion( T?4796 "drc(POLY2 CONT (enc < 0.25))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7053
     dataReduction( ovlp_poly2_cont_po2e3_2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7054
     ovlp_poly2_cont_po2e3_3 = geomCat( ovlp_poly2_cont_po2e3_1 ovlp_poly2_cont_po2e3_2  )
     errorLayer( ovlp_poly2_cont_po2e3_3 "PO2_E_3 Minimum POLY2 enclosure of POLY2CON = 0.25" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7055
     ill_poly2_diff_po2r1 = geomAnd( POLY2 DIFF  )
     errorLayer( ill_poly2_diff_po2r1 "PO2_R_1 POLY2 on DIFF is not allowed" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7056
     T?4800 = drc( PPLUS width < 0.6 "width_pplus_ppw1 = drc(PPLUS (width < 0.6))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7057
     width_pplus_ppw1 = drcWidenZeroAreaErrorRegion( T?4800 "PP_W_1 Minimum PPLUS width = 0.6" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7058
     T?4803 = drc( PPLUS sepNotch < 0.6 "spac_pplus_pps1 = drc(PPLUS (sepNotch < 0.6))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7059
     spac_pplus_pps1 = drcWidenZeroAreaErrorRegion( T?4803 "PP_S_1 Minimum PPLUS spacing = 0.6" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7060
     T?4805 = drc( PPLUS DIFF sep < 0.35 "spac_pplus_diff_ppc1 = drc(PPLUS DIFF (sep < 0.35))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7061
     spac_pplus_diff_ppc1 = drcWidenZeroAreaErrorRegion( T?4805 "PP_C_1 Minimum PPLUS to DIFF spacing = 0.35" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7062
     T?4807 = drc( PPLUS ngate sep < 0.45 "spac_pplus_ngate_ppc2 = drc(PPLUS ngate (sep < 0.45))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7063
     spac_pplus_ngate_ppc2 = drcWidenZeroAreaErrorRegion( T?4807 "PP_C_2 Minimum PPLUS to NGATE spacing = 0.45" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7064
     T?4809 = geomAnd( gate DIFF ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 132
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 132
 
  ;# 7065
     dataReduction( T?4809 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7066
  ;  region( T?4809 )
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 132
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 132
 
  ;# 7067
     gate_w  = geomGetEdge( T?4809 inside DIFF ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 264
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 264
 
  ;# 7068
     dataReduction( gate_w ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7069
     T?4811 = geomAndNot( PPLUS pmosd30m_hvdef_filter ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 18
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 18
 
  ;# 7070
     dataReduction( T?4811 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7071
     T?4813 = drc( T?4811 gate_w enc < 0.45 opposite "ovlp_pplus_pgate_ppc3 = drc(geomAndNot(PPLUS pmosd30m_hvdef_filter) gate_w (enc < 0.45) opposite)" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7072
     ovlp_pplus_pgate_ppc3 = drcWidenZeroAreaErrorRegion( T?4813 "PP_C_3 Minimum PPLUS extension of PGATE = 0.45" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7073
     T?4815 = drc( PPLUS DIFF ovlp < 0.45 "ovlp_pplus_diff_ppo1 = drc(PPLUS DIFF (ovlp < 0.45))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7074
     ovlp_pplus_diff_ppo1 = drcWidenZeroAreaErrorRegion( T?4815 "PP_O_1  Minimum overlap of PPLUS and DIFF = 0.45" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7075
     T?4818 = drc( PPLUS DIFF enc < 0.25 "ovlp_pplus_diff_ppe1 = drc(PPLUS DIFF (enc < 0.25))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7076
     ovlp_pplus_diff_ppe1 = drcWidenZeroAreaErrorRegion( T?4818 "PP_E_1 Minimum PPLUS extension of DIFF = 0.25" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7077
     spac_impl_poly_ppc5_npc5_1 = geomAnd( POLY1 NPLUS ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 128
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 128
 
  ;# 7078
     dataReduction( spac_impl_poly_ppc5_npc5_1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7079
     spac_impl_poly_ppc5_npc5_2 = geomAnd( POLY1 PPLUS ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 19
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 19
 
  ;# 7080
     dataReduction( spac_impl_poly_ppc5_npc5_2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7081
     spac_impl_poly_ppc5_npc5_3 = geomAnd( spac_impl_poly_ppc5_npc5_1 spac_impl_poly_ppc5_npc5_2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7082
     dataReduction( spac_impl_poly_ppc5_npc5_3 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7083
     T?4823 = drc( spac_impl_poly_ppc5_npc5_1 spac_impl_poly_ppc5_npc5_2 sep < 0.25 "spac_impl_poly_ppc5_npc5_4 = drc(spac_impl_poly_ppc5_npc5_1 spac_impl_poly_ppc5_npc5_2 (sep < 0.25))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7084
     spac_impl_poly_ppc5_npc5_4 = drcWidenZeroAreaErrorRegion( T?4823 "drc(spac_impl_poly_ppc5_npc5_1 spac_impl_poly_ppc5_npc5_2 (sep < 0.25))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7085
     dataReduction( spac_impl_poly_ppc5_npc5_4 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7086
     spac_impl_poly_ppc5_npc5 = geomCat( spac_impl_poly_ppc5_npc5_3 spac_impl_poly_ppc5_npc5_3 spac_impl_poly_ppc5_npc5_4  )
     errorLayer( spac_impl_poly_ppc5_npc5 "PP_C_5 NP_C_5 NPC5/PPC5  Minimum PPLUS to NPLUS spacing on POLY1 = 0.25" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7087
     T?4827 = geomAndNot( net_ndiff net_nwell ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 13
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 13
 
  ;# 7088
     dataReduction( T?4827 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7089
     spac_pplus_nplus_diff_ppc6 = geomAnd( net_subtap T?4827  )
     errorLayer( spac_pplus_nplus_diff_ppc6 "PP_C_6 Minimum PPLUS to NPLUS spacing on DIFF with same potential = 0" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7090
     T?4829 = drc( NPLUS width < 0.6 "width_nplus_npw1 = drc(NPLUS (width < 0.6))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7091
     width_nplus_npw1 = drcWidenZeroAreaErrorRegion( T?4829 "NP_W_1 Minimum NPLUS width = 0.6" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7092
     T?4832 = drc( NPLUS sepNotch < 0.6 "spac_nplus_nps1 = drc(NPLUS (sepNotch < 0.6))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7093
     spac_nplus_nps1 = drcWidenZeroAreaErrorRegion( T?4832 "NP_S_1 Minimum NPLUS spacing = 0.6" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7094
     T?4834 = drc( NPLUS DIFF sep < 0.35 "spac_nplus_diff_npc1 = drc(NPLUS DIFF (sep < 0.35))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7095
     spac_nplus_diff_npc1 = drcWidenZeroAreaErrorRegion( T?4834 "NP_C_1 Minimum NPLUS to DIFF spacing = 0.35" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7096
     T?4836 = drc( NPLUS pgate sep < 0.45 "spac_nplus_pgate_npc2_1 = drc(NPLUS pgate (sep < 0.45))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7097
     spac_nplus_pgate_npc2_1 = drcWidenZeroAreaErrorRegion( T?4836 "drc(NPLUS pgate (sep < 0.45))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7098
     dataReduction( spac_nplus_pgate_npc2_1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7099
     T?4838 = geomOr( spac_nplus_pgate_npc2_1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7100
     dataReduction( T?4838 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7101
     spac_nplus_pgate_npc2 = geomAndNot( T?4838 pmosd30m_hvdef_filter  )
     errorLayer( spac_nplus_pgate_npc2 "NP_C_2 Minimum NPLUS to PGATE spacing = 0.45" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7102
     T?4841 = drc( NPLUS gate_w enc < 0.45 opposite "ovlp_nplus_ngate_npc3 = drc(NPLUS gate_w (enc < 0.45) opposite)" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7103
     ovlp_nplus_ngate_npc3 = drcWidenZeroAreaErrorRegion( T?4841 "NP_C_3 Minimum NPLUS extension of NGATE = 0.45" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7104
     T?4843 = drc( NPLUS DIFF ovlp < 0.45 "ovlp_nplus_diff_npo1 = drc(NPLUS DIFF (ovlp < 0.45))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7105
     ovlp_nplus_diff_npo1 = drcWidenZeroAreaErrorRegion( T?4843 "NP_O_1  Minimum overlap of NPLUS and DIFF = 0.45" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7106
     T?4846 = drc( NPLUS DIFF enc < 0.25 "ovlp_nplus_diff_ppe1 = drc(NPLUS DIFF (enc < 0.25))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7107
     ovlp_nplus_diff_ppe1 = drcWidenZeroAreaErrorRegion( T?4846 "NP_E_1 Minimum NPLUS extension of DIFF = 0.25" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7108
     T?4848 = geomAnd( pdiff_n_zener net_nwell ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 8
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 8
 
  ;# 7109
     dataReduction( T?4848 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7110
     spac_pplus_nplus_diff_npc6 = geomAnd( net_welltap T?4848  )
     errorLayer( spac_pplus_nplus_diff_npc6 "NP_C_6 Minimum NPLUS to PPLUS spacing on DIFF with same potential = 0" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7111
     sbdcon_drc = geomAnd( T?836 T?4698 ) 
@@ -52187,9 +52187,9 @@ processCoverage( withinLayer( bLayer_mttv ) precision = 6 backup
 Total cells checked = 6
 Total rules checked = 12713
 
-Run time =  1.00 seconds
+Run time =  2.00 seconds
 CPU time =  0.88 seconds
-VM HWM   =  4110 Mbytes
+VM HWM   =  2707 Mbytes
 Disk HWM =     0 Mbytes
 Disk end =     0 Mbytes
 Eman HWM =     0 Mbytes

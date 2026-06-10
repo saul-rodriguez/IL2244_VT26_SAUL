@@ -235,9 +235,9 @@ module stimulus (
 			change_conf1(3'b011,4'b0011,1'b1);  //gain2 ECG,  default ECG
 			send_SPI(8'h01,t_conf1);
 
-			// A BOR event should happen at around 2000ms
+			// A BOR event should happen at around 40ms
 			// Wait after the bor event has passed before config again
-			#(2200*MSEC);			
+			#(60*MSEC);			
 
 			change_conf0(3'b011,3'b001,1'b1,4'b0000,1'b0,1'b0);  //default gain and filter fECG , sets 0 to BIOCHEM
 			send_SPI(8'h00,t_conf0);

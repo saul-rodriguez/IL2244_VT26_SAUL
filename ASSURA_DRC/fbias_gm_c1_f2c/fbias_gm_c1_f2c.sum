@@ -5,7 +5,7 @@
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Wed Jun  3 19:36:30 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Wed Jun 10 11:58:16 2026
 
 Echoing run specific file...
     ;----------------------------------------------------------------------------
@@ -120,7 +120,7 @@ Echoing run specific file...
 
                   Time Summary - Database
 
-reading DFII data. . . .      0 cpu      0 elap 3999.7M virt       4 pf
+reading DFII data. . . .      0 cpu      0 elap 2322.8M virt       0 pf
 duplicate inst removal .      0 cpu      0 elap  171.9M virt       0 pf
 cell boundary layer. . .      0 cpu      0 elap  171.9M virt       0 pf
 small cell flattening. .      0 cpu      0 elap  171.9M virt       0 pf
@@ -142,7 +142,7 @@ duplicate cell removal .      0 cpu      0 elap  174.4M virt       0 pf
 create background layer.      0 cpu      0 elap  174.4M virt       0 pf
 final VDB processing . .      0 cpu      0 elap  174.4M virt       0 pf
 -----------------------------------------------------------------------
-TOTALS (secs). . . . . .      0 cpu      0 elap 3999.7M virt       4 pf
+TOTALS (secs). . . . . .      0 cpu      0 elap 2322.8M virt       0 pf
 
 
 ************************************************************************
@@ -2378,7 +2378,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 3999.7M virt       4 pf
 
  ;# 557
     T?384 = geomAnd( T?382 T?383 ) 
-    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 558
     dataReduction( T?384 ) 
@@ -2430,11 +2430,11 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 3999.7M virt       4 pf
 
  ;# 570
     T?389 = geomAndNot( pmos_waffle_w MIDOX ) 
-    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 571
     dataReduction( T?389 ) 
-    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 572
     LVTDEF = geomOr( LVTDEF  )
@@ -4520,7 +4520,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 3999.7M virt       4 pf
 
  ;# 1090
     T?712 = geomSize( T?710 0.1 ) 
-    cpu: 0.0   elapsed: 1   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 1091
     dataReduction( T?712 ) 
@@ -19667,7 +19667,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 3999.7M virt       4 pf
 
  ;# 4825
     NOFILL = geomOr( NOFILL ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 4
 
  ;# 4826
     dataReduction( NOFILL ) 
@@ -33584,87 +33584,87 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 3999.7M virt       4 pf
 
  ;# 8238
     spac_lvtdef_diff_s1aalv = drcWidenZeroAreaErrorRegion( T?5662 "S1AALV Minimum LVTDEF to DIFF spacing = 0.35" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 8239
     ill_lvtdef_zener_lvr001 = geomAnd( LVTDEF ZENER  )
     errorLayer( ill_lvtdef_zener_lvr001 "LVR001 LVTDEF over ZENER is not allowed" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 8240
     T?5665 = geomEnclose( LVTDEF gate ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 8241
     dataReduction( T?5665 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 8242
     ill_lvtdef_nogate_lvr002 = geomAndNot( LVTDEF T?5665  )
     errorLayer( ill_lvtdef_nogate_lvr002 "LVR002 LVTDEF outside GATE is not allowed" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 8243
     lvta_out_sfcdef = geomAndNot( LVTA SFCDEF  )
     errorLayer( lvta_out_sfcdef "LVR003: LVTA outside SFCDEF will be removed and regenerated" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 8244
     lvptub_out_sfcdef = geomAndNot( LVPTUB SFCDEF  )
     errorLayer( lvptub_out_sfcdef "LFR001: LVPTUB outside SFCDEF will be removed and regenerated" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 8245
     T?5669 = geomAnd( ngate MIDOX ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 8246
     dataReduction( T?5669 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 8247
     T?5670 = geomAnd( T?5669 LVTDEF ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 8248
     dataReduction( T?5670 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 8249
     nmosml_w = drc( T?5670 POLY1 enc == 0 opposite edgea ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 8250
     dataReduction( nmosml_w ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 8251
     T?5673 = drc( nmosml_w width < 0.5 "length_nmosml_r1 = drc(nmosml_w (width < 0.5))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 8252
     length_nmosml_r1 = drcWidenZeroAreaErrorRegion( T?5673 "NMOSML_R1 Minimum GATE length of NMOSML = 0.5" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 8253
     T?5675 = geomAnd( pgate MIDOX ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 8254
     dataReduction( T?5675 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 8255
     T?5676 = geomAnd( T?5675 LVTDEF ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 8256
     dataReduction( T?5676 ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 8257
     pmosml_w = drc( T?5676 POLY1 enc == 0 opposite edgea ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 8258
     dataReduction( pmosml_w ) 
@@ -51437,7 +51437,7 @@ processCoverage( withinLayer( bLayer_mttv ) precision = 6 backup
         poly1Ratio = ( net_poly1.perimeter * 0.282 ) / gate_T?9349.area 
         AR1_error = drcAntenna( net_poly1 ( gate_T?9349 ) poly1Ratio  200 < keep "AR1: Maximum ratio of floating POLY1 edge area to connected GATE area = 200" ) 
     )
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 12565
     geomFlushConnect( net_poly1 poly1_copy1 poly1_copy2 gate_T?9349 )
@@ -52172,7 +52172,7 @@ processCoverage( withinLayer( bLayer_mttv ) precision = 6 backup
         spirRatio = spiral_term11.area / spiral_term22.area 
         spiral_open = drcAntenna( spiral_term11 ( spiral_term22 ) spirRatio  0.1 < ignore < 2 "ERC Warning : This spiral is open" ) 
     )
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 199M   task sum: 0
 
  ;# 12713
     bkgnd3 = geomOr( substrate_all  )
@@ -52189,7 +52189,7 @@ Total rules checked = 12713
 
 Run time =  1.00 seconds
 CPU time =  0.76 seconds
-VM HWM   =  4000 Mbytes
+VM HWM   =  2323 Mbytes
 Disk HWM =     0 Mbytes
 Disk end =     0 Mbytes
 Eman HWM =     0 Mbytes

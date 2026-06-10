@@ -5,7 +5,7 @@
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Wed Jun  3 18:47:20 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Wed Jun 10 12:15:09 2026
 
 Echoing run specific file...
     ;----------------------------------------------------------------------------
@@ -120,7 +120,7 @@ Echoing run specific file...
 
                   Time Summary - Database
 
-reading DFII data. . . .      0 cpu      0 elap 3920.3M virt       4 pf
+reading DFII data. . . .      0 cpu      0 elap 2829.1M virt       0 pf
 duplicate inst removal .      0 cpu      0 elap  171.9M virt       0 pf
 cell boundary layer. . .      0 cpu      0 elap  171.9M virt       0 pf
 small cell flattening. .      0 cpu      0 elap  174.4M virt       0 pf
@@ -142,7 +142,7 @@ duplicate cell removal .      0 cpu      0 elap  176.8M virt       0 pf
 create background layer.      0 cpu      0 elap  196.5M virt       0 pf
 final VDB processing . .      0 cpu      0 elap  196.5M virt       0 pf
 -----------------------------------------------------------------------
-TOTALS (secs). . . . . .      0 cpu      0 elap 3920.3M virt       4 pf
+TOTALS (secs). . . . . .      0 cpu      0 elap 2829.1M virt       0 pf
 
 
 ************************************************************************
@@ -728,7 +728,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 3920.3M virt       4 pf
 
  ;# 145
     T?207 = geomOr( VIA1 CONT ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 14492
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 14492
 
  ;# 146
     dataReduction( T?207 ) 
@@ -736,15 +736,15 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 3920.3M virt       4 pf
 
  ;# 147
     via_cont_pin = geomOr( T?207 MET1_pinshape ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 14492
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 14492
 
  ;# 148
     dataReduction( via_cont_pin ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 149
  ;  region( via_cont_pin )
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 14492
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 14492
 
  ;# 150
     T?209 = geomOr( VIA2 VIA1 ) 
@@ -9989,7 +9989,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 3920.3M virt       4 pf
 
  ;# 2450
  ;  via( net_poly1con net_poly1 )
-    cpu: 0.0   elapsed: 1   virtual: 204M   task sum: 1664
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 1664
 
  ;# 2451
  ;  via( net_ndiffcon net_met1 )
@@ -19667,7 +19667,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 3920.3M virt       4 pf
 
  ;# 4825
     NOFILL = geomOr( NOFILL ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 11
 
  ;# 4826
     dataReduction( NOFILL ) 
@@ -29477,7 +29477,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 3920.3M virt       4 pf
  ;# 7225
     ill_via1_met1 = geomAndNot( VIA1 met1_withslots  )
     errorLayer( ill_via1_met1 "ERC Warning: Via1 missing metal1" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 1   virtual: 204M   task sum: 0
 
  ;# 7226
     dataReduction( ill_via1_met1 ) 
@@ -33427,244 +33427,244 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 3920.3M virt       4 pf
 
  ;# 8200
     dataReduction( poa_trans_4oa ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8201
     T?5629 = geomOr( pad_oa_trans_good_all ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8202
     dataReduction( T?5629 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8203
     T?5630 = geomAndNot( poa_trans_4oa T?5629 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8204
     dataReduction( T?5630 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8205
     poa_trans_4oa_err = geomAndNot( T?5630 poa_trans_disabled  )
     errorLayer( poa_trans_4oa_err "PAR009: PAD_4OA overlapping GATE is not allowed,  Exemptions : HV_GATE  with HVDEF text ESD*/ LV_GATE L <= 0.5, total active trans W >= 400/ HV_GATE L = MIN, total active trans W >= 400 / LV_GATE overlapping holed POLY1 ..waffel trans" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8206
     T?5632 = drc( HRES width < 0.6 "width_hres_w1hr = drc(HRES (width < 0.6))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8207
     width_hres_w1hr = drcWidenZeroAreaErrorRegion( T?5632 "W1HR Minimum HRES width = 0.6" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8208
     T?5635 = drc( HRES sepNotch < 0.6 "spac_hres_s1hr = drc(HRES (sepNotch < 0.6))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8209
     spac_hres_s1hr = drcWidenZeroAreaErrorRegion( T?5635 "S1HRHR Minimum HRES spacing = 0.6" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8210
     ill_hres_diff_bad1hr = geomAnd( HRES DIFF  )
     errorLayer( ill_hres_diff_bad1hr "BAD1HR HRES is not allowed over DIFF" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8211
     ill_hres_nplus_bad2hr = geomAnd( HRES NPLUS  )
     errorLayer( ill_hres_nplus_bad2hr "BAD2HR HRES is not allowed over NPLUS" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8212
     ill_hres_poly1_bad3hr = geomAnd( HRES POLY1  )
     errorLayer( ill_hres_poly1_bad3hr "BAD3HR HRES is not allowed over POLY1" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8213
     ovlp_hres_poly2_e1hrp2_1 = geomAnd( HRES poly2_cut ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 15
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 15
 
  ;# 8214
     dataReduction( ovlp_hres_poly2_e1hrp2_1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8215
     T?5642 = drc( HRES ovlp_hres_poly2_e1hrp2_1 enc < 3 "ovlp_hres_poly2_e1hrp2 = drc(HRES ovlp_hres_poly2_e1hrp2_1 (enc < 3))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8216
     ovlp_hres_poly2_e1hrp2 = drcWidenZeroAreaErrorRegion( T?5642 "E1HRP2 Minimum HRES enclosure of POLY2 = 3" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8217
     T?5644 = drc( HRES poly1_cut sep < 0.35 "spac_hres_poly1_s1hrp1 = drc(HRES poly1_cut (sep < 0.35))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8218
     spac_hres_poly1_s1hrp1 = drcWidenZeroAreaErrorRegion( T?5644 "S1HRP1 Minimum HRES to POLY1 spacing = 0.35" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8219
     T?5646 = drc( HRES poly2_cut sep < 3 "spac_hres_poly2_s1hrp2 = drc(HRES poly2_cut (sep < 3))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8220
     spac_hres_poly2_s1hrp2 = drcWidenZeroAreaErrorRegion( T?5646 "S1HRP2 Minimum HRES to POLY2 spacing = 3" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8221
     T?5648 = drc( HRES DIFF sep < 0.35 "spac_hres_diff_s1dfhr = drc(HRES DIFF (sep < 0.35))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8222
     spac_hres_diff_s1dfhr = drcWidenZeroAreaErrorRegion( T?5648 "S1DFHR  Minimum HRES to DIFF spacing = 0.35" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8223
     T?5650 = drc( LVTDEF width < 0.6 "width_lvtdef_w1lv = drc(LVTDEF (width < 0.6))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8224
     width_lvtdef_w1lv = drcWidenZeroAreaErrorRegion( T?5650 "W1LV Minimum LVTDEF width = 0.6" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8225
     T?5653 = drc( LVTDEF sepNotch < 0.6 "spac_lvtdef_s1lvlv = drc(LVTDEF (sepNotch < 0.6))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8226
     spac_lvtdef_s1lvlv = drcWidenZeroAreaErrorRegion( T?5653 "S1LVLV Minimum LVTDEF spacing = 0.6" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8227
     T?5655 = geomButtOrOver( LVTDEF DIFF ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8228
     dataReduction( T?5655 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8229
     T?5656 = geomEnclose( LVTDEF DIFF ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8230
     dataReduction( T?5656 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8231
     ovlp_lvtdef_diff_e1lvaa_1 = geomAndNot( T?5655 T?5656 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8232
     dataReduction( ovlp_lvtdef_diff_e1lvaa_1 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8233
     T?5659 = drc( LVTDEF DIFF enc < 0.25 "ovlp_lvtdef_diff_e1lvaa_2 = drc(LVTDEF DIFF (enc < 0.25))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8234
     ovlp_lvtdef_diff_e1lvaa_2 = drcWidenZeroAreaErrorRegion( T?5659 "drc(LVTDEF DIFF (enc < 0.25))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8235
     dataReduction( ovlp_lvtdef_diff_e1lvaa_2 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8236
     ovlp_lvtdef_diff_e1lvaa = geomCat( ovlp_lvtdef_diff_e1lvaa_1 ovlp_lvtdef_diff_e1lvaa_2  )
     errorLayer( ovlp_lvtdef_diff_e1lvaa "E1LVAA Minimum LVTDEF enclosure of DIFF = 0.25" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8237
     T?5662 = drc( LVTDEF DIFF sep < 0.35 "spac_lvtdef_diff_s1aalv = drc(LVTDEF DIFF (sep < 0.35))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8238
     spac_lvtdef_diff_s1aalv = drcWidenZeroAreaErrorRegion( T?5662 "S1AALV Minimum LVTDEF to DIFF spacing = 0.35" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8239
     ill_lvtdef_zener_lvr001 = geomAnd( LVTDEF ZENER  )
     errorLayer( ill_lvtdef_zener_lvr001 "LVR001 LVTDEF over ZENER is not allowed" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8240
     T?5665 = geomEnclose( LVTDEF gate ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8241
     dataReduction( T?5665 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8242
     ill_lvtdef_nogate_lvr002 = geomAndNot( LVTDEF T?5665  )
     errorLayer( ill_lvtdef_nogate_lvr002 "LVR002 LVTDEF outside GATE is not allowed" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8243
     lvta_out_sfcdef = geomAndNot( LVTA SFCDEF  )
     errorLayer( lvta_out_sfcdef "LVR003: LVTA outside SFCDEF will be removed and regenerated" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8244
     lvptub_out_sfcdef = geomAndNot( LVPTUB SFCDEF  )
     errorLayer( lvptub_out_sfcdef "LFR001: LVPTUB outside SFCDEF will be removed and regenerated" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8245
     T?5669 = geomAnd( ngate MIDOX ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8246
     dataReduction( T?5669 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8247
     T?5670 = geomAnd( T?5669 LVTDEF ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8248
     dataReduction( T?5670 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8249
     nmosml_w = drc( T?5670 POLY1 enc == 0 opposite edgea ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8250
     dataReduction( nmosml_w ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8251
     T?5673 = drc( nmosml_w width < 0.5 "length_nmosml_r1 = drc(nmosml_w (width < 0.5))" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8252
     length_nmosml_r1 = drcWidenZeroAreaErrorRegion( T?5673 "NMOSML_R1 Minimum GATE length of NMOSML = 0.5" ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8253
     T?5675 = geomAnd( pgate MIDOX ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8254
     dataReduction( T?5675 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8255
     T?5676 = geomAnd( T?5675 LVTDEF ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8256
     dataReduction( T?5676 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8257
     pmosml_w = drc( T?5676 POLY1 enc == 0 opposite edgea ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 8258
     dataReduction( pmosml_w ) 
@@ -34432,7 +34432,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 3920.3M virt       4 pf
 
  ;# 8443
     dataReduction( met1_holes ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 255
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 255
 
  ;# 8444
  ;  region( met1_holes )
@@ -40439,7 +40439,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 3920.3M virt       4 pf
  ;# 9938
     met4_blockfillarea = geomAndNot( T?6918 NOFILL  )
     errorLayer( met4_blockfillarea "AMTS1 Maximum MTOP spacing when the width of one or both MTOP shapes is less than 10um = 10" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 2
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 3
 
  ;# 9939
     T?6920 = geomOr( MET4 ) 
@@ -41447,7 +41447,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 3920.3M virt       4 pf
 
  ;# 10187
     dataReduction( trans_with_name ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 97
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 97
 
  ;# 10188
     ngate_sd = geomButtOnly( net_ndiff ngate ) 
@@ -41720,7 +41720,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 3920.3M virt       4 pf
 
  ;# 10255
     dataReduction( T?7174 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 21
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 21
 
  ;# 10256
     T?7175 = geomOverSizePrep( T?7173 2.5 ) 
@@ -42407,7 +42407,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 3920.3M virt       4 pf
 
  ;# 10423
     dataReduction( T?7289 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 11
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 11
 
  ;# 10424
     T?7290 = geomOverSizePrep( T?7289 1 ) 
@@ -43132,7 +43132,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 3920.3M virt       4 pf
 
  ;# 10604
     dataReduction( T?7427 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 61
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 61
 
  ;# 10605
     T?7428 = geomOverSizePrep( T?7426 1 ) 
@@ -43232,7 +43232,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 3920.3M virt       4 pf
 
  ;# 10629
     dataReduction( T?7447 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 21
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 21
 
  ;# 10630
     T?7448 = geomOverSizePrep( T?7446 1 ) 
@@ -52187,9 +52187,9 @@ processCoverage( withinLayer( bLayer_mttv ) precision = 6 backup
 Total cells checked = 11
 Total rules checked = 12713
 
-Run time =  2.00 seconds
-CPU time =  1.18 seconds
-VM HWM   =  3920 Mbytes
+Run time =  1.00 seconds
+CPU time =  1.17 seconds
+VM HWM   =  2829 Mbytes
 Disk HWM =     0 Mbytes
 Disk end =     0 Mbytes
 Eman HWM =     0 Mbytes

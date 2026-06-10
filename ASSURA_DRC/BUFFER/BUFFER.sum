@@ -5,7 +5,7 @@
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Wed Jun  3 21:19:28 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Wed Jun 10 13:17:22 2026
 
 Echoing run specific file...
     ;----------------------------------------------------------------------------
@@ -120,7 +120,7 @@ Echoing run specific file...
 
                   Time Summary - Database
 
-reading DFII data. . . .      0 cpu      0 elap 2963.1M virt       2 pf
+reading DFII data. . . .      0 cpu      0 elap 3082.4M virt       0 pf
 duplicate inst removal .      0 cpu      0 elap  171.9M virt       0 pf
 cell boundary layer. . .      0 cpu      0 elap  171.9M virt       0 pf
 small cell flattening. .      0 cpu      0 elap  171.9M virt       0 pf
@@ -139,10 +139,10 @@ small cell flattening. .      0 cpu      0 elap  174.4M virt       0 pf
 group shapes processing.      0 cpu      0 elap  174.4M virt       0 pf
 duplicate inst removal .      0 cpu      0 elap  174.4M virt       0 pf
 duplicate cell removal .      0 cpu      0 elap  174.4M virt       0 pf
-create background layer.      0 cpu      0 elap  194.0M virt       0 pf
-final VDB processing . .      0 cpu      0 elap  194.0M virt       0 pf
+create background layer.      0 cpu      0 elap  196.5M virt       0 pf
+final VDB processing . .      0 cpu      0 elap  196.5M virt       0 pf
 -----------------------------------------------------------------------
-TOTALS (secs). . . . . .      0 cpu      0 elap 2963.1M virt       2 pf
+TOTALS (secs). . . . . .      0 cpu      0 elap 3082.4M virt       0 pf
 
 
 ************************************************************************
@@ -2507,15 +2507,15 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 2963.1M virt       2 pf
 
  ;# 589
     T?397 = geomAndNot( T?396 LVTDEF ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 590
     dataReduction( T?397 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 591
     nmosw_device_all = geomAndNot( T?397 RFDEF ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 592
     dataReduction( nmosw_device_all ) 
@@ -2523,7 +2523,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 2963.1M virt       2 pf
 
  ;# 593
  ;  region( nmosw_device_all )
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 594
     T?399 = geomAnd( nmos_waffle_w MIDOX ) 
@@ -2539,7 +2539,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 2963.1M virt       2 pf
 
  ;# 597
     dataReduction( T?400 ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
 
  ;# 598
     nmosmw_device_all = geomAndNot( T?400 RFDEF ) 
@@ -5040,7 +5040,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 2963.1M virt       2 pf
 
  ;# 1220
     dataReduction( poly1check ) 
-    cpu: 0.0   elapsed: 0   virtual: 206M   task sum: 1158
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 1158
 
  ;# 1221
     T?772 = geomOr( pres45 ) 
@@ -5152,7 +5152,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 2963.1M virt       2 pf
 
  ;# 1248
     dataReduction( poly2hcheck ) 
-    cpu: 0.0   elapsed: 0   virtual: 206M   task sum: 64
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 64
 
  ;# 1249
     T?784 = geomOr( presz45 ) 
@@ -5268,7 +5268,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 2963.1M virt       2 pf
 
  ;# 1277
     dataReduction( ntubcheck ) 
-    cpu: 0.0   elapsed: 0   virtual: 206M   task sum: 16
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 16
 
  ;# 1278
     T?797 = geomOr( nmosh HVDEF ) 
@@ -6320,7 +6320,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 2963.1M virt       2 pf
 
  ;# 1539
  ;  region( NMOS30M_device )
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 1   virtual: 204M   task sum: 0
 
  ;# 1540
     NMOS18T_device = geomCat( nmos18t_double ) 
@@ -9331,7 +9331,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 2963.1M virt       2 pf
 
  ;# 2289
     m2m3_commonx = geomStraddle( T?1488 VIA2 ) 
-    cpu: 0.0   elapsed: 1   virtual: 204M   task sum: 111
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 111
 
  ;# 2290
     dataReduction( m2m3_commonx ) 
@@ -19667,7 +19667,7 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 2963.1M virt       2 pf
 
  ;# 4825
     NOFILL = geomOr( NOFILL ) 
-    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 14
 
  ;# 4826
     dataReduction( NOFILL ) 
@@ -31379,49 +31379,49 @@ TOTALS (secs). . . . . .      0 cpu      0 elap 2963.1M virt       2 pf
 
  ;# 7692
     spac_poly2_bondpad_s1p2pa = drcWidenZeroAreaErrorRegion( T?5321 "S1P2PA Minimum PAD_ST to POLY2 spacing = 9" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7693
     T?5324 = drc( net_bondpad_st net_met1 sep < 9 diffNet "spac_met1_bondpad_s1m1pa = drc(net_bondpad_st net_met1 (sep < 9) diffNet)" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7694
     spac_met1_bondpad_s1m1pa = drcWidenZeroAreaErrorRegion( T?5324 "S1M1PA Minimum PAD_ST to MET1 spacing (different net) = 9" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7695
     T?5327 = drc( net_bondpad_st net_met2 sep < 9 diffNet "spac_met2_bondpad_s1m2pa = drc(net_bondpad_st net_met2 (sep < 9) diffNet)" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7696
     spac_met2_bondpad_s1m2pa = drcWidenZeroAreaErrorRegion( T?5327 "S1M2PA Minimum PAD_ST to MET2 spacing (different net) = 9" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7697
     T?5330 = drc( net_bondpad_st net_met3 sep < 9 diffNet "spac_met3_bondpad_s1m3pa = drc(net_bondpad_st net_met3 (sep < 9) diffNet)" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7698
     spac_met3_bondpad_s1m3pa = drcWidenZeroAreaErrorRegion( T?5330 "S1M3PA Minimum PAD_ST to MET3 spacing (different net) = 9" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7699
     T?5333 = drc( net_bondpad_st net_met4 sep < 9 diffNet "spac_met4_bondpad_s1m4pa = drc(net_bondpad_st net_met4 (sep < 9) diffNet)" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7700
     spac_met4_bondpad_s1m4pa = drcWidenZeroAreaErrorRegion( T?5333 "S1M4PA Minimum PAD_ST to MET4 spacing (different net) = 9" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7701
     ill_pad_missing_met4_r01pa = geomAndNot( PAD MET4  )
     errorLayer( ill_pad_missing_met4_r01pa "R01PA PAD without MET4 is not allowed" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7702
     pad_poa_all_met1 = geomInside( pad_poa_all MET1  )
     errorLayer( pad_poa_all_met1 "TOPOLOGY PROBLEM : POA pad met 4 stack found, but totally enclosed by MET1" ) 
-    cpu: 0.0   elapsed: 0   virtual: 201M   task sum: 0
+    cpu: 0.0   elapsed: 0   virtual: 204M   task sum: 0
 
  ;# 7703
     pad_3oa_2 = geomOr( pad_3oa  )
@@ -52188,8 +52188,8 @@ Total cells checked = 8
 Total rules checked = 12713
 
 Run time =  1.00 seconds
-CPU time =  0.99 seconds
-VM HWM   =  2963 Mbytes
+CPU time =  0.98 seconds
+VM HWM   =  3082 Mbytes
 Disk HWM =     0 Mbytes
 Disk end =     0 Mbytes
 Eman HWM =     0 Mbytes
