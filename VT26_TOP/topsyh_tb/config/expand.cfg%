@@ -1,4 +1,4 @@
-//Revision 11
+//Revision 13
 //NOTE
 // Default austriamicrosystems template for AMS Designer
 // Note:
@@ -17,9 +17,11 @@ viewlist verilogams, veriloga, behavioral, functional, \module , schematic, spec
 stoplist symbol, spectre;
 
 
-cell DIG_SPI.stimulus binding :verilogams_por;
+cell DIG_SPI.stimulus binding :verilogams;
 
 cell Potentiostat_Top.topsyh binding :av_extracted_rc_fast;
+
+cell VT26_TOP.topsyhb binding :schematic;
 
 
 endconfig
