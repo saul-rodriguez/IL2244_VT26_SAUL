@@ -90,14 +90,14 @@ module stimulus (
 		SPI_MOSI = 1'b0;
 
         //Reset
-		#(10*SPI_CLK_DELAY) reset_l = 1'b0;
-		#(10*SPI_CLK_DELAY) reset_l = 1'b1;
-		#(10*SPI_CLK_DELAY);
+		//#(10*SPI_CLK_DELAY) reset_l = 1'b0;
+		//#(10*SPI_CLK_DELAY) reset_l = 1'b1;
+		//#(10*SPI_CLK_DELAY);
 
 		/****************/
 		/* Default conf, internal CMFB enabled */
 		/****************/
-		default_all;
+		//default_all;
 
 		/****************/
 		/* Default conf no intern CMFB (needs to connect 3rd RL electrode ) */
@@ -122,8 +122,8 @@ module stimulus (
 		// Set a delay 10ms after the porl signal is finised before configuring a register
 		// A BOR event can be placed at 2000ms
 		// Disable the Reset section above!
-		//#(10*MSEC);
-	    //por_test_FECG;
+		#(10*MSEC);
+	    por_test_FECG;
 
 
 		/*****************/
