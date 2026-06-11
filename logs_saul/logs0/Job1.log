@@ -1,113 +1,590 @@
-*Info*    Exporting services from client ... 
-
-*Info*    Client has finished starting ... 
-
-
-
-*Info*    Configuring the session ...
-
-	Library      = FECG
-	Cell         = buffer_tb
-	View         = config
-	Simulator    = spectre
-	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = VIN_spectre_state1_Interactive.48
-	Results DB   = /home/saul/projects/IL2244_VT26_SAUL/FECG/buffer_tb/adexl/results/data/Interactive.48.rdb
-	Results Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.48/1/VIN
-	Results Loc  = /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data
-	Project Dir  = /home/saul/projects/IL2244_VT26_SAUL/Sim
-	Setup DB loc = /home/saul/projects/IL2244_VT26_SAUL/FECG/buffer_tb/adexl
-	File Encoding = 0
-
-
-
-*Info*    The auto suspension is disabled.
-
-Loading monte.cxt 
-
-
-
-
-
-*Info*    Run start for Point ID (0 1) on testbench [ VIN ].
-
-Resetting statistical vars
-
-*Info*    Setting parameter values ...
-
-Setting var VCM = "1.6"
-Setting var VDD = "3.3"
-Setting var VDD_PULSE = "0"
-Setting var VDD_RT = "1u"
-Setting var VIN_PULSE = "10m"
-Setting var temperature = "27"
-Setting temp(T) = 27
-
-*Info*    Netlist Directory =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.48/1/VIN/netlist
-
-
-*Info*    Data Directory    =
-          /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.48/1/VIN
-
-
-*Info*    Creating Netlist for Point ID (0 1)
-
-generate netlist...
-Loading hnlInit.cxt 
-Loading seCore.cxt 
-function ansCdlCompPrim redefined
-function ansCdlCompPrim redefined
-Initializing the control file using cp:
-    cp /opt/tools/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.48/1/VIN/netlist/control
-Copying Spectre source file 'spectre.inp'
-Copying Spectre command file 'spectre.sim'
-Begin Incremental Netlisting May 14 20:09:59 2026
-Loading json.cxt 
-End netlisting May 14 20:09:59 2026
-
-Netlisting Statistics:
-	Number of components:  144
-
-	Elapsed time:          0.0s
-Errors: 0	Warnings: 0
-      ...successful.
-compose simulator input file...
-      ...successful.
-
-*Info*    Running simulation on testbench [ VIN ] for Point ID (0 1).
-
-Delete psf data in /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.48/1/VIN/psf.
-compose simulator input file...
-      ...successful.
-start simulator if needed...
-      ...successful.
-simulate...
-To view the simulator output, right-click on the test name, result 
-name, or any value in the "Results" tab of the Outputs section and 
-choose "Output Log" menu option.
-WARNING (ADE-3080): Fast viewing extensions for PSF XL format (also known as RTSF) will be discontinued  
-       and Virtuoso Visualization and Analysis XL will not use RTSF data to plot waveforms from IC6.1.8 ISR7 onward. 
-       There will be no performance impact on data visualization due to this change.
-Loading paraplot.cxt 
-INFO (ADE-3071): Simulation completed successfully.
-reading simulation data...
-      ...successful.
-*Info*    Client has finished evaluating ... 
-
-WARNING (OCN-6038): Results dc are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.48/1/VIN. Use results() for a list of available results.
-WARNING (OCN-6038): Results dc are not available for /home/saul/projects/IL2244_VT26_SAUL/Sim/FECG/buffer_tb/adexl/results/data/Interactive.48/1/VIN. Use results() for a list of available results.
-ERROR (ADEXL-2709): Evaluation of output 'DC_GAIN' returned 'nil' for point:'1' test:'VIN'
-	Expression:'deriv(v("/VOUT" ?result "dc"))'.
-Ensure that the definition of output is correct.
-
-
-*Info*    Run complete for Point ID (0 1) on testbench [ VIN ].
-
-
-
-
-
-Simulation design variables differ from those on the cellView,
-they have been saved in the file "/tmp/saved-design-variables".
-To save future changes, copy variables to cellView before exiting.
+[Simulation Monitor: 1]
+[2026-06-11 05:05:51.462 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation Monitor has successfully started up. Trying to set up communication channels to other components ... {"hostname": "edatools", "processid": 1323846, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log"}
+[2026-06-11 05:05:51.462 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Communication channels have been successfully set up. Start processing events ... {"hostname": "edatools", "processid": 1323846, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log"}
+[2026-06-11 05:05:51.462 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Considering to start history {"hostname": "edatools", "processid": 1323846, "history": "Interactive.190", "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log"}
+[2026-06-11 05:05:51.463 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - HostInfo:
+Host name (type):	edatools (x86_64)
+Operating system:	Linux 6.17.0-29-generic #29~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon May 11 10:30:58 UTC 2 {"hostname": "edatools", "processid": 1323846, "history": "Interactive.190", "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "nodename": "edatools", "domainname": "(none)", "machine": "x86_64", "sysname": "Linux", "release": "6.17.0-29-generic", "version": "#29~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon May 11 10:30:58 UTC 2"}
+[2026-06-11 05:05:51.463 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - UsageInfo:
+pid=1323846
+totalPhysicalMemory=62.544979GB,Used=41.851978GB,totalVirtualMemory=70.544975GB,Used=41.851978GB
+Cpu: Cores=16, Load average:1.910000,1.230000,0.730000 {"hostname": "edatools", "processid": 1323846, "history": "Interactive.190", "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "pid": "1323846", "totalPhysicalMemory": "62.544979", "physicalMemoryUsed": "41.851978", "totalVirtualMemory": "70.544975", "virtualMemoryUsed": "41.851978", "cpuCores": "16", "processes": "2227", "loadAverage1": "1.910000", "loadAverage5": "1.230000", "loadAverage15": "0.730000", "loadAverage1Percent": "0.119375"}
+[2026-06-11 05:05:51.464 Z] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal", "event": "NewPoint", "EventSource": "Simulation Monitor", "HistoryName": "Interactive.190", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "logFileSize": "2202"}
+[2026-06-11 05:05:51.564 Z] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal", "event": "NewPoint", "EventSource": "ams", "HistoryName": "Interactive.190", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/Sim/VT26_TOP/topsyh_tb/maestro/results/maestro/Interactive.190/1/VT26_TOP_top_tb_DC/psf/xrun.log", "logFileSize": "-1"}
+[2026-06-11 05:05:51.578 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator launched {"hostname": "edatools", "processid": 1323846, "history": "Interactive.190", "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "simid": "1"}
+[2026-06-11 05:05:51.582 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Expression evaluator launched {"hostname": "edatools", "processid": 1323846, "history": "Interactive.190", "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log"}
+[2026-06-11 05:05:51.611 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started Simulation {"hostname": "edatools", "processid": 1323846, "history": "Interactive.190", "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "event": "started", "task": "simulation"}
+[2026-06-11 05:06:10.180 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during circuit read-in.
+    Pre_Configuration file used: /opt/tools/cadence/installs/SPECTRE241/tools.lnx86/spectre/etc/configs/preset.precfg
+    Configuration file used: `/opt/tools/cadence/installs/SPECTRE241/tools.lnx86/spectre/etc/configs/preset.cfg'.
+    Configuration file used: `/opt/tools/cadence/installs/SPECTRE241/tools.lnx86/spectre/etc/configs/ams.cfg'. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:10.680 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (VACOMP-2435): The environment variable CDS_AHDLCMI_ENABLE is no longer supported. Therefore, the simulator will use the default compiled C code flow. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:11.695 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 552 Mbytes. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:16.209 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3029): The dummy capacitor topsyh_tb.I0.I3|I19|RLIB_GC1.CS1 is removed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:16.210 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3012): The dummy device topsyh_tb.I0.I4|I25|I33|MN22(1) is removed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:16.210 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3029): The dummy capacitor topsyh_tb.I0.I1|I0|R3.CS0 is removed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:16.210 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3029): The dummy capacitor topsyh_tb.I0.I4|I25|R1.CS0 is removed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:16.210 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3029): The dummy capacitor topsyh_tb.I0.I1|I4|R31.CS0 is removed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:16.210 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3029): The dummy capacitor topsyh_tb.I0.I4|I25|R1.CS1 is removed.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:16.210 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3030): The dangling capacitor topsyh_tb.I0.c13802 is removed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:16.210 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3026): The shorted/dummy resistor topsyh_tb.I0.I3|I46|R2_4__rcx is removed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:16.210 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3026): The shorted/dummy resistor topsyh_tb.I0.I3|I46|R2_1__rcx is removed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:16.210 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3012): The dummy device topsyh_tb.I0.I1|I2|Q3(30)_turbo_m63 is removed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:16.210 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3013): The dangling device topsyh_tb.I0.I3|I6|avD41_3_turbo_m10.I4 is removed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:16.210 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3012): The dummy device topsyh_tb.I0.I29|I15|Q6(23)_turbo_m24 is removed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:16.210 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3026): The shorted/dummy resistor topsyh_tb.I0.I3|I46|R2_3__rcx is removed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:16.211 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3012): The dummy device topsyh_tb.I0.I2|I2|MP31(3)_turbo_m4 is removed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:16.211 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3026): The shorted/dummy resistor topsyh_tb.I0.I3|I46|R2_2__rcx is removed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:16.211 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3012): The dummy device topsyh_tb.I0.I29|I15|MN31(3)_turbo_m4 is removed.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:16.211 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3026): The shorted/dummy resistor topsyh_tb.I0.I3|I46|R2_6__rcx is removed.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:16.211 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3015): The dangling node topsyh_tb.I0.avC121 is removed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:16.211 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3016): The floating node vdd3r1! is removed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:16.211 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3016): The floating node vdd3r2! is removed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:16.211 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3015): The dangling node topsyh_tb.I0.1163\:vdd3o! is removed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:16.211 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during hierarchy flattening.
+    The value 'psf' specified for the 'checklimitdest' option will no longer be supported in future releases. Use 'spectre -h' to see other recommended values for the 'checklimitdest' option.
+    Spectre X Parasitic Optimization enabled.
+    Parasitic optimization will filter out parasitic nodes, nodes only connected to RCs, by default. To view individual parasitic nodes use individual save statements (i.e. save out), or use the 'savefilter=none' option to s... {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:16.711 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 745 Mbytes. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:16.711 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during hierarchy flattening.
+    The value 'psf' specified for the 'checklimitdest' option will no longer be supported in future releases. Use 'spectre -h' to see other recommended values for the 'checklimitdest' option. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:16.711 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 786 Mbytes. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:16.711 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I4|C1(0)_turbo_m11: `Acde' = 2.393 is unusually large. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:16.712 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I4|C1(0)_turbo_m11: `Noff' = 4.732 is unusually large. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:19.212 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1|I4|C1(0)_turbo_m11: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:19.212 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I0|C0(0)_turbo_m6: `Acde' = 2.393 is unusually large. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:19.213 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I0|C0(0)_turbo_m6: `Noff' = 4.732 is unusually large. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:19.213 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1|I0|C0(0)_turbo_m6: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:19.213 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I3|C1(0)_turbo_m6: `Acde' = 2.393 is unusually large.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:19.213 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1|I3|C1(0)_turbo_m6: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:19.213 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_vert10_vsubpsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:19.213 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_vert10_vcsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:19.213 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_rpolyh_vminuspsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:19.213 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_rpolyh_vpluspsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:19.214 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_rpoly2_vminuspsub' is ignored because it contains an expression which is invalid or not supported by native evaluator. 
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:19.214 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvarm_vspsub:Specified subcircuit master `cvarm' was not found. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:19.214 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvarm_vspsub:Error in specification of subcircuit master. Assert is ignored. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:19.214 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvarm_vbs:Specified subcircuit master `cvarm' was not found. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:19.214 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvarm_vbs:Error in specification of subcircuit master. Assert is ignored. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:19.214 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvarm_vgb:Specified subcircuit master `cvarm' was not found. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:19.714 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvarm_vgb:Error in specification of subcircuit master. Assert is ignored. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:19.714 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvart_vspsub:Specified subcircuit master `cvart' was not found. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:19.714 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvart_vspsub:Error in specification of subcircuit master. Assert is ignored. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:19.715 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvart_vbs:Specified subcircuit master `cvart' was not found.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:19.715 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvart_vbs:Error in specification of subcircuit master. Assert is ignored.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:19.715 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-294): The number of signals saved (117415) is too high and may slow down the initialization process. Remove the unnecessary signals to speed up the initialization. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:19.715 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-294): The number of signals saved (117415) is too high and may slow down the initialization process. Remove the unnecessary signals to speed up the initialization. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:19.715 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during topology check. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:21.237 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-592): Following parameters are disabled because they are ignored or redefined in Spectre X:
+        Option Parameters:
+          iabstol
+          reltol
+          vabstol
+        Tran Parameters:
+          errpreset
+          maxiters
+         {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:21.238 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] -               nodes 25797 {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:21.238 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during initial setup.
+    2 resistors are shorted because their absolute value is less than or equal to 'rabsshort'.
+    Spectre X preset=vx enabled.
+    6 notices suppressed.
+    31 warnings suppressed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:21.238 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre.
+    Multithreading enabled: 8 threads in the system with 16 available processors. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:21.238 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 929 Mbytes. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:21.238 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] -    -   (Spectre X) Multi-threading. The recommended number of threads is [8, 16], consider adding +mt=8 or +mt=16 on command line. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:21.238 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during transient analysis `tran'.
+    No checklimit analysis defined for asserts. A default checklimit analysis 'SpectreChecklimitAnal' has been created with all asserts enabled. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:22.239 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during IC analysis, during transient analysis `tran'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(topsyh_tb.I0.3\:I4|I25|net2) = 42.6693 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:06:22.239 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during transient analysis `tran'.
+    Output compression for transient analysis is enabled. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.133 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I3|C1(0)_dummy: `Acde' = 2.393 is unusually large. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.133 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I3|C1(0)_dummy: `Noff' = 4.732 is unusually large. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.133 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1|I3|C1(0)_dummy: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.133 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I0|C0(0)_dummy: `Acde' = 2.393 is unusually large. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.133 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I0|C0(0)_dummy: `Noff' = 4.732 is unusually large. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.133 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1|I0|C0(0)_dummy: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.133 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I4|C1(0)_dummy: `Acde' = 2.393 is unusually large.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.133 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1|I4|C1(0)_dummy: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.133 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 80 ms during transient analysis `tran'.
+    1 warning suppressed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.133 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Memory Usage - Current physical: 982.4M, Current virtual: 1243.4M, Peak physical: 982.4M {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.133 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - CPU Usage - 332.8s system + 407.6s user = 740.3s total (92.7% cpu) {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.134 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for tran analysis `tran': CPU = 1.88126 ks (31m  21.3s), elapsed = 782.073 s (13m  2.1s), util. = 241%. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.134 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 948 Mbytes. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.134 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I3|C1(0)_dummy: `Acde' = 2.393 is unusually large. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.134 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I3|C1(0)_dummy: `Noff' = 4.732 is unusually large. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.134 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1|I3|C1(0)_dummy: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.134 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I0|C0(0)_dummy: `Acde' = 2.393 is unusually large. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.134 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I0|C0(0)_dummy: `Noff' = 4.732 is unusually large. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.134 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1|I0|C0(0)_dummy: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.634 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I4|C1(0)_dummy: `Acde' = 2.393 is unusually large.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.634 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1|I4|C1(0)_dummy: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.635 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre.
+    1 warning suppressed. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.635 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time used: CPU = 1.89 ks (31m  30.4s), elapsed = 794 s (13m  13.7s), util. = 238%. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.635 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time spent in licensing: elapsed = 71.9 ms. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.635 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak memory used = 947 Mbytes. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.635 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation started at: 5:06:09 AM, Thur Jun 11, 2026, ended at: 5:19:23 AM, Thur Jun 11, 2026, with elapsed time (wall clock): 794 s (13m  13.7s). {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.635 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - spectre completes with 0 errors, 64 warnings, and 25 notices. {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.635 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - xmsim: Memory Usage - Final: 977.8M, Peak: 980.7M, Peak virtual: 1243.4M {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.635 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - xmsim: CPU Usage - 529.1s system + 2107.7s user = 2636.8s total (799.5s, 100.0% cpu) {"history": "Interactive.190", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:19:23.635 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished simulating for one point {"hostname": "edatools", "processid": 1323846, "history": "Interactive.190", "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "simid": "1"}
+[2026-06-11 05:19:23.635 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator exited {"hostname": "edatools", "processid": 1323846, "history": "Interactive.190", "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "exitStatus": "0"}
+[2026-06-11 05:19:23.635 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished Simulation {"hostname": "edatools", "processid": 1323846, "history": "Interactive.190", "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "simid": "1"}
+[2026-06-11 05:19:23.637 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Expression evaluator launched {"hostname": "edatools", "processid": 1323846, "history": "Interactive.190", "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log"}
+[2026-06-11 05:19:34.143 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Point Finished {"hostname": "edatools", "processid": 1323846, "history": "Interactive.190", "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log"}
+[2026-06-11 05:22:56.170 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started History {"hostname": "edatools", "processid": 1323846, "history": "Interactive.191", "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log"}
+[2026-06-11 05:22:56.170 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - HostInfo:
+Host name (type):	edatools (x86_64)
+Operating system:	Linux 6.17.0-29-generic #29~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon May 11 10:30:58 UTC 2 {"hostname": "edatools", "processid": 1323846, "history": "Interactive.191", "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "nodename": "edatools", "domainname": "(none)", "machine": "x86_64", "sysname": "Linux", "release": "6.17.0-29-generic", "version": "#29~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon May 11 10:30:58 UTC 2"}
+[2026-06-11 05:22:56.171 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - UsageInfo:
+pid=1323846
+totalPhysicalMemory=62.544979GB,Used=47.664417GB,totalVirtualMemory=70.544975GB,Used=47.664417GB
+Cpu: Cores=16, Load average:0.280000,1.900000,2.110000 {"hostname": "edatools", "processid": 1323846, "history": "Interactive.191", "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "pid": "1323846", "totalPhysicalMemory": "62.544979", "physicalMemoryUsed": "47.664417", "totalVirtualMemory": "70.544975", "virtualMemoryUsed": "47.664417", "cpuCores": "16", "processes": "2215", "loadAverage1": "0.280000", "loadAverage5": "1.900000", "loadAverage15": "2.110000", "loadAverage1Percent": "0.017500"}
+[2026-06-11 05:22:56.172 Z] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal", "event": "NewPoint", "EventSource": "Simulation Monitor", "HistoryName": "Interactive.191", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "logFileSize": "34877"}
+[2026-06-11 05:22:56.274 Z] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal", "event": "NewPoint", "EventSource": "ams", "HistoryName": "Interactive.191", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/Sim/VT26_TOP/topsyh_tb/maestro/results/maestro/Interactive.191/1/VT26_TOP_top_tb_DC/psf/xrun.log", "logFileSize": "-1"}
+[2026-06-11 05:22:56.289 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator launched {"hostname": "edatools", "processid": 1323846, "history": "Interactive.191", "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "simid": "2"}
+[2026-06-11 05:22:56.293 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Expression evaluator launched {"hostname": "edatools", "processid": 1323846, "history": "Interactive.191", "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log"}
+[2026-06-11 05:22:56.322 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started Simulation {"hostname": "edatools", "processid": 1323846, "history": "Interactive.191", "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "event": "started", "task": "simulation"}
+[2026-06-11 05:23:05.360 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during circuit read-in.
+    Pre_Configuration file used: /opt/tools/cadence/installs/SPECTRE241/tools.lnx86/spectre/etc/configs/preset.precfg
+    Configuration file used: `/opt/tools/cadence/installs/SPECTRE241/tools.lnx86/spectre/etc/configs/preset.cfg'.
+    Configuration file used: `/opt/tools/cadence/installs/SPECTRE241/tools.lnx86/spectre/etc/configs/ams.cfg'. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:05.880 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (VACOMP-2435): The environment variable CDS_AHDLCMI_ENABLE is no longer supported. Therefore, the simulator will use the default compiled C code flow. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:05.880 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 236 Mbytes. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:06.880 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3012): The dummy device topsyh_tb.I0.I3.I16.DLIB11 is removed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:06.880 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3012): The dummy device topsyh_tb.I0.I3.I20.DLIB3 is removed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:06.880 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3012): The dummy device topsyh_tb.I0.I3.I18.DLIB5 is removed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:06.881 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3026): The shorted/dummy resistor topsyh_tb.I0.I3.I18.R1.R0 is removed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:06.881 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3012): The dummy device topsyh_tb.I0.I3.I15.DLIB11 is removed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:06.881 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3012): The dummy device topsyh_tb.I0.I3.I44.DLIB10 is removed.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:06.881 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3029): The dummy capacitor topsyh_tb.I0.I2.I8.C12.C1 is removed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:06.881 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3029): The dummy capacitor topsyh_tb.I0.I19.I2.C6_0_turbo_m3.C1 is removed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:06.881 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3029): The dummy capacitor topsyh_tb.I0.I29.I27.R3.CS1 is removed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:06.881 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3029): The dummy capacitor topsyh_tb.I0.I29.I27.C5.C1 is removed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:06.881 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3029): The dummy capacitor topsyh_tb.I0.I29.I27.C4.C1 is removed.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:06.881 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3026): The shorted/dummy resistor topsyh_tb.I0.I3.I17.R2.R0 is removed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:06.881 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3026): The shorted/dummy resistor topsyh_tb.I0.I3.I20.R1.R0 is removed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:06.881 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3026): The shorted/dummy resistor topsyh_tb.I0.I3.I19.R5.R0 is removed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:06.881 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3016): The floating node vdd! is removed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:06.881 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3016): The floating node vddo_right! is removed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:06.881 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3016): The floating node gndo_right! is removed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:06.881 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3016): The floating node gndr_left! is removed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:06.881 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3016): The floating node vddr_left! is removed.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:06.881 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during hierarchy flattening.
+    The value 'psf' specified for the 'checklimitdest' option will no longer be supported in future releases. Use 'spectre -h' to see other recommended values for the 'checklimitdest' option. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:06.881 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 289 Mbytes. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:06.881 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during hierarchy flattening.
+    The value 'psf' specified for the 'checklimitdest' option will no longer be supported in future releases. Use 'spectre -h' to see other recommended values for the 'checklimitdest' option. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:06.882 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 294 Mbytes. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:06.882 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I4.C1_0_turbo_m11: `Acde' = 2.393 is unusually large. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:06.882 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I4.C1_0_turbo_m11: `Noff' = 4.732 is unusually large. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:06.882 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1.I4.C1_0_turbo_m11: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.382 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I3.C1_0_turbo_m6: `Acde' = 2.393 is unusually large. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.382 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I3.C1_0_turbo_m6: `Noff' = 4.732 is unusually large. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.382 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1.I3.C1_0_turbo_m6: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.382 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I0.C0_0_turbo_m6: `Acde' = 2.393 is unusually large.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.382 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1.I0.C0_0_turbo_m6: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.382 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_vert10_vsubpsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.382 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_vert10_vcsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.382 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_rpolyh_vminuspsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.382 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_rpolyh_vpluspsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.383 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_rpoly2_vminuspsub' is ignored because it contains an expression which is invalid or not supported by native evaluator. 
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.383 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvarm_vspsub:Specified subcircuit master `cvarm' was not found. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.383 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvarm_vspsub:Error in specification of subcircuit master. Assert is ignored. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.383 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvarm_vbs:Specified subcircuit master `cvarm' was not found. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.383 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvarm_vbs:Error in specification of subcircuit master. Assert is ignored. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.383 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvarm_vgb:Specified subcircuit master `cvarm' was not found. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.383 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvarm_vgb:Error in specification of subcircuit master. Assert is ignored. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.383 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvart_vspsub:Specified subcircuit master `cvart' was not found. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.883 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvart_vspsub:Error in specification of subcircuit master. Assert is ignored. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.883 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvart_vbs:Specified subcircuit master `cvart' was not found.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.883 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvart_vbs:Error in specification of subcircuit master. Assert is ignored.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.884 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-294): The number of signals saved (30520) is too high and may slow down the initialization process. Remove the unnecessary signals to speed up the initialization. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.884 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-294): The number of signals saved (30520) is too high and may slow down the initialization process. Remove the unnecessary signals to speed up the initialization. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.884 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during topology check.
+    No DC path from node `topsyh_tb.I0.I19.I28.R11.net9' to ground, Gmin installed to provide path.
+    No DC path from node `topsyh_tb.I0.I19.I28.R12.net9' to ground, Gmin installed to provide path.
+    No DC path from node `topsyh_tb.I0.I19.I28.R13.net9' to ground, Gmin installed to provide path.
+    No DC path from node `topsyh_tb.I0.I19.I27.R18.net9' to ground, Gmin installed to provide path.
+    No DC path from node `topsyh_tb.I0.I19.I27.R19.net9' to ground, ... {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.884 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-592): Following parameters are disabled because they are ignored or redefined in Spectre X:
+        Option Parameters:
+          iabstol
+          reltol
+          vabstol
+        Tran Parameters:
+          errpreset
+          maxiters
+         {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.884 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] -               nodes 2537 {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.884 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during initial setup.
+    12 resistors are changed to resistance form because their value are less than 'rthresh'.
+    Spectre X preset=vx enabled.
+    3 notices suppressed.
+    195 warnings suppressed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.884 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre.
+    Multithreading enabled: 8 threads in the system with 16 available processors. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.884 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 325 Mbytes. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.884 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] -    -   (Spectre X) Multi-threading. The recommended number of threads is [2, 4], consider adding +mt=2 or +mt=4 on command line. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.884 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during transient analysis `tran'.
+    No checklimit analysis defined for asserts. A default checklimit analysis 'SpectreChecklimitAnal' has been created with all asserts enabled. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.884 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during IC analysis, during transient analysis `tran'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:23:07.884 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during transient analysis `tran'.
+    Output compression for transient analysis is enabled. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.010 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I0.C0_0_dummy: `Acde' = 2.393 is unusually large. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.010 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I0.C0_0_dummy: `Noff' = 4.732 is unusually large. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.010 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1.I0.C0_0_dummy: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.010 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I3.C1_0_dummy: `Acde' = 2.393 is unusually large. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.010 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I3.C1_0_dummy: `Noff' = 4.732 is unusually large. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.010 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1.I3.C1_0_dummy: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.010 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I4.C1_0_dummy: `Acde' = 2.393 is unusually large.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.010 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1.I4.C1_0_dummy: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.010 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 80 ms during transient analysis `tran'.
+    1 warning suppressed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.010 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Memory Usage - Current physical: 248.1M, Current virtual: 490.7M, Peak physical: 248.1M {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.011 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - CPU Usage - 94.8s system + 69.3s user = 164.1s total (90.4% cpu) {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.011 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for tran analysis `tran': CPU = 529.129 s (8m  49.1s), elapsed = 178.254 s (2m  58.3s), util. = 297%. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.011 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 336 Mbytes. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.011 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I0.C0_0_dummy: `Acde' = 2.393 is unusually large. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.011 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I0.C0_0_dummy: `Noff' = 4.732 is unusually large. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.011 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1.I0.C0_0_dummy: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.011 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I3.C1_0_dummy: `Acde' = 2.393 is unusually large. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.011 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I3.C1_0_dummy: `Noff' = 4.732 is unusually large. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.011 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1.I3.C1_0_dummy: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.011 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I4.C1_0_dummy: `Acde' = 2.393 is unusually large.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.011 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1.I4.C1_0_dummy: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.011 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre.
+    1 warning suppressed. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.011 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time used: CPU = 530 s (8m  50.5s), elapsed = 181 s (3m  0.6s), util. = 294%. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.011 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time spent in licensing: elapsed = 79.2 ms. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.011 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak memory used = 335 Mbytes. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.011 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation started at: 5:23:05 AM, Thur Jun 11, 2026, ended at: 5:26:05 AM, Thur Jun 11, 2026, with elapsed time (wall clock): 181 s (3m  0.6s). {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.011 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - spectre completes with 0 errors, 62 warnings, and 22 notices. {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.011 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - xmsim: Memory Usage - Final: 238.2M, Peak: 248.5M, Peak virtual: 550.2M {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.011 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - xmsim: CPU Usage - 217.3s system + 479.5s user = 696.8s total (181.7s, 100.0% cpu) {"history": "Interactive.191", "point": 1, "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal"}
+[2026-06-11 05:26:06.512 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished simulating for one point {"hostname": "edatools", "processid": 1323846, "history": "Interactive.191", "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "simid": "2"}
+[2026-06-11 05:26:06.513 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator exited {"hostname": "edatools", "processid": 1323846, "history": "Interactive.191", "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "exitStatus": "0"}
+[2026-06-11 05:26:06.514 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished Simulation {"hostname": "edatools", "processid": 1323846, "history": "Interactive.191", "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "simid": "2"}
+[2026-06-11 05:26:08.534 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Point Finished {"hostname": "edatools", "processid": 1323846, "history": "Interactive.191", "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log"}
+[2026-06-11 05:29:48.036 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started History {"hostname": "edatools", "processid": 1323846, "history": "Interactive.192", "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log"}
+[2026-06-11 05:29:48.036 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - HostInfo:
+Host name (type):	edatools (x86_64)
+Operating system:	Linux 6.17.0-29-generic #29~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon May 11 10:30:58 UTC 2 {"hostname": "edatools", "processid": 1323846, "history": "Interactive.192", "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "nodename": "edatools", "domainname": "(none)", "machine": "x86_64", "sysname": "Linux", "release": "6.17.0-29-generic", "version": "#29~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon May 11 10:30:58 UTC 2"}
+[2026-06-11 05:29:48.037 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - UsageInfo:
+pid=1323846
+totalPhysicalMemory=62.544979GB,Used=48.649948GB,totalVirtualMemory=70.544975GB,Used=48.649948GB
+Cpu: Cores=16, Load average:2.660000,2.530000,2.390000 {"hostname": "edatools", "processid": 1323846, "history": "Interactive.192", "testname": "VT26_TOP_top_tb_DC", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "pid": "1323846", "totalPhysicalMemory": "62.544979", "physicalMemoryUsed": "48.649948", "totalVirtualMemory": "70.544975", "virtualMemoryUsed": "48.649948", "cpuCores": "16", "processes": "2069", "loadAverage1": "2.660000", "loadAverage5": "2.530000", "loadAverage15": "2.390000", "loadAverage1Percent": "0.166250"}
+[2026-06-11 05:29:48.037 Z] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal", "event": "NewPoint", "EventSource": "Simulation Monitor", "HistoryName": "Interactive.192", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "logFileSize": "66531"}
+[2026-06-11 05:29:48.138 Z] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal", "event": "NewPoint", "EventSource": "ams", "HistoryName": "Interactive.192", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/Sim/VT26_TOP/topsyh_tb/maestro/results/maestro/Interactive.192/1/VT26_TOP_top_tb_TRAN_GAIN_ECG/psf/xrun.log", "logFileSize": "-1"}
+[2026-06-11 05:29:48.150 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator launched {"hostname": "edatools", "processid": 1323846, "history": "Interactive.192", "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "simid": "3"}
+[2026-06-11 05:29:48.152 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Expression evaluator launched {"hostname": "edatools", "processid": 1323846, "history": "Interactive.192", "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log"}
+[2026-06-11 05:29:48.182 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started Simulation {"hostname": "edatools", "processid": 1323846, "history": "Interactive.192", "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "event": "started", "task": "simulation"}
+[2026-06-11 05:29:57.211 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during circuit read-in.
+    Pre_Configuration file used: /opt/tools/cadence/installs/SPECTRE241/tools.lnx86/spectre/etc/configs/preset.precfg
+    Configuration file used: `/opt/tools/cadence/installs/SPECTRE241/tools.lnx86/spectre/etc/configs/preset.cfg'.
+    Configuration file used: `/opt/tools/cadence/installs/SPECTRE241/tools.lnx86/spectre/etc/configs/ams.cfg'. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:57.212 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (VACOMP-2435): The environment variable CDS_AHDLCMI_ENABLE is no longer supported. Therefore, the simulator will use the default compiled C code flow. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:57.212 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 184 Mbytes. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.226 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3012): The dummy device topsyh_tb.I0.I3.I16.DLIB11 is removed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.226 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3012): The dummy device topsyh_tb.I0.I3.I20.DLIB3 is removed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.226 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3012): The dummy device topsyh_tb.I0.I3.I18.DLIB5 is removed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.226 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3026): The shorted/dummy resistor topsyh_tb.I0.I3.I18.R1.R0 is removed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.226 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3012): The dummy device topsyh_tb.I0.I3.I15.DLIB11 is removed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.226 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3012): The dummy device topsyh_tb.I0.I3.I44.DLIB10 is removed.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.226 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3029): The dummy capacitor topsyh_tb.I0.I2.I8.C12.C1 is removed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.226 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3029): The dummy capacitor topsyh_tb.I0.I19.I2.C6_0_turbo_m3.C1 is removed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.226 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3029): The dummy capacitor topsyh_tb.I0.I29.I27.R3.CS1 is removed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.226 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3029): The dummy capacitor topsyh_tb.I0.I29.I27.C5.C1 is removed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.226 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3029): The dummy capacitor topsyh_tb.I0.I29.I27.C4.C1 is removed.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.226 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3026): The shorted/dummy resistor topsyh_tb.I0.I3.I17.R2.R0 is removed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.226 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3026): The shorted/dummy resistor topsyh_tb.I0.I3.I20.R1.R0 is removed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.226 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3026): The shorted/dummy resistor topsyh_tb.I0.I3.I19.R5.R0 is removed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.227 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3016): The floating node vdd! is removed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.227 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3016): The floating node vddo_right! is removed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.227 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3016): The floating node gndo_right! is removed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.227 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3016): The floating node gndr_left! is removed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.227 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3016): The floating node vddr_left! is removed.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.227 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during hierarchy flattening.
+    Spectre X Parasitic Optimization enabled.
+    Parasitic optimization will filter out parasitic nodes, nodes only connected to RCs, by default. To view individual parasitic nodes use individual save statements (i.e. save out), or use the 'savefilter=none' option to save all parasitic nodes. Saving all parasitic nodes may slow down simulation and create large waveform files. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.227 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 204 Mbytes. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.227 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during hierarchy flattening.
+    The value 'psf' specified for the 'checklimitdest' option will no longer be supported in future releases. Use 'spectre -h' to see other recommended values for the 'checklimitdest' option. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.227 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 211 Mbytes. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.227 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I4.C1_0_turbo_m11: `Acde' = 2.393 is unusually large. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.227 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I4.C1_0_turbo_m11: `Noff' = 4.732 is unusually large. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.727 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1.I4.C1_0_turbo_m11: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.727 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I3.C1_0_turbo_m6: `Acde' = 2.393 is unusually large. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.728 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I3.C1_0_turbo_m6: `Noff' = 4.732 is unusually large. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.728 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1.I3.C1_0_turbo_m6: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.728 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I0.C0_0_turbo_m6: `Acde' = 2.393 is unusually large.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.728 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1.I0.C0_0_turbo_m6: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.728 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_vert10_vsubpsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.728 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_vert10_vcsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.728 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_rpolyh_vminuspsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.728 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_rpolyh_vpluspsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.728 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_rpoly2_vminuspsub' is ignored because it contains an expression which is invalid or not supported by native evaluator. 
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.728 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvarm_vspsub:Specified subcircuit master `cvarm' was not found. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.728 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvarm_vspsub:Error in specification of subcircuit master. Assert is ignored. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.729 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvarm_vbs:Specified subcircuit master `cvarm' was not found. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.729 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvarm_vbs:Error in specification of subcircuit master. Assert is ignored. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.729 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvarm_vgb:Specified subcircuit master `cvarm' was not found. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.729 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvarm_vgb:Error in specification of subcircuit master. Assert is ignored. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.729 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvart_vspsub:Specified subcircuit master `cvart' was not found. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.729 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvart_vspsub:Error in specification of subcircuit master. Assert is ignored. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.729 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvart_vbs:Specified subcircuit master `cvart' was not found.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.729 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvart_vbs:Error in specification of subcircuit master. Assert is ignored.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.729 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during topology check.
+    No DC path from node `topsyh_tb.I0.I19.I28.R11.net9' to ground, Gmin installed to provide path.
+    No DC path from node `topsyh_tb.I0.I19.I28.R12.net9' to ground, Gmin installed to provide path.
+    No DC path from node `topsyh_tb.I0.I19.I28.R13.net9' to ground, Gmin installed to provide path.
+    No DC path from node `topsyh_tb.I0.I19.I27.R18.net9' to ground, Gmin installed to provide path.
+    No DC path from node `topsyh_tb.I0.I19.I27.R19.net9' to ground, ... {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.729 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-592): Following parameters are disabled because they are ignored or redefined in Spectre X:
+        Option Parameters:
+          iabstol
+          reltol
+          vabstol
+        Tran Parameters:
+          errpreset
+          maxiters
+         {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.729 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] -               nodes 2537 {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.729 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during initial setup.
+    Spectre X preset=mx enabled.
+    Spectre X postlpreset=mx enabled.
+    3 notices suppressed.
+    195 warnings suppressed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.730 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre.
+    Multithreading enabled: 8 threads in the system with 16 available processors. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.730 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 238 Mbytes. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.730 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] -    -   (Spectre X) Multi-threading. The recommended number of threads is [2, 4], consider adding +mt=2 or +mt=4 on command line. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:58.730 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during transient analysis `tran'.
+    No checklimit analysis defined for asserts. A default checklimit analysis 'SpectreChecklimitAnal' has been created with all asserts enabled. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:29:59.230 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during IC analysis, during transient analysis `tran'.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:30:02.231 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I0.C0_0_dummy: `Acde' = 2.393 is unusually large. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:30:02.231 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I0.C0_0_dummy: `Noff' = 4.732 is unusually large. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:30:02.231 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1.I0.C0_0_dummy: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:30:02.231 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I3.C1_0_dummy: `Acde' = 2.393 is unusually large. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:30:02.231 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I3.C1_0_dummy: `Noff' = 4.732 is unusually large. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:30:02.231 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1.I3.C1_0_dummy: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:30:02.231 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I4.C1_0_dummy: `Acde' = 2.393 is unusually large.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:30:02.231 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1.I4.C1_0_dummy: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:30:02.748 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 160 us during transient analysis `tran'.
+    1 warning suppressed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:31:25.505 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Memory Usage - Current physical: 162.2M, Current virtual: 430.2M, Peak physical: 162.2M {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:31:25.505 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - CPU Usage - 4.5s system + 3.0s user = 7.5s total (8.4% cpu) {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:31:25.505 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for tran analysis `tran': CPU = 422.822 s (7m  2.8s), elapsed = 86.8586 s (1m  26.9s), util. = 487%. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:31:25.506 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 268 Mbytes. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:31:25.506 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I0.C0_0_dummy: `Acde' = 2.393 is unusually large. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:31:25.506 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I0.C0_0_dummy: `Noff' = 4.732 is unusually large. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:31:25.506 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1.I0.C0_0_dummy: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:31:25.506 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I3.C1_0_dummy: `Acde' = 2.393 is unusually large. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:31:25.506 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I3.C1_0_dummy: `Noff' = 4.732 is unusually large. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:31:25.506 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1.I3.C1_0_dummy: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:31:26.006 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1.I4.C1_0_dummy: `Acde' = 2.393 is unusually large.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:31:26.006 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1.I4.C1_0_dummy: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:31:26.007 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre.
+    1 warning suppressed. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:31:26.007 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time used: CPU = 424 s (7m  3.5s), elapsed = 88.6 s (1m  28.6s), util. = 478%. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:31:26.007 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time spent in licensing: elapsed = 74.4 ms. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:31:26.007 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak memory used = 267 Mbytes. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:31:26.007 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation started at: 5:29:56 AM, Thur Jun 11, 2026, ended at: 5:31:25 AM, Thur Jun 11, 2026, with elapsed time (wall clock): 88.6 s (1m  28.6s). {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:31:26.007 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - spectre completes with 0 errors, 60 warnings, and 22 notices. {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:31:26.007 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - xmsim: Memory Usage - Final: 159.2M, Peak: 161.4M, Peak virtual: 554.7M {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:31:26.007 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - xmsim: CPU Usage - 73.8s system + 359.5s user = 433.3s total (89.6s, 100.0% cpu) {"history": "Interactive.192", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:31:26.007 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished simulating for one point {"hostname": "edatools", "processid": 1323846, "history": "Interactive.192", "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "simid": "3"}
+[2026-06-11 05:31:26.007 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator exited {"hostname": "edatools", "processid": 1323846, "history": "Interactive.192", "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "exitStatus": "0"}
+[2026-06-11 05:31:26.007 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished Simulation {"hostname": "edatools", "processid": 1323846, "history": "Interactive.192", "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "simid": "3"}
+[2026-06-11 05:31:28.513 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Point Finished {"hostname": "edatools", "processid": 1323846, "history": "Interactive.192", "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log"}
+[2026-06-11 05:32:38.067 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started History {"hostname": "edatools", "processid": 1323846, "history": "Interactive.193", "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log"}
+[2026-06-11 05:32:38.067 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - HostInfo:
+Host name (type):	edatools (x86_64)
+Operating system:	Linux 6.17.0-29-generic #29~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon May 11 10:30:58 UTC 2 {"hostname": "edatools", "processid": 1323846, "history": "Interactive.193", "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "nodename": "edatools", "domainname": "(none)", "machine": "x86_64", "sysname": "Linux", "release": "6.17.0-29-generic", "version": "#29~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Mon May 11 10:30:58 UTC 2"}
+[2026-06-11 05:32:38.068 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - UsageInfo:
+pid=1323846
+totalPhysicalMemory=62.544979GB,Used=48.887596GB,totalVirtualMemory=70.544975GB,Used=48.887596GB
+Cpu: Cores=16, Load average:3.070000,3.280000,2.730000 {"hostname": "edatools", "processid": 1323846, "history": "Interactive.193", "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "pid": "1323846", "totalPhysicalMemory": "62.544979", "physicalMemoryUsed": "48.887596", "totalVirtualMemory": "70.544975", "virtualMemoryUsed": "48.887596", "cpuCores": "16", "processes": "2074", "loadAverage1": "3.070000", "loadAverage5": "3.280000", "loadAverage15": "2.730000", "loadAverage1Percent": "0.191875"}
+[2026-06-11 05:32:38.069 Z] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal", "event": "NewPoint", "EventSource": "Simulation Monitor", "HistoryName": "Interactive.193", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "logFileSize": "98394"}
+[2026-06-11 05:32:38.171 Z] [EVENT] [cadence.virtuoso.ade.simulationMonitor] - NewPoint {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal", "event": "NewPoint", "EventSource": "ams", "HistoryName": "Interactive.193", "logFile": "/home/saul/projects/IL2244_VT26_SAUL/Sim/VT26_TOP/topsyh_tb/maestro/results/maestro/Interactive.193/1/VT26_TOP_top_tb_TRAN_GAIN_ECG/psf/xrun.log", "logFileSize": "-1"}
+[2026-06-11 05:32:38.184 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator launched {"hostname": "edatools", "processid": 1323846, "history": "Interactive.193", "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "simid": "4"}
+[2026-06-11 05:32:38.188 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Expression evaluator launched {"hostname": "edatools", "processid": 1323846, "history": "Interactive.193", "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log"}
+[2026-06-11 05:32:38.217 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Started Simulation {"hostname": "edatools", "processid": 1323846, "history": "Interactive.193", "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "event": "started", "task": "simulation"}
+[2026-06-11 05:32:53.760 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during circuit read-in.
+    Pre_Configuration file used: /opt/tools/cadence/installs/SPECTRE241/tools.lnx86/spectre/etc/configs/preset.precfg
+    Configuration file used: `/opt/tools/cadence/installs/SPECTRE241/tools.lnx86/spectre/etc/configs/preset.cfg'.
+    Configuration file used: `/opt/tools/cadence/installs/SPECTRE241/tools.lnx86/spectre/etc/configs/ams.cfg'. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:54.260 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (VACOMP-2435): The environment variable CDS_AHDLCMI_ENABLE is no longer supported. Therefore, the simulator will use the default compiled C code flow. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:54.260 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 208 Mbytes. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.261 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3029): The dummy capacitor topsyh_tb.I0.I3|I19|RLIB_GC1.CS1 is removed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.261 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3012): The dummy device topsyh_tb.I0.I4|I25|I33|MN22(1) is removed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.261 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3029): The dummy capacitor topsyh_tb.I0.I1|I0|R3.CS0 is removed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.261 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3029): The dummy capacitor topsyh_tb.I0.I4|I25|R1.CS0 is removed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.261 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3029): The dummy capacitor topsyh_tb.I0.I1|I4|R31.CS0 is removed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.261 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3029): The dummy capacitor topsyh_tb.I0.I4|I25|R1.CS1 is removed.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.262 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3030): The dangling capacitor topsyh_tb.I0.c13802 is removed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.262 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3026): The shorted/dummy resistor topsyh_tb.I0.I3|I46|R2_4__rcx is removed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.262 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3026): The shorted/dummy resistor topsyh_tb.I0.I3|I46|R2_1__rcx is removed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.262 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3012): The dummy device topsyh_tb.I0.I1|I2|Q3(30)_turbo_m63 is removed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.262 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3013): The dangling device topsyh_tb.I0.I3|I6|avD41_3_turbo_m10.I4 is removed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.262 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3012): The dummy device topsyh_tb.I0.I29|I15|Q6(23)_turbo_m24 is removed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.262 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3026): The shorted/dummy resistor topsyh_tb.I0.I3|I46|R2_3__rcx is removed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.262 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3012): The dummy device topsyh_tb.I0.I2|I2|MP31(3)_turbo_m4 is removed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.262 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3026): The shorted/dummy resistor topsyh_tb.I0.I3|I46|R2_2__rcx is removed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.262 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3012): The dummy device topsyh_tb.I0.I29|I15|MN31(3)_turbo_m4 is removed.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.262 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3026): The shorted/dummy resistor topsyh_tb.I0.I3|I46|R2_6__rcx is removed.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.262 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3015): The dangling node topsyh_tb.I0.avC121 is removed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.262 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3016): The floating node vdd3r1! is removed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.262 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3016): The floating node vdd3r2! is removed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.262 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SFE-3015): The dangling node topsyh_tb.I0.1163\:vdd3o! is removed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.262 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during hierarchy flattening.
+    Spectre X Parasitic Optimization enabled.
+    Parasitic optimization will filter out parasitic nodes, nodes only connected to RCs, by default. To view individual parasitic nodes use individual save statements (i.e. save out), or use the 'savefilter=none' option to save all parasitic nodes. Saving all parasitic nodes may slow down simulation and create large waveform files. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.263 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 273 Mbytes. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.263 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during hierarchy flattening.
+    The value 'psf' specified for the 'checklimitdest' option will no longer be supported in future releases. Use 'spectre -h' to see other recommended values for the 'checklimitdest' option. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.263 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 312 Mbytes. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.263 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I4|C1(0)_turbo_m11: `Acde' = 2.393 is unusually large. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.263 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I4|C1(0)_turbo_m11: `Noff' = 4.732 is unusually large. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:55.263 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1|I4|C1(0)_turbo_m11: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:57.263 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I0|C0(0)_turbo_m6: `Acde' = 2.393 is unusually large. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:57.264 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I0|C0(0)_turbo_m6: `Noff' = 4.732 is unusually large. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:57.264 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1|I0|C0(0)_turbo_m6: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:57.264 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I3|C1(0)_turbo_m6: `Acde' = 2.393 is unusually large.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:57.264 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1|I3|C1(0)_turbo_m6: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:57.264 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_vert10_vsubpsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:57.264 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_vert10_vcsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:57.264 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_rpolyh_vminuspsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:57.264 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_rpolyh_vpluspsub' is ignored because it contains an expression which is invalid or not supported by native evaluator.  {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:57.265 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-17607): Assert `SOAC_rpoly2_vminuspsub' is ignored because it contains an expression which is invalid or not supported by native evaluator. 
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:57.265 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvarm_vspsub:Specified subcircuit master `cvarm' was not found. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:57.265 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvarm_vspsub:Error in specification of subcircuit master. Assert is ignored. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:57.265 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvarm_vbs:Specified subcircuit master `cvarm' was not found. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:57.265 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvarm_vbs:Error in specification of subcircuit master. Assert is ignored. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:57.265 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvarm_vgb:Specified subcircuit master `cvarm' was not found. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:57.265 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvarm_vgb:Error in specification of subcircuit master. Assert is ignored. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:57.265 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvart_vspsub:Specified subcircuit master `cvart' was not found. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:57.265 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvart_vspsub:Error in specification of subcircuit master. Assert is ignored. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:57.265 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16460): SOAC_cvart_vbs:Specified subcircuit master `cvart' was not found.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:57.265 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-16462): SOAC_cvart_vbs:Error in specification of subcircuit master. Assert is ignored.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:57.265 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during topology check.
+    Only one connection to the following 9 nodes:
+        vdd3rAS!
+        vdd3rA!
+        vdd3r!
+        vdd3oAS!
+        vdd3oA!
+        Further occurrences of this notice will be suppressed.
+    No DC path from node `topsyh_tb.I0.I1|I2|R52.net9' to ground, Gmin installed to provide path.
+    No DC path from node `topsyh_tb.I0.I2|I2|R4.net9' to ground, Gmin installed to provide path.
+    No DC path from node `topsyh_tb.I0.I2|I2|R3.net9' to ground, Gmin installed... {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:58.779 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (SPECTRE-592): Following parameters are disabled because they are ignored or redefined in Spectre X:
+        Option Parameters:
+          iabstol
+          reltol
+          vabstol
+        Tran Parameters:
+          errpreset
+          maxiters
+         {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:58.779 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] -               nodes 25797 {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:58.779 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during initial setup.
+    2 resistors are shorted because their absolute value is less than or equal to 'rabsshort'.
+    Spectre X preset=mx enabled.
+    Spectre X postlpreset=mx enabled.
+    6 notices suppressed.
+    31 warnings suppressed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:58.779 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre.
+    Multithreading enabled: 8 threads in the system with 16 available processors. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:58.779 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 435 Mbytes. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:58.780 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] -    -   (Spectre X) Multi-threading. The recommended number of threads is [8, 16], consider adding +mt=8 or +mt=16 on command line. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:58.780 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during transient analysis `tran'.
+    No checklimit analysis defined for asserts. A default checklimit analysis 'SpectreChecklimitAnal' has been created with all asserts enabled. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:32:59.780 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre during IC analysis, during transient analysis `tran'.
+    GminDC = 1 pS is large enough to noticeably affect the DC solution.
+        dV(topsyh_tb.I0._net2) = -16.85 mV
+        Use the `gmin_check' option to eliminate or expand this report.
+    Bad pivoting is found during DC analysis. Option dc_pivot_check=yes is recommended for possible improvement of convergence. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:34:25.807 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I3|C1(0)_dummy: `Acde' = 2.393 is unusually large. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:34:25.807 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I3|C1(0)_dummy: `Noff' = 4.732 is unusually large. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:34:25.807 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1|I3|C1(0)_dummy: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:34:25.807 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I0|C0(0)_dummy: `Acde' = 2.393 is unusually large. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:34:25.807 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I0|C0(0)_dummy: `Noff' = 4.732 is unusually large. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:34:25.808 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1|I0|C0(0)_dummy: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:34:25.808 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I4|C1(0)_dummy: `Acde' = 2.393 is unusually large.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:34:25.808 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1|I4|C1(0)_dummy: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 05:34:26.808 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre at time = 160 us during transient analysis `tran'.
+    1 warning suppressed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 06:22:32.497 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Memory Usage - Current physical: 684.9M, Current virtual: 951.9M, Peak physical: 684.9M {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 06:22:32.497 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - CPU Usage - 151.2s system + 118.8s user = 270.0s total (9.1% cpu) {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 06:22:32.998 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Total time required for tran analysis `tran': CPU = 12.6165 ks (3h 30m 16s), elapsed = 2.974 ks (49m  34.0s), util. = 424%. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 06:22:32.999 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak resident memory used = 614 Mbytes. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 06:22:33.000 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I3|C1(0)_dummy: `Acde' = 2.393 is unusually large. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 06:22:33.000 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I3|C1(0)_dummy: `Noff' = 4.732 is unusually large. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 06:22:33.001 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1|I3|C1(0)_dummy: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 06:22:33.001 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I0|C0(0)_dummy: `Acde' = 2.393 is unusually large. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 06:22:33.001 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I0|C0(0)_dummy: `Noff' = 4.732 is unusually large. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 06:22:33.002 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1|I0|C0(0)_dummy: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 06:22:33.002 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2425): topsyh_tb.I0.I1|I4|C1(0)_dummy: `Acde' = 2.393 is unusually large.
+        Further occurrences of this warning will be suppressed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 06:22:33.002 Z] [WARN] [cadence.virtuoso.ade.simulationMonitor] -     WARNING (CMI-2424): topsyh_tb.I0.I1|I4|C1(0)_dummy: `Voffcv' = -867.4e-03 is unusually small. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 06:22:33.002 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Notice from spectre.
+    1 warning suppressed. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 06:22:33.002 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time used: CPU = 12.6 ks (3h 30m 22s), elapsed = 2.98 ks (49m  39.3s), util. = 424%. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 06:22:33.003 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Time spent in licensing: elapsed = 78.4 ms. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 06:22:33.003 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - Peak memory used = 613 Mbytes. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 06:22:33.004 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation started at: 5:32:53 AM, Thur Jun 11, 2026, ended at: 6:22:32 AM, Thur Jun 11, 2026, with elapsed time (wall clock): 2.98 ks (49m  39.3s). {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 06:22:33.004 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - spectre completes with 0 errors, 62 warnings, and 24 notices. {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 06:22:33.005 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - xmsim: Memory Usage - Final: 681.9M, Peak: 684.2M, Peak virtual: 1012.4M {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 06:22:33.005 Z] [INFO] [cadence.virtuoso.ade.simulationMonitor] - xmsim: CPU Usage - 506.2s system + 12386.2s user = 12892.4s total (2982.3s, 100.0% cpu) {"history": "Interactive.193", "point": 1, "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal"}
+[2026-06-11 06:22:33.006 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished simulating for one point {"hostname": "edatools", "processid": 1323846, "history": "Interactive.193", "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "simid": "4"}
+[2026-06-11 06:22:33.006 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulator exited {"hostname": "edatools", "processid": 1323846, "history": "Interactive.193", "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "exitStatus": "0"}
+[2026-06-11 06:22:33.007 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Finished Simulation {"hostname": "edatools", "processid": 1323846, "history": "Interactive.193", "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log", "simid": "4"}
+[2026-06-11 06:22:33.011 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Expression evaluator launched {"hostname": "edatools", "processid": 1323846, "history": "Interactive.193", "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log"}
+[2026-06-11 06:22:59.026 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Point Finished {"hostname": "edatools", "processid": 1323846, "history": "Interactive.193", "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log"}
+[2026-06-11 06:28:00.669 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Current memory used: 52.4297 MBytes, peak memory used: 52.4297 MBytes {"hostname": "edatools", "processid": 1323846, "history": "Interactive.193", "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log"}
+[2026-06-11 06:28:00.670 Z] [PROCESS] [cadence.virtuoso.ade.simulationMonitor] - Simulation Monitor process exit. {"hostname": "edatools", "processid": 1323846, "history": "Interactive.193", "testname": "VT26_TOP_top_tb_TRAN_GAIN_ECG", "cornername": "Nominal", "point": 1, "logfile": "/home/saul/projects/IL2244_VT26_SAUL/logs_saul/logs0/Job1.log"}
