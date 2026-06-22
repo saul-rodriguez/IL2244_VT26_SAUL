@@ -6,7 +6,7 @@ Copyright (c) Cadence Design Systems. All rights reserved.
 @(#)$CDS: assura_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:34 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/assura on Thu Jun 11 09:50:40 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/assura on Thu Jun 18 12:36:32 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -15,7 +15,7 @@ Starting /opt/tools/cadence/installs/ASSURA41_618//tools.lnx86/assura/bin/aveng 
 @(#)$CDS: aveng_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Thu Jun 11 09:50:40 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/aveng on Thu Jun 18 12:36:32 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -55,7 +55,7 @@ Loading tech rule set file : /opt/pdk/ams/410/assura/c35b4/c35b4c3/techRuleSets
 Loading tech rule set file : /opt/pdk/ams/410/assura/c35b4/c35b4c3/techRuleSets
  Summary Report: top_IL2244_VT26.sum
  RSF           : /home/saul/projects/IL2244_VT26_SAUL/ASSURA_LVS/top_IL2244_VT26/top_IL2244_VT26.rsf
- Library Name  : GDS_2026_06_11
+ Library Name  : GDS_2026_06_18
  CDSLIB Path   : "/home/saul/projects/IL2244_VT26_SAUL/cds.lib"
  Cell Name     : top_IL2244_VT26
  View Name     : layout
@@ -70,7 +70,7 @@ Virtuoso Framework License (111) was checked out successfully. Total checkout ti
 @(#)$CDS: dfIIToVdb_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:38 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/dfIIToVdb on Thu Jun 11 09:50:40 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/dfIIToVdb on Thu Jun 18 12:36:32 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -148,7 +148,7 @@ Checking out license for Pegasus_LVS_SP
 Checking out license for Pegasus_LVS
 @(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:39 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
-run on edatools at Thu Jun 11 09:50:41 2026
+run on edatools at Thu Jun 18 12:36:34 2026
 Loading all available p-cell functions
 AMS_DB set to cds
 Reading schematic network
@@ -157,7 +157,7 @@ Virtuoso Framework License (111) was checked out successfully. Total checkout ti
 @(#)$CDS: dfIIToVldb_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:38 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/dfIIToVldb on Thu Jun 11 09:50:41 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/dfIIToVldb on Thu Jun 18 12:36:34 2026
 
 Loading all available p-cell functions
 AMS_DB set to cds
@@ -651,7 +651,7 @@ Preprocessing layout network phase 1
 *WARNING* deleteCellPin - Unable to find cell 'PMOSD30M'
 Preprocessing schematic network phase 2
 Preprocessing layout network phase 2
-cpu=0.00m  wall=0.02m  mem=79.42mb
+cpu=0.00m  wall=0.00m  mem=79.42mb
 
 Finished /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/nvn
 
@@ -660,11 +660,11 @@ Executing: substrate_all = cellBoundary(root)
 Building the VDB part 3 in background mode.
 
 Finished building the VDB. VDB build times for main process:
-cpu: 0.06  elap: 2  pf: 0  in: 0  out: 128  virt: 101M  phys: 580M
+cpu: 0.06  elap: 3  pf: 0  in: 0  out: 128  virt: 101M  phys: 579M
 
 Running the Task Processor, 250 cells, 4533 steps...
 
-Top Cell is 'top_IL2244_VT26 layout GDS_2026_06_11'
+Top Cell is 'top_IL2244_VT26 layout GDS_2026_06_18'
 
 Executing: bkgnd = geomBkgnd()
 
@@ -1804,115 +1804,115 @@ Executing: net_met4 = geomOr(net_met4 MET4_pinshape)
 Executing: net_optdef = geomOr(OPTDEF)
 
 Executing: geomConnect((label POLY1_pintext net_poly1 POLY1_pinshape) (label MET1_pintex...
-     4 net(s) with multi-label warnings found in cell 'VDD3RP layout GDS_2026_06_11'.
-     2 net(s) with multi-label warnings found in cell 'VDD3OP layout GDS_2026_06_11'.
-     2 same-label  warnings found in cell 'PWRCUT_DIG_P_DX layout GDS_2026_06_11'.
-     1 net(s) with multi-label warning  found in cell 'GND3RP layout GDS_2026_06_11'.
-     2 net(s) with multi-label warnings found in cell 'GND3OP layout GDS_2026_06_11'.
-     1 same-label  warning  found in cell 'APRIO200P layout GDS_2026_06_11'.
-     2 same-label  warnings found in cell 'AGND3ALLP layout GDS_2026_06_11'.
+     4 net(s) with multi-label warnings found in cell 'VDD3RP layout GDS_2026_06_18'.
+     2 net(s) with multi-label warnings found in cell 'VDD3OP layout GDS_2026_06_18'.
+     2 same-label  warnings found in cell 'PWRCUT_DIG_P_DX layout GDS_2026_06_18'.
+     1 net(s) with multi-label warning  found in cell 'GND3RP layout GDS_2026_06_18'.
+     2 net(s) with multi-label warnings found in cell 'GND3OP layout GDS_2026_06_18'.
+     1 same-label  warning  found in cell 'APRIO200P layout GDS_2026_06_18'.
+     2 same-label  warnings found in cell 'AGND3ALLP layout GDS_2026_06_18'.
  See the label report in "top_IL2244_VT26.erc" file for details.
 
 
 Executing: extractMOS("NMOS4" NMOS_device (net_poly1 "G") (net_nsd "S" "D") (net_psub "B...
          7 'NMOS4' created in cell 'G236_1_7_3250_0_my sub_array'.
          7 'NMOS4' created in cell 'G236_1_7_3250_0_r0 sub_array'.
-         1 'NMOS4' created in cell 'nmos4_CDNS_7811711871380 layout GDS_2026_06_11'.
-         2 'NMOS4' created in cell 'nmos4_CDNS_7811711871378 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'nmos4_CDNS_7811711871377 layout GDS_2026_06_11'.
-         2 'NMOS4' created in cell 'nmos4_CDNS_7811711871376 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'nmos4_CDNS_7811711871334 layout GDS_2026_06_11'.
-         4 'NMOS4' created in cell 'nmos4_CDNS_78117118713180 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'Inverter layout GDS_2026_06_11'.
-         2 'NMOS4' created in cell 'nmos4_CDNS_7811711871396 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'nmos4_CDNS_7811711871387 layout GDS_2026_06_11'.
-         4 'NMOS4' created in cell 'nmos4_CDNS_7811711871386 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'nmos4_CDNS_7811711871385 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'nmos4_CDNS_7811711871370 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'nmos4_CDNS_7811711871369 layout GDS_2026_06_11'.
-         2 'NMOS4' created in cell 'nmos4_CDNS_7811711871360 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'nmos4_CDNS_781171187136 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'nmos4_CDNS_7811711871351 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'nmos4_CDNS_7811711871350 layout GDS_2026_06_11'.
-        10 'NMOS4' created in cell 'nmos4_CDNS_7811711871343 layout GDS_2026_06_11'.
-         2 'NMOS4' created in cell 'nmos4_CDNS_7811711871340 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'nmos4_CDNS_781171187134 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'nmos4_CDNS_7811711871326 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'nmos4_CDNS_7811711871322 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'nmos4_CDNS_78117118713174 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'nmos4_CDNS_78117118713168 layout GDS_2026_06_11'.
-         4 'NMOS4' created in cell 'nmos4_CDNS_78117118713165 layout GDS_2026_06_11'.
-        10 'NMOS4' created in cell 'nmos4_CDNS_78117118713155 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'nmos4_CDNS_78117118713150 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'nmos4_CDNS_78117118713141 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'nmos4_CDNS_78117118713140 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'nmos4_CDNS_78117118713132 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'nmos4_CDNS_78117118713131 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'nmos4_CDNS_78117118713127 layout GDS_2026_06_11'.
-         3 'NMOS4' created in cell 'mux21c_f layout GDS_2026_06_11'.
-         3 'NMOS4' created in cell 'mux21 layout GDS_2026_06_11'.
-         8 'NMOS4' created in cell 'chopper_f layout GDS_2026_06_11'.
-         8 'NMOS4' created in cell 'chopper2 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'INVX2 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'INVX1 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'CLKINVX1 layout GDS_2026_06_11'.
-        10 'NMOS4' created in cell '7_Calibration_current layout GDS_2026_06_11'.
-        24 'NMOS4' created in cell '6_TIA_Front_Layout layout GDS_2026_06_11'.
-         2 'NMOS4' created in cell '6_Resnet layout GDS_2026_06_11'.
-        13 'NMOS4' created in cell '6_CA_Front_Layout layout GDS_2026_06_11'.
-         5 'NMOS4' created in cell 'ia_new_f layout GDS_2026_06_11'.
-        97 'NMOS4' created in cell 'gmc_5_fc layout GDS_2026_06_11'.
-         8 'NMOS4' created in cell 'fecg_vga2_f_2 layout GDS_2026_06_11'.
-        35 'NMOS4' created in cell 'fecg_ia_5_fc layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'fecg_cmfb2_fc layout GDS_2026_06_11'.
-         3 'NMOS4' created in cell 'fecg_bandgap3_layout layout GDS_2026_06_11'.
-         4 'NMOS4' created in cell 'fbias_por2_fc layout GDS_2026_06_11'.
-        17 'NMOS4' created in cell 'fbias_gm_c1_f2c layout GDS_2026_06_11'.
-         8 'NMOS4' created in cell 'buffer2_f_3c layout GDS_2026_06_11'.
-         5 'NMOS4' created in cell 'XOR2X1 layout GDS_2026_06_11'.
-         6 'NMOS4' created in cell 'VDD3RP layout GDS_2026_06_11'.
-         6 'NMOS4' created in cell 'VDD3OP layout GDS_2026_06_11'.
-         6 'NMOS4' created in cell 'VDD3IP layout GDS_2026_06_11'.
-         4 'NMOS4' created in cell 'NOR4X1 layout GDS_2026_06_11'.
-         2 'NMOS4' created in cell 'NOR2X6 layout GDS_2026_06_11'.
-         2 'NMOS4' created in cell 'NOR2X3 layout GDS_2026_06_11'.
-         3 'NMOS4' created in cell 'NAND3X1 layout GDS_2026_06_11'.
-         2 'NMOS4' created in cell 'NAND2X2 layout GDS_2026_06_11'.
-        12 'NMOS4' created in cell 'ICP layout GDS_2026_06_11'.
-         7 'NMOS4' created in cell 'HAX3 layout GDS_2026_06_11'.
-       202 'NMOS4' created in cell 'Gm_C_filter layout GDS_2026_06_11'.
-         6 'NMOS4' created in cell 'GND3RP layout GDS_2026_06_11'.
-         6 'NMOS4' created in cell 'GND3OP layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'FILLCAPX8 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'FILLCAPX4 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'FILLCAPX32 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'FILLCAPX2 layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'FILLCAPX16 layout GDS_2026_06_11'.
-         2 'NMOS4' created in cell 'ECG_bandgap_f_v1 layout GDS_2026_06_11'.
-         4 'NMOS4' created in cell 'DLY1X1 layout GDS_2026_06_11'.
-        15 'NMOS4' created in cell 'DFCX4 layout GDS_2026_06_11'.
-        15 'NMOS4' created in cell 'DFCX3 layout GDS_2026_06_11'.
-        19 'NMOS4' created in cell 'DFCSX4 layout GDS_2026_06_11'.
-        19 'NMOS4' created in cell 'DFCSX2 layout GDS_2026_06_11'.
-        12 'NMOS4' created in cell 'Constant_gm layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell 'CLKINVX4 layout GDS_2026_06_11'.
-         2 'NMOS4' created in cell 'CLKBUFX6 layout GDS_2026_06_11'.
-         2 'NMOS4' created in cell 'CLKBUFX4 layout GDS_2026_06_11'.
-         2 'NMOS4' created in cell 'CLKBUFX3 layout GDS_2026_06_11'.
-         5 'NMOS4' created in cell 'CLKBUFX24 layout GDS_2026_06_11'.
-         3 'NMOS4' created in cell 'CLKBUFX12 layout GDS_2026_06_11'.
-         3 'NMOS4' created in cell 'CLKBUFX10 layout GDS_2026_06_11'.
-         3 'NMOS4' created in cell 'BUFX8 layout GDS_2026_06_11'.
-         3 'NMOS4' created in cell 'CLKBUFX8 layout GDS_2026_06_11'.
-         2 'NMOS4' created in cell 'BUFX2 layout GDS_2026_06_11'.
-         2 'NMOS4' created in cell 'CLKBUFX2 layout GDS_2026_06_11'.
-         4 'NMOS4' created in cell 'BUFX16 layout GDS_2026_06_11'.
-         4 'NMOS4' created in cell 'CLKBUFX16 layout GDS_2026_06_11'.
-        10 'NMOS4' created in cell 'BUFFER layout GDS_2026_06_11'.
-         6 'NMOS4' created in cell 'AVDD3ALLP layout GDS_2026_06_11'.
-         3 'NMOS4' created in cell 'AND2X4 layout GDS_2026_06_11'.
-         6 'NMOS4' created in cell 'AGND3ALLP layout GDS_2026_06_11'.
-         1 'NMOS4' created in cell '7_PTAT_Layout2 layout GDS_2026_06_11'.
+         1 'NMOS4' created in cell 'nmos4_CDNS_7817860221180 layout GDS_2026_06_18'.
+         2 'NMOS4' created in cell 'nmos4_CDNS_7817860221178 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'nmos4_CDNS_7817860221177 layout GDS_2026_06_18'.
+         2 'NMOS4' created in cell 'nmos4_CDNS_7817860221176 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'nmos4_CDNS_7817860221134 layout GDS_2026_06_18'.
+         4 'NMOS4' created in cell 'nmos4_CDNS_78178602211180 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'Inverter layout GDS_2026_06_18'.
+         2 'NMOS4' created in cell 'nmos4_CDNS_7817860221196 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'nmos4_CDNS_7817860221187 layout GDS_2026_06_18'.
+         4 'NMOS4' created in cell 'nmos4_CDNS_7817860221186 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'nmos4_CDNS_7817860221185 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'nmos4_CDNS_7817860221170 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'nmos4_CDNS_7817860221169 layout GDS_2026_06_18'.
+         2 'NMOS4' created in cell 'nmos4_CDNS_7817860221160 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'nmos4_CDNS_781786022116 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'nmos4_CDNS_7817860221151 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'nmos4_CDNS_7817860221150 layout GDS_2026_06_18'.
+        10 'NMOS4' created in cell 'nmos4_CDNS_7817860221143 layout GDS_2026_06_18'.
+         2 'NMOS4' created in cell 'nmos4_CDNS_7817860221140 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'nmos4_CDNS_781786022114 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'nmos4_CDNS_7817860221126 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'nmos4_CDNS_7817860221122 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'nmos4_CDNS_78178602211174 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'nmos4_CDNS_78178602211168 layout GDS_2026_06_18'.
+         4 'NMOS4' created in cell 'nmos4_CDNS_78178602211165 layout GDS_2026_06_18'.
+        10 'NMOS4' created in cell 'nmos4_CDNS_78178602211155 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'nmos4_CDNS_78178602211150 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'nmos4_CDNS_78178602211141 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'nmos4_CDNS_78178602211140 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'nmos4_CDNS_78178602211132 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'nmos4_CDNS_78178602211131 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'nmos4_CDNS_78178602211127 layout GDS_2026_06_18'.
+         3 'NMOS4' created in cell 'mux21c_f layout GDS_2026_06_18'.
+         3 'NMOS4' created in cell 'mux21 layout GDS_2026_06_18'.
+         8 'NMOS4' created in cell 'chopper_f layout GDS_2026_06_18'.
+         8 'NMOS4' created in cell 'chopper2 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'INVX2 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'INVX1 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'CLKINVX1 layout GDS_2026_06_18'.
+        10 'NMOS4' created in cell '7_Calibration_current layout GDS_2026_06_18'.
+        24 'NMOS4' created in cell '6_TIA_Front_Layout layout GDS_2026_06_18'.
+         2 'NMOS4' created in cell '6_Resnet layout GDS_2026_06_18'.
+        13 'NMOS4' created in cell '6_CA_Front_Layout layout GDS_2026_06_18'.
+         5 'NMOS4' created in cell 'ia_new_f layout GDS_2026_06_18'.
+        97 'NMOS4' created in cell 'gmc_5_fc layout GDS_2026_06_18'.
+         8 'NMOS4' created in cell 'fecg_vga2_f_2 layout GDS_2026_06_18'.
+        35 'NMOS4' created in cell 'fecg_ia_5_fc layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'fecg_cmfb2_fc layout GDS_2026_06_18'.
+         3 'NMOS4' created in cell 'fecg_bandgap3_layout layout GDS_2026_06_18'.
+         4 'NMOS4' created in cell 'fbias_por2_fc layout GDS_2026_06_18'.
+        17 'NMOS4' created in cell 'fbias_gm_c1_f2c layout GDS_2026_06_18'.
+         8 'NMOS4' created in cell 'buffer2_f_3c layout GDS_2026_06_18'.
+         5 'NMOS4' created in cell 'XOR2X1 layout GDS_2026_06_18'.
+         6 'NMOS4' created in cell 'VDD3RP layout GDS_2026_06_18'.
+         6 'NMOS4' created in cell 'VDD3OP layout GDS_2026_06_18'.
+         6 'NMOS4' created in cell 'VDD3IP layout GDS_2026_06_18'.
+         4 'NMOS4' created in cell 'NOR4X1 layout GDS_2026_06_18'.
+         2 'NMOS4' created in cell 'NOR2X6 layout GDS_2026_06_18'.
+         2 'NMOS4' created in cell 'NOR2X3 layout GDS_2026_06_18'.
+         3 'NMOS4' created in cell 'NAND3X1 layout GDS_2026_06_18'.
+         2 'NMOS4' created in cell 'NAND2X2 layout GDS_2026_06_18'.
+        12 'NMOS4' created in cell 'ICP layout GDS_2026_06_18'.
+         7 'NMOS4' created in cell 'HAX3 layout GDS_2026_06_18'.
+       202 'NMOS4' created in cell 'Gm_C_filter layout GDS_2026_06_18'.
+         6 'NMOS4' created in cell 'GND3RP layout GDS_2026_06_18'.
+         6 'NMOS4' created in cell 'GND3OP layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'FILLCAPX8 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'FILLCAPX4 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'FILLCAPX32 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'FILLCAPX2 layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'FILLCAPX16 layout GDS_2026_06_18'.
+         2 'NMOS4' created in cell 'ECG_bandgap_f_v1 layout GDS_2026_06_18'.
+         4 'NMOS4' created in cell 'DLY1X1 layout GDS_2026_06_18'.
+        15 'NMOS4' created in cell 'DFCX4 layout GDS_2026_06_18'.
+        15 'NMOS4' created in cell 'DFCX3 layout GDS_2026_06_18'.
+        19 'NMOS4' created in cell 'DFCSX4 layout GDS_2026_06_18'.
+        19 'NMOS4' created in cell 'DFCSX2 layout GDS_2026_06_18'.
+        12 'NMOS4' created in cell 'Constant_gm layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell 'CLKINVX4 layout GDS_2026_06_18'.
+         2 'NMOS4' created in cell 'CLKBUFX6 layout GDS_2026_06_18'.
+         2 'NMOS4' created in cell 'CLKBUFX4 layout GDS_2026_06_18'.
+         2 'NMOS4' created in cell 'CLKBUFX3 layout GDS_2026_06_18'.
+         5 'NMOS4' created in cell 'CLKBUFX24 layout GDS_2026_06_18'.
+         3 'NMOS4' created in cell 'CLKBUFX12 layout GDS_2026_06_18'.
+         3 'NMOS4' created in cell 'CLKBUFX10 layout GDS_2026_06_18'.
+         3 'NMOS4' created in cell 'BUFX8 layout GDS_2026_06_18'.
+         3 'NMOS4' created in cell 'CLKBUFX8 layout GDS_2026_06_18'.
+         2 'NMOS4' created in cell 'BUFX2 layout GDS_2026_06_18'.
+         2 'NMOS4' created in cell 'CLKBUFX2 layout GDS_2026_06_18'.
+         4 'NMOS4' created in cell 'BUFX16 layout GDS_2026_06_18'.
+         4 'NMOS4' created in cell 'CLKBUFX16 layout GDS_2026_06_18'.
+        10 'NMOS4' created in cell 'BUFFER layout GDS_2026_06_18'.
+         6 'NMOS4' created in cell 'AVDD3ALLP layout GDS_2026_06_18'.
+         3 'NMOS4' created in cell 'AND2X4 layout GDS_2026_06_18'.
+         6 'NMOS4' created in cell 'AGND3ALLP layout GDS_2026_06_18'.
+         1 'NMOS4' created in cell '7_PTAT_Layout2 layout GDS_2026_06_18'.
 
 Executing: saveRecognition(NMOS_device "device")
 
@@ -2005,91 +2005,91 @@ Executing: extractMOS("PMOS4" PMOS_device (net_poly1 "G") (net_psd "S" "D") (net
          2 'PMOS4' created in cell 'avPart2'.
          2 'PMOS4' created in cell 'avPart1'.
          2 'PMOS4' created in cell 'G272_1_2_7300_0_r90 sub_array'.
-         1 'PMOS4' created in cell 'pmos4_CDNS_7811711871394'.
-         1 'PMOS4' created in cell 'pmos4_CDNS_7811711871364 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'pmos4_CDNS_781171187133 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'pmos4_CDNS_7811711871381 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'pmos4_CDNS_7811711871379 layout GDS_2026_06_11'.
-         4 'PMOS4' created in cell 'pmos4_CDNS_78117118713200 layout GDS_2026_06_11'.
-         2 'PMOS4' created in cell 'pmos4_CDNS_78117118713194 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'pmos4_CDNS_78117118713169 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'Inverter layout GDS_2026_06_11'.
+         1 'PMOS4' created in cell 'pmos4_CDNS_7817860221194'.
+         1 'PMOS4' created in cell 'pmos4_CDNS_7817860221164 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'pmos4_CDNS_781786022113 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'pmos4_CDNS_7817860221181 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'pmos4_CDNS_7817860221179 layout GDS_2026_06_18'.
+         4 'PMOS4' created in cell 'pmos4_CDNS_78178602211200 layout GDS_2026_06_18'.
+         2 'PMOS4' created in cell 'pmos4_CDNS_78178602211194 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'pmos4_CDNS_78178602211169 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'Inverter layout GDS_2026_06_18'.
          2 'PMOS4' created in cell 'avPart4'.
          4 'PMOS4' created in cell 'avPart3'.
-         1 'PMOS4' created in cell 'pmos4_CDNS_7811711871399 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'pmos4_CDNS_7811711871388 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'pmos4_CDNS_781171187138 layout GDS_2026_06_11'.
-         2 'PMOS4' created in cell 'pmos4_CDNS_7811711871373 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'pmos4_CDNS_781171187137 layout GDS_2026_06_11'.
-        10 'PMOS4' created in cell 'pmos4_CDNS_7811711871365 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'pmos4_CDNS_7811711871355 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'pmos4_CDNS_7811711871353 layout GDS_2026_06_11'.
-         6 'PMOS4' created in cell 'pmos4_CDNS_7811711871352 layout GDS_2026_06_11'.
-        10 'PMOS4' created in cell 'pmos4_CDNS_7811711871338 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'pmos4_CDNS_7811711871323 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'pmos4_CDNS_7811711871319 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'pmos4_CDNS_7811711871318 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'pmos4_CDNS_7811711871317 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'pmos4_CDNS_78117118713159 layout GDS_2026_06_11'.
-         6 'PMOS4' created in cell 'pmos4_CDNS_78117118713158 layout GDS_2026_06_11'.
-        10 'PMOS4' created in cell 'pmos4_CDNS_78117118713156 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'pmos4_CDNS_78117118713142 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'pmos4_CDNS_7811711871314 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'pmos4_CDNS_78117118713133 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'pmos4_CDNS_78117118713122 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'pmos4_CDNS_78117118713117 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'pmos4_CDNS_78117118713111 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'pmos4_CDNS_78117118713104 layout GDS_2026_06_11'.
-        20 'PMOS4' created in cell 'pmos4_CDNS_78117118713103 layout GDS_2026_06_11'.
-         5 'PMOS4' created in cell 'mux21c_f layout GDS_2026_06_11'.
-         5 'PMOS4' created in cell 'mux21 layout GDS_2026_06_11'.
-        16 'PMOS4' created in cell 'chopper_f layout GDS_2026_06_11'.
-        16 'PMOS4' created in cell 'chopper2 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'INVX2 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'INVX1 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'CLKINVX1 layout GDS_2026_06_11'.
-       100 'PMOS4' created in cell '7_Calibration_current layout GDS_2026_06_11'.
-         3 'PMOS4' created in cell '6_Resnet layout GDS_2026_06_11'.
-         2 'PMOS4' created in cell 'ia_new_f layout GDS_2026_06_11'.
-         3 'PMOS4' created in cell 'gmc_5_fc layout GDS_2026_06_11'.
-         2 'PMOS4' created in cell 'fecg_ia_5_fc layout GDS_2026_06_11'.
-         5 'PMOS4' created in cell 'fecg_cmfb2_fc layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'fbias_vol_ref1_layout layout GDS_2026_06_11'.
-        36 'PMOS4' created in cell 'fbias_gm_c1_f2c layout GDS_2026_06_11'.
-         5 'PMOS4' created in cell 'XOR2X1 layout GDS_2026_06_11'.
-         4 'PMOS4' created in cell 'NOR4X1 layout GDS_2026_06_11'.
-         4 'PMOS4' created in cell 'NOR2X6 layout GDS_2026_06_11'.
-         2 'PMOS4' created in cell 'NOR2X3 layout GDS_2026_06_11'.
-         3 'PMOS4' created in cell 'NAND3X1 layout GDS_2026_06_11'.
-         2 'PMOS4' created in cell 'NAND2X2 layout GDS_2026_06_11'.
-        21 'PMOS4' created in cell 'ICP layout GDS_2026_06_11'.
-         7 'PMOS4' created in cell 'HAX3 layout GDS_2026_06_11'.
-         3 'PMOS4' created in cell 'Gm_C_filter layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'FILLCAPX8 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'FILLCAPX4 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'FILLCAPX32 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'FILLCAPX2 layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'FILLCAPX16 layout GDS_2026_06_11'.
-         5 'PMOS4' created in cell 'DLY1X1 layout GDS_2026_06_11'.
-        15 'PMOS4' created in cell 'DFCX4 layout GDS_2026_06_11'.
-        15 'PMOS4' created in cell 'DFCX3 layout GDS_2026_06_11'.
-        19 'PMOS4' created in cell 'DFCSX4 layout GDS_2026_06_11'.
-        19 'PMOS4' created in cell 'DFCSX2 layout GDS_2026_06_11'.
-        47 'PMOS4' created in cell 'Constant_gm layout GDS_2026_06_11'.
-         1 'PMOS4' created in cell 'CLKINVX4 layout GDS_2026_06_11'.
-         3 'PMOS4' created in cell 'CLKBUFX6 layout GDS_2026_06_11'.
-         2 'PMOS4' created in cell 'CLKBUFX4 layout GDS_2026_06_11'.
-         2 'PMOS4' created in cell 'CLKBUFX3 layout GDS_2026_06_11'.
-         8 'PMOS4' created in cell 'CLKBUFX24 layout GDS_2026_06_11'.
-         4 'PMOS4' created in cell 'CLKBUFX12 layout GDS_2026_06_11'.
-         4 'PMOS4' created in cell 'CLKBUFX10 layout GDS_2026_06_11'.
-         3 'PMOS4' created in cell 'BUFX8 layout GDS_2026_06_11'.
-         3 'PMOS4' created in cell 'CLKBUFX8 layout GDS_2026_06_11'.
-         2 'PMOS4' created in cell 'BUFX2 layout GDS_2026_06_11'.
-         2 'PMOS4' created in cell 'CLKBUFX2 layout GDS_2026_06_11'.
-         6 'PMOS4' created in cell 'BUFX16 layout GDS_2026_06_11'.
-         6 'PMOS4' created in cell 'CLKBUFX16 layout GDS_2026_06_11'.
-         3 'PMOS4' created in cell 'AND2X4 layout GDS_2026_06_11'.
+         1 'PMOS4' created in cell 'pmos4_CDNS_7817860221199 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'pmos4_CDNS_7817860221188 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'pmos4_CDNS_781786022118 layout GDS_2026_06_18'.
+         2 'PMOS4' created in cell 'pmos4_CDNS_7817860221173 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'pmos4_CDNS_781786022117 layout GDS_2026_06_18'.
+        10 'PMOS4' created in cell 'pmos4_CDNS_7817860221165 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'pmos4_CDNS_7817860221155 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'pmos4_CDNS_7817860221153 layout GDS_2026_06_18'.
+         6 'PMOS4' created in cell 'pmos4_CDNS_7817860221152 layout GDS_2026_06_18'.
+        10 'PMOS4' created in cell 'pmos4_CDNS_7817860221138 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'pmos4_CDNS_7817860221123 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'pmos4_CDNS_7817860221119 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'pmos4_CDNS_7817860221118 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'pmos4_CDNS_7817860221117 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'pmos4_CDNS_78178602211159 layout GDS_2026_06_18'.
+         6 'PMOS4' created in cell 'pmos4_CDNS_78178602211158 layout GDS_2026_06_18'.
+        10 'PMOS4' created in cell 'pmos4_CDNS_78178602211156 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'pmos4_CDNS_78178602211142 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'pmos4_CDNS_7817860221114 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'pmos4_CDNS_78178602211133 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'pmos4_CDNS_78178602211122 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'pmos4_CDNS_78178602211117 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'pmos4_CDNS_78178602211111 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'pmos4_CDNS_78178602211104 layout GDS_2026_06_18'.
+        20 'PMOS4' created in cell 'pmos4_CDNS_78178602211103 layout GDS_2026_06_18'.
+         5 'PMOS4' created in cell 'mux21c_f layout GDS_2026_06_18'.
+         5 'PMOS4' created in cell 'mux21 layout GDS_2026_06_18'.
+        16 'PMOS4' created in cell 'chopper_f layout GDS_2026_06_18'.
+        16 'PMOS4' created in cell 'chopper2 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'INVX2 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'INVX1 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'CLKINVX1 layout GDS_2026_06_18'.
+       100 'PMOS4' created in cell '7_Calibration_current layout GDS_2026_06_18'.
+         3 'PMOS4' created in cell '6_Resnet layout GDS_2026_06_18'.
+         2 'PMOS4' created in cell 'ia_new_f layout GDS_2026_06_18'.
+         3 'PMOS4' created in cell 'gmc_5_fc layout GDS_2026_06_18'.
+         2 'PMOS4' created in cell 'fecg_ia_5_fc layout GDS_2026_06_18'.
+         5 'PMOS4' created in cell 'fecg_cmfb2_fc layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'fbias_vol_ref1_layout layout GDS_2026_06_18'.
+        36 'PMOS4' created in cell 'fbias_gm_c1_f2c layout GDS_2026_06_18'.
+         5 'PMOS4' created in cell 'XOR2X1 layout GDS_2026_06_18'.
+         4 'PMOS4' created in cell 'NOR4X1 layout GDS_2026_06_18'.
+         4 'PMOS4' created in cell 'NOR2X6 layout GDS_2026_06_18'.
+         2 'PMOS4' created in cell 'NOR2X3 layout GDS_2026_06_18'.
+         3 'PMOS4' created in cell 'NAND3X1 layout GDS_2026_06_18'.
+         2 'PMOS4' created in cell 'NAND2X2 layout GDS_2026_06_18'.
+        21 'PMOS4' created in cell 'ICP layout GDS_2026_06_18'.
+         7 'PMOS4' created in cell 'HAX3 layout GDS_2026_06_18'.
+         3 'PMOS4' created in cell 'Gm_C_filter layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'FILLCAPX8 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'FILLCAPX4 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'FILLCAPX32 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'FILLCAPX2 layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'FILLCAPX16 layout GDS_2026_06_18'.
+         5 'PMOS4' created in cell 'DLY1X1 layout GDS_2026_06_18'.
+        15 'PMOS4' created in cell 'DFCX4 layout GDS_2026_06_18'.
+        15 'PMOS4' created in cell 'DFCX3 layout GDS_2026_06_18'.
+        19 'PMOS4' created in cell 'DFCSX4 layout GDS_2026_06_18'.
+        19 'PMOS4' created in cell 'DFCSX2 layout GDS_2026_06_18'.
+        47 'PMOS4' created in cell 'Constant_gm layout GDS_2026_06_18'.
+         1 'PMOS4' created in cell 'CLKINVX4 layout GDS_2026_06_18'.
+         3 'PMOS4' created in cell 'CLKBUFX6 layout GDS_2026_06_18'.
+         2 'PMOS4' created in cell 'CLKBUFX4 layout GDS_2026_06_18'.
+         2 'PMOS4' created in cell 'CLKBUFX3 layout GDS_2026_06_18'.
+         8 'PMOS4' created in cell 'CLKBUFX24 layout GDS_2026_06_18'.
+         4 'PMOS4' created in cell 'CLKBUFX12 layout GDS_2026_06_18'.
+         4 'PMOS4' created in cell 'CLKBUFX10 layout GDS_2026_06_18'.
+         3 'PMOS4' created in cell 'BUFX8 layout GDS_2026_06_18'.
+         3 'PMOS4' created in cell 'CLKBUFX8 layout GDS_2026_06_18'.
+         2 'PMOS4' created in cell 'BUFX2 layout GDS_2026_06_18'.
+         2 'PMOS4' created in cell 'CLKBUFX2 layout GDS_2026_06_18'.
+         6 'PMOS4' created in cell 'BUFX16 layout GDS_2026_06_18'.
+         6 'PMOS4' created in cell 'CLKBUFX16 layout GDS_2026_06_18'.
+         3 'PMOS4' created in cell 'AND2X4 layout GDS_2026_06_18'.
 
 Executing: saveRecognition(PMOS_device "device")
 
@@ -2526,8 +2526,8 @@ Executing: extractDevice("RCX_DUMMY" PMOSD30M_device (net_poly1 "PLUS" "MINUS") 
 Executing: extractDevice("RCX_DUMMY" PMOS30M_device (net_poly1 "PLUS" "MINUS") (cellView...
 
 Executing: extractDIODE("ND" ND_device (net_psub "PLUS") (net_nsd "MINUS") (targetLayer ...
-         1 'ND' created in cell 'ICP layout GDS_2026_06_11'.
-         8 'ND' created in cell 'APRIO200P layout GDS_2026_06_11'.
+         1 'ND' created in cell 'ICP layout GDS_2026_06_18'.
+         8 'ND' created in cell 'APRIO200P layout GDS_2026_06_18'.
 
 Executing: saveRecognition(ND_device "device")
 
@@ -2548,15 +2548,15 @@ Executing: P_ND_device = geomAndNot(geomAndNot(geomAndNot(ndiode_1 DIODE) nmosh_
 Executing: extractDevice("RCX_DUMMY" P_ND_device (net_nsd "PLUS" "MINUS") (cellView "pca...
 
 Executing: extractDIODE("PD" PD_device (net_psd "PLUS") (net_nwell "MINUS") (targetLayer...
-         2 'PD' created in cell 'VDD3RP layout GDS_2026_06_11'.
-         2 'PD' created in cell 'VDD3OP layout GDS_2026_06_11'.
-         3 'PD' created in cell 'VDD3IP layout GDS_2026_06_11'.
-        22 'PD' created in cell 'PWRCUT_DIG_P_DX layout GDS_2026_06_11'.
-         1 'PD' created in cell 'ICP layout GDS_2026_06_11'.
-         2 'PD' created in cell 'GND3RP layout GDS_2026_06_11'.
-         2 'PD' created in cell 'GND3OP layout GDS_2026_06_11'.
-         4 'PD' created in cell 'GND3IP layout GDS_2026_06_11'.
-         8 'PD' created in cell 'APRIO200P layout GDS_2026_06_11'.
+         2 'PD' created in cell 'VDD3RP layout GDS_2026_06_18'.
+         2 'PD' created in cell 'VDD3OP layout GDS_2026_06_18'.
+         3 'PD' created in cell 'VDD3IP layout GDS_2026_06_18'.
+        22 'PD' created in cell 'PWRCUT_DIG_P_DX layout GDS_2026_06_18'.
+         1 'PD' created in cell 'ICP layout GDS_2026_06_18'.
+         2 'PD' created in cell 'GND3RP layout GDS_2026_06_18'.
+         2 'PD' created in cell 'GND3OP layout GDS_2026_06_18'.
+         4 'PD' created in cell 'GND3IP layout GDS_2026_06_18'.
+         8 'PD' created in cell 'APRIO200P layout GDS_2026_06_18'.
 
 Executing: saveRecognition(PD_device "device")
 
@@ -2575,18 +2575,18 @@ Executing: nameParameter(perimeter "pj")
 Executing: extractDevice("RCX_DUMMY" P_PD_device (net_psd "PLUS" "MINUS") (cellView "pca...
 
 Executing: extractDIODE("NWD" NWD_device (net_psub "PLUS") (net_nwell "MINUS") (targetLa...
-         6 'NWD' created in cell 'VDD3RP layout GDS_2026_06_11'.
-         7 'NWD' created in cell 'VDD3OP layout GDS_2026_06_11'.
-         6 'NWD' created in cell 'VDD3IP layout GDS_2026_06_11'.
-         8 'NWD' created in cell 'PWRCUT_DIG_P_DX layout GDS_2026_06_11'.
-         8 'NWD' created in cell 'ICP layout GDS_2026_06_11'.
-         6 'NWD' created in cell 'GND3RP layout GDS_2026_06_11'.
-         6 'NWD' created in cell 'GND3OP layout GDS_2026_06_11'.
-         4 'NWD' created in cell 'GND3IP layout GDS_2026_06_11'.
-         6 'NWD' created in cell 'AVDD3ALLP layout GDS_2026_06_11'.
-         4 'NWD' created in cell 'APRIO200P layout GDS_2026_06_11'.
-         6 'NWD' created in cell 'AGND3ALLP layout GDS_2026_06_11'.
-         1 'NWD' created in cell 'IO_RING_S_VHS layout GDS_2026_06_11'.
+         6 'NWD' created in cell 'VDD3RP layout GDS_2026_06_18'.
+         7 'NWD' created in cell 'VDD3OP layout GDS_2026_06_18'.
+         6 'NWD' created in cell 'VDD3IP layout GDS_2026_06_18'.
+         8 'NWD' created in cell 'PWRCUT_DIG_P_DX layout GDS_2026_06_18'.
+         8 'NWD' created in cell 'ICP layout GDS_2026_06_18'.
+         6 'NWD' created in cell 'GND3RP layout GDS_2026_06_18'.
+         6 'NWD' created in cell 'GND3OP layout GDS_2026_06_18'.
+         4 'NWD' created in cell 'GND3IP layout GDS_2026_06_18'.
+         6 'NWD' created in cell 'AVDD3ALLP layout GDS_2026_06_18'.
+         4 'NWD' created in cell 'APRIO200P layout GDS_2026_06_18'.
+         6 'NWD' created in cell 'AGND3ALLP layout GDS_2026_06_18'.
+         1 'NWD' created in cell 'IO_RING_S_VHS layout GDS_2026_06_18'.
 
 Executing: saveRecognition(NWD_device "device")
 
@@ -2719,7 +2719,7 @@ Executing: nameParameter(w "w")
 Executing: nameParameter(r "r")
 
 Executing: extractRES("RDIFFP3" RDIFFP_device (net_psd "PLUS" "MINUS") (net_nwell "B") (...
-         2 'RDIFFP3' created in cell 'ICP layout GDS_2026_06_11'.
+         2 'RDIFFP3' created in cell 'ICP layout GDS_2026_06_18'.
 
 Executing: saveRecognition(RDIFFP_device "device")
 
@@ -2774,8 +2774,8 @@ Executing: pres_ntub_trm = geomButting(pres_trm RPOLY2_NTUB_device)
 Executing: pres_psub_trm = geomButting(pres_trm RPOLY2_PSUB_device)
 
 Executing: extractRES("RPOLY2" RPOLY2_PSUB_device (net_poly2 "PLUS" "MINUS") (net_psub "...
-         9 'RPOLY2' created in cell 'APRIO200P layout GDS_2026_06_11'.
-         9 'RPOLY2' created in cell 'APRIO200P_VAR1 layout GDS_2026_06_11'.
+         9 'RPOLY2' created in cell 'APRIO200P layout GDS_2026_06_18'.
+         9 'RPOLY2' created in cell 'APRIO200P_VAR1 layout GDS_2026_06_18'.
 
 Executing: saveRecognition(RPOLY2_PSUB_device "device")
 
@@ -2928,10 +2928,10 @@ Executing: presh_ntub_trm = geomButting(presh_trm RPOLYH_NTUB_device)
 Executing: presh_psub_trm = geomButting(presh_trm RPOLYH_PSUB_device)
 
 Executing: extractRES("RPOLYH" RPOLYH_PSUB_device (net_poly2 "PLUS" "MINUS") (net_psub "...
-         1 'RPOLYH' created in cell 'rpolyhc_CDNS_78117118713126 layout GDS_2026_06_11'.
-         1 'RPOLYH' created in cell 'Gm_C_filter layout GDS_2026_06_11'.
-         2 'RPOLYH' created in cell 'ECG_bandgap_f_v1 layout GDS_2026_06_11'.
-         1 'RPOLYH' created in cell 'Constant_gm layout GDS_2026_06_11'.
+         1 'RPOLYH' created in cell 'rpolyhc_CDNS_78178602211126 layout GDS_2026_06_18'.
+         1 'RPOLYH' created in cell 'Gm_C_filter layout GDS_2026_06_18'.
+         2 'RPOLYH' created in cell 'ECG_bandgap_f_v1 layout GDS_2026_06_18'.
+         1 'RPOLYH' created in cell 'Constant_gm layout GDS_2026_06_18'.
 
 Executing: saveRecognition(RPOLYH_PSUB_device "device")
 
@@ -2964,37 +2964,37 @@ Executing: nameParameter(r "r")
 Executing: saveProperty(RPOLYH_PSUB_device "gwell" "Substrate")
 
 Executing: extractRES("RPOLYH" RPOLYH_NTUB_device (net_poly2 "PLUS" "MINUS") (net_nwell ...
-         1 'RPOLYH' created in cell 'rpolyhc_CDNS_78117118713189 layout GDS_2026_06_11'.
-         1 'RPOLYH' created in cell 'rpolyhc_CDNS_7811711871393 layout GDS_2026_06_11'.
-         1 'RPOLYH' created in cell 'rpolyhc_CDNS_7811711871384 layout GDS_2026_06_11'.
-         1 'RPOLYH' created in cell 'rpolyhc_CDNS_7811711871363 layout GDS_2026_06_11'.
-         1 'RPOLYH' created in cell 'rpolyhc_CDNS_7811711871324 layout GDS_2026_06_11'.
-         1 'RPOLYH' created in cell 'rpolyhc_CDNS_78117118713173 layout GDS_2026_06_11'.
-         1 'RPOLYH' created in cell 'rpolyhc_CDNS_78117118713172 layout GDS_2026_06_11'.
-         1 'RPOLYH' created in cell 'rpolyhc_CDNS_78117118713162 layout GDS_2026_06_11'.
-         1 'RPOLYH' created in cell 'rpolyhc_CDNS_78117118713161 layout GDS_2026_06_11'.
-         1 'RPOLYH' created in cell 'rpolyhc_CDNS_78117118713136 layout GDS_2026_06_11'.
-         1 'RPOLYH' created in cell 'rpolyhc_CDNS_78117118713114 layout GDS_2026_06_11'.
-         1 'RPOLYH' created in cell 'rpolyhc_CDNS_781171187131 layout GDS_2026_06_11'.
-         2 'RPOLYH' created in cell '6_TIA_Front_Layout layout GDS_2026_06_11'.
-         1 'RPOLYH' created in cell '6_Resnet layout GDS_2026_06_11'.
-         1 'RPOLYH' created in cell '6_CA_Front_Layout layout GDS_2026_06_11'.
-         4 'RPOLYH' created in cell 'ia_new_f layout GDS_2026_06_11'.
-         1 'RPOLYH' created in cell 'gmc_5_fc layout GDS_2026_06_11'.
-         1 'RPOLYH' created in cell 'fecg_vga2_f_2 layout GDS_2026_06_11'.
-         5 'RPOLYH' created in cell 'fecg_ia_5_fc layout GDS_2026_06_11'.
-         1 'RPOLYH' created in cell 'fecg_cmfb2_fc layout GDS_2026_06_11'.
-         1 'RPOLYH' created in cell 'fecg_bandgap3_layout layout GDS_2026_06_11'.
-         1 'RPOLYH' created in cell 'fbias_vol_ref1_layout layout GDS_2026_06_11'.
-         2 'RPOLYH' created in cell 'fbias_por2_fc layout GDS_2026_06_11'.
-         1 'RPOLYH' created in cell 'fbias_gm_c1_f2c layout GDS_2026_06_11'.
-         1 'RPOLYH' created in cell 'fbias_cur_ref2_layout layout GDS_2026_06_11'.
-         1 'RPOLYH' created in cell 'buffer2_f_3c layout GDS_2026_06_11'.
-         3 'RPOLYH' created in cell 'VGA_1 layout GDS_2026_06_11'.
-         3 'RPOLYH' created in cell 'Current_Voltage_Reference layout GDS_2026_06_11'.
-         1 'RPOLYH' created in cell 'BUFFER layout GDS_2026_06_11'.
-         3 'RPOLYH' created in cell '8_CA_TIA_Front_calib layout GDS_2026_06_11'.
-         3 'RPOLYH' created in cell '7_PTAT_Layout2 layout GDS_2026_06_11'.
+         1 'RPOLYH' created in cell 'rpolyhc_CDNS_78178602211189 layout GDS_2026_06_18'.
+         1 'RPOLYH' created in cell 'rpolyhc_CDNS_7817860221193 layout GDS_2026_06_18'.
+         1 'RPOLYH' created in cell 'rpolyhc_CDNS_7817860221184 layout GDS_2026_06_18'.
+         1 'RPOLYH' created in cell 'rpolyhc_CDNS_7817860221163 layout GDS_2026_06_18'.
+         1 'RPOLYH' created in cell 'rpolyhc_CDNS_7817860221124 layout GDS_2026_06_18'.
+         1 'RPOLYH' created in cell 'rpolyhc_CDNS_78178602211173 layout GDS_2026_06_18'.
+         1 'RPOLYH' created in cell 'rpolyhc_CDNS_78178602211172 layout GDS_2026_06_18'.
+         1 'RPOLYH' created in cell 'rpolyhc_CDNS_78178602211162 layout GDS_2026_06_18'.
+         1 'RPOLYH' created in cell 'rpolyhc_CDNS_78178602211161 layout GDS_2026_06_18'.
+         1 'RPOLYH' created in cell 'rpolyhc_CDNS_78178602211136 layout GDS_2026_06_18'.
+         1 'RPOLYH' created in cell 'rpolyhc_CDNS_78178602211114 layout GDS_2026_06_18'.
+         1 'RPOLYH' created in cell 'rpolyhc_CDNS_781786022111 layout GDS_2026_06_18'.
+         2 'RPOLYH' created in cell '6_TIA_Front_Layout layout GDS_2026_06_18'.
+         1 'RPOLYH' created in cell '6_Resnet layout GDS_2026_06_18'.
+         1 'RPOLYH' created in cell '6_CA_Front_Layout layout GDS_2026_06_18'.
+         4 'RPOLYH' created in cell 'ia_new_f layout GDS_2026_06_18'.
+         1 'RPOLYH' created in cell 'gmc_5_fc layout GDS_2026_06_18'.
+         1 'RPOLYH' created in cell 'fecg_vga2_f_2 layout GDS_2026_06_18'.
+         5 'RPOLYH' created in cell 'fecg_ia_5_fc layout GDS_2026_06_18'.
+         1 'RPOLYH' created in cell 'fecg_cmfb2_fc layout GDS_2026_06_18'.
+         1 'RPOLYH' created in cell 'fecg_bandgap3_layout layout GDS_2026_06_18'.
+         1 'RPOLYH' created in cell 'fbias_vol_ref1_layout layout GDS_2026_06_18'.
+         2 'RPOLYH' created in cell 'fbias_por2_fc layout GDS_2026_06_18'.
+         1 'RPOLYH' created in cell 'fbias_gm_c1_f2c layout GDS_2026_06_18'.
+         1 'RPOLYH' created in cell 'fbias_cur_ref2_layout layout GDS_2026_06_18'.
+         1 'RPOLYH' created in cell 'buffer2_f_3c layout GDS_2026_06_18'.
+         3 'RPOLYH' created in cell 'VGA_1 layout GDS_2026_06_18'.
+         3 'RPOLYH' created in cell 'Current_Voltage_Reference layout GDS_2026_06_18'.
+         1 'RPOLYH' created in cell 'BUFFER layout GDS_2026_06_18'.
+         3 'RPOLYH' created in cell '8_CA_TIA_Front_calib layout GDS_2026_06_18'.
+         3 'RPOLYH' created in cell '7_PTAT_Layout2 layout GDS_2026_06_18'.
 
 Executing: saveRecognition(RPOLYH_NTUB_device "device")
 
@@ -3043,12 +3043,12 @@ Executing: pres1_ntub_trm = geomButting(pres1_trm RPOLY1_NTUB_device)
 Executing: pres1_psub_trm = geomButting(pres1_trm RPOLY1_PSUB_device)
 
 Executing: extractRES("RPOLY1" RPOLY1_PSUB_device (net_poly1 "PLUS" "MINUS") (net_psub "...
-         1 'RPOLY1' created in cell 'VDD3RP layout GDS_2026_06_11'.
-         1 'RPOLY1' created in cell 'VDD3OP layout GDS_2026_06_11'.
-         1 'RPOLY1' created in cell 'VDD3IP layout GDS_2026_06_11'.
-         1 'RPOLY1' created in cell 'GND3RP layout GDS_2026_06_11'.
-         1 'RPOLY1' created in cell 'GND3OP layout GDS_2026_06_11'.
-         1 'RPOLY1' created in cell 'AGND3ALLP layout GDS_2026_06_11'.
+         1 'RPOLY1' created in cell 'VDD3RP layout GDS_2026_06_18'.
+         1 'RPOLY1' created in cell 'VDD3OP layout GDS_2026_06_18'.
+         1 'RPOLY1' created in cell 'VDD3IP layout GDS_2026_06_18'.
+         1 'RPOLY1' created in cell 'GND3RP layout GDS_2026_06_18'.
+         1 'RPOLY1' created in cell 'GND3OP layout GDS_2026_06_18'.
+         1 'RPOLY1' created in cell 'AGND3ALLP layout GDS_2026_06_18'.
 
 Executing: saveRecognition(RPOLY1_PSUB_device "device")
 
@@ -3081,8 +3081,8 @@ Executing: nameParameter(r "r")
 Executing: saveProperty(RPOLY1_PSUB_device "gwell" "Substrate")
 
 Executing: extractRES("RPOLY1" RPOLY1_NTUB_device (net_poly1 "PLUS" "MINUS") (net_nwell ...
-         1 'RPOLY1' created in cell 'ICP layout GDS_2026_06_11'.
-         1 'RPOLY1' created in cell 'AVDD3ALLP layout GDS_2026_06_11'.
+         1 'RPOLY1' created in cell 'ICP layout GDS_2026_06_18'.
+         1 'RPOLY1' created in cell 'AVDD3ALLP layout GDS_2026_06_18'.
 
 Executing: saveRecognition(RPOLY1_NTUB_device "device")
 
@@ -3179,7 +3179,7 @@ Executing: r = calculateParameter(((l / (w - (0 * 1e-06))) * 0.04))
 Executing: nameParameter(r "r")
 
 Executing: extractRES("SHORT" RVIA1_device (net_met2 "PLUS") (net_met1 "MINUS") (cellVie...
-         6 'SHORT' created in cell 'AGND3ALLP layout GDS_2026_06_11'.
+         6 'SHORT' created in cell 'AGND3ALLP layout GDS_2026_06_18'.
 
 Executing: count_vias = measureParameter(figCount (RVIA1_device enclosing VIA1))
 
@@ -3192,8 +3192,8 @@ Executing: nameParameter(vias "via1_count")
 Executing: nameParameter(r "r")
 
 Executing: extractRES("SHORT" RVIA2_device (net_met3 "PLUS") (net_met2 "MINUS") (cellVie...
-         6 'SHORT' created in cell 'AVDD3ALLP layout GDS_2026_06_11'.
-         4 'SHORT' created in cell 'AGND3ALLP layout GDS_2026_06_11'.
+         6 'SHORT' created in cell 'AVDD3ALLP layout GDS_2026_06_18'.
+         4 'SHORT' created in cell 'AGND3ALLP layout GDS_2026_06_18'.
 
 Executing: count_vias = measureParameter(figCount (RVIA2_device enclosing VIA2))
 
@@ -3244,7 +3244,7 @@ Executing: pnpvert10_c = geomCat(net_psub)
 Executing: geomStamp(pnpvert10_c net_psub)
 
 Executing: extractBJT("PNPVERT10" VERT10_device (pnpvert10_c "C") (net_welltap "B") (pnp...
-         1 'PNPVERT10' created in cell 'vert10_4 layout GDS_2026_06_11'.
+         1 'PNPVERT10' created in cell 'vert10_4 layout GDS_2026_06_18'.
 
 Executing: saveRecognition(VERT10_device "device")
 
@@ -3259,31 +3259,31 @@ Executing: CPOLY_NTUB_device = geomAvoiding(geomAndNot(geomAnd(cpoly net_nwell) 
 Executing: CPOLY_PSUB_device = geomAvoiding(geomAndNot(geomAndNot(cpoly net_nwell) RFDEF...
 
 Executing: extractCAP("CPOLYA" CPOLY_PSUB_device (net_poly2 "PLUS") (net_poly1 "MINUS") ...
-         1 'CPOLYA' created in cell 'cpolyc_CDNS_78117118713149 layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'cpolyc_CDNS_78117118713148 layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'cpolyc_CDNS_78117118713147 layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'cpolyc_CDNS_78117118713145 layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'cpolyc_CDNS_78117118713138 layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'cpolyc_CDNS_78117118713119 layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'cpolyc_CDNS_78117118713112 layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'cpolyc_CDNS_78117118713110 layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'cpolyc_CDNS_78117118713100 layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'cmfb_opamp1_fc layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'V500_20 layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'ia_new_f layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'gmc_5_fc layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'fecg_vga2_f_2 layout GDS_2026_06_11'.
-         2 'CPOLYA' created in cell 'fecg_ia_5_fc layout GDS_2026_06_11'.
-         4 'CPOLYA' created in cell 'fecg_cmfb2_fc layout GDS_2026_06_11'.
-         2 'CPOLYA' created in cell 'fbias_por2_fc layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'fbias_gm_c1_f2c layout GDS_2026_06_11'.
-         2 'CPOLYA' created in cell 'buffer2_f_3c layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'VGA_1 layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'V200_20 layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'Gm_C_filter layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'ECG_bandgap_f_v1 layout GDS_2026_06_11'.
-         2 'CPOLYA' created in cell 'Current_Voltage_Reference layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'BUFFER layout GDS_2026_06_11'.
+         1 'CPOLYA' created in cell 'cpolyc_CDNS_78178602211149 layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'cpolyc_CDNS_78178602211148 layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'cpolyc_CDNS_78178602211147 layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'cpolyc_CDNS_78178602211145 layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'cpolyc_CDNS_78178602211138 layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'cpolyc_CDNS_78178602211119 layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'cpolyc_CDNS_78178602211112 layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'cpolyc_CDNS_78178602211110 layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'cpolyc_CDNS_78178602211100 layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'cmfb_opamp1_fc layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'V500_20 layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'ia_new_f layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'gmc_5_fc layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'fecg_vga2_f_2 layout GDS_2026_06_18'.
+         2 'CPOLYA' created in cell 'fecg_ia_5_fc layout GDS_2026_06_18'.
+         4 'CPOLYA' created in cell 'fecg_cmfb2_fc layout GDS_2026_06_18'.
+         2 'CPOLYA' created in cell 'fbias_por2_fc layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'fbias_gm_c1_f2c layout GDS_2026_06_18'.
+         2 'CPOLYA' created in cell 'buffer2_f_3c layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'VGA_1 layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'V200_20 layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'Gm_C_filter layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'ECG_bandgap_f_v1 layout GDS_2026_06_18'.
+         2 'CPOLYA' created in cell 'Current_Voltage_Reference layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'BUFFER layout GDS_2026_06_18'.
 
 Executing: saveRecognition(CPOLY_PSUB_device "device")
 
@@ -3306,20 +3306,20 @@ Executing: nameParameter(p "p")
 Executing: saveProperty(CPOLY_PSUB_device "gwell" "Substrate")
 
 Executing: extractCAP("CPOLYA" CPOLY_NTUB_device (net_poly2 "PLUS") (net_poly1 "MINUS") ...
-         1 'CPOLYA' created in cell 'cpolyc_CDNS_7811711871346 layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'cpolyc_CDNS_78117118713186 layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'cpolyc_CDNS_781171187130 layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'cpolyc_CDNS_7811711871398 layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'cpolyc_CDNS_7811711871368 layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'cpolyc_CDNS_7811711871361 layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'cpolyc_CDNS_7811711871337 layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'cpolyc_CDNS_78117118713198 layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'cpolyc_CDNS_78117118713167 layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'cpolyc_CDNS_78117118713157 layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell '6_TIA_Front_Layout layout GDS_2026_06_11'.
-         1 'CPOLYA' created in cell 'ia_new_f layout GDS_2026_06_11'.
-         2 'CPOLYA' created in cell '8_CA_TIA_Front_calib layout GDS_2026_06_11'.
-         4 'CPOLYA' created in cell '7_PTAT_Layout2 layout GDS_2026_06_11'.
+         1 'CPOLYA' created in cell 'cpolyc_CDNS_7817860221146 layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'cpolyc_CDNS_78178602211186 layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'cpolyc_CDNS_781786022110 layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'cpolyc_CDNS_7817860221198 layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'cpolyc_CDNS_7817860221168 layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'cpolyc_CDNS_7817860221161 layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'cpolyc_CDNS_7817860221137 layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'cpolyc_CDNS_78178602211198 layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'cpolyc_CDNS_78178602211167 layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'cpolyc_CDNS_78178602211157 layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell '6_TIA_Front_Layout layout GDS_2026_06_18'.
+         1 'CPOLYA' created in cell 'ia_new_f layout GDS_2026_06_18'.
+         2 'CPOLYA' created in cell '8_CA_TIA_Front_calib layout GDS_2026_06_18'.
+         4 'CPOLYA' created in cell '7_PTAT_Layout2 layout GDS_2026_06_18'.
 
 Executing: saveRecognition(CPOLY_NTUB_device "device")
 
@@ -3358,8 +3358,8 @@ Executing: cvar_ndiff_cross = geomSize(cvar_ndiff_cross1 -0.1 edges)
 Executing: CVAR_device = geomOr(cvar_ndiff_closed)
 
 Executing: extractDevice("CVAR" CVAR_device (net_poly1 "G") (net_welltap "B") (net_psub ...
-         1 'CVAR' created in cell 'cvar_CDNS_7811711871321 layout GDS_2026_06_11'.
-         1 'CVAR' created in cell 'cvar_CDNS_7811711871313 layout GDS_2026_06_11'.
+         1 'CVAR' created in cell 'cvar_CDNS_7817860221121 layout GDS_2026_06_18'.
+         1 'CVAR' created in cell 'cvar_CDNS_7817860221113 layout GDS_2026_06_18'.
 
 Executing: saveRecognition(CVAR_device "device")
 
@@ -3530,12 +3530,12 @@ Executing: errorLayer(bkgnd1 "# INFO: Set -resimulate_extracted- Switch for QRC!
 Executing: errorLayer(bkgnd3 "# C35B4 ENG - 183 Rev9 (Last updated 26-Apr-2017 12:48) #")
 
 Finished running rules. Task processor time in main process:
-cpu: 5.93  elap: 6  pf: 0  in: 0  out: 1240  virt: 187M  phys: 1105M
+cpu: 5.95  elap: 6  pf: 0  in: 0  out: 1240  virt: 192M  phys: 1103M
 
 No output post-processing: This is not a DRC run
 
 Finished building the persistent database.
-cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6992  virt: 192M  phys: 1105M
+cpu: 0.01  elap: 0  pf: 0  in: 0  out: 6992  virt: 197M  phys: 1103M
 
 
 *****  aveng terminated normally  *****
@@ -3573,7 +3573,7 @@ Loading tech rule set file : /opt/pdk/ams/410/assura/c35b4/c35b4c3/techRuleSets
 @(#)$CDS: avrpt_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/avrpt on Thu Jun 11 09:50:48 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/avrpt on Thu Jun 18 12:36:41 2026
 
 
    Creating Error Database 'top_IL2244_VT26'...
@@ -3780,7 +3780,7 @@ Total  errors:                                            8523         1129
    Rule 45 done.
    Rule 204 done.
 
-avrpt cpu sec:    0.05  elapsed:     1  virtual:    93M
+avrpt cpu sec:    0.05  elapsed:     0  virtual:    93M
 
 Finished /opt/tools/cadence/installs/ASSURA41_618//tools.lnx86/assura/bin/avrpt
 
@@ -3854,21 +3854,21 @@ Checking out license for Pegasus_LVS
 @(#)$CDS: avnx_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:35 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
 
-run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/avnx on Thu Jun 11 09:50:49 2026
+run on edatools from /opt/tools/cadence/installs/ASSURA41_618/tools.lnx86/assura/bin/64bit/avnx on Thu Jun 18 12:36:42 2026
 
 avnx started...
 Combined/reduced   2 variants for vert10_4_A10 array 3 7 17.4 19.4 r0
-Combined/reduced   2 variants for PERI_SPACER_100_P layout GDS_2026_06_11
-Combined/reduced   2 variants for APRIO200P layout GDS_2026_06_11
-cpu: 0.16  elap: 0  pf: 0  in: 0  out: 2112  virt: 595M  phys: 1080M
+Combined/reduced   2 variants for PERI_SPACER_100_P layout GDS_2026_06_18
+Combined/reduced   2 variants for APRIO200P layout GDS_2026_06_18
+cpu: 0.15  elap: 0  pf: 0  in: 0  out: 2112  virt: 595M  phys: 1082M
 
-Run time =  0.00 seconds
+Run time =  1.00 seconds
 CPU time =  0.19 seconds
 
                   End of Summary Report
 
 ************************************************************************
-cpu: 0.01  elap: 0  pf: 0  in: 0  out: 43392  virt: 518M  phys: 1080M
+cpu: 0.01  elap: 0  pf: 0  in: 0  out: 43632  virt: 518M  phys: 1082M
 ***** avnx terminated normally ***** 
 
 
@@ -3882,7 +3882,7 @@ Checking out license for Pegasus_LVS_SP
 Checking out license for Pegasus_LVS
 @(#)$CDS: nvn_64 version av4.1:Production:dfII6.1.8-64b:IC6.1.8-64b.500.35 07/29/2024 05:39 (sjfhw885) $
 sub-version 4.1_USR7_main, integ signature 2024-07-29-0506
-run on edatools at Thu Jun 11 09:50:49 2026
+run on edatools at Thu Jun 18 12:36:42 2026
 Loading all available p-cell functions
 AMS_DB set to cds
 Reading schematic network
@@ -3922,93 +3922,93 @@ Preprocessing layout network phase 1
 *WARNING* deleteCellPin - Unable to find cell 'PMOSD30M'
 Preprocessing schematic network phase 2
 Preprocessing layout network phase 2
-Comparing 6_CA_Front_Layout schematic Potentiostat_cpoly2 vs 6_CA_Front_Layout layout GDS_2026_06_11
-Comparing Inverter schematic Potentiostat_cpoly2 vs Inverter layout GDS_2026_06_11
-Comparing 7_Calibration_current schematic Potentiostat_cpoly2 vs 7_Calibration_current layout GDS_2026_06_11
-Comparing 7_MUX21 schematic Potentiostat_cpoly2 vs 7_MUX21 layout GDS_2026_06_11
-Comparing 6_TIA_Front_Layout schematic Potentiostat_cpoly2 vs 6_TIA_Front_Layout layout GDS_2026_06_11
-Comparing 6_Resnet schematic Potentiostat_cpoly2 vs 6_Resnet layout GDS_2026_06_11
-Comparing 8_CA_TIA_Front_calib schematic Potentiostat_cpoly2 vs 8_CA_TIA_Front_calib layout GDS_2026_06_11
-Comparing 7_PTAT_Layout2 schematic Potentiostat_cpoly2 vs 7_PTAT_Layout2 layout GDS_2026_06_11
-Comparing V500_20 schematic POWER_TRACKS vs V500_20 layout GDS_2026_06_11
-Comparing V200_20 schematic POWER_TRACKS vs V200_20 layout GDS_2026_06_11
-Comparing 8_Poten_PTAT2 schematic Potentiostat_cpoly2 vs 8_Poten_PTAT2 layout GDS_2026_06_11
-Comparing Current_Voltage_Reference schematic YAOWEN vs Current_Voltage_Reference layout GDS_2026_06_11
-Comparing ECG_bandgap_f_v1 schematic YAOWEN vs ECG_bandgap_f_v1 layout GDS_2026_06_11
-Comparing Constant_gm schematic YAOWEN vs Constant_gm layout GDS_2026_06_11
-Comparing ECG_BIAS schematic YAOWEN vs ECG_BIAS layout GDS_2026_06_11
-Comparing INVX1 cmos_sch CORELIBD vs INVX1 layout GDS_2026_06_11
-Comparing Gm_C_filter schematic YAOWEN vs Gm_C_filter layout GDS_2026_06_11
-Comparing V1000_20 schematic POWER_TRACKS vs V1000_20 layout GDS_2026_06_11
-Comparing chopper_f schematic YAOWEN vs chopper_f layout GDS_2026_06_11
-Comparing ia_new_f schematic YAOWEN vs ia_new_f layout GDS_2026_06_11
-Comparing mux21 schematic YAOWEN vs mux21 layout GDS_2026_06_11
-Comparing VGA_1 schematic YAOWEN vs VGA_1 layout GDS_2026_06_11
-Comparing cmfb_opamp1_fc schematic FECG vs cmfb_opamp1_fc layout GDS_2026_06_11
-Comparing fecg_cmfb2_fc schematic FECG vs fecg_cmfb2_fc layout GDS_2026_06_11
-Comparing BUFFER schematic YAOWEN vs BUFFER layout GDS_2026_06_11
-Comparing ECG_Front_End schematic YAOWEN vs ECG_Front_End layout GDS_2026_06_11
-Comparing fbias_gm_c1_f2c schematic FBIAS vs fbias_gm_c1_f2c layout GDS_2026_06_11
-Comparing fbias_vol_ref1_layout schematic FBIAS vs fbias_vol_ref1_layout layout GDS_2026_06_11
-Comparing fecg_bandgap3_layout schematic FBIAS vs fecg_bandgap3_layout layout GDS_2026_06_11
-Comparing fbias_cur_ref2_layout schematic FBIAS vs fbias_cur_ref2_layout layout GDS_2026_06_11
-Comparing INVX2 cmos_sch CORELIBD vs INVX2 layout GDS_2026_06_11
-Comparing fbias_por2_fc schematic FBIAS vs fbias_por2_fc layout GDS_2026_06_11
-Comparing fbias_bias2_f schematic FBIAS vs fbias_bias2_f layout GDS_2026_06_11
-Comparing buffer2_f_3c schematic FECG vs buffer2_f_3c layout GDS_2026_06_11
-Comparing mux21c_f schematic FECG vs mux21c_f layout GDS_2026_06_11
-Comparing fecg_vga2_f_2 schematic FECG vs fecg_vga2_f_2 layout GDS_2026_06_11
-Comparing chopper2 schematic FECG vs chopper2 layout GDS_2026_06_11
-Comparing fecg_ia_5_fc schematic FECG vs fecg_ia_5_fc layout GDS_2026_06_11
-Comparing gmc_5_fc schematic FECG vs gmc_5_fc layout GDS_2026_06_11
-Comparing fecg_front_end_f_3 schematic FECG vs fecg_front_end_f_3 layout GDS_2026_06_11
-Comparing GND3IP cmos_sch IOLIB_4M vs GND3IP layout GDS_2026_06_11
-Comparing GND3OP cmos_sch IOLIB_4M vs GND3OP layout GDS_2026_06_11
-Comparing GND3RP cmos_sch IOLIB_4M vs GND3RP layout GDS_2026_06_11
-Comparing ICP cmos_sch IOLIB_4M vs ICP layout GDS_2026_06_11
-Comparing VDD3IP cmos_sch IOLIB_4M vs VDD3IP layout GDS_2026_06_11
-Comparing VDD3OP cmos_sch IOLIB_4M vs VDD3OP layout GDS_2026_06_11
-Comparing VDD3RP cmos_sch IOLIB_4M vs VDD3RP layout GDS_2026_06_11
-Comparing PWRCUT_DIG_P_DX cmos_sch IOLIB_4M vs PWRCUT_DIG_P_DX layout GDS_2026_06_11
-Comparing APRIO200P schematic IOLIB_ANA_4M vs APRIO200P layout GDS_2026_06_11
-Comparing AVDD3ALLP schematic IOLIB_ANA_4M vs AVDD3ALLP layout GDS_2026_06_11
-Comparing AGND3ALLP schematic IOLIB_ANA_4M vs AGND3ALLP layout GDS_2026_06_11
-Comparing IO_RING_S_VHS schematic VT26_IO_RING vs IO_RING_S_VHS layout GDS_2026_06_11
-Comparing NAND3X1 cmos_sch CORELIBD vs NAND3X1 layout GDS_2026_06_11
-Comparing NOR4X1 cmos_sch CORELIBD vs NOR4X1 layout GDS_2026_06_11
-Comparing XOR2X1 cmos_sch CORELIBD vs XOR2X1 layout GDS_2026_06_11
-Comparing HAX3 cmos_sch CORELIBD vs HAX3 layout GDS_2026_06_11
-Comparing CLKINVX4 cmos_sch CORELIBD vs CLKINVX4 layout GDS_2026_06_11
-Comparing CLKBUFX12 cmos_sch CORELIBD vs CLKBUFX12 layout GDS_2026_06_11
-Comparing CLKBUFX6 cmos_sch CORELIBD vs CLKBUFX6 layout GDS_2026_06_11
-Comparing BUFX16 cmos_sch CORELIBD vs BUFX16 layout GDS_2026_06_11
-Comparing DLY1X1 cmos_sch CORELIBD vs DLY1X1 layout GDS_2026_06_11
-Comparing DFCX4 cmos_sch CORELIBD vs DFCX4 layout GDS_2026_06_11
-Comparing NOR2X3 cmos_sch CORELIBD vs NOR2X3 layout GDS_2026_06_11
-Comparing DFCX3 cmos_sch CORELIBD vs DFCX3 layout GDS_2026_06_11
-Comparing BUFX8 cmos_sch CORELIBD vs BUFX8 layout GDS_2026_06_11
-Comparing BUFX2 cmos_sch CORELIBD vs BUFX2 layout GDS_2026_06_11
-Comparing CLKINVX1 cmos_sch CORELIBD vs CLKINVX1 layout GDS_2026_06_11
-Comparing NAND2X2 cmos_sch CORELIBD vs NAND2X2 layout GDS_2026_06_11
-Comparing CLKBUFX8 cmos_sch CORELIBD vs CLKBUFX8 layout GDS_2026_06_11
-Comparing CLKBUFX10 cmos_sch CORELIBD vs CLKBUFX10 layout GDS_2026_06_11
-Comparing FILLCAPX32 cmos_sch CORELIBD vs FILLCAPX32 layout GDS_2026_06_11
-Comparing FILLCAPX16 cmos_sch CORELIBD vs FILLCAPX16 layout GDS_2026_06_11
-Comparing FILLCAPX2 cmos_sch CORELIBD vs FILLCAPX2 layout GDS_2026_06_11
-Comparing FILLCAPX8 cmos_sch CORELIBD vs FILLCAPX8 layout GDS_2026_06_11
-Comparing FILLCAPX4 cmos_sch CORELIBD vs FILLCAPX4 layout GDS_2026_06_11
-Comparing CLKBUFX2 cmos_sch CORELIBD vs CLKBUFX2 layout GDS_2026_06_11
-Comparing CLKBUFX3 cmos_sch CORELIBD vs CLKBUFX3 layout GDS_2026_06_11
-Comparing CLKBUFX24 cmos_sch CORELIBD vs CLKBUFX24 layout GDS_2026_06_11
-Comparing AND2X4 cmos_sch CORELIBD vs AND2X4 layout GDS_2026_06_11
-Comparing DFCSX2 cmos_sch CORELIBD vs DFCSX2 layout GDS_2026_06_11
-Comparing CLKBUFX4 cmos_sch CORELIBD vs CLKBUFX4 layout GDS_2026_06_11
-Comparing NOR2X6 cmos_sch CORELIBD vs NOR2X6 layout GDS_2026_06_11
-Comparing DFCSX4 cmos_sch CORELIBD vs DFCSX4 layout GDS_2026_06_11
-Comparing CLKBUFX16 cmos_sch CORELIBD vs CLKBUFX16 layout GDS_2026_06_11
-Comparing il2244_dig schematic DIG_SPI vs il2244_dig layout GDS_2026_06_11
-Comparing topsyhb schematic VT26_TOP vs topsyhb layout GDS_2026_06_11
-Top cell  top_IL2244_VT26 schematic VT26_TOP vs top_IL2244_VT26 layout GDS_2026_06_11
+Comparing 6_CA_Front_Layout schematic Potentiostat_cpoly2 vs 6_CA_Front_Layout layout GDS_2026_06_18
+Comparing Inverter schematic Potentiostat_cpoly2 vs Inverter layout GDS_2026_06_18
+Comparing 7_Calibration_current schematic Potentiostat_cpoly2 vs 7_Calibration_current layout GDS_2026_06_18
+Comparing 7_MUX21 schematic Potentiostat_cpoly2 vs 7_MUX21 layout GDS_2026_06_18
+Comparing 6_TIA_Front_Layout schematic Potentiostat_cpoly2 vs 6_TIA_Front_Layout layout GDS_2026_06_18
+Comparing 6_Resnet schematic Potentiostat_cpoly2 vs 6_Resnet layout GDS_2026_06_18
+Comparing 8_CA_TIA_Front_calib schematic Potentiostat_cpoly2 vs 8_CA_TIA_Front_calib layout GDS_2026_06_18
+Comparing 7_PTAT_Layout2 schematic Potentiostat_cpoly2 vs 7_PTAT_Layout2 layout GDS_2026_06_18
+Comparing V500_20 schematic POWER_TRACKS vs V500_20 layout GDS_2026_06_18
+Comparing V200_20 schematic POWER_TRACKS vs V200_20 layout GDS_2026_06_18
+Comparing 8_Poten_PTAT2 schematic Potentiostat_cpoly2 vs 8_Poten_PTAT2 layout GDS_2026_06_18
+Comparing Current_Voltage_Reference schematic YAOWEN vs Current_Voltage_Reference layout GDS_2026_06_18
+Comparing ECG_bandgap_f_v1 schematic YAOWEN vs ECG_bandgap_f_v1 layout GDS_2026_06_18
+Comparing Constant_gm schematic YAOWEN vs Constant_gm layout GDS_2026_06_18
+Comparing ECG_BIAS schematic YAOWEN vs ECG_BIAS layout GDS_2026_06_18
+Comparing INVX1 cmos_sch CORELIBD vs INVX1 layout GDS_2026_06_18
+Comparing Gm_C_filter schematic YAOWEN vs Gm_C_filter layout GDS_2026_06_18
+Comparing V1000_20 schematic POWER_TRACKS vs V1000_20 layout GDS_2026_06_18
+Comparing chopper_f schematic YAOWEN vs chopper_f layout GDS_2026_06_18
+Comparing ia_new_f schematic YAOWEN vs ia_new_f layout GDS_2026_06_18
+Comparing mux21 schematic YAOWEN vs mux21 layout GDS_2026_06_18
+Comparing VGA_1 schematic YAOWEN vs VGA_1 layout GDS_2026_06_18
+Comparing cmfb_opamp1_fc schematic FECG vs cmfb_opamp1_fc layout GDS_2026_06_18
+Comparing fecg_cmfb2_fc schematic FECG vs fecg_cmfb2_fc layout GDS_2026_06_18
+Comparing BUFFER schematic YAOWEN vs BUFFER layout GDS_2026_06_18
+Comparing ECG_Front_End schematic YAOWEN vs ECG_Front_End layout GDS_2026_06_18
+Comparing fbias_gm_c1_f2c schematic FBIAS vs fbias_gm_c1_f2c layout GDS_2026_06_18
+Comparing fbias_vol_ref1_layout schematic FBIAS vs fbias_vol_ref1_layout layout GDS_2026_06_18
+Comparing fecg_bandgap3_layout schematic FBIAS vs fecg_bandgap3_layout layout GDS_2026_06_18
+Comparing fbias_cur_ref2_layout schematic FBIAS vs fbias_cur_ref2_layout layout GDS_2026_06_18
+Comparing INVX2 cmos_sch CORELIBD vs INVX2 layout GDS_2026_06_18
+Comparing fbias_por2_fc schematic FBIAS vs fbias_por2_fc layout GDS_2026_06_18
+Comparing fbias_bias2_f schematic FBIAS vs fbias_bias2_f layout GDS_2026_06_18
+Comparing buffer2_f_3c schematic FECG vs buffer2_f_3c layout GDS_2026_06_18
+Comparing mux21c_f schematic FECG vs mux21c_f layout GDS_2026_06_18
+Comparing fecg_vga2_f_2 schematic FECG vs fecg_vga2_f_2 layout GDS_2026_06_18
+Comparing chopper2 schematic FECG vs chopper2 layout GDS_2026_06_18
+Comparing fecg_ia_5_fc schematic FECG vs fecg_ia_5_fc layout GDS_2026_06_18
+Comparing gmc_5_fc schematic FECG vs gmc_5_fc layout GDS_2026_06_18
+Comparing fecg_front_end_f_3 schematic FECG vs fecg_front_end_f_3 layout GDS_2026_06_18
+Comparing GND3IP cmos_sch IOLIB_4M vs GND3IP layout GDS_2026_06_18
+Comparing GND3OP cmos_sch IOLIB_4M vs GND3OP layout GDS_2026_06_18
+Comparing GND3RP cmos_sch IOLIB_4M vs GND3RP layout GDS_2026_06_18
+Comparing ICP cmos_sch IOLIB_4M vs ICP layout GDS_2026_06_18
+Comparing VDD3IP cmos_sch IOLIB_4M vs VDD3IP layout GDS_2026_06_18
+Comparing VDD3OP cmos_sch IOLIB_4M vs VDD3OP layout GDS_2026_06_18
+Comparing VDD3RP cmos_sch IOLIB_4M vs VDD3RP layout GDS_2026_06_18
+Comparing PWRCUT_DIG_P_DX cmos_sch IOLIB_4M vs PWRCUT_DIG_P_DX layout GDS_2026_06_18
+Comparing APRIO200P schematic IOLIB_ANA_4M vs APRIO200P layout GDS_2026_06_18
+Comparing AVDD3ALLP schematic IOLIB_ANA_4M vs AVDD3ALLP layout GDS_2026_06_18
+Comparing AGND3ALLP schematic IOLIB_ANA_4M vs AGND3ALLP layout GDS_2026_06_18
+Comparing IO_RING_S_VHS schematic VT26_IO_RING vs IO_RING_S_VHS layout GDS_2026_06_18
+Comparing NAND3X1 cmos_sch CORELIBD vs NAND3X1 layout GDS_2026_06_18
+Comparing NOR4X1 cmos_sch CORELIBD vs NOR4X1 layout GDS_2026_06_18
+Comparing XOR2X1 cmos_sch CORELIBD vs XOR2X1 layout GDS_2026_06_18
+Comparing HAX3 cmos_sch CORELIBD vs HAX3 layout GDS_2026_06_18
+Comparing CLKINVX4 cmos_sch CORELIBD vs CLKINVX4 layout GDS_2026_06_18
+Comparing CLKBUFX12 cmos_sch CORELIBD vs CLKBUFX12 layout GDS_2026_06_18
+Comparing CLKBUFX6 cmos_sch CORELIBD vs CLKBUFX6 layout GDS_2026_06_18
+Comparing BUFX16 cmos_sch CORELIBD vs BUFX16 layout GDS_2026_06_18
+Comparing DLY1X1 cmos_sch CORELIBD vs DLY1X1 layout GDS_2026_06_18
+Comparing DFCX4 cmos_sch CORELIBD vs DFCX4 layout GDS_2026_06_18
+Comparing NOR2X3 cmos_sch CORELIBD vs NOR2X3 layout GDS_2026_06_18
+Comparing DFCX3 cmos_sch CORELIBD vs DFCX3 layout GDS_2026_06_18
+Comparing BUFX8 cmos_sch CORELIBD vs BUFX8 layout GDS_2026_06_18
+Comparing BUFX2 cmos_sch CORELIBD vs BUFX2 layout GDS_2026_06_18
+Comparing CLKINVX1 cmos_sch CORELIBD vs CLKINVX1 layout GDS_2026_06_18
+Comparing NAND2X2 cmos_sch CORELIBD vs NAND2X2 layout GDS_2026_06_18
+Comparing CLKBUFX8 cmos_sch CORELIBD vs CLKBUFX8 layout GDS_2026_06_18
+Comparing CLKBUFX10 cmos_sch CORELIBD vs CLKBUFX10 layout GDS_2026_06_18
+Comparing FILLCAPX32 cmos_sch CORELIBD vs FILLCAPX32 layout GDS_2026_06_18
+Comparing FILLCAPX16 cmos_sch CORELIBD vs FILLCAPX16 layout GDS_2026_06_18
+Comparing FILLCAPX2 cmos_sch CORELIBD vs FILLCAPX2 layout GDS_2026_06_18
+Comparing FILLCAPX8 cmos_sch CORELIBD vs FILLCAPX8 layout GDS_2026_06_18
+Comparing FILLCAPX4 cmos_sch CORELIBD vs FILLCAPX4 layout GDS_2026_06_18
+Comparing CLKBUFX2 cmos_sch CORELIBD vs CLKBUFX2 layout GDS_2026_06_18
+Comparing CLKBUFX3 cmos_sch CORELIBD vs CLKBUFX3 layout GDS_2026_06_18
+Comparing CLKBUFX24 cmos_sch CORELIBD vs CLKBUFX24 layout GDS_2026_06_18
+Comparing AND2X4 cmos_sch CORELIBD vs AND2X4 layout GDS_2026_06_18
+Comparing DFCSX2 cmos_sch CORELIBD vs DFCSX2 layout GDS_2026_06_18
+Comparing CLKBUFX4 cmos_sch CORELIBD vs CLKBUFX4 layout GDS_2026_06_18
+Comparing NOR2X6 cmos_sch CORELIBD vs NOR2X6 layout GDS_2026_06_18
+Comparing DFCSX4 cmos_sch CORELIBD vs DFCSX4 layout GDS_2026_06_18
+Comparing CLKBUFX16 cmos_sch CORELIBD vs CLKBUFX16 layout GDS_2026_06_18
+Comparing il2244_dig schematic DIG_SPI vs il2244_dig layout GDS_2026_06_18
+Comparing topsyhb schematic VT26_TOP vs topsyhb layout GDS_2026_06_18
+Top cell  top_IL2244_VT26 schematic VT26_TOP vs top_IL2244_VT26 layout GDS_2026_06_18
 Schematic and Layout Match
 cpu=0.00m  wall=0.00m  mem=84.37mb
 
@@ -4098,7 +4098,7 @@ Assura LVS terminated normally.
 
 
 
-Run ended: Thu Jun 11 09:50:50 2026
+Run ended: Thu Jun 18 12:36:42 2026
 
 *****  Assura terminated normally  *****
 
